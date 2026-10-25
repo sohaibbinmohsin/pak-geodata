@@ -431,3 +431,148 @@ test('verifier: detects proximity collisions < 150m with matching tokens', async
   assert.ok(result.errors.some((e) => e.includes('Proximity collision') || e.includes('collision detector')));
 });
 
+test('verifier: does not false-positive on proximity < 150m when areas share no tokens other than city slug', async () => {
+  const tmpDir = createTestDataset({
+    areas: {
+      'punjab/lahore.json': [
+        {
+          id: 'lahore-alpha-plaza',
+          cityId: 'lahore',
+          provinceId: 'punjab',
+          name: 'Alpha Plaza',
+          coordinates: { lat: 31.51020, lng: 74.34410 },
+          verified: true
+        },
+        {
+          id: 'lahore-omega-corner',
+          cityId: 'lahore',
+          provinceId: 'punjab',
+          name: 'Omega Corner',
+          // Coordinates ~60 meters apart, distinct tokens, same city prefix 'lahore'
+          coordinates: { lat: 31.51060, lng: 74.34450 },
+          verified: true
+        }
+      ]
+    }
+  });
+
+  const result = await verifyAllData({ dataDir: tmpDir, silent: true });
+  assert.equal(result.success, true, `Expected success but got: ${result.errors.join('; ')}`);
+});
+
+test('verifier: detects area slug colliding with an existing city ID or province ID', async () => {
+  const tmpDir = createTestDataset({
+    areas: {
+      'punjab/lahore.json': [
+        {
+          id: 'lahore', // Collides with city id
+          cityId: 'lahore',
+          provinceId: 'punjab',
+          name: 'Lahore Central',
+          coordinates: { lat: 31.51020, lng: 74.34410 },
+          verified: true
+        }
+      ]
+    }
+  });
+
+  const result = await verifyAllData({ dataDir: tmpDir, silent: true });
+  assert.equal(result.success, false);
+  assert.ok(
+    result.errors.some(
+      (e) => e.includes('collides with an existing city ID') || e.includes('city prefix')
+    )
+  );
+});
+
+test('verifier: detects identical coordinates globally across all areas', async () => {
+  const tmpDir = createTestDataset({
+    cities: {
+      'punjab.json': [
+        {
+          id: 'lahore',
+          name: 'Lahore',
+          urduName: 'لاہور',
+          provinceId: 'punjab',
+          district: 'Lahore',
+          coordinates: { lat: 31.5204, lng: 74.3587 },
+          bounds: { minLat: 31.30, maxLat: 31.70, minLng: 74.15, maxLng: 74.55 }
+        },
+        {
+          id: 'kasur',
+          name: 'Kasur',
+          urduName: 'قصور',
+          provinceId: 'punjab',
+          district: 'Kasur',
+          coordinates: { lat: 31.1167, lng: 74.4500 },
+          bounds: { minLat: 31.00, maxLat: 31.60, minLng: 74.15, maxLng: 74.60 }
+        }
+      ]
+    },
+    areas: {
+      'punjab/lahore.json': [
+        {
+          id: 'lahore-zone-a',
+          cityId: 'lahore',
+          provinceId: 'punjab',
+          name: 'Zone A',
+          coordinates: { lat: 31.520400, lng: 74.358700 },
+          verified: true
+        }
+      ],
+      'punjab/kasur.json': [
+        {
+          id: 'kasur-zone-b',
+          cityId: 'kasur',
+          provinceId: 'punjab',
+          name: 'Zone B',
+          // Exactly identical coordinates copied into another city
+          coordinates: { lat: 31.520400, lng: 74.358700 },
+          verified: true
+        }
+      ]
+    }
+  });
+
+  const result = await verifyAllData({ dataDir: tmpDir, silent: true });
+  assert.equal(result.success, false);
+  assert.ok(result.errors.some((e) => e.includes('identical coordinates')));
+});
+
+test('overpass: fetchOverpassCandidates retries with backoff delay on network exceptions', async () => {
+  let callCount = 0;
+  const mockFetch = async () => {
+    callCount++;
+    if (callCount === 1) {
+      throw new Error('ECONNRESET connection reset by peer');
+    }
+    return {
+      ok: true,
+      status: 200,
+      statusText: 'OK',
+      json: async () => ({
+        elements: [
+          {
+            type: 'node',
+            id: 888,
+            lat: 31.5204,
+            lon: 74.3587,
+            tags: { name: 'Mall Road', place: 'neighbourhood' }
+          }
+        ]
+      })
+    };
+  };
+
+  const candidates = await fetchOverpassCandidates('mock-query', {
+    fetchFn: mockFetch as unknown as typeof fetch,
+    retryDelayMs: 10,
+    maxRetries: 3
+  });
+
+  assert.equal(callCount, 2, 'Should have retried once after network error');
+  assert.equal(candidates.length, 1);
+  assert.equal(candidates[0].name, 'Mall Road');
+});
+
+

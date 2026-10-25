@@ -174,13 +174,11 @@ export async function fetchOverpassCandidates(
       return parseOverpassResponse(json);
     } catch (err: unknown) {
       lastError = err instanceof Error ? err : new Error(String(err));
-      if (attempt < maxRetries && lastError.message.includes('rate limited')) {
+      if (attempt < maxRetries) {
         await new Promise((resolve) => setTimeout(resolve, retryDelayMs * attempt));
         continue;
       }
-      if (attempt === maxRetries) {
-        throw lastError;
-      }
+      throw lastError;
     }
   }
 

@@ -46,10 +46,31 @@ function findJsonFiles(dir: string): string[] {
   return results;
 }
 
-function extractTokens(name: string, id: string, aliases: string[] = []): Set<string> {
-  const combined = [name, id, ...aliases].join(' ').toLowerCase();
+function extractTokens(
+  name: string,
+  id: string,
+  aliases: string[] = [],
+  cityId?: string
+): Set<string> {
+  let localId = id;
+  if (cityId && localId.startsWith(`${cityId}-`)) {
+    localId = localId.slice(cityId.length + 1);
+  }
+  const combined = [name, localId, ...aliases].join(' ').toLowerCase();
   const words = combined.split(/[^a-z0-9]+/).filter((w) => w.length > 2);
-  const stopWords = new Set(['the', 'and', 'phase', 'block', 'sector', 'street', 'road', 'town', 'city', 'scheme']);
+  const stopWords = new Set([
+    'the',
+    'and',
+    'phase',
+    'block',
+    'sector',
+    'street',
+    'road',
+    'town',
+    'city',
+    'scheme',
+    ...(cityId ? [cityId.toLowerCase()] : [])
+  ]);
   return new Set(words.filter((w) => !stopWords.has(w)));
 }
 
@@ -148,6 +169,9 @@ export async function verifyAllData(
           if (cityIds.has(cityData.id)) {
             errors.push(`Duplicate city ID: ${cityData.id} (found in ${file})`);
           }
+          if (provinceIds.has(cityData.id)) {
+            errors.push(`City ID "${cityData.id}" collides with an existing province ID`);
+          }
           cityIds.add(cityData.id);
 
           // Referential integrity: provinceId
@@ -226,6 +250,7 @@ export async function verifyAllData(
   // 4. Verify areas/**/*.json
   const areaFiles = findJsonFiles(areasDir);
   const areasByCity = new Map<string, Area[]>();
+  const globalAreaCoords = new Map<string, string>();
 
   for (const filePath of areaFiles) {
     try {
@@ -236,6 +261,15 @@ export async function verifyAllData(
       }
 
       for (const area of rawAreas) {
+        if (typeof area?.id === 'string') {
+          if (cityIds.has(area.id)) {
+            errors.push(`Area ID "${area.id}" collides with an existing city ID`);
+          }
+          if (provinceIds.has(area.id)) {
+            errors.push(`Area ID "${area.id}" collides with an existing province ID`);
+          }
+        }
+
         const parseResult = AreaSchema.safeParse(area);
         if (!parseResult.success) {
           const issues = parseResult.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join(', ');
@@ -254,11 +288,22 @@ export async function verifyAllData(
 
         const areaData = parseResult.data;
 
-        // Duplicate ID
+        // Duplicate ID across areas
         if (areaIds.has(areaData.id)) {
           errors.push(`Duplicate area ID: ${areaData.id}`);
         }
         areaIds.add(areaData.id);
+
+        // Global duplicate coordinates check across all areas/cities
+        const coordKey = `${areaData.coordinates.lat.toFixed(6)},${areaData.coordinates.lng.toFixed(6)}`;
+        const existingCoordAreaId = globalAreaCoords.get(coordKey);
+        if (existingCoordAreaId) {
+          errors.push(
+            `Duplicate coordinates detected across areas: "${areaData.id}" and "${existingCoordAreaId}" share identical coordinates [${areaData.coordinates.lat}, ${areaData.coordinates.lng}]`
+          );
+        } else {
+          globalAreaCoords.set(coordKey, areaData.id);
+        }
 
         // Canonical slug format: must start with <cityId>-
         if (!areaData.id.startsWith(`${areaData.cityId}-`)) {
@@ -336,7 +381,7 @@ export async function verifyAllData(
   for (const [cityId, cityAreaList] of areasByCity.entries()) {
     for (let i = 0; i < cityAreaList.length; i++) {
       const a1 = cityAreaList[i];
-      const tokens1 = extractTokens(a1.name, a1.id, a1.aliases);
+      const tokens1 = extractTokens(a1.name, a1.id, a1.aliases, cityId);
 
       for (let j = i + 1; j < cityAreaList.length; j++) {
         const a2 = cityAreaList[j];
@@ -352,7 +397,7 @@ export async function verifyAllData(
             `Proximity collision detector: Areas "${a1.id}" and "${a2.id}" in city "${cityId}" have identical coordinates`
           );
         } else if (dist < 150) {
-          const tokens2 = extractTokens(a2.name, a2.id, a2.aliases);
+          const tokens2 = extractTokens(a2.name, a2.id, a2.aliases, cityId);
           const matchingTokens: string[] = [];
           for (const t of tokens1) {
             if (tokens2.has(t)) {
