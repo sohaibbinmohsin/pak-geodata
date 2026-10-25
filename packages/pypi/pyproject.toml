@@ -21,6 +21,31 @@ classifiers = [
     "Operating System :: OS Independent",
     "Topic :: Scientific/Engineering :: GIS",
 ]
+keywords = [
+    "pakistan",
+    "geodata",
+    "gis",
+    "coordinates",
+    "provinces",
+    "cities",
+    "areas",
+    "sectors",
+    "postal-codes",
+    "lahore",
+    "karachi",
+    "islamabad",
+    "rawalpindi",
+    "faisalabad",
+    "geocoding",
+    "reverse-geocoding",
+    "haversine",
+]
+
+[project.urls]
+Homepage = "https://github.com/sohaibbinmohsin/pakistan-geodata"
+Documentation = "https://github.com/sohaibbinmohsin/pakistan-geodata#readme"
+Repository = "https://github.com/sohaibbinmohsin/pakistan-geodata.git"
+"Bug Tracker" = "https://github.com/sohaibbinmohsin/pakistan-geodata/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0.0"]

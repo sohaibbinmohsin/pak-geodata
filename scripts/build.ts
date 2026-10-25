@@ -89,6 +89,13 @@ async function main() {
   cpSync(dataDir, pypiDataDir, { recursive: true });
   console.log('✔ Master data synchronized to packages/pypi/pak_geodata/data/');
 
+  const rootLicense = resolve(rootDir, 'LICENSE');
+  if (existsSync(rootLicense)) {
+    cpSync(rootLicense, resolve(rootDir, 'packages/npm/LICENSE'));
+    cpSync(rootLicense, resolve(rootDir, 'packages/pypi/LICENSE'));
+    console.log('✔ LICENSE synchronized to npm and pypi packages');
+  }
+
   console.log('\n=== Step 3: Generating modular TypeScript datasets for packages/npm ===');
 
   // 1. Provinces

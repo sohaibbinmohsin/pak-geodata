@@ -20,8 +20,38 @@
       "require": "./dist/areas/*.cjs"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sohaibbinmohsin/pakistan-geodata.git",
+    "directory": "packages/npm"
+  },
+  "homepage": "https://github.com/sohaibbinmohsin/pakistan-geodata#readme",
+  "bugs": {
+    "url": "https://github.com/sohaibbinmohsin/pakistan-geodata/issues"
+  },
+  "keywords": [
+    "pakistan",
+    "geodata",
+    "gis",
+    "coordinates",
+    "provinces",
+    "cities",
+    "areas",
+    "sectors",
+    "postal-codes",
+    "lahore",
+    "karachi",
+    "islamabad",
+    "rawalpindi",
+    "faisalabad",
+    "geocoding",
+    "reverse-geocoding",
+    "haversine"
+  ],
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "node build.js",
