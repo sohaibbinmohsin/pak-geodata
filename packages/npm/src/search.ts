@@ -1,6 +1,15 @@
 import type { PakistanArea, SearchOptions } from './types.js';
 import { allAreas } from './data/areas/index.js';
 
+// Pre-indexed lookup map for O(1) candidate pool selection by city
+const areasByCityMap = new Map<string, PakistanArea[]>();
+for (const a of allAreas) {
+  const cityKey = a.cityId.toLowerCase();
+  const list = areasByCityMap.get(cityKey) || [];
+  list.push(a);
+  areasByCityMap.set(cityKey, list);
+}
+
 function normalizeString(str: string): string {
   return str.toLowerCase().trim().replace(/[-_.,/]/g, ' ').replace(/\s+/g, ' ');
 }
@@ -66,7 +75,11 @@ export function searchAreas(
 
   if (options?.cityId && typeof options.cityId === 'string') {
     const cityId = options.cityId.toLowerCase().trim();
-    filtered = filtered.filter((a) => a.cityId.toLowerCase() === cityId);
+    if (candidateAreas === allAreas) {
+      filtered = areasByCityMap.get(cityId) || [];
+    } else {
+      filtered = filtered.filter((a) => a.cityId.toLowerCase() === cityId);
+    }
   }
 
   if (options?.provinceId && typeof options.provinceId === 'string') {
@@ -125,8 +138,8 @@ export function searchAreas(
       }
     }
 
-    // 4. Fuzzy fallback for short queries or slight typos (if length >= 4)
-    if (score === 0 && normQuery.length >= 4) {
+    // 4. Fuzzy fallback for short queries or slight typos (4 <= length <= 40)
+    if (score === 0 && normQuery.length >= 4 && normQuery.length <= 40) {
       const dist = levenshteinDistance(normQuery, normName);
       const maxLen = Math.max(normQuery.length, normName.length);
       const similarity = 1 - dist / maxLen;

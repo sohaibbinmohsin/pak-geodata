@@ -222,8 +222,8 @@ def find_areas_by_postal_code(postal_code: Union[str, int]) -> List[PakistanArea
 
 @overload
 def haversine_distance_km(
-    lat1: Coordinates,
-    lng1: Coordinates,
+    point1: Coordinates,
+    point2: Coordinates,
 ) -> float:
     ...
 
@@ -239,18 +239,26 @@ def haversine_distance_km(
 
 
 def haversine_distance_km(
-    lat1: Union[float, Coordinates],
-    lng1: Union[float, Coordinates],
+    lat1: Union[float, Coordinates, None] = None,
+    lng1: Union[float, Coordinates, None] = None,
     lat2: Optional[float] = None,
     lng2: Optional[float] = None,
+    *,
+    point1: Optional[Coordinates] = None,
+    point2: Optional[Coordinates] = None,
 ) -> float:
     """Calculates great-circle distance in kilometers using the Haversine formula."""
-    if isinstance(lat1, Coordinates) and isinstance(lng1, Coordinates):
-        t_lat1, t_lng1 = lat1.lat, lat1.lng
-        t_lat2, t_lng2 = lng1.lat, lng1.lng
-    else:
+    p1 = point1 if point1 is not None else lat1
+    p2 = point2 if point2 is not None else lng1
+
+    if isinstance(p1, Coordinates) and isinstance(p2, Coordinates):
+        t_lat1, t_lng1 = p1.lat, p1.lng
+        t_lat2, t_lng2 = p2.lat, p2.lng
+    elif lat1 is not None and lng1 is not None and lat2 is not None and lng2 is not None:
         t_lat1, t_lng1 = float(lat1), float(lng1)
         t_lat2, t_lng2 = float(lat2), float(lng2)
+    else:
+        raise ValueError("Invalid coordinates provided to haversine_distance_km")
 
     if t_lat1 == t_lat2 and t_lng1 == t_lng2:
         return 0.0
@@ -421,8 +429,8 @@ def search_areas(
                         100.0 + (len(matched_tokens) / len(query_tokens)) * 100.0,
                     )
 
-        # 4. Fuzzy fallback for short queries or slight typos
-        if score == 0.0 and len(norm_query) >= 4:
+        # 4. Fuzzy fallback for short queries or slight typos (4 <= len <= 40)
+        if score == 0.0 and 4 <= len(norm_query) <= 40:
             dist = _levenshtein_distance(norm_query, norm_name)
             max_len = max(len(norm_query), len(norm_name))
             sim = 1.0 - (dist / max_len)

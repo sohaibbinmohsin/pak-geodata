@@ -218,3 +218,24 @@ test('defensive type handling for non-string / number arguments', () => {
   assert.deepEqual(searchAreas('', { cityId: 'lahore' }), []);
   assert.deepEqual(searchAreas('lahore', { limit: 0 }), []);
 });
+
+test('searchAreas caps fuzzy search query length between 4 and 40 characters', () => {
+  // Typo under 40 chars triggers fuzzy
+  const fuzzyShort = searchAreas('Sadar', { cityId: 'karachi' });
+  assert.ok(fuzzyShort.length > 0);
+  assert.equal(fuzzyShort[0].id, 'karachi-saddar');
+
+  // Query longer than 40 characters bypasses expensive fuzzy search
+  const longParagraph = 'xyzzy qwerty zzzqqq wwwrrr tttuuu oooppp lllkkk jjjhhh';
+  assert.ok(longParagraph.length > 40);
+  assert.deepEqual(searchAreas(longParagraph), []);
+});
+
+test('searchAreas and getNearestArea handle unknown cityId efficiently', () => {
+  const unknownSearchResults = searchAreas('dha', { cityId: 'nonexistent-city' });
+  assert.deepEqual(unknownSearchResults, []);
+
+  const coords = { lat: 31.4581, lng: 74.4121 };
+  const unknownNearest = getNearestArea(coords, { cityId: 'nonexistent-city' });
+  assert.equal(unknownNearest, null);
+});

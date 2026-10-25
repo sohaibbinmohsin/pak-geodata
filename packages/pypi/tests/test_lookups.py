@@ -294,6 +294,11 @@ class TestPakGeodata(unittest.TestCase):
         self.assertTrue(len(results) > 0)
         self.assertTrue(any("gulberg" in r.id for r in results))
 
+        # Query longer than 40 chars should not run fuzzy matching
+        long_query = "xyzzy qwerty zzzqqq wwwrrr tttuuu oooppp lllkkk jjjhhh"
+        self.assertGreater(len(long_query), 40)
+        self.assertEqual(search_areas(long_query), [])
+
     def test_search_province_filter(self):
         results = search_areas("dha", province_id="sindh")
         self.assertTrue(len(results) > 0)
@@ -316,9 +321,23 @@ class TestPakGeodata(unittest.TestCase):
         dist_floats = haversine_distance_km(31.5204, 74.3587, 24.8607, 67.0011)
         self.assertAlmostEqual(dist_coords, dist_floats, places=4)
 
-        # 3. Distance to self is 0
+        # 3. Using point1 and point2 keyword arguments
+        dist_kwargs = haversine_distance_km(point1=c1, point2=c2)
+        self.assertEqual(dist_coords, dist_kwargs)
+
+        # 4. Using 4 float keyword arguments
+        dist_float_kwargs = haversine_distance_km(
+            lat1=31.5204, lng1=74.3587, lat2=24.8607, lng2=67.0011
+        )
+        self.assertEqual(dist_floats, dist_float_kwargs)
+
+        # 5. Distance to self is 0
         self.assertEqual(haversine_distance_km(c1, c1), 0.0)
         self.assertEqual(haversine_distance_km(31.5204, 74.3587, 31.5204, 74.3587), 0.0)
+
+        # 6. Invalid parameters raise ValueError
+        with self.assertRaises(ValueError):
+            haversine_distance_km(None, None)
 
     def test_postal_code_defensive_integer_handling(self):
         # Integer postal code lookup

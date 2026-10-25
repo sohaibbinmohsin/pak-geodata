@@ -13,8 +13,8 @@ import { provinces } from './data/provinces.js';
 import { cities } from './data/cities.js';
 import { allAreas } from './data/areas/index.js';
 
-import { haversineDistanceKm, getNearestArea } from './geo.js';
-import { searchAreas } from './search.js';
+import { haversineDistanceKm, getNearestArea as baseGetNearestArea } from './geo.js';
+import { searchAreas as baseSearchAreas } from './search.js';
 
 // Pre-indexed lookup maps for O(1) lookups
 const provinceByIdMap = new Map<string, PakistanProvince>();
@@ -121,8 +121,43 @@ export function findAreasByPostalCode(postalCode: string | number): PakistanArea
   return [...(areasByPostalCodeMap.get(String(postalCode).trim()) || [])];
 }
 
-// Re-export search and spatial utilities
-export { searchAreas, haversineDistanceKm, getNearestArea };
+/**
+ * Searches Pakistan areas using structured matching and ranking:
+ * Exact match > Prefix match > Alias match > Substring / Token match > Fuzzy match.
+ *
+ * Scopes candidate pool via O(1) city map when options.cityId is provided.
+ */
+export function searchAreas(
+  query: string,
+  options?: SearchOptions,
+  candidateAreas?: readonly PakistanArea[]
+): PakistanArea[] {
+  let pool = candidateAreas;
+  if (!pool && options?.cityId && typeof options.cityId === 'string') {
+    pool = areasByCityMap.get(options.cityId.toLowerCase().trim()) || [];
+  }
+  return baseSearchAreas(query, options, pool);
+}
+
+/**
+ * Finds the nearest verified PakistanArea to the given coordinates.
+ *
+ * Scopes candidate pool via O(1) city map when options.cityId is provided.
+ */
+export function getNearestArea(
+  coords: Coordinates,
+  options?: NearestAreaOptions,
+  candidateAreas?: readonly PakistanArea[]
+): PakistanArea | null {
+  let pool = candidateAreas;
+  if (!pool && options?.cityId && typeof options.cityId === 'string') {
+    pool = areasByCityMap.get(options.cityId.toLowerCase().trim()) || [];
+  }
+  return baseGetNearestArea(coords, options, pool);
+}
+
+// Re-export spatial distance utility
+export { haversineDistanceKm };
 
 // Re-export core types
 export type {

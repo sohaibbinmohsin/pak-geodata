@@ -108,9 +108,15 @@ async function main() {
   const cityAreaCounts: Record<string, number> = {};
 
   const npmAreasDataDir = resolve(npmSrcDir, 'data/areas');
+  if (existsSync(npmAreasDataDir)) {
+    rmSync(npmAreasDataDir, { recursive: true, force: true });
+  }
   mkdirSync(npmAreasDataDir, { recursive: true });
 
   const npmAreasSubpathDir = resolve(npmSrcDir, 'areas');
+  if (existsSync(npmAreasSubpathDir)) {
+    rmSync(npmAreasSubpathDir, { recursive: true, force: true });
+  }
   mkdirSync(npmAreasSubpathDir, { recursive: true });
 
   for (const filePath of areaFiles) {

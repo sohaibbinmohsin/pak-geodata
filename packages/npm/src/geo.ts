@@ -1,6 +1,15 @@
 import type { Coordinates, NearestAreaOptions, PakistanArea } from './types.js';
 import { allAreas } from './data/areas/index.js';
 
+// Pre-indexed lookup map for O(1) candidate pool selection by city
+const areasByCityMap = new Map<string, PakistanArea[]>();
+for (const a of allAreas) {
+  const cityKey = a.cityId.toLowerCase();
+  const list = areasByCityMap.get(cityKey) || [];
+  list.push(a);
+  areasByCityMap.set(cityKey, list);
+}
+
 /**
  * Calculates the great-circle distance between two geographic coordinates using the Haversine formula.
  *
@@ -44,7 +53,11 @@ export function getNearestArea(
 
   if (options?.cityId && typeof options.cityId === 'string') {
     const cityId = options.cityId.toLowerCase().trim();
-    filtered = filtered.filter((a) => a.cityId.toLowerCase() === cityId);
+    if (candidateAreas === allAreas) {
+      filtered = areasByCityMap.get(cityId) || [];
+    } else {
+      filtered = filtered.filter((a) => a.cityId.toLowerCase() === cityId);
+    }
   }
 
   if (options?.provinceId && typeof options.provinceId === 'string') {
