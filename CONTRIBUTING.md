@@ -89,8 +89,8 @@ All datasets in `pak-geodata` are subjected to automated quality checks. Contrib
 
 ### Clone & Install
 ```bash
-git clone https://github.com/sohaibbinmohsin/pakistan-geodata.git
-cd pakistan-geodata
+git clone https://github.com/sohaibbinmohsin/pak-geodata.git
+cd pak-geodata
 
 # Install npm dependencies
 npm install

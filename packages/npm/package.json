@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sohaibbinmohsin/pakistan-geodata.git",
+    "url": "https://github.com/sohaibbinmohsin/pak-geodata.git",
     "directory": "packages/npm"
   },
-  "homepage": "https://github.com/sohaibbinmohsin/pakistan-geodata#readme",
+  "homepage": "https://github.com/sohaibbinmohsin/pak-geodata#readme",
   "bugs": {
-    "url": "https://github.com/sohaibbinmohsin/pakistan-geodata/issues"
+    "url": "https://github.com/sohaibbinmohsin/pak-geodata/issues"
   },
   "keywords": [
     "pakistan",
