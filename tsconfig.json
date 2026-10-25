@@ -5,6 +5,7 @@
   },
   "include": [
     "pipeline/**/*",
-    "tests/**/*"
+    "tests/**/*",
+    "scripts/**/*"
   ]
 }

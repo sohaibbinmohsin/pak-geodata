@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsx scripts/build.ts",
     "lint": "tsc --noEmit",
-    "test": "tsx --test scripts/verify.test.ts && cd packages/npm && npm test",
+    "test": "tsx --test \"tests/**/*.test.ts\" \"scripts/**/*.test.ts\"",
     "verify": "tsx scripts/verify.ts"
   },
   "devDependencies": {
