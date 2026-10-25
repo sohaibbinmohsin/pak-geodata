@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsx scripts/build.ts",
     "lint": "tsc --noEmit",
-    "test": "tsx --test \"tests/**/*.test.ts\" \"scripts/**/*.test.ts\" \"packages/npm/tests/**/*.test.ts\"",
+    "test": "tsx --test \"tests/**/*.test.ts\" \"scripts/**/*.test.ts\" \"packages/npm/tests/**/*.test.ts\" && python3 -m unittest discover -s packages/pypi/tests",
     "verify": "tsx scripts/verify.ts"
   },
   "devDependencies": {

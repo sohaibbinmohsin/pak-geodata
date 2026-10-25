@@ -1,0 +1,51 @@
+[
+  {
+    "id": "punjab",
+    "name": "Punjab",
+    "urduName": "پنجاب",
+    "capitalCityId": "lahore",
+    "type": "province"
+  },
+  {
+    "id": "sindh",
+    "name": "Sindh",
+    "urduName": "سندھ",
+    "capitalCityId": "karachi",
+    "type": "province"
+  },
+  {
+    "id": "kpk",
+    "name": "Khyber Pakhtunkhwa",
+    "urduName": "خیبر پختونخوا",
+    "capitalCityId": "peshawar",
+    "type": "province"
+  },
+  {
+    "id": "balochistan",
+    "name": "Balochistan",
+    "urduName": "بلوچستان",
+    "capitalCityId": "quetta",
+    "type": "province"
+  },
+  {
+    "id": "islamabad-ict",
+    "name": "Islamabad Capital Territory",
+    "urduName": "وفاقی دارالحکومت اسلام آباد",
+    "capitalCityId": "islamabad",
+    "type": "federal_capital"
+  },
+  {
+    "id": "ajk",
+    "name": "Azad Jammu and Kashmir",
+    "urduName": "آزاد جموں و کشمیر",
+    "capitalCityId": "muzaffarabad",
+    "type": "autonomous_territory"
+  },
+  {
+    "id": "gilgit-baltistan",
+    "name": "Gilgit-Baltistan",
+    "urduName": "گلگت بلتستان",
+    "capitalCityId": "gilgit",
+    "type": "autonomous_territory"
+  }
+]
