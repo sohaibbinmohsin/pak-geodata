@@ -1,0 +1,134 @@
+[
+  {
+    "id": "peshawar",
+    "name": "Peshawar",
+    "urduName": "پشاور",
+    "provinceId": "kpk",
+    "division": "Peshawar Division",
+    "district": "Peshawar",
+    "coordinates": {
+      "lat": 34.0151,
+      "lng": 71.5249
+    },
+    "postalCodeRange": [
+      "25000",
+      "25999"
+    ],
+    "bounds": {
+      "minLat": 33.9200,
+      "maxLat": 34.1000,
+      "minLng": 71.4200,
+      "maxLng": 71.6400
+    }
+  },
+  {
+    "id": "abbottabad",
+    "name": "Abbottabad",
+    "urduName": "ایبٹ آباد",
+    "provinceId": "kpk",
+    "division": "Hazara Division",
+    "district": "Abbottabad",
+    "coordinates": {
+      "lat": 34.1688,
+      "lng": 73.2215
+    },
+    "postalCodeRange": [
+      "22010",
+      "22099"
+    ],
+    "bounds": {
+      "minLat": 34.1000,
+      "maxLat": 34.2300,
+      "minLng": 73.1700,
+      "maxLng": 73.2800
+    }
+  },
+  {
+    "id": "mardan",
+    "name": "Mardan",
+    "urduName": "مردان",
+    "provinceId": "kpk",
+    "division": "Mardan Division",
+    "district": "Mardan",
+    "coordinates": {
+      "lat": 34.1989,
+      "lng": 72.0404
+    },
+    "postalCodeRange": [
+      "23200",
+      "23299"
+    ],
+    "bounds": {
+      "minLat": 34.1400,
+      "maxLat": 34.2600,
+      "minLng": 71.9700,
+      "maxLng": 72.1000
+    }
+  },
+  {
+    "id": "mingora",
+    "name": "Mingora",
+    "urduName": "مینگورہ",
+    "provinceId": "kpk",
+    "division": "Malakand Division",
+    "district": "Swat",
+    "coordinates": {
+      "lat": 34.7758,
+      "lng": 72.3626
+    },
+    "postalCodeRange": [
+      "19130",
+      "19199"
+    ],
+    "bounds": {
+      "minLat": 34.7200,
+      "maxLat": 34.8200,
+      "minLng": 72.3100,
+      "maxLng": 72.4100
+    }
+  },
+  {
+    "id": "kohat",
+    "name": "Kohat",
+    "urduName": "کوہاٹ",
+    "provinceId": "kpk",
+    "division": "Kohat Division",
+    "district": "Kohat",
+    "coordinates": {
+      "lat": 33.5869,
+      "lng": 71.4414
+    },
+    "postalCodeRange": [
+      "26000",
+      "26099"
+    ],
+    "bounds": {
+      "minLat": 33.5200,
+      "maxLat": 33.6400,
+      "minLng": 71.3800,
+      "maxLng": 71.5000
+    }
+  },
+  {
+    "id": "dera-ismail-khan",
+    "name": "Dera Ismail Khan",
+    "urduName": "ڈیرہ اسماعیل خان",
+    "provinceId": "kpk",
+    "division": "Dera Ismail Khan Division",
+    "district": "Dera Ismail Khan",
+    "coordinates": {
+      "lat": 31.8314,
+      "lng": 70.9019
+    },
+    "postalCodeRange": [
+      "29050",
+      "29099"
+    ],
+    "bounds": {
+      "minLat": 31.7800,
+      "maxLat": 31.8800,
+      "minLng": 70.8500,
+      "maxLng": 70.9600
+    }
+  }
+]
