@@ -1,0 +1,18 @@
+{
+  "name": "pak-geodata-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/npm"
+  ],
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "test": "tsx --test scripts/verify.test.ts && cd packages/npm && npm test",
+    "verify": "tsx scripts/verify.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "zod": "^3.23.8"
+  }
+}
