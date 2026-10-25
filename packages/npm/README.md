@@ -2,7 +2,9 @@
 
 > Comprehensive, typed, offline geographic data for all areas and cities in Pakistan.
 
-`pak-geodata` is a production-grade TypeScript and JavaScript client library providing offline access to verified geographic data for Pakistan, including administrative provinces, all 40 major cities, and 189 flagship metropolitan areas (sectors, housing societies, neighborhoods, and commercial centers).
+`pak-geodata` is an open-source, production-grade TypeScript and JavaScript client library providing offline access to verified geographic data for Pakistan, created and maintained by [Sohaib Bin Mohsin](https://sohaibbinmohsin.com) at [The Mohsin Project Global](https://themohsinproject.org).
+
+It covers all administrative provinces, 40 major cities, and 189 foundational flagship metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers).
 
 Designed with **zero runtime dependencies**, strict geofencing, sub-millisecond lookups, and modular tree-shakeable subpath exports.
 
@@ -13,7 +15,7 @@ Designed with **zero runtime dependencies**, strict geofencing, sub-millisecond 
 - **Zero Runtime Dependencies**: Completely self-contained with 0 runtime dependencies.
 - **Dual Module Support**: Full ESM (`import`) and CommonJS (`require`) support.
 - **Subpath Tree-Shaking**: Import only the areas you need (e.g. `pak-geodata/areas/lahore`) to keep your bundle footprint under a few kilobytes.
-- **Offline & Self-Contained**: All verified golden datasets are bundled with the library—no remote API calls or latency.
+- **Offline & Self-Contained**: All verified golden datasets are bundled with the library: no remote API calls or latency.
 - **Strict Geofencing & Validation**: Every coordinate is rigorously validated within Pakistan territorial boundaries (`23.5 <= lat <= 37.1`, `60.8 <= lng <= 77.8`) and city district bounding boxes.
 - **Canonical Slugs**: Standardized `<city-slug>-<area-slug>` identifiers across all datasets (e.g. `lahore-dha-phase-5`).
 - **Multi-Script & Alias Search**: Full support for English queries, colloquial aliases (e.g. `"dha 5"`), Urdu script queries (e.g. `"گلبرگ"`), and fuzzy typo tolerance.
@@ -234,4 +236,4 @@ interface PakistanProvince {
 
 ## License
 
-MIT © The Mohsin Project
+MIT © 2026 [Sohaib Bin Mohsin](https://sohaibbinmohsin.com) • [The Mohsin Project Global](https://themohsinproject.org)

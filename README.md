@@ -7,7 +7,9 @@
 
 > Comprehensive, typed, offline geographic data for all areas and cities in Pakistan.
 
-`pak-geodata` is an open-source, production-grade geospatial foundation for Pakistan. It provides offline access to verified geographic datasets for Pakistan's provinces, territories, cities, and metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers)—distributed simultaneously for **TypeScript/Node.js** and **Python** with **zero runtime dependencies**.
+`pak-geodata` is an open-source, production-grade geospatial foundation for Pakistan, developed and maintained by [Sohaib Bin Mohsin](https://sohaibbinmohsin.com) at [The Mohsin Project Global](https://themohsinproject.org).
+
+It provides offline access to verified geographic datasets for Pakistan's provinces, territories, cities, and metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers), distributed simultaneously for **TypeScript/Node.js** and **Python** with **zero runtime dependencies**.
 
 ---
 
@@ -16,8 +18,8 @@
 Developers building address autocompletion, checkout forms, delivery routing, real estate platforms, or logistics applications in Pakistan face chronic data problems:
 - **No standardized administrative hierarchy**: Inconsistent city and area naming across platforms.
 - **Missing or inaccurate coordinates**: Approximate pins that land kilometers away from actual neighborhoods.
-- **High latency & expensive APIs**: Reliance on Google Maps or Mapbox geocoding APIs for static neighborhood queries.
-- **Duplicate & inconsistent data**: Variations like "DHA 5", "DHA Phase V", "Defence Phase 5", and "ڈی ایچ اے فیز 5" treated as disparate entities.
+- **High latency and expensive APIs**: Reliance on Google Maps or Mapbox geocoding APIs for static neighborhood queries.
+- **Duplicate and inconsistent data**: Variations like "DHA 5", "DHA Phase V", "Defence Phase 5", and "ڈی ایچ اے فیز 5" treated as disparate entities.
 - **Absence of official postal code mappings**: Disconnected Pakistan Post data and lacking reverse lookup.
 
 `pak-geodata` solves this with an offline, typed, curated dataset that enforces canonical slugs, multi-script aliases, and 3-tier spatial triangulation.
@@ -28,13 +30,13 @@ Developers building address autocompletion, checkout forms, delivery routing, re
 
 - ⚡ **Zero Runtime Dependencies**: Both NPM and PyPI client libraries require 0 external dependencies (pure JS/TS and Python standard library).
 - 📦 **Dual Distribution**: Native first-class support for both Node.js/TypeScript (`npm install pak-geodata`) and Python (`pip install pak-geodata`).
-- 🌐 **Offline & Self-Contained**: 100% bundled data—perform lookups, spatial radius checks, and searches in sub-millisecond time with no network requests.
+- 🌐 **Offline and Self-Contained**: 100% bundled data: perform lookups, spatial radius checks, and searches in sub-millisecond time with no network requests.
 - 🎯 **Strict Geofencing**: All coordinates strictly validated within Pakistan's bounding box (`23.5 <= lat <= 37.1`, `60.8 <= lng <= 77.8`) and city district boundaries.
 - 🏷️ **Canonical Slugs**: Standardized `<city-slug>-<area-slug>` format (e.g. `lahore-dha-phase-5`, `karachi-clifton-block-2`).
-- 🔍 **Multi-Script & Alias Search**: Ranks results across exact match, prefix match, Urdu script (`"گلبرگ"`), colloquial aliases (`"dha 5"`), token match, and fuzzy Levenshtein distance.
+- 🔍 **Multi-Script and Alias Search**: Ranks results across exact match, prefix match, Urdu script (`"گلبرگ"`), colloquial aliases (`"dha 5"`), token match, and fuzzy Levenshtein distance.
 - 📍 **Spatial Reverse Geocoding**: Nearest neighbor resolution via spherical Haversine formula (`getNearestArea` / `get_nearest_area`).
 - 📮 **Pakistan Post Codes**: 5-digit postal code resolution and reverse lookups.
-- 🌲 **Tree-Shakeable Subpaths**: Modular imports like `pak-geodata/areas/lahore` load only the desired city data (~15–26 KB).
+- 🌲 **Tree-Shakeable Subpaths**: Modular imports like `pak-geodata/areas/lahore` load only the desired city data (~15 to 26 KB).
 
 ---
 
@@ -58,23 +60,89 @@ poetry add pak-geodata
 
 ---
 
-## Dataset Statistics (Phase 1 Flagship Metros)
+## Dataset Statistics
 
-The repository currently includes golden verified datasets for Pakistan's 5 largest metropolitan economies alongside all administrative subdivisions:
-
-| Level | Count | Coverage | Details |
+| Administrative Level | Count | Coverage | Key Details |
 | :--- | :--- | :--- | :--- |
 | **Provinces & Territories** | **7** | 100% of Pakistan | Punjab, Sindh, KPK, Balochistan, Islamabad (ICT), Azad Jammu & Kashmir (AJK), Gilgit-Baltistan |
-| **Verified Cities** | **40** | Major Urban Centers | District centroids, bounding boxes, divisions, postal ranges |
-| **Flagship Areas** | **189** | Curated & Triangulated | Flagship metros: Lahore, Karachi, Islamabad, Rawalpindi, Faisalabad |
+| **Verified Cities** | **40** | Major Urban Centers | District centroids, bounding boxes, administrative divisions, 5-digit postal code ranges |
+| **Flagship Metros Areas** | **189** | Phase 1 (In Progress) | Foundational areas across Karachi, Lahore, Islamabad, Rawalpindi, and Faisalabad |
 
-### Flagship Metropolitan Areas Breakdown
+---
 
-- **Karachi** (`51 areas`): Clifton (Blocks 1–9), DHA (Phases 1–8), Gulshan-e-Iqbal, North Nazimabad, PECHS, Saddar, KDA Scheme 1, Malir Cantt, Gulistan-e-Johar, Bahadurabad, etc.
-- **Lahore** (`50 areas`): Gulberg (I–V), DHA (Phases 1–9), Model Town (Blocks A–M), Johar Town (Phases 1–2), Bahria Town (Sectors A–F), Cantt, Faisal Town, Garden Town, Shadman, Wapda Town, etc.
+## The 40 Verified Cities
+
+### What does a "verified city" mean?
+Every one of the 40 cities in `pak-geodata` has undergone municipal boundary verification. Each entry provides:
+1. **Centroid Coordinates**: Accurate GPS coordinates for the city center.
+2. **District Bounding Box (`bounds`)**: Strict geofencing limits (`minLat`, `maxLat`, `minLng`, `maxLng`) representing the greater urban municipal district.
+3. **Administrative Division**: Official provincial division mapping (e.g. Lahore Division, Karachi Division, Hazara Division).
+4. **Pakistan Post Range (`postalCodeRange`)**: Official 5-digit postal code boundaries (e.g. `["54000", "54999"]` for Lahore).
+
+This enables developers to immediately geofence incoming coordinates, filter areas with `cityId`, and validate shipping addresses offline.
+
+### Complete List of the 40 Verified Cities
+
+- **Punjab (14 cities)**:
+  - Lahore (`lahore`)
+  - Rawalpindi (`rawalpindi`)
+  - Faisalabad (`faisalabad`)
+  - Multan (`multan`)
+  - Gujranwala (`gujranwala`)
+  - Sialkot (`sialkot`)
+  - Bahawalpur (`bahawalpur`)
+  - Sargodha (`sargodha`)
+  - Gujrat (`gujrat`)
+  - Sheikhupura (`sheikhupura`)
+  - Sahiwal (`sahiwal`)
+  - Jhelum (`jhelum`)
+  - Kasur (`kasur`)
+  - Rahim Yar Khan (`rahim-yar-khan`)
+- **Sindh (6 cities)**:
+  - Karachi (`karachi`)
+  - Hyderabad (`hyderabad`)
+  - Sukkur (`sukkur`)
+  - Larkana (`larkana`)
+  - Nawabshah (`nawabshah`)
+  - Mirpur Khas (`mirpur-khas`)
+- **Khyber Pakhtunkhwa (6 cities)**:
+  - Peshawar (`peshawar`)
+  - Abbottabad (`abbottabad`)
+  - Mardan (`mardan`)
+  - Mingora / Swat (`mingora`)
+  - Kohat (`kohat`)
+  - Dera Ismail Khan (`dera-ismail-khan`)
+- **Balochistan (5 cities)**:
+  - Quetta (`quetta`)
+  - Gwadar (`gwadar`)
+  - Turbat (`turbat`)
+  - Khuzdar (`khuzdar`)
+  - Hub (`hub`)
+- **Islamabad Capital Territory (1 city)**:
+  - Islamabad (`islamabad`)
+- **Azad Jammu & Kashmir (4 cities)**:
+  - Muzaffarabad (`muzaffarabad`)
+  - Mirpur (`mirpur`)
+  - Rawalakot (`rawalakot`)
+  - Kotli (`kotli`)
+- **Gilgit-Baltistan (4 cities)**:
+  - Gilgit (`gilgit`)
+  - Skardu (`skardu`)
+  - Karimabad / Hunza (`karimabad-hunza`)
+  - Chilas (`chilas`)
+
+---
+
+## Flagship Metropolitan Areas (Phase 1: In Progress)
+
+Phase 1 is currently **in progress**. While we have established an initial core of 189 triangulated foundational areas across Pakistan's 5 largest metropolitan economies, active work is underway to expand coverage across all sectors, housing societies, commercial markets, industrial estates, and historic quarters.
+
+### Current Phase 1 Foundation (189 Areas):
+- **Karachi** (`51 areas`): Clifton (Blocks 1-9), DHA (Phases 1-8), Gulshan-e-Iqbal, North Nazimabad, PECHS, Saddar, KDA Scheme 1, Malir Cantt, Gulistan-e-Johar, Bahadurabad, etc.
+- **Lahore** (`50 areas`): Gulberg (I-V), DHA (Phases 1-9), Model Town (Blocks A-M), Johar Town (Phases 1-2), Bahria Town (Sectors A-F), Cantt, Faisal Town, Garden Town, Shadman, Wapda Town, etc.
 - **Islamabad** (`36 areas`): CDA Sectors F-6, F-7, F-8, F-10, F-11, G-6 to G-13, H-8, H-9, H-11, I-8, I-9, I-10, Diplomatic Enclave, Blue Area, DHA Islamabad, Bahria Town Islamabad, etc.
-- **Rawalpindi** (`28 areas`): Bahria Town (Phases 1–8), Satellite Town (Blocks A–F), Saddar, Westridge (I–III), Chaklala Scheme (I–III), Askari (I–XIV), Peshawar Road, Gulraiz, etc.
-- **Faisalabad** (`24 areas`): Madina Town, Peoples Colony (No. 1–2), D Ground, Ghulam Muhammad Abad, Kohinoor City, Civil Lines, Millat Town, Samanabad, Gulberg, Eden Valley, etc.
+- **Rawalpindi** (`28 areas`): Bahria Town (Phases 1-8), Satellite Town (Blocks A-F), Saddar, Westridge (I-III), Chaklala Scheme (I-III), Askari (I-XIV), Peshawar Road, Gulraiz, etc.
+- **Faisalabad** (`24 areas`): Madina Town, Peoples Colony (No. 1-2), D Ground, Ghulam Muhammad Abad, Kohinoor City, Civil Lines, Millat Town, Samanabad, Gulberg, Eden Valley, etc.
 
 ---
 
@@ -292,7 +360,7 @@ Every area included in `pak-geodata` must pass a rigorous 3-tier quality gate be
 └──────────────────────────────────────────────┘
                │
                ▼
-      [Golden Curated Dataset]
+       [Golden Curated Dataset]
 ```
 
 1. **Tier 1 (Schema & Format)**: Structural validation verifying non-empty identifiers, valid coordinate objects, and ISO naming.
@@ -368,17 +436,20 @@ We actively welcome community contributions to expand coverage across Pakistan!
    - Include authentic colloquial aliases and Urdu translation.
 3. Run `npm run verify` to confirm your additions pass all validation rules.
 4. Run `npm run build && npm test` to update generated code and verify the test suite.
-5. Open a Pull Request!
+5. Open a Pull Request! Please read our [Contributing Guide](CONTRIBUTING.md) for complete details.
 
 ### Expansion Roadmap
-- **Phase 1 (Complete)**: 5 Flagship Metros (Lahore, Karachi, Islamabad, Rawalpindi, Faisalabad) — 189 golden areas.
-- **Phase 2 (In Progress)**: Secondary Metropolitan Hubs (Peshawar, Quetta, Multan, Gujranwala, Sialkot, Hyderabad, Abbottabad).
-- **Phase 3**: Tertiary cities, tehsils, and union councils across all provinces.
-- **Phase 4**: GeoJSON polygon boundary support for precise geofencing.
+- **Phase 1 (In Progress)**: Flagship Metros (Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad): expanding beyond the initial 189 foundational areas across residential, commercial, industrial, and historic classifications.
+- **Phase 2 (Planned)**: Secondary Metropolitan Hubs (Peshawar, Quetta, Multan, Gujranwala, Sialkot, Hyderabad, Abbottabad).
+- **Phase 3 (Planned)**: Tertiary cities, tehsils, and union councils across all provinces.
+- **Phase 4 (Planned)**: GeoJSON polygon boundary support for precise geofencing.
 
 ---
 
-## License
+## License & Authors
 
-This project is licensed under the [MIT License](LICENSE).
-© 2026 The Mohsin Project
+This project is open-source software licensed under the [MIT License](LICENSE).
+
+Developed and maintained by:
+- **[Sohaib Bin Mohsin](https://sohaibbinmohsin.com)** (Founder & Maintainer)
+- **[The Mohsin Project Global](https://themohsinproject.org)**

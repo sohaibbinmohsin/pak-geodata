@@ -2,7 +2,10 @@
   "name": "pak-geodata",
   "version": "0.1.0",
   "description": "Comprehensive, typed, offline geographic data for all areas and cities in Pakistan",
-  "author": "The Mohsin Project",
+  "author": "Sohaib Bin Mohsin <sohaibbinmohsin@gmail.com> (https://sohaibbinmohsin.com)",
+  "contributors": [
+    "The Mohsin Project Global (https://themohsinproject.org)"
+  ],
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",

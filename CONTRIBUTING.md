@@ -2,9 +2,9 @@
 
 Thank you for your interest in contributing to `pak-geodata`! 🇵🇰
 
-`pak-geodata` is an open-source, community-driven geospatial foundation for Pakistan. Our goal is to provide developers, researchers, logistics operators, and startups with an authoritative, offline, and typed dataset of Pakistan's provinces, cities, neighborhoods, and postal codes with **zero runtime dependencies**.
+`pak-geodata` is an open-source, community-driven geospatial foundation for Pakistan, initiated by [Sohaib Bin Mohsin](https://sohaibbinmohsin.com) at [The Mohsin Project Global](https://themohsinproject.org). Our goal is to provide developers, researchers, logistics operators, and startups with an authoritative, offline, and typed dataset of Pakistan's provinces, cities, neighborhoods, and postal codes with **zero runtime dependencies**.
 
-Every contribution—whether adding missing areas in your home city, refining coordinates, fixing Urdu translations, or adding new features to our client libraries—helps improve Pakistan's digital infrastructure.
+Every contribution, whether adding missing areas in your home city, refining coordinates, fixing Urdu translations, or adding new features to our client libraries, helps improve Pakistan's digital infrastructure.
 
 ---
 
@@ -69,7 +69,7 @@ All datasets in `pak-geodata` are subjected to automated quality checks. Contrib
 
 ### 4. Postal Codes
 - Postal codes must be exact 5-digit strings matching `/^\d{5}$/`.
-- Postal codes must fall within the parent city's `postalCodeRange` (e.g., Lahore `54000`–`54999`, Islamabad `44000`–`44999`).
+- Postal codes must fall within the parent city's `postalCodeRange` (e.g., Lahore `54000` to `54999`, Islamabad `44000` to `44999`).
 
 ### 5. Multi-Script & Colloquial Aliases
 - Provide authentic Urdu Nastaliq names (`urduName`) whenever available.
