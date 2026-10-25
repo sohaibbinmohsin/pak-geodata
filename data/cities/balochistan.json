@@ -1,0 +1,112 @@
+[
+  {
+    "id": "quetta",
+    "name": "Quetta",
+    "urduName": "کوئٹہ",
+    "provinceId": "balochistan",
+    "division": "Quetta Division",
+    "district": "Quetta",
+    "coordinates": {
+      "lat": 30.1798,
+      "lng": 66.9750
+    },
+    "postalCodeRange": [
+      "87300",
+      "87399"
+    ],
+    "bounds": {
+      "minLat": 30.1000,
+      "maxLat": 30.2800,
+      "minLng": 66.9000,
+      "maxLng": 67.0800
+    }
+  },
+  {
+    "id": "gwadar",
+    "name": "Gwadar",
+    "urduName": "گوادر",
+    "provinceId": "balochistan",
+    "division": "Makran Division",
+    "district": "Gwadar",
+    "coordinates": {
+      "lat": 25.1216,
+      "lng": 62.3254
+    },
+    "postalCodeRange": [
+      "91200",
+      "91299"
+    ],
+    "bounds": {
+      "minLat": 25.0700,
+      "maxLat": 25.1800,
+      "minLng": 62.2600,
+      "maxLng": 62.3800
+    }
+  },
+  {
+    "id": "turbat",
+    "name": "Turbat",
+    "urduName": "تربت",
+    "provinceId": "balochistan",
+    "division": "Makran Division",
+    "district": "Kech",
+    "coordinates": {
+      "lat": 26.0031,
+      "lng": 63.0544
+    },
+    "postalCodeRange": [
+      "92600",
+      "92699"
+    ],
+    "bounds": {
+      "minLat": 25.9500,
+      "maxLat": 26.0600,
+      "minLng": 62.9900,
+      "maxLng": 63.1100
+    }
+  },
+  {
+    "id": "khuzdar",
+    "name": "Khuzdar",
+    "urduName": "خضدار",
+    "provinceId": "balochistan",
+    "division": "Kalat Division",
+    "district": "Khuzdar",
+    "coordinates": {
+      "lat": 27.8000,
+      "lng": 66.6000
+    },
+    "postalCodeRange": [
+      "89100",
+      "89199"
+    ],
+    "bounds": {
+      "minLat": 27.7400,
+      "maxLat": 27.8600,
+      "minLng": 66.5400,
+      "maxLng": 66.6700
+    }
+  },
+  {
+    "id": "hub",
+    "name": "Hub",
+    "urduName": "حب",
+    "provinceId": "balochistan",
+    "division": "Kalat Division",
+    "district": "Hub",
+    "coordinates": {
+      "lat": 25.0300,
+      "lng": 66.8800
+    },
+    "postalCodeRange": [
+      "90150",
+      "90199"
+    ],
+    "bounds": {
+      "minLat": 24.9800,
+      "maxLat": 25.0800,
+      "minLng": 66.8200,
+      "maxLng": 66.9400
+    }
+  }
+]

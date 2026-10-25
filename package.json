@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "build": "tsx scripts/build.ts",
+    "lint": "tsc --noEmit",
     "test": "tsx --test scripts/verify.test.ts && cd packages/npm && npm test",
     "verify": "tsx scripts/verify.ts"
   },
