@@ -63,6 +63,7 @@ export function getAllProvinces(): PakistanProvince[] {
  * Finds a province by its unique identifier (e.g. "punjab", "sindh", "islamabad-ict").
  */
 export function getProvinceById(id: string): PakistanProvince | undefined {
+  if (typeof id !== 'string') return undefined;
   return provinceByIdMap.get(id.toLowerCase().trim());
 }
 
@@ -77,6 +78,7 @@ export function getAllCities(): PakistanCity[] {
  * Retrieves all cities belonging to a specified province.
  */
 export function getCitiesByProvince(provinceId: string): PakistanCity[] {
+  if (typeof provinceId !== 'string') return [];
   return [...(citiesByProvinceMap.get(provinceId.toLowerCase().trim()) || [])];
 }
 
@@ -84,6 +86,7 @@ export function getCitiesByProvince(provinceId: string): PakistanCity[] {
  * Finds a city by its canonical slug identifier (e.g. "lahore", "karachi", "islamabad").
  */
 export function getCityById(id: string): PakistanCity | undefined {
+  if (typeof id !== 'string') return undefined;
   return cityByIdMap.get(id.toLowerCase().trim());
 }
 
@@ -98,21 +101,24 @@ export function getAllAreas(): PakistanArea[] {
  * Returns all verified areas within a given city.
  */
 export function getAreasByCity(cityId: string): PakistanArea[] {
+  if (typeof cityId !== 'string') return [];
   return [...(areasByCityMap.get(cityId.toLowerCase().trim()) || [])];
 }
 
 /**
  * Resolves the primary area associated with a 5-digit Pakistan Post postal code.
  */
-export function findAreaByPostalCode(postalCode: string): PakistanArea | undefined {
-  return areaByPostalCodeMap.get(postalCode.trim());
+export function findAreaByPostalCode(postalCode: string | number): PakistanArea | undefined {
+  if (typeof postalCode !== 'string' && typeof postalCode !== 'number') return undefined;
+  return areaByPostalCodeMap.get(String(postalCode).trim());
 }
 
 /**
  * Returns all areas sharing a given 5-digit Pakistan Post postal code.
  */
-export function findAreasByPostalCode(postalCode: string): PakistanArea[] {
-  return [...(areasByPostalCodeMap.get(postalCode.trim()) || [])];
+export function findAreasByPostalCode(postalCode: string | number): PakistanArea[] {
+  if (typeof postalCode !== 'string' && typeof postalCode !== 'number') return [];
+  return [...(areasByPostalCodeMap.get(String(postalCode).trim()) || [])];
 }
 
 // Re-export search and spatial utilities

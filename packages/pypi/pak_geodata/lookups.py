@@ -8,7 +8,7 @@ import json
 import math
 import re
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple, Union
+from typing import Dict, List, Optional, Tuple, Union, overload
 
 from .models import (
     CityBounds,
@@ -202,19 +202,41 @@ def get_areas_by_city(city_id: str) -> List[PakistanArea]:
     return list(_areas_by_city.get(city_id.lower().strip(), []))
 
 
-def find_area_by_postal_code(postal_code: str) -> Optional[PakistanArea]:
+def find_area_by_postal_code(postal_code: Union[str, int]) -> Optional[PakistanArea]:
     """Resolves the primary area associated with a 5-digit Pakistan Post postal code."""
-    return _area_by_postal_code.get(postal_code.strip())
+    if postal_code is None:
+        return None
+    return _area_by_postal_code.get(str(postal_code).strip())
 
 
-def find_areas_by_postal_code(postal_code: str) -> List[PakistanArea]:
+def find_areas_by_postal_code(postal_code: Union[str, int]) -> List[PakistanArea]:
     """Returns all areas sharing a given 5-digit Pakistan Post postal code."""
-    return list(_areas_by_postal_code.get(postal_code.strip(), []))
+    if postal_code is None:
+        return []
+    return list(_areas_by_postal_code.get(str(postal_code).strip(), []))
 
 
 # -----------------------------------------------------------------------------
 # Spatial & Haversine Utilities
 # -----------------------------------------------------------------------------
+
+@overload
+def haversine_distance_km(
+    lat1: Coordinates,
+    lng1: Coordinates,
+) -> float:
+    ...
+
+
+@overload
+def haversine_distance_km(
+    lat1: float,
+    lng1: float,
+    lat2: float,
+    lng2: float,
+) -> float:
+    ...
+
 
 def haversine_distance_km(
     lat1: Union[float, Coordinates],
@@ -439,7 +461,9 @@ def search_areas(
     scored.sort(key=lambda item: (-item[1], item[0].name))
     results = [item[0] for item in scored]
 
-    if limit is not None and limit > 0:
+    if limit is not None:
+        if limit <= 0:
+            return []
         return results[:limit]
 
     return results

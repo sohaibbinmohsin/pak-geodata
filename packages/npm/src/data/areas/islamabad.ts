@@ -820,4 +820,4 @@ export const islamabadAreas: readonly PakistanArea[] = [
       "curated"
     ]
   }
-] as const;
+];

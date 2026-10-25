@@ -1,16 +1,16 @@
 import type { PakistanArea } from "../../types.js";
-import { lahoreAreas } from "./lahore.js";
-import { karachiAreas } from "./karachi.js";
-import { islamabadAreas } from "./islamabad.js";
-import { rawalpindiAreas } from "./rawalpindi.js";
 import { faisalabadAreas } from "./faisalabad.js";
+import { islamabadAreas } from "./islamabad.js";
+import { karachiAreas } from "./karachi.js";
+import { lahoreAreas } from "./lahore.js";
+import { rawalpindiAreas } from "./rawalpindi.js";
 
-export { lahoreAreas, karachiAreas, islamabadAreas, rawalpindiAreas, faisalabadAreas };
+export { faisalabadAreas, islamabadAreas, karachiAreas, lahoreAreas, rawalpindiAreas };
 
 export const allAreas: readonly PakistanArea[] = [
-  ...lahoreAreas,
-  ...karachiAreas,
+  ...faisalabadAreas,
   ...islamabadAreas,
-  ...rawalpindiAreas,
-  ...faisalabadAreas
+  ...karachiAreas,
+  ...lahoreAreas,
+  ...rawalpindiAreas
 ];

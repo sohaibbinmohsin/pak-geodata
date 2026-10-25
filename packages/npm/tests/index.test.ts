@@ -193,3 +193,28 @@ test('getNearestArea filters by cityId and respects maxDistanceKm', () => {
   assert.ok(isbAnyNearest);
   assert.equal(isbAnyNearest?.cityId, 'islamabad');
 });
+
+test('defensive type handling for non-string / number arguments', () => {
+  // Postal codes with number
+  const lhrAreaNum = findAreaByPostalCode(54000);
+  assert.ok(lhrAreaNum);
+  assert.equal(lhrAreaNum?.postalCode, '54000');
+
+  const lhrAreasNum = findAreasByPostalCode(54000);
+  assert.ok(lhrAreasNum.length > 0);
+
+  // Invalid postal code types
+  assert.equal(findAreaByPostalCode(null as any), undefined);
+  assert.deepEqual(findAreasByPostalCode(null as any), []);
+
+  // Lookups with invalid arguments
+  assert.equal(getProvinceById(null as any), undefined);
+  assert.deepEqual(getCitiesByProvince(null as any), []);
+  assert.equal(getCityById(null as any), undefined);
+  assert.deepEqual(getAreasByCity(null as any), []);
+
+  // searchAreas with non-string and limit 0
+  assert.deepEqual(searchAreas(null as any), []);
+  assert.deepEqual(searchAreas('', { cityId: 'lahore' }), []);
+  assert.deepEqual(searchAreas('lahore', { limit: 0 }), []);
+});

@@ -921,4 +921,4 @@ export const cities: readonly PakistanCity[] = [
     },
     "totalAreasCount": 0
   }
-] as const;
+];

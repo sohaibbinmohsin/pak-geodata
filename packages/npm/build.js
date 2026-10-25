@@ -1,5 +1,5 @@
 import { execSync } from 'node:child_process';
-import { rmSync, existsSync } from 'node:fs';
+import { rmSync, existsSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const distDir = resolve(import.meta.dirname, 'dist');
@@ -23,9 +23,18 @@ execSync(
 
 // 3. Compile CommonJS bundles for subpath areas
 console.log('3. Compiling CommonJS subpath areas...');
-execSync(
-  'npx esbuild src/areas/lahore.ts src/areas/karachi.ts src/areas/islamabad.ts src/areas/rawalpindi.ts src/areas/faisalabad.ts --bundle --platform=node --format=cjs --outdir=dist/areas --out-extension:.js=.cjs',
-  { cwd: import.meta.dirname, stdio: 'inherit' }
-);
+const areasDir = resolve(import.meta.dirname, 'src/areas');
+const areaFiles = existsSync(areasDir)
+  ? readdirSync(areasDir)
+      .filter((file) => file.endsWith('.ts') && !file.endsWith('.d.ts'))
+      .map((file) => `src/areas/${file}`)
+  : [];
+
+if (areaFiles.length > 0) {
+  execSync(
+    `npx esbuild ${areaFiles.join(' ')} --bundle --platform=node --format=cjs --outdir=dist/areas --out-extension:.js=.cjs`,
+    { cwd: import.meta.dirname, stdio: 'inherit' }
+  );
+}
 
 console.log('✔ Build completed successfully.');

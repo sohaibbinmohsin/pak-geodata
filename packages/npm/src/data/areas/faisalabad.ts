@@ -530,4 +530,4 @@ export const faisalabadAreas: readonly PakistanArea[] = [
       "curated"
     ]
   }
-] as const;
+];

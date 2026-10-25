@@ -305,6 +305,39 @@ class TestPakGeodata(unittest.TestCase):
         self.assertIsNotNone(nearest)
         self.assertEqual(nearest.province_id, "sindh")
 
+    def test_haversine_distance_km_overloads(self):
+        # 1. Using Coordinates instances
+        c1 = Coordinates(lat=31.5204, lng=74.3587)
+        c2 = Coordinates(lat=24.8607, lng=67.0011)
+        dist_coords = haversine_distance_km(c1, c2)
+        self.assertTrue(1000 < dist_coords < 1050)
+
+        # 2. Using four floats
+        dist_floats = haversine_distance_km(31.5204, 74.3587, 24.8607, 67.0011)
+        self.assertAlmostEqual(dist_coords, dist_floats, places=4)
+
+        # 3. Distance to self is 0
+        self.assertEqual(haversine_distance_km(c1, c1), 0.0)
+        self.assertEqual(haversine_distance_km(31.5204, 74.3587, 31.5204, 74.3587), 0.0)
+
+    def test_postal_code_defensive_integer_handling(self):
+        # Integer postal code lookup
+        area = find_area_by_postal_code(54000)
+        self.assertIsNotNone(area)
+        self.assertEqual(area.postal_code, "54000")
+
+        areas = find_areas_by_postal_code(54000)
+        self.assertTrue(len(areas) > 0)
+        self.assertTrue(all(a.postal_code == "54000" for a in areas))
+
+        # None / invalid postal code
+        self.assertIsNone(find_area_by_postal_code(None))
+        self.assertEqual(find_areas_by_postal_code(None), [])
+
+    def test_search_areas_limit_zero(self):
+        results = search_areas("dha", limit=0)
+        self.assertEqual(results, [])
+
     def test_zero_runtime_dependencies(self):
         import pak_geodata
         import pak_geodata.lookups

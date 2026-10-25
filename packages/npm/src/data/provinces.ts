@@ -50,4 +50,4 @@ export const provinces: readonly PakistanProvince[] = [
     "capitalCityId": "gilgit",
     "type": "autonomous_territory"
   }
-] as const;
+];

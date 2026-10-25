@@ -42,12 +42,12 @@ export function getNearestArea(
 ): PakistanArea | null {
   let filtered = candidateAreas;
 
-  if (options?.cityId) {
+  if (options?.cityId && typeof options.cityId === 'string') {
     const cityId = options.cityId.toLowerCase().trim();
     filtered = filtered.filter((a) => a.cityId.toLowerCase() === cityId);
   }
 
-  if (options?.provinceId) {
+  if (options?.provinceId && typeof options.provinceId === 'string') {
     const provinceId = options.provinceId.toLowerCase().trim();
     filtered = filtered.filter((a) => a.provinceId.toLowerCase() === provinceId);
   }

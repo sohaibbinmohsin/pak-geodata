@@ -50,6 +50,10 @@ export function searchAreas(
   options?: SearchOptions,
   candidateAreas: readonly PakistanArea[] = allAreas
 ): PakistanArea[] {
+  if (typeof query !== 'string') {
+    return [];
+  }
+
   const trimmed = query.trim();
   if (!trimmed) {
     return [];
@@ -60,12 +64,12 @@ export function searchAreas(
 
   let filtered = candidateAreas;
 
-  if (options?.cityId) {
+  if (options?.cityId && typeof options.cityId === 'string') {
     const cityId = options.cityId.toLowerCase().trim();
     filtered = filtered.filter((a) => a.cityId.toLowerCase() === cityId);
   }
 
-  if (options?.provinceId) {
+  if (options?.provinceId && typeof options.provinceId === 'string') {
     const provinceId = options.provinceId.toLowerCase().trim();
     filtered = filtered.filter((a) => a.provinceId.toLowerCase() === provinceId);
   }
@@ -158,7 +162,10 @@ export function searchAreas(
 
   const results = scored.map((s) => s.area);
 
-  if (options?.limit !== undefined && options.limit > 0) {
+  if (options?.limit !== undefined) {
+    if (options.limit <= 0) {
+      return [];
+    }
     return results.slice(0, options.limit);
   }
 
