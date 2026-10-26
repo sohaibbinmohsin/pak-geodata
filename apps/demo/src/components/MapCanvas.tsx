@@ -6,7 +6,7 @@ export interface MapCanvasProps {
   areas: readonly PakistanArea[];
   selectedArea: PakistanArea | null;
   selectedCity: PakistanCity | null;
-  onSelectArea: (area: PakistanArea) => void;
+  onSelectArea: (area: PakistanArea | null) => void;
   onMapClick?: (coords: { lat: number; lng: number }) => void;
   className?: string;
 }
@@ -141,6 +141,8 @@ export default function MapCanvas({
   const prevCityIdRef = useRef<string | null | undefined>(undefined);
   const prevAreaIdRef = useRef<string | null | undefined>(undefined);
 
+  const isSwitchingAreaRef = useRef(false);
+
   // 1. Initialize Map
   useEffect(() => {
     if (!containerRef.current) return;
@@ -177,6 +179,14 @@ export default function MapCanvas({
         lat: e.latlng.lat,
         lng: e.latlng.lng,
       });
+    });
+
+    // Map popupclose handler to sync area deselection
+    mapInstance.on('popupclose', (e: L.PopupEvent) => {
+      if (isSwitchingAreaRef.current) return;
+      if (activeMarkerRef.current && activeMarkerRef.current.getPopup() === e.popup) {
+        onSelectAreaRef.current(null);
+      }
     });
 
     // Invalidate size once DOM settles to ensure complete tile coverage
@@ -232,7 +242,11 @@ export default function MapCanvas({
       // Marker click triggers selection & stops propagation to map
       marker.on('click', (e) => {
         L.DomEvent.stopPropagation(e);
+        isSwitchingAreaRef.current = true;
         onSelectAreaRef.current(area);
+        setTimeout(() => {
+          isSwitchingAreaRef.current = false;
+        }, 120);
       });
 
       layerGroup.addLayer(marker);
@@ -252,6 +266,7 @@ export default function MapCanvas({
   // 3. Update active marker styling when `selectedArea` changes
   useEffect(() => {
     if (!map) return;
+    isSwitchingAreaRef.current = true;
 
     // Reset previous active marker
     if (activeMarkerRef.current) {
@@ -265,8 +280,16 @@ export default function MapCanvas({
       marker.setIcon(createPinIcon(true));
       marker.setZIndexOffset(1000);
       activeMarkerRef.current = marker;
-      marker.openPopup();
+      if (!marker.isPopupOpen()) {
+        marker.openPopup();
+      }
     }
+
+    const timer = setTimeout(() => {
+      isSwitchingAreaRef.current = false;
+    }, 120);
+
+    return () => clearTimeout(timer);
   }, [map, selectedArea]);
 
   // 4. Smooth Camera Flight for City and Area changes
