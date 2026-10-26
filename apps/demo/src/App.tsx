@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import Header from './components/Header';
 import MapCanvas from './components/MapCanvas';
 import CityPills from './components/CityPills';
@@ -13,6 +13,10 @@ export default function App() {
   const [selectedCity, setSelectedCity] = useState<PakistanCity | null>(null);
   const [selectedArea, setSelectedArea] = useState<PakistanArea | null>(null);
   const [reverseGeoPoint, setReverseGeoPoint] = useState<ReverseGeoPoint | null>(null);
+
+  const handleCloseInspector = useCallback(() => {
+    setSelectedArea(null);
+  }, []);
 
   const filteredAreas = useMemo(() => {
     if (!selectedCity) return allAreas;
@@ -68,7 +72,7 @@ export default function App() {
       {selectedArea && (
         <AreaInspector
           area={selectedArea}
-          onClose={() => setSelectedArea(null)}
+          onClose={handleCloseInspector}
         />
       )}
 

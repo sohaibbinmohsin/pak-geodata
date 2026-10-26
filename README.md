@@ -2,6 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/pak-geodata?color=blue)](https://www.npmjs.com/package/pak-geodata)
 [![PyPI Version](https://img.shields.io/pypi/v/pak-geodata?color=green)](https://pypi.org/project/pak-geodata/)
+[![Live Interactive Demo](https://img.shields.io/badge/Live%20Demo-Interactive%20Map-blue?logo=leaflet&color=10B981)](https://sohaibbinmohsin.github.io/pak-geodata/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build & Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)]()
 
@@ -10,6 +11,8 @@
 `pak-geodata` is an open-source, production-grade geospatial foundation for Pakistan, developed and maintained by [Sohaib Bin Mohsin](https://sohaibbinmohsin.com) at [The Mohsin Project Global](https://themohsinproject.org).
 
 It provides offline access to verified geographic datasets for Pakistan's provinces, territories, cities, and metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers), distributed simultaneously for **TypeScript/Node.js** and **Python** with **zero runtime dependencies**.
+
+Explore the [Live Interactive Demo](https://sohaibbinmohsin.github.io/pak-geodata/) to test multi-script search, interactive map exploration, and reverse geocoding in real-time.
 
 ---
 
@@ -37,6 +40,7 @@ Developers building address autocompletion, checkout forms, delivery routing, re
 - 📍 **Spatial Reverse Geocoding**: Nearest neighbor resolution via spherical Haversine formula (`getNearestArea` / `get_nearest_area`).
 - 📮 **Pakistan Post Codes**: 5-digit postal code resolution and reverse lookups.
 - 🌲 **Tree-Shakeable Subpaths**: Modular imports like `pak-geodata/areas/lahore` load only the desired city data (~15 to 26 KB).
+- 🗺️ **Live Interactive Web Demo**: Explore the [Live Interactive Demo](https://sohaibbinmohsin.github.io/pak-geodata/) to test multi-script search, interactive map exploration, and reverse geocoding in real-time.
 
 ---
 
