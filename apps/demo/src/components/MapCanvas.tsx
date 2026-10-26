@@ -1,13 +1,23 @@
 import { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
-import type { PakistanArea, PakistanCity } from 'pak-geodata';
+import {
+  getNearestArea,
+  haversineDistanceKm,
+  type PakistanArea,
+  type PakistanCity,
+} from 'pak-geodata';
+import type { ReverseGeoPoint } from './reverseGeoUtils';
+
+export type { ReverseGeoPoint };
 
 export interface MapCanvasProps {
   areas: readonly PakistanArea[];
   selectedArea: PakistanArea | null;
   selectedCity: PakistanCity | null;
+  reverseGeoPoint?: ReverseGeoPoint | null;
   onSelectArea: (area: PakistanArea | null) => void;
   onMapClick?: (coords: { lat: number; lng: number }) => void;
+  onReverseGeoChange?: (point: ReverseGeoPoint | null) => void;
   className?: string;
 }
 
@@ -115,8 +125,10 @@ export default function MapCanvas({
   areas,
   selectedArea,
   selectedCity,
+  reverseGeoPoint,
   onSelectArea,
   onMapClick,
+  onReverseGeoChange,
   className = '',
 }: MapCanvasProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -133,8 +145,19 @@ export default function MapCanvas({
     onMapClickRef.current = onMapClick;
   }, [onMapClick]);
 
+  const onReverseGeoChangeRef = useRef(onReverseGeoChange);
+  useEffect(() => {
+    onReverseGeoChangeRef.current = onReverseGeoChange;
+  }, [onReverseGeoChange]);
+
+  const selectedCityRef = useRef(selectedCity);
+  useEffect(() => {
+    selectedCityRef.current = selectedCity;
+  }, [selectedCity]);
+
   // Marker layers and tracking refs
   const markersLayerRef = useRef<L.LayerGroup | null>(null);
+  const reverseGeoLayerRef = useRef<L.LayerGroup | null>(null);
   const markerMapRef = useRef<Map<string, L.Marker>>(new Map());
   const activeMarkerRef = useRef<L.Marker | null>(null);
 
@@ -173,12 +196,34 @@ export default function MapCanvas({
     const layerGroup = L.layerGroup().addTo(mapInstance);
     markersLayerRef.current = layerGroup;
 
+    const reverseGeoLayer = L.layerGroup().addTo(mapInstance);
+    reverseGeoLayerRef.current = reverseGeoLayer;
+
     // Map click handler (outside markers)
     mapInstance.on('click', (e: L.LeafletMouseEvent) => {
-      onMapClickRef.current?.({
+      const coords = {
         lat: e.latlng.lat,
         lng: e.latlng.lng,
-      });
+      };
+
+      const t0 = performance.now();
+      const cityId = selectedCityRef.current?.id;
+      const nearest = getNearestArea(coords, cityId ? { cityId } : undefined);
+      const computationTimeMs = performance.now() - t0;
+
+      if (nearest) {
+        const distanceKm = haversineDistanceKm(coords, nearest.coordinates);
+        onReverseGeoChangeRef.current?.({
+          clicked: coords,
+          nearest,
+          distanceKm,
+          computationTimeMs,
+        });
+      } else {
+        onReverseGeoChangeRef.current?.(null);
+      }
+
+      onMapClickRef.current?.(coords);
     });
 
     // Map popupclose handler to sync area deselection
@@ -201,6 +246,7 @@ export default function MapCanvas({
       mapInstance.remove();
       setMap(null);
       markersLayerRef.current = null;
+      reverseGeoLayerRef.current = null;
       markerMapRef.current.clear();
       activeMarkerRef.current = null;
     };
@@ -328,6 +374,56 @@ export default function MapCanvas({
       }
     }
   }, [map, selectedCity, selectedArea]);
+
+  // 5. Render Glowing Cyan Radar Ping Marker & Animated Dashed Vector Line
+  useEffect(() => {
+    if (!map || !reverseGeoLayerRef.current) return;
+    const layer = reverseGeoLayerRef.current;
+    layer.clearLayers();
+
+    if (!reverseGeoPoint) return;
+
+    const { clicked, nearest } = reverseGeoPoint;
+
+    // Glowing cyan radar ping marker
+    const radarIcon = L.divIcon({
+      className: 'pak-radar-marker',
+      iconSize: [32, 32],
+      iconAnchor: [16, 16],
+      html: `
+        <div class="pak-radar-ping-container" aria-label="Clicked location">
+          <div class="pak-radar-ripple"></div>
+          <div class="pak-radar-ripple"></div>
+          <div class="pak-radar-center"></div>
+        </div>
+      `,
+    });
+
+    const radarMarker = L.marker([clicked.lat, clicked.lng], {
+      icon: radarIcon,
+      zIndexOffset: 1200,
+      interactive: false,
+    });
+
+    // Animated dashed cyan vector polyline connecting clicked -> nearest.coordinates
+    const vectorPolyline = L.polyline(
+      [
+        [clicked.lat, clicked.lng],
+        [nearest.coordinates.lat, nearest.coordinates.lng],
+      ],
+      {
+        color: '#22d3ee',
+        weight: 2.5,
+        opacity: 0.9,
+        dashArray: '6, 8',
+        className: 'pak-vector-line',
+        interactive: false,
+      }
+    );
+
+    layer.addLayer(radarMarker);
+    layer.addLayer(vectorPolyline);
+  }, [map, reverseGeoPoint]);
 
   return (
     <div

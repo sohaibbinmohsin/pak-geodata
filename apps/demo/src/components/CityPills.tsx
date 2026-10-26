@@ -70,6 +70,8 @@ export default function CityPills({
         width: btnRect.width,
         opacity: 1,
       });
+    } else {
+      setIndicatorStyle((prev) => ({ ...prev, opacity: 0 }));
     }
   };
 

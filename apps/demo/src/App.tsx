@@ -3,6 +3,7 @@ import Header from './components/Header';
 import MapCanvas from './components/MapCanvas';
 import CityPills from './components/CityPills';
 import Omnibar from './components/Omnibar';
+import ReverseGeoCard, { type ReverseGeoPoint } from './components/ReverseGeoCard';
 import { getAllAreas, getCityById, type PakistanArea, type PakistanCity } from 'pak-geodata';
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
 
   const [selectedCity, setSelectedCity] = useState<PakistanCity | null>(null);
   const [selectedArea, setSelectedArea] = useState<PakistanArea | null>(null);
+  const [reverseGeoPoint, setReverseGeoPoint] = useState<ReverseGeoPoint | null>(null);
 
   const filteredAreas = useMemo(() => {
     if (!selectedCity) return allAreas;
@@ -31,6 +33,10 @@ export default function App() {
     // If an area from another city was selected, deselect it
     if (city && selectedArea && selectedArea.cityId !== city.id) {
       setSelectedArea(null);
+    }
+    // If reverse geo point is from another city, clear it
+    if (city && reverseGeoPoint && reverseGeoPoint.nearest.cityId !== city.id) {
+      setReverseGeoPoint(null);
     }
   };
 
@@ -54,16 +60,25 @@ export default function App() {
         />
       </div>
 
+      {/* Floating Reverse Geocode Result Card */}
+      {reverseGeoPoint && (
+        <div className="fixed bottom-5 left-4 sm:left-6 z-40 max-w-sm w-[calc(100vw-2rem)] sm:w-96 pointer-events-none">
+          <ReverseGeoCard
+            point={reverseGeoPoint}
+            onSelectArea={handleSelectArea}
+            onDismiss={() => setReverseGeoPoint(null)}
+          />
+        </div>
+      )}
+
       {/* Full-Screen Interactive Leaflet Map Canvas */}
       <MapCanvas
         areas={filteredAreas}
         selectedArea={selectedArea}
         selectedCity={selectedCity}
+        reverseGeoPoint={reverseGeoPoint}
         onSelectArea={handleSelectArea}
-        onMapClick={(coords) => {
-          // Ready for Task 5 reverse geocoding playground
-          console.debug('Map canvas clicked at:', coords);
-        }}
+        onReverseGeoChange={setReverseGeoPoint}
       />
     </div>
   );

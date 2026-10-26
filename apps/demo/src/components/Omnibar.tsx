@@ -81,6 +81,14 @@ export default function Omnibar({
     setSelectedIndex(0);
   }, [results]);
 
+  // Scroll selected item into view during arrow key navigation
+  useEffect(() => {
+    if (isOpen && listRef.current) {
+      const activeEl = listRef.current.children[selectedIndex] as HTMLElement | undefined;
+      activeEl?.scrollIntoView({ block: 'nearest' });
+    }
+  }, [selectedIndex, isOpen]);
+
   // Global Keyboard Shortcuts (⌘K, /, Escape)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
