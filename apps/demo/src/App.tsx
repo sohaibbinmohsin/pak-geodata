@@ -4,6 +4,7 @@ import MapCanvas from './components/MapCanvas';
 import CityPills from './components/CityPills';
 import Omnibar from './components/Omnibar';
 import ReverseGeoCard, { type ReverseGeoPoint } from './components/ReverseGeoCard';
+import AreaInspector from './components/AreaInspector';
 import { getAllAreas, getCityById, type PakistanArea, type PakistanCity } from 'pak-geodata';
 
 export default function App() {
@@ -20,6 +21,9 @@ export default function App() {
 
   const handleSelectArea = (area: PakistanArea | null) => {
     setSelectedArea(area);
+    if (area) {
+      setReverseGeoPoint(null);
+    }
     if (area && selectedCity && selectedCity.id !== area.cityId) {
       const targetCity = getCityById(area.cityId);
       if (targetCity) {
@@ -60,8 +64,16 @@ export default function App() {
         />
       </div>
 
+      {/* Floating Area Inspector Drawer */}
+      {selectedArea && (
+        <AreaInspector
+          area={selectedArea}
+          onClose={() => setSelectedArea(null)}
+        />
+      )}
+
       {/* Floating Reverse Geocode Result Card */}
-      {reverseGeoPoint && (
+      {reverseGeoPoint && !selectedArea && (
         <div className="fixed bottom-5 left-4 sm:left-6 z-40 max-w-sm w-[calc(100vw-2rem)] sm:w-96 pointer-events-none">
           <ReverseGeoCard
             point={reverseGeoPoint}

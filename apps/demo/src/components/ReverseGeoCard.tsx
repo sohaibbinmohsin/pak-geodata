@@ -95,6 +95,9 @@ export default function ReverseGeoCard({
             <div className="text-base font-semibold text-white tracking-tight leading-tight truncate">
               {nearest.name}
             </div>
+            <div className="text-[11px] font-mono text-emerald-400/80 truncate" title={`Canonical Slug: ${nearest.id}`}>
+              {nearest.id}
+            </div>
           </div>
 
           {/* City Scope Badge */}
