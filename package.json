@@ -2,10 +2,13 @@
   "name": "pak-geodata-monorepo",
   "private": true,
   "workspaces": [
-    "packages/npm"
+    "packages/*",
+    "apps/*"
   ],
   "scripts": {
     "build": "tsx scripts/build.ts",
+    "build:demo": "npm run build --workspace=apps/demo",
+    "dev:demo": "npm run dev --workspace=apps/demo",
     "lint": "tsc --noEmit",
     "test": "tsx --test \"tests/**/*.test.ts\" \"scripts/**/*.test.ts\" \"packages/npm/tests/**/*.test.ts\" && python3 -m unittest discover -s packages/pypi/tests",
     "verify": "tsx scripts/verify.ts"
