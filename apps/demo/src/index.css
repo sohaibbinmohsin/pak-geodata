@@ -70,12 +70,208 @@ body {
   line-height: 1.8;
 }
 
-/* Leaflet Container Overrides */
+/* Leaflet Container & Glass Overrides */
 .leaflet-container {
   width: 100%;
   height: 100%;
   background-color: #0b0f17 !important;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif !important;
+}
+
+/* Custom Leaflet Marker Styling */
+.pak-custom-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.pak-pin-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: bottom center;
+  transition: transform 180ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pak-pin-container:hover {
+  transform: scale(1.15) translateY(-2px);
+  z-index: 999;
+}
+
+.pak-pin-container.is-selected {
+  transform: scale(1.25) translateY(-4px);
+  z-index: 1000;
+}
+
+.pak-pin-svg {
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 6px rgba(16, 185, 129, 0.5));
+  transition: filter 180ms ease;
+}
+
+.pak-pin-container.is-selected .pak-pin-svg {
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 14px rgba(52, 211, 153, 0.95));
+}
+
+.pak-pin-beacon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 6px;
+  border-radius: 9999px;
+  background: rgba(16, 185, 129, 0.45);
+  filter: blur(1px);
+  animation: pak-beacon-pulse 2.4s ease-out infinite;
+  pointer-events: none;
+}
+
+.pak-pin-beacon-selected {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 22px;
+  height: 8px;
+  border-radius: 9999px;
+  background: rgba(52, 211, 153, 0.7);
+  filter: blur(1px);
+  animation: pak-beacon-pulse-selected 1.6s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes pak-beacon-pulse {
+  0% {
+    transform: translateX(-50%) scale(0.6);
+    opacity: 0.8;
+  }
+  70% {
+    transform: translateX(-50%) scale(2.2);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes pak-beacon-pulse-selected {
+  0% {
+    transform: translateX(-50%) scale(0.8);
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(-50%) scale(2.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) scale(2.8);
+    opacity: 0;
+  }
+}
+
+/* Leaflet Popup Apple Design Overrides */
+.leaflet-popup-content-wrapper {
+  background: rgba(18, 18, 24, 0.92) !important;
+  backdrop-filter: blur(24px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.7), 0 0 1px 1px rgba(255, 255, 255, 0.05) !important;
+  padding: 0 !important;
+  overflow: hidden;
+  color: #f3f4f6 !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background: rgba(18, 18, 24, 0.92) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: none !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  color: #9ca3af !important;
+  padding: 8px 10px !important;
+  top: 4px !important;
+  right: 4px !important;
+  font-size: 16px !important;
+  transition: color 150ms ease;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: #ffffff !important;
+}
+
+/* Tooltip Apple Glass Overrides */
+.leaflet-tooltip.pak-tooltip {
+  background: rgba(18, 18, 24, 0.88) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 8px !important;
+  color: #f3f4f6 !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6) !important;
+  padding: 4px 8px !important;
+}
+
+.leaflet-tooltip.pak-tooltip::before {
+  border-top-color: rgba(18, 18, 24, 0.88) !important;
+}
+
+/* Leaflet Zoom Control Glass Overrides */
+.leaflet-control-zoom {
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+  margin-right: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+.leaflet-control-zoom a {
+  background: rgba(18, 18, 24, 0.82) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  color: #d1d5db !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 32px !important;
+  transition: all 120ms ease !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: rgba(30, 30, 42, 0.95) !important;
+  color: #ffffff !important;
+}
+
+/* Leaflet Attribution Subtle Capsule */
+.leaflet-control-attribution {
+  background: rgba(11, 15, 23, 0.78) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  color: #6b7280 !important;
+  font-size: 10px !important;
+  border-radius: 6px !important;
+  margin: 0 8px 8px 0 !important;
+  padding: 2px 6px !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.leaflet-control-attribution a {
+  color: #9ca3af !important;
+  text-decoration: none !important;
+}
+
+.leaflet-control-attribution a:hover {
+  color: #34d399 !important;
 }
 
 /* Custom Sleek Scrollbar */

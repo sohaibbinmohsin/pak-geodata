@@ -189,7 +189,7 @@ export default function Header({ className = '' }: HeaderProps) {
           >
             <Github className="w-3.5 h-3.5 text-neutral-300" />
             <span className="hidden sm:inline">GitHub</span>
-            <span className="inline-flex items-center gap-0.5 text-[10px] text-amber-300 bg-amber-400/10 border border-amber-400/20 px-1.5 py-0.2 rounded font-mono">
+            <span className="inline-flex items-center gap-0.5 text-[10px] text-amber-300 bg-amber-400/10 border border-amber-400/20 px-1.5 py-0.5 rounded font-mono">
               <Star className="w-2.5 h-2.5 fill-amber-400 text-amber-400" />
               <span>Star</span>
             </span>
