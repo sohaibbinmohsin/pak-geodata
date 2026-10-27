@@ -75,3 +75,14 @@ test('getNearestArea options: maxDistanceKm is respected', () => {
   const nearest = getNearestArea(remoteCoords, { maxDistanceKm: 5 });
   assert.equal(nearest, null);
 });
+
+test('getNearestArea spatial pruning respects provinceId when coords are inside a different province city box', () => {
+  // Islamabad coordinates (inside Islamabad city bounding box, provinceId: 'islamabad-ict')
+  // Caller explicitly filters by provinceId: 'punjab' (which borders Islamabad)
+  const isbCoords = { lat: 33.7299, lng: 73.0746 };
+  const nearestInPunjab = getNearestArea(isbCoords, { provinceId: 'punjab' });
+
+  assert.ok(nearestInPunjab, 'Must find nearest area in Punjab rather than returning null');
+  assert.equal(nearestInPunjab.provinceId, 'punjab');
+  assert.equal(nearestInPunjab.cityId, 'rawalpindi');
+});

@@ -11,7 +11,6 @@ interface NormalizedCandidate {
   readonly rawUrdu: string;
   readonly normAliases: readonly string[];
   readonly allText: string;
-  readonly tokens: readonly string[];
 }
 
 function normalizeString(str: string): string {
@@ -51,7 +50,6 @@ function createNormalizedCandidate(area: PakistanArea): NormalizedCandidate {
   const normUrdu = area.urduName ? normalizeUrduText(area.urduName) : '';
   const normAliases = area.aliases.map((a) => normalizeString(a));
   const allText = `${normName} ${normId} ${normAliases.join(' ')} ${normUrdu} ${rawUrdu}`.trim();
-  const tokens = Array.from(new Set(allText.split(' ').filter(Boolean)));
   return {
     area,
     normName,
@@ -59,8 +57,7 @@ function createNormalizedCandidate(area: PakistanArea): NormalizedCandidate {
     normUrdu,
     rawUrdu,
     normAliases,
-    allText,
-    tokens
+    allText
   };
 }
 

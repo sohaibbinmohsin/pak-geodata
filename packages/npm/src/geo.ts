@@ -92,6 +92,11 @@ export function getNearestArea(
     return null;
   }
 
+  const provKey =
+    options?.provinceId && typeof options.provinceId === 'string'
+      ? options.provinceId.toLowerCase().trim()
+      : undefined;
+
   let filtered = candidateAreas;
 
   if (options?.cityId && typeof options.cityId === 'string') {
@@ -101,27 +106,41 @@ export function getNearestArea(
     } else {
       filtered = filtered.filter((a) => a.cityId.toLowerCase() === cityId);
     }
+    if (provKey) {
+      filtered = filtered.filter((a) => a.provinceId.toLowerCase() === provKey);
+    }
   } else {
     // Spatial bounding box pruning: check if point falls within any verified city bounds
+    // that matches the provinceId filter (if supplied)
     const matchingCity = cities.find(
-      (c) => c.bounds && isPointInBoundingBox(coords, c.bounds)
+      (c) =>
+        c.bounds &&
+        (!provKey || c.provinceId.toLowerCase() === provKey) &&
+        isPointInBoundingBox(coords, c.bounds)
     );
+
     if (matchingCity) {
       const cityId = matchingCity.id.toLowerCase();
-      const cityAreas =
+      let cityAreas =
         candidateAreas === allAreas
-          ? areasByCityMap.get(cityId)
+          ? areasByCityMap.get(cityId) || []
           : candidateAreas.filter((a) => a.cityId.toLowerCase() === cityId);
 
-      if (cityAreas && cityAreas.length > 0) {
-        filtered = cityAreas;
+      if (provKey) {
+        cityAreas = cityAreas.filter((a) => a.provinceId.toLowerCase() === provKey);
       }
-    }
-  }
 
-  if (options?.provinceId && typeof options.provinceId === 'string') {
-    const provinceId = options.provinceId.toLowerCase().trim();
-    filtered = filtered.filter((a) => a.provinceId.toLowerCase() === provinceId);
+      if (cityAreas.length > 0) {
+        filtered = cityAreas;
+      } else {
+        // Fall back to candidate pool filtered by province
+        filtered = provKey
+          ? candidateAreas.filter((a) => a.provinceId.toLowerCase() === provKey)
+          : candidateAreas;
+      }
+    } else if (provKey) {
+      filtered = candidateAreas.filter((a) => a.provinceId.toLowerCase() === provKey);
+    }
   }
 
   if (filtered.length === 0) {
