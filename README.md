@@ -8,7 +8,7 @@
 
 > Comprehensive, typed, offline geographic data for all areas and cities in Pakistan.
 
-`pak-geodata` is an open-source, production-grade geospatial foundation for Pakistan, developed and maintained by [Sohaib Bin Mohsin](https://sohaibbinmohsin.com) at [The Mohsin Project Global](https://themohsinproject.org).
+`pak-geodata` is an open-source, production-grade geospatial foundation for Pakistan.
 
 It provides offline access to verified geographic datasets for Pakistan's provinces, territories, cities, and metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers), distributed simultaneously for **TypeScript/Node.js** and **Python** with **zero runtime dependencies**.
 
@@ -40,6 +40,7 @@ Developers building address autocompletion, checkout forms, delivery routing, re
 - 📍 **Spatial Reverse Geocoding**: Nearest neighbor resolution via spherical Haversine formula (`getNearestArea` / `get_nearest_area`).
 - 📮 **Pakistan Post Codes**: 5-digit postal code resolution and reverse lookups.
 - 🌲 **Tree-Shakeable Subpaths**: Modular imports like `pak-geodata/areas/lahore` load only the desired city data (~15 to 26 KB).
+- 🏛️ **Bilingual Hierarchy & PWA Subpath**: Complete province $\rightarrow$ district $\rightarrow$ area hierarchy (`PakLocationItem`) and ultra-lightweight `< 5 KB` gzipped subpath export (`pak-geodata/hierarchy`) designed for emergency rescue PWAs.
 - 🗺️ **Live Interactive Web Demo**: Explore the [Live Interactive Demo](https://sohaibbinmohsin.github.io/pak-geodata/) to test multi-script search, interactive map exploration, and reverse geocoding in real-time.
 
 ---
@@ -216,7 +217,11 @@ import { lahoreAreas } from 'pak-geodata/areas/lahore';
 // Bundle size: ~26 KB (Karachi only)
 import { karachiAreas } from 'pak-geodata/areas/karachi';
 
+// Lightweight PWA Administrative Hierarchy (< 5 KB gzipped)
+import { getCityName, getAreaName, getProvincesAsLocationItems, getCitiesAsLocationItems } from 'pak-geodata/hierarchy';
+
 // Available subpaths:
+// pak-geodata/hierarchy (Administrative boundaries, O(1) bilingual lookups, zero area bloat)
 // pak-geodata/areas/lahore
 // pak-geodata/areas/karachi
 // pak-geodata/areas/islamabad
@@ -282,7 +287,426 @@ print(f"Distance between Lahore and Karachi: {round(dist)} km")
 
 ---
 
+## Sanctuary Integration Guide
+
+This guide details the specifications, design patterns, and copy-pasteable TypeScript components designed for **Sanctuary**—an offline-capable emergency rescue reporting and tracking Progressive Web App (PWA) operating across Pakistan.
+
+### 1. Bilingual Administrative Hierarchy (`PakLocationItem`)
+
+Emergency medical rescue, disaster relief, and municipal response require traversing hierarchical administrative boundaries from provinces to cities/districts down to neighborhood sectors. `pak-geodata` unifies these tiers into a single bilingual data model: `PakLocationItem`.
+
+```typescript
+export type PakLocationType = 'province' | 'division' | 'district' | 'tehsil' | 'area';
+
+export interface PakLocationItem {
+  id: string;                    // Canonical identifier (e.g. "punjab", "lahore", "lahore-gulberg-iii")
+  nameEn: string;                // Standardized English name (e.g. "Punjab", "Lahore", "Gulberg III")
+  nameUr: string;                // Native Urdu script (e.g. "پنجاب", "لاہور", "گلبرگ ۳")
+  type: PakLocationType;         // Administrative level classification
+  parentId?: string;             // Hierarchy parent reference (e.g. area -> cityId -> provinceId)
+  coordinates?: {
+    lat: number;
+    lng: number;
+  };
+}
+```
+
+#### Hierarchy Traversal Helpers
+
+- **`getProvincesAsLocationItems(): PakLocationItem[]`**: Returns all 7 provinces and federal territories (`type: 'province'`).
+- **`getCitiesAsLocationItems(provinceId?: string): PakLocationItem[]`**: Returns verified municipal cities/districts (`type: 'district'`), optionally filtered by parent province.
+- **`getAreasAsLocationItems(cityKey: string): PakLocationItem[]`**: Returns all verified areas in a given city (`type: 'area'`), linked via `parentId`.
+- **`toLocationItem(entity)`**: Universal mapper converting any raw `PakistanProvince`, `PakistanCity`, or `PakistanArea` into a unified `PakLocationItem`.
+
+```typescript
+import {
+  getProvincesAsLocationItems,
+  getCitiesAsLocationItems,
+  getAreasAsLocationItems
+} from 'pak-geodata';
+
+// Load provinces for administrative navigation
+const provinces = getProvincesAsLocationItems();
+
+// Load cities in Punjab
+const punjabCities = getCitiesAsLocationItems('punjab');
+
+// Load neighborhood areas in Lahore
+const lahoreAreas = getAreasAsLocationItems('lahore');
+```
+
+---
+
+### 2. Standardized English Storage & Localized Display
+
+#### Architectural Rationale
+In mission-critical platforms with distributed mobile nodes (SQLite, PowerSync, CouchDB, PostgreSQL), saving free-form Urdu or mixed transliterations directly into primary database columns causes index fragmentation, sorting anomalies, and inter-system synchronization failures.
+
+**The Solution:**
+1. **Database / Persistence Layer**: Always persist canonical, standardized English strings:
+   ```json
+   {
+     "reportNumber": "SANCTUARY-92810",
+     "city": "Lahore",
+     "location_area": "Gulberg",
+     "status": "DISPATCHED"
+   }
+   ```
+2. **Client-Side Presentation Layer**: Resolve these keys dynamically at render time into English or native Urdu Nastaliq using resilient O(1) lookup helpers.
+
+#### Resilient O(1) Lookup Helpers
+
+- **`getCityName(key: string, lang?: 'en' | 'ur'): string`**  
+  Resolves a city slug (`"lahore"`), title-cased name (`"Lahore"`), or Urdu representation (`"لاہور"`) to the requested language.
+  - `getCityName("Lahore", "ur")` $\rightarrow$ `"لاہور"`
+  - `getCityName("lahore", "en")` $\rightarrow$ `"Lahore"`
+  - Safe fallback: returns the raw input `key` unchanged if the city is custom or unverified.
+
+- **`getAreaName(cityKey: string, areaKey: string, lang?: 'en' | 'ur'): string`**  
+  Resolves an area within a city using compound O(1) indexing (`${cityKey}:${areaKey}`). Supports:
+  - Canonical slugs: `"lahore-gulberg-iii"`
+  - Short slugs without city prefix: `"gulberg-iii"`
+  - Title-cased names: `"Gulberg III"`
+  - Colloquial aliases: `"Gulberg"`, `"dha 5"`
+  - Urdu script names: `"گلبرگ ۳"`
+  - Returns: `"Gulberg III"` (for `'en'`) or `"گلبرگ ۳"` (for `'ur'`).
+  - Safe fallback: returns `areaKey` unchanged if custom-entered or unverified.
+
+```typescript
+import { getCityName, getAreaName } from 'pak-geodata';
+
+// Standardized DB record:
+const incident = { city: 'Lahore', location_area: 'Gulberg' };
+
+// English UI presentation:
+const enLabel = `${getAreaName(incident.city, incident.location_area, 'en')}, ${getCityName(incident.city, 'en')}`;
+// => "Gulberg III, Lahore"
+
+// Urdu UI presentation:
+const urLabel = `${getCityName(incident.city, 'ur')}، ${getAreaName(incident.city, incident.location_area, 'ur')}`;
+// => "لاہور، گلبرگ ۳"
+```
+
+---
+
+### 3. Autocomplete Search with Overloaded `searchAreas` & Urdu Normalization
+
+Sanctuary provides emergency autocomplete search scoped to a chosen city, returning typed `PakLocationItem[]` candidates.
+
+#### Function Overload Signatures
+
+```typescript
+// 1. Sanctuary Overload (city-scoped, returns PakLocationItem[])
+function searchAreas(cityKey: string, query: string, lang?: 'en' | 'ur'): PakLocationItem[];
+
+// 2. Direct Named Function (same as Sanctuary overload)
+function searchLocationItems(cityKey: string, query: string, lang?: 'en' | 'ur'): PakLocationItem[];
+
+// 3. Classic GIS Overload (global or options-based, returns raw PakistanArea[])
+function searchAreas(query: string, options?: SearchOptions, candidateAreas?: readonly PakistanArea[]): PakistanArea[];
+```
+
+#### Urdu Script & Numeral Normalization
+
+Mobile keyboards across Pakistan produce character and numeral variations. `pak-geodata` pre-normalizes search indexes and queries with zero runtime performance cost:
+- **Numeral Unification**: Bidirectionally matches Eastern Arabic numerals (`۰ ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹`) and Western ASCII digits (`0-9`). Searching `"گلبرگ ۳"` matches `"Gulberg 3"`.
+- **Letter Variant Normalization**:
+  - Arabic Yeh (`ي`, U+064A) and Alef Maksura (`ى`, U+0649) map to Urdu Yeh (`ی`, U+06CC).
+  - Arabic Kaf (`ك`, U+0643) maps to Urdu Keheh (`ک`, U+06A9).
+  - Arabic Heh (`ه`, U+0647) maps to Urdu Goal Heh (`ہ`, U+06C1).
+- **Diacritic / Tashkeel Stripping**: Removes Zabar, Zer, Pesh, Tanween, Tashdeed, and Sukun (`[\u064B-\u065F\u0670]`).
+
+```typescript
+import { searchAreas } from 'pak-geodata';
+
+// Scoped bilingual search with Eastern Arabic numerals
+const results = searchAreas('Lahore', 'گلبرگ ۳', 'ur');
+console.log(results[0].nameEn); // "Gulberg III"
+console.log(results[0].nameUr); // "گلبرگ ۳"
+```
+
+---
+
+### 4. Lightweight PWA Subpath (`pak-geodata/hierarchy`)
+
+PWAs operating in low-connectivity 2G/3G environments need instant initial load times. The `./hierarchy` subpath contains administrative boundaries and O(1) lookup engines with **zero neighborhood geospatial overhead**:
+
+```typescript
+// ESM or CommonJS import
+import {
+  getCityName,
+  getAreaName,
+  getProvincesAsLocationItems,
+  getCitiesAsLocationItems,
+  getAreasAsLocationItems,
+  searchLocationItems,
+  toLocationItem
+} from 'pak-geodata/hierarchy';
+```
+
+- **Bundle footprint**: `< 15 KB` unminified, **`< 5 KB` gzipped**.
+- Enables lightweight service worker caching, instant app shell boots, and background sync.
+- Full neighborhood datasets can be code-split and loaded on demand per city via `pak-geodata/areas/<city>`.
+
+---
+
+### 5. Production Implementation Examples
+
+#### Example 1: Incident Reporting Intake Form (`/report`)
+
+This React / TypeScript component allows citizens and dispatchers to select a city, search areas with real-time bilingual feedback, and submit standardized English keys:
+
+```typescript
+import React, { useState, useMemo } from 'react';
+import {
+  getCitiesAsLocationItems,
+  searchAreas,
+  type PakLocationItem
+} from 'pak-geodata';
+
+interface IncidentReportPayload {
+  reportNumber: string;
+  city: string;            // Standardized English: e.g. "Lahore"
+  location_area: string;   // Standardized English: e.g. "Gulberg III"
+  coordinates?: {
+    lat: number;
+    lng: number;
+  };
+  notes: string;
+}
+
+interface IncidentReportFormProps {
+  lang: 'en' | 'ur';
+  onSubmitReport: (payload: IncidentReportPayload) => Promise<void>;
+}
+
+export function IncidentReportForm({ lang, onSubmitReport }: IncidentReportFormProps) {
+  const [selectedCityId, setSelectedCityId] = useState<string>('lahore');
+  const [areaQuery, setAreaQuery] = useState<string>('');
+  const [selectedArea, setSelectedArea] = useState<PakLocationItem | null>(null);
+  const [notes, setNotes] = useState<string>('');
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+
+  // 1. Load city options formatted for current language
+  const cities = useMemo(() => getCitiesAsLocationItems(), []);
+
+  // 2. City-scoped bilingual search: handles Urdu script, Eastern numerals ('۳'), and aliases
+  const areaSuggestions = useMemo(() => {
+    if (!areaQuery.trim() || !selectedCityId) return [];
+    // Invokes overloaded Sanctuary signature: searchAreas(cityKey, query, lang)
+    return searchAreas(selectedCityId, areaQuery, lang);
+  }, [selectedCityId, areaQuery, lang]);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!selectedArea) return;
+
+    setIsSubmitting(true);
+    try {
+      const selectedCityObj = cities.find((c) => c.id === selectedCityId);
+
+      // 3. Persist standardized English keys to database / backend
+      const payload: IncidentReportPayload = {
+        reportNumber: `SANCTUARY-${Date.now().toString().slice(-6)}`,
+        city: selectedCityObj?.nameEn || selectedCityId, // Persist English: "Lahore"
+        location_area: selectedArea.nameEn,             // Persist English: "Gulberg III"
+        coordinates: selectedArea.coordinates,
+        notes
+      };
+
+      await onSubmitReport(payload);
+      setAreaQuery('');
+      setSelectedArea(null);
+      setNotes('');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <form className="incident-form" onSubmit={handleSubmit} dir={lang === 'ur' ? 'rtl' : 'ltr'}>
+      <h2>{lang === 'ur' ? 'ایمرجنسی رپورٹ درج کریں' : 'Submit Emergency Report'}</h2>
+
+      {/* City Dropdown */}
+      <div className="form-group">
+        <label htmlFor="city-select">
+          {lang === 'ur' ? 'شہر منتخب کریں' : 'Select City'}
+        </label>
+        <select
+          id="city-select"
+          value={selectedCityId}
+          onChange={(e) => {
+            setSelectedCityId(e.target.value);
+            setSelectedArea(null);
+            setAreaQuery('');
+          }}
+        >
+          {cities.map((city) => (
+            <option key={city.id} value={city.id}>
+              {lang === 'ur' ? city.nameUr : city.nameEn}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* Area Search / Combobox */}
+      <div className="form-group autocomplete-container">
+        <label htmlFor="area-search">
+          {lang === 'ur' ? 'علاقہ / سیکٹر / محلہ' : 'Area / Neighborhood'}
+        </label>
+        <input
+          id="area-search"
+          type="text"
+          value={areaQuery}
+          onChange={(e) => {
+            setAreaQuery(e.target.value);
+            setSelectedArea(null);
+          }}
+          placeholder={lang === 'ur' ? 'تلاش کریں (مثلاً: گلبرگ، ڈی ایچ اے، ۳)' : 'Search (e.g. Gulberg, DHA, Phase 5)'}
+          autoComplete="off"
+        />
+
+        {/* Suggestion Dropdown */}
+        {areaSuggestions.length > 0 && !selectedArea && (
+          <ul className="suggestions-list">
+            {areaSuggestions.map((item) => (
+              <li
+                key={item.id}
+                onClick={() => {
+                  setSelectedArea(item);
+                  setAreaQuery(lang === 'ur' ? item.nameUr : item.nameEn);
+                }}
+              >
+                <span className="suggestion-primary">
+                  {lang === 'ur' ? item.nameUr : item.nameEn}
+                </span>
+                <span className="suggestion-secondary">
+                  {lang === 'ur' ? item.nameEn : item.nameUr}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+
+      {/* Additional Notes */}
+      <div className="form-group">
+        <label htmlFor="notes">
+          {lang === 'ur' ? 'واقعے کی تفصیلات' : 'Incident Details'}
+        </label>
+        <textarea
+          id="notes"
+          value={notes}
+          onChange={(e) => setNotes(e.target.value)}
+          rows={3}
+        />
+      </div>
+
+      <button type="submit" disabled={!selectedArea || isSubmitting}>
+        {isSubmitting
+          ? (lang === 'ur' ? 'رپورٹ بھیجی جا رہی ہے...' : 'Submitting...')
+          : (lang === 'ur' ? 'ایمرجنسی ٹیم طلب کریں' : 'Request Emergency Rescue')}
+      </button>
+    </form>
+  );
+}
+```
+
+---
+
+#### Example 2: Emergency Incident Tracking View (`/report/track/:reportNumber`)
+
+This React / TypeScript component loads a database record with standardized English fields and dynamically resolves the city and area names using the lightweight `< 5 KB` `pak-geodata/hierarchy` subpath:
+
+```typescript
+import React from 'react';
+import {
+  getCityName,
+  getAreaName
+} from 'pak-geodata/hierarchy'; // Ultra-lightweight subpath (< 5 KB gzipped)
+
+export interface RescueIncidentRecord {
+  reportNumber: string;
+  city: string;            // Stored English key: e.g. "Lahore"
+  location_area: string;   // Stored English key or alias: e.g. "Gulberg"
+  status: 'RECEIVED' | 'DISPATCHED' | 'EN_ROUTE' | 'ON_SCENE' | 'RESOLVED';
+  reportedAt: string;
+}
+
+interface IncidentTrackingViewProps {
+  incident: RescueIncidentRecord;
+  lang: 'en' | 'ur';
+}
+
+export function IncidentTrackingView({ incident, lang }: IncidentTrackingViewProps) {
+  // O(1) Resilient Lookups: resolves slugs, English names, and aliases in O(1) time
+  // e.g. "Lahore" -> "لاہور", "Gulberg" -> "گلبرگ ۳"
+  const localizedCity = getCityName(incident.city, lang);
+  const localizedArea = getAreaName(incident.city, incident.location_area, lang);
+
+  const statusMap = {
+    RECEIVED: { en: 'Report Received', ur: 'رپورٹ موصول ہو چکی ہے', color: '#f59e0b' },
+    DISPATCHED: { en: 'Rescue Team Dispatched', ur: 'ریسکیو ٹیم روانہ ہو چکی ہے', color: '#3b82f6' },
+    EN_ROUTE: { en: 'En Route to Location', ur: 'ٹیم جائے وقوعہ کی طرف گامزن ہے', color: '#6366f1' },
+    ON_SCENE: { en: 'Team on Scene', ur: 'ٹیم جائے وقوعہ پر پہنچ چکی ہے', color: '#10b981' },
+    RESOLVED: { en: 'Incident Resolved', ur: 'ریسکیو مشن مکمل', color: '#059669' }
+  };
+
+  const currentStatus = statusMap[incident.status] || statusMap.RECEIVED;
+
+  return (
+    <div className="tracking-card" dir={lang === 'ur' ? 'rtl' : 'ltr'}>
+      <header className="tracking-header">
+        <span className="badge">
+          {lang === 'ur' ? 'رپورٹ نمبر:' : 'Report #:'} {incident.reportNumber}
+        </span>
+        <span className="timestamp">
+          {new Date(incident.reportedAt).toLocaleTimeString()}
+        </span>
+      </header>
+
+      {/* Localized Location Display */}
+      <div className="tracking-location-section">
+        <div className="location-pin">📍</div>
+        <div className="location-details">
+          <h3>
+            {lang === 'ur'
+              ? `${localizedCity}، ${localizedArea}`
+              : `${localizedArea}, ${localizedCity}`}
+          </h3>
+          <p className="canonical-subtext">
+            {incident.location_area}, {incident.city}
+          </p>
+        </div>
+      </div>
+
+      {/* Real-time Status */}
+      <div className="tracking-status" style={{ borderColor: currentStatus.color }}>
+        <div className="status-indicator" style={{ backgroundColor: currentStatus.color }} />
+        <span className="status-label">
+          {currentStatus[lang]}
+        </span>
+      </div>
+    </div>
+  );
+}
+```
+
+---
+
 ## Data Schema Reference
+
+### `PakLocationItem`
+Represents an administrative unit in the hierarchical bilingual tree (province, district, or area).
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `id` | `string` | Canonical slug identifier (e.g. `"punjab"`, `"lahore"`, `"lahore-gulberg-iii"`) |
+| `nameEn` | `string` | Standardized English display name (e.g. `"Punjab"`, `"Lahore"`, `"Gulberg III"`) |
+| `nameUr` | `string` | Native Urdu script name (e.g. `"پنجاب"`, `"لاہور"`, `"گلبرگ ۳"`) |
+| `type` | `PakLocationType` | Classification: `'province'`, `'division'`, `'district'`, `'tehsil'`, or `'area'` |
+| `parentId` | `string?` | Parent identifier in hierarchy tree (area $\rightarrow$ cityId $\rightarrow$ provinceId) |
+| `coordinates` | `{ lat: number, lng: number }?` | Centroid GPS coordinates (WGS 84) |
 
 ### `PakistanArea`
 Represents a neighborhood, sector, housing scheme, or commercial zone.
