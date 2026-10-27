@@ -1,5 +1,6 @@
 import type { Coordinates, NearestAreaOptions, PakistanArea } from './types.js';
 import { allAreas } from './data/areas/index.js';
+import { cities } from './data/cities.js';
 
 // Pre-indexed lookup map for O(1) candidate pool selection by city
 const areasByCityMap = new Map<string, PakistanArea[]>();
@@ -8,6 +9,37 @@ for (const a of allAreas) {
   const list = areasByCityMap.get(cityKey) || [];
   list.push(a);
   areasByCityMap.set(cityKey, list);
+}
+
+/**
+ * Checks whether a given geographic coordinate point falls within a rectangular bounding box.
+ *
+ * @param coords - Point coordinates { lat, lng }
+ * @param bounds - Rectangular bounding box with minLat, maxLat, minLng, maxLng
+ * @returns true if the point is contained within bounds, false otherwise
+ */
+export function isPointInBoundingBox(
+  coords: Coordinates,
+  bounds?: { minLat: number; maxLat: number; minLng: number; maxLng: number }
+): boolean {
+  if (!coords || typeof coords.lat !== 'number' || typeof coords.lng !== 'number') {
+    return false;
+  }
+  if (
+    !bounds ||
+    typeof bounds.minLat !== 'number' ||
+    typeof bounds.maxLat !== 'number' ||
+    typeof bounds.minLng !== 'number' ||
+    typeof bounds.maxLng !== 'number'
+  ) {
+    return false;
+  }
+  return (
+    coords.lat >= bounds.minLat &&
+    coords.lat <= bounds.maxLat &&
+    coords.lng >= bounds.minLng &&
+    coords.lng <= bounds.maxLng
+  );
 }
 
 /**
@@ -39,6 +71,13 @@ export function haversineDistanceKm(c1: Coordinates, c2: Coordinates): number {
 /**
  * Finds the nearest verified PakistanArea to the given coordinates.
  *
+ * Performance optimization:
+ * When options.cityId is NOT provided, checks city bounding boxes first.
+ * If the point falls inside a verified city's bounding box that has areas,
+ * candidate areas are pruned to that city before running the Haversine trigonometric loop.
+ * If no city box matches (or the matching city has no verified areas in the pool),
+ * falls back to searching all candidate areas.
+ *
  * @param coords - Coordinates to search near
  * @param options - Optional filters (cityId, provinceId, maxDistanceKm)
  * @param candidateAreas - Optional custom pool of areas (defaults to all verified areas)
@@ -49,6 +88,10 @@ export function getNearestArea(
   options?: NearestAreaOptions,
   candidateAreas: readonly PakistanArea[] = allAreas
 ): PakistanArea | null {
+  if (!coords || typeof coords.lat !== 'number' || typeof coords.lng !== 'number') {
+    return null;
+  }
+
   let filtered = candidateAreas;
 
   if (options?.cityId && typeof options.cityId === 'string') {
@@ -57,6 +100,22 @@ export function getNearestArea(
       filtered = areasByCityMap.get(cityId) || [];
     } else {
       filtered = filtered.filter((a) => a.cityId.toLowerCase() === cityId);
+    }
+  } else {
+    // Spatial bounding box pruning: check if point falls within any verified city bounds
+    const matchingCity = cities.find(
+      (c) => c.bounds && isPointInBoundingBox(coords, c.bounds)
+    );
+    if (matchingCity) {
+      const cityId = matchingCity.id.toLowerCase();
+      const cityAreas =
+        candidateAreas === allAreas
+          ? areasByCityMap.get(cityId)
+          : candidateAreas.filter((a) => a.cityId.toLowerCase() === cityId);
+
+      if (cityAreas && cityAreas.length > 0) {
+        filtered = cityAreas;
+      }
     }
   }
 
