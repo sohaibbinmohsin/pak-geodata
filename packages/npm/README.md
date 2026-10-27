@@ -203,7 +203,7 @@ const punjabCities = getCitiesAsLocationItems('punjab');
 console.log(`Punjab has ${punjabCities.length} verified cities/districts`);
 
 // 3. City-scoped bilingual search (Sanctuary overload)
-const results = searchAreas('Lahore', 'DHA', 'ur');
+const results = searchAreas('Lahore', 'DHA 5', 'ur');
 console.log(results[0]);
 // { id: 'lahore-dha-phase-5', nameEn: 'DHA Phase 5', nameUr: 'ڈی ایچ اے فیز ۵', type: 'area', parentId: 'lahore', ... }
 ```
@@ -330,12 +330,12 @@ function searchAreas(query: string, options?: SearchOptions, candidateAreas?: re
 #### Urdu Script & Numeral Normalization Engine
 
 Mobile users and rescue field operators in Pakistan frequently switch between English, Urdu Nastaliq keyboards, and Arabic numeral settings. `pak-geodata` transparently pre-normalizes search terms with zero runtime performance cost:
-- **Numeral Unification**: Eastern Arabic numerals (`۰ ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹`) and Western digits (`0-9`) match bidirectionally (`"گلبرگ ۳"` matches `"Gulberg 3"`).
+- **Numeral Unification**: Eastern Arabic-Indic numerals (`۰-۹`), standard Arabic-Indic digits (`٠-٩`), and Western digits (`0-9`) match bidirectionally (`"گلبرگ ۳"` or `"گلبرگ ٣"` matches `"Gulberg 3"`).
 - **Letter Variant Normalization**:
   - Arabic Yeh (`ي`, U+064A) and Alef Maksura (`ى`, U+0649) map to Urdu Yeh (`ی`, U+06CC).
   - Arabic Kaf (`ك`, U+0643) maps to Urdu Keheh (`ک`, U+06A9).
   - Arabic Heh (`ه`, U+0647) maps to Urdu Goal Heh (`ہ`, U+06C1).
-- **Diacritic / Tashkeel Stripping**: Removes Zabar, Zer, Pesh, Tanween, Tashdeed, and Sukun (`[\u064B-\u065F\u0670]`).
+- **Diacritic / Tashkeel & Tatweel Stripping**: Removes Zabar, Zer, Pesh, Tanween, Tashdeed, Sukun, and Tatweel/Kashida (`[\u0640\u064B-\u065F\u0670]`).
 
 ```typescript
 import { searchAreas } from 'pak-geodata';

@@ -10,6 +10,9 @@ import {
 test('toWesternDigits converts Eastern numerals to Western ASCII digits', () => {
   assert.equal(toWesternDigits('گلبرگ ۳'), 'گلبرگ 3');
   assert.equal(toWesternDigits('۱۲۳۴۵۶۷۸۹۰'), '1234567890');
+  // Standard Arabic-Indic digits (\u0660-\u0669)
+  assert.equal(toWesternDigits('٠١٢٣٤٥٦٧٨٩'), '0123456789');
+  assert.equal(toWesternDigits('گلبرگ ٣'), 'گلبرگ 3');
   // @ts-expect-error test non-string defensive handling
   assert.equal(toWesternDigits(null), '');
 });
@@ -21,8 +24,11 @@ test('toEasternDigits converts Western digits to Eastern Arabic numerals', () =>
   assert.equal(toEasternDigits(undefined), '');
 });
 
-test('stripUrduDiacritics removes Aerab / Tashkeel', () => {
+test('stripUrduDiacritics removes Aerab / Tashkeel and Tatweel', () => {
   assert.equal(stripUrduDiacritics('لَاہَوْر'), 'لاہور');
+  // Tatweel / Kashida (\u0640)
+  assert.equal(stripUrduDiacritics('لـاہـور'), 'لاہور');
+  assert.equal(stripUrduDiacritics('لَـاہَـوْر'), 'لاہور');
   // @ts-expect-error test non-string defensive handling
   assert.equal(stripUrduDiacritics(123), '');
 });

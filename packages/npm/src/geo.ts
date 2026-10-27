@@ -112,26 +112,30 @@ export function getNearestArea(
   } else {
     // Spatial bounding box pruning: check if point falls within any verified city bounds
     // that matches the provinceId filter (if supplied)
-    const matchingCity = cities.find(
+    const matchingCities = cities.filter(
       (c) =>
         c.bounds &&
         (!provKey || c.provinceId.toLowerCase() === provKey) &&
         isPointInBoundingBox(coords, c.bounds)
     );
 
-    if (matchingCity) {
-      const cityId = matchingCity.id.toLowerCase();
-      let cityAreas =
-        candidateAreas === allAreas
-          ? areasByCityMap.get(cityId) || []
-          : candidateAreas.filter((a) => a.cityId.toLowerCase() === cityId);
+    if (matchingCities.length > 0) {
+      const pooledAreas: PakistanArea[] = [];
+      for (const mc of matchingCities) {
+        const cityId = mc.id.toLowerCase();
+        let cityAreas =
+          candidateAreas === allAreas
+            ? areasByCityMap.get(cityId) || []
+            : candidateAreas.filter((a) => a.cityId.toLowerCase() === cityId);
 
-      if (provKey) {
-        cityAreas = cityAreas.filter((a) => a.provinceId.toLowerCase() === provKey);
+        if (provKey) {
+          cityAreas = cityAreas.filter((a) => a.provinceId.toLowerCase() === provKey);
+        }
+        pooledAreas.push(...cityAreas);
       }
 
-      if (cityAreas.length > 0) {
-        filtered = cityAreas;
+      if (pooledAreas.length > 0) {
+        filtered = pooledAreas;
       } else {
         // Fall back to candidate pool filtered by province
         filtered = provKey

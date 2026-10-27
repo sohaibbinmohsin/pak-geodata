@@ -86,3 +86,13 @@ test('getNearestArea spatial pruning respects provinceId when coords are inside 
   assert.equal(nearestInPunjab.provinceId, 'punjab');
   assert.equal(nearestInPunjab.cityId, 'rawalpindi');
 });
+
+test('getNearestArea spatial pruning: handles twin cities overlapping bounding boxes correctly', () => {
+  // Commercial Market Rawalpindi coordinates fall inside both Islamabad and Rawalpindi bounding boxes
+  const commercialMarketCoords = { lat: 33.642, lng: 73.072 };
+  const nearest = getNearestArea(commercialMarketCoords);
+
+  assert.ok(nearest, 'Should find nearest area');
+  assert.equal(nearest.id, 'rawalpindi-commercial-market', 'Must return Rawalpindi area instead of Islamabad');
+  assert.equal(nearest.cityId, 'rawalpindi');
+});

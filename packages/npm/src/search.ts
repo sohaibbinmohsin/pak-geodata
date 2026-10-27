@@ -1,7 +1,7 @@
 import type { PakistanArea, SearchOptions, PakLocationItem } from './types.js';
 import { allAreas } from './data/areas/index.js';
 import { normalizeUrduText } from './urdu.js';
-import { searchLocationItems } from './hierarchy.js';
+import { toLocationItem, cityLookupMap } from './hierarchy.js';
 
 interface NormalizedCandidate {
   readonly area: PakistanArea;
@@ -251,6 +251,36 @@ function classicSearchAreas(
   }
 
   return results;
+}
+
+/**
+ * Searches areas within a specific city and returns ranked results as PakLocationItem[].
+ *
+ * Each returned PakLocationItem always contains both English (`nameEn`) and Urdu (`nameUr`) names.
+ * The `_lang` parameter is accepted for Sanctuary compatibility.
+ *
+ * @param cityKey - City identifier, English name, or Urdu name
+ * @param query - Search term (English or Urdu)
+ * @param _lang - Optional language code accepted for Sanctuary compatibility
+ * @returns Ranked array of PakLocationItem elements
+ */
+export function searchLocationItems(
+  cityKey: string,
+  query: string,
+  _lang?: 'en' | 'ur'
+): PakLocationItem[] {
+  if (typeof cityKey !== 'string' || typeof query !== 'string') return [];
+  const trimmedCity = cityKey.trim();
+  const trimmedQuery = query.trim();
+  if (!trimmedCity || !trimmedQuery) return [];
+
+  const city =
+    cityLookupMap.get(trimmedCity.toLowerCase()) ||
+    cityLookupMap.get(normalizeUrduText(trimmedCity));
+  if (!city) return [];
+
+  const results = classicSearchAreas(trimmedQuery, { cityId: city.id });
+  return results.map(toLocationItem);
 }
 
 /**

@@ -1,6 +1,10 @@
 const EASTERN_TO_WESTERN_DIGITS: Record<string, string> = {
+  // Eastern Arabic-Indic digits (Urdu/Persian: \u06F0-\u06F9)
   '۰': '0', '۱': '1', '۲': '2', '۳': '3', '۴': '4',
-  '۵': '5', '۶': '6', '۷': '7', '۸': '8', '۹': '9'
+  '۵': '5', '۶': '6', '۷': '7', '۸': '8', '۹': '9',
+  // Standard Arabic-Indic digits (\u0660-\u0669)
+  '٠': '0', '١': '1', '٢': '2', '٣': '3', '٤': '4',
+  '٥': '5', '٦': '6', '٧': '7', '٨': '8', '٩': '9'
 };
 
 const WESTERN_TO_EASTERN_DIGITS: Record<string, string> = {
@@ -10,7 +14,7 @@ const WESTERN_TO_EASTERN_DIGITS: Record<string, string> = {
 
 export function toWesternDigits(text: string): string {
   if (typeof text !== 'string') return '';
-  return text.replace(/[۰-۹]/g, (char) => EASTERN_TO_WESTERN_DIGITS[char] || char);
+  return text.replace(/[۰-۹\u0660-\u0669]/g, (char) => EASTERN_TO_WESTERN_DIGITS[char] || char);
 }
 
 export function toEasternDigits(text: string): string {
@@ -20,8 +24,8 @@ export function toEasternDigits(text: string): string {
 
 export function stripUrduDiacritics(text: string): string {
   if (typeof text !== 'string') return '';
-  // Unicode range for Arabic/Urdu diacritics / tashkeel
-  return text.replace(/[\u064B-\u065F\u0670]/g, '');
+  // Unicode range for Arabic/Urdu diacritics / tashkeel and Tatweel (\u0640)
+  return text.replace(/[\u0640\u064B-\u065F\u0670]/g, '');
 }
 
 export function normalizeUrduText(text: string): string {

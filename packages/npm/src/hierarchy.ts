@@ -8,7 +8,6 @@ import { provinces } from './data/provinces.js';
 import { cities } from './data/cities.js';
 import { allAreas } from './data/areas/index.js';
 import { toEasternDigits, normalizeUrduText } from './urdu.js';
-import { searchAreas } from './search.js';
 
 /**
  * Pre-indexed lookup map for O(1) city lookups.
@@ -139,7 +138,10 @@ export function getCityName(key: string, lang: 'en' | 'ur' = 'en'): string {
   if (typeof key !== 'string') return '';
   const trimmed = key.trim();
   if (!trimmed) return '';
-  const city = cityLookupMap.get(trimmed.toLowerCase());
+  let city = cityLookupMap.get(trimmed.toLowerCase());
+  if (!city) {
+    city = cityLookupMap.get(normalizeUrduText(trimmed));
+  }
   if (!city) return key;
   return lang === 'ur' ? toEasternDigits(city.urduName) : city.name;
 }
@@ -158,9 +160,26 @@ export function getAreaName(cityKey: string, areaKey: string, lang: 'en' | 'ur' 
 
   let match = areaCompoundLookupMap.get(`${trimmedCity.toLowerCase()}:${trimmedArea.toLowerCase()}`);
   if (!match) {
-    const city = cityLookupMap.get(trimmedCity.toLowerCase());
+    const city =
+      cityLookupMap.get(trimmedCity.toLowerCase()) ||
+      cityLookupMap.get(normalizeUrduText(trimmedCity));
     if (city) {
       match = areaCompoundLookupMap.get(`${city.id}:${trimmedArea.toLowerCase()}`);
+    }
+  }
+
+  if (!match) {
+    const normArea = normalizeUrduText(trimmedArea);
+    if (normArea) {
+      match = areaCompoundLookupMap.get(`${trimmedCity.toLowerCase()}:${normArea}`);
+      if (!match) {
+        const city =
+          cityLookupMap.get(trimmedCity.toLowerCase()) ||
+          cityLookupMap.get(normalizeUrduText(trimmedCity));
+        if (city) {
+          match = areaCompoundLookupMap.get(`${city.id}:${normArea}`);
+        }
+      }
     }
   }
 
@@ -202,16 +221,22 @@ export function toLocationItem(
     };
   }
 
-  // 3. Area: has cityId
-  const area = entity as PakistanArea;
-  return {
-    id: canonicalAreaSlug(area),
-    nameEn: area.name,
-    nameUr: toEasternDigits(area.urduName || area.name),
-    type: 'area',
-    parentId: area.cityId,
-    coordinates: area.coordinates
-  };
+  // 3. Area: has cityId and name
+  if ('cityId' in entity && 'name' in entity) {
+    const area = entity as PakistanArea;
+    return {
+      id: canonicalAreaSlug(area),
+      nameEn: area.name,
+      nameUr: toEasternDigits(area.urduName || area.name),
+      type: 'area',
+      parentId: area.cityId,
+      coordinates: area.coordinates
+    };
+  }
+
+  throw new TypeError(
+    'Unrecognized location entity format: expected province, city, or area object'
+  );
 }
 
 /**
@@ -246,22 +271,4 @@ export function getAreasAsLocationItems(cityKey: string): PakLocationItem[] {
   return areas.map(toLocationItem);
 }
 
-/**
- * Searches areas within a specific city and returns ranked results as PakLocationItem[].
- */
-export function searchLocationItems(
-  cityKey: string,
-  query: string,
-  _lang?: 'en' | 'ur'
-): PakLocationItem[] {
-  if (typeof cityKey !== 'string' || typeof query !== 'string') return [];
-  const trimmedCity = cityKey.trim();
-  const trimmedQuery = query.trim();
-  if (!trimmedCity || !trimmedQuery) return [];
-
-  const city = cityLookupMap.get(trimmedCity.toLowerCase());
-  if (!city) return [];
-
-  const results = searchAreas(trimmedQuery, { cityId: city.id });
-  return results.map(toLocationItem);
-}
+export { searchLocationItems } from './search.js';

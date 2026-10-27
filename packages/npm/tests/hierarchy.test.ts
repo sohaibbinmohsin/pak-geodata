@@ -19,6 +19,9 @@ test('getCityName resolves title-cased English key and slug in en and ur', () =>
   assert.equal(getCityName('lahore', 'ur'), 'لاہور');
   assert.equal(getCityName('karachi', 'en'), 'Karachi');
   assert.equal(getCityName('karachi', 'ur'), 'کراچی');
+  // Normalized Urdu queries with diacritics / tashkeel
+  assert.equal(getCityName('لَاہَوْر', 'en'), 'Lahore');
+  assert.equal(getCityName('لَاہَوْر', 'ur'), 'لاہور');
   // Default language is English
   assert.equal(getCityName('Lahore'), 'Lahore');
   // Fallback for unverified city
@@ -116,6 +119,33 @@ test('toLocationItem handles individual entities directly', () => {
   assert.equal(aItem.nameUr, 'ماڈل ٹاؤن');
   assert.equal(aItem.type, 'area');
   assert.equal(aItem.parentId, 'lahore');
+});
+
+test('toLocationItem throws TypeError for unrecognized location entity format', () => {
+  assert.throws(
+    // @ts-expect-error test unrecognized format
+    () => toLocationItem({}),
+    {
+      name: 'TypeError',
+      message: 'Unrecognized location entity format: expected province, city, or area object'
+    }
+  );
+  assert.throws(
+    // @ts-expect-error test unrecognized format
+    () => toLocationItem({ title: 'Invalid Entity', id: 'unknown' }),
+    {
+      name: 'TypeError',
+      message: 'Unrecognized location entity format: expected province, city, or area object'
+    }
+  );
+  assert.throws(
+    // @ts-expect-error test non-object
+    () => toLocationItem(null),
+    {
+      name: 'TypeError',
+      message: 'Expected a valid location entity'
+    }
+  );
 });
 
 test('searchLocationItems returns PakLocationItem array scoped to city', () => {

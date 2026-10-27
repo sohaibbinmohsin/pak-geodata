@@ -409,12 +409,12 @@ function searchAreas(query: string, options?: SearchOptions, candidateAreas?: re
 #### Urdu Script & Numeral Normalization
 
 Mobile keyboards across Pakistan produce character and numeral variations. `pak-geodata` pre-normalizes search indexes and queries with zero runtime performance cost:
-- **Numeral Unification**: Bidirectionally matches Eastern Arabic numerals (`۰ ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹`) and Western ASCII digits (`0-9`). Searching `"گلبرگ ۳"` matches `"Gulberg 3"`.
+- **Numeral Unification**: Bidirectionally matches Eastern Arabic-Indic numerals (`۰-۹`), standard Arabic-Indic digits (`٠-٩`), and Western ASCII digits (`0-9`). Searching `"گلبرگ ۳"` or `"گلبرگ ٣"` matches `"Gulberg 3"`.
 - **Letter Variant Normalization**:
   - Arabic Yeh (`ي`, U+064A) and Alef Maksura (`ى`, U+0649) map to Urdu Yeh (`ی`, U+06CC).
   - Arabic Kaf (`ك`, U+0643) maps to Urdu Keheh (`ک`, U+06A9).
   - Arabic Heh (`ه`, U+0647) maps to Urdu Goal Heh (`ہ`, U+06C1).
-- **Diacritic / Tashkeel Stripping**: Removes Zabar, Zer, Pesh, Tanween, Tashdeed, and Sukun (`[\u064B-\u065F\u0670]`).
+- **Diacritic / Tashkeel & Tatweel Stripping**: Removes Zabar, Zer, Pesh, Tanween, Tashdeed, Sukun, and Tatweel/Kashida (`[\u0640\u064B-\u065F\u0670]`).
 
 ```typescript
 import { searchAreas } from 'pak-geodata';
