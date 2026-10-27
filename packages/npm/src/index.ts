@@ -1,20 +1,12 @@
 import type {
-  Coordinates,
-  AreaType,
   PakistanArea,
   PakistanCity,
-  PakistanProvince,
-  ProvinceType,
-  SearchOptions,
-  NearestAreaOptions
+  PakistanProvince
 } from './types.js';
 
 import { provinces } from './data/provinces.js';
 import { cities } from './data/cities.js';
 import { allAreas } from './data/areas/index.js';
-
-import { haversineDistanceKm, getNearestArea as baseGetNearestArea } from './geo.js';
-import { searchAreas as baseSearchAreas } from './search.js';
 
 // Pre-indexed lookup maps for O(1) lookups
 const provinceByIdMap = new Map<string, PakistanProvince>();
@@ -120,46 +112,30 @@ export function findAreasByPostalCode(postalCode: string | number): PakistanArea
   if (typeof postalCode !== 'string' && typeof postalCode !== 'number') return [];
   return [...(areasByPostalCodeMap.get(String(postalCode).trim()) || [])];
 }
+// Re-export search and spatial geocoding
+export { searchAreas } from './search.js';
+export { getNearestArea, haversineDistanceKm } from './geo.js';
 
-/**
- * Searches Pakistan areas using structured matching and ranking:
- * Exact match > Prefix match > Alias match > Substring / Token match > Fuzzy match.
- *
- * Scopes candidate pool via O(1) city map when options.cityId is provided.
- */
-export function searchAreas(
-  query: string,
-  options?: SearchOptions,
-  candidateAreas?: readonly PakistanArea[]
-): PakistanArea[] {
-  let pool = candidateAreas;
-  if (!pool && options?.cityId && typeof options.cityId === 'string') {
-    pool = areasByCityMap.get(options.cityId.toLowerCase().trim()) || [];
-  }
-  return baseSearchAreas(query, options, pool);
-}
+// Re-export Urdu normalization engine
+export {
+  normalizeUrduText,
+  toWesternDigits,
+  toEasternDigits,
+  stripUrduDiacritics
+} from './urdu.js';
 
-/**
- * Finds the nearest verified PakistanArea to the given coordinates.
- *
- * Scopes candidate pool via O(1) city map when options.cityId is provided.
- */
-export function getNearestArea(
-  coords: Coordinates,
-  options?: NearestAreaOptions,
-  candidateAreas?: readonly PakistanArea[]
-): PakistanArea | null {
-  let pool = candidateAreas;
-  if (!pool && options?.cityId && typeof options.cityId === 'string') {
-    pool = areasByCityMap.get(options.cityId.toLowerCase().trim()) || [];
-  }
-  return baseGetNearestArea(coords, options, pool);
-}
+// Re-export hierarchy and bilingual name lookups
+export {
+  getCityName,
+  getAreaName,
+  toLocationItem,
+  getProvincesAsLocationItems,
+  getCitiesAsLocationItems,
+  getAreasAsLocationItems,
+  searchLocationItems
+} from './hierarchy.js';
 
-// Re-export spatial distance utility
-export { haversineDistanceKm };
-
-// Re-export core types
+// Re-export core types and location item models
 export type {
   Coordinates,
   AreaType,
@@ -168,5 +144,9 @@ export type {
   PakistanProvince,
   ProvinceType,
   SearchOptions,
-  NearestAreaOptions
-};
+  NearestAreaOptions,
+  PakLocationType,
+  PakLocationItem,
+  ProvinceId,
+  CityId
+} from './types.js';

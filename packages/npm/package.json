@@ -17,6 +17,11 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
+    "./hierarchy": {
+      "types": "./dist/hierarchy.d.ts",
+      "import": "./dist/hierarchy.js",
+      "require": "./dist/hierarchy.cjs"
+    },
     "./areas/*": {
       "types": "./dist/areas/*.d.ts",
       "import": "./dist/areas/*.js",

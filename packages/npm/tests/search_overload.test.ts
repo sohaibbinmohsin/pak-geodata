@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { searchAreas } from '../src/search.js';
+import { searchAreas } from '../src/index.js';
 
 test('searchAreas overload 1: Sanctuary signature (cityKey, query, lang)', () => {
   const items = searchAreas('Lahore', 'DHA', 'ur');
