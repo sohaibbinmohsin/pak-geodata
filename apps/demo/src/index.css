@@ -94,6 +94,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif !important;
 }
 
+/* Watermark-Free Map Tile Dark Inversion Filter */
+.dark-tiles {
+  filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3);
+}
+
 /* Custom Leaflet Marker Styling */
 .pak-custom-marker {
   background: transparent !important;

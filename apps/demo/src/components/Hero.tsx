@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { getAllProvinces, getAllCities, getAllAreas } from 'pak-geodata';
 import {
   Copy,
@@ -16,6 +16,15 @@ export interface HeroProps {
 
 export default function Hero({ className = '' }: HeroProps) {
   const [copiedSnippet, setCopiedSnippet] = useState<'npm' | 'pypi' | null>(null);
+  const copyTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (copyTimeoutRef.current) {
+        clearTimeout(copyTimeoutRef.current);
+      }
+    };
+  }, []);
 
   // Dynamic metrics computed from pak-geodata
   const provincesCount = getAllProvinces().length;
@@ -36,9 +45,13 @@ export default function Hero({ className = '' }: HeroProps) {
         document.execCommand('copy');
         document.body.removeChild(textarea);
       }
+      if (copyTimeoutRef.current) {
+        clearTimeout(copyTimeoutRef.current);
+      }
       setCopiedSnippet(target);
-      setTimeout(() => {
+      copyTimeoutRef.current = setTimeout(() => {
         setCopiedSnippet((curr) => (curr === target ? null : curr));
+        copyTimeoutRef.current = null;
       }, 2000);
     } catch (err) {
       console.error('Failed to copy command:', err);
@@ -189,11 +202,11 @@ export default function Hero({ className = '' }: HeroProps) {
 
         {/* 4-Card Live Metrics Ticker */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 w-full">
-          {metrics.map((metric, idx) => {
+          {metrics.map((metric) => {
             const IconComponent = metric.icon;
             return (
               <div
-                key={idx}
+                key={metric.label}
                 className="glass-subtle rounded-xl border border-white/10 p-4 sm:p-5 text-left transition-all hover:border-emerald-500/30 group"
               >
                 <div className="flex items-center justify-between mb-2">
