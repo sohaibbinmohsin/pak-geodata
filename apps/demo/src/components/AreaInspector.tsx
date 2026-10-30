@@ -152,21 +152,23 @@ export default function AreaInspector({
         )}
       </div>
 
-      {/* Administrative Hierarchy Breadcrumb */}
-      <nav
-        aria-label="Administrative hierarchy breadcrumb"
-        className="flex items-center gap-1.5 text-xs font-mono text-neutral-400 flex-wrap px-2.5 py-1.5 rounded-xl bg-white/[0.04] border border-white/10"
-        dir={lang === 'ur' ? 'rtl' : 'ltr'}
-      >
-        <span className="text-[10px] uppercase tracking-wider text-neutral-500 font-sans select-none">
-          {lang === 'ur' ? 'انتظامی درجہ بندی:' : 'Hierarchy:'}
-        </span>
-        <span className="text-neutral-300 font-medium">{provinceName}</span>
-        <span className="text-neutral-600 select-none">&gt;</span>
-        <span className="text-neutral-300 font-medium">{cityName}</span>
-        <span className="text-neutral-600 select-none">&gt;</span>
-        <span className="text-emerald-400 font-semibold">{areaName}</span>
-      </nav>
+      {/* Administrative Hierarchy Breadcrumb (suppressed when embedded in Studio right column) */}
+      {!isEmbedded && (
+        <nav
+          aria-label="Administrative hierarchy breadcrumb"
+          className="flex items-center gap-1.5 text-xs font-mono text-neutral-400 flex-wrap px-2.5 py-1.5 rounded-xl bg-white/[0.04] border border-white/10"
+          dir={lang === 'ur' ? 'rtl' : 'ltr'}
+        >
+          <span className="text-[10px] uppercase tracking-wider text-neutral-500 font-sans select-none">
+            {lang === 'ur' ? 'انتظامی درجہ بندی:' : 'Hierarchy:'}
+          </span>
+          <span className="text-neutral-300 font-medium">{provinceName}</span>
+          <span className="text-neutral-600 select-none">&gt;</span>
+          <span className="text-neutral-300 font-medium">{cityName}</span>
+          <span className="text-neutral-600 select-none">&gt;</span>
+          <span className="text-emerald-400 font-semibold">{areaName}</span>
+        </nav>
+      )}
 
       {/* Header: English Name & Native Urdu Nastaliq */}
       <div className="space-y-1">

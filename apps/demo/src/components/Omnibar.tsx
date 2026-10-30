@@ -3,6 +3,7 @@ import {
   searchAreas,
   findAreasByPostalCode,
   getAllAreas,
+  getCityById,
   type PakistanArea,
   type PakistanCity,
 } from 'pak-geodata';
@@ -198,6 +199,34 @@ export default function Omnibar({
   };
 
   const handleSuggestionClick = (suggestionQuery: string) => {
+    // If a city filter is active, verify if query yields results within this city
+    if (selectedCity && onSelectCity) {
+      const scopedMatches = searchAreas(suggestionQuery, { cityId: selectedCity.id, limit: 1 });
+      const scopedPostal = /^\d{2,5}$/.test(suggestionQuery)
+        ? findAreasByPostalCode(suggestionQuery).filter((a) => a.cityId === selectedCity.id)
+        : [];
+
+      // If no matches in active city, switch to matching city or clear filter
+      if (scopedMatches.length === 0 && scopedPostal.length === 0) {
+        let match: PakistanArea | undefined;
+        if (/^\d{2,5}$/.test(suggestionQuery)) {
+          const postalList = findAreasByPostalCode(suggestionQuery);
+          match = postalList[0];
+        }
+        if (!match) {
+          const globalMatches = searchAreas(suggestionQuery, { limit: 1 });
+          match = globalMatches[0];
+        }
+
+        if (match) {
+          const matchingCity = getCityById(match.cityId);
+          onSelectCity(matchingCity || null);
+        } else {
+          onSelectCity(null);
+        }
+      }
+    }
+
     setQuery(suggestionQuery);
     setIsOpen(true);
     inputRef.current?.focus();

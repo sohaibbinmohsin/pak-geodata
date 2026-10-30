@@ -9,6 +9,7 @@ import {
   getCityName,
   getAreaName,
   searchAreas,
+  findAreasByPostalCode,
   getNearestArea,
   haversineDistanceKm,
   toEasternDigits,
@@ -91,7 +92,16 @@ export default function Studio({ className = '' }: StudioProps) {
 
   // Handle suggestion chip clicks by searching and selecting the top matching area
   const handleSuggestionClick = useCallback((query: string) => {
-    const results = searchAreas(query, { cityId: selectedCity?.id, limit: 1 });
+    let results = searchAreas(query, { cityId: selectedCity?.id, limit: 1 });
+    if (results.length === 0 && /^\d{2,5}$/.test(query)) {
+      results = findAreasByPostalCode(query).filter((a) => !selectedCity || a.cityId === selectedCity.id);
+    }
+    if (results.length === 0) {
+      results = searchAreas(query, { limit: 1 });
+      if (results.length === 0 && /^\d{2,5}$/.test(query)) {
+        results = findAreasByPostalCode(query);
+      }
+    }
     if (results.length > 0) {
       handleSelectArea(results[0]);
     }
