@@ -19,7 +19,6 @@ export default function Footer({ className = '' }: FooterProps) {
               </span>
             </div>
             <p className="text-xs text-neutral-400">
-              <span>A free software by </span>
               <a
                 href="https://themohsinproject.org"
                 target="_blank"
@@ -28,7 +27,7 @@ export default function Footer({ className = '' }: FooterProps) {
                 aria-label="A free software by The Mohsin Project"
                 className="text-neutral-300 hover:text-emerald-400 underline underline-offset-4 decoration-neutral-600 hover:decoration-emerald-400 transition-colors"
               >
-                The Mohsin Project
+                A free software by The Mohsin Project
               </a>
             </p>
             <p className="text-xs text-neutral-500">

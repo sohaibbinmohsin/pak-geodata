@@ -8,6 +8,7 @@ test('Footer contains exact standard line without personal names', () => {
   const content = readFileSync(footerPath, 'utf8');
 
   assert.ok(content.includes('A free software by The Mohsin Project'), 'Footer has standard software line');
+  assert.ok(content.includes('>A free software by The Mohsin Project</a>') || content.includes('>\n                A free software by The Mohsin Project\n              </a>'), 'Footer hyperlink wraps full phrase');
   assert.ok(content.includes('https://themohsinproject.org'), 'Footer links to official site');
   assert.ok(!content.includes('Sohaib Bin Mohsin'), 'Footer must not contain personal name');
   assert.ok(!content.includes('\u2014'), 'Footer contains zero em-dashes');

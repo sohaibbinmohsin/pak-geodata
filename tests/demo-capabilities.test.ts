@@ -81,6 +81,10 @@ test('Coverage component renders 7 provinces, 40 cities summary, bounding boxes,
   // Phase 1 flagship metros ticker
   assert.ok(content.includes('189'), 'Mentions 189 foundational areas');
   assert.ok(content.includes('Phase 1'), 'Mentions Phase 1');
+  assert.ok(
+    content.includes('{flagshipMetros.length} Metros · {allAreas.length} Areas'),
+    'Flagship metros subtitle dynamically uses flagshipMetros.length and allAreas.length'
+  );
 
   // Zero em-dash and en-dash constraint
   assert.ok(!content.includes('\u2014'), 'Coverage contains zero em-dashes');

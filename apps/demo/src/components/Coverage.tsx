@@ -343,7 +343,9 @@ export default function Coverage({ className = '' }: CoverageProps) {
             <MapPin className="w-5 h-5 text-emerald-400" />
             <span>Major Cities Summary (Phase 1 Flagships)</span>
           </h3>
-          <span className="text-xs text-emerald-400 font-mono">5 Metros · 189 Areas</span>
+          <span className="text-xs text-emerald-400 font-mono">
+            {flagshipMetros.length} Metros · {allAreas.length} Areas
+          </span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
