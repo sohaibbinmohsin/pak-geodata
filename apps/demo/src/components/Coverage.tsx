@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import {
   getAllProvinces,
   getAllCities,
+  getAllAreas,
   getAreasByCity,
 } from 'pak-geodata';
 import {
@@ -18,19 +19,17 @@ export interface CoverageProps {
   className?: string;
 }
 
-// ISO 3166-2:PK standardized province catalog
-interface ProvinceCatalogItem {
+// ISO 3166-2:PK standardized province catalog base metadata
+interface ProvinceBaseInfo {
   id: string;
   name: string;
   urduName: string;
   isoCode: string;
   type: string;
   capital: string;
-  citiesCount: number;
-  areasCount: number;
 }
 
-const PROVINCES_CATALOG: ProvinceCatalogItem[] = [
+const PROVINCES_BASE_CATALOG: ProvinceBaseInfo[] = [
   {
     id: 'punjab',
     name: 'Punjab',
@@ -38,8 +37,6 @@ const PROVINCES_CATALOG: ProvinceCatalogItem[] = [
     isoCode: 'PK-PB',
     type: 'Province',
     capital: 'Lahore',
-    citiesCount: 14,
-    areasCount: 102,
   },
   {
     id: 'sindh',
@@ -48,8 +45,6 @@ const PROVINCES_CATALOG: ProvinceCatalogItem[] = [
     isoCode: 'PK-SD',
     type: 'Province',
     capital: 'Karachi',
-    citiesCount: 6,
-    areasCount: 51,
   },
   {
     id: 'kpk',
@@ -58,8 +53,6 @@ const PROVINCES_CATALOG: ProvinceCatalogItem[] = [
     isoCode: 'PK-KP',
     type: 'Province',
     capital: 'Peshawar',
-    citiesCount: 6,
-    areasCount: 0,
   },
   {
     id: 'balochistan',
@@ -68,8 +61,6 @@ const PROVINCES_CATALOG: ProvinceCatalogItem[] = [
     isoCode: 'PK-BA',
     type: 'Province',
     capital: 'Quetta',
-    citiesCount: 5,
-    areasCount: 0,
   },
   {
     id: 'islamabad-ict',
@@ -78,8 +69,6 @@ const PROVINCES_CATALOG: ProvinceCatalogItem[] = [
     isoCode: 'PK-IS',
     type: 'Federal Capital',
     capital: 'Islamabad',
-    citiesCount: 1,
-    areasCount: 36,
   },
   {
     id: 'ajk',
@@ -88,8 +77,6 @@ const PROVINCES_CATALOG: ProvinceCatalogItem[] = [
     isoCode: 'PK-JK',
     type: 'Autonomous Territory',
     capital: 'Muzaffarabad',
-    citiesCount: 4,
-    areasCount: 0,
   },
   {
     id: 'gilgit-baltistan',
@@ -98,13 +85,11 @@ const PROVINCES_CATALOG: ProvinceCatalogItem[] = [
     isoCode: 'PK-GB',
     type: 'Autonomous Territory',
     capital: 'Gilgit',
-    citiesCount: 4,
-    areasCount: 0,
   },
 ];
 
-// Phase 1 Flagship Metros summary with deep foundational area polygons
-interface FlagshipMetroSummary {
+// Phase 1 Flagship Metros summary base metadata
+interface FlagshipMetroBaseInfo {
   id: string;
   name: string;
   urduName: string;
@@ -113,10 +98,9 @@ interface FlagshipMetroSummary {
   postalRange: string;
   centroid: string;
   bounds: string;
-  areasCount: number;
 }
 
-const FLAGSHIP_METROS: FlagshipMetroSummary[] = [
+const FLAGSHIP_METROS_BASE: FlagshipMetroBaseInfo[] = [
   {
     id: 'karachi',
     name: 'Karachi',
@@ -126,7 +110,6 @@ const FLAGSHIP_METROS: FlagshipMetroSummary[] = [
     postalRange: '74000 - 75999',
     centroid: '24.8607° N, 67.0011° E',
     bounds: '[24.75, 66.85] to [25.15, 67.35]',
-    areasCount: 51,
   },
   {
     id: 'lahore',
@@ -137,7 +120,6 @@ const FLAGSHIP_METROS: FlagshipMetroSummary[] = [
     postalRange: '54000 - 54999',
     centroid: '31.5204° N, 74.3587° E',
     bounds: '[31.30, 74.15] to [31.70, 74.55]',
-    areasCount: 50,
   },
   {
     id: 'islamabad',
@@ -148,7 +130,6 @@ const FLAGSHIP_METROS: FlagshipMetroSummary[] = [
     postalRange: '44000 - 45999',
     centroid: '33.6844° N, 73.0479° E',
     bounds: '[33.58, 72.85] to [33.78, 73.20]',
-    areasCount: 36,
   },
   {
     id: 'rawalpindi',
@@ -159,7 +140,6 @@ const FLAGSHIP_METROS: FlagshipMetroSummary[] = [
     postalRange: '46000 - 47999',
     centroid: '33.5651° N, 73.0169° E',
     bounds: '[33.45, 72.90] to [33.68, 73.18]',
-    areasCount: 28,
   },
   {
     id: 'faisalabad',
@@ -170,11 +150,10 @@ const FLAGSHIP_METROS: FlagshipMetroSummary[] = [
     postalRange: '38000 - 38999',
     centroid: '31.4504° N, 73.1350° E',
     bounds: '[31.32, 73.00] to [31.55, 73.22]',
-    areasCount: 24,
   },
 ];
 
-const FLAGSHIP_CITY_IDS = new Set(FLAGSHIP_METROS.map((m) => m.id));
+const FLAGSHIP_CITY_IDS = new Set(FLAGSHIP_METROS_BASE.map((m) => m.id));
 
 export default function Coverage({ className = '' }: CoverageProps) {
   const [selectedProvinceFilter, setSelectedProvinceFilter] = useState<string>('all');
@@ -182,6 +161,28 @@ export default function Coverage({ className = '' }: CoverageProps) {
 
   const provinces = useMemo(() => getAllProvinces(), []);
   const allCities = useMemo(() => getAllCities(), []);
+  const allAreas = useMemo(() => getAllAreas(), []);
+
+  // Dynamically derive province catalog counts from allCities and allAreas
+  const provincesCatalog = useMemo(() => {
+    return PROVINCES_BASE_CATALOG.map((prov) => {
+      const citiesCount = allCities.filter((c) => c.provinceId === prov.id).length;
+      const areasCount = allAreas.filter((a) => a.provinceId === prov.id).length;
+      return {
+        ...prov,
+        citiesCount,
+        areasCount,
+      };
+    });
+  }, [allCities, allAreas]);
+
+  // Dynamically derive flagship metros area counts from allAreas
+  const flagshipMetros = useMemo(() => {
+    return FLAGSHIP_METROS_BASE.map((metro) => ({
+      ...metro,
+      areasCount: allAreas.filter((a) => a.cityId === metro.id).length,
+    }));
+  }, [allAreas]);
 
   // Filtered cities list
   const filteredCities = useMemo(() => {
@@ -193,14 +194,25 @@ export default function Coverage({ className = '' }: CoverageProps) {
 
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase().trim();
-      result = result.filter(
-        (c) =>
+      const num = parseInt(q, 10);
+      const isNum = !isNaN(num) && /^\d+$/.test(q);
+      result = result.filter((c) => {
+        const matchesBasic =
           c.name.toLowerCase().includes(q) ||
           c.urduName.includes(q) ||
           c.district.toLowerCase().includes(q) ||
           (c.postalCodeRange &&
-            (c.postalCodeRange[0].includes(q) || c.postalCodeRange[1].includes(q)))
-      );
+            (c.postalCodeRange[0].includes(q) || c.postalCodeRange[1].includes(q)));
+        if (matchesBasic) return true;
+        if (isNum && c.postalCodeRange) {
+          const min = parseInt(c.postalCodeRange[0], 10);
+          const max = parseInt(c.postalCodeRange[1], 10);
+          if (!isNaN(min) && !isNaN(max) && min <= num && num <= max) {
+            return true;
+          }
+        }
+        return false;
+      });
     }
 
     // Sort: flagship cities first, then alphabetical
@@ -254,15 +266,15 @@ export default function Coverage({ className = '' }: CoverageProps) {
         <div className="flex items-center flex-wrap gap-2.5 sm:gap-3 shrink-0">
           <div className="px-3.5 py-1.5 rounded-xl bg-black/40 border border-white/10 text-center">
             <div className="text-xs text-neutral-400 font-mono">Provinces</div>
-            <div className="text-base font-bold text-white font-mono">7</div>
+            <div className="text-base font-bold text-white font-mono">{provinces.length}</div>
           </div>
           <div className="px-3.5 py-1.5 rounded-xl bg-black/40 border border-white/10 text-center">
             <div className="text-xs text-neutral-400 font-mono">Cities</div>
-            <div className="text-base font-bold text-white font-mono">40</div>
+            <div className="text-base font-bold text-white font-mono">{allCities.length}</div>
           </div>
           <div className="px-3.5 py-1.5 rounded-xl bg-black/40 border border-white/10 text-center">
             <div className="text-xs text-neutral-400 font-mono">Areas</div>
-            <div className="text-base font-bold text-emerald-400 font-mono">189</div>
+            <div className="text-base font-bold text-emerald-400 font-mono">{allAreas.length}</div>
           </div>
           <div className="px-3.5 py-1.5 rounded-xl bg-black/40 border border-white/10 text-center">
             <div className="text-xs text-neutral-400 font-mono">Offline</div>
@@ -282,7 +294,7 @@ export default function Coverage({ className = '' }: CoverageProps) {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {PROVINCES_CATALOG.map((prov) => {
+          {provincesCatalog.map((prov) => {
             const isSelected = selectedProvinceFilter === prov.id;
             return (
               <div
@@ -335,7 +347,7 @@ export default function Coverage({ className = '' }: CoverageProps) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {FLAGSHIP_METROS.map((metro) => (
+          {flagshipMetros.map((metro) => (
             <div
               key={metro.id}
               className="glass-chrome rounded-2xl border border-white/10 p-5 flex flex-col justify-between hover:border-white/20 transition-all duration-150"
