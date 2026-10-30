@@ -154,14 +154,14 @@ export default function Studio({ className = '' }: StudioProps) {
         <div className="flex items-center gap-2">
           <span className="text-xs font-mono text-neutral-400 hidden sm:inline">Language:</span>
           <div
-            role="tablist"
+            role="radiogroup"
             aria-label="Language selector"
             className="inline-flex p-1 rounded-xl bg-black/40 border border-white/10"
           >
             <button
               type="button"
-              role="tab"
-              aria-selected={lang === 'en'}
+              role="radio"
+              aria-checked={lang === 'en'}
               onClick={() => setLang('en')}
               className={`pressable px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-150 cursor-pointer ${
                 lang === 'en'
@@ -173,8 +173,8 @@ export default function Studio({ className = '' }: StudioProps) {
             </button>
             <button
               type="button"
-              role="tab"
-              aria-selected={lang === 'ur'}
+              role="radio"
+              aria-checked={lang === 'ur'}
               onClick={() => setLang('ur')}
               className={`pressable px-3.5 py-1.5 rounded-lg text-xs font-nastaliq transition-all duration-150 cursor-pointer leading-tight ${
                 lang === 'ur'

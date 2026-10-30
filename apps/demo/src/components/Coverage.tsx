@@ -4,6 +4,7 @@ import {
   getAllCities,
   getAllAreas,
   getAreasByCity,
+  toWesternDigits,
 } from 'pak-geodata';
 import {
   Database,
@@ -193,7 +194,7 @@ export default function Coverage({ className = '' }: CoverageProps) {
     }
 
     if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase().trim();
+      const q = toWesternDigits(searchQuery).toLowerCase().trim();
       const num = parseInt(q, 10);
       const isNum = !isNaN(num) && /^\d+$/.test(q);
       result = result.filter((c) => {
@@ -299,10 +300,20 @@ export default function Coverage({ className = '' }: CoverageProps) {
             return (
               <div
                 key={prov.id}
+                role="button"
+                tabIndex={0}
+                aria-pressed={isSelected}
+                aria-label={`Filter by ${prov.name}`}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    setSelectedProvinceFilter((curr) => (curr === prov.id ? 'all' : prov.id));
+                  }
+                }}
                 onClick={() =>
                   setSelectedProvinceFilter((curr) => (curr === prov.id ? 'all' : prov.id))
                 }
-                className={`p-4 rounded-xl border transition-all duration-150 cursor-pointer ${
+                className={`p-4 rounded-xl border transition-all duration-150 cursor-pointer focus:outline-none focus:ring-2 focus:ring-cyan-400/50 ${
                   isSelected
                     ? 'bg-cyan-500/10 border-cyan-500/40 shadow-lg'
                     : 'glass-chrome border-white/10 hover:border-white/20'

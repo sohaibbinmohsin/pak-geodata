@@ -500,6 +500,8 @@ export default function Recipes({ className = '' }: RecipesProps) {
                 }}
                 type="button"
                 role="tab"
+                id={`recipe-tab-${recipe.id}`}
+                aria-controls={`recipe-panel-${recipe.id}`}
                 tabIndex={isActive ? 0 : -1}
                 aria-selected={isActive}
                 onKeyDown={(e) => handleTabKeyDown(e, index)}
@@ -533,7 +535,9 @@ export default function Recipes({ className = '' }: RecipesProps) {
 
       {/* Tab Panel: Two-Column Responsive Layout */}
       <div
+        id={`recipe-panel-${activeRecipe.id}`}
         role="tabpanel"
+        aria-labelledby={`recipe-tab-${activeRecipe.id}`}
         aria-label={activeRecipe.title}
         className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch"
       >

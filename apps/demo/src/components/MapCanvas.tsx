@@ -178,6 +178,7 @@ export default function MapCanvas({
           '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors',
         className: 'dark-tiles',
         maxZoom: 19,
+        detectRetina: true,
       }
     );
 
