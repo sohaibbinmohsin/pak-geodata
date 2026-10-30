@@ -404,6 +404,26 @@ export default function Recipes({ className = '' }: RecipesProps) {
   const [activeTab, setActiveTab] = useState<RecipeTabId>('emergency');
   const [copied, setCopied] = useState(false);
   const copyTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const tabButtonRefs = useRef<(HTMLButtonElement | null)[]>([]);
+
+  const handleTabKeyDown = (
+    e: React.KeyboardEvent<HTMLButtonElement>,
+    index: number
+  ) => {
+    if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      const nextIndex = (index + 1) % RECIPES.length;
+      setActiveTab(RECIPES[nextIndex].id);
+      setCopied(false);
+      tabButtonRefs.current[nextIndex]?.focus();
+    } else if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      const prevIndex = (index - 1 + RECIPES.length) % RECIPES.length;
+      setActiveTab(RECIPES[prevIndex].id);
+      setCopied(false);
+      tabButtonRefs.current[prevIndex]?.focus();
+    }
+  };
 
   useEffect(() => {
     return () => {
@@ -469,15 +489,20 @@ export default function Recipes({ className = '' }: RecipesProps) {
           aria-label="Production recipe tabs"
           className="inline-flex flex-wrap sm:flex-nowrap items-center gap-1.5 p-1.5 rounded-2xl bg-black/40 border border-white/10"
         >
-          {RECIPES.map((recipe) => {
+          {RECIPES.map((recipe, index) => {
             const Icon = recipe.tabIcon;
             const isActive = recipe.id === activeTab;
             return (
               <button
                 key={recipe.id}
+                ref={(el) => {
+                  tabButtonRefs.current[index] = el;
+                }}
                 type="button"
                 role="tab"
+                tabIndex={isActive ? 0 : -1}
                 aria-selected={isActive}
+                onKeyDown={(e) => handleTabKeyDown(e, index)}
                 onClick={() => {
                   setActiveTab(recipe.id);
                   setCopied(false);
