@@ -23,19 +23,41 @@ export function formatGpsCoordinates(lat: number, lng: number): string {
 
 /**
  * Generates copyable, runnable code snippet for an area in TypeScript or Python.
+ * Supports active language selection ('en' or 'ur') with Sanctuary overloaded signatures.
  */
-export function generateCodeSnippet(area: PakistanArea, language: CodeLanguage): string {
+export function generateCodeSnippet(
+  area: PakistanArea,
+  language: CodeLanguage,
+  lang: 'en' | 'ur' = 'en'
+): string {
   const escapedName = area.name.replace(/'/g, "\\'");
+  const escapedUrduName = (area.urduName || area.name).replace(/'/g, "\\'");
   const citySlug = area.cityId;
   const exportVar = getCityExportVar(citySlug);
 
   if (language === 'typescript') {
+    if (lang === 'ur') {
+      return [
+        `import { searchAreas, getNearestArea } from 'pak-geodata';`,
+        `// Sanctuary bilingual query:`,
+        `const area = searchAreas('${citySlug}', '${escapedUrduName}', 'ur')[0];`,
+      ].join('\n');
+    }
+
     return [
       `import { searchAreas, getNearestArea } from 'pak-geodata';`,
       `// Subpath tree-shaking (~24 KB):`,
       `import { ${exportVar} } from 'pak-geodata/areas/${citySlug}';`,
       ``,
       `const area = searchAreas('${escapedName}', { cityId: '${area.cityId}' })[0];`,
+    ].join('\n');
+  }
+
+  if (lang === 'ur') {
+    return [
+      `from pak_geodata import search_areas, get_nearest_area`,
+      ``,
+      `area = search_areas('${escapedUrduName}', city_id='${area.cityId}')[0]`,
     ].join('\n');
   }
 

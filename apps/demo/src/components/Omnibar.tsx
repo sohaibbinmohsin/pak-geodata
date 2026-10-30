@@ -8,11 +8,20 @@ import {
 } from 'pak-geodata';
 import { Search, X, CornerDownLeft, MapPin } from 'lucide-react';
 
+export const SUGGESTION_CHIPS = [
+  { label: 'dha 5', query: 'dha 5', hint: 'Alias' },
+  { label: '54000', query: '54000', hint: 'Postal' },
+  { label: 'گلبرگ', query: 'گلبرگ', hint: 'Urdu' },
+  { label: 'فیز ۳', query: 'فیز ۳', hint: 'Eastern Numerals' },
+] as const;
+
 export interface OmnibarProps {
   selectedCity: PakistanCity | null;
   selectedArea?: PakistanArea | null;
   onSelectArea: (area: PakistanArea) => void;
   onSelectCity?: (city: PakistanCity | null) => void;
+  onSuggestionClick?: (query: string) => void;
+  showSuggestions?: boolean;
   className?: string;
 }
 
@@ -24,6 +33,8 @@ export default function Omnibar({
   selectedArea,
   onSelectArea,
   onSelectCity,
+  onSuggestionClick,
+  showSuggestions = true,
   className = '',
 }: OmnibarProps) {
   const [query, setQuery] = useState('');
@@ -186,6 +197,13 @@ export default function Omnibar({
     inputRef.current?.focus();
   };
 
+  const handleSuggestionClick = (suggestionQuery: string) => {
+    setQuery(suggestionQuery);
+    setIsOpen(true);
+    inputRef.current?.focus();
+    onSuggestionClick?.(suggestionQuery);
+  };
+
   const placeholderText = selectedCity
     ? `Search in ${selectedCity.name} (e.g. F-6, Blue Area, 44000)...`
     : 'Search 189 areas across Pakistan (e.g. DHA, ماڈل ٹاؤن, 54000)...';
@@ -274,6 +292,25 @@ export default function Omnibar({
           </div>
         )}
       </div>
+
+      {/* Quick Search Suggestion Chips */}
+      {showSuggestions && (
+        <div className="flex items-center gap-1.5 flex-wrap pt-2 px-1 select-none">
+          <span className="text-[11px] font-mono text-neutral-400">Try:</span>
+          {SUGGESTION_CHIPS.map((chip) => (
+            <button
+              key={chip.query}
+              type="button"
+              onClick={() => handleSuggestionClick(chip.query)}
+              className="pressable inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-emerald-500/30 text-neutral-300 hover:text-white transition-all text-xs font-mono cursor-pointer"
+              title={`Search for "${chip.query}" (${chip.hint})`}
+            >
+              <span>{chip.label}</span>
+              <span className="text-[9px] text-neutral-500 font-sans">({chip.hint})</span>
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Live Dropdown Results */}
       {isOpen && query.trim().length > 0 && (

@@ -5,6 +5,7 @@ export interface CityPillsProps {
   selectedCity: PakistanCity | null;
   onSelectCity: (city: PakistanCity | null) => void;
   allAreas?: readonly PakistanArea[];
+  lang?: 'en' | 'ur';
   className?: string;
 }
 
@@ -14,6 +15,7 @@ export default function CityPills({
   selectedCity,
   onSelectCity,
   allAreas,
+  lang = 'en',
   className = '',
 }: CityPillsProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -34,21 +36,21 @@ export default function CityPills({
   // City pill items ordered by major hubs
   const pills = useMemo(() => {
     const list: Array<{ id: string; label: string; count: number; city: PakistanCity | null }> = [
-      { id: 'all', label: 'All', count: counts.all || 189, city: null },
+      { id: 'all', label: lang === 'ur' ? 'تمام' : 'All', count: counts.all || 189, city: null },
     ];
     for (const cityId of TARGET_CITY_IDS) {
       const city = getCityById(cityId);
       if (city) {
         list.push({
           id: city.id,
-          label: city.name,
+          label: lang === 'ur' ? city.urduName : city.name,
           count: counts[city.id] || 0,
           city,
         });
       }
     }
     return list;
-  }, [counts]);
+  }, [counts, lang]);
 
   const activeId = selectedCity ? selectedCity.id : 'all';
 

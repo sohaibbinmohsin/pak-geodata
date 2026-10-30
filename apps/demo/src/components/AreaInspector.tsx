@@ -3,6 +3,9 @@ import {
   type PakistanArea,
   getCityById,
   getProvinceById,
+  getCityName,
+  getAreaName,
+  toEasternDigits,
 } from 'pak-geodata';
 import {
   X,
@@ -19,13 +22,17 @@ import { formatGpsCoordinates } from './codeSnippets';
 
 export interface AreaInspectorProps {
   area: PakistanArea;
-  onClose: () => void;
+  onClose?: () => void;
+  lang?: 'en' | 'ur';
+  isEmbedded?: boolean;
   className?: string;
 }
 
 export default function AreaInspector({
   area,
   onClose,
+  lang = 'en',
+  isEmbedded = false,
   className = '',
 }: AreaInspectorProps) {
   const [slugCopied, setSlugCopied] = useState(false);
@@ -34,7 +41,7 @@ export default function AreaInspector({
   // Dismiss on Escape key
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
+      if (e.key === 'Escape' && onClose) {
         onClose();
       }
     };
@@ -44,6 +51,14 @@ export default function AreaInspector({
 
   const city = getCityById(area.cityId);
   const province = getProvinceById(area.provinceId);
+
+  const provinceName = lang === 'ur'
+    ? (province?.urduName || province?.name || area.provinceId)
+    : (province?.name || area.provinceId);
+  const cityName = getCityName(area.cityId, lang);
+  const areaName = lang === 'ur'
+    ? toEasternDigits(area.urduName || area.name)
+    : (area.name || getAreaName(area.cityId, area.id, 'en'));
 
   const formattedCoords = formatGpsCoordinates(
     area.coordinates.lat,
@@ -91,16 +106,22 @@ export default function AreaInspector({
 
   return (
     <aside
-      role="dialog"
+      role={isEmbedded ? 'region' : 'dialog'}
       aria-label={`Area inspector for ${area.name}`}
-      className={`fixed inset-x-0 bottom-0 sm:bottom-5 sm:left-6 sm:inset-x-auto sm:max-w-md sm:w-[440px] z-40 pointer-events-auto glass-chrome rounded-t-3xl sm:rounded-2xl border border-white/15 shadow-2xl p-4 sm:p-5 max-h-[85vh] sm:max-h-[calc(100vh-140px)] overflow-y-auto space-y-4 animate-slide-up select-none ${className}`}
+      className={
+        isEmbedded
+          ? `relative w-full rounded-2xl glass-chrome border border-white/15 p-4 sm:p-5 space-y-4 shadow-xl select-none ${className}`
+          : `fixed inset-x-0 bottom-0 sm:bottom-5 sm:left-6 sm:inset-x-auto sm:max-w-md sm:w-[440px] z-40 pointer-events-auto glass-chrome rounded-t-3xl sm:rounded-2xl border border-white/15 shadow-2xl p-4 sm:p-5 max-h-[85vh] sm:max-h-[calc(100vh-140px)] overflow-y-auto space-y-4 animate-slide-up select-none ${className}`
+      }
     >
       {/* Mobile Drawer Grab Handle */}
-      <div className="sm:hidden flex justify-center -mt-1 mb-1">
-        <div className="w-10 h-1 rounded-full bg-white/20" />
-      </div>
+      {!isEmbedded && (
+        <div className="sm:hidden flex justify-center -mt-1 mb-1">
+          <div className="w-10 h-1 rounded-full bg-white/20" />
+        </div>
+      )}
 
-      {/* Top Bar: Verification Badge & Close Button */}
+      {/* Top Bar: Verification Badge & Optional Close Button */}
       <div className="flex items-center justify-between gap-2 pb-2 border-b border-white/10">
         <div className="flex items-center gap-1.5">
           {area.verified ? (
@@ -118,16 +139,34 @@ export default function AreaInspector({
           </span>
         </div>
 
-        <button
-          type="button"
-          onClick={onClose}
-          className="pressable p-1 -mr-1 rounded-lg text-neutral-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
-          aria-label="Close area inspector"
-          title="Close (Esc)"
-        >
-          <X className="w-4 h-4" />
-        </button>
+        {onClose && (
+          <button
+            type="button"
+            onClick={onClose}
+            className="pressable p-1 -mr-1 rounded-lg text-neutral-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+            aria-label="Close area inspector"
+            title="Close (Esc)"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        )}
       </div>
+
+      {/* Administrative Hierarchy Breadcrumb */}
+      <nav
+        aria-label="Administrative hierarchy breadcrumb"
+        className="flex items-center gap-1.5 text-xs font-mono text-neutral-400 flex-wrap px-2.5 py-1.5 rounded-xl bg-white/[0.04] border border-white/10"
+        dir={lang === 'ur' ? 'rtl' : 'ltr'}
+      >
+        <span className="text-[10px] uppercase tracking-wider text-neutral-500 font-sans select-none">
+          {lang === 'ur' ? 'انتظامی درجہ بندی:' : 'Hierarchy:'}
+        </span>
+        <span className="text-neutral-300 font-medium">{provinceName}</span>
+        <span className="text-neutral-600 select-none">&gt;</span>
+        <span className="text-neutral-300 font-medium">{cityName}</span>
+        <span className="text-neutral-600 select-none">&gt;</span>
+        <span className="text-emerald-400 font-semibold">{areaName}</span>
+      </nav>
 
       {/* Header: English Name & Native Urdu Nastaliq */}
       <div className="space-y-1">
@@ -271,7 +310,7 @@ export default function AreaInspector({
         <div className="text-[10px] font-mono uppercase tracking-wider text-neutral-400 mb-2">
           Live Client Code
         </div>
-        <CodeGenerator area={area} />
+        <CodeGenerator area={area} lang={lang} />
       </div>
     </aside>
   );

@@ -9,22 +9,25 @@ import {
 
 export interface CodeGeneratorProps {
   area: PakistanArea;
+  lang?: 'en' | 'ur';
   className?: string;
 }
 
 export default function CodeGenerator({
   area,
+  lang = 'en',
   className = '',
 }: CodeGeneratorProps) {
   const [language, setLanguage] = useState<CodeLanguage>('typescript');
   const [copied, setCopied] = useState(false);
 
   const rawSnippet = useMemo(
-    () => generateCodeSnippet(area, language),
-    [area, language]
+    () => generateCodeSnippet(area, language, lang),
+    [area, language, lang]
   );
 
   const escapedName = area.name.replace(/'/g, "\\'");
+  const escapedUrduName = (area.urduName || area.name).replace(/'/g, "\\'");
   const citySlug = area.cityId;
   const exportVar = getCityExportVar(citySlug);
 
@@ -131,16 +134,29 @@ export default function CodeGenerator({
               <div>
                 <span className="text-purple-400">import</span> {'{ '}<span className="text-cyan-300">searchAreas</span>, <span className="text-cyan-300">getNearestArea</span>{' }'} <span className="text-purple-400">from</span> <span className="text-emerald-300">'pak-geodata'</span>;
               </div>
-              <div className="text-neutral-500 italic">
-                // Subpath tree-shaking (~24 KB):
-              </div>
-              <div>
-                <span className="text-purple-400">import</span> {'{ '}<span className="text-cyan-300">{exportVar}</span>{' }'} <span className="text-purple-400">from</span> <span className="text-emerald-300">'pak-geodata/areas/{citySlug}'</span>;
-              </div>
-              <br />
-              <div>
-                <span className="text-purple-400">const</span> area = <span className="text-cyan-300">searchAreas</span>(<span className="text-emerald-300">'{escapedName}'</span>, {'{'} cityId: <span className="text-emerald-300">'{area.cityId}'</span> {'}'})[<span className="text-amber-400">0</span>];
-              </div>
+              {lang === 'ur' ? (
+                <>
+                  <div className="text-neutral-500 italic">
+                    // Sanctuary bilingual signature:
+                  </div>
+                  <div>
+                    <span className="text-purple-400">const</span> area = <span className="text-cyan-300">searchAreas</span>(<span className="text-emerald-300">'{citySlug}'</span>, <span className="text-emerald-300">'{escapedUrduName}'</span>, <span className="text-emerald-300">'ur'</span>)[<span className="text-amber-400">0</span>];
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="text-neutral-500 italic">
+                    // Subpath tree-shaking (~24 KB):
+                  </div>
+                  <div>
+                    <span className="text-purple-400">import</span> {'{ '}<span className="text-cyan-300">{exportVar}</span>{' }'} <span className="text-purple-400">from</span> <span className="text-emerald-300">'pak-geodata/areas/{citySlug}'</span>;
+                  </div>
+                  <br />
+                  <div>
+                    <span className="text-purple-400">const</span> area = <span className="text-cyan-300">searchAreas</span>(<span className="text-emerald-300">'{escapedName}'</span>, {'{'} cityId: <span className="text-emerald-300">'{area.cityId}'</span> {'}'})[<span className="text-amber-400">0</span>];
+                  </div>
+                </>
+              )}
             </code>
           </pre>
         ) : (
@@ -151,7 +167,7 @@ export default function CodeGenerator({
               </div>
               <br />
               <div>
-                area = <span className="text-cyan-300">search_areas</span>(<span className="text-emerald-300">'{escapedName}'</span>, city_id=<span className="text-emerald-300">'{area.cityId}'</span>)[<span className="text-amber-400">0</span>]
+                area = <span className="text-cyan-300">search_areas</span>(<span className="text-emerald-300">'{lang === 'ur' ? escapedUrduName : escapedName}'</span>, city_id=<span className="text-emerald-300">'{area.cityId}'</span>)[<span className="text-amber-400">0</span>]
               </div>
             </code>
           </pre>
