@@ -28,3 +28,12 @@ test('Header component includes navigation anchors, install buttons, and github 
   assert.ok(content.includes('pip install pak-geodata'), 'Header must include pip copy command');
   assert.ok(content.includes('https://github.com/sohaibbinmohsin/pak-geodata'), 'Header must link to GitHub repository');
 });
+
+test('Header brand logo clicks scroll smoothly to top', () => {
+  const headerPath = resolve(process.cwd(), 'apps/demo/src/components/Header.tsx');
+  const content = readFileSync(headerPath, 'utf8');
+
+  assert.ok(content.includes('scrollTo'), 'Header brand logo includes scrollTo for top navigation');
+  assert.ok(content.includes('smooth'), 'Header brand logo includes smooth scroll behavior');
+});
+

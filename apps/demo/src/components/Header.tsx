@@ -44,6 +44,12 @@ export default function Header({ className = '' }: HeaderProps) {
         <div className="flex items-center gap-3">
           <a
             href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              if (typeof window !== 'undefined') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+            }}
             className="flex items-center gap-2 pressable hover:opacity-90 transition-opacity"
             title="pak-geodata home"
           >
