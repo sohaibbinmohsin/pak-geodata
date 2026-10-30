@@ -1,6 +1,6 @@
 {
   "name": "pak-geodata",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Comprehensive, typed, offline geographic data for all areas and cities in Pakistan",
   "author": "Sohaib Bin Mohsin <sohaibbinmohsin@gmail.com> (https://sohaibbinmohsin.com)",
   "contributors": [
@@ -16,6 +16,11 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
+    },
+    "./hierarchy": {
+      "types": "./dist/hierarchy.d.ts",
+      "import": "./dist/hierarchy.js",
+      "require": "./dist/hierarchy.cjs"
     },
     "./areas/*": {
       "types": "./dist/areas/*.d.ts",
