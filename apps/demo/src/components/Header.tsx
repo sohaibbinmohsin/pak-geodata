@@ -38,79 +38,69 @@ export default function Header({ className = '' }: HeaderProps) {
   };
 
   return (
-    <header className={`fixed top-3 inset-x-3 sm:top-4 sm:inset-x-4 z-40 pointer-events-none flex flex-col items-center gap-1.5 ${className}`}>
-      {/* Main Glass Chrome Capsule */}
-      <div className="glass-chrome pointer-events-auto w-full max-w-7xl rounded-2xl px-3 sm:px-4 py-2 sm:py-2.5 flex flex-wrap lg:flex-nowrap items-center justify-between gap-3 shadow-2xl transition-all">
-        
-        {/* Left: Brand, Live Beacon & Attribution */}
-        <div className="flex items-center flex-wrap sm:flex-nowrap gap-2.5 sm:gap-3">
-          {/* Logo */}
-          <div className="flex items-center gap-2">
+    <header className={`sticky top-0 z-50 w-full backdrop-blur-md bg-[#0b0f17]/80 border-b border-white/10 ${className}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+        {/* Left: Branding & Offline Status Beacon */}
+        <div className="flex items-center gap-3">
+          <a
+            href="#"
+            className="flex items-center gap-2 pressable hover:opacity-90 transition-opacity"
+            title="pak-geodata home"
+          >
             <span className="text-xl leading-none select-none" role="img" aria-label="Pakistan flag">🇵🇰</span>
             <span className="text-base sm:text-lg font-bold tracking-tight text-white font-mono">
               pak-geodata
             </span>
-          </div>
+          </a>
 
-          {/* Live Emerald Beacon */}
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] font-mono font-medium tracking-wide">
+          {/* Version badge with green pulsing dot */}
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] font-mono font-medium">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
             </span>
-            <span>100% Offline &amp; Typed</span>
+            <span>v0.2.0</span>
           </div>
 
-          {/* Attribution Links (Desktop) */}
-          <div className="hidden md:flex items-center gap-1.5 text-[11px] text-neutral-400 pl-3 border-l border-white/10">
-            <span className="text-neutral-500">by</span>
-            <a
-              href="https://sohaibbinmohsin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="pressable text-neutral-300 hover:text-white transition-colors underline decoration-white/20 underline-offset-2 hover:decoration-white font-medium"
-              title="Founder: Sohaib Bin Mohsin"
-            >
-              Sohaib Bin Mohsin
-            </a>
-            <span className="text-neutral-600">/</span>
-            <a
-              href="https://themohsinproject.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="pressable text-neutral-300 hover:text-white transition-colors underline decoration-white/20 underline-offset-2 hover:decoration-white font-medium"
-              title="Organization: The Mohsin Project Global"
-            >
-              The Mohsin Project Global
-            </a>
+          {/* 100% Offline beacon with dynamic dataset metrics tooltip */}
+          <div
+            className="hidden sm:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-neutral-300 text-[11px] font-mono"
+            title={`${provincesCount} provinces, ${citiesCount} cities, ${areasCount} areas: 100% offline`}
+          >
+            <span className="text-emerald-400 font-medium">100% Offline</span>
           </div>
         </div>
 
-        {/* Center: Dynamic Quick Stats Ticker */}
-        <div className="order-3 lg:order-2 flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs text-neutral-300 overflow-x-auto max-w-full">
-          <div className="flex items-center gap-1 shrink-0">
-            <span className="font-semibold text-white">{provincesCount}</span>
-            <span className="text-neutral-400 text-[11px]">Provinces</span>
-          </div>
-          <span className="text-neutral-600 select-none">•</span>
-          <div className="flex items-center gap-1 shrink-0">
-            <span className="font-semibold text-white">{citiesCount}</span>
-            <span className="text-neutral-400 text-[11px]">Cities</span>
-          </div>
-          <span className="text-neutral-600 select-none">•</span>
-          <div className="flex items-center gap-1 shrink-0">
-            <span className="font-semibold text-white">{areasCount}</span>
-            <span className="text-neutral-400 text-[11px]">Areas</span>
-          </div>
-          <span className="text-neutral-600 select-none">•</span>
-          <div className="flex items-center gap-1 shrink-0">
-            <span className="font-semibold text-emerald-400">0</span>
-            <span className="text-neutral-400 text-[11px]">Runtime Deps</span>
-          </div>
-        </div>
+        {/* Center: Smooth Navigation Links */}
+        <nav className="hidden md:flex items-center gap-1 lg:gap-2">
+          <a
+            href="#studio"
+            className="px-3 py-1.5 rounded-lg text-xs font-medium text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Studio
+          </a>
+          <a
+            href="#capabilities"
+            className="px-3 py-1.5 rounded-lg text-xs font-medium text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Capabilities
+          </a>
+          <a
+            href="#recipes"
+            className="px-3 py-1.5 rounded-lg text-xs font-medium text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Recipes
+          </a>
+          <a
+            href="#coverage"
+            className="px-3 py-1.5 rounded-lg text-xs font-medium text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Coverage
+          </a>
+        </nav>
 
-        {/* Right: Registries & GitHub Links */}
-        <div className="order-2 lg:order-3 flex items-center flex-wrap sm:flex-nowrap gap-2">
+        {/* Right: Quick Install Pills & GitHub */}
+        <div className="flex items-center gap-2">
           {/* NPM Pill */}
           <div className="inline-flex items-center rounded-lg bg-white/5 border border-white/10 text-xs overflow-hidden transition-all duration-200 hover:border-white/20">
             <a
@@ -121,7 +111,7 @@ export default function Header({ className = '' }: HeaderProps) {
               title="View on NPM Registry"
             >
               <span className="font-mono font-bold text-rose-400 text-[11px]">npm</span>
-              <span className="text-[10px] text-neutral-400 font-mono">v0.1.0</span>
+              <span className="text-[10px] text-neutral-400 font-mono">v0.2.0</span>
             </a>
             <div className="h-4 w-px bg-white/10" />
             <button
@@ -155,7 +145,7 @@ export default function Header({ className = '' }: HeaderProps) {
               title="View on PyPI Registry"
             >
               <span className="font-mono font-bold text-sky-400 text-[11px]">PyPI</span>
-              <span className="text-[10px] text-neutral-400 font-mono">v0.1.0</span>
+              <span className="text-[10px] text-neutral-400 font-mono">v0.2.0</span>
             </a>
             <div className="h-4 w-px bg-white/10" />
             <button
@@ -197,27 +187,13 @@ export default function Header({ className = '' }: HeaderProps) {
         </div>
       </div>
 
-      {/* Attribution Capsule for Mobile Viewports */}
-      <div className="glass-chrome pointer-events-auto md:hidden px-3 py-1 rounded-full text-[10px] text-neutral-400 flex items-center gap-1.5 shadow-lg">
-        <span className="text-neutral-500">by</span>
-        <a
-          href="https://sohaibbinmohsin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="pressable text-neutral-300 hover:text-white underline decoration-white/20 underline-offset-2"
-        >
-          Sohaib Bin Mohsin
-        </a>
-        <span className="text-neutral-600">/</span>
-        <a
-          href="https://themohsinproject.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="pressable text-neutral-300 hover:text-white underline decoration-white/20 underline-offset-2"
-        >
-          The Mohsin Project Global
-        </a>
-      </div>
+      {/* Mobile Navigation Row */}
+      <nav className="flex md:hidden items-center justify-around px-4 py-2 border-t border-white/5 text-xs text-neutral-300">
+        <a href="#studio" className="hover:text-white transition-colors py-1 px-2">Studio</a>
+        <a href="#capabilities" className="hover:text-white transition-colors py-1 px-2">Capabilities</a>
+        <a href="#recipes" className="hover:text-white transition-colors py-1 px-2">Recipes</a>
+        <a href="#coverage" className="hover:text-white transition-colors py-1 px-2">Coverage</a>
+      </nav>
     </header>
   );
 }
