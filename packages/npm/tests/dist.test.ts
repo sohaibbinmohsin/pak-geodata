@@ -9,7 +9,7 @@ test('compiled ESM distribution exports correctly', async () => {
   assert.equal(typeof esm.getAllProvinces, 'function');
   assert.equal(typeof esm.searchAreas, 'function');
   assert.equal(esm.getAllProvinces().length, 7);
-  assert.equal(esm.getAllCities().length, 40);
+  assert.equal(esm.getAllCities().length, 79);
   assert.equal(esm.getAllAreas().length, 189);
 
   const lahoreSub = await import('../dist/areas/lahore.js');
@@ -21,7 +21,7 @@ test('compiled CJS distribution requires correctly', () => {
   assert.equal(typeof cjs.getAllProvinces, 'function');
   assert.equal(typeof cjs.searchAreas, 'function');
   assert.equal(cjs.getAllProvinces().length, 7);
-  assert.equal(cjs.getAllCities().length, 40);
+  assert.equal(cjs.getAllCities().length, 79);
   assert.equal(cjs.getAllAreas().length, 189);
 
   const lhrAreas = cjs.getAreasByCity('lahore');
