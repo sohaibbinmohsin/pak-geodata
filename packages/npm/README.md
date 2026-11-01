@@ -697,10 +697,8 @@ interface PakistanProvince {
 
 `pak-geodata` is an open-source public good engineered and maintained by **[The Mohsin Project](https://themohsinproject.org)**.
 
-The Mohsin Project exists because purpose-driven organizations and emergency teams lose momentum to outdated systems, expensive proprietary APIs, and scarce technical resources. We design, engineer, and deploy centralized digital solutions and open-source foundations—entirely free—so that nonprofits, humanitarian initiatives, and civic developers can focus on their mission.
+The Mohsin Project exists because purpose-driven organizations and emergency teams lose momentum to outdated systems, expensive proprietary APIs, and scarce technical resources. We design, engineer, and deploy centralized digital solutions entirely free of cost so that nonprofits, humanitarian initiatives, and civic developers can focus on their mission.
 
-- 🌐 **Website**: [themohsinproject.org](https://themohsinproject.org)
-- 🤝 **Software Suite**: Free tools including [Sanctuary](https://sanctuary.themohsinproject.org) (offline-first animal rescue management) and `pak-geodata`
 - 💬 **Get in Touch**: [hello@themohsinproject.org](mailto:hello@themohsinproject.org)
 
 ---
