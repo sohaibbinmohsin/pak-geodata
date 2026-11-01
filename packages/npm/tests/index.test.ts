@@ -123,9 +123,9 @@ test('getAreasByCity returns areas for verified flagship cities', () => {
   assert.deepEqual(unknown, []);
 });
 
-test('getAllAreas aggregates all 504 golden areas', () => {
+test('getAllAreas aggregates all 812 golden areas', () => {
   const all = getAllAreas();
-  assert.equal(all.length, 504);
+  assert.equal(all.length, 812);
 });
 
 test('subpath export modules export expected area lists', () => {

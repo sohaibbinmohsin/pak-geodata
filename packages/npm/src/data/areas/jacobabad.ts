@@ -1,0 +1,175 @@
+import type { PakistanArea } from "../../types.js";
+
+export const jacobabadAreas: readonly PakistanArea[] = [
+  {
+    "id": "jacobabad-civil-lines",
+    "cityId": "jacobabad",
+    "provinceId": "sindh",
+    "name": "Civil Lines",
+    "urduName": "سیول لائنز جیکب آباد",
+    "aliases": [
+      "Civil Lines Jacobabad",
+      "DC Office Jacobabad"
+    ],
+    "postalCode": "79200",
+    "coordinates": {
+      "lat": 28.285,
+      "lng": 68.435
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "jacobabad-club-road",
+    "cityId": "jacobabad",
+    "provinceId": "sindh",
+    "name": "Club Road",
+    "urduName": "کلب روڈ جیکب آباد",
+    "aliases": [
+      "Jacob Club Road",
+      "Victoria Clock Tower Area"
+    ],
+    "postalCode": "79200",
+    "coordinates": {
+      "lat": 28.281,
+      "lng": 68.441
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "jacobabad-quetta-road",
+    "cityId": "jacobabad",
+    "provinceId": "sindh",
+    "name": "Quetta Road Commercial",
+    "urduName": "کوئٹہ روڈ جیکب آباد",
+    "aliases": [
+      "Quetta Road Bypass Jacobabad"
+    ],
+    "postalCode": "79200",
+    "coordinates": {
+      "lat": 28.292,
+      "lng": 68.422
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "jacobabad-shahi-bazaar",
+    "cityId": "jacobabad",
+    "provinceId": "sindh",
+    "name": "Shahi Bazaar",
+    "urduName": "شاہی بازار جیکب آباد",
+    "aliases": [
+      "Main Bazaar Jacobabad",
+      "Sarafa Bazaar Jacobabad"
+    ],
+    "postalCode": "79200",
+    "coordinates": {
+      "lat": 28.278,
+      "lng": 68.438
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "jacobabad-tower-road",
+    "cityId": "jacobabad",
+    "provinceId": "sindh",
+    "name": "Tower Road",
+    "urduName": "ٹاور روڈ جیکب آباد",
+    "aliases": [
+      "Victoria Tower Road"
+    ],
+    "postalCode": "79200",
+    "coordinates": {
+      "lat": 28.274,
+      "lng": 68.445
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "jacobabad-family-lines",
+    "cityId": "jacobabad",
+    "provinceId": "sindh",
+    "name": "Family Lines",
+    "urduName": "فیملی لائنز جیکب آباد",
+    "aliases": [
+      "Family Lines Jacobabad"
+    ],
+    "postalCode": "79200",
+    "coordinates": {
+      "lat": 28.288,
+      "lng": 68.449
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "jacobabad-shahbaz-base",
+    "cityId": "jacobabad",
+    "provinceId": "sindh",
+    "name": "Shahbaz Airbase Area",
+    "urduName": "شہباز ایئربیس ایریا",
+    "aliases": [
+      "PAF Base Shahbaz Jacobabad"
+    ],
+    "postalCode": "79200",
+    "coordinates": {
+      "lat": 28.298,
+      "lng": 68.458
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "jacobabad-shikarpur-road",
+    "cityId": "jacobabad",
+    "provinceId": "sindh",
+    "name": "Shikarpur Road",
+    "urduName": "شکارپور روڈ جیکب آباد",
+    "aliases": [
+      "Shikarpur Road Jacobabad"
+    ],
+    "postalCode": "79200",
+    "coordinates": {
+      "lat": 28.265,
+      "lng": 68.428
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+];

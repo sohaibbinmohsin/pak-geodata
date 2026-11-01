@@ -1,0 +1,256 @@
+[
+  {
+    "id": "bahawalpur-cantt",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Bahawalpur Cantonment",
+    "urduName": "بہاولپور کینٹ",
+    "aliases": [
+      "Bahawalpur Cantt",
+      "Cantt Bahawalpur"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.395,
+      "lng": 71.692
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-model-town-a",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Model Town A",
+    "urduName": "ماڈل ٹاؤن A بہاولپور",
+    "aliases": [
+      "Model Town Block A"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.382,
+      "lng": 71.675
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-model-town-b",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Model Town B",
+    "urduName": "ماڈل ٹاؤن B بہاولپور",
+    "aliases": [
+      "Model Town Block B"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.378,
+      "lng": 71.681
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-model-town-c",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Model Town C",
+    "urduName": "ماڈل ٹاؤن C بہاولپور",
+    "aliases": [
+      "Model Town Block C"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.373,
+      "lng": 71.688
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-satellite-town",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Satellite Town",
+    "urduName": "سیٹلائٹ ٹاؤن بہاولپور",
+    "aliases": [
+      "Satellite Town Bahawalpur"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.362,
+      "lng": 71.668
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-baghdad-ul-jadeed",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Baghdad-ul-Jadeed",
+    "urduName": "بغداد الجدید",
+    "aliases": [
+      "IUB Baghdad Campus",
+      "Baghdad ul Jadeed Campus"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.345,
+      "lng": 71.722
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-one-unit-colony",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "One Unit Colony",
+    "urduName": "ون یونٹ کالونی",
+    "aliases": [
+      "1 Unit Colony Bahawalpur"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.391,
+      "lng": 71.672
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-dubai-mahal-road",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Dubai Mahal Road",
+    "urduName": "دبئی محل روڈ",
+    "aliases": [
+      "Dubai Palace Road"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.412,
+      "lng": 71.708
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-circular-road",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Circular Road",
+    "urduName": "سرکلر روڈ بہاولپور",
+    "aliases": [
+      "Circular Road Old City"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.398,
+      "lng": 71.684
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-noor-mahal",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Noor Mahal Area",
+    "urduName": "نور محل ایریا",
+    "aliases": [
+      "Noor Mahal Bahawalpur"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.393,
+      "lng": 71.662
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-shadman-city",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Shadman City",
+    "urduName": "شادمان سٹی بہاولپور",
+    "aliases": [
+      "Shadman Town Bahawalpur"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.355,
+      "lng": 71.655
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-industrial-estate",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Small Industrial Estate",
+    "urduName": "سمال انڈسٹریل اسٹیٹ بہاولپور",
+    "aliases": [
+      "SIE Bahawalpur"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.368,
+      "lng": 71.711
+    },
+    "type": "industrial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+]

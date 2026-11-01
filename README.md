@@ -71,7 +71,7 @@ poetry add pak-geodata
 | :--- | :--- | :--- | :--- |
 | **Provinces & Territories** | **7** | 100% of Pakistan | Punjab, Sindh, KPK, Balochistan, Islamabad (ICT), Azad Jammu & Kashmir (AJK), Gilgit-Baltistan |
 | **Verified Cities** | **79** | Major & Secondary Urban Centers | District centroids, bounding boxes, administrative divisions, 5-digit postal code ranges |
-| **Flagship Metros & Urban Hubs Areas** | **504** | Phase 1 (10 Cities) | Foundational & verified areas across Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar, Quetta, Hyderabad, and Gujranwala |
+| **Flagship Metros & Regional Urban Areas** | **812** | 42 Cities Across All 7 Provinces & Territories | Foundational & verified areas across 42 metropolitan centers and regional economic hubs |
 
 ---
 
@@ -177,11 +177,11 @@ This enables developers to immediately geofence incoming coordinates, filter are
 
 ---
 
-## Flagship Metropolitan Areas & Urban Hubs (Phase 1: 10 Cities)
+## Verified Areas & Urban Hubs (812 Areas Across 42 Cities)
 
-Phase 1 coverage encompasses **504 triangulated golden areas across 10 major urban hubs and provincial capitals**, spanning all sectors, housing societies, commercial markets, industrial estates, and historic quarters:
+Coverage encompasses **812 triangulated golden areas across 42 metropolitan centers and regional economic hubs**, spanning all sectors, housing societies, commercial markets, industrial estates, and historic quarters across all 7 provinces and administrative territories:
 
-### Current Phase 1 Coverage (504 Areas across 10 Cities):
+### Top 10 Metropolitan Hubs (504 Areas):
 - **Karachi** (`105 areas`): Clifton (Blocks 1-9), DHA (Phases 1-8), Gulshan-e-Iqbal (Blocks 1-13), North Nazimabad (Blocks A-T), PECHS (Blocks 2, 3, 6), Federal B Area (Blocks 1-12), Gulistan-e-Johar (Blocks 1-15), North Karachi (Sectors 5, 7, 8, 11), Nazimabad (Blocks 1-2), Saddar, SITE, Korangi Crossing, Landhi Industrial, Port Qasim, I.I. Chundrigar Road, Empress Market, Scheme 33, Gulshan-e-Maymar, Gulshan-e-Hadeed, Bahadurabad, Tariq Road, Burns Road, etc.
 - **Lahore** (`105 areas`): Gulberg (I-V), DHA (Phases 1-9, Prism & Rahbar), Model Town, Johar Town (Phases 1-2 & Blocks B-R), Allama Iqbal Town (Blocks Chenab, Ravi, Huma, Khyber, Mehran, Neelam, Nizam, Jahanzeb), Bahria Town (Sectors A-F), Township (Sectors A1-C2), Sabzazar (Blocks A-G), Faisal Town (Blocks A-C), Garden Town, Cantt, Paragon City, State Life (Phases 1-2), Sui Gas (Phases 1-2), PCSIR (Phases 1-2), Izmir Town, Jubilee Town, Liberty Market, M.M. Alam Road, Hafeez Centre, Shalimar, Badami Bagh, Shadbagh, Thokar Niaz Baig, Barki Road, Bedian Road, etc.
 - **Islamabad** (`80 areas`): CDA Sectors (F-5 to F-17, G-5 to G-17, H-8 to H-16, I-8 to I-16, D-12, D-17, D-18, E-7, E-8, E-9, E-11, C-12, C-15, C-16, B-17), Diplomatic Enclave, Blue Area, DHA Islamabad (Phases 1, 2, 3, 5), Bahria Town (Phases 2, 3, 7 & Enclave), Gulberg Greens, Soan Gardens, CBR Town, Police Foundation, PWD, Pakistan Town, Naval Anchorage, Bhara Kahu, Bani Gala, Park View City, Chak Shahzad, Rawat Industrial, Sihala, Humak, Nilore, etc.
@@ -192,6 +192,14 @@ Phase 1 coverage encompasses **504 triangulated golden areas across 10 major urb
 - **Hyderabad** (`26 areas`): Latifabad (Units 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), Qasimabad (Phases 1-2, Nasim Nagar), Saddar, Cantt, Auto Bhan Road, Citizen Colony, Kohsar, Gul Centre, Defence (Phases 1-2), Hussainabad, GOR Colony, Wadhu Wah Road, Thandi Sarak, SITE Area, etc.
 - **Gujranwala** (`22 areas`): Gujranwala Cantt, Model Town, DC Colony, People's Colony, Satellite Town, Wapda Town, Master City, Garden Town, Rahwali Cantt, Shalimar Town, Citi Housing (Phases 1-2), Palm City, Fazaia Housing, Sialkot Bypass, Kangniwala, Gondlanwala Road, Nowshera Road, Trust Plaza, Small Industrial Estate, Climax Industrial Zone, Civil Lines, etc.
 - **Quetta** (`20 areas`): Quetta Cantt, Jinnah Town, Shahbaz Town, Samungli Road, Model Town, Zarghoon Housing Scheme, Satellite Town, Chaman Phatak, Patel Bagh, Arbab Town, Brewery Road, Nawan Killi, Alamo Chowk, Spinny Road, Joint Road, Airport Road, Gulshan-e-Zahoor, Liaquat Bazaar, Suraj Ganj Bazaar, Kandahari Bazaar, etc.
+
+### 32 Regional Economic Centers & Provincial Cities (308 Areas):
+- **Punjab**: Sialkot (14), Bahawalpur (12), Sargodha (12), Sheikhupura (10), Sahiwal (10), Jhelum (10), Gujrat (10), Rahim Yar Khan (10), Dera Ghazi Khan (10), Kasur (8), Wah Cantt (8), Okara (8).
+- **Sindh**: Sukkur (12), Larkana (10), Nawabshah (10), Mirpur Khas (8), Jacobabad (8).
+- **KPK**: Abbottabad (12), Mardan (10), Mingora / Swat (10), Kohat (8), Dera Ismail Khan (8).
+- **Balochistan**: Gwadar (10), Turbat (8), Khuzdar (8), Hub (8).
+- **Azad Jammu & Kashmir (AJK)**: Muzaffarabad (10), Mirpur (10), Rawalakot (8).
+- **Gilgit-Baltistan**: Gilgit (10), Skardu (10), Aliabad / Hunza (8).
 
 ---
 
@@ -911,8 +919,7 @@ We actively welcome community contributions to expand coverage across Pakistan!
 5. Open a Pull Request! Please read our [Contributing Guide](CONTRIBUTING.md) for complete details.
 
 ### Expansion Roadmap
-- **Phase 1 (Active)**: Top 10 Major Urban Hubs (Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar, Hyderabad, Quetta, Gujranwala): 504 verified areas across residential, commercial, industrial, and historic classifications.
-- **Phase 2 (Planned)**: Secondary Urban Centers (Sialkot, Abbottabad, Bahawalpur, Sukkur, Mardan, Larkana, Mirpur, Muzaffarabad, Gilgit, Skardu, Gwadar).
+- **Phase 1 & Phase 2 (Completed)**: National coverage of 812 verified golden areas across 42 cities covering all 7 provinces and administrative territories (top 10 metropolitan centers + 32 regional economic hubs).
 - **Phase 3 (Planned)**: Tertiary cities, tehsils, and union councils across all provinces.
 - **Phase 4 (Planned)**: GeoJSON polygon boundary support for precise geofencing.
 

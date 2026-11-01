@@ -118,7 +118,7 @@ class TestPakGeodata(unittest.TestCase):
     # 3. Areas Tests
     def test_get_all_areas(self):
         areas = get_all_areas()
-        self.assertEqual(len(areas), 504)
+        self.assertEqual(len(areas), 812)
         for a in areas:
             self.assertIsInstance(a, PakistanArea)
             self.assertTrue(len(a.id) > 0)

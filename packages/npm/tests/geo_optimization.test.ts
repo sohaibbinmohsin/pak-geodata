@@ -54,12 +54,12 @@ test('getNearestArea fallback: point outside all city bounding boxes falls back 
 });
 
 test('getNearestArea fallback: point inside a city with 0 areas falls back to all areas', () => {
-  // Muzaffarabad center coordinates (inside Muzaffarabad bounds, but Muzaffarabad has 0 verified areas in dataset)
-  const muzaffarabadCoords = { lat: 34.37, lng: 73.4711 };
-  const nearest = getNearestArea(muzaffarabadCoords);
+  // Attock center coordinates (inside Attock bounds, but Attock has 0 verified areas in dataset)
+  const attockCoords = { lat: 33.76, lng: 72.36 };
+  const nearest = getNearestArea(attockCoords);
   assert.ok(nearest);
-  // Nearest verified area is in Islamabad or Rawalpindi (~60km away)
-  assert.ok(nearest.cityId === 'islamabad' || nearest.cityId === 'rawalpindi');
+  // Nearest verified area is in Wah Cantt, Rawalpindi, or Islamabad (~30-60km away)
+  assert.ok(nearest.cityId === 'wah-cantt' || nearest.cityId === 'rawalpindi' || nearest.cityId === 'islamabad');
 });
 
 test('getNearestArea options: cityId explicitly overrides spatial pruning', () => {

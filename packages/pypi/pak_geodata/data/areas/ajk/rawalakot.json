@@ -1,0 +1,171 @@
+[
+  {
+    "id": "rawalakot-main-bazaar",
+    "cityId": "rawalakot",
+    "provinceId": "ajk",
+    "name": "Main Bazaar & Kachehri Chowk",
+    "urduName": "مین بازار و کچہری چوک راولا کوٹ",
+    "aliases": [
+      "Rawalakot Main Bazaar",
+      "Kachehri Chowk Rawalakot"
+    ],
+    "postalCode": "12350",
+    "coordinates": {
+      "lat": 33.858,
+      "lng": 73.755
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalakot-cmh-area",
+    "cityId": "rawalakot",
+    "provinceId": "ajk",
+    "name": "CMH Area",
+    "urduName": "سی ایم ایچ ایریا راولا کوٹ",
+    "aliases": [
+      "Combined Military Hospital Rawalakot"
+    ],
+    "postalCode": "12350",
+    "coordinates": {
+      "lat": 33.862,
+      "lng": 73.761
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalakot-university-campus",
+    "cityId": "rawalakot",
+    "provinceId": "ajk",
+    "name": "University of Poonch Campus",
+    "urduName": "یونیورسٹی آف پونچھ کیمپس",
+    "aliases": [
+      "Poonch University Rawalakot"
+    ],
+    "postalCode": "12350",
+    "coordinates": {
+      "lat": 33.871,
+      "lng": 73.768
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalakot-housing-scheme",
+    "cityId": "rawalakot",
+    "provinceId": "ajk",
+    "name": "Housing Scheme Rawalakot",
+    "urduName": "ہاؤسنگ اسکیم راولا کوٹ",
+    "aliases": [
+      "MDA Housing Rawalakot"
+    ],
+    "postalCode": "12350",
+    "coordinates": {
+      "lat": 33.865,
+      "lng": 73.748
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalakot-kachehri-road",
+    "cityId": "rawalakot",
+    "provinceId": "ajk",
+    "name": "Kachehri Road (Courts Area)",
+    "urduName": "کچہری روڈ راولا کوٹ",
+    "aliases": [
+      "District Courts Rawalakot"
+    ],
+    "postalCode": "12350",
+    "coordinates": {
+      "lat": 33.855,
+      "lng": 73.751
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalakot-airport-road",
+    "cityId": "rawalakot",
+    "provinceId": "ajk",
+    "name": "Airport Road",
+    "urduName": "ایئرپورٹ روڈ راولا کوٹ",
+    "aliases": [
+      "Rawalakot Airport Area"
+    ],
+    "postalCode": "12350",
+    "coordinates": {
+      "lat": 33.851,
+      "lng": 73.775
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalakot-banjosa-road",
+    "cityId": "rawalakot",
+    "provinceId": "ajk",
+    "name": "Banjosa Lake Road",
+    "urduName": "بنجوسہ جھیل روڈ",
+    "aliases": [
+      "Banjosa Road Rawalakot"
+    ],
+    "postalCode": "12350",
+    "coordinates": {
+      "lat": 33.842,
+      "lng": 73.785
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalakot-singola-road",
+    "cityId": "rawalakot",
+    "provinceId": "ajk",
+    "name": "Singola Road Corridor",
+    "urduName": "سنگولہ روڈ راولا کوٹ",
+    "aliases": [
+      "Singola Link Rawalakot"
+    ],
+    "postalCode": "12350",
+    "coordinates": {
+      "lat": 33.878,
+      "lng": 73.738
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+]

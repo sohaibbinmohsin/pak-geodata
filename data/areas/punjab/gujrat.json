@@ -1,0 +1,216 @@
+[
+  {
+    "id": "gujrat-model-town",
+    "cityId": "gujrat",
+    "provinceId": "punjab",
+    "name": "Model Town",
+    "urduName": "ماڈل ٹاؤن گجرات",
+    "aliases": [
+      "Model Town Gujrat"
+    ],
+    "postalCode": "50700",
+    "coordinates": {
+      "lat": 32.585,
+      "lng": 74.072
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujrat-servis-mor",
+    "cityId": "gujrat",
+    "provinceId": "punjab",
+    "name": "Servis Mor Area",
+    "urduName": "سروس موڑ گجرات",
+    "aliases": [
+      "Service Mor Gujrat",
+      "GT Road Service Mor"
+    ],
+    "postalCode": "50700",
+    "coordinates": {
+      "lat": 32.571,
+      "lng": 74.081
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujrat-rehman-shaheed-road",
+    "cityId": "gujrat",
+    "provinceId": "punjab",
+    "name": "Rehman Shaheed Road",
+    "urduName": "رحمان شہید روڈ",
+    "aliases": [
+      "Rehman Shaheed Road Gujrat"
+    ],
+    "postalCode": "50700",
+    "coordinates": {
+      "lat": 32.578,
+      "lng": 74.075
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujrat-shadman-colony",
+    "cityId": "gujrat",
+    "provinceId": "punjab",
+    "name": "Shadman Colony",
+    "urduName": "شادمان کالونی گجرات",
+    "aliases": [
+      "Shadman Colony Gujrat"
+    ],
+    "postalCode": "50700",
+    "coordinates": {
+      "lat": 32.592,
+      "lng": 74.065
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujrat-court-road",
+    "cityId": "gujrat",
+    "provinceId": "punjab",
+    "name": "Court Road (Civil Lines)",
+    "urduName": "کورٹ روڈ گجرات",
+    "aliases": [
+      "Court Road Gujrat",
+      "Kachehri Gujrat"
+    ],
+    "postalCode": "50700",
+    "coordinates": {
+      "lat": 32.568,
+      "lng": 74.068
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujrat-railway-road",
+    "cityId": "gujrat",
+    "provinceId": "punjab",
+    "name": "Railway Road",
+    "urduName": "ریلوے روڈ گجرات",
+    "aliases": [
+      "Station Road Gujrat",
+      "Railway Station Area"
+    ],
+    "postalCode": "50700",
+    "coordinates": {
+      "lat": 32.564,
+      "lng": 74.075
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujrat-marghzar-colony",
+    "cityId": "gujrat",
+    "provinceId": "punjab",
+    "name": "Marghzar Colony",
+    "urduName": "مرغزار کالونی گجرات",
+    "aliases": [
+      "Marghzar Colony Gujrat"
+    ],
+    "postalCode": "50700",
+    "coordinates": {
+      "lat": 32.598,
+      "lng": 74.084
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujrat-bhimbher-road",
+    "cityId": "gujrat",
+    "provinceId": "punjab",
+    "name": "Bhimber Road",
+    "urduName": "بھمبر روڈ گجرات",
+    "aliases": [
+      "Bhimber Road Corridor"
+    ],
+    "postalCode": "50700",
+    "coordinates": {
+      "lat": 32.612,
+      "lng": 74.071
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujrat-small-industrial-estate",
+    "cityId": "gujrat",
+    "provinceId": "punjab",
+    "name": "Small Industrial Estate",
+    "urduName": "سمال انڈسٹریل اسٹیٹ گجرات",
+    "aliases": [
+      "SIE Gujrat",
+      "Fan Industrial Zone Gujrat"
+    ],
+    "postalCode": "50700",
+    "coordinates": {
+      "lat": 32.552,
+      "lng": 74.095
+    },
+    "type": "industrial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujrat-jalalpur-road",
+    "cityId": "gujrat",
+    "provinceId": "punjab",
+    "name": "Jalalpur Jattan Road",
+    "urduName": "جلالپور جٹاں روڈ",
+    "aliases": [
+      "Jalalpur Road Gujrat"
+    ],
+    "postalCode": "50700",
+    "coordinates": {
+      "lat": 32.625,
+      "lng": 74.092
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+]

@@ -1,0 +1,216 @@
+import type { PakistanArea } from "../../types.js";
+
+export const rahimYarKhanAreas: readonly PakistanArea[] = [
+  {
+    "id": "rahim-yar-khan-abbasia-town",
+    "cityId": "rahim-yar-khan",
+    "provinceId": "punjab",
+    "name": "Abbasia Town",
+    "urduName": "عباسیہ ٹاؤن رحیم یار خان",
+    "aliases": [
+      "Abbasia Town RYK"
+    ],
+    "postalCode": "64200",
+    "coordinates": {
+      "lat": 28.428,
+      "lng": 70.308
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rahim-yar-khan-gulshan-e-iqbal",
+    "cityId": "rahim-yar-khan",
+    "provinceId": "punjab",
+    "name": "Gulshan-e-Iqbal",
+    "urduName": "گلشنِ اقبال رحیم یار خان",
+    "aliases": [
+      "Gulshan e Iqbal RYK"
+    ],
+    "postalCode": "64200",
+    "coordinates": {
+      "lat": 28.435,
+      "lng": 70.315
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rahim-yar-khan-model-town",
+    "cityId": "rahim-yar-khan",
+    "provinceId": "punjab",
+    "name": "Model Town",
+    "urduName": "ماڈل ٹاؤن رحیم یار خان",
+    "aliases": [
+      "Model Town RYK"
+    ],
+    "postalCode": "64200",
+    "coordinates": {
+      "lat": 28.421,
+      "lng": 70.301
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rahim-yar-khan-canal-park",
+    "cityId": "rahim-yar-khan",
+    "provinceId": "punjab",
+    "name": "Canal Park Area",
+    "urduName": "کینال پارک رحیم یار خان",
+    "aliases": [
+      "Canal Colony RYK"
+    ],
+    "postalCode": "64200",
+    "coordinates": {
+      "lat": 28.415,
+      "lng": 70.294
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rahim-yar-khan-trust-colony",
+    "cityId": "rahim-yar-khan",
+    "provinceId": "punjab",
+    "name": "Trust Colony",
+    "urduName": "ٹرسٹ کالونی رحیم یار خان",
+    "aliases": [
+      "Trust Colony RYK"
+    ],
+    "postalCode": "64200",
+    "coordinates": {
+      "lat": 28.432,
+      "lng": 70.298
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rahim-yar-khan-shahi-road",
+    "cityId": "rahim-yar-khan",
+    "provinceId": "punjab",
+    "name": "Shahi Road Commercial",
+    "urduName": "شاہی روڈ رحیم یار خان",
+    "aliases": [
+      "Shahi Road RYK"
+    ],
+    "postalCode": "64200",
+    "coordinates": {
+      "lat": 28.424,
+      "lng": 70.312
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rahim-yar-khan-city-center",
+    "cityId": "rahim-yar-khan",
+    "provinceId": "punjab",
+    "name": "City Center & Sadiq Bazaar",
+    "urduName": "صادق بازار رحیم یار خان",
+    "aliases": [
+      "Sadiq Bazaar RYK",
+      "Clock Tower RYK"
+    ],
+    "postalCode": "64200",
+    "coordinates": {
+      "lat": 28.419,
+      "lng": 70.306
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rahim-yar-khan-airport-road",
+    "cityId": "rahim-yar-khan",
+    "provinceId": "punjab",
+    "name": "Airport Road",
+    "urduName": "ایئرپورٹ روڈ رحیم یار خان",
+    "aliases": [
+      "Sheikh Zayed Airport Road RYK"
+    ],
+    "postalCode": "64200",
+    "coordinates": {
+      "lat": 28.441,
+      "lng": 70.282
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rahim-yar-khan-etihad-garden",
+    "cityId": "rahim-yar-khan",
+    "provinceId": "punjab",
+    "name": "Etihad Garden",
+    "urduName": "اتحاد گارڈن رحیم یار خان",
+    "aliases": [
+      "Etihad Town RYK"
+    ],
+    "postalCode": "64200",
+    "coordinates": {
+      "lat": 28.448,
+      "lng": 70.328
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rahim-yar-khan-industrial-area",
+    "cityId": "rahim-yar-khan",
+    "provinceId": "punjab",
+    "name": "Small Industrial Estate",
+    "urduName": "سمال انڈسٹریل اسٹیٹ رحیم یار خان",
+    "aliases": [
+      "SIE RYK",
+      "Factory Area RYK"
+    ],
+    "postalCode": "64200",
+    "coordinates": {
+      "lat": 28.398,
+      "lng": 70.335
+    },
+    "type": "industrial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+];
