@@ -7,3 +7,5 @@ __pycache__/
 build/
 pipeline/raw/
 .DS_Store
+.superpowers/
+.worktrees/

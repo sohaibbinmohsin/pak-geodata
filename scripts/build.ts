@@ -187,6 +187,14 @@ async function main() {
   const npmDir = resolve(rootDir, 'packages/npm');
   execSync('node build.js', { cwd: npmDir, stdio: 'inherit' });
 
+  // Verify hierarchy subpath build artifacts
+  const hierarchyEsm = resolve(npmDir, 'dist/hierarchy.js');
+  const hierarchyCjs = resolve(npmDir, 'dist/hierarchy.cjs');
+  const hierarchyDts = resolve(npmDir, 'dist/hierarchy.d.ts');
+  if (!existsSync(hierarchyEsm) || !existsSync(hierarchyCjs) || !existsSync(hierarchyDts)) {
+    throw new Error('Hierarchy build artifacts are missing from packages/npm/dist');
+  }
+
   console.log('\n=== Build Summary ===');
   console.log(`Provinces:            ${verifyResult.stats.provinces}`);
   console.log(`Cities:               ${verifyResult.stats.cities}`);
@@ -198,6 +206,7 @@ async function main() {
   }
   console.log('\nDistribution artifacts generated:');
   console.log('  ✔ packages/npm/dist/ (ESM + CommonJS bundles + DTS declarations)');
+  console.log('  ✔ packages/npm/dist/hierarchy (Subpath hierarchy exports: ESM, CJS, DTS)');
   console.log('  ✔ packages/npm/dist/areas/ (Modular subpath areas)');
   console.log('  ✔ packages/pypi/pak_geodata/data/ (Synchronized JSON datasets)');
   console.log('\n✔ Full production build succeeded with 0 errors.');

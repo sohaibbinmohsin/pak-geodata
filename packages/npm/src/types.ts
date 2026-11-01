@@ -65,3 +65,32 @@ export interface NearestAreaOptions {
   provinceId?: string;
   maxDistanceKm?: number;
 }
+
+export type PakLocationType = 'province' | 'division' | 'district' | 'tehsil' | 'area';
+
+export interface PakLocationItem {
+  id: string;
+  nameEn: string;
+  nameUr: string;
+  type: PakLocationType;
+  parentId?: string;
+  coordinates?: Coordinates;
+}
+
+export type ProvinceId =
+  | 'punjab'
+  | 'sindh'
+  | 'khyber-pakhtunkhwa'
+  | 'balochistan'
+  | 'islamabad-ict'
+  | 'azad-jammu-kashmir'
+  | 'gilgit-baltistan';
+
+export type CityId =
+  | 'lahore'
+  | 'karachi'
+  | 'islamabad'
+  | 'rawalpindi'
+  | 'faisalabad'
+  | (string & {});
+

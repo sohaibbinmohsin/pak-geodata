@@ -21,8 +21,15 @@ execSync(
   { cwd: import.meta.dirname, stdio: 'inherit' }
 );
 
-// 3. Compile CommonJS bundles for subpath areas
-console.log('3. Compiling CommonJS subpath areas...');
+// 3. Compile CommonJS bundle for hierarchy subpath
+console.log('3. Compiling CommonJS hierarchy subpath bundle...');
+execSync(
+  'npx esbuild src/hierarchy.ts --bundle --platform=node --format=cjs --outfile=dist/hierarchy.cjs',
+  { cwd: import.meta.dirname, stdio: 'inherit' }
+);
+
+// 4. Compile CommonJS bundles for subpath areas
+console.log('4. Compiling CommonJS subpath areas...');
 const areasDir = resolve(import.meta.dirname, 'src/areas');
 const areaFiles = existsSync(areasDir)
   ? readdirSync(areasDir)
