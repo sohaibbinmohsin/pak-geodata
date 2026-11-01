@@ -10,6 +10,61 @@ import {
   Cpu,
 } from 'lucide-react';
 
+function NpmIcon({ className = 'w-4 h-4' }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-label="NPM logo"
+      data-testid="npm-icon"
+    >
+      <rect x="3" y="3" width="18" height="18" fill="#FFFFFF" />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0zM5.13 5.323l13.837.019-.009 13.836h-3.464l.01-10.382h-3.456L12.04 19.17H5.113z"
+        fill="#CB3837"
+      />
+    </svg>
+  );
+}
+
+function PythonIcon({ className = 'w-4 h-4' }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="16 16 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-label="Python logo"
+      data-testid="python-icon"
+    >
+      <defs>
+        <linearGradient id="hero-python-blue" x1="19.075" y1="18.782" x2="34.898" y2="34.658" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#387EB8" />
+          <stop offset="1" stopColor="#3776AB" />
+        </linearGradient>
+        <linearGradient id="hero-python-yellow" x1="28.809" y1="28.882" x2="45.803" y2="45.163" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#FFE052" />
+          <stop offset="1" stopColor="#FFD43B" />
+        </linearGradient>
+      </defs>
+      <path
+        fill="url(#hero-python-blue)"
+        d="M31.885 16c-8.124 0-7.617 3.523-7.617 3.523l.01 3.65h7.752v1.095H21.197S16 23.678 16 31.876c0 8.196 4.537 7.906 4.537 7.906h2.708v-3.804s-.146-4.537 4.465-4.537h7.688s4.32.07 4.32-4.175v-7.019S40.374 16 31.885 16zm-4.275 2.454a1.394 1.394 0 1 1 0 2.79 1.393 1.393 0 0 1-1.395-1.395c0-.771.624-1.395 1.395-1.395z"
+      />
+      <path
+        fill="url(#hero-python-yellow)"
+        d="M32.115 47.833c8.124 0 7.617-3.523 7.617-3.523l-.01-3.65H31.97v-1.095h10.832S48 40.155 48 31.958c0-8.197-4.537-7.906-4.537-7.906h-2.708v3.803s.146 4.537-4.465 4.537h-7.688s-4.32-.07-4.32 4.175v7.019s-.656 4.247 7.833 4.247zm4.275-2.454a1.393 1.393 0 0 1-1.395-1.395 1.394 1.394 0 1 1 1.395 1.395z"
+      />
+    </svg>
+  );
+}
+
 export interface HeroProps {
   className?: string;
   onOpenStudio?: () => void;
@@ -119,12 +174,8 @@ export default function Hero({ className = '', onOpenStudio }: HeroProps) {
           <div className="glass-chrome rounded-xl border border-white/10 p-3 sm:p-4 text-left transition-all hover:border-white/20">
             <div className="flex items-center justify-between gap-2 pb-2 mb-2 border-b border-white/10 text-xs">
               <div className="flex items-center gap-2">
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-red-500/80 inline-block" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80 inline-block" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80 inline-block" />
-                </div>
-                <span className="font-mono text-[11px] font-semibold text-rose-400 ml-1">npm</span>
+                <NpmIcon className="w-4 h-4 shrink-0 rounded-[3px]" />
+                <span className="font-mono text-[11px] font-semibold text-rose-400">npm</span>
               </div>
               <button
                 type="button"
@@ -156,12 +207,8 @@ export default function Hero({ className = '', onOpenStudio }: HeroProps) {
           <div className="glass-chrome rounded-xl border border-white/10 p-3 sm:p-4 text-left transition-all hover:border-white/20">
             <div className="flex items-center justify-between gap-2 pb-2 mb-2 border-b border-white/10 text-xs">
               <div className="flex items-center gap-2">
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-red-500/80 inline-block" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80 inline-block" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80 inline-block" />
-                </div>
-                <span className="font-mono text-[11px] font-semibold text-sky-400 ml-1">pip</span>
+                <PythonIcon className="w-4 h-4 shrink-0" />
+                <span className="font-mono text-[11px] font-semibold text-sky-400">pip</span>
               </div>
               <button
                 type="button"

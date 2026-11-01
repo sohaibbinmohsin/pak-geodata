@@ -28,3 +28,23 @@ test('Hero component includes feature badge, technical subhead, metrics ticker, 
   assert.ok(!content.includes('Sohaib Bin Mohsin'), 'Hero must not contain personal names');
   assert.ok(!content.includes('The Mohsin Project'), 'Hero must not contain company branding');
 });
+
+test('Hero component replaces terminal window dots with NPM and Python/PyPI icons', () => {
+  const heroPath = resolve(process.cwd(), 'apps/demo/src/components/Hero.tsx');
+  const content = readFileSync(heroPath, 'utf8');
+
+  // Must not have decorative macOS window dots
+  assert.ok(!content.includes('bg-red-500/80'), 'Hero must not contain red window dot');
+  assert.ok(!content.includes('bg-amber-500/80'), 'Hero must not contain amber window dot');
+
+  // Must contain NPM and Python/PyPI logos/SVGs
+  assert.ok(content.includes('aria-label="NPM logo"'), 'Hero includes NPM logo');
+  assert.ok(content.includes('aria-label="Python logo"'), 'Hero includes Python logo');
+  assert.ok(content.includes('data-testid="npm-icon"'), 'Hero includes NPM test id');
+  assert.ok(content.includes('data-testid="python-icon"'), 'Hero includes Python test id');
+
+  // No em-dashes or en-dashes
+  assert.ok(!content.includes('\u2014'), 'Hero must contain zero em-dashes');
+  assert.ok(!content.includes('\u2013'), 'Hero must contain zero en-dashes');
+});
+
