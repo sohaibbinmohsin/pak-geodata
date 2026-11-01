@@ -201,8 +201,6 @@ export default function MapCanvas({
   const prevCityIdRef = useRef<string | null | undefined>(selectedCity?.id);
   const prevAreaIdRef = useRef<string | null | undefined>(selectedArea?.id);
 
-  const isSwitchingAreaRef = useRef(false);
-
   // 1. Initialize Map
   useEffect(() => {
     if (!containerRef.current) return;
@@ -287,14 +285,6 @@ export default function MapCanvas({
       onMapClickRef.current?.(coords);
     });
 
-    // Map popupclose handler to sync area deselection
-    mapInstance.on('popupclose', (e: L.PopupEvent) => {
-      if (isSwitchingAreaRef.current) return;
-      if (activeMarkerRef.current && activeMarkerRef.current.getPopup() === e.popup) {
-        onSelectAreaRef.current(null);
-      }
-    });
-
     // Invalidate size once DOM settles to ensure complete tile coverage
     const resizeTimer = setTimeout(() => {
       mapInstance.invalidateSize();
@@ -360,11 +350,7 @@ export default function MapCanvas({
         // Marker click triggers selection & stops propagation to map
         marker.on('click', (e) => {
           L.DomEvent.stopPropagation(e);
-          isSwitchingAreaRef.current = true;
           onSelectAreaRef.current(area);
-          setTimeout(() => {
-            isSwitchingAreaRef.current = false;
-          }, 120);
         });
 
         layerGroup.addLayer(marker);

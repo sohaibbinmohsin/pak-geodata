@@ -79,7 +79,12 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
     if (!area) {
       setReverseGeoPoint(null);
     } else {
-      setReverseGeoPoint(null);
+      setReverseGeoPoint({
+        clicked: area.coordinates,
+        nearest: area,
+        distanceKm: 0,
+        computationTimeMs: 0.1,
+      });
       if (selectedCity && selectedCity.id !== area.cityId) {
         const city = getCityById(area.cityId);
         if (city) setSelectedCity(city);

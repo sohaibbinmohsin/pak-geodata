@@ -243,7 +243,7 @@ export default function Hero({ className = '', onOpenStudio }: HeroProps) {
             type="button"
             onClick={() => {
               if (typeof window !== 'undefined') {
-                window.location.hash = '#studio';
+                window.history.pushState(null, '', '/studio');
               }
               onOpenStudio?.();
             }}

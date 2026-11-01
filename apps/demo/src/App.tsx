@@ -8,38 +8,55 @@ import Footer from './components/Footer';
 import StudioScreen from './components/StudioScreen';
 
 export default function App() {
+  const isStudioPath = () => {
+    if (typeof window === 'undefined') return false;
+    return (
+      window.location.pathname === '/studio' ||
+      window.location.pathname === '/studio/' ||
+      window.location.hash === '#studio'
+    );
+  };
+
   const [view, setView] = useState<'landing' | 'studio'>(() => {
-    return typeof window !== 'undefined' && window.location.hash === '#studio'
-      ? 'studio'
-      : 'landing';
+    return isStudioPath() ? 'studio' : 'landing';
   });
 
   useEffect(() => {
-    const handleHashChange = () => {
-      if (typeof window !== 'undefined') {
-        if (window.location.hash === '#studio') {
-          setView('studio');
-        } else {
-          setView('landing');
-        }
+    const handleNavigation = () => {
+      if (isStudioPath()) {
+        setView('studio');
+      } else {
+        setView('landing');
       }
     };
 
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener('popstate', handleNavigation);
+    window.addEventListener('hashchange', handleNavigation);
+    return () => {
+      window.removeEventListener('popstate', handleNavigation);
+      window.removeEventListener('hashchange', handleNavigation);
+    };
   }, []);
 
   const openStudio = () => {
     setView('studio');
     if (typeof window !== 'undefined') {
-      window.location.hash = '#studio';
+      if (window.location.hash === '#studio') {
+        window.history.replaceState(null, '', '/studio');
+      } else if (window.location.pathname !== '/studio') {
+        window.history.pushState(null, '', '/studio');
+      }
     }
   };
 
   const closeStudio = () => {
     setView('landing');
-    if (typeof window !== 'undefined' && window.location.hash === '#studio') {
-      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    if (typeof window !== 'undefined') {
+      if (window.location.pathname === '/studio' || window.location.pathname === '/studio/') {
+        window.history.pushState(null, '', '/');
+      } else if (window.location.hash === '#studio') {
+        window.history.pushState(null, '', window.location.pathname + window.location.search);
+      }
     }
   };
 

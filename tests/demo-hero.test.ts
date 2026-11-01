@@ -20,7 +20,7 @@ test('Hero component includes feature badge, technical subhead, metrics ticker, 
 
   assert.ok(content.includes('100% Offline & Typed Foundation'), 'Hero includes feature badge');
   assert.ok(content.includes('Standardized administrative hierarchies'), 'Hero includes technical subhead');
-  assert.ok(content.includes('#studio'), 'Hero includes anchor jump to studio');
+  assert.ok(content.includes('/studio') || content.includes('#studio'), 'Hero includes path jump to studio');
   assert.ok(content.includes('Provinces & Territories'), 'Hero includes provinces metric label');
   assert.ok(content.includes('Verified Cities'), 'Hero includes verified cities metric label');
   assert.ok(content.includes('Foundational Areas'), 'Hero includes foundational areas metric label');
