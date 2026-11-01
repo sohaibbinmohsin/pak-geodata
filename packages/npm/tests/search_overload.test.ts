@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { searchAreas } from '../src/index.js';
 
-test('searchAreas overload 1: Sanctuary signature (cityKey, query, lang)', () => {
+test('searchAreas overload 1: city-scoped bilingual signature (cityKey, query, lang)', () => {
   const items = searchAreas('Lahore', 'DHA', 'ur');
   assert.ok(Array.isArray(items));
   assert.ok(items.length > 0);
@@ -56,10 +56,10 @@ test('searchAreas handles Eastern Arabic numerals and Arabic letter variants in 
   assert.ok(arabicKafResults.length > 0);
   assert.ok(arabicKafResults.some((a) => a.id.startsWith('karachi-clifton')));
 
-  // Sanctuary overload with Eastern numerals
-  const sanctuaryItems = searchAreas('Lahore', 'گلبرگ ۳', 'ur');
-  assert.ok(sanctuaryItems.length > 0);
-  assert.equal(sanctuaryItems[0].parentId, 'lahore');
+  // City-scoped bilingual overload with Eastern numerals
+  const cityScopedItems = searchAreas('Lahore', 'گلبرگ ۳', 'ur');
+  assert.ok(cityScopedItems.length > 0);
+  assert.equal(cityScopedItems[0].parentId, 'lahore');
 });
 
 test('searchAreas edge cases: invalid query types and limit option', () => {

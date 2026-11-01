@@ -207,7 +207,7 @@ console.log(provinces[0]); // { id: 'punjab', nameEn: 'Punjab', nameUr: 'پنج�
 const punjabCities = getCitiesAsLocationItems('punjab');
 console.log(`Punjab has ${punjabCities.length} verified cities/districts`);
 
-// 3. City-scoped bilingual search (Sanctuary overload)
+// 3. City-scoped bilingual search (returns PakLocationItem[])
 const results = searchAreas('Lahore', 'DHA 5', 'ur');
 console.log(results[0]);
 // { id: 'lahore-dha-phase-5', nameEn: 'DHA Phase 5', nameUr: 'ڈی ایچ اے فیز ۵', type: 'area', parentId: 'lahore', ... }
@@ -215,9 +215,9 @@ console.log(results[0]);
 
 ---
 
-## Sanctuary Integration Guide
+## Bilingual Hierarchy & Application Guide
 
-This guide documents the design patterns, data contracts, and implementation specifications built into `pak-geodata` for **Sanctuary**—an offline-first emergency rescue reporting and tracking Progressive Web App (PWA) operating across Pakistan.
+This guide documents the design patterns, data contracts, and implementation specifications built into `pak-geodata` for building offline-first progressive web apps, reporting workflows, and localized dashboards operating across Pakistan.
 
 ### 1. Bilingual Administrative Hierarchy (`PakLocationItem`)
 
@@ -315,17 +315,17 @@ console.log(`${getCityName(record.city, 'ur')}، ${getAreaName(record.city, reco
 
 ### 3. Autocomplete Search with Overloaded `searchAreas` & Urdu Normalization
 
-Sanctuary requires responsive autocomplete search scoped to a chosen city, returning typed `PakLocationItem[]` results.
+Applications frequently require responsive autocomplete search scoped to a chosen city, returning typed `PakLocationItem[]` results.
 
 #### Function Overload Signatures
 
 `pak-geodata` supports two search calling styles:
 
 ```typescript
-// 1. Sanctuary Overload (city-scoped, returns PakLocationItem[])
+// 1. City-scoped Overload (returns PakLocationItem[])
 function searchAreas(cityKey: string, query: string, lang?: 'en' | 'ur'): PakLocationItem[];
 
-// 2. Direct Named Function (same as Sanctuary overload)
+// 2. Direct Named Function (same as city-scoped overload)
 function searchLocationItems(cityKey: string, query: string, lang?: 'en' | 'ur'): PakLocationItem[];
 
 // 3. Classic GIS Overload (global or options-based, returns raw PakistanArea[])
@@ -419,7 +419,7 @@ export function IncidentReportForm({ lang, onSubmitReport }: IncidentReportFormP
   // 2. City-scoped bilingual search: handles Urdu script, Eastern numerals ('۳'), and aliases
   const areaSuggestions = useMemo(() => {
     if (!areaQuery.trim() || !selectedCityId) return [];
-    // Invokes overloaded Sanctuary signature: searchAreas(cityKey, query, lang)
+    // Invokes overloaded city-scoped signature: searchAreas(cityKey, query, lang)
     return searchAreas(selectedCityId, areaQuery, lang);
   }, [selectedCityId, areaQuery, lang]);
 
@@ -433,7 +433,7 @@ export function IncidentReportForm({ lang, onSubmitReport }: IncidentReportFormP
 
       // 3. Persist standardized English keys to database / backend
       const payload: IncidentReportPayload = {
-        reportNumber: `SANCTUARY-${Date.now().toString().slice(-6)}`,
+        reportNumber: `INCIDENT-${Date.now().toString().slice(-6)}`,
         city: selectedCityObj?.nameEn || selectedCityId, // Persist English: "Lahore"
         location_area: selectedArea.nameEn,             // Persist English: "Gulberg III"
         coordinates: selectedArea.coordinates,
