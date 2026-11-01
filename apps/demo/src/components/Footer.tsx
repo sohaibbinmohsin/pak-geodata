@@ -1,4 +1,5 @@
 import { Github, Package, Terminal } from 'lucide-react';
+import mohsinLogo from '../assets/mohsin-project-logo.svg';
 
 export interface FooterProps {
   className?: string;
@@ -19,15 +20,16 @@ export default function Footer({ className = '' }: FooterProps) {
               </span>
             </div>
             <p className="text-xs text-neutral-400">
+              A free software by{' '}
               <a
                 href="https://themohsinproject.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="A free software by The Mohsin Project"
-                aria-label="A free software by The Mohsin Project"
-                className="text-neutral-300 hover:text-emerald-400 underline underline-offset-4 decoration-neutral-600 hover:decoration-emerald-400 transition-colors"
+                className="no-underline text-neutral-300 hover:text-white inline-flex items-center gap-1.5 transition-colors font-medium"
+                title="The Mohsin Project Global"
               >
-                A free software by The Mohsin Project
+                <span>The Mohsin Project</span>
+                <img src={mohsinLogo} alt="The Mohsin Project logo" className="w-4 h-4 object-contain opacity-90 hover:opacity-100" />
               </a>
             </p>
             <p className="text-xs text-neutral-500">
