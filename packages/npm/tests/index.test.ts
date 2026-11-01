@@ -45,9 +45,9 @@ test('getProvinceById finds existing province and handles nonexistent', () => {
   assert.equal(unknown, undefined);
 });
 
-test('getAllCities returns all 40 verified cities', () => {
+test('getAllCities returns all 79 verified cities', () => {
   const cities = getAllCities();
-  assert.equal(cities.length, 40);
+  assert.equal(cities.length, 79);
   const lahore = cities.find((c) => c.id === 'lahore');
   assert.ok(lahore);
   assert.equal(lahore?.district, 'Lahore');

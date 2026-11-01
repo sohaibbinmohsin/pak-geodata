@@ -4,7 +4,7 @@
 
 `pak-geodata` is an open-source, production-grade TypeScript and JavaScript client library providing offline access to verified geographic data for Pakistan, created and maintained by [Sohaib Bin Mohsin](https://sohaibbinmohsin.com) at [The Mohsin Project Global](https://themohsinproject.org).
 
-It covers all administrative provinces, 40 major cities, and 189 foundational flagship metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers).
+It covers all administrative provinces, 79 major and secondary cities, and 189 foundational flagship metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers).
 
 Designed with **zero runtime dependencies**, strict geofencing, sub-millisecond lookups, and modular tree-shakeable subpath exports.
 
@@ -239,7 +239,7 @@ export interface PakLocationItem {
 - **`getProvincesAsLocationItems(): PakLocationItem[]`**  
   Returns all 7 provinces and federal territories (`type: 'province'`, `parentId: undefined`).
 - **`getCitiesAsLocationItems(provinceId?: string): PakLocationItem[]`**  
-  Returns all 40 verified municipal cities/districts (`type: 'district'`, `parentId: provinceId`). If `provinceId` is provided, filters cities belonging to that province.
+  Returns all 79 verified municipal cities/districts (`type: 'district'`, `parentId: provinceId`). If `provinceId` is provided, filters cities belonging to that province.
 - **`getAreasAsLocationItems(cityKey: string): PakLocationItem[]`**  
   Returns all verified areas in a given city (`type: 'area'`, `parentId: cityId`).
 - **`toLocationItem(entity)`**  

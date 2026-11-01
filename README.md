@@ -2,7 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/pak-geodata?color=blue)](https://www.npmjs.com/package/pak-geodata)
 [![PyPI Version](https://img.shields.io/pypi/v/pak-geodata?color=green)](https://pypi.org/project/pak-geodata/)
-[![Live Interactive Demo](https://img.shields.io/badge/Live%20Demo-Interactive%20Map-blue?logo=leaflet&color=10B981)](https://sohaibbinmohsin.github.io/pak-geodata/)
+<a href="https://sohaibbinmohsin.github.io/pak-geodata/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Live%20Demo-Interactive%20Map-blue?logo=leaflet&color=10B981" alt="Live Interactive Demo" /></a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build & Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)]()
 
@@ -70,15 +70,15 @@ poetry add pak-geodata
 | Administrative Level | Count | Coverage | Key Details |
 | :--- | :--- | :--- | :--- |
 | **Provinces & Territories** | **7** | 100% of Pakistan | Punjab, Sindh, KPK, Balochistan, Islamabad (ICT), Azad Jammu & Kashmir (AJK), Gilgit-Baltistan |
-| **Verified Cities** | **40** | Major Urban Centers | District centroids, bounding boxes, administrative divisions, 5-digit postal code ranges |
+| **Verified Cities** | **79** | Major & Secondary Urban Centers | District centroids, bounding boxes, administrative divisions, 5-digit postal code ranges |
 | **Flagship Metros Areas** | **189** | Phase 1 (In Progress) | Foundational areas across Karachi, Lahore, Islamabad, Rawalpindi, and Faisalabad |
 
 ---
 
-## The 40 Verified Cities
+## The 79 Verified Cities
 
 ### What does a "verified city" mean?
-Every one of the 40 cities in `pak-geodata` has undergone municipal boundary verification. Each entry provides:
+Every one of the 79 cities in `pak-geodata` has undergone municipal boundary verification. Each entry provides:
 1. **Centroid Coordinates**: Accurate GPS coordinates for the city center.
 2. **District Bounding Box (`bounds`)**: Strict geofencing limits (`minLat`, `maxLat`, `minLng`, `maxLng`) representing the greater urban municipal district.
 3. **Administrative Division**: Official provincial division mapping (e.g. Lahore Division, Karachi Division, Hazara Division).
@@ -86,9 +86,9 @@ Every one of the 40 cities in `pak-geodata` has undergone municipal boundary ver
 
 This enables developers to immediately geofence incoming coordinates, filter areas with `cityId`, and validate shipping addresses offline.
 
-### Complete List of the 40 Verified Cities
+### Complete List of the 79 Verified Cities
 
-- **Punjab (14 cities)**:
+- **Punjab (37 cities)**:
   - Lahore (`lahore`)
   - Rawalpindi (`rawalpindi`)
   - Faisalabad (`faisalabad`)
@@ -103,38 +103,77 @@ This enables developers to immediately geofence incoming coordinates, filter are
   - Jhelum (`jhelum`)
   - Kasur (`kasur`)
   - Rahim Yar Khan (`rahim-yar-khan`)
-- **Sindh (6 cities)**:
+  - Attock (`attock`)
+  - Bahawalnagar (`bahawalnagar`)
+  - Chakwal (`chakwal`)
+  - Chiniot (`chiniot`)
+  - Chishtian (`chishtian`)
+  - Daska (`daska`)
+  - Dera Ghazi Khan (`dera-ghazi-khan`)
+  - Gojra (`gojra`)
+  - Hafizabad (`hafizabad`)
+  - Jhang (`jhang`)
+  - Jaranwala (`jaranwala`)
+  - Kamalia (`kamalia`)
+  - Khanewal (`khanewal`)
+  - Kot Addu (`kot-addu`)
+  - Mandi Bahauddin (`mandi-bahauddin`)
+  - Muridke (`muridke`)
+  - Muzaffargarh (`muzaffargarh`)
+  - Okara (`okara`)
+  - Samundri (`samundri`)
+  - Taxila (`taxila`)
+  - Vehari (`vehari`)
+  - Wah Cantt (`wah-cantt`)
+  - Wazirabad (`wazirabad`)
+- **Sindh (8 cities)**:
   - Karachi (`karachi`)
   - Hyderabad (`hyderabad`)
   - Sukkur (`sukkur`)
   - Larkana (`larkana`)
   - Nawabshah (`nawabshah`)
   - Mirpur Khas (`mirpur-khas`)
-- **Khyber Pakhtunkhwa (6 cities)**:
+  - Jacobabad (`jacobabad`)
+  - Shikarpur (`shikarpur`)
+- **Khyber Pakhtunkhwa (9 cities)**:
   - Peshawar (`peshawar`)
   - Abbottabad (`abbottabad`)
   - Mardan (`mardan`)
   - Mingora / Swat (`mingora`)
   - Kohat (`kohat`)
   - Dera Ismail Khan (`dera-ismail-khan`)
-- **Balochistan (5 cities)**:
+  - Nowshera (`nowshera`)
+  - Swabi (`swabi`)
+  - Mansehra (`mansehra`)
+- **Balochistan (10 cities)**:
   - Quetta (`quetta`)
   - Gwadar (`gwadar`)
   - Turbat (`turbat`)
   - Khuzdar (`khuzdar`)
   - Hub (`hub`)
+  - Chaman (`chaman`)
+  - Sibi (`sibi`)
+  - Zhob (`zhob`)
+  - Loralai (`loralai`)
+  - Dera Murad Jamali (`dera-murad-jamali`)
 - **Islamabad Capital Territory (1 city)**:
   - Islamabad (`islamabad`)
-- **Azad Jammu & Kashmir (4 cities)**:
+- **Azad Jammu & Kashmir (7 cities)**:
   - Muzaffarabad (`muzaffarabad`)
   - Mirpur (`mirpur`)
   - Rawalakot (`rawalakot`)
   - Kotli (`kotli`)
-- **Gilgit-Baltistan (4 cities)**:
+  - Bhimber (`bhimber`)
+  - Bagh (`bagh`)
+  - Pallandri (`pallandri`)
+- **Gilgit-Baltistan (7 cities)**:
   - Gilgit (`gilgit`)
   - Skardu (`skardu`)
   - Karimabad / Hunza (`karimabad-hunza`)
   - Chilas (`chilas`)
+  - Aliabad / Hunza (`aliabad-hunza`)
+  - Gahkuch (`gahkuch`)
+  - Khaplu (`khaplu`)
 
 ---
 
@@ -811,7 +850,7 @@ The project is structured as an automated monorepo with integrated code generati
 ```
 ├── data/                         # Root of truth: Master JSON datasets
 │   ├── provinces.json
-│   ├── cities/                   # 40 cities by province
+│   ├── cities/                   # 79 cities by province
 │   └── areas/                    # Flagship areas by province & city
 ├── packages/
 │   ├── npm/                      # TypeScript / JavaScript client library
@@ -879,5 +918,4 @@ We actively welcome community contributions to expand coverage across Pakistan!
 This project is open-source software licensed under the [MIT License](LICENSE).
 
 Developed and maintained by:
-- **[Sohaib Bin Mohsin](https://sohaibbinmohsin.com)** (Founder & Maintainer)
 - **[The Mohsin Project Global](https://themohsinproject.org)**

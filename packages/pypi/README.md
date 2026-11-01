@@ -4,7 +4,7 @@
 
 `pak-geodata` is an open-source, production-grade Python client library providing offline access to verified geographic data for Pakistan, created and maintained by [Sohaib Bin Mohsin](https://sohaibbinmohsin.com) at [The Mohsin Project Global](https://themohsinproject.org).
 
-It covers all administrative provinces, 40 major cities, and foundational flagship metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers).
+It covers all administrative provinces, 79 major and secondary cities, and foundational flagship metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers).
 
 Designed with **zero runtime dependencies** (pure Python standard library), strict geofencing, and sub-millisecond lookups.
 
@@ -198,7 +198,7 @@ All models are immutable frozen dataclasses (`@dataclass(frozen=True)`):
 |---|---|---|
 | `get_all_provinces()` | `List[PakistanProvince]` | Returns all 7 provinces/territories |
 | `get_province_by_id(id)` | `Optional[PakistanProvince]` | Case-insensitive province lookup |
-| `get_all_cities()` | `List[PakistanCity]` | Returns all 40 verified cities |
+| `get_all_cities()` | `List[PakistanCity]` | Returns all 79 verified cities |
 | `get_cities_by_province(province_id)` | `List[PakistanCity]` | Filters cities by province |
 | `get_city_by_id(id)` | `Optional[PakistanCity]` | Finds city by canonical slug |
 | `get_all_areas()` | `List[PakistanArea]` | Returns all verified areas (189 total) |

@@ -94,6 +94,75 @@ export const cities: readonly PakistanCity[] = [
     "totalAreasCount": 0
   },
   {
+    "id": "bhimber",
+    "name": "Bhimber",
+    "urduName": "بھمبر",
+    "provinceId": "ajk",
+    "division": "Mirpur Division",
+    "district": "Bhimber",
+    "coordinates": {
+      "lat": 32.9745,
+      "lng": 74.0789
+    },
+    "postalCodeRange": [
+      "10050",
+      "10099"
+    ],
+    "bounds": {
+      "minLat": 32.93,
+      "maxLat": 33.02,
+      "minLng": 74.03,
+      "maxLng": 74.13
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "bagh",
+    "name": "Bagh",
+    "urduName": "باغ",
+    "provinceId": "ajk",
+    "division": "Poonch Division",
+    "district": "Bagh",
+    "coordinates": {
+      "lat": 33.98,
+      "lng": 73.79
+    },
+    "postalCodeRange": [
+      "12500",
+      "12550"
+    ],
+    "bounds": {
+      "minLat": 33.94,
+      "maxLat": 34.02,
+      "minLng": 73.74,
+      "maxLng": 73.84
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "pallandri",
+    "name": "Pallandri",
+    "urduName": "پلندری",
+    "provinceId": "ajk",
+    "division": "Poonch Division",
+    "district": "Sudhanoti",
+    "coordinates": {
+      "lat": 33.7128,
+      "lng": 73.6892
+    },
+    "postalCodeRange": [
+      "12050",
+      "12099"
+    ],
+    "bounds": {
+      "minLat": 33.67,
+      "maxLat": 33.76,
+      "minLng": 73.64,
+      "maxLng": 73.74
+    },
+    "totalAreasCount": 0
+  },
+  {
     "id": "quetta",
     "name": "Quetta",
     "urduName": "کوئٹہ",
@@ -209,6 +278,121 @@ export const cities: readonly PakistanCity[] = [
     "totalAreasCount": 0
   },
   {
+    "id": "chaman",
+    "name": "Chaman",
+    "urduName": "چمن",
+    "provinceId": "balochistan",
+    "division": "Quetta Division",
+    "district": "Chaman",
+    "coordinates": {
+      "lat": 30.921,
+      "lng": 66.4597
+    },
+    "postalCodeRange": [
+      "86000",
+      "86050"
+    ],
+    "bounds": {
+      "minLat": 30.87,
+      "maxLat": 30.97,
+      "minLng": 66.41,
+      "maxLng": 66.51
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "sibi",
+    "name": "Sibi",
+    "urduName": "سبی",
+    "provinceId": "balochistan",
+    "division": "Sibi Division",
+    "district": "Sibi",
+    "coordinates": {
+      "lat": 29.5448,
+      "lng": 67.8764
+    },
+    "postalCodeRange": [
+      "82000",
+      "82050"
+    ],
+    "bounds": {
+      "minLat": 29.5,
+      "maxLat": 29.59,
+      "minLng": 67.83,
+      "maxLng": 67.92
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "zhob",
+    "name": "Zhob",
+    "urduName": "ژوب",
+    "provinceId": "balochistan",
+    "division": "Zhob Division",
+    "district": "Zhob",
+    "coordinates": {
+      "lat": 31.3417,
+      "lng": 69.4486
+    },
+    "postalCodeRange": [
+      "85200",
+      "85250"
+    ],
+    "bounds": {
+      "minLat": 31.3,
+      "maxLat": 31.39,
+      "minLng": 69.4,
+      "maxLng": 69.5
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "loralai",
+    "name": "Loralai",
+    "urduName": "لورالائی",
+    "provinceId": "balochistan",
+    "division": "Loralai Division",
+    "district": "Loralai",
+    "coordinates": {
+      "lat": 30.3705,
+      "lng": 68.5979
+    },
+    "postalCodeRange": [
+      "84800",
+      "84850"
+    ],
+    "bounds": {
+      "minLat": 30.33,
+      "maxLat": 30.42,
+      "minLng": 68.55,
+      "maxLng": 68.65
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "dera-murad-jamali",
+    "name": "Dera Murad Jamali",
+    "urduName": "ڈیرہ مراد جمالی",
+    "provinceId": "balochistan",
+    "division": "Nasirabad Division",
+    "district": "Nasirabad",
+    "coordinates": {
+      "lat": 28.5466,
+      "lng": 68.2231
+    },
+    "postalCodeRange": [
+      "80100",
+      "80150"
+    ],
+    "bounds": {
+      "minLat": 28.5,
+      "maxLat": 28.59,
+      "minLng": 68.18,
+      "maxLng": 68.27
+    },
+    "totalAreasCount": 0
+  },
+  {
     "id": "gilgit",
     "name": "Gilgit",
     "urduName": "گلگت",
@@ -297,6 +481,75 @@ export const cities: readonly PakistanCity[] = [
       "maxLat": 35.46,
       "minLng": 74.04,
       "maxLng": 74.15
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "aliabad-hunza",
+    "name": "Aliabad",
+    "urduName": "علی آباد",
+    "provinceId": "gilgit-baltistan",
+    "division": "Gilgit Division",
+    "district": "Hunza",
+    "coordinates": {
+      "lat": 36.3075,
+      "lng": 74.6158
+    },
+    "postalCodeRange": [
+      "15710",
+      "15740"
+    ],
+    "bounds": {
+      "minLat": 36.27,
+      "maxLat": 36.34,
+      "minLng": 74.57,
+      "maxLng": 74.66
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "gahkuch",
+    "name": "Gahkuch",
+    "urduName": "گاہکوچ",
+    "provinceId": "gilgit-baltistan",
+    "division": "Gilgit Division",
+    "district": "Ghizer",
+    "coordinates": {
+      "lat": 36.1736,
+      "lng": 73.7656
+    },
+    "postalCodeRange": [
+      "15200",
+      "15250"
+    ],
+    "bounds": {
+      "minLat": 36.14,
+      "maxLat": 36.21,
+      "minLng": 73.72,
+      "maxLng": 73.81
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "khaplu",
+    "name": "Khaplu",
+    "urduName": "خپلو",
+    "provinceId": "gilgit-baltistan",
+    "division": "Baltistan Division",
+    "district": "Ghanche",
+    "coordinates": {
+      "lat": 35.155,
+      "lng": 76.335
+    },
+    "postalCodeRange": [
+      "16300",
+      "16350"
+    ],
+    "bounds": {
+      "minLat": 35.12,
+      "maxLat": 35.19,
+      "minLng": 76.29,
+      "maxLng": 76.38
     },
     "totalAreasCount": 0
   },
@@ -458,6 +711,75 @@ export const cities: readonly PakistanCity[] = [
       "maxLat": 31.88,
       "minLng": 70.85,
       "maxLng": 70.96
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "nowshera",
+    "name": "Nowshera",
+    "urduName": "نوشہرہ",
+    "provinceId": "kpk",
+    "division": "Peshawar Division",
+    "district": "Nowshera",
+    "coordinates": {
+      "lat": 34.0153,
+      "lng": 71.9747
+    },
+    "postalCodeRange": [
+      "24100",
+      "24199"
+    ],
+    "bounds": {
+      "minLat": 33.96,
+      "maxLat": 34.07,
+      "minLng": 71.92,
+      "maxLng": 72.03
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "swabi",
+    "name": "Swabi",
+    "urduName": "صوابی",
+    "provinceId": "kpk",
+    "division": "Mardan Division",
+    "district": "Swabi",
+    "coordinates": {
+      "lat": 34.1202,
+      "lng": 72.4698
+    },
+    "postalCodeRange": [
+      "23430",
+      "23499"
+    ],
+    "bounds": {
+      "minLat": 34.07,
+      "maxLat": 34.17,
+      "minLng": 72.41,
+      "maxLng": 72.52
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "mansehra",
+    "name": "Mansehra",
+    "urduName": "مانسہرہ",
+    "provinceId": "kpk",
+    "division": "Hazara Division",
+    "district": "Mansehra",
+    "coordinates": {
+      "lat": 34.3333,
+      "lng": 73.2
+    },
+    "postalCodeRange": [
+      "21300",
+      "21399"
+    ],
+    "bounds": {
+      "minLat": 34.28,
+      "maxLat": 34.39,
+      "minLng": 73.15,
+      "maxLng": 73.26
     },
     "totalAreasCount": 0
   },
@@ -784,6 +1106,535 @@ export const cities: readonly PakistanCity[] = [
     "totalAreasCount": 0
   },
   {
+    "id": "attock",
+    "name": "Attock",
+    "urduName": "اٹک",
+    "provinceId": "punjab",
+    "division": "Rawalpindi Division",
+    "district": "Attock",
+    "coordinates": {
+      "lat": 33.766,
+      "lng": 72.3609
+    },
+    "postalCodeRange": [
+      "43600",
+      "43699"
+    ],
+    "bounds": {
+      "minLat": 33.7,
+      "maxLat": 33.82,
+      "minLng": 72.3,
+      "maxLng": 72.42
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "bahawalnagar",
+    "name": "Bahawalnagar",
+    "urduName": "بہاولنگر",
+    "provinceId": "punjab",
+    "division": "Bahawalpur Division",
+    "district": "Bahawalnagar",
+    "coordinates": {
+      "lat": 29.9961,
+      "lng": 73.2536
+    },
+    "postalCodeRange": [
+      "62300",
+      "62399"
+    ],
+    "bounds": {
+      "minLat": 29.93,
+      "maxLat": 30.06,
+      "minLng": 73.19,
+      "maxLng": 73.31
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "chakwal",
+    "name": "Chakwal",
+    "urduName": "چکوال",
+    "provinceId": "punjab",
+    "division": "Rawalpindi Division",
+    "district": "Chakwal",
+    "coordinates": {
+      "lat": 32.9328,
+      "lng": 72.863
+    },
+    "postalCodeRange": [
+      "48800",
+      "48899"
+    ],
+    "bounds": {
+      "minLat": 32.88,
+      "maxLat": 32.98,
+      "minLng": 72.8,
+      "maxLng": 72.92
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "chiniot",
+    "name": "Chiniot",
+    "urduName": "چنیوٹ",
+    "provinceId": "punjab",
+    "division": "Faisalabad Division",
+    "district": "Chiniot",
+    "coordinates": {
+      "lat": 31.72,
+      "lng": 72.9789
+    },
+    "postalCodeRange": [
+      "35400",
+      "35499"
+    ],
+    "bounds": {
+      "minLat": 31.66,
+      "maxLat": 31.78,
+      "minLng": 72.92,
+      "maxLng": 73.04
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "chishtian",
+    "name": "Chishtian",
+    "urduName": "چشتیاں",
+    "provinceId": "punjab",
+    "division": "Bahawalpur Division",
+    "district": "Bahawalnagar",
+    "coordinates": {
+      "lat": 29.7972,
+      "lng": 72.8578
+    },
+    "postalCodeRange": [
+      "62250",
+      "62299"
+    ],
+    "bounds": {
+      "minLat": 29.74,
+      "maxLat": 29.85,
+      "minLng": 72.8,
+      "maxLng": 72.91
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "daska",
+    "name": "Daska",
+    "urduName": "ڈسکہ",
+    "provinceId": "punjab",
+    "division": "Gujranwala Division",
+    "district": "Sialkot",
+    "coordinates": {
+      "lat": 32.3242,
+      "lng": 74.3503
+    },
+    "postalCodeRange": [
+      "51010",
+      "51049"
+    ],
+    "bounds": {
+      "minLat": 32.27,
+      "maxLat": 32.37,
+      "minLng": 74.3,
+      "maxLng": 74.4
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "dera-ghazi-khan",
+    "name": "Dera Ghazi Khan",
+    "urduName": "ڈیرہ غازی خان",
+    "provinceId": "punjab",
+    "division": "Dera Ghazi Khan Division",
+    "district": "Dera Ghazi Khan",
+    "coordinates": {
+      "lat": 30.0561,
+      "lng": 70.6348
+    },
+    "postalCodeRange": [
+      "32200",
+      "32299"
+    ],
+    "bounds": {
+      "minLat": 29.99,
+      "maxLat": 30.12,
+      "minLng": 70.57,
+      "maxLng": 70.7
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "gojra",
+    "name": "Gojra",
+    "urduName": "گوجرہ",
+    "provinceId": "punjab",
+    "division": "Faisalabad Division",
+    "district": "Toba Tek Singh",
+    "coordinates": {
+      "lat": 31.1492,
+      "lng": 72.6836
+    },
+    "postalCodeRange": [
+      "36120",
+      "36149"
+    ],
+    "bounds": {
+      "minLat": 31.1,
+      "maxLat": 31.2,
+      "minLng": 72.63,
+      "maxLng": 72.74
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "hafizabad",
+    "name": "Hafizabad",
+    "urduName": "حافظ آباد",
+    "provinceId": "punjab",
+    "division": "Gujranwala Division",
+    "district": "Hafizabad",
+    "coordinates": {
+      "lat": 32.0679,
+      "lng": 73.6872
+    },
+    "postalCodeRange": [
+      "52110",
+      "52199"
+    ],
+    "bounds": {
+      "minLat": 32.01,
+      "maxLat": 32.12,
+      "minLng": 73.63,
+      "maxLng": 73.74
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "jhang",
+    "name": "Jhang",
+    "urduName": "جھنگ",
+    "provinceId": "punjab",
+    "division": "Faisalabad Division",
+    "district": "Jhang",
+    "coordinates": {
+      "lat": 31.2781,
+      "lng": 72.3167
+    },
+    "postalCodeRange": [
+      "35200",
+      "35299"
+    ],
+    "bounds": {
+      "minLat": 31.21,
+      "maxLat": 31.34,
+      "minLng": 72.26,
+      "maxLng": 72.38
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "jaranwala",
+    "name": "Jaranwala",
+    "urduName": "جڑانوالہ",
+    "provinceId": "punjab",
+    "division": "Faisalabad Division",
+    "district": "Faisalabad",
+    "coordinates": {
+      "lat": 31.3342,
+      "lng": 73.4194
+    },
+    "postalCodeRange": [
+      "37200",
+      "37299"
+    ],
+    "bounds": {
+      "minLat": 31.28,
+      "maxLat": 31.39,
+      "minLng": 73.36,
+      "maxLng": 73.47
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "kamalia",
+    "name": "Kamalia",
+    "urduName": "کمالیہ",
+    "provinceId": "punjab",
+    "division": "Faisalabad Division",
+    "district": "Toba Tek Singh",
+    "coordinates": {
+      "lat": 30.7258,
+      "lng": 72.6447
+    },
+    "postalCodeRange": [
+      "36350",
+      "36399"
+    ],
+    "bounds": {
+      "minLat": 30.68,
+      "maxLat": 30.77,
+      "minLng": 72.59,
+      "maxLng": 72.7
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "khanewal",
+    "name": "Khanewal",
+    "urduName": "خانیوال",
+    "provinceId": "punjab",
+    "division": "Multan Division",
+    "district": "Khanewal",
+    "coordinates": {
+      "lat": 30.3017,
+      "lng": 71.9321
+    },
+    "postalCodeRange": [
+      "58150",
+      "58199"
+    ],
+    "bounds": {
+      "minLat": 30.25,
+      "maxLat": 30.36,
+      "minLng": 71.88,
+      "maxLng": 71.99
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "kot-addu",
+    "name": "Kot Addu",
+    "urduName": "کوٹ ادو",
+    "provinceId": "punjab",
+    "division": "Dera Ghazi Khan Division",
+    "district": "Kot Addu",
+    "coordinates": {
+      "lat": 30.47,
+      "lng": 70.9644
+    },
+    "postalCodeRange": [
+      "34050",
+      "34099"
+    ],
+    "bounds": {
+      "minLat": 30.42,
+      "maxLat": 30.52,
+      "minLng": 70.91,
+      "maxLng": 71.02
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "mandi-bahauddin",
+    "name": "Mandi Bahauddin",
+    "urduName": "منڈی بہاؤالدین",
+    "provinceId": "punjab",
+    "division": "Gujranwala Division",
+    "district": "Mandi Bahauddin",
+    "coordinates": {
+      "lat": 32.587,
+      "lng": 73.4912
+    },
+    "postalCodeRange": [
+      "50400",
+      "50499"
+    ],
+    "bounds": {
+      "minLat": 32.53,
+      "maxLat": 32.64,
+      "minLng": 73.43,
+      "maxLng": 73.54
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "muridke",
+    "name": "Muridke",
+    "urduName": "مریدکے",
+    "provinceId": "punjab",
+    "division": "Lahore Division",
+    "district": "Sheikhupura",
+    "coordinates": {
+      "lat": 31.802,
+      "lng": 74.255
+    },
+    "postalCodeRange": [
+      "39010",
+      "39049"
+    ],
+    "bounds": {
+      "minLat": 31.75,
+      "maxLat": 31.85,
+      "minLng": 74.2,
+      "maxLng": 74.31
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "muzaffargarh",
+    "name": "Muzaffargarh",
+    "urduName": "مظفر گڑھ",
+    "provinceId": "punjab",
+    "division": "Dera Ghazi Khan Division",
+    "district": "Muzaffargarh",
+    "coordinates": {
+      "lat": 30.075,
+      "lng": 71.192
+    },
+    "postalCodeRange": [
+      "34200",
+      "34299"
+    ],
+    "bounds": {
+      "minLat": 30.02,
+      "maxLat": 30.13,
+      "minLng": 71.13,
+      "maxLng": 71.25
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "okara",
+    "name": "Okara",
+    "urduName": "اوکاڑہ",
+    "provinceId": "punjab",
+    "division": "Sahiwal Division",
+    "district": "Okara",
+    "coordinates": {
+      "lat": 30.808,
+      "lng": 73.4458
+    },
+    "postalCodeRange": [
+      "56300",
+      "56399"
+    ],
+    "bounds": {
+      "minLat": 30.75,
+      "maxLat": 30.86,
+      "minLng": 73.39,
+      "maxLng": 73.5
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "samundri",
+    "name": "Samundri",
+    "urduName": "سمندری",
+    "provinceId": "punjab",
+    "division": "Faisalabad Division",
+    "district": "Faisalabad",
+    "coordinates": {
+      "lat": 31.0633,
+      "lng": 72.9525
+    },
+    "postalCodeRange": [
+      "37300",
+      "37349"
+    ],
+    "bounds": {
+      "minLat": 31.01,
+      "maxLat": 31.11,
+      "minLng": 72.9,
+      "maxLng": 73
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "taxila",
+    "name": "Taxila",
+    "urduName": "ٹیکسلا",
+    "provinceId": "punjab",
+    "division": "Rawalpindi Division",
+    "district": "Rawalpindi",
+    "coordinates": {
+      "lat": 33.746,
+      "lng": 72.8397
+    },
+    "postalCodeRange": [
+      "47080",
+      "47099"
+    ],
+    "bounds": {
+      "minLat": 33.7,
+      "maxLat": 33.79,
+      "minLng": 72.79,
+      "maxLng": 72.89
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "vehari",
+    "name": "Vehari",
+    "urduName": "وہاڑی",
+    "provinceId": "punjab",
+    "division": "Multan Division",
+    "district": "Vehari",
+    "coordinates": {
+      "lat": 30.0419,
+      "lng": 72.3528
+    },
+    "postalCodeRange": [
+      "61100",
+      "61199"
+    ],
+    "bounds": {
+      "minLat": 29.99,
+      "maxLat": 30.09,
+      "minLng": 72.3,
+      "maxLng": 72.4
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "wah-cantt",
+    "name": "Wah Cantt",
+    "urduName": "واہ کینٹ",
+    "provinceId": "punjab",
+    "division": "Rawalpindi Division",
+    "district": "Rawalpindi",
+    "coordinates": {
+      "lat": 33.7715,
+      "lng": 72.7511
+    },
+    "postalCodeRange": [
+      "47040",
+      "47079"
+    ],
+    "bounds": {
+      "minLat": 33.72,
+      "maxLat": 33.82,
+      "minLng": 72.7,
+      "maxLng": 72.8
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "wazirabad",
+    "name": "Wazirabad",
+    "urduName": "وزیر آباد",
+    "provinceId": "punjab",
+    "division": "Gujranwala Division",
+    "district": "Wazirabad",
+    "coordinates": {
+      "lat": 32.4432,
+      "lng": 74.1197
+    },
+    "postalCodeRange": [
+      "52000",
+      "52049"
+    ],
+    "bounds": {
+      "minLat": 32.39,
+      "maxLat": 32.49,
+      "minLng": 74.07,
+      "maxLng": 74.17
+    },
+    "totalAreasCount": 0
+  },
+  {
     "id": "karachi",
     "name": "Karachi",
     "urduName": "کراچی",
@@ -918,6 +1769,52 @@ export const cities: readonly PakistanCity[] = [
       "maxLat": 25.58,
       "minLng": 68.96,
       "maxLng": 69.07
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "jacobabad",
+    "name": "Jacobabad",
+    "urduName": "جیکب آباد",
+    "provinceId": "sindh",
+    "division": "Larkana Division",
+    "district": "Jacobabad",
+    "coordinates": {
+      "lat": 28.2835,
+      "lng": 68.4388
+    },
+    "postalCodeRange": [
+      "79200",
+      "79299"
+    ],
+    "bounds": {
+      "minLat": 28.23,
+      "maxLat": 28.34,
+      "minLng": 68.38,
+      "maxLng": 68.49
+    },
+    "totalAreasCount": 0
+  },
+  {
+    "id": "shikarpur",
+    "name": "Shikarpur",
+    "urduName": "شکارپور",
+    "provinceId": "sindh",
+    "division": "Larkana Division",
+    "district": "Shikarpur",
+    "coordinates": {
+      "lat": 27.957,
+      "lng": 68.638
+    },
+    "postalCodeRange": [
+      "78100",
+      "78199"
+    ],
+    "bounds": {
+      "minLat": 27.91,
+      "maxLat": 28.01,
+      "minLng": 68.58,
+      "maxLng": 68.69
     },
     "totalAreasCount": 0
   }
