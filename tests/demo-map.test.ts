@@ -27,3 +27,35 @@ test('MapCanvas tile layer includes OpenStreetMap attribution and zero em-dashes
   assert.ok(!content.includes('\u2014'), 'MapCanvas must contain zero em-dashes');
   assert.ok(!content.includes('\u2013'), 'MapCanvas must contain zero en-dashes');
 });
+
+test('MapCanvas constrains Leaflet bounds and zoom to Pakistan', () => {
+  const mapPath = resolve(process.cwd(), 'apps/demo/src/components/MapCanvas.tsx');
+  const content = readFileSync(mapPath, 'utf8');
+
+  assert.ok(content.includes('minZoom: 5'), 'MapCanvas must enforce minZoom: 5');
+  assert.ok(
+    content.includes('maxBounds: [') || content.includes('maxBounds:'),
+    'MapCanvas must configure maxBounds'
+  );
+  assert.ok(
+    content.includes('23.0') || content.includes('23'),
+    'MapCanvas maxBounds must include southern Pakistan latitude (23.0)'
+  );
+  assert.ok(
+    content.includes('37.5'),
+    'MapCanvas maxBounds must include northern Pakistan latitude (37.5)'
+  );
+  assert.ok(
+    content.includes('60.0') || content.includes('60'),
+    'MapCanvas maxBounds must include western Pakistan longitude (60.0)'
+  );
+  assert.ok(
+    content.includes('78.0') || content.includes('78'),
+    'MapCanvas maxBounds must include eastern Pakistan longitude (78.0)'
+  );
+  assert.ok(
+    content.includes('maxBoundsViscosity: 1.0') || content.includes('maxBoundsViscosity: 1'),
+    'MapCanvas must enforce maxBoundsViscosity 1.0'
+  );
+});
+

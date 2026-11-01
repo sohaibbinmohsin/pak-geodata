@@ -51,7 +51,7 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
   const [lang, setLang] = useState<'en' | 'ur'>('en');
 
   // Filter & selection states
-  const [selectedCity, setSelectedCity] = useState<PakistanCity | null>(null);
+  const [selectedCity, setSelectedCity] = useState<PakistanCity | null>(() => getCityById('karachi') || null);
   const [selectedArea, setSelectedArea] = useState<PakistanArea | null>(null);
   const [reverseGeoPoint, setReverseGeoPoint] = useState<ReverseGeoPoint | null>(null);
 
@@ -326,9 +326,9 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
         </div>
       </div>
 
-      {/* Centered Floating Search Omnibar */}
-      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-full max-w-xl px-4 z-20 pointer-events-none">
-        <div className="pointer-events-auto">
+      {/* Centered Floating Search Omnibar and City Filter Pills */}
+      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-full max-w-xl px-4 z-20 flex flex-col items-center gap-3 pointer-events-none">
+        <div className="w-full pointer-events-auto">
           <Omnibar
             selectedCity={selectedCity}
             selectedArea={selectedArea}
@@ -338,10 +338,6 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
             showSuggestions={!selectedArea}
           />
         </div>
-      </div>
-
-      {/* Floating City Filter Pills */}
-      <div className="absolute top-36 left-1/2 -translate-x-1/2 w-full max-w-2xl px-4 z-20 flex justify-center pointer-events-none">
         <div className="pointer-events-auto">
           <CityPills
             selectedCity={selectedCity}

@@ -155,14 +155,19 @@ export default function MapCanvas({
     selectedCityRef.current = selectedCity;
   }, [selectedCity]);
 
+  const selectedAreaRef = useRef(selectedArea);
+  useEffect(() => {
+    selectedAreaRef.current = selectedArea;
+  }, [selectedArea]);
+
   // Marker layers and tracking refs
   const markersLayerRef = useRef<L.LayerGroup | null>(null);
   const reverseGeoLayerRef = useRef<L.LayerGroup | null>(null);
   const markerMapRef = useRef<Map<string, L.Marker>>(new Map());
   const activeMarkerRef = useRef<L.Marker | null>(null);
 
-  const prevCityIdRef = useRef<string | null | undefined>(undefined);
-  const prevAreaIdRef = useRef<string | null | undefined>(undefined);
+  const prevCityIdRef = useRef<string | null | undefined>(selectedCity?.id);
+  const prevAreaIdRef = useRef<string | null | undefined>(selectedArea?.id);
 
   const isSwitchingAreaRef = useRef(false);
 
@@ -182,14 +187,37 @@ export default function MapCanvas({
       }
     );
 
+    const initialCenter: [number, number] = selectedAreaRef.current?.coordinates
+      ? [selectedAreaRef.current.coordinates.lat, selectedAreaRef.current.coordinates.lng]
+      : selectedCityRef.current?.coordinates
+      ? [selectedCityRef.current.coordinates.lat, selectedCityRef.current.coordinates.lng]
+      : [30.3753, 69.3451];
+    const initialZoom = selectedAreaRef.current ? 14 : selectedCityRef.current ? 11 : 6;
+
     const mapInstance = L.map(containerRef.current, {
-      center: [30.3753, 69.3451],
-      zoom: 6,
+      center: initialCenter,
+      zoom: initialZoom,
       zoomControl: false,
-      minZoom: 4,
+      minZoom: 5,
       maxZoom: 18,
+      maxBounds: [
+        [23.0, 60.0],
+        [37.5, 78.0],
+      ],
+      maxBoundsViscosity: 1.0,
       layers: [tileLayer],
     });
+
+    if (!selectedAreaRef.current && selectedCityRef.current?.bounds) {
+      mapInstance.fitBounds(
+        [
+          [selectedCityRef.current.bounds.minLat, selectedCityRef.current.bounds.minLng],
+          [selectedCityRef.current.bounds.maxLat, selectedCityRef.current.bounds.maxLng],
+        ],
+        { padding: [80, 80] }
+      );
+    }
+
 
     // Dark sleek zoom controls in bottom-right
     L.control.zoom({ position: 'bottomright' }).addTo(mapInstance);
