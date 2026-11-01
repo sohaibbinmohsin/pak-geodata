@@ -12,9 +12,10 @@ import {
 
 export interface HeroProps {
   className?: string;
+  onOpenStudio?: () => void;
 }
 
-export default function Hero({ className = '' }: HeroProps) {
+export default function Hero({ className = '', onOpenStudio }: HeroProps) {
   const [copiedSnippet, setCopiedSnippet] = useState<'npm' | 'pypi' | null>(null);
   const copyTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -191,13 +192,19 @@ export default function Hero({ className = '' }: HeroProps) {
 
         {/* Action button to explore Studio */}
         <div className="flex items-center justify-center gap-3 mb-14">
-          <a
-            href="#studio"
-            className="pressable inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-[#0b0f17] font-semibold text-sm transition-all shadow-glow-emerald"
+          <button
+            type="button"
+            onClick={() => {
+              if (typeof window !== 'undefined') {
+                window.location.hash = '#studio';
+              }
+              onOpenStudio?.();
+            }}
+            className="pressable inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-[#0b0f17] font-semibold text-sm transition-all shadow-glow-emerald cursor-pointer"
           >
-            <span>Explore Studio</span>
+            <span>Launch Studio</span>
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </button>
         </div>
 
         {/* 4-Card Live Metrics Ticker */}

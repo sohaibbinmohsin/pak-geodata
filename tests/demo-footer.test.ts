@@ -34,7 +34,6 @@ test('App.tsx integrates all sections in vertical scroll order', () => {
 
   assert.ok(content.includes('<Header />') || content.includes('<Header'), 'App includes Header');
   assert.ok(content.includes('<Hero />') || content.includes('<Hero'), 'App includes Hero');
-  assert.ok(content.includes('<Studio />') || content.includes('<Studio'), 'App includes Studio');
   assert.ok(content.includes('<Capabilities />') || content.includes('<Capabilities'), 'App includes Capabilities');
   assert.ok(content.includes('<Recipes />') || content.includes('<Recipes'), 'App includes Recipes');
   assert.ok(content.includes('<Coverage />') || content.includes('<Coverage'), 'App includes Coverage');
@@ -43,15 +42,13 @@ test('App.tsx integrates all sections in vertical scroll order', () => {
   // Verify order
   const idxHeader = content.indexOf('<Header');
   const idxHero = content.indexOf('<Hero');
-  const idxStudio = content.indexOf('<Studio');
   const idxCap = content.indexOf('<Capabilities');
   const idxRecipes = content.indexOf('<Recipes');
   const idxCov = content.indexOf('<Coverage');
   const idxFooter = content.indexOf('<Footer');
 
   assert.ok(idxHeader < idxHero, 'Header precedes Hero');
-  assert.ok(idxHero < idxStudio, 'Hero precedes Studio');
-  assert.ok(idxStudio < idxCap, 'Studio precedes Capabilities');
+  assert.ok(idxHero < idxCap, 'Hero precedes Capabilities');
   assert.ok(idxCap < idxRecipes, 'Capabilities precedes Recipes');
   assert.ok(idxRecipes < idxCov, 'Recipes precedes Coverage');
   assert.ok(idxCov < idxFooter, 'Coverage precedes Footer');
