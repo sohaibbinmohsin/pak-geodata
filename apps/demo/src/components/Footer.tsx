@@ -14,7 +14,7 @@ export default function Footer({ className = '' }: FooterProps) {
           <div className="flex flex-col items-center md:items-start gap-2 text-center md:text-left">
             <div className="flex items-center gap-2">
               <span className="text-lg select-none" role="img" aria-label="Pakistan flag">🇵🇰</span>
-              <span className="font-mono font-bold text-white tracking-tight">pak-geodata</span>
+              <span className="font-mono font-bold text-white tracking-tight">GeoData</span>
               <span className="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
                 v0.2.0
               </span>

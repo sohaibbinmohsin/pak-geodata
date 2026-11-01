@@ -56,3 +56,24 @@ test('App.tsx integrates all sections in vertical scroll order', () => {
   assert.ok(!content.includes('\u2014'), 'App.tsx contains zero em-dashes');
   assert.ok(!content.includes('\u2013'), 'App.tsx contains zero en-dashes');
 });
+
+test('Footer uses GeoData visible brand name and index.html uses GeoData browser title', () => {
+  const footerPath = resolve(process.cwd(), 'apps/demo/src/components/Footer.tsx');
+  const footerContent = readFileSync(footerPath, 'utf8');
+
+  assert.ok(footerContent.includes('GeoData'), 'Footer contains GeoData brand title');
+  assert.ok(!footerContent.includes('>pak-geodata<'), 'Footer does not contain pak-geodata as visible brand name');
+
+  const indexPath = resolve(process.cwd(), 'apps/demo/index.html');
+  const indexContent = readFileSync(indexPath, 'utf8');
+
+  assert.ok(
+    indexContent.includes('<title>GeoData | Pakistan Geographic Intelligence</title>'),
+    'index.html uses GeoData in browser title'
+  );
+  assert.ok(
+    !indexContent.includes('<title>pak-geodata | Pakistan Geographic Intelligence</title>'),
+    'index.html does not use pak-geodata in title'
+  );
+});
+
