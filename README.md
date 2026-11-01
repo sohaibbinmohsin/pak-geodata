@@ -2,7 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/pak-geodata?color=blue)](https://www.npmjs.com/package/pak-geodata)
 [![PyPI Version](https://img.shields.io/pypi/v/pak-geodata?color=green)](https://pypi.org/project/pak-geodata/)
-[![Live Interactive Demo](https://img.shields.io/badge/Live%20Demo-Interactive%20Map-blue?logo=leaflet&color=10B981)](https://sohaibbinmohsin.github.io/pak-geodata/)
+<a href="https://sohaibbinmohsin.github.io/pak-geodata/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Live%20Demo-Interactive%20Map-blue?logo=leaflet&color=10B981" alt="Live Interactive Demo" /></a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build & Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)]()
 
@@ -879,5 +879,4 @@ We actively welcome community contributions to expand coverage across Pakistan!
 This project is open-source software licensed under the [MIT License](LICENSE).
 
 Developed and maintained by:
-- **[Sohaib Bin Mohsin](https://sohaibbinmohsin.com)** (Founder & Maintainer)
 - **[The Mohsin Project Global](https://themohsinproject.org)**
