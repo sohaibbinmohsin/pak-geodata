@@ -1,11 +1,14 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import L from 'leaflet';
 import {
   getNearestArea,
   haversineDistanceKm,
+  getCityName,
+  toEasternDigits,
   type PakistanArea,
   type PakistanCity,
 } from 'pak-geodata';
+import { clusterAreas } from './clusterUtils';
 import type { ReverseGeoPoint } from './reverseGeoUtils';
 
 export type { ReverseGeoPoint };
@@ -19,6 +22,7 @@ export interface MapCanvasProps {
   onMapClick?: (coords: { lat: number; lng: number }) => void;
   onReverseGeoChange?: (point: ReverseGeoPoint | null) => void;
   className?: string;
+  lang?: 'en' | 'ur';
 }
 
 /**
@@ -48,6 +52,33 @@ function createPinIcon(isSelected: boolean = false): L.DivIcon {
           <circle cx="14" cy="13" r="${isSelected ? '5.5' : '4.5'}" fill="#ffffff" opacity="0.95"/>
           ${isSelected ? '<circle cx="14" cy="13" r="2.5" fill="#047857"/>' : ''}
         </svg>
+      </div>
+    `,
+  });
+}
+
+/**
+ * Creates custom glowing emerald circle icon with count number for clustered areas.
+ */
+function createClusterIcon(
+  count: number,
+  hasSelected: boolean = false,
+  lang: 'en' | 'ur' = 'en'
+): L.DivIcon {
+  const size = count >= 100 ? 44 : count >= 10 ? 38 : 32;
+  const fontSize = count >= 100 ? 11 : count >= 10 ? 12 : 13;
+  const displayCount = lang === 'ur' ? toEasternDigits(String(count)) : String(count);
+
+  return L.divIcon({
+    className: 'pak-cluster-marker',
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    popupAnchor: [0, -size / 2],
+    tooltipAnchor: [0, -size / 2],
+    html: `
+      <div class="pak-cluster-container ${hasSelected ? 'has-selected' : ''}" style="width: ${size}px; height: ${size}px; font-size: ${fontSize}px;" role="button" aria-label="${count} areas in cluster">
+        <span class="pak-cluster-beacon"></span>
+        <span class="relative z-10 leading-none">${escapeHtml(displayCount)}</span>
       </div>
     `,
   });
@@ -130,6 +161,7 @@ export default function MapCanvas({
   onMapClick,
   onReverseGeoChange,
   className = '',
+  lang = 'en',
 }: MapCanvasProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<L.Map | null>(null);
@@ -281,8 +313,8 @@ export default function MapCanvas({
     };
   }, []);
 
-  // 2. Render Markers when `areas` changes
-  useEffect(() => {
+  // 2. Render Markers & Clusters dynamically based on zoom & collision proximity
+  const renderMarkers = useCallback(() => {
     if (!map || !markersLayerRef.current) return;
 
     const layerGroup = markersLayerRef.current;
@@ -290,82 +322,117 @@ export default function MapCanvas({
     markerMapRef.current.clear();
     activeMarkerRef.current = null;
 
-    areas.forEach((area) => {
-      const isSelected = selectedArea?.id === area.id;
-      const marker = L.marker([area.coordinates.lat, area.coordinates.lng], {
-        icon: createPinIcon(isSelected),
-        zIndexOffset: isSelected ? 1000 : 0,
-      });
+    // Fast 2D layer projection for pixel collision check
+    const project = (lat: number, lng: number) => {
+      const pt = map.latLngToLayerPoint([lat, lng]);
+      return { x: pt.x, y: pt.y };
+    };
 
-      // Hover tooltip
-      const tooltipContent = area.urduName ? `${area.name} (${area.urduName})` : area.name;
-      marker.bindTooltip(tooltipContent, {
-        direction: 'top',
-        offset: [0, -34],
-        className: 'pak-tooltip',
-      });
+    const clusters = clusterAreas(areas, project, 45, selectedArea?.id);
 
-      // Interactive popup
-      const popupEl = createPopupElement(area, () => {
-        onSelectAreaRef.current(area);
-      });
-      marker.bindPopup(popupEl, {
-        offset: [0, -34],
-        className: 'pak-popup',
-      });
+    clusters.forEach((cluster) => {
+      if (cluster.count === 1) {
+        // Single Area: Render individual pin
+        const area = cluster.areas[0];
+        const isSelected = selectedArea?.id === area.id;
+        const marker = L.marker([area.coordinates.lat, area.coordinates.lng], {
+          icon: createPinIcon(isSelected),
+          zIndexOffset: isSelected ? 1000 : 0,
+        });
 
-      // Marker click triggers selection & stops propagation to map
-      marker.on('click', (e) => {
-        L.DomEvent.stopPropagation(e);
-        isSwitchingAreaRef.current = true;
-        onSelectAreaRef.current(area);
-        setTimeout(() => {
-          isSwitchingAreaRef.current = false;
-        }, 120);
-      });
+        // Hover tooltip
+        const tooltipContent = area.urduName ? `${area.name} (${area.urduName})` : area.name;
+        marker.bindTooltip(tooltipContent, {
+          direction: 'top',
+          offset: [0, -34],
+          className: 'pak-tooltip',
+        });
 
-      layerGroup.addLayer(marker);
-      markerMapRef.current.set(area.id, marker);
+        // Interactive popup
+        const popupEl = createPopupElement(area, () => {
+          onSelectAreaRef.current(area);
+        });
+        marker.bindPopup(popupEl, {
+          offset: [0, -34],
+          className: 'pak-popup',
+        });
 
-      if (isSelected) {
-        activeMarkerRef.current = marker;
+        // Marker click triggers selection & stops propagation to map
+        marker.on('click', (e) => {
+          L.DomEvent.stopPropagation(e);
+          isSwitchingAreaRef.current = true;
+          onSelectAreaRef.current(area);
+          setTimeout(() => {
+            isSwitchingAreaRef.current = false;
+          }, 120);
+        });
+
+        layerGroup.addLayer(marker);
+        markerMapRef.current.set(area.id, marker);
+
+        if (isSelected) {
+          activeMarkerRef.current = marker;
+          if (!marker.isPopupOpen()) {
+            marker.openPopup();
+          }
+        }
+      } else {
+        // Multi-Area Cluster: Render glowing circle with number
+        const size = cluster.count >= 100 ? 44 : cluster.count >= 10 ? 38 : 32;
+        const marker = L.marker([cluster.center.lat, cluster.center.lng], {
+          icon: createClusterIcon(cluster.count, cluster.hasSelected, lang),
+          zIndexOffset: cluster.hasSelected ? 950 : 500,
+        });
+
+        const cityIds = Array.from(new Set(cluster.areas.map((a) => a.cityId)));
+        const cityLabel = cityIds.length === 1 ? getCityName(cityIds[0], lang) : (lang === 'ur' ? 'پاکستان' : 'Pakistan');
+        const countLabel = lang === 'ur' ? toEasternDigits(String(cluster.count)) : String(cluster.count);
+        const areasWord = lang === 'ur' ? 'علاقے' : 'areas';
+        const zoomHint = lang === 'ur' ? 'زوم کرنے کے لیے کلک کریں' : 'Click to zoom in';
+        const tooltipText = `${cityLabel} • ${countLabel} ${areasWord} • ${zoomHint}`;
+
+        marker.bindTooltip(tooltipText, {
+          direction: 'top',
+          offset: [0, -size / 2],
+          className: 'pak-tooltip',
+        });
+
+        marker.on('click', (e) => {
+          L.DomEvent.stopPropagation(e);
+          const corner1 = L.latLng(cluster.bounds.minLat, cluster.bounds.minLng);
+          const corner2 = L.latLng(cluster.bounds.maxLat, cluster.bounds.maxLng);
+          const bounds = L.latLngBounds(corner1, corner2);
+
+          if (bounds.isValid() && !corner1.equals(corner2)) {
+            map.fitBounds(bounds, { padding: [80, 80], maxZoom: 15 });
+          } else {
+            map.setView([cluster.center.lat, cluster.center.lng], Math.min(map.getZoom() + 3, 16));
+          }
+        });
+
+        layerGroup.addLayer(marker);
       }
     });
+  }, [map, areas, selectedArea, lang]);
 
-    // If selected area marker exists, keep its popup open
-    if (selectedArea && markerMapRef.current.has(selectedArea.id)) {
-      markerMapRef.current.get(selectedArea.id)?.openPopup();
-    }
-  }, [map, areas]);
-
-  // 3. Update active marker styling when `selectedArea` changes
+  // 3. Keep markers synchronized across zoom, pan, and prop changes
   useEffect(() => {
     if (!map) return;
-    isSwitchingAreaRef.current = true;
 
-    // Reset previous active marker
-    if (activeMarkerRef.current) {
-      activeMarkerRef.current.setIcon(createPinIcon(false));
-      activeMarkerRef.current.setZIndexOffset(0);
-      activeMarkerRef.current = null;
-    }
+    renderMarkers();
 
-    if (selectedArea && markerMapRef.current.has(selectedArea.id)) {
-      const marker = markerMapRef.current.get(selectedArea.id)!;
-      marker.setIcon(createPinIcon(true));
-      marker.setZIndexOffset(1000);
-      activeMarkerRef.current = marker;
-      if (!marker.isPopupOpen()) {
-        marker.openPopup();
-      }
-    }
+    const handleViewChange = () => {
+      renderMarkers();
+    };
 
-    const timer = setTimeout(() => {
-      isSwitchingAreaRef.current = false;
-    }, 120);
+    map.on('zoomend', handleViewChange);
+    map.on('moveend', handleViewChange);
 
-    return () => clearTimeout(timer);
-  }, [map, selectedArea]);
+    return () => {
+      map.off('zoomend', handleViewChange);
+      map.off('moveend', handleViewChange);
+    };
+  }, [map, renderMarkers]);
 
   // 4. Smooth Camera Flight for City and Area changes
   useEffect(() => {

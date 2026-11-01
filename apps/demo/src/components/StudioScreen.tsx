@@ -243,6 +243,7 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
           reverseGeoPoint={reverseGeoPoint}
           onSelectArea={handleSelectArea}
           onReverseGeoChange={handleReverseGeoChange}
+          lang={lang}
         />
       </div>
 
