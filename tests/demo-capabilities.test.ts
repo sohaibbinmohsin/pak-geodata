@@ -13,6 +13,9 @@ test('Capabilities cards highlight architecture without nested code blocks', () 
   assert.ok(!content.includes('codePreview'), 'Capabilities must not contain codePreview objects');
   assert.ok(!content.includes('<pre'), 'Capabilities must not contain pre code blocks');
   assert.ok(!content.includes('<code>'), 'Capabilities must not contain inline code tags');
+  assert.ok(!content.includes('visualBox'), 'Capabilities must not contain visualBox');
+  assert.ok(!content.includes('Terminal'), 'Capabilities must not contain Terminal');
+  assert.ok(!content.toUpperCase().includes('RUNTIME FOOTPRINT'), 'Capabilities must not contain RUNTIME FOOTPRINT');
   assert.ok(!content.includes('\u2014'), 'No em-dashes');
   assert.ok(!content.includes('\u2013'), 'No en-dashes');
 });
@@ -54,6 +57,11 @@ test('Capabilities component renders 4 architectural foundation cards with metri
   assert.ok(content.includes('0.4 ms') || content.includes('&lt; 0.4 ms'), 'Mentions < 0.4 ms');
   assert.ok(content.includes('Haversine') || content.includes('haversine'), 'Mentions Haversine calculations');
   assert.ok(content.includes('pak-geodata/hierarchy'), 'Mentions subpath import pak-geodata/hierarchy');
+
+  // Zero terminal metric boxes
+  assert.ok(!content.includes('visualBox'), 'Capabilities contains no visualBox property');
+  assert.ok(!content.includes('Terminal'), 'Capabilities contains no Terminal icon');
+  assert.ok(!content.toUpperCase().includes('RUNTIME FOOTPRINT'), 'Capabilities contains no RUNTIME FOOTPRINT');
 
   // Zero em-dash and en-dash constraint
   assert.ok(!content.includes('\u2014'), 'Capabilities contains zero em-dashes');
