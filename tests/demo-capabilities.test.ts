@@ -28,7 +28,7 @@ test('Capabilities and Coverage components render architectural highlights', () 
 
   assert.ok(capContent.includes('Zero Runtime Dependencies'), 'Highlights zero dependencies');
   assert.ok(capContent.includes('Urdu Normalization Engine'), 'Highlights Urdu normalizer');
-  assert.ok(covContent.includes('Punjab'), 'Coverage lists provinces');
+  assert.ok(covContent.includes('Full City Directory'), 'Coverage renders full city directory');
   assert.ok(!capContent.includes('\u2014') && !covContent.includes('\u2014'), 'No em-dashes');
   assert.ok(!capContent.includes('\u2013') && !covContent.includes('\u2013'), 'No en-dashes');
 });
@@ -72,7 +72,7 @@ test('Capabilities component renders 4 architectural foundation cards with metri
   assert.ok(!content.includes('The Mohsin Project'), 'No company names in capabilities');
 });
 
-test('Coverage component renders 7 provinces, 40 cities summary, bounding boxes, and postal codes', () => {
+test('Coverage component renders simplified mobile-responsive city directory list', () => {
   const covPath = resolve(process.cwd(), 'apps/demo/src/components/Coverage.tsx');
   const content = readFileSync(covPath, 'utf8');
 
@@ -85,28 +85,19 @@ test('Coverage component renders 7 provinces, 40 cities summary, bounding boxes,
     'Has subhead'
   );
 
-  // 7 Provinces and territories
-  assert.ok(content.includes('Punjab'), 'Contains Punjab');
-  assert.ok(content.includes('Sindh'), 'Contains Sindh');
-  assert.ok(content.includes('Khyber Pakhtunkhwa'), 'Contains KPK');
-  assert.ok(content.includes('Balochistan'), 'Contains Balochistan');
-  assert.ok(content.includes('Islamabad') || content.includes('Islamabad ICT'), 'Contains Islamabad');
-  assert.ok(content.includes('Azad Jammu') || content.includes('AJK'), 'Contains Azad Jammu and Kashmir');
-  assert.ok(content.includes('Gilgit-Baltistan'), 'Contains Gilgit-Baltistan');
+  // Directory list
+  assert.ok(content.includes('Full City Directory'), 'Contains Full City Directory');
 
-  // Major cities summary
-  assert.ok(content.includes('Lahore'), 'Contains Lahore');
-  assert.ok(content.includes('Karachi'), 'Contains Karachi');
-  assert.ok(content.includes('Faisalabad'), 'Contains Faisalabad');
-  assert.ok(content.includes('Rawalpindi'), 'Contains Rawalpindi');
+  // Mobile responsiveness
+  assert.ok(content.includes('block md:hidden'), 'Contains mobile responsive card list');
+  assert.ok(content.includes('hidden md:block') || content.includes('hidden md:table'), 'Contains desktop responsive view');
 
-  // Phase 1 flagship metros ticker
-  assert.ok(content.includes('189'), 'Mentions 189 foundational areas');
-  assert.ok(content.includes('Phase 1'), 'Mentions Phase 1');
-  assert.ok(
-    content.includes('{flagshipMetros.length} Metros · {allAreas.length} Areas'),
-    'Flagship metros subtitle dynamically uses flagshipMetros.length and allAreas.length'
-  );
+  // Removed obsolete sections and base catalogs
+  assert.ok(!content.includes('PROVINCES_BASE_CATALOG'), 'PROVINCES_BASE_CATALOG is removed');
+  assert.ok(!content.includes('FLAGSHIP_METROS_BASE'), 'FLAGSHIP_METROS_BASE is removed');
+  assert.ok(!content.includes('The 7 Provinces'), 'Province cards grid is removed');
+  assert.ok(!content.includes('Major Cities Summary'), 'Flagship metros summary cards grid is removed');
+  assert.ok(!content.includes('Phase 1 Flagship Metros'), 'Flagship metros ticker is removed');
 
   // Zero em-dash and en-dash constraint
   assert.ok(!content.includes('\u2014'), 'Coverage contains zero em-dashes');
