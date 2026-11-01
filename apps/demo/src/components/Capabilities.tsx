@@ -23,7 +23,6 @@ interface CapabilityItem {
   visualBox: {
     header: string;
     items: { label: string; value: string }[];
-    codePreview?: string;
   };
 }
 
@@ -122,7 +121,6 @@ const CAPABILITIES: CapabilityItem[] = [
         { label: 'Available Entities', value: '7 provinces, 40 cities, postal ranges' },
         { label: 'Granular Splitting', value: 'Load neighborhood geometry on demand' },
       ],
-      codePreview: "import { getAllProvinces, getCitiesByProvince } from 'pak-geodata/hierarchy';",
     },
   },
 ];
@@ -225,12 +223,6 @@ export default function Capabilities({ className = '' }: CapabilitiesProps) {
                     {item.visualBox.header}
                   </span>
                 </div>
-
-                {item.visualBox.codePreview && (
-                  <div className="mb-3 px-3 py-1.5 rounded-lg bg-black/60 border border-white/10 font-mono text-[11px] text-emerald-300 overflow-x-auto">
-                    <code>{item.visualBox.codePreview}</code>
-                  </div>
-                )}
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono">
                   {item.visualBox.items.map((metric, mIdx) => (
