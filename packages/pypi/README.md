@@ -2,7 +2,7 @@
 
 > Comprehensive, typed, offline geographic data for all areas and cities in Pakistan.
 
-`pak-geodata` is an open-source, production-grade Python client library providing offline access to verified geographic data for Pakistan, created and maintained by [Sohaib Bin Mohsin](https://sohaibbinmohsin.com) at [The Mohsin Project Global](https://themohsinproject.org).
+`pak-geodata` is an open-source, production-grade Python client library providing offline access to verified geographic data for Pakistan.
 
 It covers all administrative provinces, 79 major and secondary cities, and foundational flagship metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers).
 
@@ -211,6 +211,20 @@ All models are immutable frozen dataclasses (`@dataclass(frozen=True)`):
 
 ---
 
+## About The Mohsin Project
+
+> **Free software for those who do good.**
+
+`pak-geodata` is an open-source public good engineered and maintained by **[The Mohsin Project](https://themohsinproject.org)**.
+
+The Mohsin Project exists because purpose-driven organizations and emergency teams lose momentum to outdated systems, expensive proprietary APIs, and scarce technical resources. We design, engineer, and deploy centralized digital solutions entirely free of cost so that nonprofits, humanitarian initiatives, and civic developers can focus on their mission.
+
+- 💬 **Get in Touch**: [hello@themohsinproject.org](mailto:hello@themohsinproject.org)
+
+---
+
 ## License
 
-MIT © 2026 [Sohaib Bin Mohsin](https://sohaibbinmohsin.com) • [The Mohsin Project Global](https://themohsinproject.org)
+This project is open-source software licensed under the [MIT License](LICENSE).
+
+Copyright (c) 2026 [The Mohsin Project Global](https://themohsinproject.org)
