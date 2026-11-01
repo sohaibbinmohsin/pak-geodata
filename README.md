@@ -71,7 +71,7 @@ poetry add pak-geodata
 | :--- | :--- | :--- | :--- |
 | **Provinces & Territories** | **7** | 100% of Pakistan | Punjab, Sindh, KPK, Balochistan, Islamabad (ICT), Azad Jammu & Kashmir (AJK), Gilgit-Baltistan |
 | **Verified Cities** | **79** | Major & Secondary Urban Centers | District centroids, bounding boxes, administrative divisions, 5-digit postal code ranges |
-| **Flagship Metros Areas** | **189** | Phase 1 (In Progress) | Foundational areas across Karachi, Lahore, Islamabad, Rawalpindi, and Faisalabad |
+| **Flagship Metros & Urban Hubs Areas** | **289** | Phase 1 (10 Cities) | Foundational & verified areas across Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar, Quetta, Hyderabad, and Gujranwala |
 
 ---
 
@@ -177,16 +177,21 @@ This enables developers to immediately geofence incoming coordinates, filter are
 
 ---
 
-## Flagship Metropolitan Areas (Phase 1: In Progress)
+## Flagship Metropolitan Areas & Urban Hubs (Phase 1: 10 Cities)
 
-Phase 1 is currently **in progress**. While we have established an initial core of 189 triangulated foundational areas across Pakistan's 5 largest metropolitan economies, active work is underway to expand coverage across all sectors, housing societies, commercial markets, industrial estates, and historic quarters.
+Phase 1 coverage encompasses **289 triangulated golden areas across 10 major urban hubs and provincial capitals**, spanning all sectors, housing societies, commercial markets, industrial estates, and historic quarters:
 
-### Current Phase 1 Foundation (189 Areas):
+### Current Phase 1 Coverage (289 Areas across 10 Cities):
+- **Islamabad** (`60 areas`): CDA Sectors (F-6, F-7, F-8, F-10, F-11, G-6 to G-14, H-8, H-9, H-11, H-12, H-13, I-8, I-9, I-10, I-11, I-12, I-14, D-12, E-7, E-11, B-17 Multi Gardens), Diplomatic Enclave, Blue Area, DHA Islamabad, Bahria Town Islamabad, Gulberg Greens, Soan Gardens, CBR Town, Police Foundation, PWD Housing Society, Pakistan Town, Naval Anchorage, etc.
 - **Karachi** (`51 areas`): Clifton (Blocks 1-9), DHA (Phases 1-8), Gulshan-e-Iqbal, North Nazimabad, PECHS, Saddar, KDA Scheme 1, Malir Cantt, Gulistan-e-Johar, Bahadurabad, etc.
 - **Lahore** (`50 areas`): Gulberg (I-V), DHA (Phases 1-9), Model Town (Blocks A-M), Johar Town (Phases 1-2), Bahria Town (Sectors A-F), Cantt, Faisal Town, Garden Town, Shadman, Wapda Town, etc.
-- **Islamabad** (`36 areas`): CDA Sectors F-6, F-7, F-8, F-10, F-11, G-6 to G-13, H-8, H-9, H-11, I-8, I-9, I-10, Diplomatic Enclave, Blue Area, DHA Islamabad, Bahria Town Islamabad, etc.
 - **Rawalpindi** (`28 areas`): Bahria Town (Phases 1-8), Satellite Town (Blocks A-F), Saddar, Westridge (I-III), Chaklala Scheme (I-III), Askari (I-XIV), Peshawar Road, Gulraiz, etc.
 - **Faisalabad** (`24 areas`): Madina Town, Peoples Colony (No. 1-2), D Ground, Ghulam Muhammad Abad, Kohinoor City, Civil Lines, Millat Town, Samanabad, Gulberg, Eden Valley, etc.
+- **Multan** (`16 areas`): Gulgasht Colony, Bosan Road, Cantt, Shah Rukn-e-Alam Colony, New Multan, MDA Officers Colony, Model Town, Wapda Town, DHA Multan, Garden Town, Mumtazabad, etc.
+- **Peshawar** (`16 areas`): Hayatabad (Phases 1-7), University Town, Saddar / Cantt, Warsak Road, Gulbahar, Regi Model Town, DHA Peshawar, Shami Road, Dalazak Road, etc.
+- **Hyderabad** (`16 areas`): Latifabad (Units 1-12), Qasimabad, Saddar / Cantt, Auto Bhan Road, Citizen Colony, Kohsar, Gul Centre, Defence Phase 1-2, etc.
+- **Quetta** (`14 areas`): Cantt, Jinnah Town, Shahbaz Town, Samungli Road, Model Town, Zarghoon Housing Scheme, Satellite Town, Chaman Phatak, Patel Bagh, Arbab Town, etc.
+- **Gujranwala** (`14 areas`): Cantt, Model Town, DC Colony, People's Colony, Satellite Town, Wapda Town, Master City, Garden Town, Rahwali Cantt, Shalimar Town, etc.
 
 ---
 
@@ -906,8 +911,8 @@ We actively welcome community contributions to expand coverage across Pakistan!
 5. Open a Pull Request! Please read our [Contributing Guide](CONTRIBUTING.md) for complete details.
 
 ### Expansion Roadmap
-- **Phase 1 (In Progress)**: Flagship Metros (Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad): expanding beyond the initial 189 foundational areas across residential, commercial, industrial, and historic classifications.
-- **Phase 2 (Planned)**: Secondary Metropolitan Hubs (Peshawar, Quetta, Multan, Gujranwala, Sialkot, Hyderabad, Abbottabad).
+- **Phase 1 (Active)**: Top 10 Major Urban Hubs (Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar, Hyderabad, Quetta, Gujranwala): 289 verified areas across residential, commercial, industrial, and historic classifications.
+- **Phase 2 (Planned)**: Secondary Urban Centers (Sialkot, Abbottabad, Bahawalpur, Sukkur, Mardan, Larkana, Mirpur, Muzaffarabad, Gilgit, Skardu, Gwadar).
 - **Phase 3 (Planned)**: Tertiary cities, tehsils, and union councils across all provinces.
 - **Phase 4 (Planned)**: GeoJSON polygon boundary support for precise geofencing.
 

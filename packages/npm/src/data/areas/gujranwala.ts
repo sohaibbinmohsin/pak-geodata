@@ -1,0 +1,304 @@
+import type { PakistanArea } from "../../types.js";
+
+export const gujranwalaAreas: readonly PakistanArea[] = [
+  {
+    "id": "gujranwala-satellite-town",
+    "name": "Satellite Town Gujranwala",
+    "urduName": "سیٹلائٹ ٹاؤن گوجرانوالہ",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.165,
+      "lng": 74.195
+    },
+    "type": "neighborhood",
+    "postalCode": "52250",
+    "aliases": [
+      "satellite town",
+      "satellite town gujranwala"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "gujranwala-model-town",
+    "name": "Model Town Gujranwala",
+    "urduName": "ماڈل ٹاؤن گوجرانوالہ",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.152,
+      "lng": 74.188
+    },
+    "type": "neighborhood",
+    "postalCode": "52250",
+    "aliases": [
+      "model town gujranwala"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "gujranwala-cantt",
+    "name": "Gujranwala Cantt",
+    "urduName": "گوجرانوالہ کینٹ",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.235,
+      "lng": 74.218
+    },
+    "type": "neighborhood",
+    "postalCode": "52250",
+    "aliases": [
+      "rahwali cantt",
+      "cantt gujranwala",
+      "cantonment"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "gujranwala-dc-colony",
+    "name": "DC Colony",
+    "urduName": "ڈی سی کالونی",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.245,
+      "lng": 74.225
+    },
+    "type": "housing_society",
+    "postalCode": "52250",
+    "aliases": [
+      "dc colony gujranwala",
+      "dc colony cantt"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "gujranwala-wapda-town",
+    "name": "Wapda Town Gujranwala",
+    "urduName": "واپڈا ٹاؤن گوجرانوالہ",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.215,
+      "lng": 74.148
+    },
+    "type": "housing_society",
+    "postalCode": "52250",
+    "aliases": [
+      "wapda town gujranwala"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "gujranwala-master-city",
+    "name": "Master City",
+    "urduName": "ماسٹر سٹی گوجرانوالہ",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.195,
+      "lng": 74.238
+    },
+    "type": "housing_society",
+    "postalCode": "52250",
+    "aliases": [
+      "master city gujranwala"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "gujranwala-peoples-colony",
+    "name": "Peoples Colony Gujranwala",
+    "urduName": "پیپلز کالونی",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.145,
+      "lng": 74.205
+    },
+    "type": "neighborhood",
+    "postalCode": "52250",
+    "aliases": [
+      "peoples colony"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "gujranwala-civil-lines",
+    "name": "Civil Lines Gujranwala",
+    "urduName": "سول لائنز",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.172,
+      "lng": 74.185
+    },
+    "type": "neighborhood",
+    "postalCode": "52250",
+    "aliases": [
+      "civil lines"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "gujranwala-gt-road",
+    "name": "GT Road Commercial Strip",
+    "urduName": "جی ٹی روڈ",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.168,
+      "lng": 74.191
+    },
+    "type": "commercial",
+    "postalCode": "52250",
+    "aliases": [
+      "gt road gujranwala"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "gujranwala-small-industrial-estate",
+    "name": "Small Industrial Estate",
+    "urduName": "سمال انڈسٹریل اسٹیٹ",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.138,
+      "lng": 74.168
+    },
+    "type": "industrial",
+    "postalCode": "52250",
+    "aliases": [
+      "sie 1",
+      "sie 2",
+      "gujranwala industrial estate"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "gujranwala-climax-town",
+    "name": "Climax Town",
+    "urduName": "کلائمکس ٹاؤن",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.178,
+      "lng": 74.172
+    },
+    "type": "neighborhood",
+    "postalCode": "52250",
+    "aliases": [
+      "climax town gujranwala"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "gujranwala-garden-town",
+    "name": "Garden Town Gujranwala",
+    "urduName": "گارڈن ٹاؤن",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.205,
+      "lng": 74.162
+    },
+    "type": "housing_society",
+    "postalCode": "52250",
+    "aliases": [
+      "garden town"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "gujranwala-shalimar-town",
+    "name": "Shalimar Town",
+    "urduName": "شالیمار ٹاؤن",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.182,
+      "lng": 74.222
+    },
+    "type": "housing_society",
+    "postalCode": "52250",
+    "aliases": [
+      "shalimar town gujranwala"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "gujranwala-fazaia-housing-scheme",
+    "name": "Fazaia Housing Scheme Gujranwala",
+    "urduName": "فضائیہ ہاؤسنگ سکیم",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 32.255,
+      "lng": 74.232
+    },
+    "type": "housing_society",
+    "postalCode": "52250",
+    "aliases": [
+      "fazaia gujranwala"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  }
+];

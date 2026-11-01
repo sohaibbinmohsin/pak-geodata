@@ -817,5 +817,537 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "islamabad-sector-e-8",
+    "name": "Sector E-8",
+    "urduName": "سیکٹر ای 8",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.719,
+      "lng": 73.033
+    },
+    "type": "sector",
+    "postalCode": "44000",
+    "aliases": [
+      "e 8",
+      "e-8",
+      "naval complex e-8"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-sector-e-9",
+    "name": "Sector E-9",
+    "urduName": "سیکٹر ای 9",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.714,
+      "lng": 73.018
+    },
+    "type": "sector",
+    "postalCode": "44000",
+    "aliases": [
+      "e 9",
+      "e-9",
+      "paf complex e-9",
+      "shaheen complex"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-sector-f-9",
+    "name": "Sector F-9",
+    "urduName": "سیکٹر ایف 9",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.702,
+      "lng": 73.018
+    },
+    "type": "sector",
+    "postalCode": "44000",
+    "aliases": [
+      "f 9",
+      "f-9",
+      "fatima jinnah park"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-sector-h-13",
+    "name": "Sector H-13",
+    "urduName": "سیکٹر ایچ 13",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.642,
+      "lng": 72.98
+    },
+    "type": "sector",
+    "postalCode": "44000",
+    "aliases": [
+      "h 13",
+      "h-13"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-sector-i-12",
+    "name": "Sector I-12",
+    "urduName": "سیکٹر آئی 12",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.641,
+      "lng": 73.032
+    },
+    "type": "sector",
+    "postalCode": "44000",
+    "aliases": [
+      "i 12",
+      "i-12"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-sector-i-14",
+    "name": "Sector I-14",
+    "urduName": "سیکٹر آئی 14",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.618,
+      "lng": 72.965
+    },
+    "type": "sector",
+    "postalCode": "44000",
+    "aliases": [
+      "i 14",
+      "i-14",
+      "riphah international university"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-sector-d-17",
+    "name": "Sector D-17",
+    "urduName": "سیکٹر ڈی 17",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.678,
+      "lng": 72.885
+    },
+    "type": "sector",
+    "postalCode": "45200",
+    "aliases": [
+      "d 17",
+      "d-17",
+      "margalla view housing society"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-sector-b-17",
+    "name": "Sector B-17",
+    "urduName": "سیکٹر بی 17",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.695,
+      "lng": 72.875
+    },
+    "type": "sector",
+    "postalCode": "45200",
+    "aliases": [
+      "b 17",
+      "b-17",
+      "multi gardens"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-diplomatic-enclave",
+    "name": "Diplomatic Enclave",
+    "urduName": "ڈپلومیٹک انکلیو",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.722,
+      "lng": 73.111
+    },
+    "type": "neighborhood",
+    "postalCode": "44000",
+    "aliases": [
+      "g 5 enclave",
+      "diplomatic enclave islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-saidpur-village",
+    "name": "Saidpur Village",
+    "urduName": "سید پور گاؤں",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.743,
+      "lng": 73.067
+    },
+    "type": "neighborhood",
+    "postalCode": "44000",
+    "aliases": [
+      "saidpur",
+      "saidpur islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-gulberg-greens",
+    "name": "Gulberg Greens Islamabad",
+    "urduName": "گلبرگ گرینز اسلام آباد",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.598,
+      "lng": 73.155
+    },
+    "type": "housing_society",
+    "postalCode": "44000",
+    "aliases": [
+      "gulberg islamabad",
+      "gulberg greens",
+      "ibehs"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-soan-gardens",
+    "name": "Soan Gardens",
+    "urduName": "سوان گارڈنز",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.578,
+      "lng": 73.156
+    },
+    "type": "housing_society",
+    "postalCode": "44000",
+    "aliases": [
+      "soan gardens islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-naval-anchorage",
+    "name": "Naval Anchorage Islamabad",
+    "urduName": "نیول اینکرج اسلام آباد",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.568,
+      "lng": 73.178
+    },
+    "type": "housing_society",
+    "postalCode": "44000",
+    "aliases": [
+      "naval anchorage"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-cbr-town",
+    "name": "CBR Town",
+    "urduName": "سی بی آر ٹاؤن",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.582,
+      "lng": 73.138
+    },
+    "type": "housing_society",
+    "postalCode": "44000",
+    "aliases": [
+      "cbr town phase 1",
+      "cbr islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-pwd-housing-society",
+    "name": "PWD Housing Society",
+    "urduName": "پی ڈبلیو ڈی ہاؤسنگ سوسائٹی",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.578,
+      "lng": 73.142
+    },
+    "type": "housing_society",
+    "postalCode": "44000",
+    "aliases": [
+      "pwd islamabad",
+      "pwd society"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-korang-town",
+    "name": "Korang Town",
+    "urduName": "کورنگ ٹاؤن",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.588,
+      "lng": 73.128
+    },
+    "type": "housing_society",
+    "postalCode": "44000",
+    "aliases": [
+      "korang town islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-police-foundation",
+    "name": "Police Foundation Housing Scheme",
+    "urduName": "پولیس فاؤنڈیشن ہاؤسنگ سکیم",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.582,
+      "lng": 73.131
+    },
+    "type": "housing_society",
+    "postalCode": "44000",
+    "aliases": [
+      "police foundation o 9",
+      "o-9 police foundation"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-bhara-kahu",
+    "name": "Bhara Kahu",
+    "urduName": "بھارَہ کہو",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.744,
+      "lng": 73.179
+    },
+    "type": "suburb",
+    "postalCode": "45400",
+    "aliases": [
+      "barakahu",
+      "bhara kahu islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-koral-chowk",
+    "name": "Koral Chowk",
+    "urduName": "کورال چوک",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.618,
+      "lng": 73.138
+    },
+    "type": "neighborhood",
+    "postalCode": "44000",
+    "aliases": [
+      "koral",
+      "koral chowk islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-tarlai-kalan",
+    "name": "Tarlai Kalan",
+    "urduName": "تر لئی کلاں",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.642,
+      "lng": 73.148
+    },
+    "type": "neighborhood",
+    "postalCode": "44000",
+    "aliases": [
+      "tarlai",
+      "tarlai kalan islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-dha-phase-1",
+    "name": "DHA Phase 1 Islamabad",
+    "urduName": "ڈی ایچ اے فیز 1 اسلام آباد",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.558,
+      "lng": 73.098
+    },
+    "type": "housing_society",
+    "postalCode": "44000",
+    "aliases": [
+      "dha 1 islamabad",
+      "defence phase 1 islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-dha-phase-5",
+    "name": "DHA Phase 5 Islamabad",
+    "urduName": "ڈی ایچ اے فیز 5 اسلام آباد",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.562,
+      "lng": 73.195
+    },
+    "type": "housing_society",
+    "postalCode": "44000",
+    "aliases": [
+      "dha 5 islamabad",
+      "defence phase 5 islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-bahria-town-phase-7",
+    "name": "Bahria Town Phase 7 Islamabad",
+    "urduName": "بحریہ ٹاؤن فیز 7 اسلام آباد",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.555,
+      "lng": 73.108
+    },
+    "type": "housing_society",
+    "postalCode": "44000",
+    "aliases": [
+      "bahria 7",
+      "bahria phase 7"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "islamabad-bahria-enclave",
+    "name": "Bahria Enclave Islamabad",
+    "urduName": "بحریہ انکلیو اسلام آباد",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "coordinates": {
+      "lat": 33.689,
+      "lng": 73.198
+    },
+    "type": "housing_society",
+    "postalCode": "44000",
+    "aliases": [
+      "bahria enclave"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
   }
 ]

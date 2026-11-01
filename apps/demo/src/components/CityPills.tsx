@@ -8,7 +8,18 @@ export interface CityPillsProps {
   className?: string;
 }
 
-const TARGET_CITY_IDS = ['karachi', 'lahore', 'islamabad', 'rawalpindi', 'faisalabad'] as const;
+const TARGET_CITY_IDS = [
+  'karachi',
+  'lahore',
+  'islamabad',
+  'rawalpindi',
+  'faisalabad',
+  'gujranwala',
+  'multan',
+  'hyderabad',
+  'peshawar',
+  'quetta',
+] as const;
 
 export default function CityPills({
   selectedCity,
@@ -34,7 +45,7 @@ export default function CityPills({
   // City pill items ordered by major hubs
   const pills = useMemo(() => {
     const list: Array<{ id: string; label: string; count: number; city: PakistanCity | null }> = [
-      { id: 'all', label: 'All', count: counts.all || 189, city: null },
+      { id: 'all', label: 'All', count: counts.all || 289, city: null },
     ];
     for (const cityId of TARGET_CITY_IDS) {
       const city = getCityById(cityId);

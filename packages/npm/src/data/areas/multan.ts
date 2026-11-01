@@ -1,0 +1,349 @@
+import type { PakistanArea } from "../../types.js";
+
+export const multanAreas: readonly PakistanArea[] = [
+  {
+    "id": "multan-cantt",
+    "name": "Multan Cantt",
+    "urduName": "ملتان کینٹ",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.1925,
+      "lng": 71.4428
+    },
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "aliases": [
+      "cantt multan",
+      "multan cantonment"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-gulgasht-colony",
+    "name": "Gulgasht Colony",
+    "urduName": "گلگشت کالونی",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.2285,
+      "lng": 71.488
+    },
+    "type": "neighborhood",
+    "postalCode": "60700",
+    "aliases": [
+      "gulgasht",
+      "gulgasht multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-bosan-road",
+    "name": "Bosan Road",
+    "urduName": "بوسن روڈ",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.235,
+      "lng": 71.492
+    },
+    "type": "commercial",
+    "postalCode": "60700",
+    "aliases": [
+      "bosan road multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-shah-rukn-e-alam-colony",
+    "name": "Shah Rukn-e-Alam Colony",
+    "urduName": "شاہ رکن عالم کالونی",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.185,
+      "lng": 71.512
+    },
+    "type": "housing_society",
+    "postalCode": "60650",
+    "aliases": [
+      "shah rukn-e-alam",
+      "sra colony multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-new-multan",
+    "name": "New Multan",
+    "urduName": "نیو ملتان",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.178,
+      "lng": 71.505
+    },
+    "type": "housing_society",
+    "postalCode": "60650",
+    "aliases": [
+      "new multan colony"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-mda-officers-colony",
+    "name": "MDA Officers Colony",
+    "urduName": "ایم ڈی اے آفیسرز کالونی",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.215,
+      "lng": 71.468
+    },
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "aliases": [
+      "officers colony multan",
+      "mda colony"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-walled-city",
+    "name": "Walled City Multan",
+    "urduName": "اندرون ملتان",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.198,
+      "lng": 71.472
+    },
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "aliases": [
+      "old city multan",
+      "androon multan",
+      "multan fort area"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-hussain-agahi",
+    "name": "Hussain Agahi",
+    "urduName": "حسین آگاہی",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.195,
+      "lng": 71.465
+    },
+    "type": "commercial",
+    "postalCode": "60000",
+    "aliases": [
+      "hussain agahi bazaar"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-dha-multan",
+    "name": "DHA Multan",
+    "urduName": "ڈی ایچ اے ملتان",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.278,
+      "lng": 71.535
+    },
+    "type": "housing_society",
+    "postalCode": "60000",
+    "aliases": [
+      "dha multan",
+      "defence multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-wapda-town",
+    "name": "Wapda Town Multan",
+    "urduName": "واپڈا ٹاؤن ملتان",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.245,
+      "lng": 71.442
+    },
+    "type": "housing_society",
+    "postalCode": "60000",
+    "aliases": [
+      "wapda town multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-industrial-estate",
+    "name": "Industrial Estate Multan",
+    "urduName": "انڈسٹریل اسٹیٹ ملتان",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.142,
+      "lng": 71.415
+    },
+    "type": "industrial",
+    "postalCode": "60000",
+    "aliases": [
+      "multan industrial area",
+      "industrial estate phase 1 & 2"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-mumtazabad",
+    "name": "Mumtazabad",
+    "urduName": "ممتاز آباد",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.165,
+      "lng": 71.475
+    },
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "aliases": [
+      "mumtazabad multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-samejabad",
+    "name": "Samejabad",
+    "urduName": "سمیجہ آباد",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.172,
+      "lng": 71.522
+    },
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "aliases": [
+      "samejabad multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-qasim-bela",
+    "name": "Qasim Bela",
+    "urduName": "قاسم بیلہ",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.168,
+      "lng": 71.428
+    },
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "aliases": [
+      "qasim bela cantt"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-chungi-no-9",
+    "name": "Chungi No. 9",
+    "urduName": "چنگی نمبر 9",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.218,
+      "lng": 71.475
+    },
+    "type": "commercial",
+    "postalCode": "60000",
+    "aliases": [
+      "chungi 9 multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-bahauddin-zakariya-university",
+    "name": "Bahauddin Zakariya University",
+    "urduName": "بہاء الدین زکریا یونیورسٹی",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.264,
+      "lng": 71.505
+    },
+    "type": "neighborhood",
+    "postalCode": "60800",
+    "aliases": [
+      "bzu multan",
+      "zakariya university campus"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  }
+];

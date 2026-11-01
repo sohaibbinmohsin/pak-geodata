@@ -1,0 +1,352 @@
+[
+  {
+    "id": "peshawar-hayatabad-phase-1",
+    "name": "Hayatabad Phase 1",
+    "urduName": "حیات آباد فیز 1",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 33.992,
+      "lng": 71.455
+    },
+    "type": "housing_society",
+    "postalCode": "25100",
+    "aliases": [
+      "hayatabad 1",
+      "phase 1 hayatabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-hayatabad-phase-2",
+    "name": "Hayatabad Phase 2",
+    "urduName": "حیات آباد فیز 2",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 33.985,
+      "lng": 71.448
+    },
+    "type": "housing_society",
+    "postalCode": "25100",
+    "aliases": [
+      "hayatabad 2",
+      "phase 2 hayatabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-hayatabad-phase-3",
+    "name": "Hayatabad Phase 3",
+    "urduName": "حیات آباد فیز 3",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 33.988,
+      "lng": 71.442
+    },
+    "type": "housing_society",
+    "postalCode": "25100",
+    "aliases": [
+      "hayatabad 3",
+      "phase 3 hayatabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-hayatabad-phase-4",
+    "name": "Hayatabad Phase 4",
+    "urduName": "حیات آباد فیز 4",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 33.978,
+      "lng": 71.435
+    },
+    "type": "housing_society",
+    "postalCode": "25100",
+    "aliases": [
+      "hayatabad 4",
+      "phase 4 hayatabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-hayatabad-phase-5",
+    "name": "Hayatabad Phase 5",
+    "urduName": "حیات آباد فیز 5",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 33.972,
+      "lng": 71.438
+    },
+    "type": "housing_society",
+    "postalCode": "25100",
+    "aliases": [
+      "hayatabad 5",
+      "phase 5 hayatabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-hayatabad-phase-6",
+    "name": "Hayatabad Phase 6",
+    "urduName": "حیات آباد فیز 6",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 33.965,
+      "lng": 71.442
+    },
+    "type": "housing_society",
+    "postalCode": "25100",
+    "aliases": [
+      "hayatabad 6",
+      "phase 6 hayatabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-hayatabad-phase-7",
+    "name": "Hayatabad Phase 7",
+    "urduName": "حیات آباد فیز 7",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 33.958,
+      "lng": 71.448
+    },
+    "type": "housing_society",
+    "postalCode": "25100",
+    "aliases": [
+      "hayatabad 7",
+      "phase 7 hayatabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-university-town",
+    "name": "University Town",
+    "urduName": "یونیورسٹی ٹاؤن",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 34.004,
+      "lng": 71.488
+    },
+    "type": "neighborhood",
+    "postalCode": "25120",
+    "aliases": [
+      "university town peshawar"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-university-campus",
+    "name": "University of Peshawar Campus",
+    "urduName": "پشاور یونیورسٹی کیمپس",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 34.008,
+      "lng": 71.478
+    },
+    "type": "neighborhood",
+    "postalCode": "25120",
+    "aliases": [
+      "peshawar university",
+      "uop campus"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-cantt",
+    "name": "Peshawar Cantt",
+    "urduName": "پشاور کینٹ",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 34.008,
+      "lng": 71.542
+    },
+    "type": "neighborhood",
+    "postalCode": "25000",
+    "aliases": [
+      "cantt peshawar",
+      "peshawar cantonment"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-saddar",
+    "name": "Saddar Peshawar",
+    "urduName": "صدر پشاور",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 34.005,
+      "lng": 71.538
+    },
+    "type": "commercial",
+    "postalCode": "25000",
+    "aliases": [
+      "saddar road peshawar",
+      "saddar bazaar"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-qissa-khwani-bazaar",
+    "name": "Qissa Khwani Bazaar",
+    "urduName": "قصہ خوانی بازار",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 34.012,
+      "lng": 71.568
+    },
+    "type": "commercial",
+    "postalCode": "25000",
+    "aliases": [
+      "qissa khwani",
+      "storytellers bazaar",
+      "old city peshawar"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-gulbahar",
+    "name": "Gulbahar",
+    "urduName": "گلبہار",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 34.012,
+      "lng": 71.595
+    },
+    "type": "neighborhood",
+    "postalCode": "25000",
+    "aliases": [
+      "gulbahar peshawar",
+      "gulbahar no 1 2 3 4"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-hashtnagri",
+    "name": "Hashtnagri",
+    "urduName": "ہشتنگری",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 34.015,
+      "lng": 71.582
+    },
+    "type": "neighborhood",
+    "postalCode": "25000",
+    "aliases": [
+      "hashtnagri peshawar"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-warsak-road",
+    "name": "Warsak Road",
+    "urduName": "ورسک روڈ",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 34.038,
+      "lng": 71.515
+    },
+    "type": "neighborhood",
+    "postalCode": "25000",
+    "aliases": [
+      "warsak road peshawar"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "peshawar-regi-model-town",
+    "name": "Regi Model Town",
+    "urduName": "ریگی ماڈل ٹاؤن",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "coordinates": {
+      "lat": 34.055,
+      "lng": 71.448
+    },
+    "type": "housing_society",
+    "postalCode": "25000",
+    "aliases": [
+      "regi lalma",
+      "regi model town peshawar"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  }
+]
