@@ -15,10 +15,10 @@
       "75999"
     ],
     "bounds": {
-      "minLat": 24.7500,
-      "maxLat": 25.1000,
-      "minLng": 66.8500,
-      "maxLng": 67.3500
+      "minLat": 24.75,
+      "maxLat": 25.1,
+      "minLng": 66.85,
+      "maxLng": 67.35
     }
   },
   {
@@ -29,7 +29,7 @@
     "division": "Hyderabad Division",
     "district": "Hyderabad",
     "coordinates": {
-      "lat": 25.3960,
+      "lat": 25.396,
       "lng": 68.3578
     },
     "postalCodeRange": [
@@ -37,10 +37,10 @@
       "71999"
     ],
     "bounds": {
-      "minLat": 25.3200,
-      "maxLat": 25.4800,
-      "minLng": 68.2800,
-      "maxLng": 68.4400
+      "minLat": 25.32,
+      "maxLat": 25.48,
+      "minLng": 68.28,
+      "maxLng": 68.44
     }
   },
   {
@@ -59,10 +59,10 @@
       "65299"
     ],
     "bounds": {
-      "minLat": 27.6500,
-      "maxLat": 27.7600,
-      "minLng": 68.8000,
-      "maxLng": 68.9200
+      "minLat": 27.65,
+      "maxLat": 27.76,
+      "minLng": 68.8,
+      "maxLng": 68.92
     }
   },
   {
@@ -73,18 +73,18 @@
     "division": "Larkana Division",
     "district": "Larkana",
     "coordinates": {
-      "lat": 27.5590,
-      "lng": 68.2120
+      "lat": 27.559,
+      "lng": 68.212
     },
     "postalCodeRange": [
       "77150",
       "77199"
     ],
     "bounds": {
-      "minLat": 27.5100,
-      "maxLat": 27.6100,
-      "minLng": 68.1600,
-      "maxLng": 68.2700
+      "minLat": 27.51,
+      "maxLat": 27.61,
+      "minLng": 68.16,
+      "maxLng": 68.27
     }
   },
   {
@@ -103,10 +103,10 @@
       "67499"
     ],
     "bounds": {
-      "minLat": 26.2000,
-      "maxLat": 26.3000,
-      "minLng": 68.3500,
-      "maxLng": 68.4700
+      "minLat": 26.2,
+      "maxLat": 26.3,
+      "minLng": 68.35,
+      "maxLng": 68.47
     }
   },
   {
@@ -125,10 +125,54 @@
       "69099"
     ],
     "bounds": {
-      "minLat": 25.4700,
-      "maxLat": 25.5800,
-      "minLng": 68.9600,
-      "maxLng": 69.0700
+      "minLat": 25.47,
+      "maxLat": 25.58,
+      "minLng": 68.96,
+      "maxLng": 69.07
+    }
+  },
+  {
+    "id": "jacobabad",
+    "name": "Jacobabad",
+    "urduName": "جیکب آباد",
+    "provinceId": "sindh",
+    "division": "Larkana Division",
+    "district": "Jacobabad",
+    "coordinates": {
+      "lat": 28.2835,
+      "lng": 68.4388
+    },
+    "postalCodeRange": [
+      "79200",
+      "79299"
+    ],
+    "bounds": {
+      "minLat": 28.23,
+      "maxLat": 28.34,
+      "minLng": 68.38,
+      "maxLng": 68.49
+    }
+  },
+  {
+    "id": "shikarpur",
+    "name": "Shikarpur",
+    "urduName": "شکارپور",
+    "provinceId": "sindh",
+    "division": "Larkana Division",
+    "district": "Shikarpur",
+    "coordinates": {
+      "lat": 27.957,
+      "lng": 68.638
+    },
+    "postalCodeRange": [
+      "78100",
+      "78199"
+    ],
+    "bounds": {
+      "minLat": 27.91,
+      "maxLat": 28.01,
+      "minLng": 68.58,
+      "maxLng": 68.69
     }
   }
 ]

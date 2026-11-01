@@ -73,7 +73,7 @@ class TestPakGeodata(unittest.TestCase):
     # 2. Cities Tests
     def test_get_all_cities(self):
         cities = get_all_cities()
-        self.assertEqual(len(cities), 40)
+        self.assertEqual(len(cities), 79)
         for c in cities:
             self.assertIsInstance(c, PakistanCity)
             self.assertTrue(len(c.id) > 0)
@@ -87,14 +87,14 @@ class TestPakGeodata(unittest.TestCase):
 
     def test_get_cities_by_province(self):
         punjab_cities = get_cities_by_province("punjab")
-        self.assertEqual(len(punjab_cities), 14)
+        self.assertEqual(len(punjab_cities), 37)
         city_ids = {c.id for c in punjab_cities}
         self.assertIn("lahore", city_ids)
         self.assertIn("rawalpindi", city_ids)
         self.assertIn("faisalabad", city_ids)
 
         sindh_cities = get_cities_by_province("sindh")
-        self.assertEqual(len(sindh_cities), 6)
+        self.assertEqual(len(sindh_cities), 8)
         self.assertIn("karachi", {c.id for c in sindh_cities})
 
         # Non-existent province returns empty list

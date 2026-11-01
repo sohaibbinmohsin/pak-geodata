@@ -15,10 +15,10 @@
       "15199"
     ],
     "bounds": {
-      "minLat": 35.8700,
-      "maxLat": 35.9700,
-      "minLng": 74.2500,
-      "maxLng": 74.3700
+      "minLat": 35.87,
+      "maxLat": 35.97,
+      "minLng": 74.25,
+      "maxLng": 74.37
     }
   },
   {
@@ -37,10 +37,10 @@
       "16199"
     ],
     "bounds": {
-      "minLat": 35.2400,
-      "maxLat": 35.3500,
-      "minLng": 75.5700,
-      "maxLng": 75.7000
+      "minLat": 35.24,
+      "maxLat": 35.35,
+      "minLng": 75.57,
+      "maxLng": 75.7
     }
   },
   {
@@ -59,10 +59,10 @@
       "15750"
     ],
     "bounds": {
-      "minLat": 36.2900,
-      "maxLat": 36.3600,
-      "minLng": 74.6100,
-      "maxLng": 74.7100
+      "minLat": 36.29,
+      "maxLat": 36.36,
+      "minLng": 74.61,
+      "maxLng": 74.71
     }
   },
   {
@@ -81,10 +81,76 @@
       "14150"
     ],
     "bounds": {
-      "minLat": 35.3700,
-      "maxLat": 35.4600,
-      "minLng": 74.0400,
-      "maxLng": 74.1500
+      "minLat": 35.37,
+      "maxLat": 35.46,
+      "minLng": 74.04,
+      "maxLng": 74.15
+    }
+  },
+  {
+    "id": "aliabad-hunza",
+    "name": "Aliabad",
+    "urduName": "علی آباد",
+    "provinceId": "gilgit-baltistan",
+    "division": "Gilgit Division",
+    "district": "Hunza",
+    "coordinates": {
+      "lat": 36.3075,
+      "lng": 74.6158
+    },
+    "postalCodeRange": [
+      "15710",
+      "15740"
+    ],
+    "bounds": {
+      "minLat": 36.27,
+      "maxLat": 36.34,
+      "minLng": 74.57,
+      "maxLng": 74.66
+    }
+  },
+  {
+    "id": "gahkuch",
+    "name": "Gahkuch",
+    "urduName": "گاہکوچ",
+    "provinceId": "gilgit-baltistan",
+    "division": "Gilgit Division",
+    "district": "Ghizer",
+    "coordinates": {
+      "lat": 36.1736,
+      "lng": 73.7656
+    },
+    "postalCodeRange": [
+      "15200",
+      "15250"
+    ],
+    "bounds": {
+      "minLat": 36.14,
+      "maxLat": 36.21,
+      "minLng": 73.72,
+      "maxLng": 73.81
+    }
+  },
+  {
+    "id": "khaplu",
+    "name": "Khaplu",
+    "urduName": "خپلو",
+    "provinceId": "gilgit-baltistan",
+    "division": "Baltistan Division",
+    "district": "Ghanche",
+    "coordinates": {
+      "lat": 35.155,
+      "lng": 76.335
+    },
+    "postalCodeRange": [
+      "16300",
+      "16350"
+    ],
+    "bounds": {
+      "minLat": 35.12,
+      "maxLat": 35.19,
+      "minLng": 76.29,
+      "maxLng": 76.38
     }
   }
 ]

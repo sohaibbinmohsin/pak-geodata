@@ -7,7 +7,7 @@
     "division": "Muzaffarabad Division",
     "district": "Muzaffarabad",
     "coordinates": {
-      "lat": 34.3700,
+      "lat": 34.37,
       "lng": 73.4711
     },
     "postalCodeRange": [
@@ -15,10 +15,10 @@
       "13199"
     ],
     "bounds": {
-      "minLat": 34.3200,
-      "maxLat": 34.4200,
-      "minLng": 73.4200,
-      "maxLng": 73.5300
+      "minLat": 34.32,
+      "maxLat": 34.42,
+      "minLng": 73.42,
+      "maxLng": 73.53
     }
   },
   {
@@ -37,10 +37,10 @@
       "10299"
     ],
     "bounds": {
-      "minLat": 33.1000,
-      "maxLat": 33.2000,
-      "minLng": 73.7000,
-      "maxLng": 73.8100
+      "minLat": 33.1,
+      "maxLat": 33.2,
+      "minLng": 73.7,
+      "maxLng": 73.81
     }
   },
   {
@@ -59,10 +59,10 @@
       "12399"
     ],
     "bounds": {
-      "minLat": 33.8100,
-      "maxLat": 33.9100,
-      "minLng": 73.7100,
-      "maxLng": 73.8100
+      "minLat": 33.81,
+      "maxLat": 33.91,
+      "minLng": 73.71,
+      "maxLng": 73.81
     }
   },
   {
@@ -81,10 +81,76 @@
       "11199"
     ],
     "bounds": {
-      "minLat": 33.4600,
-      "maxLat": 33.5600,
-      "minLng": 73.8500,
-      "maxLng": 73.9500
+      "minLat": 33.46,
+      "maxLat": 33.56,
+      "minLng": 73.85,
+      "maxLng": 73.95
+    }
+  },
+  {
+    "id": "bhimber",
+    "name": "Bhimber",
+    "urduName": "بھمبر",
+    "provinceId": "ajk",
+    "division": "Mirpur Division",
+    "district": "Bhimber",
+    "coordinates": {
+      "lat": 32.9745,
+      "lng": 74.0789
+    },
+    "postalCodeRange": [
+      "10050",
+      "10099"
+    ],
+    "bounds": {
+      "minLat": 32.93,
+      "maxLat": 33.02,
+      "minLng": 74.03,
+      "maxLng": 74.13
+    }
+  },
+  {
+    "id": "bagh",
+    "name": "Bagh",
+    "urduName": "باغ",
+    "provinceId": "ajk",
+    "division": "Poonch Division",
+    "district": "Bagh",
+    "coordinates": {
+      "lat": 33.98,
+      "lng": 73.79
+    },
+    "postalCodeRange": [
+      "12500",
+      "12550"
+    ],
+    "bounds": {
+      "minLat": 33.94,
+      "maxLat": 34.02,
+      "minLng": 73.74,
+      "maxLng": 73.84
+    }
+  },
+  {
+    "id": "pallandri",
+    "name": "Pallandri",
+    "urduName": "پلندری",
+    "provinceId": "ajk",
+    "division": "Poonch Division",
+    "district": "Sudhanoti",
+    "coordinates": {
+      "lat": 33.7128,
+      "lng": 73.6892
+    },
+    "postalCodeRange": [
+      "12050",
+      "12099"
+    ],
+    "bounds": {
+      "minLat": 33.67,
+      "maxLat": 33.76,
+      "minLng": 73.64,
+      "maxLng": 73.74
     }
   }
 ]
