@@ -1,0 +1,261 @@
+import type { PakistanArea } from "../../types.js";
+
+export const sargodhaAreas: readonly PakistanArea[] = [
+  {
+    "id": "sargodha-satellite-town",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Satellite Town",
+    "urduName": "سیٹلائٹ ٹاؤن سرگودھا",
+    "aliases": [
+      "Satellite Town Sargodha"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.072,
+      "lng": 72.685
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-cantt",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Sargodha Cantonment",
+    "urduName": "سرگودھا کینٹ",
+    "aliases": [
+      "Sargodha Cantt",
+      "PAF Base Mushaf Cantt"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.051,
+      "lng": 72.671
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-university-town",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "University Town",
+    "urduName": "یونیورسٹی ٹاؤن سرگودھا",
+    "aliases": [
+      "University Road Sargodha",
+      "UOS Area"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.088,
+      "lng": 72.662
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-model-town",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Model Town",
+    "urduName": "ماڈل ٹاؤن سرگودھا",
+    "aliases": [
+      "Model Town Sargodha"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.081,
+      "lng": 72.678
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-fatima-jinnah-colony",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Fatima Jinnah Colony",
+    "urduName": "فاطمہ جناح کالونی",
+    "aliases": [
+      "Fatima Jinnah Town Sargodha"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.095,
+      "lng": 72.691
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-mujahid-colony",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Mujahid Colony",
+    "urduName": "مجاہد کالونی",
+    "aliases": [
+      "Mujahid Colony Sargodha"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.064,
+      "lng": 72.693
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-civil-lines",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Civil Lines",
+    "urduName": "سیول لائنز سرگودھا",
+    "aliases": [
+      "Civil Lines Sargodha",
+      "Kachehri Road"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.078,
+      "lng": 72.671
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-new-satellite-town",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "New Satellite Town",
+    "urduName": "نیو سیٹلائٹ ٹاؤن",
+    "aliases": [
+      "New Satellite Town Sargodha"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.062,
+      "lng": 72.705
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-liaquat-market",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Liaquat Market",
+    "urduName": "لیاقت مارکیٹ",
+    "aliases": [
+      "Liaquat Bazaar Sargodha",
+      "Club Road"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.083,
+      "lng": 72.674
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-queens-road",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Queen's Road",
+    "urduName": "کوئینز روڈ سرگودھا",
+    "aliases": [
+      "Queens Road Sargodha"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.076,
+      "lng": 72.681
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-shaheenabad-road",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Shaheenabad Road",
+    "urduName": "شاہین آباد روڈ",
+    "aliases": [
+      "Shaheenabad Road Area"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.042,
+      "lng": 72.698
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-small-industries",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Small Industrial Estate",
+    "urduName": "سمال انڈسٹریل اسٹیٹ سرگودھا",
+    "aliases": [
+      "SIE Sargodha",
+      "Faisalabad Road SIE"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.115,
+      "lng": 72.682
+    },
+    "type": "industrial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+];

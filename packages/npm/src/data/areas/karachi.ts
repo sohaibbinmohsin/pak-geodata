@@ -1120,5 +1120,1191 @@ export const karachiAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "karachi-north-nazimabad-block-e",
+    "name": "North Nazimabad Block E",
+    "urduName": "نارتھ ناظم آباد بلاک E",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9312,
+      "lng": 67.0345
+    },
+    "aliases": [
+      "Block E North Nazimabad",
+      "NN Block E"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-nazimabad-block-f",
+    "name": "North Nazimabad Block F",
+    "urduName": "نارتھ ناظم آباد بلاک F",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9334,
+      "lng": 67.0398
+    },
+    "aliases": [
+      "Block F North Nazimabad",
+      "NN Block F",
+      "Hyderi Market Block F"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-nazimabad-block-g",
+    "name": "North Nazimabad Block G",
+    "urduName": "نارتھ ناظم آباد بلاک G",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9356,
+      "lng": 67.0451
+    },
+    "aliases": [
+      "Block G North Nazimabad",
+      "NN Block G"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-nazimabad-block-i",
+    "name": "North Nazimabad Block I",
+    "urduName": "نارتھ ناظم آباد بلاک I",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9378,
+      "lng": 67.0494
+    },
+    "aliases": [
+      "Block I North Nazimabad",
+      "NN Block I"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-nazimabad-block-k",
+    "name": "North Nazimabad Block K",
+    "urduName": "نارتھ ناظم آباد بلاک K",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9495,
+      "lng": 67.056
+    },
+    "aliases": [
+      "Block K North Nazimabad",
+      "NN Block K"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-nazimabad-block-l",
+    "name": "North Nazimabad Block L",
+    "urduName": "نارتھ ناظم آباد بلاک L",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9441,
+      "lng": 67.0487
+    },
+    "aliases": [
+      "Block L North Nazimabad",
+      "NN Block L"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-nazimabad-block-m",
+    "name": "North Nazimabad Block M",
+    "urduName": "نارتھ ناظم آباد بلاک M",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9463,
+      "lng": 67.0518
+    },
+    "aliases": [
+      "Block M North Nazimabad",
+      "NN Block M"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-nazimabad-block-n",
+    "name": "North Nazimabad Block N",
+    "urduName": "نارتھ ناظم آباد بلاک N",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9485,
+      "lng": 67.0469
+    },
+    "aliases": [
+      "Block N North Nazimabad",
+      "NN Block N"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-nazimabad-block-o",
+    "name": "North Nazimabad Block O",
+    "urduName": "نارتھ ناظم آباد بلاک O",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9517,
+      "lng": 67.0422
+    },
+    "aliases": [
+      "Block O North Nazimabad",
+      "NN Block O"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-nazimabad-block-p",
+    "name": "North Nazimabad Block P",
+    "urduName": "نارتھ ناظم آباد بلاک P",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9539,
+      "lng": 67.0374
+    },
+    "aliases": [
+      "Block P North Nazimabad",
+      "NN Block P"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-nazimabad-block-q",
+    "name": "North Nazimabad Block Q",
+    "urduName": "نارتھ ناظم آباد بلاک Q",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9551,
+      "lng": 67.0326
+    },
+    "aliases": [
+      "Block Q North Nazimabad",
+      "NN Block Q"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-nazimabad-block-r",
+    "name": "North Nazimabad Block R",
+    "urduName": "نارتھ ناظم آباد بلاک R",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9573,
+      "lng": 67.0288
+    },
+    "aliases": [
+      "Block R North Nazimabad",
+      "NN Block R"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-nazimabad-block-s",
+    "name": "North Nazimabad Block S",
+    "urduName": "نارتھ ناظم آباد بلاک S",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9595,
+      "lng": 67.0241
+    },
+    "aliases": [
+      "Block S North Nazimabad",
+      "NN Block S"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-nazimabad-block-t",
+    "name": "North Nazimabad Block T",
+    "urduName": "نارتھ ناظم آباد بلاک T",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74700",
+    "coordinates": {
+      "lat": 24.9617,
+      "lng": 67.0203
+    },
+    "aliases": [
+      "Block T North Nazimabad",
+      "NN Block T"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulistan-e-johar-block-2",
+    "name": "Gulistan-e-Johar Block 2",
+    "urduName": "گلستانِ جوہر بلاک 2",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75290",
+    "coordinates": {
+      "lat": 24.9156,
+      "lng": 67.1255
+    },
+    "aliases": [
+      "Johar Block 2",
+      "Gulistan e Johar Block 2"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulistan-e-johar-block-3",
+    "name": "Gulistan-e-Johar Block 3",
+    "urduName": "گلستانِ جوہر بلاک 3",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75290",
+    "coordinates": {
+      "lat": 24.9187,
+      "lng": 67.1296
+    },
+    "aliases": [
+      "Johar Block 3",
+      "Kamran Chowrangi Block 3"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulistan-e-johar-block-4",
+    "name": "Gulistan-e-Johar Block 4",
+    "urduName": "گلستانِ جوہر بلاک 4",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75290",
+    "coordinates": {
+      "lat": 24.9218,
+      "lng": 67.1337
+    },
+    "aliases": [
+      "Johar Block 4",
+      "Gulistan e Johar Block 4"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulistan-e-johar-block-5",
+    "name": "Gulistan-e-Johar Block 5",
+    "urduName": "گلستانِ جوہر بلاک 5",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75290",
+    "coordinates": {
+      "lat": 24.9249,
+      "lng": 67.1378
+    },
+    "aliases": [
+      "Johar Block 5",
+      "Gulistan e Johar Block 5"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulistan-e-johar-block-6",
+    "name": "Gulistan-e-Johar Block 6",
+    "urduName": "گلستانِ جوہر بلاک 6",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75290",
+    "coordinates": {
+      "lat": 24.9271,
+      "lng": 67.1419
+    },
+    "aliases": [
+      "Johar Block 6",
+      "Gulistan e Johar Block 6"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulistan-e-johar-block-7",
+    "name": "Gulistan-e-Johar Block 7",
+    "urduName": "گلستانِ جوہر بلاک 7",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75290",
+    "coordinates": {
+      "lat": 24.9302,
+      "lng": 67.1451
+    },
+    "aliases": [
+      "Johar Block 7",
+      "Gulistan e Johar Block 7"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulistan-e-johar-block-8",
+    "name": "Gulistan-e-Johar Block 8",
+    "urduName": "گلستانِ جوہر بلاک 8",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75290",
+    "coordinates": {
+      "lat": 24.9253,
+      "lng": 67.1482
+    },
+    "aliases": [
+      "Johar Block 8",
+      "Gulistan e Johar Block 8"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulistan-e-johar-block-9",
+    "name": "Gulistan-e-Johar Block 9",
+    "urduName": "گلستانِ جوہر بلاک 9",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75290",
+    "coordinates": {
+      "lat": 24.9204,
+      "lng": 67.1463
+    },
+    "aliases": [
+      "Johar Block 9",
+      "Gulistan e Johar Block 9"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulistan-e-johar-block-10",
+    "name": "Gulistan-e-Johar Block 10",
+    "urduName": "گلستانِ جوہر بلاک 10",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75290",
+    "coordinates": {
+      "lat": 24.9165,
+      "lng": 67.1424
+    },
+    "aliases": [
+      "Johar Block 10",
+      "Gulistan e Johar Block 10"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulistan-e-johar-block-11",
+    "name": "Gulistan-e-Johar Block 11",
+    "urduName": "گلستانِ جوہر بلاک 11",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75290",
+    "coordinates": {
+      "lat": 24.9146,
+      "lng": 67.1365
+    },
+    "aliases": [
+      "Johar Block 11",
+      "Gulistan e Johar Block 11"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulistan-e-johar-block-13",
+    "name": "Gulistan-e-Johar Block 13",
+    "urduName": "گلستانِ جوہر بلاک 13",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75290",
+    "coordinates": {
+      "lat": 24.9231,
+      "lng": 67.1262
+    },
+    "aliases": [
+      "Johar Block 13",
+      "Rado Bakery Block 13"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulistan-e-johar-block-14",
+    "name": "Gulistan-e-Johar Block 14",
+    "urduName": "گلستانِ جوہر بلاک 14",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75290",
+    "coordinates": {
+      "lat": 24.9273,
+      "lng": 67.1284
+    },
+    "aliases": [
+      "Johar Block 14",
+      "Jauhar Chowrangi Block 14"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-fb-area-block-2",
+    "name": "Federal B Area Block 2",
+    "urduName": "فیڈرل بی ایریا بلاک 2",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75950",
+    "coordinates": {
+      "lat": 24.9175,
+      "lng": 67.0664
+    },
+    "aliases": [
+      "FB Area Block 2"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-fb-area-block-3",
+    "name": "Federal B Area Block 3",
+    "urduName": "فیڈرل بی ایریا بلاک 3",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75950",
+    "coordinates": {
+      "lat": 24.9206,
+      "lng": 67.0705
+    },
+    "aliases": [
+      "FB Area Block 3"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-fb-area-block-4",
+    "name": "Federal B Area Block 4",
+    "urduName": "فیڈرل بی ایریا بلاک 4",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75950",
+    "coordinates": {
+      "lat": 24.9237,
+      "lng": 67.0746
+    },
+    "aliases": [
+      "FB Area Block 4"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-fb-area-block-5",
+    "name": "Federal B Area Block 5",
+    "urduName": "فیڈرل بی ایریا بلاک 5",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75950",
+    "coordinates": {
+      "lat": 24.9268,
+      "lng": 67.0787
+    },
+    "aliases": [
+      "FB Area Block 5"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-fb-area-block-7",
+    "name": "Federal B Area Block 7",
+    "urduName": "فیڈرل بی ایریا بلاک 7",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75950",
+    "coordinates": {
+      "lat": 24.9321,
+      "lng": 67.0869
+    },
+    "aliases": [
+      "FB Area Block 7"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-fb-area-block-8",
+    "name": "Federal B Area Block 8 (Yaseenabad)",
+    "urduName": "فیڈرل بی ایریا بلاک 8 یاسین آباد",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75950",
+    "coordinates": {
+      "lat": 24.9223,
+      "lng": 67.0851
+    },
+    "aliases": [
+      "FB Area Block 8",
+      "Yaseenabad Karachi"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-fb-area-block-9",
+    "name": "Federal B Area Block 9 (Dastagir)",
+    "urduName": "فیڈرل بی ایریا بلاک 9 دستگیر",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75950",
+    "coordinates": {
+      "lat": 24.9254,
+      "lng": 67.0712
+    },
+    "aliases": [
+      "FB Area Block 9",
+      "Dastagir Karachi"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-fb-area-block-10",
+    "name": "Federal B Area Block 10 (Ayesha Manzil)",
+    "urduName": "فیڈرل بی ایریا بلاک 10 عائشہ منزل",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75950",
+    "coordinates": {
+      "lat": 24.9285,
+      "lng": 67.0653
+    },
+    "aliases": [
+      "FB Area Block 10",
+      "Ayesha Manzil Karachi"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-fb-area-block-11",
+    "name": "Federal B Area Block 11",
+    "urduName": "فیڈرل بی ایریا بلاک 11",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75950",
+    "coordinates": {
+      "lat": 24.9346,
+      "lng": 67.0734
+    },
+    "aliases": [
+      "FB Area Block 11",
+      "Water Pump Block 11"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-fb-area-block-12",
+    "name": "Federal B Area Block 12",
+    "urduName": "فیڈرل بی ایریا بلاک 12",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "75950",
+    "coordinates": {
+      "lat": 24.9377,
+      "lng": 67.0775
+    },
+    "aliases": [
+      "FB Area Block 12",
+      "Gulberg FB Area"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-karachi-sector-11-a",
+    "name": "North Karachi Sector 11-A",
+    "urduName": "نارتھ کراچی سیکٹر 11-A",
+    "cityId": "karachi",
+    "type": "sector",
+    "postalCode": "75850",
+    "coordinates": {
+      "lat": 24.9823,
+      "lng": 67.0681
+    },
+    "aliases": [
+      "Sector 11-A North Karachi",
+      "NK 11-A"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-karachi-sector-11-b",
+    "name": "North Karachi Sector 11-B",
+    "urduName": "نارتھ کراچی سیکٹر 11-B",
+    "cityId": "karachi",
+    "type": "sector",
+    "postalCode": "75850",
+    "coordinates": {
+      "lat": 24.9864,
+      "lng": 67.0722
+    },
+    "aliases": [
+      "Sector 11-B North Karachi",
+      "NK 11-B",
+      "UP Mor"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-karachi-sector-5-c",
+    "name": "North Karachi Sector 5-C",
+    "urduName": "نارتھ کراچی سیکٹر 5-C",
+    "cityId": "karachi",
+    "type": "sector",
+    "postalCode": "75850",
+    "coordinates": {
+      "lat": 24.9925,
+      "lng": 67.0653
+    },
+    "aliases": [
+      "Sector 5-C North Karachi",
+      "NK 5-C"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-karachi-sector-5-e",
+    "name": "North Karachi Sector 5-E",
+    "urduName": "نارتھ کراچی سیکٹر 5-E",
+    "cityId": "karachi",
+    "type": "sector",
+    "postalCode": "75850",
+    "coordinates": {
+      "lat": 24.9966,
+      "lng": 67.0694
+    },
+    "aliases": [
+      "Sector 5-E North Karachi",
+      "NK 5-E"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-karachi-sector-7-d",
+    "name": "North Karachi Sector 7-D",
+    "urduName": "نارتھ کراچی سیکٹر 7-D",
+    "cityId": "karachi",
+    "type": "sector",
+    "postalCode": "75850",
+    "coordinates": {
+      "lat": 25.0027,
+      "lng": 67.0745
+    },
+    "aliases": [
+      "Sector 7-D North Karachi",
+      "Surjani Link"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-north-karachi-sector-8",
+    "name": "North Karachi Sector 8",
+    "urduName": "نارتھ کراچی سیکٹر 8",
+    "cityId": "karachi",
+    "type": "sector",
+    "postalCode": "75850",
+    "coordinates": {
+      "lat": 24.9898,
+      "lng": 67.0776
+    },
+    "aliases": [
+      "Sector 8 North Karachi",
+      "NK 8"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-site-industrial-area",
+    "name": "SITE Industrial Area",
+    "urduName": "سائٹ انڈسٹریل ایریا کراچی",
+    "cityId": "karachi",
+    "type": "industrial",
+    "postalCode": "75700",
+    "coordinates": {
+      "lat": 24.9031,
+      "lng": 67.0012
+    },
+    "aliases": [
+      "SITE Karachi",
+      "Sindh Industrial Trading Estate"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-korangi-crossing",
+    "name": "Korangi Crossing",
+    "urduName": "کورنگی کراسنگ کراچی",
+    "cityId": "karachi",
+    "type": "commercial",
+    "postalCode": "74900",
+    "coordinates": {
+      "lat": 24.8382,
+      "lng": 67.1193
+    },
+    "aliases": [
+      "Korangi Crossing",
+      "Indus Hospital Area"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-landhi-industrial-area",
+    "name": "Landhi Industrial Area",
+    "urduName": "لانڈھی انڈسٹریل ایریا",
+    "cityId": "karachi",
+    "type": "industrial",
+    "postalCode": "75120",
+    "coordinates": {
+      "lat": 24.8423,
+      "lng": 67.2054
+    },
+    "aliases": [
+      "LIA Karachi",
+      "Landhi Export Processing"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-port-qasim",
+    "name": "Port Qasim Area",
+    "urduName": "پورٹ قاسم ایریا",
+    "cityId": "karachi",
+    "type": "industrial",
+    "postalCode": "75020",
+    "coordinates": {
+      "lat": 24.7854,
+      "lng": 67.3325
+    },
+    "aliases": [
+      "Port Muhammad Bin Qasim",
+      "Bin Qasim Industrial"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-ii-chundrigar-road",
+    "name": "I.I. Chundrigar Road",
+    "urduName": "آئی آئی چندریگر روڈ",
+    "cityId": "karachi",
+    "type": "commercial",
+    "postalCode": "74000",
+    "coordinates": {
+      "lat": 24.8515,
+      "lng": 67.0056
+    },
+    "aliases": [
+      "McLeod Road",
+      "Financial District Karachi",
+      "Wall Street of Pakistan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-empress-market",
+    "name": "Empress Market (Saddar)",
+    "urduName": "ایمپریس مارکیٹ صدر",
+    "cityId": "karachi",
+    "type": "commercial",
+    "postalCode": "74400",
+    "coordinates": {
+      "lat": 24.8626,
+      "lng": 67.0317
+    },
+    "aliases": [
+      "Empress Market Karachi",
+      "Saddar Bazaar Center"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-scheme-33-kaneez-fatima",
+    "name": "Scheme 33 (Gulshan-e-Kaneez Fatima)",
+    "urduName": "اسکیم 33 گلشنِ کنیز فاطمہ",
+    "cityId": "karachi",
+    "type": "housing_society",
+    "postalCode": "75340",
+    "coordinates": {
+      "lat": 24.9627,
+      "lng": 67.1258
+    },
+    "aliases": [
+      "Kaneez Fatima Society",
+      "Scheme 33 Sector 24"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-scheme-33-saadi-town",
+    "name": "Scheme 33 (Saadi Town)",
+    "urduName": "اسکیم 33 سعدی ٹاؤن",
+    "cityId": "karachi",
+    "type": "housing_society",
+    "postalCode": "75340",
+    "coordinates": {
+      "lat": 24.9458,
+      "lng": 67.1729
+    },
+    "aliases": [
+      "Saadi Town Karachi",
+      "Scheme 33 Block 33"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulshan-e-hadeed-phase-1",
+    "name": "Gulshan-e-Hadeed Phase 1",
+    "urduName": "گلشنِ حدید فیز 1",
+    "cityId": "karachi",
+    "type": "housing_society",
+    "postalCode": "75010",
+    "coordinates": {
+      "lat": 24.8659,
+      "lng": 67.3421
+    },
+    "aliases": [
+      "Steel Town Link",
+      "Gulshan e Hadeed"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-gulshan-e-maymar",
+    "name": "Gulshan-e-Maymar",
+    "urduName": "گلشنِ معمار",
+    "cityId": "karachi",
+    "type": "housing_society",
+    "postalCode": "75340",
+    "coordinates": {
+      "lat": 25.0051,
+      "lng": 67.1352
+    },
+    "aliases": [
+      "Maymar Karachi",
+      "Sector Z Maymar"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-nazimabad-block-1",
+    "name": "Nazimabad Block 1",
+    "urduName": "ناظم آباد بلاک 1",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74600",
+    "coordinates": {
+      "lat": 24.9122,
+      "lng": 67.0253
+    },
+    "aliases": [
+      "Nazimabad 1",
+      "Chowrangi 1 Nazimabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-nazimabad-block-2",
+    "name": "Nazimabad Block 2",
+    "urduName": "ناظم آباد بلاک 2",
+    "cityId": "karachi",
+    "type": "neighborhood",
+    "postalCode": "74600",
+    "coordinates": {
+      "lat": 24.9153,
+      "lng": 67.0284
+    },
+    "aliases": [
+      "Nazimabad 2",
+      "Petrol Pump Nazimabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
   }
 ];

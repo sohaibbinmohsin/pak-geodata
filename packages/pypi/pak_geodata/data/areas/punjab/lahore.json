@@ -1120,5 +1120,1225 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "lahore-iqbal-town-chenab-block",
+    "name": "Allama Iqbal Town (Chenab Block)",
+    "urduName": "علامہ اقبال ٹاؤن چناب بلاک",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54570",
+    "coordinates": {
+      "lat": 31.5032,
+      "lng": 74.2815
+    },
+    "aliases": [
+      "Chenab Block Iqbal Town",
+      "Chenab Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-iqbal-town-ravi-block",
+    "name": "Allama Iqbal Town (Ravi Block)",
+    "urduName": "علامہ اقبال ٹاؤن راوی بلاک",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54570",
+    "coordinates": {
+      "lat": 31.5064,
+      "lng": 74.2846
+    },
+    "aliases": [
+      "Ravi Block Iqbal Town",
+      "Moon Market Ravi Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-iqbal-town-huma-block",
+    "name": "Allama Iqbal Town (Huma Block)",
+    "urduName": "علامہ اقبال ٹاؤن ہما بلاک",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54570",
+    "coordinates": {
+      "lat": 31.5095,
+      "lng": 74.2877
+    },
+    "aliases": [
+      "Huma Block Iqbal Town",
+      "Huma Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-iqbal-town-khyber-block",
+    "name": "Allama Iqbal Town (Khyber Block)",
+    "urduName": "علامہ اقبال ٹاؤن خیبر بلاک",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54570",
+    "coordinates": {
+      "lat": 31.5126,
+      "lng": 74.2828
+    },
+    "aliases": [
+      "Khyber Block Iqbal Town",
+      "Khyber Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-iqbal-town-mehran-block",
+    "name": "Allama Iqbal Town (Mehran Block)",
+    "urduName": "علامہ اقبال ٹاؤن مہران بلاک",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54570",
+    "coordinates": {
+      "lat": 31.5087,
+      "lng": 74.2789
+    },
+    "aliases": [
+      "Mehran Block Iqbal Town",
+      "Mehran Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-iqbal-town-neelam-block",
+    "name": "Allama Iqbal Town (Neelam Block)",
+    "urduName": "علامہ اقبال ٹاؤن نیلم بلاک",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54570",
+    "coordinates": {
+      "lat": 31.5048,
+      "lng": 74.2761
+    },
+    "aliases": [
+      "Neelam Block Iqbal Town",
+      "Neelam Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-iqbal-town-nizam-block",
+    "name": "Allama Iqbal Town (Nizam Block)",
+    "urduName": "علامہ اقبال ٹاؤن نظام بلاک",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54570",
+    "coordinates": {
+      "lat": 31.5019,
+      "lng": 74.2852
+    },
+    "aliases": [
+      "Nizam Block Iqbal Town",
+      "Nizam Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-iqbal-town-jahanzeb-block",
+    "name": "Allama Iqbal Town (Jahanzeb Block)",
+    "urduName": "علامہ اقبال ٹاؤن جہانزیب بلاک",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54570",
+    "coordinates": {
+      "lat": 31.5151,
+      "lng": 74.2863
+    },
+    "aliases": [
+      "Jahanzeb Block Iqbal Town",
+      "Jahanzeb Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-johar-town-block-g",
+    "name": "Johar Town Block G",
+    "urduName": "جوہر ٹاؤن بلاک G",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.4682,
+      "lng": 74.2724
+    },
+    "aliases": [
+      "Block G Johar Town",
+      "JT Block G",
+      "G Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-johar-town-block-h",
+    "name": "Johar Town Block H",
+    "urduName": "جوہر ٹاؤن بلاک H",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.4653,
+      "lng": 74.2765
+    },
+    "aliases": [
+      "Block H Johar Town",
+      "JT Block H",
+      "H Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-johar-town-block-j",
+    "name": "Johar Town Block J",
+    "urduName": "جوہر ٹاؤن بلاک J",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.4624,
+      "lng": 74.2806
+    },
+    "aliases": [
+      "Block J Johar Town",
+      "JT Block J",
+      "G1 Market"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-johar-town-block-k",
+    "name": "Johar Town Block K",
+    "urduName": "جوہر ٹاؤن بلاک K",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.4595,
+      "lng": 74.2847
+    },
+    "aliases": [
+      "Block K Johar Town",
+      "JT Block K",
+      "Expo Center Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-johar-town-block-l",
+    "name": "Johar Town Block L",
+    "urduName": "جوہر ٹاؤن بلاک L",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.4566,
+      "lng": 74.2888
+    },
+    "aliases": [
+      "Block L Johar Town",
+      "JT Block L",
+      "Emporium Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-johar-town-block-m",
+    "name": "Johar Town Block M",
+    "urduName": "جوہر ٹاؤن بلاک M",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.4617,
+      "lng": 74.2929
+    },
+    "aliases": [
+      "Block M Johar Town",
+      "JT Block M",
+      "M Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-johar-town-block-r",
+    "name": "Johar Town Block R",
+    "urduName": "جوہر ٹاؤن بلاک R",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.4678,
+      "lng": 74.2871
+    },
+    "aliases": [
+      "Block R Johar Town",
+      "JT Block R",
+      "R Block Shaukat Khanum"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-johar-town-block-b",
+    "name": "Johar Town Block B",
+    "urduName": "جوہر ٹاؤن بلاک B",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.4749,
+      "lng": 74.2812
+    },
+    "aliases": [
+      "Block B Johar Town",
+      "JT Block B",
+      "B Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-township-sector-a1",
+    "name": "Township Sector A-1",
+    "urduName": "ٹاؤن شپ سیکٹر A-1",
+    "cityId": "lahore",
+    "type": "sector",
+    "postalCode": "54770",
+    "coordinates": {
+      "lat": 31.4512,
+      "lng": 74.3113
+    },
+    "aliases": [
+      "Township A1",
+      "Sector A-1 Township"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-township-sector-a2",
+    "name": "Township Sector A-2",
+    "urduName": "ٹاؤن شپ سیکٹر A-2",
+    "cityId": "lahore",
+    "type": "sector",
+    "postalCode": "54770",
+    "coordinates": {
+      "lat": 31.4483,
+      "lng": 74.3154
+    },
+    "aliases": [
+      "Township A2",
+      "Sector A-2 Township"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-township-sector-b1",
+    "name": "Township Sector B-1",
+    "urduName": "ٹاؤن شپ سیکٹر B-1",
+    "cityId": "lahore",
+    "type": "sector",
+    "postalCode": "54770",
+    "coordinates": {
+      "lat": 31.4454,
+      "lng": 74.3195
+    },
+    "aliases": [
+      "Township B1",
+      "Sector B-1 Township"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-township-sector-b2",
+    "name": "Township Sector B-2",
+    "urduName": "ٹاؤن شپ سیکٹر B-2",
+    "cityId": "lahore",
+    "type": "sector",
+    "postalCode": "54770",
+    "coordinates": {
+      "lat": 31.4425,
+      "lng": 74.3236
+    },
+    "aliases": [
+      "Township B2",
+      "Sector B-2 Township"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-township-sector-c1",
+    "name": "Township Sector C-1",
+    "urduName": "ٹاؤن شپ سیکٹر C-1",
+    "cityId": "lahore",
+    "type": "sector",
+    "postalCode": "54770",
+    "coordinates": {
+      "lat": 31.4496,
+      "lng": 74.3267
+    },
+    "aliases": [
+      "Township C1",
+      "Sector C-1 Township"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-township-sector-c2",
+    "name": "Township Sector C-2",
+    "urduName": "ٹاؤن شپ سیکٹر C-2",
+    "cityId": "lahore",
+    "type": "sector",
+    "postalCode": "54770",
+    "coordinates": {
+      "lat": 31.4537,
+      "lng": 74.3218
+    },
+    "aliases": [
+      "Township C2",
+      "Sector C-2 Township"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-sabzazar-block-a",
+    "name": "Sabzazar Block A",
+    "urduName": "سبزہ زار بلاک A",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54500",
+    "coordinates": {
+      "lat": 31.5282,
+      "lng": 74.2514
+    },
+    "aliases": [
+      "Block A Sabzazar",
+      "Sabzazar Scheme Block A"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-sabzazar-block-b",
+    "name": "Sabzazar Block B",
+    "urduName": "سبزہ زار بلاک B",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54500",
+    "coordinates": {
+      "lat": 31.5313,
+      "lng": 74.2555
+    },
+    "aliases": [
+      "Block B Sabzazar",
+      "Sabzazar Scheme Block B"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-sabzazar-block-c",
+    "name": "Sabzazar Block C",
+    "urduName": "سبزہ زار بلاک C",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54500",
+    "coordinates": {
+      "lat": 31.5344,
+      "lng": 74.2596
+    },
+    "aliases": [
+      "Block C Sabzazar",
+      "Sabzazar Scheme Block C"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-sabzazar-block-d",
+    "name": "Sabzazar Block D",
+    "urduName": "سبزہ زار بلاک D",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54500",
+    "coordinates": {
+      "lat": 31.5375,
+      "lng": 74.2637
+    },
+    "aliases": [
+      "Block D Sabzazar",
+      "Sabzazar Scheme Block D"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-sabzazar-block-e",
+    "name": "Sabzazar Block E",
+    "urduName": "سبزہ زار بلاک E",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54500",
+    "coordinates": {
+      "lat": 31.5326,
+      "lng": 74.2678
+    },
+    "aliases": [
+      "Block E Sabzazar",
+      "Sabzazar Scheme Block E"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-sabzazar-block-g",
+    "name": "Sabzazar Block G",
+    "urduName": "سبزہ زار بلاک G",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54500",
+    "coordinates": {
+      "lat": 31.5267,
+      "lng": 74.2629
+    },
+    "aliases": [
+      "Block G Sabzazar",
+      "Sabzazar Scheme Block G"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-faisal-town-block-a",
+    "name": "Faisal Town Block A",
+    "urduName": "فیصل ٹاؤن بلاک A",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54770",
+    "coordinates": {
+      "lat": 31.4782,
+      "lng": 74.3053
+    },
+    "aliases": [
+      "Block A Faisal Town",
+      "Kotha Pind Link"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-faisal-town-block-b",
+    "name": "Faisal Town Block B",
+    "urduName": "فیصل ٹاؤن بلاک B",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54770",
+    "coordinates": {
+      "lat": 31.4753,
+      "lng": 74.3094
+    },
+    "aliases": [
+      "Block B Faisal Town",
+      "Moon Market Faisal Town"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-faisal-town-block-c",
+    "name": "Faisal Town Block C",
+    "urduName": "فیصل ٹاؤن بلاک C",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54770",
+    "coordinates": {
+      "lat": 31.4724,
+      "lng": 74.3135
+    },
+    "aliases": [
+      "Block C Faisal Town",
+      "Akbar Chowk Link"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-garden-town-civic-centre",
+    "name": "Garden Town (Civic Centre)",
+    "urduName": "گارڈن ٹاؤن سوک سینٹر",
+    "cityId": "lahore",
+    "type": "commercial",
+    "postalCode": "54660",
+    "coordinates": {
+      "lat": 31.5025,
+      "lng": 74.3276
+    },
+    "aliases": [
+      "Garden Town Commercial",
+      "Civic Centre Barkat Market"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-garden-town-tariq-block",
+    "name": "Garden Town (Tariq Block)",
+    "urduName": "گارڈن ٹاؤن طارق بلاک",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54660",
+    "coordinates": {
+      "lat": 31.5066,
+      "lng": 74.3317
+    },
+    "aliases": [
+      "Tariq Block Garden Town",
+      "Tariq Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-garden-town-usman-block",
+    "name": "Garden Town (Usman Block)",
+    "urduName": "گارڈن ٹاؤن عثمان بلاک",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54660",
+    "coordinates": {
+      "lat": 31.5097,
+      "lng": 74.3358
+    },
+    "aliases": [
+      "Usman Block Garden Town",
+      "Usman Block"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-paragon-city",
+    "name": "Paragon City",
+    "urduName": "پیراگون سٹی لاہور",
+    "cityId": "lahore",
+    "type": "housing_society",
+    "postalCode": "54810",
+    "coordinates": {
+      "lat": 31.5284,
+      "lng": 74.4532
+    },
+    "aliases": [
+      "Paragon City Lahore",
+      "Imperial Mall Sector"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-state-life-phase-1",
+    "name": "State Life Housing Society Phase 1",
+    "urduName": "اسٹیٹ لائف فیز 1 لاہور",
+    "cityId": "lahore",
+    "type": "housing_society",
+    "postalCode": "54792",
+    "coordinates": {
+      "lat": 31.4725,
+      "lng": 74.4083
+    },
+    "aliases": [
+      "State Life Phase 1",
+      "SLCHS Phase 1"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-state-life-phase-2",
+    "name": "State Life Housing Society Phase 2",
+    "urduName": "اسٹیٹ لائف فیز 2 لاہور",
+    "cityId": "lahore",
+    "type": "housing_society",
+    "postalCode": "54792",
+    "coordinates": {
+      "lat": 31.4686,
+      "lng": 74.4124
+    },
+    "aliases": [
+      "State Life Phase 2",
+      "SLCHS Phase 2"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-sui-gas-phase-1",
+    "name": "Sui Gas Housing Society Phase 1",
+    "urduName": "سوئی گیس سوسائٹی فیز 1",
+    "cityId": "lahore",
+    "type": "housing_society",
+    "postalCode": "54792",
+    "coordinates": {
+      "lat": 31.4647,
+      "lng": 74.4165
+    },
+    "aliases": [
+      "Sui Gas Phase 1",
+      "SGCGHS Phase 1"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-sui-gas-phase-2",
+    "name": "Sui Gas Housing Society Phase 2",
+    "urduName": "سوئی گیس سوسائٹی فیز 2",
+    "cityId": "lahore",
+    "type": "housing_society",
+    "postalCode": "54792",
+    "coordinates": {
+      "lat": 31.4608,
+      "lng": 74.4206
+    },
+    "aliases": [
+      "Sui Gas Phase 2",
+      "SGCGHS Phase 2"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-pcsir-phase-1",
+    "name": "PCSIR Housing Society Phase 1",
+    "urduName": "پی سی ایس آئی آر فیز 1",
+    "cityId": "lahore",
+    "type": "housing_society",
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.4829,
+      "lng": 74.2757
+    },
+    "aliases": [
+      "PCSIR Phase 1",
+      "PCSIR Staff Society"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-pcsir-phase-2",
+    "name": "PCSIR Housing Society Phase 2",
+    "urduName": "پی سی ایس آئی آر فیز 2",
+    "cityId": "lahore",
+    "type": "housing_society",
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.4481,
+      "lng": 74.2588
+    },
+    "aliases": [
+      "PCSIR Phase 2",
+      "PCSIR Society College Road"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-audit-accounts-society",
+    "name": "Audit & Accounts Society",
+    "urduName": "آڈٹ اینڈ اکاؤنٹس سوسائٹی",
+    "cityId": "lahore",
+    "type": "housing_society",
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.4552,
+      "lng": 74.2529
+    },
+    "aliases": [
+      "Audit Accounts Society",
+      "Audit and Accounts Lahore"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-airline-society",
+    "name": "Airline Housing Society",
+    "urduName": "ایئر لائن ہاؤسنگ سوسائٹی",
+    "cityId": "lahore",
+    "type": "housing_society",
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.4423,
+      "lng": 74.2671
+    },
+    "aliases": [
+      "Airline Society Lahore",
+      "PIA Housing Link"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-izmir-town",
+    "name": "Izmir Town",
+    "urduName": "ازمیر ٹاؤن لاہور",
+    "cityId": "lahore",
+    "type": "housing_society",
+    "postalCode": "54770",
+    "coordinates": {
+      "lat": 31.4184,
+      "lng": 74.2252
+    },
+    "aliases": [
+      "Izmir Town Lahore",
+      "Canal Bank Izmir"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-jubilee-town",
+    "name": "Jubilee Town",
+    "urduName": "جوبلی ٹاؤن لاہور",
+    "cityId": "lahore",
+    "type": "housing_society",
+    "postalCode": "54770",
+    "coordinates": {
+      "lat": 31.4245,
+      "lng": 74.2383
+    },
+    "aliases": [
+      "Jubilee Town Lahore",
+      "Canal Bank Jubilee"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-liberty-market",
+    "name": "Liberty Market (Gulberg III)",
+    "urduName": "لبرٹی مارکیٹ گلبرگ",
+    "cityId": "lahore",
+    "type": "commercial",
+    "postalCode": "54660",
+    "coordinates": {
+      "lat": 31.5127,
+      "lng": 74.3455
+    },
+    "aliases": [
+      "Liberty Market Lahore",
+      "Liberty Roundabout",
+      "Noor Jahan Road"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-mm-alam-road",
+    "name": "M.M. Alam Road",
+    "urduName": "ایم ایم عالم روڈ گلبرگ",
+    "cityId": "lahore",
+    "type": "commercial",
+    "postalCode": "54660",
+    "coordinates": {
+      "lat": 31.5188,
+      "lng": 74.3516
+    },
+    "aliases": [
+      "MM Alam Road Lahore",
+      "Restaurant Strip Gulberg"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-hafeez-centre",
+    "name": "Hafeez Centre (Main Boulevard)",
+    "urduName": "حفیظ سینٹر مین بلیوارڈ",
+    "cityId": "lahore",
+    "type": "commercial",
+    "postalCode": "54660",
+    "coordinates": {
+      "lat": 31.5229,
+      "lng": 74.3427
+    },
+    "aliases": [
+      "Hafeez Centre Lahore",
+      "Pace Gulberg Area"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-tajpura",
+    "name": "Tajpura Scheme",
+    "urduName": "تاجپورہ اسکیم لاہور",
+    "cityId": "lahore",
+    "type": "housing_society",
+    "postalCode": "54840",
+    "coordinates": {
+      "lat": 31.5585,
+      "lng": 74.4023
+    },
+    "aliases": [
+      "Tajpura Lahore",
+      "Ghausia Colony Tajpura"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-shalimar",
+    "name": "Shalimar Bagh Area",
+    "urduName": "شالیمار باغ ایریا",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54840",
+    "coordinates": {
+      "lat": 31.5846,
+      "lng": 74.3824
+    },
+    "aliases": [
+      "Shalamar Garden Lahore",
+      "GT Road Shalimar"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-shadbagh",
+    "name": "Shadbagh",
+    "urduName": "شادباغ لاہور",
+    "cityId": "lahore",
+    "type": "neighborhood",
+    "postalCode": "54000",
+    "coordinates": {
+      "lat": 31.5952,
+      "lng": 74.3481
+    },
+    "aliases": [
+      "Shadbagh Lahore",
+      "Taj Company Shadbagh"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-badami-bagh",
+    "name": "Badami Bagh",
+    "urduName": "بادامی باغ لاہور",
+    "cityId": "lahore",
+    "type": "commercial",
+    "postalCode": "54000",
+    "coordinates": {
+      "lat": 31.5913,
+      "lng": 74.3262
+    },
+    "aliases": [
+      "Badami Bagh Lahore",
+      "General Bus Stand Badami Bagh"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-thokar-niaz-baig",
+    "name": "Thokar Niaz Baig",
+    "urduName": "ٹھوکر نیاز بیگ لاہور",
+    "cityId": "lahore",
+    "type": "suburb",
+    "postalCode": "54590",
+    "coordinates": {
+      "lat": 31.4684,
+      "lng": 74.2415
+    },
+    "aliases": [
+      "Thokar Niaz Baig",
+      "Multan Road Thokar",
+      "Motorway M-2 Entry"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-barki-road",
+    "name": "Barki Road Sector",
+    "urduName": "برکی روڈ سیکٹر لاہور",
+    "cityId": "lahore",
+    "type": "suburb",
+    "postalCode": "54810",
+    "coordinates": {
+      "lat": 31.5055,
+      "lng": 74.4726
+    },
+    "aliases": [
+      "Barki Road",
+      "Paragon Barki Strip"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-bedian-road",
+    "name": "Bedian Road Sector",
+    "urduName": "بیدیاں روڈ سیکٹر لاہور",
+    "cityId": "lahore",
+    "type": "suburb",
+    "postalCode": "54792",
+    "coordinates": {
+      "lat": 31.4726,
+      "lng": 74.4637
+    },
+    "aliases": [
+      "Bedian Road",
+      "DHA Bedian Link"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
   }
 ]

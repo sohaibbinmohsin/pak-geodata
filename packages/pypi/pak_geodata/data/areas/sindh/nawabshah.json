@@ -1,0 +1,215 @@
+[
+  {
+    "id": "nawabshah-society-area",
+    "cityId": "nawabshah",
+    "provinceId": "sindh",
+    "name": "Society Area",
+    "urduName": "سوسائٹی ایریا نوابشاہ",
+    "aliases": [
+      "Cooperative Society Nawabshah"
+    ],
+    "postalCode": "67450",
+    "coordinates": {
+      "lat": 26.248,
+      "lng": 68.412
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nawabshah-civil-lines",
+    "cityId": "nawabshah",
+    "provinceId": "sindh",
+    "name": "Civil Lines",
+    "urduName": "سیول لائنز نوابشاہ",
+    "aliases": [
+      "Civil Lines Nawabshah",
+      "DC Office Nawabshah"
+    ],
+    "postalCode": "67450",
+    "coordinates": {
+      "lat": 26.242,
+      "lng": 68.405
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nawabshah-sakrand-road",
+    "cityId": "nawabshah",
+    "provinceId": "sindh",
+    "name": "Sakrand Road Commercial",
+    "urduName": "سکرنڈ روڈ نوابشاہ",
+    "aliases": [
+      "Sakrand Road Nawabshah"
+    ],
+    "postalCode": "67450",
+    "coordinates": {
+      "lat": 26.235,
+      "lng": 68.398
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nawabshah-kazi-ahmed-road",
+    "cityId": "nawabshah",
+    "provinceId": "sindh",
+    "name": "Kazi Ahmed Road",
+    "urduName": "قاضی احمد روڈ نوابشاہ",
+    "aliases": [
+      "Kazi Ahmed Road Strip"
+    ],
+    "postalCode": "67450",
+    "coordinates": {
+      "lat": 26.258,
+      "lng": 68.425
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nawabshah-line-par",
+    "cityId": "nawabshah",
+    "provinceId": "sindh",
+    "name": "Line Par Mohalla",
+    "urduName": "لائن پار نوابشاہ",
+    "aliases": [
+      "Line Par Area Nawabshah"
+    ],
+    "postalCode": "67450",
+    "coordinates": {
+      "lat": 26.238,
+      "lng": 68.422
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nawabshah-market-road",
+    "cityId": "nawabshah",
+    "provinceId": "sindh",
+    "name": "Market Road (Chakra Bazaar)",
+    "urduName": "مارکیٹ روڈ نوابشاہ",
+    "aliases": [
+      "Chakra Bazaar Nawabshah",
+      "Main Market Nawabshah"
+    ],
+    "postalCode": "67450",
+    "coordinates": {
+      "lat": 26.245,
+      "lng": 68.418
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nawabshah-quest-campus",
+    "cityId": "nawabshah",
+    "provinceId": "sindh",
+    "name": "QUEST University Area",
+    "urduName": "قائد عوام یونیورسٹی ایریا",
+    "aliases": [
+      "QUEST Nawabshah",
+      "Engineering University Nawabshah"
+    ],
+    "postalCode": "67450",
+    "coordinates": {
+      "lat": 26.265,
+      "lng": 68.438
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nawabshah-sanghar-road",
+    "cityId": "nawabshah",
+    "provinceId": "sindh",
+    "name": "Sanghar Road",
+    "urduName": "سانگھڑ روڈ نوابشاہ",
+    "aliases": [
+      "Sanghar Road Corridor"
+    ],
+    "postalCode": "67450",
+    "coordinates": {
+      "lat": 26.252,
+      "lng": 68.445
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nawabshah-airport-road",
+    "cityId": "nawabshah",
+    "provinceId": "sindh",
+    "name": "Airport Road",
+    "urduName": "ایئرپورٹ روڈ نوابشاہ",
+    "aliases": [
+      "Nawabshah Airport Road"
+    ],
+    "postalCode": "67450",
+    "coordinates": {
+      "lat": 26.228,
+      "lng": 68.385
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nawabshah-habib-colony",
+    "cityId": "nawabshah",
+    "provinceId": "sindh",
+    "name": "Habib Colony",
+    "urduName": "حبیب کالونی نوابشاہ",
+    "aliases": [
+      "Habib Colony Nawabshah"
+    ],
+    "postalCode": "67450",
+    "coordinates": {
+      "lat": 26.255,
+      "lng": 68.408
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+]

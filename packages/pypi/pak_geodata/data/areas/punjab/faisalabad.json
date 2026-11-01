@@ -527,5 +527,358 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "faisalabad-raza-garden",
+    "name": "Raza Garden",
+    "urduName": "رضا گارڈن فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "housing_society",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4082,
+      "lng": 73.1463
+    },
+    "aliases": [
+      "Raza Garden",
+      "Canal Expressway Raza Garden"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-tech-town",
+    "name": "Tech Town",
+    "urduName": "ٹیک ٹاؤن فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "housing_society",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.3983,
+      "lng": 73.1154
+    },
+    "aliases": [
+      "Tech Town",
+      "Satiana Road Tech Town"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-al-najaf-colony",
+    "name": "Al-Najaf Colony",
+    "urduName": "النجف کالونی فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "neighborhood",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4124,
+      "lng": 73.0685
+    },
+    "aliases": [
+      "Al Najaf Colony",
+      "Jhang Road Najaf"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-mujahid-colony",
+    "name": "Mujahid Colony",
+    "urduName": "مجاہد کالونی فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "neighborhood",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4256,
+      "lng": 73.0567
+    },
+    "aliases": [
+      "Mujahid Colony",
+      "Narwala Road Colony"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-officer-colony-1",
+    "name": "Officer Colony 1",
+    "urduName": "آفیسرز کالونی 1 فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "neighborhood",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4368,
+      "lng": 73.1149
+    },
+    "aliases": [
+      "Officers Colony 1",
+      "Officer Colony No 1"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-officer-colony-2",
+    "name": "Officer Colony 2",
+    "urduName": "آفیسرز کالونی 2 فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "neighborhood",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4429,
+      "lng": 73.1251
+    },
+    "aliases": [
+      "Officers Colony 2",
+      "Officer Colony No 2"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-citi-housing",
+    "name": "Citi Housing Faisalabad",
+    "urduName": "سٹی ہاؤسنگ فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "housing_society",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.5052,
+      "lng": 73.1283
+    },
+    "aliases": [
+      "Citi Housing Society",
+      "Sargodha Road Citi Housing"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-faisal-town",
+    "name": "Faisal Town Faisalabad",
+    "urduName": "فیصل ٹاؤن فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "housing_society",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4784,
+      "lng": 73.1065
+    },
+    "aliases": [
+      "Faisal Town",
+      "Millat Road Faisal Town"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-small-industrial-estate",
+    "name": "Small Industrial Estate",
+    "urduName": "سمال انڈسٹریل اسٹیٹ فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "industrial",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4645,
+      "lng": 73.0526
+    },
+    "aliases": [
+      "SIE Faisalabad",
+      "Small Industries Estate"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-fiedmc-m3",
+    "name": "FIEDMC (M-3 Industrial City)",
+    "urduName": "فائیڈمک ایم 3 انڈسٹریل سٹی",
+    "cityId": "faisalabad",
+    "type": "industrial",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.5546,
+      "lng": 73.1587
+    },
+    "aliases": [
+      "M3 Industrial City",
+      "FIEDMC SEZ",
+      "Sahianwala Industrial"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-jhang-road",
+    "name": "Jhang Road Residential Belt",
+    "urduName": "جھنگ روڈ بیلٹ فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "suburb",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4027,
+      "lng": 73.0418
+    },
+    "aliases": [
+      "Jhang Road Sector",
+      "Ayub Research Belt"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-abdullahpur",
+    "name": "Abdullahpur",
+    "urduName": "عبداللہ پور فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "commercial",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4288,
+      "lng": 73.1039
+    },
+    "aliases": [
+      "Abdullahpur Chowk",
+      "Abdullahpur Flyover Area"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-tariqabad",
+    "name": "Tariqabad",
+    "urduName": "طارق آباد فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "neighborhood",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4349,
+      "lng": 73.1081
+    },
+    "aliases": [
+      "Tariqabad Faisalabad",
+      "Canal Road Tariqabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-d-ground-commercial",
+    "name": "D Ground Commercial Belt",
+    "urduName": "ڈی گراؤنڈ کمرشل فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "commercial",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4115,
+      "lng": 73.1092
+    },
+    "aliases": [
+      "D Ground Market",
+      "Peoples Colony Commercial"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-eden-valley",
+    "name": "Eden Valley",
+    "urduName": "ایڈن ویلی فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "housing_society",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4391,
+      "lng": 73.1553
+    },
+    "aliases": [
+      "Eden Valley Faisalabad",
+      "Canal Road Eden Valley"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-sitara-sapience",
+    "name": "Sitara Sapience & Park View",
+    "urduName": "ستارہ سیپینز فیصل آباد",
+    "cityId": "faisalabad",
+    "type": "housing_society",
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4452,
+      "lng": 73.1624
+    },
+    "aliases": [
+      "Sitara Housing",
+      "Sitara Gold City"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
   }
 ]
