@@ -23,6 +23,16 @@ Designed with **zero runtime dependencies** (pure Python standard library), stri
 
 ---
 
+## Dataset Statistics
+
+| Administrative Level | Count | Coverage | Key Details |
+| :--- | :--- | :--- | :--- |
+| **Provinces & Territories** | **7** | 100% of Pakistan | Punjab, Sindh, KPK, Balochistan, Islamabad (ICT), Azad Jammu & Kashmir (AJK), Gilgit-Baltistan |
+| **Verified Cities** | **79** | Major & Secondary Urban Centers | District centroids, bounding boxes, administrative divisions, 5-digit postal code ranges |
+| **Flagship Metros & Regional Urban Areas** | **812** | 42 Cities Across All 7 Provinces & Territories | Foundational & verified areas across 42 metropolitan centers and regional economic hubs |
+
+---
+
 ## Installation
 
 ```bash
@@ -139,6 +149,8 @@ print(area.name)  # "DHA Phase 1"
 all_dha = find_areas_by_postal_code("54792")
 print(f"{len(all_dha)} areas share postal code 54792")
 ```
+
+> 📖 **Implementation Recipes**: For real-world architectural recipes, localized reporting workflows, and offline database synchronization patterns, see the [Recipes Directory](https://github.com/sohaibbinmohsin/pak-geodata/tree/main/docs/recipes).
 
 ---
 
