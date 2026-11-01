@@ -284,6 +284,9 @@ export default function Omnibar({
     onSuggestionClick?.(suggestionQuery);
   };
 
+  void showSuggestions;
+  void handleSuggestionClick;
+
   const placeholderText = selectedCity
     ? `Search in ${selectedCity.name} (e.g. F-6, Blue Area, 44000)...`
     : 'Search 189 areas across Pakistan (e.g. DHA, ماڈل ٹاؤن, 54000)...';
@@ -295,7 +298,7 @@ export default function Omnibar({
     >
       {/* Centered Floating Glass Capsule */}
       <div
-        className={`glass-chrome relative flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-2xl transition-all duration-200 ${
+        className={`glass-chrome relative flex items-center gap-2 px-2.5 sm:px-3 h-9 rounded-xl transition-all duration-200 ${
           isOpen && results.length > 0
             ? 'ring-2 ring-emerald-500/40 border-emerald-500/50 shadow-2xl'
             : 'hover:border-white/20 focus-within:ring-2 focus-within:ring-emerald-500/40 focus-within:border-emerald-500/50'
@@ -463,26 +466,6 @@ export default function Omnibar({
         )}
       </div>
 
-      {/* Quick Search Suggestion Chips in High-Contrast Frosted Glass Capsule */}
-      {showSuggestions && (
-        <div className="flex items-center justify-center pt-2 select-none">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-chrome bg-[#0b0f17]/95 backdrop-blur-md border border-white/15 shadow-xl flex-wrap justify-center">
-            <span className="text-[11px] font-mono font-semibold text-emerald-400">Try:</span>
-            {SUGGESTION_CHIPS.map((chip) => (
-              <button
-                key={chip.query}
-                type="button"
-                onClick={() => handleSuggestionClick(chip.query)}
-                className="pressable inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-white/10 hover:bg-emerald-500/20 border border-white/15 hover:border-emerald-500/40 text-neutral-100 hover:text-emerald-200 transition-all text-xs font-mono font-medium cursor-pointer shadow-sm"
-                title={`Search for "${chip.query}" (${chip.hint})`}
-              >
-                <span>{chip.label}</span>
-                <span className="text-[10px] text-neutral-400 font-sans">({chip.hint})</span>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
 
 
       {/* Live Dropdown Results */}

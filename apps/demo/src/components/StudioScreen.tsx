@@ -16,6 +16,7 @@ import {
 import MapCanvas from './MapCanvas';
 import Omnibar from './Omnibar';
 import CodeGenerator from './CodeGenerator';
+import { PACKAGE_VERSION } from '../version';
 import {
   type ReverseGeoPoint,
   formatCoordinates,
@@ -246,63 +247,66 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
       </div>
 
 
-      {/* Top Floating Glass HUD Bar */}
-      <header className="absolute top-3 left-3 right-3 z-30 flex items-center justify-between gap-2 sm:gap-3 pointer-events-none">
+      {/* Top Floating Glass HUD Bar - All Controls in First Row */}
+      <header className="absolute top-3 left-3 right-3 z-30 flex items-center justify-between gap-1.5 sm:gap-3 pointer-events-none">
         {/* Left: Back to Overview Button + GeoData Studio Heading side-by-side */}
-        <div className="flex items-center gap-2 pointer-events-auto shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-2 pointer-events-auto shrink-0">
           <button
             type="button"
             onClick={onClose}
-            className="pressable h-9 inline-flex items-center gap-2 px-3 sm:px-3.5 rounded-xl glass-chrome border border-white/10 hover:border-white/20 text-xs font-mono font-medium text-neutral-200 hover:text-white transition-all cursor-pointer shadow-xl"
+            className="pressable h-9 inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3.5 rounded-xl glass-chrome border border-white/10 hover:border-white/20 text-xs font-mono font-medium text-neutral-200 hover:text-white transition-all cursor-pointer shadow-xl"
             title="Back to Overview (Esc)"
             aria-label="Back to Overview"
           >
-            <ArrowLeft className="w-4 h-4 text-emerald-400" />
-            <span className="hidden sm:inline">Back to Overview</span>
-            <span className="sm:hidden">Back</span>
+            <ArrowLeft className="w-4 h-4 text-emerald-400 shrink-0" />
+            <span className="hidden md:inline">Back to Overview</span>
+            <span className="hidden sm:inline md:hidden">Back</span>
           </button>
 
-          <div className="h-9 inline-flex items-center gap-2 px-2.5 sm:px-3 rounded-xl glass-chrome border border-white/10 shadow-xl">
+          <div className="h-9 inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 rounded-xl glass-chrome border border-white/10 shadow-xl">
             <span className="text-base select-none" role="img" aria-label="Pakistan flag">🇵🇰</span>
-            <span className="text-xs sm:text-sm font-bold tracking-tight text-white font-mono whitespace-nowrap">
+            <span className="text-xs sm:text-sm font-bold tracking-tight text-white font-mono whitespace-nowrap hidden sm:inline">
               GeoData Studio
             </span>
-            <div className="hidden lg:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-mono font-medium">
+            <span className="text-xs font-bold tracking-tight text-white font-mono whitespace-nowrap sm:hidden">
+              GeoData
+            </span>
+            <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-mono font-medium">
               <span className="relative flex h-1.5 w-1.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500" />
               </span>
-              <span>v0.2.0</span>
+              <span>{PACKAGE_VERSION}</span>
             </div>
           </div>
         </div>
 
         {/* Center: Search Omnibar with Integrated Option A City Filter */}
-        <div className="flex-1 max-w-xl mx-auto pointer-events-auto hidden md:block">
+        <div className="flex-1 min-w-[120px] max-w-xl mx-1 sm:mx-2 pointer-events-auto">
           <Omnibar
             selectedCity={selectedCity}
             selectedArea={selectedArea}
             onSelectArea={handleSelectArea}
             onSelectCity={handleSelectCity}
             onSuggestionClick={handleSuggestionClick}
-            showSuggestions={!selectedArea}
+            showSuggestions={false}
             lang={lang}
           />
         </div>
 
         {/* Right: Bilingual Segmented Toggle & Matched-Height GitHub Button */}
-        <div className="flex items-center gap-2 pointer-events-auto shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-2 pointer-events-auto shrink-0">
           <div
             role="radiogroup"
             aria-label="Language selector"
-            className="h-9 inline-flex items-center p-1 rounded-xl glass-chrome border border-white/10 shadow-xl"
+            className="h-9 inline-flex items-center p-0.5 sm:p-1 rounded-xl glass-chrome border border-white/10 shadow-xl"
           >
             <button
               type="button"
               role="radio"
               aria-checked={lang === 'en'}
               onClick={() => setLang('en')}
-              className={`pressable h-full px-2.5 sm:px-3 rounded-lg text-xs font-medium transition-all duration-150 cursor-pointer flex items-center ${
+              className={`pressable h-full px-2 sm:px-3 rounded-lg text-xs font-medium transition-all duration-150 cursor-pointer flex items-center ${
                 lang === 'en'
                   ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-sm font-semibold'
                   : 'text-neutral-400 hover:text-white border border-transparent'
@@ -315,7 +319,7 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
               role="radio"
               aria-checked={lang === 'ur'}
               onClick={() => setLang('ur')}
-              className={`pressable h-full px-2.5 sm:px-3 rounded-lg text-xs font-nastaliq transition-all duration-150 cursor-pointer flex items-center leading-tight ${
+              className={`pressable h-full px-2 sm:px-3 rounded-lg text-xs font-nastaliq transition-all duration-150 cursor-pointer flex items-center leading-tight ${
                 lang === 'ur'
                   ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-sm font-bold'
                   : 'text-neutral-400 hover:text-white border border-transparent'
@@ -329,28 +333,15 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
             href="https://github.com/sohaibbinmohsin/pak-geodata"
             target="_blank"
             rel="noopener noreferrer"
-            className="pressable h-9 inline-flex items-center gap-1.5 px-3 rounded-xl glass-chrome border border-white/10 hover:border-white/20 text-xs font-medium text-neutral-200 hover:text-white transition-all shadow-xl"
+            className="pressable h-9 inline-flex items-center gap-1.5 px-2.5 sm:px-3 rounded-xl glass-chrome border border-white/10 hover:border-white/20 text-xs font-medium text-neutral-200 hover:text-white transition-all shadow-xl"
             title="Star pak-geodata on GitHub"
           >
             <Github className="w-4 h-4 text-neutral-300" />
-            <span className="hidden sm:inline">GitHub</span>
+            <span className="hidden lg:inline">GitHub</span>
             <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
           </a>
         </div>
       </header>
-
-      {/* Mobile Search Omnibar with Integrated City Filter */}
-      <div className="md:hidden absolute top-14 left-3 right-3 z-30 pointer-events-auto">
-        <Omnibar
-          selectedCity={selectedCity}
-          selectedArea={selectedArea}
-          onSelectArea={handleSelectArea}
-          onSelectCity={handleSelectCity}
-          onSuggestionClick={handleSuggestionClick}
-          showSuggestions={!selectedArea}
-          lang={lang}
-        />
-      </div>
 
 
       {/* Floating Slide-in Area Inspector Drawer on the right */}

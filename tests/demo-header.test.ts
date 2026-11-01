@@ -8,7 +8,7 @@ test('Header component contains strictly GeoData title, version, and GitHub', ()
   const content = readFileSync(headerPath, 'utf8');
 
   assert.ok(content.includes('GeoData'), 'Header must display GeoData title');
-  assert.ok(content.includes('v0.2.0'), 'Header must display version tag');
+  assert.ok(content.includes('PACKAGE_VERSION'), 'Header must display dynamic package version');
   assert.ok(content.includes('https://github.com/sohaibbinmohsin/pak-geodata'), 'Header must link to GitHub');
   assert.ok(!content.includes('npm i pak-geodata'), 'Header must not contain install snippets');
   assert.ok(!content.includes('#studio'), 'Header must not contain navigation anchor links');

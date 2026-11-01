@@ -47,4 +47,24 @@ test('StudioScreen defaults selectedCity to Karachi, positions heading next to b
   assert.ok(!content.includes('\u2013'), 'No en-dashes in StudioScreen');
 });
 
+test('StudioScreen uses dynamic PACKAGE_VERSION and unifies all controls in first row', () => {
+  const screenPath = resolve(process.cwd(), 'apps/demo/src/components/StudioScreen.tsx');
+  const content = readFileSync(screenPath, 'utf8');
 
+  assert.ok(
+    content.includes('PACKAGE_VERSION'),
+    'StudioScreen imports and uses dynamic PACKAGE_VERSION'
+  );
+  assert.ok(
+    !content.includes('<span>v0.2.0</span>'),
+    'StudioScreen does not contain hardcoded v0.2.0 in title badge'
+  );
+  assert.ok(
+    !content.includes('top-14'),
+    'StudioScreen does not contain a secondary top-14 container'
+  );
+  assert.ok(
+    content.includes('showSuggestions={false}'),
+    'StudioScreen disables suggestion chips row in Omnibar'
+  );
+});

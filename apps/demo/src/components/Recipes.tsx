@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { PACKAGE_VERSION } from '../version';
 import {
   Code2,
   Copy,
@@ -642,7 +643,7 @@ export default function Recipes({ className = '' }: RecipesProps) {
 
           {/* Window Footer Tag */}
           <div className="flex items-center justify-between px-4 py-2 bg-black/40 border-t border-white/10 text-[11px] font-mono text-neutral-500">
-            <span>TypeScript • pak-geodata v0.2.0</span>
+            <span>TypeScript • pak-geodata {PACKAGE_VERSION}</span>
             <span className="text-emerald-400">Production Ready</span>
           </div>
         </div>

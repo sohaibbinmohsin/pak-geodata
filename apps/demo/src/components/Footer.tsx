@@ -1,5 +1,6 @@
 import { Github, Package, Terminal } from 'lucide-react';
 import mohsinLogo from '../assets/mohsin-project-logo.svg';
+import { PACKAGE_VERSION } from '../version';
 
 export interface FooterProps {
   className?: string;
@@ -16,7 +17,7 @@ export default function Footer({ className = '' }: FooterProps) {
               <span className="text-lg select-none" role="img" aria-label="Pakistan flag">🇵🇰</span>
               <span className="font-mono font-bold text-white tracking-tight">GeoData</span>
               <span className="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
-                v0.2.0
+                {PACKAGE_VERSION}
               </span>
             </div>
             <p className="text-xs text-neutral-400">
