@@ -102,12 +102,12 @@ describe('Packaging, Subpath Exports & Distribution Bundles', () => {
       assert.equal(typeof mod.searchAreas, 'function');
       assert.equal(typeof mod.getNearestArea, 'function');
 
-      // Sanctuary overload test
-      const sanctuaryResults = mod.searchAreas('Lahore', 'DHA', 'ur');
-      assert.ok(Array.isArray(sanctuaryResults));
-      assert.ok(sanctuaryResults.length > 0);
-      assert.equal(sanctuaryResults[0].type, 'area');
-      assert.equal(sanctuaryResults[0].parentId, 'lahore');
+      // City-scoped overload test
+      const cityScopedResults = mod.searchAreas('Lahore', 'DHA', 'ur');
+      assert.ok(Array.isArray(cityScopedResults));
+      assert.ok(cityScopedResults.length > 0);
+      assert.equal(cityScopedResults[0].type, 'area');
+      assert.equal(cityScopedResults[0].parentId, 'lahore');
 
       // Classic overload test
       const classicResults = mod.searchAreas('DHA Phase 5', { cityId: 'lahore' });
