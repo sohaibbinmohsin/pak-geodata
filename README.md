@@ -289,7 +289,7 @@ print(f"Distance between Lahore and Karachi: {round(dist)} km")
 
 ## Sanctuary Integration Guide
 
-This guide details the specifications, design patterns, and copy-pasteable TypeScript components designed for **Sanctuary**—an offline-capable emergency rescue reporting and tracking Progressive Web App (PWA) operating across Pakistan.
+This guide details the specifications, design patterns, and copy-pasteable TypeScript components designed for **Sanctuary**: an offline-capable emergency rescue reporting and tracking Progressive Web App (PWA) operating across Pakistan.
 
 ### 1. Bilingual Administrative Hierarchy (`PakLocationItem`)
 

@@ -212,7 +212,7 @@ console.log(results[0]);
 
 ## Sanctuary Integration Guide
 
-This guide documents the design patterns, data contracts, and implementation specifications built into `pak-geodata` for **Sanctuary**—an offline-first emergency rescue reporting and tracking Progressive Web App (PWA) operating across Pakistan.
+This guide documents the design patterns, data contracts, and implementation specifications built into `pak-geodata` for **Sanctuary**: an offline-first emergency rescue reporting and tracking Progressive Web App (PWA) operating across Pakistan.
 
 ### 1. Bilingual Administrative Hierarchy (`PakLocationItem`)
 
