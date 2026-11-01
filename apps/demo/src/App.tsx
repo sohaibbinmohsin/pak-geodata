@@ -39,7 +39,7 @@ export default function App() {
   const closeStudio = () => {
     setView('landing');
     if (typeof window !== 'undefined' && window.location.hash === '#studio') {
-      window.history.pushState(null, '', window.location.pathname + window.location.search);
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
     }
   };
 

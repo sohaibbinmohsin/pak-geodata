@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useEffect } from 'react';
+import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import {
   type PakLocationItem,
   type PakistanArea,
@@ -58,6 +58,15 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
   // Copy feedback states
   const [slugCopied, setSlugCopied] = useState(false);
   const [coordsCopied, setCoordsCopied] = useState(false);
+  const slugTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const coordsTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (slugTimeoutRef.current) clearTimeout(slugTimeoutRef.current);
+      if (coordsTimeoutRef.current) clearTimeout(coordsTimeoutRef.current);
+    };
+  }, []);
 
   // Scoped areas list based on active city filter
   const filteredAreas = useMemo(() => {
@@ -187,7 +196,8 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
     const ok = await copyToClipboard(selectedArea.id);
     if (ok) {
       setSlugCopied(true);
-      setTimeout(() => setSlugCopied(false), 2000);
+      if (slugTimeoutRef.current) clearTimeout(slugTimeoutRef.current);
+      slugTimeoutRef.current = setTimeout(() => setSlugCopied(false), 2000);
     }
   };
 
@@ -197,7 +207,8 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
     const ok = await copyToClipboard(coordsStr);
     if (ok) {
       setCoordsCopied(true);
-      setTimeout(() => setCoordsCopied(false), 2000);
+      if (coordsTimeoutRef.current) clearTimeout(coordsTimeoutRef.current);
+      coordsTimeoutRef.current = setTimeout(() => setCoordsCopied(false), 2000);
     }
   };
 
@@ -324,7 +335,7 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
             onSelectArea={handleSelectArea}
             onSelectCity={handleSelectCity}
             onSuggestionClick={handleSuggestionClick}
-            showSuggestions={true}
+            showSuggestions={!selectedArea}
           />
         </div>
       </div>
