@@ -28,8 +28,33 @@ export function formatGpsCoordinates(lat: number, lng: number): string {
 export function generateCodeSnippet(
   area: PakistanArea,
   language: CodeLanguage,
-  lang: 'en' | 'ur' = 'en'
+  lang: 'en' | 'ur' = 'en',
+  reverseGeoPoint?: { clicked: { lat: number; lng: number } } | null
 ): string {
+  if (reverseGeoPoint) {
+    const lat = reverseGeoPoint.clicked.lat.toFixed(4);
+    const lng = reverseGeoPoint.clicked.lng.toFixed(4);
+    const escapedArea = area.name.replace(/'/g, "\\'");
+
+    if (language === 'typescript') {
+      return [
+        `import { getNearestArea } from 'pak-geodata';`,
+        ``,
+        `// Instant offline reverse geocoding (< 0.4 ms):`,
+        `const result = getNearestArea({ lat: ${lat}, lng: ${lng} });`,
+        `console.log(result?.name); // "${escapedArea}"`,
+      ].join('\n');
+    }
+
+    return [
+      `from pak_geodata import get_nearest_area`,
+      ``,
+      `# Instant offline reverse geocoding (< 0.4 ms):`,
+      `result = get_nearest_area((${lat}, ${lng}))`,
+      `print(result.name)  # "${escapedArea}"`,
+    ].join('\n');
+  }
+
   const escapedName = area.name.replace(/'/g, "\\'");
   const escapedUrduName = (area.urduName || area.name).replace(/'/g, "\\'");
   const citySlug = area.cityId;
@@ -67,3 +92,4 @@ export function generateCodeSnippet(
     `area = search_areas('${escapedName}', city_id='${area.cityId}')[0]`,
   ].join('\n');
 }
+

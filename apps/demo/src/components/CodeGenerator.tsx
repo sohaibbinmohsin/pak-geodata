@@ -10,21 +10,24 @@ import {
 export interface CodeGeneratorProps {
   area: PakistanArea;
   lang?: 'en' | 'ur';
+  reverseGeoPoint?: { clicked: { lat: number; lng: number } } | null;
   className?: string;
 }
 
 export default function CodeGenerator({
   area,
   lang = 'en',
+  reverseGeoPoint = null,
   className = '',
 }: CodeGeneratorProps) {
   const [language, setLanguage] = useState<CodeLanguage>('typescript');
   const [copied, setCopied] = useState(false);
 
   const rawSnippet = useMemo(
-    () => generateCodeSnippet(area, language, lang),
-    [area, language, lang]
+    () => generateCodeSnippet(area, language, lang, reverseGeoPoint),
+    [area, language, lang, reverseGeoPoint]
   );
+
 
   const escapedName = area.name.replace(/'/g, "\\'");
   const escapedUrduName = (area.urduName || area.name).replace(/'/g, "\\'");

@@ -10,20 +10,18 @@ import {
   getAreaName,
   searchAreas,
   findAreasByPostalCode,
-  getNearestArea,
-  haversineDistanceKm,
   toEasternDigits,
   toLocationItem,
 } from 'pak-geodata';
 import MapCanvas from './MapCanvas';
 import Omnibar from './Omnibar';
-import CityPills from './CityPills';
 import CodeGenerator from './CodeGenerator';
 import {
   type ReverseGeoPoint,
   formatCoordinates,
   formatDistance,
 } from './reverseGeoUtils';
+
 import { formatGpsCoordinates } from './codeSnippets';
 import {
   ArrowLeft,
@@ -77,10 +75,24 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
   // Synchronize area selection
   const handleSelectArea = useCallback((area: PakistanArea | null) => {
     setSelectedArea(area);
-    if (area) {
+    if (!area) {
+      setReverseGeoPoint(null);
+    } else {
       setReverseGeoPoint(null);
       if (selectedCity && selectedCity.id !== area.cityId) {
         const city = getCityById(area.cityId);
+        if (city) setSelectedCity(city);
+      }
+    }
+  }, [selectedCity]);
+
+  // Handle map click reverse geocoding: sets reverseGeoPoint AND selects the nearest area, opening the right side drawer
+  const handleReverseGeoChange = useCallback((point: ReverseGeoPoint | null) => {
+    setReverseGeoPoint(point);
+    if (point) {
+      setSelectedArea(point.nearest);
+      if (selectedCity && selectedCity.id !== point.nearest.cityId) {
+        const city = getCityById(point.nearest.cityId);
         if (city) setSelectedCity(city);
       }
     }
@@ -91,29 +103,13 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
     setSelectedCity(city);
     if (city && selectedArea && selectedArea.cityId !== city.id) {
       setSelectedArea(null);
+      setReverseGeoPoint(null);
     }
     if (city && reverseGeoPoint && reverseGeoPoint.nearest.cityId !== city.id) {
       setReverseGeoPoint(null);
     }
   }, [selectedArea, reverseGeoPoint]);
 
-  // Sample Reverse Geocode benchmark point (Liberty Market / Gulberg III centroid)
-  const handleSampleReverseGeo = useCallback(() => {
-    const sampleCoords = { lat: 31.5125, lng: 74.3441 };
-    const t0 = performance.now();
-    const nearest = getNearestArea(sampleCoords);
-    const computationTimeMs = performance.now() - t0;
-
-    if (nearest) {
-      const distanceKm = haversineDistanceKm(sampleCoords, nearest.coordinates);
-      setReverseGeoPoint({
-        clicked: sampleCoords,
-        nearest,
-        distanceKm,
-        computationTimeMs,
-      });
-    }
-  }, []);
 
   // Handle suggestion chip clicks by searching and selecting the top matching area
   const handleSuggestionClick = useCallback((query: string) => {
@@ -202,8 +198,9 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
   };
 
   const handleCopyCoords = async () => {
-    if (!selectedArea) return;
-    const coordsStr = `${selectedArea.coordinates.lat.toFixed(6)}, ${selectedArea.coordinates.lng.toFixed(6)}`;
+    const coords = reverseGeoPoint?.clicked || selectedArea?.coordinates;
+    if (!coords) return;
+    const coordsStr = `${coords.lat.toFixed(6)}, ${coords.lng.toFixed(6)}`;
     const ok = await copyToClipboard(coordsStr);
     if (ok) {
       setCoordsCopied(true);
@@ -216,9 +213,8 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
-        if (selectedArea) {
+        if (selectedArea || reverseGeoPoint) {
           setSelectedArea(null);
-        } else if (reverseGeoPoint) {
           setReverseGeoPoint(null);
         } else {
           onClose();
@@ -228,6 +224,7 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedArea, reverseGeoPoint, onClose]);
+
 
   return (
     <div
@@ -244,52 +241,68 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
           selectedCity={selectedCity}
           reverseGeoPoint={reverseGeoPoint}
           onSelectArea={handleSelectArea}
-          onReverseGeoChange={setReverseGeoPoint}
+          onReverseGeoChange={handleReverseGeoChange}
         />
       </div>
 
-      {/* Top Floating Glass HUD Bar */}
-      <div className="absolute top-3 left-3 right-3 z-30 flex items-center justify-between pointer-events-auto">
-        {/* Left: Back to Overview Button */}
-        <button
-          type="button"
-          onClick={onClose}
-          className="pressable inline-flex items-center gap-2 px-3.5 py-2 rounded-xl glass-chrome border border-white/10 hover:border-white/20 text-xs font-mono font-medium text-neutral-200 hover:text-white transition-all cursor-pointer shadow-xl"
-          title="Back to Overview (Esc)"
-          aria-label="Back to Overview"
-        >
-          <ArrowLeft className="w-4 h-4 text-emerald-400" />
-          <span>Back to Overview</span>
-        </button>
 
-        {/* Center: GeoData Studio Beacon Badge */}
-        <div className="flex items-center gap-2.5 px-3.5 py-1.5 rounded-xl glass-chrome border border-white/10 shadow-xl">
-          <span className="text-base select-none" role="img" aria-label="Pakistan flag">🇵🇰</span>
-          <span className="text-xs sm:text-sm font-bold tracking-tight text-white font-mono">
-            GeoData Studio
-          </span>
-          <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-mono font-medium">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500" />
+      {/* Top Floating Glass HUD Bar */}
+      <header className="absolute top-3 left-3 right-3 z-30 flex items-center justify-between gap-2 sm:gap-3 pointer-events-none">
+        {/* Left: Back to Overview Button + GeoData Studio Heading side-by-side */}
+        <div className="flex items-center gap-2 pointer-events-auto shrink-0">
+          <button
+            type="button"
+            onClick={onClose}
+            className="pressable h-9 inline-flex items-center gap-2 px-3 sm:px-3.5 rounded-xl glass-chrome border border-white/10 hover:border-white/20 text-xs font-mono font-medium text-neutral-200 hover:text-white transition-all cursor-pointer shadow-xl"
+            title="Back to Overview (Esc)"
+            aria-label="Back to Overview"
+          >
+            <ArrowLeft className="w-4 h-4 text-emerald-400" />
+            <span className="hidden sm:inline">Back to Overview</span>
+            <span className="sm:hidden">Back</span>
+          </button>
+
+          <div className="h-9 inline-flex items-center gap-2 px-2.5 sm:px-3 rounded-xl glass-chrome border border-white/10 shadow-xl">
+            <span className="text-base select-none" role="img" aria-label="Pakistan flag">🇵🇰</span>
+            <span className="text-xs sm:text-sm font-bold tracking-tight text-white font-mono whitespace-nowrap">
+              GeoData Studio
             </span>
-            <span>v0.2.0</span>
+            <div className="hidden lg:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-mono font-medium">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500" />
+              </span>
+              <span>v0.2.0</span>
+            </div>
           </div>
         </div>
 
-        {/* Right: Bilingual Segmented Toggle & GitHub Button */}
-        <div className="flex items-center gap-2">
+        {/* Center: Search Omnibar with Integrated Option A City Filter */}
+        <div className="flex-1 max-w-xl mx-auto pointer-events-auto hidden md:block">
+          <Omnibar
+            selectedCity={selectedCity}
+            selectedArea={selectedArea}
+            onSelectArea={handleSelectArea}
+            onSelectCity={handleSelectCity}
+            onSuggestionClick={handleSuggestionClick}
+            showSuggestions={!selectedArea}
+            lang={lang}
+          />
+        </div>
+
+        {/* Right: Bilingual Segmented Toggle & Matched-Height GitHub Button */}
+        <div className="flex items-center gap-2 pointer-events-auto shrink-0">
           <div
             role="radiogroup"
             aria-label="Language selector"
-            className="inline-flex p-1 rounded-xl glass-chrome border border-white/10 shadow-xl"
+            className="h-9 inline-flex items-center p-1 rounded-xl glass-chrome border border-white/10 shadow-xl"
           >
             <button
               type="button"
               role="radio"
               aria-checked={lang === 'en'}
               onClick={() => setLang('en')}
-              className={`pressable px-3 py-1 rounded-lg text-xs font-medium transition-all duration-150 cursor-pointer ${
+              className={`pressable h-full px-2.5 sm:px-3 rounded-lg text-xs font-medium transition-all duration-150 cursor-pointer flex items-center ${
                 lang === 'en'
                   ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-sm font-semibold'
                   : 'text-neutral-400 hover:text-white border border-transparent'
@@ -302,7 +315,7 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
               role="radio"
               aria-checked={lang === 'ur'}
               onClick={() => setLang('ur')}
-              className={`pressable px-3 py-1 rounded-lg text-xs font-nastaliq transition-all duration-150 cursor-pointer leading-tight ${
+              className={`pressable h-full px-2.5 sm:px-3 rounded-lg text-xs font-nastaliq transition-all duration-150 cursor-pointer flex items-center leading-tight ${
                 lang === 'ur'
                   ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-sm font-bold'
                   : 'text-neutral-400 hover:text-white border border-transparent'
@@ -316,38 +329,29 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
             href="https://github.com/sohaibbinmohsin/pak-geodata"
             target="_blank"
             rel="noopener noreferrer"
-            className="pressable inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl glass-chrome border border-white/10 hover:border-white/20 text-xs font-medium text-neutral-200 hover:text-white transition-all shadow-xl"
+            className="pressable h-9 inline-flex items-center gap-1.5 px-3 rounded-xl glass-chrome border border-white/10 hover:border-white/20 text-xs font-medium text-neutral-200 hover:text-white transition-all shadow-xl"
             title="Star pak-geodata on GitHub"
           >
-            <Github className="w-3.5 h-3.5 text-neutral-300" />
+            <Github className="w-4 h-4 text-neutral-300" />
             <span className="hidden sm:inline">GitHub</span>
-            <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
+            <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
           </a>
         </div>
+      </header>
+
+      {/* Mobile Search Omnibar with Integrated City Filter */}
+      <div className="md:hidden absolute top-14 left-3 right-3 z-30 pointer-events-auto">
+        <Omnibar
+          selectedCity={selectedCity}
+          selectedArea={selectedArea}
+          onSelectArea={handleSelectArea}
+          onSelectCity={handleSelectCity}
+          onSuggestionClick={handleSuggestionClick}
+          showSuggestions={!selectedArea}
+          lang={lang}
+        />
       </div>
 
-      {/* Centered Floating Search Omnibar and City Filter Pills */}
-      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-full max-w-xl px-4 z-20 flex flex-col items-center gap-3 pointer-events-none">
-        <div className="w-full pointer-events-auto">
-          <Omnibar
-            selectedCity={selectedCity}
-            selectedArea={selectedArea}
-            onSelectArea={handleSelectArea}
-            onSelectCity={handleSelectCity}
-            onSuggestionClick={handleSuggestionClick}
-            showSuggestions={!selectedArea}
-          />
-        </div>
-        <div className="pointer-events-auto">
-          <CityPills
-            selectedCity={selectedCity}
-            onSelectCity={handleSelectCity}
-            allAreas={allAreas}
-            lang={lang}
-            className="p-0"
-          />
-        </div>
-      </div>
 
       {/* Floating Slide-in Area Inspector Drawer on the right */}
       {selectedArea && (
@@ -376,7 +380,10 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
 
             <button
               type="button"
-              onClick={() => setSelectedArea(null)}
+              onClick={() => {
+                setSelectedArea(null);
+                setReverseGeoPoint(null);
+              }}
               className="pressable p-1 -mr-1 rounded-lg text-neutral-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
               aria-label="Close area inspector"
               title="Close inspector (Esc)"
@@ -384,6 +391,53 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
               <X className="w-4 h-4" />
             </button>
           </div>
+
+          {/* Custom Reverse Geocoding Banner when opened from map tap */}
+          {reverseGeoPoint && (
+            <div className="p-3.5 rounded-2xl bg-cyan-950/40 border border-cyan-500/30 space-y-2.5 animate-pop select-none shadow-lg">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="relative flex h-2.5 w-2.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-500" />
+                  </span>
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400">
+                    {lang === 'ur' ? 'ریورس جیو کوڈنگ' : 'Reverse Geocoding'}
+                  </span>
+                </div>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 font-medium">
+                  &lt; 0.4 ms
+                </span>
+              </div>
+
+              <div className="space-y-1.5 text-xs font-mono">
+                <div className="p-2 rounded-xl bg-black/40 border border-white/10 flex items-center justify-between">
+                  <span className="text-neutral-400 text-[11px]">GPS:</span>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-neutral-200 select-text">{formatCoordinates(reverseGeoPoint.clicked)}</span>
+                    <button
+                      type="button"
+                      onClick={handleCopyCoords}
+                      className="text-neutral-400 hover:text-white transition-colors cursor-pointer"
+                      title="Copy GPS coordinates"
+                    >
+                      {coordsCopied ? (
+                        <Check className="w-3 h-3 text-emerald-400" />
+                      ) : (
+                        <Copy className="w-3 h-3" />
+                      )}
+                    </button>
+                  </div>
+                </div>
+
+                <div className="p-2 rounded-xl bg-black/40 border border-white/10 flex items-center justify-between">
+                  <span className="text-neutral-400 text-[11px]">Distance:</span>
+                  <span className="text-cyan-300 font-semibold">{formatDistance(reverseGeoPoint.distanceKm)}</span>
+                </div>
+              </div>
+            </div>
+          )}
+
 
           {/* Administrative Hierarchy Breadcrumbs */}
           {hierarchyNames && (
@@ -547,105 +601,11 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
             <div className="text-[10px] font-mono uppercase tracking-wider text-neutral-400 mb-2">
               Live Client Code
             </div>
-            <CodeGenerator area={selectedArea} lang={lang} />
+            <CodeGenerator area={selectedArea} lang={lang} reverseGeoPoint={reverseGeoPoint} />
           </div>
         </aside>
-      )}
-
-      {/* Floating Reverse Geocoding Card at Bottom-Left */}
-      {reverseGeoPoint ? (
-        <div
-          role="dialog"
-          aria-label="Reverse geocoding result"
-          className="absolute left-4 bottom-4 z-20 max-w-xs glass-chrome rounded-2xl border border-white/10 p-3.5 shadow-xl space-y-3 pointer-events-auto animate-pop select-none"
-        >
-          <div className="flex items-center justify-between gap-2 pb-2 border-b border-white/10">
-            <div className="flex items-center gap-2">
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-500" />
-              </span>
-              <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-cyan-400">
-                {lang === 'ur' ? 'ریورس جیو کوڈنگ' : 'Reverse Geocoding'}
-              </span>
-            </div>
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">
-              &lt; 0.4 ms
-            </span>
-          </div>
-
-          <div className="space-y-2 text-xs font-mono">
-            <div className="p-2 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-between">
-              <span className="text-neutral-400">GPS:</span>
-              <span className="text-neutral-200">{formatCoordinates(reverseGeoPoint.clicked)}</span>
-            </div>
-
-            <div className="p-2.5 rounded-xl bg-white/[0.04] border border-white/10 space-y-1">
-              <div className="flex items-center justify-between">
-                <span className="text-neutral-400">Nearest:</span>
-                <span className="text-emerald-400 font-medium truncate ml-2">
-                  {lang === 'ur'
-                    ? toEasternDigits(reverseGeoPoint.nearest.urduName || reverseGeoPoint.nearest.name)
-                    : reverseGeoPoint.nearest.name}
-                </span>
-              </div>
-              <div className="flex items-center justify-between text-[11px] text-neutral-400">
-                <span>Distance:</span>
-                <span>{formatDistance(reverseGeoPoint.distanceKm)}</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-between pt-1">
-            <button
-              type="button"
-              onClick={() => handleSelectArea(reverseGeoPoint.nearest)}
-              className="pressable px-3 py-1.5 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/40 text-emerald-300 text-xs font-mono font-medium transition-colors cursor-pointer"
-            >
-              Inspect Area
-            </button>
-            <button
-              type="button"
-              onClick={() => setReverseGeoPoint(null)}
-              className="pressable text-xs font-mono text-neutral-400 hover:text-white transition-colors cursor-pointer"
-            >
-              Clear
-            </button>
-          </div>
-        </div>
-      ) : (
-        <div
-          role="region"
-          aria-label="Reverse geocoding tester"
-          className="absolute left-4 bottom-4 z-20 max-w-xs glass-chrome rounded-2xl border border-white/10 p-3.5 shadow-xl space-y-2 pointer-events-auto select-none"
-        >
-          <div className="flex items-center justify-between gap-2">
-            <div className="flex items-center gap-1.5 text-cyan-400 font-mono text-[11px] font-semibold uppercase tracking-wider">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500" />
-              </span>
-              <span>{lang === 'ur' ? 'ریورس جیو کوڈنگ' : 'Reverse Geocoding'}</span>
-            </div>
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">
-              &lt; 0.4 ms
-            </span>
-          </div>
-          <p className="text-[11px] text-neutral-400 leading-relaxed font-sans">
-            {lang === 'ur'
-              ? 'نقشے پر کسی بھی جگہ کلک کریں تاکہ قریب ترین تصدیق شدہ علاقہ معلوم ہو سکے۔'
-              : 'Click anywhere on the map to test real-time reverse geocoding.'}
-          </p>
-          <button
-            type="button"
-            onClick={handleSampleReverseGeo}
-            className="pressable inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-neutral-300 hover:text-white text-xs font-mono transition-colors cursor-pointer"
-          >
-            <Navigation className="w-3 h-3 text-cyan-400" />
-            <span>{lang === 'ur' ? 'نمونہ پوائنٹ (لاہور)' : 'Try Sample Point'}</span>
-          </button>
-        </div>
       )}
     </div>
   );
 }
+
