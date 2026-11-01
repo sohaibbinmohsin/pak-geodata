@@ -183,7 +183,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 66.9,
       "maxLng": 67.08
     },
-    "totalAreasCount": 14
+    "totalAreasCount": 20
   },
   {
     "id": "gwadar",
@@ -574,7 +574,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 72.85,
       "maxLng": 73.25
     },
-    "totalAreasCount": 60
+    "totalAreasCount": 80
   },
   {
     "id": "peshawar",
@@ -597,7 +597,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 71.42,
       "maxLng": 71.64
     },
-    "totalAreasCount": 16
+    "totalAreasCount": 28
   },
   {
     "id": "abbottabad",
@@ -804,7 +804,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 74.15,
       "maxLng": 74.55
     },
-    "totalAreasCount": 50
+    "totalAreasCount": 105
   },
   {
     "id": "rawalpindi",
@@ -827,7 +827,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 72.9,
       "maxLng": 73.18
     },
-    "totalAreasCount": 28
+    "totalAreasCount": 50
   },
   {
     "id": "faisalabad",
@@ -850,7 +850,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 72.98,
       "maxLng": 73.25
     },
-    "totalAreasCount": 24
+    "totalAreasCount": 40
   },
   {
     "id": "multan",
@@ -873,7 +873,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 71.35,
       "maxLng": 71.65
     },
-    "totalAreasCount": 16
+    "totalAreasCount": 28
   },
   {
     "id": "gujranwala",
@@ -896,7 +896,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 74.08,
       "maxLng": 74.28
     },
-    "totalAreasCount": 14
+    "totalAreasCount": 22
   },
   {
     "id": "sialkot",
@@ -1655,7 +1655,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 66.85,
       "maxLng": 67.35
     },
-    "totalAreasCount": 51
+    "totalAreasCount": 105
   },
   {
     "id": "hyderabad",
@@ -1678,7 +1678,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 68.28,
       "maxLng": 68.44
     },
-    "totalAreasCount": 16
+    "totalAreasCount": 26
   },
   {
     "id": "sukkur",

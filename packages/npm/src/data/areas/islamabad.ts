@@ -1351,5 +1351,450 @@ export const islamabadAreas: readonly PakistanArea[] = [
       "curated"
     ],
     "verified": true
+  },
+  {
+    "id": "islamabad-sector-f-16",
+    "name": "Sector F-16",
+    "urduName": "سیکٹر F-16 اسلام آباد",
+    "cityId": "islamabad",
+    "type": "sector",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.6423,
+      "lng": 72.9187
+    },
+    "aliases": [
+      "Sector F-16",
+      "F-16 Islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-sector-f-17",
+    "name": "Sector F-17 (Tele Gardens)",
+    "urduName": "سیکٹر F-17 ٹیلی گارڈنز",
+    "cityId": "islamabad",
+    "type": "sector",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.6382,
+      "lng": 72.8958
+    },
+    "aliases": [
+      "Sector F-17",
+      "F-17 Islamabad",
+      "Tele Gardens"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-sector-g-16",
+    "name": "Sector G-16 (Ministry of Interior)",
+    "urduName": "سیکٹر G-16 وزارتِ داخلہ",
+    "cityId": "islamabad",
+    "type": "sector",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.6265,
+      "lng": 72.9146
+    },
+    "aliases": [
+      "Sector G-16",
+      "G-16 Islamabad",
+      "MOI Housing"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-sector-g-17",
+    "name": "Sector G-17 (Supreme Court Housing)",
+    "urduName": "سیکٹر G-17 سپریم کورٹ ہاؤسنگ",
+    "cityId": "islamabad",
+    "type": "sector",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.6192,
+      "lng": 72.8985
+    },
+    "aliases": [
+      "Sector G-17",
+      "G-17 Islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-sector-h-14",
+    "name": "Sector H-14",
+    "urduName": "سیکٹر H-14 اسلام آباد",
+    "cityId": "islamabad",
+    "type": "sector",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.6312,
+      "lng": 72.9553
+    },
+    "aliases": [
+      "Sector H-14",
+      "H-14 Islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-sector-h-15",
+    "name": "Sector H-15",
+    "urduName": "سیکٹر H-15 اسلام آباد",
+    "cityId": "islamabad",
+    "type": "sector",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.6241,
+      "lng": 72.9422
+    },
+    "aliases": [
+      "Sector H-15",
+      "H-15 Islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-sector-h-16",
+    "name": "Sector H-16",
+    "urduName": "سیکٹر H-16 اسلام آباد",
+    "cityId": "islamabad",
+    "type": "sector",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.6153,
+      "lng": 72.9284
+    },
+    "aliases": [
+      "Sector H-16",
+      "H-16 Islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-sector-i-15",
+    "name": "Sector I-15",
+    "urduName": "سیکٹر I-15 اسلام آباد",
+    "cityId": "islamabad",
+    "type": "sector",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.6054,
+      "lng": 72.9645
+    },
+    "aliases": [
+      "Sector I-15",
+      "I-15 Islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-sector-i-16",
+    "name": "Sector I-16",
+    "urduName": "سیکٹر I-16 اسلام آباد",
+    "cityId": "islamabad",
+    "type": "sector",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.5962,
+      "lng": 72.9431
+    },
+    "aliases": [
+      "Sector I-16",
+      "I-16 Islamabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-sector-d-18",
+    "name": "Sector D-18 (Engineers Co-op)",
+    "urduName": "سیکٹر D-18 انجینئرز سوسائٹی",
+    "cityId": "islamabad",
+    "type": "sector",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.6923,
+      "lng": 72.8611
+    },
+    "aliases": [
+      "Sector D-18",
+      "D-18 Islamabad",
+      "Engineers Society D-18"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-sector-c-12",
+    "name": "Sector C-12",
+    "urduName": "سیکٹر C-12 اسلام آباد",
+    "cityId": "islamabad",
+    "type": "sector",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.7461,
+      "lng": 72.9523
+    },
+    "aliases": [
+      "Sector C-12",
+      "C-12 Margalla"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-sector-c-15",
+    "name": "Sector C-15",
+    "urduName": "سیکٹر C-15 اسلام آباد",
+    "cityId": "islamabad",
+    "type": "sector",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.7382,
+      "lng": 72.9254
+    },
+    "aliases": [
+      "Sector C-15",
+      "C-15 Margalla"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-sector-c-16",
+    "name": "Sector C-16",
+    "urduName": "سیکٹر C-16 اسلام آباد",
+    "cityId": "islamabad",
+    "type": "sector",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.7315,
+      "lng": 72.9062
+    },
+    "aliases": [
+      "Sector C-16",
+      "C-16 Margalla"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-shah-allah-ditta",
+    "name": "Shah Allah Ditta Caves & Village",
+    "urduName": "شاہ اللہ دتہ غاریں و گاؤں",
+    "cityId": "islamabad",
+    "type": "neighborhood",
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.7182,
+      "lng": 72.9153
+    },
+    "aliases": [
+      "Shah Allah Ditta",
+      "Sadhu ka Bagh"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-rawat-industrial-estate",
+    "name": "Rawat Industrial Estate",
+    "urduName": "روات انڈسٹریل اسٹیٹ",
+    "cityId": "islamabad",
+    "type": "industrial",
+    "postalCode": "45900",
+    "coordinates": {
+      "lat": 33.5583,
+      "lng": 73.1894
+    },
+    "aliases": [
+      "Rawat Industrial",
+      "GT Road Rawat"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-sihala",
+    "name": "Sihala",
+    "urduName": "سہالہ اسلام آباد",
+    "cityId": "islamabad",
+    "type": "suburb",
+    "postalCode": "45900",
+    "coordinates": {
+      "lat": 33.5621,
+      "lng": 73.1652
+    },
+    "aliases": [
+      "Sihala Police College Area",
+      "Kahuta Road Sihala"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-humak",
+    "name": "Model Town Humak",
+    "urduName": "ماڈل ٹاؤن ہمک اسلام آباد",
+    "cityId": "islamabad",
+    "type": "neighborhood",
+    "postalCode": "45900",
+    "coordinates": {
+      "lat": 33.5684,
+      "lng": 73.1523
+    },
+    "aliases": [
+      "Humak Model Town",
+      "Humak Industrial Area"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-lehtrar-road-belt",
+    "name": "Lehtrar Road Residential Belt",
+    "urduName": "لہتراڑ روڈ بیلٹ اسلام آباد",
+    "cityId": "islamabad",
+    "type": "suburb",
+    "postalCode": "45500",
+    "coordinates": {
+      "lat": 33.6425,
+      "lng": 73.1546
+    },
+    "aliases": [
+      "Lehtrar Road Sector",
+      "Alipur Farash Link"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-nihore",
+    "name": "Nilore (PINSTECH Sector)",
+    "urduName": "نیلور پنسٹیک اسلام آباد",
+    "cityId": "islamabad",
+    "type": "neighborhood",
+    "postalCode": "45650",
+    "coordinates": {
+      "lat": 33.6482,
+      "lng": 73.2351
+    },
+    "aliases": [
+      "Nilore Islamabad",
+      "PINSTECH Area",
+      "Lehtrar Road Nilore"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-dha-phase-3",
+    "name": "DHA Phase 3 Islamabad",
+    "urduName": "ڈی ایچ اے فیز 3 اسلام آباد",
+    "cityId": "islamabad",
+    "type": "housing_society",
+    "postalCode": "45710",
+    "coordinates": {
+      "lat": 33.5592,
+      "lng": 73.1284
+    },
+    "aliases": [
+      "DHA Phase 3",
+      "DHA 3 Islamabad",
+      "Serene City DHA"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "islamabad-ict"
   }
 ];

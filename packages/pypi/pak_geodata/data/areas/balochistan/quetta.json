@@ -297,5 +297,137 @@
       "curated"
     ],
     "verified": true
+  },
+  {
+    "id": "quetta-spinny-road",
+    "name": "Spinny Road Sector",
+    "urduName": "سپنی روڈ سیکٹر کوئٹہ",
+    "cityId": "quetta",
+    "type": "neighborhood",
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.2152,
+      "lng": 66.9841
+    },
+    "aliases": [
+      "Spinny Road Quetta",
+      "Kakar Colony Spinny"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "balochistan"
+  },
+  {
+    "id": "quetta-joint-road",
+    "name": "Joint Road Area",
+    "urduName": "جوائنٹ روڈ ایریا کوئٹہ",
+    "cityId": "quetta",
+    "type": "neighborhood",
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.1785,
+      "lng": 66.9982
+    },
+    "aliases": [
+      "Joint Road Quetta",
+      "Civil Hospital Quetta Strip"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "balochistan"
+  },
+  {
+    "id": "quetta-gulshan-e-zahoor",
+    "name": "Gulshan-e-Zahoor",
+    "urduName": "گلشنِ ظہور کوئٹہ",
+    "cityId": "quetta",
+    "type": "housing_society",
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.2225,
+      "lng": 67.0384
+    },
+    "aliases": [
+      "Gulshan e Zahoor",
+      "Zahoor Town Quetta"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "balochistan"
+  },
+  {
+    "id": "quetta-suraj-ganj-bazaar",
+    "name": "Suraj Ganj Bazaar",
+    "urduName": "سورج گنج بازار کوئٹہ",
+    "cityId": "quetta",
+    "type": "commercial",
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.2037,
+      "lng": 67.0216
+    },
+    "aliases": [
+      "Suraj Ganj Quetta",
+      "Kandahari Bazaar Link"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "balochistan"
+  },
+  {
+    "id": "quetta-kandahari-bazaar",
+    "name": "Kandahari Bazaar",
+    "urduName": "قندھاری بازار کوئٹہ",
+    "cityId": "quetta",
+    "type": "commercial",
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.1995,
+      "lng": 67.0182
+    },
+    "aliases": [
+      "Kandahari Bazaar",
+      "City Center Quetta"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "balochistan"
+  },
+  {
+    "id": "quetta-alamo-chowk",
+    "name": "Alamo Chowk Residential Area",
+    "urduName": "الامو چوک کوئٹہ",
+    "cityId": "quetta",
+    "type": "neighborhood",
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.1754,
+      "lng": 67.0293
+    },
+    "aliases": [
+      "Alamo Chowk",
+      "Airforce Link Alamo"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "balochistan"
   }
 ]

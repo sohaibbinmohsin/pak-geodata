@@ -345,5 +345,269 @@ export const multanAreas: readonly PakistanArea[] = [
       "curated"
     ],
     "verified": true
+  },
+  {
+    "id": "multan-zakariya-town",
+    "name": "Zakariya Town",
+    "urduName": "زکریا ٹاؤن ملتان",
+    "cityId": "multan",
+    "type": "housing_society",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2541,
+      "lng": 71.4982
+    },
+    "aliases": [
+      "Zakariya Town Bosan Road",
+      "BZU Link Town"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-shalimar-colony",
+    "name": "Shalimar Colony",
+    "urduName": "شالیمار کالونی ملتان",
+    "cityId": "multan",
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2312,
+      "lng": 71.4823
+    },
+    "aliases": [
+      "Shalimar Colony Multan",
+      "Bosan Road Shalimar"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-peer-khurshid-colony",
+    "name": "Peer Khurshid Colony",
+    "urduName": "پیر خورشید کالونی ملتان",
+    "cityId": "multan",
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2243,
+      "lng": 71.4754
+    },
+    "aliases": [
+      "Peer Khurshid Zia Town",
+      "Officers Line Colony"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-gulshan-e-market",
+    "name": "Gulshan Market (New Multan)",
+    "urduName": "گلشن مارکیٹ نیو ملتان",
+    "cityId": "multan",
+    "type": "commercial",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2214,
+      "lng": 71.4925
+    },
+    "aliases": [
+      "Gulshan Market Commercial",
+      "New Multan Main Market"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-hassan-parwana-colony",
+    "name": "Hassan Parwana Colony",
+    "urduName": "حسن پروانہ کالونی ملتان",
+    "cityId": "multan",
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.1985,
+      "lng": 71.4586
+    },
+    "aliases": [
+      "Hassan Parwana Road",
+      "Parwana Colony"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-royal-orchard",
+    "name": "Royal Orchard Multan",
+    "urduName": "رائل آرچرڈ ملتان",
+    "cityId": "multan",
+    "type": "housing_society",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2266,
+      "lng": 71.5547
+    },
+    "aliases": [
+      "Royal Orchard Society",
+      "Mattital Road Royal Orchard"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-citi-housing",
+    "name": "Citi Housing Multan",
+    "urduName": "سٹی ہاؤسنگ ملتان",
+    "cityId": "multan",
+    "type": "housing_society",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2687,
+      "lng": 71.4658
+    },
+    "aliases": [
+      "Citi Housing Society Multan",
+      "Bosan Bypass Citi"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-mps-road",
+    "name": "Multan Public School Road Sector",
+    "urduName": "ملتان پبلک اسکول روڈ سیکٹر",
+    "cityId": "multan",
+    "type": "suburb",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2458,
+      "lng": 71.5069
+    },
+    "aliases": [
+      "MPS Road",
+      "Education City Multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-chungi-no-6",
+    "name": "Chungi No 6",
+    "urduName": "چنگی نمبر 6 ملتان",
+    "cityId": "multan",
+    "type": "commercial",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2081,
+      "lng": 71.4722
+    },
+    "aliases": [
+      "Chungi 6 Multan",
+      "Bosan Road Chungi 6"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-chungi-no-14",
+    "name": "Chungi No 14",
+    "urduName": "چنگی نمبر 14 ملتان",
+    "cityId": "multan",
+    "type": "commercial",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.1764,
+      "lng": 71.4583
+    },
+    "aliases": [
+      "Chungi 14 Multan",
+      "Old Shujabad Road Chungi"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-dera-adda",
+    "name": "Dera Adda Chowk",
+    "urduName": "ڈیرہ اڈا ملتان",
+    "cityId": "multan",
+    "type": "commercial",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.1922,
+      "lng": 71.4683
+    },
+    "aliases": [
+      "Dera Adda Multan",
+      "Transport Hub Dera Adda"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-shah-shams-colony",
+    "name": "Shah Shams Tabrez Colony",
+    "urduName": "شاہ شمس تبریز کالونی ملتان",
+    "cityId": "multan",
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.1853,
+      "lng": 71.4884
+    },
+    "aliases": [
+      "Shah Shams Colony",
+      "Vehari Road Shah Shams"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
   }
 ];

@@ -45,7 +45,7 @@ export default function CityPills({
   // City pill items ordered by major hubs
   const pills = useMemo(() => {
     const list: Array<{ id: string; label: string; count: number; city: PakistanCity | null }> = [
-      { id: 'all', label: 'All', count: counts.all || 289, city: null },
+      { id: 'all', label: 'All', count: counts.all || 504, city: null },
     ];
     for (const cityId of TARGET_CITY_IDS) {
       const city = getCityById(cityId);

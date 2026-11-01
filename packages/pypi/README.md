@@ -201,7 +201,7 @@ All models are immutable frozen dataclasses (`@dataclass(frozen=True)`):
 | `get_all_cities()` | `List[PakistanCity]` | Returns all 79 verified cities |
 | `get_cities_by_province(province_id)` | `List[PakistanCity]` | Filters cities by province |
 | `get_city_by_id(id)` | `Optional[PakistanCity]` | Finds city by canonical slug |
-| `get_all_areas()` | `List[PakistanArea]` | Returns all verified areas (289 total) |
+| `get_all_areas()` | `List[PakistanArea]` | Returns all verified areas (504 total) |
 | `get_areas_by_city(city_id)` | `List[PakistanArea]` | Returns verified areas in a city |
 | `search_areas(query, city_id=None, limit=None, province_id=None)` | `List[PakistanArea]` | Ranked multi-tier search |
 | `find_area_by_postal_code(postal_code)` | `Optional[PakistanArea]` | Resolves area by 5-digit postal code |

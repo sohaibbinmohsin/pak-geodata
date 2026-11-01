@@ -300,5 +300,181 @@ export const gujranwalaAreas: readonly PakistanArea[] = [
       "curated"
     ],
     "verified": true
+  },
+  {
+    "id": "gujranwala-citi-housing-phase-2",
+    "name": "Citi Housing Phase 2",
+    "urduName": "سٹی ہاؤسنگ فیز 2 گوجرانوالہ",
+    "cityId": "gujranwala",
+    "type": "housing_society",
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.2281,
+      "lng": 74.1542
+    },
+    "aliases": [
+      "Citi Housing 2",
+      "Upper Chenab Citi"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "gujranwala-palm-city",
+    "name": "Palm City Gujranwala",
+    "urduName": "پام سٹی گوجرانوالہ",
+    "cityId": "gujranwala",
+    "type": "housing_society",
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.2352,
+      "lng": 74.1823
+    },
+    "aliases": [
+      "Palm City",
+      "GT Road Palm City"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "gujranwala-sialkot-bypass",
+    "name": "Sialkot Bypass Area",
+    "urduName": "سیالکوٹ بائی پاس گوجرانوالہ",
+    "cityId": "gujranwala",
+    "type": "commercial",
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.1954,
+      "lng": 74.2265
+    },
+    "aliases": [
+      "Sialkot Bypass Chowk",
+      "Eastern Commercial Belt"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "gujranwala-kangniwala",
+    "name": "Kangniwala",
+    "urduName": "کنگنی والا گوجرانوالہ",
+    "cityId": "gujranwala",
+    "type": "neighborhood",
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.1425,
+      "lng": 74.2086
+    },
+    "aliases": [
+      "Kangniwala Bypass",
+      "GT Road Kangniwala"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "gujranwala-gondlanwala-road",
+    "name": "Gondlanwala Road Sector",
+    "urduName": "گوندلانوالہ روڈ سیکٹر",
+    "cityId": "gujranwala",
+    "type": "neighborhood",
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.1536,
+      "lng": 74.1757
+    },
+    "aliases": [
+      "Gondlanwala Road",
+      "Railway Link Sector"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "gujranwala-nowshera-road",
+    "name": "Nowshera Road Sector",
+    "urduName": "نوشہرہ روڈ سیکٹر گوجرانوالہ",
+    "cityId": "gujranwala",
+    "type": "neighborhood",
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.1647,
+      "lng": 74.1588
+    },
+    "aliases": [
+      "Nowshera Road",
+      "Nowshera Virkan Mor"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "gujranwala-trust-plaza",
+    "name": "Trust Plaza / Model Town Market",
+    "urduName": "ٹرسٹ پلازہ ماڈل ٹاؤن مارکیٹ",
+    "cityId": "gujranwala",
+    "type": "commercial",
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.1698,
+      "lng": 74.1929
+    },
+    "aliases": [
+      "Trust Plaza Gujranwala",
+      "Central City Commercial"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "gujranwala-climax-road",
+    "name": "Climax Industrial Zone",
+    "urduName": "کلائمیکس انڈسٹریل زون گوجرانوالہ",
+    "cityId": "gujranwala",
+    "type": "industrial",
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.1812,
+      "lng": 74.2045
+    },
+    "aliases": [
+      "Climax Road",
+      "GT Road Climax"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
   }
 ];

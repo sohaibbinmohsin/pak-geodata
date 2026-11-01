@@ -348,5 +348,270 @@
       "curated"
     ],
     "verified": true
+  },
+  {
+    "id": "peshawar-deans-trade-center",
+    "name": "Deans Trade Center Commercial Area",
+    "urduName": "ڈینز ٹریڈ سینٹر پشاور",
+    "cityId": "peshawar",
+    "type": "commercial",
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 34.0041,
+      "lng": 71.5562
+    },
+    "aliases": [
+      "Deans Trade Center",
+      "Islamia Road Deans"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "kpk"
+  },
+  {
+    "id": "peshawar-kohat-road",
+    "name": "Kohat Road Sector",
+    "urduName": "کوہاٹ روڈ سیکٹر پشاور",
+    "cityId": "peshawar",
+    "type": "suburb",
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 33.9752,
+      "lng": 71.5683
+    },
+    "aliases": [
+      "Kohat Road Peshawar",
+      "Bhana Mari Link"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "kpk"
+  },
+  {
+    "id": "peshawar-ring-road",
+    "name": "Ring Road Commercial Sector",
+    "urduName": "رنگ روڈ کمرشل سیکٹر پشاور",
+    "cityId": "peshawar",
+    "type": "commercial",
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 33.9863,
+      "lng": 71.5944
+    },
+    "aliases": [
+      "Peshawar Ring Road",
+      "Hayatabad Toll Ring Road"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "kpk"
+  },
+  {
+    "id": "peshawar-board-bazaar",
+    "name": "Board Bazaar (Jamrud Road)",
+    "urduName": "بورڈ بازار جمرود روڈ پشاور",
+    "cityId": "peshawar",
+    "type": "commercial",
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 33.9964,
+      "lng": 71.4985
+    },
+    "aliases": [
+      "Board Bazaar Peshawar",
+      "Tajabad Board Bazaar"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "kpk"
+  },
+  {
+    "id": "peshawar-charsadda-road",
+    "name": "Charsadda Road Sector",
+    "urduName": "چارسدہ روڈ سیکٹر پشاور",
+    "cityId": "peshawar",
+    "type": "suburb",
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 34.0325,
+      "lng": 71.5726
+    },
+    "aliases": [
+      "Charsadda Road Peshawar",
+      "Shahi Bagh Charsadda"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "kpk"
+  },
+  {
+    "id": "peshawar-tehkal",
+    "name": "Tehkal Payan & Bala",
+    "urduName": "تہکال پایاں و بالا پشاور",
+    "cityId": "peshawar",
+    "type": "neighborhood",
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 34.0086,
+      "lng": 71.5087
+    },
+    "aliases": [
+      "Tehkal Peshawar",
+      "Tehkal Payan",
+      "University Road Tehkal"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "kpk"
+  },
+  {
+    "id": "peshawar-nauthia",
+    "name": "Nauthia Jadeed",
+    "urduName": "نوتھیہ جدید پشاور",
+    "cityId": "peshawar",
+    "type": "neighborhood",
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 33.9957,
+      "lng": 71.5518
+    },
+    "aliases": [
+      "Nauthia Peshawar",
+      "Saddar Nauthia"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "kpk"
+  },
+  {
+    "id": "peshawar-kmu-area",
+    "name": "Khyber Medical University Area",
+    "urduName": "خیبر میڈیکل یونیورسٹی ایریا",
+    "cityId": "peshawar",
+    "type": "neighborhood",
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 33.9789,
+      "lng": 71.4421
+    },
+    "aliases": [
+      "KMU Peshawar",
+      "Phase 5 KMU Link"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "kpk"
+  },
+  {
+    "id": "peshawar-hayatabad-industrial-estate",
+    "name": "Hayatabad Industrial Estate",
+    "urduName": "حیات آباد انڈسٹریل اسٹیٹ",
+    "cityId": "peshawar",
+    "type": "industrial",
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 33.9621,
+      "lng": 71.4352
+    },
+    "aliases": [
+      "HIE Peshawar",
+      "KDA Industrial Zone"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "kpk"
+  },
+  {
+    "id": "peshawar-gulberg",
+    "name": "Gulberg Peshawar",
+    "urduName": "گلبرگ پشاور",
+    "cityId": "peshawar",
+    "type": "neighborhood",
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 34.0012,
+      "lng": 71.5643
+    },
+    "aliases": [
+      "Gulberg Peshawar Cantt",
+      "Cantt Board Gulberg"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "kpk"
+  },
+  {
+    "id": "peshawar-defence-officers-colony",
+    "name": "Defence Officers Colony Peshawar",
+    "urduName": "ڈیفنس آفیسرز کالونی پشاور",
+    "cityId": "peshawar",
+    "type": "housing_society",
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 34.0163,
+      "lng": 71.5684
+    },
+    "aliases": [
+      "DOC Peshawar",
+      "Shami Road Defence"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "kpk"
+  },
+  {
+    "id": "peshawar-dalazak-road",
+    "name": "Dalazak Road Residential Belt",
+    "urduName": "دلازاک روڈ بیلٹ پشاور",
+    "cityId": "peshawar",
+    "type": "suburb",
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 34.0245,
+      "lng": 71.6123
+    },
+    "aliases": [
+      "Dalazak Road Peshawar",
+      "Ring Road Dalazak"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "kpk"
   }
 ]

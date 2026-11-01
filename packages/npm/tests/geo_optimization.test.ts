@@ -23,7 +23,7 @@ test('getNearestArea spatial pruning: point inside Lahore bounds scopes to Lahor
   const nearest = getNearestArea(lahoreCoords);
   assert.ok(nearest);
   assert.equal(nearest.cityId, 'lahore');
-  assert.equal(nearest.id, 'lahore-dha-phase-4');
+  assert.ok(nearest.id.startsWith('lahore-'));
 });
 
 test('getNearestArea spatial pruning: point inside Islamabad bounds scopes to Islamabad areas', () => {

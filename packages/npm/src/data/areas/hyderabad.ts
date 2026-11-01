@@ -350,5 +350,225 @@ export const hyderabadAreas: readonly PakistanArea[] = [
       "curated"
     ],
     "verified": true
+  },
+  {
+    "id": "hyderabad-latifabad-unit-3",
+    "name": "Latifabad Unit 3",
+    "urduName": "لطیف آباد یونٹ 3 حیدرآباد",
+    "cityId": "hyderabad",
+    "type": "sector",
+    "postalCode": "71800",
+    "coordinates": {
+      "lat": 25.3721,
+      "lng": 68.3542
+    },
+    "aliases": [
+      "Unit 3 Latifabad",
+      "Latifabad 3"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "hyderabad-latifabad-unit-4",
+    "name": "Latifabad Unit 4",
+    "urduName": "لطیف آباد یونٹ 4 حیدرآباد",
+    "cityId": "hyderabad",
+    "type": "sector",
+    "postalCode": "71800",
+    "coordinates": {
+      "lat": 25.3652,
+      "lng": 68.3613
+    },
+    "aliases": [
+      "Unit 4 Latifabad",
+      "Latifabad 4"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "hyderabad-latifabad-unit-5",
+    "name": "Latifabad Unit 5",
+    "urduName": "لطیف آباد یونٹ 5 حیدرآباد",
+    "cityId": "hyderabad",
+    "type": "sector",
+    "postalCode": "71800",
+    "coordinates": {
+      "lat": 25.3613,
+      "lng": 68.3724
+    },
+    "aliases": [
+      "Unit 5 Latifabad",
+      "Latifabad 5"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "hyderabad-latifabad-unit-6",
+    "name": "Latifabad Unit 6",
+    "urduName": "لطیف آباد یونٹ 6 حیدرآباد",
+    "cityId": "hyderabad",
+    "type": "sector",
+    "postalCode": "71800",
+    "coordinates": {
+      "lat": 25.3574,
+      "lng": 68.3645
+    },
+    "aliases": [
+      "Unit 6 Latifabad",
+      "Latifabad 6"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "hyderabad-latifabad-unit-9",
+    "name": "Latifabad Unit 9",
+    "urduName": "لطیف آباد یونٹ 9 حیدرآباد",
+    "cityId": "hyderabad",
+    "type": "sector",
+    "postalCode": "71800",
+    "coordinates": {
+      "lat": 25.3524,
+      "lng": 68.3685
+    },
+    "aliases": [
+      "Unit 9 Latifabad",
+      "Latifabad 9"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "hyderabad-latifabad-unit-10",
+    "name": "Latifabad Unit 10",
+    "urduName": "لطیف آباد یونٹ 10 حیدرآباد",
+    "cityId": "hyderabad",
+    "type": "sector",
+    "postalCode": "71800",
+    "coordinates": {
+      "lat": 25.3455,
+      "lng": 68.3756
+    },
+    "aliases": [
+      "Unit 10 Latifabad",
+      "Latifabad 10"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "hyderabad-latifabad-unit-12",
+    "name": "Latifabad Unit 12",
+    "urduName": "لطیف آباد یونٹ 12 حیدرآباد",
+    "cityId": "hyderabad",
+    "type": "sector",
+    "postalCode": "71800",
+    "coordinates": {
+      "lat": 25.3416,
+      "lng": 68.3587
+    },
+    "aliases": [
+      "Unit 12 Latifabad",
+      "Latifabad 12"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "hyderabad-hussainabad",
+    "name": "Hussainabad",
+    "urduName": "حسین آباد حیدرآباد",
+    "cityId": "hyderabad",
+    "type": "neighborhood",
+    "postalCode": "71800",
+    "coordinates": {
+      "lat": 25.3327,
+      "lng": 68.3448
+    },
+    "aliases": [
+      "Hussainabad Giddu",
+      "Indus River Bank Hussainabad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "hyderabad-gor-colony",
+    "name": "GOR Colony Hyderabad",
+    "urduName": "جی او آر کالونی حیدرآباد",
+    "cityId": "hyderabad",
+    "type": "neighborhood",
+    "postalCode": "71000",
+    "coordinates": {
+      "lat": 25.3858,
+      "lng": 68.3429
+    },
+    "aliases": [
+      "GOR Colony",
+      "Government Officers Colony"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
+  },
+  {
+    "id": "hyderabad-wadhu-wah-road",
+    "name": "Wadhu Wah Road Sector",
+    "urduName": "وادھو واہ روڈ حیدرآباد",
+    "cityId": "hyderabad",
+    "type": "suburb",
+    "postalCode": "71000",
+    "coordinates": {
+      "lat": 25.4129,
+      "lng": 68.3481
+    },
+    "aliases": [
+      "Wadhu Wah Road",
+      "Qasimabad Wadhu Wah"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "sindh"
   }
 ];

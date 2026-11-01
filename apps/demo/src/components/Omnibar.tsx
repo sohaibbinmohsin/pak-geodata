@@ -188,7 +188,7 @@ export default function Omnibar({
 
   const placeholderText = selectedCity
     ? `Search in ${selectedCity.name} (e.g. F-6, Blue Area, 44000)...`
-    : 'Search 289 areas across Pakistan (e.g. DHA, ماڈل ٹاؤن, 54000)...';
+    : 'Search 504 areas across Pakistan (e.g. DHA, ماڈل ٹاؤن, 54000)...';
 
   return (
     <div
