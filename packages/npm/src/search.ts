@@ -257,11 +257,11 @@ function classicSearchAreas(
  * Searches areas within a specific city and returns ranked results as PakLocationItem[].
  *
  * Each returned PakLocationItem always contains both English (`nameEn`) and Urdu (`nameUr`) names.
- * The `_lang` parameter is accepted for Sanctuary compatibility.
+ * The `_lang` parameter is accepted for caller compatibility.
  *
  * @param cityKey - City identifier, English name, or Urdu name
  * @param query - Search term (English or Urdu)
- * @param _lang - Optional language code accepted for Sanctuary compatibility
+ * @param _lang - Optional language code accepted for caller compatibility
  * @returns Ranked array of PakLocationItem elements
  */
 export function searchLocationItems(
@@ -287,7 +287,7 @@ export function searchLocationItems(
  * Searches Pakistan areas using structured matching and ranking:
  * Exact match > Prefix match > Alias match > Substring / Token match > Fuzzy match.
  *
- * Overload 1 (Sanctuary signature):
+ * Overload 1 (City-scoped bilingual signature):
  * searchAreas(cityKey: string, query: string, lang?: 'en' | 'ur'): PakLocationItem[]
  *
  * Overload 2 (Classic signature):
@@ -308,7 +308,7 @@ export function searchAreas(
   secondArg?: string | SearchOptions,
   thirdArg?: 'en' | 'ur' | readonly PakistanArea[]
 ): PakLocationItem[] | PakistanArea[] {
-  // Runtime dispatch: when argument 2 is a string, route to Sanctuary mode
+  // Runtime dispatch: when argument 2 is a string, route to city-scoped bilingual mode
   if (typeof secondArg === 'string') {
     const cityKey = firstArg;
     const query = secondArg;

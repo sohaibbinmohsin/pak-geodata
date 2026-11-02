@@ -1,5 +1,5 @@
 import { useLayoutEffect, useEffect, useRef, useState, useMemo } from 'react';
-import { getAllAreas, getCityById, type PakistanArea, type PakistanCity } from 'pak-geodata';
+import { getAllAreas, getAllCities, type PakistanArea, type PakistanCity } from 'pak-geodata';
 
 export interface CityPillsProps {
   selectedCity: PakistanCity | null;
@@ -8,8 +8,6 @@ export interface CityPillsProps {
   lang?: 'en' | 'ur';
   className?: string;
 }
-
-const TARGET_CITY_IDS = ['karachi', 'lahore', 'islamabad', 'rawalpindi', 'faisalabad'] as const;
 
 export default function CityPills({
   selectedCity,
@@ -33,21 +31,22 @@ export default function CityPills({
     return map;
   }, [allAreas]);
 
-  // City pill items ordered by major hubs
+  // City pill items ordered by area count descending
   const pills = useMemo(() => {
     const list: Array<{ id: string; label: string; count: number; city: PakistanCity | null }> = [
-      { id: 'all', label: lang === 'ur' ? 'تمام' : 'All', count: counts.all || 189, city: null },
+      { id: 'all', label: lang === 'ur' ? 'تمام' : 'All', count: counts.all || 812, city: null },
     ];
-    for (const cityId of TARGET_CITY_IDS) {
-      const city = getCityById(cityId);
-      if (city) {
-        list.push({
-          id: city.id,
-          label: lang === 'ur' ? city.urduName : city.name,
-          count: counts[city.id] || 0,
-          city,
-        });
-      }
+    const activeCities = getAllCities()
+      .filter((city) => (counts[city.id] || 0) > 0)
+      .sort((a, b) => (counts[b.id] || 0) - (counts[a.id] || 0) || a.name.localeCompare(b.name));
+
+    for (const city of activeCities) {
+      list.push({
+        id: city.id,
+        label: lang === 'ur' ? (city.urduName || city.name) : city.name,
+        count: counts[city.id] || 0,
+        city,
+      });
     }
     return list;
   }, [counts, lang]);

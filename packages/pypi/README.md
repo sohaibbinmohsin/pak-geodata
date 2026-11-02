@@ -2,7 +2,7 @@
 
 > Comprehensive, typed, offline geographic data for all areas and cities in Pakistan.
 
-`pak-geodata` is an open-source, production-grade Python client library providing offline access to verified geographic data for Pakistan, created and maintained by [Sohaib Bin Mohsin](https://sohaibbinmohsin.com) at [The Mohsin Project Global](https://themohsinproject.org).
+`pak-geodata` is an open-source, production-grade Python client library providing offline access to verified geographic data for Pakistan.
 
 It covers all administrative provinces, 79 major and secondary cities, and foundational flagship metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers).
 
@@ -20,6 +20,16 @@ Designed with **zero runtime dependencies** (pure Python standard library), stri
 - **Spatial Nearest Neighbor**: Instant reverse geocoding via spherical Haversine distance calculations.
 - **Postal Code Resolution**: 5-digit Pakistan Post postal code lookup and reverse mapping.
 - **Fully Typed & PEP 561 Compliant**: Includes `py.typed` marker and immutable frozen dataclasses for full IDE auto-completion.
+
+---
+
+## Dataset Statistics
+
+| Administrative Level | Count | Coverage | Key Details |
+| :--- | :--- | :--- | :--- |
+| **Provinces & Territories** | **7** | 100% of Pakistan | Punjab, Sindh, KPK, Balochistan, Islamabad (ICT), Azad Jammu & Kashmir (AJK), Gilgit-Baltistan |
+| **Verified Cities** | **79** | Major & Secondary Urban Centers | District centroids, bounding boxes, administrative divisions, 5-digit postal code ranges |
+| **Flagship Metros & Regional Urban Areas** | **812** | 42 Cities Across All 7 Provinces & Territories | Foundational & verified areas across 42 metropolitan centers and regional economic hubs |
 
 ---
 
@@ -140,6 +150,8 @@ all_dha = find_areas_by_postal_code("54792")
 print(f"{len(all_dha)} areas share postal code 54792")
 ```
 
+> 📖 **Implementation Recipes**: For real-world architectural recipes, localized reporting workflows, and offline database synchronization patterns, see the [Recipes Directory](https://github.com/sohaibbinmohsin/pak-geodata/tree/main/docs/recipes).
+
 ---
 
 ## Data Models
@@ -201,7 +213,7 @@ All models are immutable frozen dataclasses (`@dataclass(frozen=True)`):
 | `get_all_cities()` | `List[PakistanCity]` | Returns all 79 verified cities |
 | `get_cities_by_province(province_id)` | `List[PakistanCity]` | Filters cities by province |
 | `get_city_by_id(id)` | `Optional[PakistanCity]` | Finds city by canonical slug |
-| `get_all_areas()` | `List[PakistanArea]` | Returns all verified areas (189 total) |
+| `get_all_areas()` | `List[PakistanArea]` | Returns all verified areas (812 total) |
 | `get_areas_by_city(city_id)` | `List[PakistanArea]` | Returns verified areas in a city |
 | `search_areas(query, city_id=None, limit=None, province_id=None)` | `List[PakistanArea]` | Ranked multi-tier search |
 | `find_area_by_postal_code(postal_code)` | `Optional[PakistanArea]` | Resolves area by 5-digit postal code |
@@ -211,6 +223,20 @@ All models are immutable frozen dataclasses (`@dataclass(frozen=True)`):
 
 ---
 
+## About The Mohsin Project
+
+> **Free software for those who do good.**
+
+`pak-geodata` is an open-source public good engineered and maintained by **[The Mohsin Project](https://themohsinproject.org)**.
+
+The Mohsin Project exists because purpose-driven organizations and emergency teams lose momentum to outdated systems, expensive proprietary APIs, and scarce technical resources. We design, engineer, and deploy centralized digital solutions entirely free of cost so that nonprofits, humanitarian initiatives, and civic developers can focus on their mission.
+
+- 💬 **Get in Touch**: [hello@themohsinproject.org](mailto:hello@themohsinproject.org)
+
+---
+
 ## License
 
-MIT © 2026 [Sohaib Bin Mohsin](https://sohaibbinmohsin.com) • [The Mohsin Project Global](https://themohsinproject.org)
+This project is open-source software licensed under the [MIT License](LICENSE).
+
+Copyright (c) 2026 [The Mohsin Project Global](https://themohsinproject.org)

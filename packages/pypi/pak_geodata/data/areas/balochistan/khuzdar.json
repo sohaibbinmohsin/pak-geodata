@@ -1,0 +1,174 @@
+[
+  {
+    "id": "khuzdar-cantt",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Khuzdar Cantonment",
+    "urduName": "خضدار کینٹ",
+    "aliases": [
+      "Khuzdar Cantt",
+      "Cantt Khuzdar"
+    ],
+    "postalCode": "89100",
+    "coordinates": {
+      "lat": 27.812,
+      "lng": 66.621
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khuzdar-main-bazaar",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Main Bazaar & Chandni Chowk",
+    "urduName": "مین بازار و چاندنی چوک خضدار",
+    "aliases": [
+      "Chandni Chowk Khuzdar",
+      "Khuzdar City Market"
+    ],
+    "postalCode": "89100",
+    "coordinates": {
+      "lat": 27.798,
+      "lng": 66.612
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khuzdar-civil-lines",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Civil Lines",
+    "urduName": "سیول لائنز خضدار",
+    "aliases": [
+      "Civil Lines Khuzdar",
+      "Deputy Commissioner Office Khuzdar"
+    ],
+    "postalCode": "89100",
+    "coordinates": {
+      "lat": 27.805,
+      "lng": 66.605
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khuzdar-rcd-highway",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "RCD Highway Commercial Strip",
+    "urduName": "آر سی ڈی شاہراہ خضدار",
+    "aliases": [
+      "N-25 RCD Highway Khuzdar"
+    ],
+    "postalCode": "89100",
+    "coordinates": {
+      "lat": 27.788,
+      "lng": 66.618
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khuzdar-uet-campus",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "BUETK University Area",
+    "urduName": "بلوچستان یونیورسٹی آف انجینئرنگ خضدار",
+    "aliases": [
+      "BUETK Khuzdar",
+      "Engineering University Khuzdar"
+    ],
+    "postalCode": "89100",
+    "coordinates": {
+      "lat": 27.825,
+      "lng": 66.585
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khuzdar-khand",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Khand Area",
+    "urduName": "کھنڈ خضدار",
+    "aliases": [
+      "Khand Link Khuzdar"
+    ],
+    "postalCode": "89100",
+    "coordinates": {
+      "lat": 27.778,
+      "lng": 66.628
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khuzdar-sultan-ibrahim-road",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Sultan Ibrahim Road",
+    "urduName": "سلطان ابراہیم روڈ",
+    "aliases": [
+      "Sultan Ibrahim Khan Road"
+    ],
+    "postalCode": "89100",
+    "coordinates": {
+      "lat": 27.802,
+      "lng": 66.615
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khuzdar-zehri-stop",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Zehri Stop Area",
+    "urduName": "زہری اسٹاپ خضدار",
+    "aliases": [
+      "Zehri Chowk Khuzdar"
+    ],
+    "postalCode": "89100",
+    "coordinates": {
+      "lat": 27.765,
+      "lng": 66.635
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+]

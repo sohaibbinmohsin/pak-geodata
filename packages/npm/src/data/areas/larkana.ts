@@ -1,0 +1,216 @@
+import type { PakistanArea } from "../../types.js";
+
+export const larkanaAreas: readonly PakistanArea[] = [
+  {
+    "id": "larkana-vip-road",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "VIP Road",
+    "urduName": "وی آئی پی روڈ لاڑکانہ",
+    "aliases": [
+      "VIP Road Larkana"
+    ],
+    "postalCode": "77150",
+    "coordinates": {
+      "lat": 27.562,
+      "lng": 68.215
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "larkana-sachal-colony",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Sachal Colony",
+    "urduName": "سچل کالونی لاڑکانہ",
+    "aliases": [
+      "Sachal Colony Larkana"
+    ],
+    "postalCode": "77150",
+    "coordinates": {
+      "lat": 27.568,
+      "lng": 68.222
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "larkana-chandka-medical",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Chandka Medical College Area",
+    "urduName": "چانڈکا میڈیکل ایریا لاڑکانہ",
+    "aliases": [
+      "CMC Hospital Area Larkana"
+    ],
+    "postalCode": "77150",
+    "coordinates": {
+      "lat": 27.558,
+      "lng": 68.208
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "larkana-station-road",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Station Road Commercial",
+    "urduName": "اسٹیشن روڈ لاڑکانہ",
+    "aliases": [
+      "Larkana Railway Station Road"
+    ],
+    "postalCode": "77150",
+    "coordinates": {
+      "lat": 27.554,
+      "lng": 68.228
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "larkana-lahori-mohalla",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Lahori Mohalla",
+    "urduName": "لاہوری محلہ لاڑکانہ",
+    "aliases": [
+      "Lahori Mohalla Larkana"
+    ],
+    "postalCode": "77150",
+    "coordinates": {
+      "lat": 27.551,
+      "lng": 68.219
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "larkana-murad-wahan",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Murad Wahan",
+    "urduName": "مراد واہن لاڑکانہ",
+    "aliases": [
+      "Murad Wahan Mohalla"
+    ],
+    "postalCode": "77150",
+    "coordinates": {
+      "lat": 27.545,
+      "lng": 68.211
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "larkana-resham-gali",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Resham Gali (Shahi Bazaar)",
+    "urduName": "ریشم گلی لاڑکانہ",
+    "aliases": [
+      "Shahi Bazaar Larkana",
+      "Resham Gali Bazaar"
+    ],
+    "postalCode": "77150",
+    "coordinates": {
+      "lat": 27.556,
+      "lng": 68.216
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "larkana-airport-road",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Airport Road (Mohenjo-daro Road)",
+    "urduName": "ایئرپورٹ روڈ لاڑکانہ",
+    "aliases": [
+      "Mohenjodaro Road Larkana"
+    ],
+    "postalCode": "77150",
+    "coordinates": {
+      "lat": 27.538,
+      "lng": 68.195
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "larkana-rice-canal-east",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Rice Canal East",
+    "urduName": "رائس کینال ایسٹ لاڑکانہ",
+    "aliases": [
+      "Rice Canal Bank Road"
+    ],
+    "postalCode": "77150",
+    "coordinates": {
+      "lat": 27.572,
+      "lng": 68.235
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "larkana-industrial-area",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Small Industrial Estate",
+    "urduName": "سمال انڈسٹریل اسٹیٹ لاڑکانہ",
+    "aliases": [
+      "SIE Larkana",
+      "Wagan Road Industrial"
+    ],
+    "postalCode": "77150",
+    "coordinates": {
+      "lat": 27.585,
+      "lng": 68.242
+    },
+    "type": "industrial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+];
