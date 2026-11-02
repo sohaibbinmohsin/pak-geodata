@@ -2304,5 +2304,232 @@
     ],
     "verified": true,
     "provinceId": "sindh"
+  },
+  {
+    "id": "karachi-lyari",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Lyari",
+    "urduName": "لیاری",
+    "aliases": [
+      "Lyari Town",
+      "Lea Market",
+      "Cheel Chowk Lyari"
+    ],
+    "postalCode": "74600",
+    "coordinates": {
+      "lat": 24.872,
+      "lng": 66.998
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-ranchore-line",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Ranchore Line",
+    "urduName": "رنچھوڑ لائن",
+    "aliases": [
+      "Ranchore Line Burns Road",
+      "Jubilee Market Area"
+    ],
+    "postalCode": "74200",
+    "coordinates": {
+      "lat": 24.858,
+      "lng": 67.016
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-sohrab-goth",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Sohrab Goth",
+    "urduName": "سہراب گوٹھ",
+    "aliases": [
+      "Sohrab Goth M9",
+      "Super Highway Gateway",
+      "Sohrab Goth Bus Terminal"
+    ],
+    "postalCode": "75340",
+    "coordinates": {
+      "lat": 24.945,
+      "lng": 67.086
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-numaish",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Numaish",
+    "urduName": "نمائش",
+    "aliases": [
+      "Numaish Chowrangi",
+      "Gurumandir Numaish",
+      "Mazar-e-Quaid Numaish"
+    ],
+    "postalCode": "74400",
+    "coordinates": {
+      "lat": 24.876,
+      "lng": 67.035
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-golimar",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Golimar",
+    "urduName": "گولیمار",
+    "aliases": [
+      "Rizvia Society Golimar",
+      "Golimar Chowrangi"
+    ],
+    "postalCode": "74600",
+    "coordinates": {
+      "lat": 24.896,
+      "lng": 67.025
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-malir-city",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Malir City",
+    "urduName": "ملیر سٹی",
+    "aliases": [
+      "Malir 15",
+      "Kala Board Malir",
+      "Saudabad Malir"
+    ],
+    "postalCode": "75080",
+    "coordinates": {
+      "lat": 24.898,
+      "lng": 67.195
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-orangi-town",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Orangi Town",
+    "urduName": "اورنگی ٹاؤن",
+    "aliases": [
+      "Orangi",
+      "Banaras Orangi",
+      "Qatar Hospital Area"
+    ],
+    "postalCode": "75800",
+    "coordinates": {
+      "lat": 24.948,
+      "lng": 67.005
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-mehmoodabad",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Mehmoodabad",
+    "urduName": "محمود آباد",
+    "aliases": [
+      "Mehmoodabad No 1",
+      "Chanesar Goth",
+      "Manzoor Colony Belt"
+    ],
+    "postalCode": "75460",
+    "coordinates": {
+      "lat": 24.851,
+      "lng": 67.072
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-drigh-road",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Drigh Road",
+    "urduName": "ڈرگ روڈ",
+    "aliases": [
+      "Drigh Road Station",
+      "Shahrah-e-Faisal Drigh Road"
+    ],
+    "postalCode": "75350",
+    "coordinates": {
+      "lat": 24.885,
+      "lng": 67.132
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-tower",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Merewether Tower",
+    "urduName": "ٹاور",
+    "aliases": [
+      "Tower Karachi",
+      "Merewether Clock Tower",
+      "I.I. Chundrigar Tower"
+    ],
+    "postalCode": "74000",
+    "coordinates": {
+      "lat": 24.848,
+      "lng": 67.001
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ]
