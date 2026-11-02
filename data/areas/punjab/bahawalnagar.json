@@ -1,0 +1,171 @@
+[
+  {
+    "id": "bahawalnagar-civil-lines",
+    "name": "Civil Lines",
+    "coordinates": {
+      "lat": 29.998,
+      "lng": 73.252
+    },
+    "postalCode": "62300",
+    "aliases": [
+      "Civil Lines Bahawalnagar",
+      "District Courts Area"
+    ],
+    "cityId": "bahawalnagar",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "سول لائنز",
+    "type": "commercial"
+  },
+  {
+    "id": "bahawalnagar-model-town",
+    "name": "Model Town",
+    "coordinates": {
+      "lat": 30.005,
+      "lng": 73.259
+    },
+    "postalCode": "62300",
+    "aliases": [
+      "Model Town Bahawalnagar"
+    ],
+    "cityId": "bahawalnagar",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "ماڈل ٹاؤن",
+    "type": "neighborhood"
+  },
+  {
+    "id": "bahawalnagar-rail-town",
+    "name": "Rail Town",
+    "coordinates": {
+      "lat": 29.993,
+      "lng": 73.248
+    },
+    "postalCode": "62300",
+    "aliases": [
+      "Railway Junction Colony Bahawalnagar"
+    ],
+    "cityId": "bahawalnagar",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "ریل ٹاؤن",
+    "type": "neighborhood"
+  },
+  {
+    "id": "bahawalnagar-jinnah-colony",
+    "name": "Jinnah Colony",
+    "coordinates": {
+      "lat": 30.002,
+      "lng": 73.262
+    },
+    "postalCode": "62300",
+    "aliases": [
+      "Jinnah Town Bahawalnagar"
+    ],
+    "cityId": "bahawalnagar",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "جناح کالونی",
+    "type": "neighborhood"
+  },
+  {
+    "id": "bahawalnagar-haroonabad-road",
+    "name": "Haroonabad Road",
+    "coordinates": {
+      "lat": 29.988,
+      "lng": 73.255
+    },
+    "postalCode": "62300",
+    "aliases": [
+      "Bahawalnagar Haroonabad Road"
+    ],
+    "cityId": "bahawalnagar",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "ہارون آباد روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "bahawalnagar-minchinabad-road",
+    "name": "Minchinabad Road",
+    "coordinates": {
+      "lat": 30.012,
+      "lng": 73.264
+    },
+    "postalCode": "62300",
+    "aliases": [
+      "Bahawalnagar Minchinabad Road"
+    ],
+    "cityId": "bahawalnagar",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "منچن آباد روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "bahawalnagar-chishtian-road",
+    "name": "Chishtian Road",
+    "coordinates": {
+      "lat": 29.992,
+      "lng": 73.238
+    },
+    "postalCode": "62300",
+    "aliases": [
+      "Bahawalnagar Chishtian Highway"
+    ],
+    "cityId": "bahawalnagar",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "چشتیاں روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "bahawalnagar-grain-market",
+    "name": "Grain Market",
+    "coordinates": {
+      "lat": 29.996,
+      "lng": 73.256
+    },
+    "postalCode": "62300",
+    "aliases": [
+      "Ghalla Mandi Bahawalnagar"
+    ],
+    "cityId": "bahawalnagar",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "غلہ منڈی",
+    "type": "commercial"
+  }
+]

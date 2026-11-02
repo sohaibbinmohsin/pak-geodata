@@ -1,0 +1,171 @@
+[
+  {
+    "id": "samundri-katchery-bazar",
+    "name": "Katchery Bazar",
+    "coordinates": {
+      "lat": 31.063,
+      "lng": 72.952
+    },
+    "postalCode": "37300",
+    "aliases": [
+      "Samundri Katchery Bazar",
+      "Tehsil Chowk"
+    ],
+    "cityId": "samundri",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "کچہری بازار",
+    "type": "commercial"
+  },
+  {
+    "id": "samundri-mandi-bazar",
+    "name": "Mandi Bazar",
+    "coordinates": {
+      "lat": 31.065,
+      "lng": 72.954
+    },
+    "postalCode": "37300",
+    "aliases": [
+      "Ghalla Mandi Samundri"
+    ],
+    "cityId": "samundri",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "منڈی بازار",
+    "type": "commercial"
+  },
+  {
+    "id": "samundri-faisalabad-road",
+    "name": "Faisalabad Road",
+    "coordinates": {
+      "lat": 31.071,
+      "lng": 72.958
+    },
+    "postalCode": "37300",
+    "aliases": [
+      "Samundri Faisalabad Road"
+    ],
+    "cityId": "samundri",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "فیصل آباد روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "samundri-rajana-road",
+    "name": "Rajana Road",
+    "coordinates": {
+      "lat": 31.058,
+      "lng": 72.946
+    },
+    "postalCode": "37300",
+    "aliases": [
+      "Samundri Rajana Highway"
+    ],
+    "cityId": "samundri",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "راجانہ روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "samundri-gojra-road",
+    "name": "Gojra Road",
+    "coordinates": {
+      "lat": 31.067,
+      "lng": 72.944
+    },
+    "postalCode": "37300",
+    "aliases": [
+      "Samundri Gojra Highway"
+    ],
+    "cityId": "samundri",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "گوجرہ روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "samundri-mohallah-islamnagar",
+    "name": "Mohallah Islamnagar",
+    "coordinates": {
+      "lat": 31.061,
+      "lng": 72.959
+    },
+    "postalCode": "37300",
+    "aliases": [
+      "Islam Nagar Samundri"
+    ],
+    "cityId": "samundri",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "محلہ اسلام نگر",
+    "type": "neighborhood"
+  },
+  {
+    "id": "samundri-tandlianwala-road",
+    "name": "Tandlianwala Road",
+    "coordinates": {
+      "lat": 31.059,
+      "lng": 72.963
+    },
+    "postalCode": "37300",
+    "aliases": [
+      "Samundri Tandlianwala Road"
+    ],
+    "cityId": "samundri",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "تاندلیانوالہ روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "samundri-canal-rest-house-colony",
+    "name": "Canal Rest House Colony",
+    "coordinates": {
+      "lat": 31.069,
+      "lng": 72.949
+    },
+    "postalCode": "37300",
+    "aliases": [
+      "Canal Colony Samundri"
+    ],
+    "cityId": "samundri",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "کینال ریسٹ ہاؤس کالونی",
+    "type": "neighborhood"
+  }
+]
