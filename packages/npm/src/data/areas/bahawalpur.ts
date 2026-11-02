@@ -254,5 +254,135 @@ export const bahawalpurAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "bahawalpur-shahi-bazaar",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Shahi Bazaar",
+    "urduName": "شاہی بازار",
+    "aliases": [
+      "Shahi Bazar Bahawalpur",
+      "Chowk Fawwara Bazaar"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.398,
+      "lng": 71.682
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-farid-gate",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Farid Gate",
+    "urduName": "فرید گیٹ",
+    "aliases": [
+      "Farid Darwaza",
+      "Farid Gate Bahawalpur"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.395,
+      "lng": 71.685
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-iub-baghdad-campus",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "IUB Baghdad-ul-Jadeed Campus",
+    "urduName": "اسلامیہ یونیورسٹی بغداد الجدید کیمپس",
+    "aliases": [
+      "Baghdad Campus IUB",
+      "Islamia University Bahawalpur"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.378,
+      "lng": 71.725
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-bindrabi-colony",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Bindrabi Colony",
+    "urduName": "بندرابی کالونی",
+    "aliases": [
+      "Bindrabi Town",
+      "Bindrabi Bahawalpur"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.405,
+      "lng": 71.672
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-mori-gate",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Mori Gate",
+    "urduName": "موری گیٹ",
+    "aliases": [
+      "Mori Darwaza Bahawalpur"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.393,
+      "lng": 71.679
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bahawalpur-ahmadpuri-gate",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Ahmadpuri Gate",
+    "urduName": "احمد پوری گیٹ",
+    "aliases": [
+      "Ahmadpuri Darwaza Bahawalpur"
+    ],
+    "postalCode": "63100",
+    "coordinates": {
+      "lat": 29.401,
+      "lng": 71.676
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];

@@ -1108,5 +1108,183 @@ export const rawalpindiAreas: readonly PakistanArea[] = [
     ],
     "verified": true,
     "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-raja-bazaar",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Raja Bazaar",
+    "urduName": "راجہ بازار",
+    "aliases": [
+      "Raja Bazar",
+      "Main City Raja Bazaar",
+      "Fawwara Chowk Raja Bazaar"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.606,
+      "lng": 73.056
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-bhabra-bazaar",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Bhabra Bazaar",
+    "urduName": "بھابڑا بازار",
+    "aliases": [
+      "Bhabra Bazar Rawalpindi",
+      "Historic Bhabra Quarter"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.612,
+      "lng": 73.061
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-mohanpura",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Mohanpura",
+    "urduName": "موہن پورہ",
+    "aliases": [
+      "Mohan Pura",
+      "Mohanpura Rawalpindi"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.608,
+      "lng": 73.067
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-kartarpura",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Kartarpura",
+    "urduName": "کرتار پورہ",
+    "aliases": [
+      "Kartarpura Food Street",
+      "Kartarpura Rawalpindi"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.615,
+      "lng": 73.069
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-pirwadhai-adda",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Pirwadhai Bus Adda",
+    "urduName": "پیرودھائی اڈا",
+    "aliases": [
+      "Pirwadhai Terminal",
+      "General Bus Stand Pirwadhai",
+      "Pirwadhai Mor"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.628,
+      "lng": 73.042
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-faizabad-adda",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Faizabad Interchange Terminal",
+    "urduName": "فیض آباد انٹرچینج ٹرمینل",
+    "aliases": [
+      "Faizabad Rawalpindi",
+      "Faizabad Adda",
+      "Faizabad Murree Road"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.662,
+      "lng": 73.082
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-dhok-ratta",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Dhok Ratta",
+    "urduName": "ڈھوک رتہ",
+    "aliases": [
+      "Dhok Ratta Rawalpindi",
+      "Railway Workshop Dhok Ratta"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.598,
+      "lng": 73.048
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-dhok-khabba",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Dhok Khabba",
+    "urduName": "ڈھوک کھبہ",
+    "aliases": [
+      "Dhok Khabba Rawalpindi"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.619,
+      "lng": 73.076
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];

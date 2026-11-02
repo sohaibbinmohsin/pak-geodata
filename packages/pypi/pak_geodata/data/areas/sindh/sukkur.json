@@ -254,5 +254,137 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "sukkur-old-sukkur",
+    "cityId": "sukkur",
+    "provinceId": "sindh",
+    "name": "Old Sukkur",
+    "urduName": "پرانا سکھر",
+    "aliases": [
+      "Purana Sukkur",
+      "Old City Sukkur"
+    ],
+    "postalCode": "65200",
+    "coordinates": {
+      "lat": 27.718,
+      "lng": 68.868
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sukkur-bunder-road",
+    "cityId": "sukkur",
+    "provinceId": "sindh",
+    "name": "Bunder Road",
+    "urduName": "بندر روڈ",
+    "aliases": [
+      "Bandar Road Sukkur",
+      "Riverfront Bunder Road"
+    ],
+    "postalCode": "65200",
+    "coordinates": {
+      "lat": 27.692,
+      "lng": 68.858
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sukkur-queens-road",
+    "cityId": "sukkur",
+    "provinceId": "sindh",
+    "name": "Queens Road",
+    "urduName": "کوئینز روڈ",
+    "aliases": [
+      "Queens Road Commercial",
+      "Queens Road Sukkur"
+    ],
+    "postalCode": "65200",
+    "coordinates": {
+      "lat": 27.701,
+      "lng": 68.862
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sukkur-golimar",
+    "cityId": "sukkur",
+    "provinceId": "sindh",
+    "name": "Golimar",
+    "urduName": "گولیمار",
+    "aliases": [
+      "Golimar Sukkur",
+      "Golimar Residential Area"
+    ],
+    "postalCode": "65200",
+    "coordinates": {
+      "lat": 27.685,
+      "lng": 68.835
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sukkur-ayub-gate",
+    "cityId": "sukkur",
+    "provinceId": "sindh",
+    "name": "Ayub Gate",
+    "urduName": "ایوب گیٹ",
+    "aliases": [
+      "Ayub Gate Sukkur",
+      "Ayub Gate Chowk"
+    ],
+    "postalCode": "65200",
+    "coordinates": {
+      "lat": 27.712,
+      "lng": 68.855
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sukkur-panj-gulla",
+    "cityId": "sukkur",
+    "provinceId": "sindh",
+    "name": "Panj Gulla",
+    "urduName": "پنج گلہ",
+    "aliases": [
+      "Panj Gulla Waterworks",
+      "Hilltop Panj Gulla"
+    ],
+    "postalCode": "65200",
+    "coordinates": {
+      "lat": 27.704,
+      "lng": 68.845
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ]

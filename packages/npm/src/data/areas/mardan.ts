@@ -213,5 +213,71 @@ export const mardanAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "mardan-gaju-khan-chowk",
+    "cityId": "mardan",
+    "provinceId": "kpk",
+    "name": "Gaju Khan Chowk",
+    "urduName": "گجو خان چوک",
+    "aliases": [
+      "Gaju Khan Center",
+      "Main Bazaar Gaju Khan"
+    ],
+    "postalCode": "23200",
+    "coordinates": {
+      "lat": 34.198,
+      "lng": 72.045
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "mardan-general-bus-stand",
+    "cityId": "mardan",
+    "provinceId": "kpk",
+    "name": "General Bus Stand Mardan",
+    "urduName": "جنرل بس اسٹینڈ مردان",
+    "aliases": [
+      "Mardan Bus Adda",
+      "Nowshera Road Bus Terminal"
+    ],
+    "postalCode": "23200",
+    "coordinates": {
+      "lat": 34.205,
+      "lng": 72.055
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "mardan-bicket-ganj",
+    "cityId": "mardan",
+    "provinceId": "kpk",
+    "name": "Bicket Ganj",
+    "urduName": "بکٹ گنج",
+    "aliases": [
+      "Bicket Ganj Bazaar",
+      "Historic Bicket Ganj"
+    ],
+    "postalCode": "23200",
+    "coordinates": {
+      "lat": 34.192,
+      "lng": 72.038
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];

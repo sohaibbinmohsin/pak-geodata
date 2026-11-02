@@ -4,7 +4,7 @@
 
 `pak-geodata` is an open-source, production-grade TypeScript and JavaScript client library providing offline access to verified geographic data for Pakistan.
 
-It covers all administrative provinces, all 79 major and secondary cities (100% national urban coverage), and 1,108 foundational metropolitan and regional areas across all 79 cities.
+It covers all administrative provinces, all 79 major and secondary cities (100% national urban coverage), and 1,224 foundational metropolitan and regional areas across all 79 cities.
 
 Designed with **zero runtime dependencies**, strict geofencing, sub-millisecond lookups, and modular tree-shakeable subpath exports.
 
@@ -91,7 +91,7 @@ for (const area of lahoreAreas.slice(0, 5)) {
 
 // Total verified areas in Pakistan
 const allAreas = getAllAreas();
-console.log(`Total verified areas: ${allAreas.length}`); // 1108
+console.log(`Total verified areas: ${allAreas.length}`); // 1224
 ```
 
 ### 3. Modular Subpath Imports (Tree-Shaking)

@@ -609,5 +609,137 @@ export const multanAreas: readonly PakistanArea[] = [
     ],
     "verified": true,
     "provinceId": "punjab"
+  },
+  {
+    "id": "multan-delhi-gate",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Delhi Gate",
+    "urduName": "دہلی گیٹ",
+    "aliases": [
+      "Delhi Darwaza Multan",
+      "Walled City Delhi Gate"
+    ],
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.198,
+      "lng": 71.482
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "multan-bohar-gate",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Bohar Gate",
+    "urduName": "بوہڑ گیٹ",
+    "aliases": [
+      "Bohar Darwaza",
+      "Walled City Bohar Gate"
+    ],
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.192,
+      "lng": 71.472
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "multan-haram-gate",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Haram Gate",
+    "urduName": "حرم گیٹ",
+    "aliases": [
+      "Haram Darwaza",
+      "Walled City Haram Gate"
+    ],
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.195,
+      "lng": 71.478
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "multan-pak-gate",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Pak Gate",
+    "urduName": "پاک گیٹ",
+    "aliases": [
+      "Pak Darwaza",
+      "Walled City Pak Gate"
+    ],
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.189,
+      "lng": 71.481
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "multan-lohari-gate",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Lohari Gate",
+    "urduName": "لوہاری گیٹ",
+    "aliases": [
+      "Lohari Darwaza Multan",
+      "Walled City Lohari Gate"
+    ],
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.196,
+      "lng": 71.47
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "multan-daulat-gate",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Daulat Gate",
+    "urduName": "دولت گیٹ",
+    "aliases": [
+      "Daulat Darwaza Multan",
+      "Walled City Daulat Gate"
+    ],
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.202,
+      "lng": 71.48
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];

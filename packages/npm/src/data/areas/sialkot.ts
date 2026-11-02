@@ -302,5 +302,115 @@ export const sialkotAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "sialkot-adda-pasrurian",
+    "cityId": "sialkot",
+    "provinceId": "punjab",
+    "name": "Adda Pasrurian",
+    "urduName": "اڈا پسروریاں",
+    "aliases": [
+      "Pasrur Road Adda",
+      "Adda Pasrur Sialkot"
+    ],
+    "postalCode": "51310",
+    "coordinates": {
+      "lat": 32.488,
+      "lng": 74.542
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sialkot-hajipura",
+    "cityId": "sialkot",
+    "provinceId": "punjab",
+    "name": "Hajipura",
+    "urduName": "حاجی پورہ",
+    "aliases": [
+      "Hajipura Road",
+      "Haji Pura Sialkot"
+    ],
+    "postalCode": "51310",
+    "coordinates": {
+      "lat": 32.495,
+      "lng": 74.531
+    },
+    "type": "industrial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sialkot-hunterpura",
+    "cityId": "sialkot",
+    "provinceId": "punjab",
+    "name": "Hunterpura",
+    "urduName": "ہنٹر پورہ",
+    "aliases": [
+      "Hunter Pura",
+      "Hunterpura Cantt Border"
+    ],
+    "postalCode": "51310",
+    "coordinates": {
+      "lat": 32.508,
+      "lng": 74.548
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sialkot-circular-road",
+    "cityId": "sialkot",
+    "provinceId": "punjab",
+    "name": "Circular Road",
+    "urduName": "سرکلر روڈ",
+    "aliases": [
+      "Circular Road Sialkot",
+      "Fort Perimeter Road"
+    ],
+    "postalCode": "51310",
+    "coordinates": {
+      "lat": 32.492,
+      "lng": 74.538
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sialkot-kotli-behram",
+    "cityId": "sialkot",
+    "provinceId": "punjab",
+    "name": "Kotli Behram",
+    "urduName": "کوٹلی بہرام",
+    "aliases": [
+      "Kotli Bahram",
+      "Defence Road Kotli Behram"
+    ],
+    "postalCode": "51310",
+    "coordinates": {
+      "lat": 32.478,
+      "lng": 74.528
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];

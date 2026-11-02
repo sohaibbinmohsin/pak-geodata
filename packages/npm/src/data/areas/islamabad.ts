@@ -1796,5 +1796,74 @@ export const islamabadAreas: readonly PakistanArea[] = [
     ],
     "verified": true,
     "provinceId": "islamabad-ict"
+  },
+  {
+    "id": "islamabad-tarnol",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "name": "Tarnol",
+    "urduName": "ترنول",
+    "aliases": [
+      "Tarnol Islamabad",
+      "Tarnol GT Road Chowk",
+      "Tarnol Railway Station"
+    ],
+    "postalCode": "45211",
+    "coordinates": {
+      "lat": 33.655,
+      "lng": 72.915
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "islamabad-golra-station",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "name": "Golra Sharif Railway Station",
+    "urduName": "گولڑہ شریف اسٹیشن",
+    "aliases": [
+      "Golra Junction",
+      "Golra Railway Heritage",
+      "Golra Station"
+    ],
+    "postalCode": "45200",
+    "coordinates": {
+      "lat": 33.668,
+      "lng": 72.951
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "islamabad-national-police-foundation",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "name": "National Police Foundation O-9",
+    "urduName": "نیشنل پولیس فاؤنڈیشن",
+    "aliases": [
+      "NPF O-9",
+      "Police Foundation Sector O-9",
+      "PWD Road Police Foundation"
+    ],
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.568,
+      "lng": 73.135
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];

@@ -431,5 +431,136 @@ export const quettaAreas: readonly PakistanArea[] = [
     ],
     "verified": true,
     "provinceId": "balochistan"
+  },
+  {
+    "id": "quetta-chaman-phatak",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Chaman Phatak",
+    "urduName": "چمن پھاٹک",
+    "aliases": [
+      "Chaman Railway Crossing Quetta",
+      "Phatak Area Quetta"
+    ],
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.188,
+      "lng": 67.008
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "quetta-marriabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Marriabad",
+    "urduName": "مری آباد",
+    "aliases": [
+      "Alamdar Road Marriabad",
+      "Marri Abad Quetta"
+    ],
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.198,
+      "lng": 67.042
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "quetta-patel-bagh",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Patel Bagh",
+    "urduName": "پٹیل باغ",
+    "aliases": [
+      "Meconghy Road Patel Bagh",
+      "Patel Road Quetta"
+    ],
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.195,
+      "lng": 67.025
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "quetta-arbab-town",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Arbab Town",
+    "urduName": "ارباب ٹاؤن",
+    "aliases": [
+      "Arbab Karam Khan Road",
+      "Arbab Town Sariab"
+    ],
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.165,
+      "lng": 66.995
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "quetta-sariab-road",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Sariab Road Degree College Belt",
+    "urduName": "سریاب روڈ",
+    "aliases": [
+      "Sariab Quetta",
+      "Sariab Road University Belt"
+    ],
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.155,
+      "lng": 66.988
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "quetta-sabzal-road",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Sabzal Road",
+    "urduName": "سبزل روڈ",
+    "aliases": [
+      "Sabzal Road Western Quetta"
+    ],
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.182,
+      "lng": 66.975
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];
