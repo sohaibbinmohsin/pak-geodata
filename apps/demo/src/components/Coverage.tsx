@@ -69,39 +69,39 @@ export default function Coverage({ className = '' }: CoverageProps) {
   return (
     <section
       id="coverage"
-      className={`relative py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto scroll-mt-20 ${className}`}
+      className={`relative py-12 sm:py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto scroll-mt-20 w-full min-w-0 max-w-full overflow-hidden ${className}`}
     >
       {/* Section Header */}
-      <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+      <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 w-full min-w-0">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 mb-4">
           <Database className="w-3.5 h-3.5" />
           <span>Dataset Intelligence</span>
         </div>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+        <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight break-words">
           Comprehensive Metropolitan Coverage
         </h2>
-        <p className="text-sm sm:text-base text-neutral-400 mt-3 leading-relaxed">
+        <p className="text-xs sm:text-base text-neutral-400 mt-3 leading-relaxed break-words">
           Curated across 7 provinces, 40 verified cities, and 189 foundational metropolitan areas with district bounds and postal codes.
         </p>
       </div>
 
       {/* All 40 Cities Master Dataset Directory */}
-      <div className="glass-chrome rounded-2xl border border-white/10 overflow-hidden">
+      <div className="glass-chrome rounded-2xl border border-white/10 overflow-hidden w-full min-w-0 max-w-full">
         {/* Table Controls Bar: Title & Search */}
-        <div className="p-4 sm:p-6 border-b border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div>
-            <h3 className="text-lg font-bold text-white flex items-center gap-2">
-              <Layers className="w-5 h-5 text-cyan-400" />
+        <div className="p-4 sm:p-6 border-b border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 sm:gap-4 w-full min-w-0">
+          <div className="w-full md:w-auto min-w-0">
+            <h3 className="text-base sm:text-lg font-bold text-white flex items-center gap-2 flex-wrap">
+              <Layers className="w-5 h-5 text-cyan-400 shrink-0" />
               <span>Full City Directory (40 Verified Cities)</span>
             </h3>
-            <p className="text-xs text-neutral-400 mt-0.5">
+            <p className="text-xs text-neutral-400 mt-0.5 break-words">
               Showing {filteredCities.length} of {allCities.length} verified cities with bounding box coordinates and 5-digit postal code ranges.
             </p>
           </div>
 
-          <div className="flex items-center gap-3 w-full md:w-auto">
+          <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto min-w-0">
             {/* Search Input */}
-            <div className="relative w-full md:w-64">
+            <div className="relative flex-1 md:w-64 min-w-0">
               <Search className="w-4 h-4 text-neutral-400 absolute left-3 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
@@ -125,7 +125,7 @@ export default function Coverage({ className = '' }: CoverageProps) {
         </div>
 
         {/* Province Filter Chips */}
-        <div className="px-4 py-3 sm:px-6 bg-black/20 border-b border-white/5 flex items-center gap-1.5 overflow-x-auto">
+        <div className="px-3 py-2.5 sm:px-6 bg-black/20 border-b border-white/5 flex items-center gap-1.5 overflow-x-auto w-full min-w-0 max-w-full no-scrollbar select-none">
           <button
             type="button"
             onClick={() => setSelectedProvinceFilter('all')}
@@ -158,7 +158,7 @@ export default function Coverage({ className = '' }: CoverageProps) {
         </div>
 
         {/* Mobile Responsive Cards List (< 768px) */}
-        <div className="block md:hidden divide-y divide-white/5 max-h-[560px] overflow-y-auto">
+        <div className="block md:hidden divide-y divide-white/5 max-h-[560px] overflow-y-auto w-full min-w-0 no-scrollbar">
           {filteredCities.length === 0 ? (
             <div className="py-12 text-center text-neutral-400 text-sm">
               No cities match your search criteria.
@@ -171,11 +171,11 @@ export default function Coverage({ className = '' }: CoverageProps) {
               const provinceName = provinces.find((p) => p.id === city.provinceId)?.name || city.provinceId;
 
               return (
-                <div key={city.id} className="p-4 space-y-2.5 hover:bg-white/[0.02] transition-colors">
+                <div key={city.id} className="p-3.5 sm:p-4 space-y-2.5 hover:bg-white/[0.02] transition-colors w-full min-w-0">
                   {/* Top row: City name (English bold white, Urdu in Nastaliq text-emerald-300), Flagship badge */}
-                  <div className="flex items-center justify-between gap-2">
-                    <div className="flex items-baseline gap-2">
-                      <span className="font-sans font-bold text-white text-base">
+                  <div className="flex items-center justify-between gap-2 min-w-0">
+                    <div className="flex items-baseline gap-2 min-w-0 flex-wrap">
+                      <span className="font-sans font-bold text-white text-base truncate">
                         {city.name}
                       </span>
                       <span className="font-nastaliq text-emerald-300 text-sm" dir="rtl">
@@ -190,7 +190,7 @@ export default function Coverage({ className = '' }: CoverageProps) {
                   </div>
 
                   {/* Second row: Province name, District name, and City slug */}
-                  <div className="text-xs text-neutral-400 flex items-center flex-wrap gap-1.5 font-sans">
+                  <div className="text-xs text-neutral-400 flex items-center flex-wrap gap-1.5 font-sans min-w-0 break-words">
                     <span className="text-neutral-300">{provinceName}</span>
                     <span className="text-neutral-600">·</span>
                     <span className="text-neutral-300">{city.district} District</span>
@@ -199,7 +199,7 @@ export default function Coverage({ className = '' }: CoverageProps) {
                   </div>
 
                   {/* Third row: Postal code range pill */}
-                  <div className="flex items-center gap-2 text-xs">
+                  <div className="flex items-center gap-2 text-xs flex-wrap min-w-0">
                     <span className="text-neutral-500 text-[11px] font-mono">Postal Range:</span>
                     {city.postalCodeRange ? (
                       <span className="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-cyan-300 font-mono text-[11px]">
@@ -211,21 +211,21 @@ export default function Coverage({ className = '' }: CoverageProps) {
                   </div>
 
                   {/* Bottom row: GPS Centroid and Status badge */}
-                  <div className="flex items-center justify-between pt-1.5 text-xs">
-                    <span className="text-neutral-400 font-mono text-[11px] flex items-center gap-1">
+                  <div className="flex items-center justify-between pt-1.5 text-xs flex-wrap gap-2 min-w-0">
+                    <span className="text-neutral-400 font-mono text-[11px] flex items-center gap-1 min-w-0">
                       <MapPin className="w-3 h-3 text-neutral-500 shrink-0" />
-                      <span>
+                      <span className="truncate">
                         {city.coordinates.lat.toFixed(4)}° N, {city.coordinates.lng.toFixed(4)}° E
                       </span>
                     </span>
 
                     {areasCount > 0 ? (
-                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-semibold text-[11px]">
+                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-semibold text-[11px] shrink-0">
                         <CheckCircle2 className="w-3 h-3" />
                         <span>{areasCount} verified</span>
                       </span>
                     ) : (
-                      <span className="inline-flex items-center px-2 py-0.5 rounded bg-white/5 border border-white/5 text-neutral-500 text-[11px]">
+                      <span className="inline-flex items-center px-2 py-0.5 rounded bg-white/5 border border-white/5 text-neutral-500 text-[11px] shrink-0">
                         Bounds ready
                       </span>
                     )}
