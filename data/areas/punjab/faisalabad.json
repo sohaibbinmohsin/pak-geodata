@@ -880,5 +880,225 @@
     ],
     "verified": true,
     "provinceId": "punjab"
+  },
+  {
+    "id": "faisalabad-kutchery-bazaar",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Kutchery Bazaar",
+    "urduName": "کچہری بازار",
+    "aliases": [
+      "Kachehri Bazar",
+      "Kutchery Bazar Clock Tower"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4225,
+      "lng": 73.0791
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "faisalabad-montgomery-bazaar",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Montgomery Bazaar",
+    "urduName": "منٹگمری بازار",
+    "aliases": [
+      "Montgomery Bazar",
+      "Sahiwal Bazar Faisalabad"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4215,
+      "lng": 73.0825
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "faisalabad-rail-bazaar",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Rail Bazaar",
+    "urduName": "ریل بازار",
+    "aliases": [
+      "Rail Bazar Clock Tower",
+      "Rail Bazar Faisalabad"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4187,
+      "lng": 73.0835
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "faisalabad-karkhana-bazaar",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Karkhana Bazaar",
+    "urduName": "کارخانہ بازار",
+    "aliases": [
+      "Karkhana Bazar Clock Tower",
+      "Karkhana Market Faisalabad"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4158,
+      "lng": 73.0825
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "faisalabad-jhang-bazaar",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Jhang Bazaar",
+    "urduName": "جھنگ بازار",
+    "aliases": [
+      "Jhang Bazar Clock Tower",
+      "Jhang Road Bazar"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4149,
+      "lng": 73.0791
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "faisalabad-bhawana-bazaar",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Bhawana Bazaar",
+    "urduName": "بھوانہ بازار",
+    "aliases": [
+      "Bhawana Bazar Clock Tower",
+      "Bhowana Bazar"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4158,
+      "lng": 73.0757
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "faisalabad-aminpur-bazaar",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Aminpur Bazaar",
+    "urduName": "امین پور بازار",
+    "aliases": [
+      "Aminpur Bazar Clock Tower",
+      "Aminpur Market"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4187,
+      "lng": 73.0747
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "faisalabad-chiniot-bazaar",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chiniot Bazaar",
+    "urduName": "چنیوٹ بازار",
+    "aliases": [
+      "Chiniot Bazar Clock Tower",
+      "Chiniot Market Faisalabad"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.4215,
+      "lng": 73.0757
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "faisalabad-dijkot-road",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Dijkot Road",
+    "urduName": "ڈجکوٹ روڈ",
+    "aliases": [
+      "Dijkot Road Faisalabad",
+      "Dijkot Mor"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.405,
+      "lng": 73.071
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "faisalabad-samundri-road",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Samundri Road Corridor",
+    "urduName": "سمندری روڈ کوریڈور",
+    "aliases": [
+      "Samundri Road Faisalabad",
+      "Novelty Chowk Samundri Road"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.392,
+      "lng": 73.065
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ]

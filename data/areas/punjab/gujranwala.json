@@ -474,5 +474,139 @@
     ],
     "verified": true,
     "provinceId": "punjab"
+  },
+  {
+    "id": "gujranwala-garjakh",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "name": "Garjakh",
+    "urduName": "گوجرانوالہ گرجاکھ",
+    "aliases": [
+      "Garjakh Town",
+      "Garjakh Road",
+      "Historic Garjakh"
+    ],
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.148,
+      "lng": 74.168
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujranwala-dhullay",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "name": "Dhullay",
+    "urduName": "دھلے",
+    "aliases": [
+      "Dhullay Chowk",
+      "Dhullay Gujranwala"
+    ],
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.138,
+      "lng": 74.175
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujranwala-gondlanwala",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "name": "Gondlanwala",
+    "urduName": "گونڈلانوالہ",
+    "aliases": [
+      "Gondlanwala Chowk",
+      "Gondlanwala Road Area"
+    ],
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.142,
+      "lng": 74.192
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujranwala-khiali-shahpur",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "name": "Khiali Shahpur",
+    "urduName": "خیالی شاہ پور",
+    "aliases": [
+      "Khiali",
+      "Khiali Bypass",
+      "Khiali Town"
+    ],
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.172,
+      "lng": 74.155
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujranwala-ferozwala",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "name": "Ferozwala",
+    "urduName": "فیروزوالہ",
+    "aliases": [
+      "Ferozwala Gujranwala",
+      "Ferozwala Road Area"
+    ],
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.155,
+      "lng": 74.215
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujranwala-climax-industrial",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "name": "Climax Industrial Zone",
+    "urduName": "کلائمیکس انڈسٹریل زون",
+    "aliases": [
+      "Climax Fan Industrial Area",
+      "GT Road Climax Zone"
+    ],
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.185,
+      "lng": 74.185
+    },
+    "type": "industrial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ]
