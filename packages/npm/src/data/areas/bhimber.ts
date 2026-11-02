@@ -1,0 +1,181 @@
+import type { PakistanArea } from "../../types.js";
+
+export const bhimberAreas: readonly PakistanArea[] = [
+  {
+    "id": "bhimber-main-bazaar",
+    "cityId": "bhimber",
+    "provinceId": "ajk",
+    "name": "Main Bazaar Bhimber",
+    "urduName": "مرکزی بازار بھمبر",
+    "aliases": [
+      "Bhimber Bazaar",
+      "Saddar Bhimber",
+      "Old Bazaar Bhimber"
+    ],
+    "postalCode": "10050",
+    "coordinates": {
+      "lat": 32.974,
+      "lng": 74.078
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bhimber-kachehri-chowk",
+    "cityId": "bhimber",
+    "provinceId": "ajk",
+    "name": "Kachehri Chowk",
+    "urduName": "کچہری چوک بھمبر",
+    "aliases": [
+      "District Courts Bhimber",
+      "Katchery Chowk Bhimber"
+    ],
+    "postalCode": "10050",
+    "coordinates": {
+      "lat": 32.9765,
+      "lng": 74.081
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bhimber-college-road",
+    "cityId": "bhimber",
+    "provinceId": "ajk",
+    "name": "College Road",
+    "urduName": "کالج روڈ بھمبر",
+    "aliases": [
+      "Degree College Road Bhimber",
+      "College Chowk Bhimber"
+    ],
+    "postalCode": "10050",
+    "coordinates": {
+      "lat": 32.972,
+      "lng": 74.075
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bhimber-mirpur-road",
+    "cityId": "bhimber",
+    "provinceId": "ajk",
+    "name": "Mirpur Road",
+    "urduName": "میرپور روڈ بھمبر",
+    "aliases": [
+      "Mirpur Bhimber Highway",
+      "Mirpur Bypass Bhimber"
+    ],
+    "postalCode": "10050",
+    "coordinates": {
+      "lat": 32.981,
+      "lng": 74.085
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bhimber-samani-mor",
+    "cityId": "bhimber",
+    "provinceId": "ajk",
+    "name": "Samani Mor",
+    "urduName": "سمانی موڑ بھمبر",
+    "aliases": [
+      "Samani Chowk Bhimber",
+      "Samani Road Bhimber"
+    ],
+    "postalCode": "10050",
+    "coordinates": {
+      "lat": 32.969,
+      "lng": 74.072
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bhimber-civil-hospital",
+    "cityId": "bhimber",
+    "provinceId": "ajk",
+    "name": "Civil Hospital Area",
+    "urduName": "سول ہسپتال بھمبر",
+    "aliases": [
+      "DHQ Hospital Bhimber",
+      "Hospital Road Bhimber"
+    ],
+    "postalCode": "10050",
+    "coordinates": {
+      "lat": 32.978,
+      "lng": 74.079
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bhimber-baghsar-road",
+    "cityId": "bhimber",
+    "provinceId": "ajk",
+    "name": "Baghsar Road",
+    "urduName": "بگسر روڈ بھمبر",
+    "aliases": [
+      "Baghsar Fort Road Bhimber",
+      "Baghsar Colony"
+    ],
+    "postalCode": "10060",
+    "coordinates": {
+      "lat": 32.984,
+      "lng": 74.068
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bhimber-dhandar",
+    "cityId": "bhimber",
+    "provinceId": "ajk",
+    "name": "Dhandar Kalan",
+    "urduName": "ڈھنڈر بھمبر",
+    "aliases": [
+      "Dhandar Bhimber",
+      "Dhandar Chowk"
+    ],
+    "postalCode": "10070",
+    "coordinates": {
+      "lat": 32.962,
+      "lng": 74.092
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+];

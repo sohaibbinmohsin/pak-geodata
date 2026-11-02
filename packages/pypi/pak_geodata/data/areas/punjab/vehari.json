@@ -1,0 +1,173 @@
+[
+  {
+    "id": "vehari-danewal",
+    "name": "Danewal",
+    "coordinates": {
+      "lat": 30.046,
+      "lng": 72.358
+    },
+    "postalCode": "61100",
+    "aliases": [
+      "Danewal Town",
+      "Danewal Vehari"
+    ],
+    "cityId": "vehari",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "دانیوال",
+    "type": "neighborhood"
+  },
+  {
+    "id": "vehari-peoples-colony",
+    "name": "People's Colony",
+    "coordinates": {
+      "lat": 30.038,
+      "lng": 72.348
+    },
+    "postalCode": "61100",
+    "aliases": [
+      "Peoples Colony Vehari"
+    ],
+    "cityId": "vehari",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "پیپلز کالونی",
+    "type": "neighborhood"
+  },
+  {
+    "id": "vehari-sharqi-colony",
+    "name": "Sharqi Colony",
+    "coordinates": {
+      "lat": 30.041,
+      "lng": 72.361
+    },
+    "postalCode": "61100",
+    "aliases": [
+      "Sharqi Colony Vehari"
+    ],
+    "cityId": "vehari",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "شرقی کالونی",
+    "type": "neighborhood"
+  },
+  {
+    "id": "vehari-club-road",
+    "name": "Club Road",
+    "coordinates": {
+      "lat": 30.044,
+      "lng": 72.349
+    },
+    "postalCode": "61100",
+    "aliases": [
+      "Vehari Club Road",
+      "Officers Club Area"
+    ],
+    "cityId": "vehari",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "کلب روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "vehari-model-town",
+    "name": "Model Town",
+    "coordinates": {
+      "lat": 30.052,
+      "lng": 72.355
+    },
+    "postalCode": "61100",
+    "aliases": [
+      "Model Town Vehari"
+    ],
+    "cityId": "vehari",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "ماڈل ٹاؤن",
+    "type": "neighborhood"
+  },
+  {
+    "id": "vehari-muslim-town",
+    "name": "Muslim Town",
+    "coordinates": {
+      "lat": 30.035,
+      "lng": 72.356
+    },
+    "postalCode": "61100",
+    "aliases": [
+      "Muslim Town Vehari"
+    ],
+    "cityId": "vehari",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "مسلم ٹاؤن",
+    "type": "neighborhood"
+  },
+  {
+    "id": "vehari-faisal-town",
+    "name": "Faisal Town",
+    "coordinates": {
+      "lat": 30.048,
+      "lng": 72.366
+    },
+    "postalCode": "61100",
+    "aliases": [
+      "Faisal Town Vehari"
+    ],
+    "cityId": "vehari",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "فیصل ٹاؤن",
+    "type": "neighborhood"
+  },
+  {
+    "id": "vehari-karkhana-bazar",
+    "name": "Karkhana Bazar",
+    "coordinates": {
+      "lat": 30.0395,
+      "lng": 72.3525
+    },
+    "postalCode": "61100",
+    "aliases": [
+      "Main Bazar Vehari",
+      "Karkhana Market"
+    ],
+    "cityId": "vehari",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "کارخانہ بازار",
+    "type": "commercial"
+  }
+]

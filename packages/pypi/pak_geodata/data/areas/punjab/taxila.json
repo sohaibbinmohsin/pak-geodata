@@ -1,0 +1,182 @@
+[
+  {
+    "id": "taxila-main-bazaar",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Main Bazaar Taxila",
+    "urduName": "مرکزی بازار ٹیکسلا",
+    "aliases": [
+      "Taxila Bazaar",
+      "Saddar Taxila",
+      "City Center Taxila"
+    ],
+    "postalCode": "47080",
+    "coordinates": {
+      "lat": 33.746,
+      "lng": 72.839
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "taxila-museum-area",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Taxila Museum Archaeological Area",
+    "urduName": "ٹیکسلا میوزیم",
+    "aliases": [
+      "Taxila Museum",
+      "Dharmarajika Link Taxila",
+      "Archaeological Site Taxila"
+    ],
+    "postalCode": "47080",
+    "coordinates": {
+      "lat": 33.749,
+      "lng": 72.825
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "taxila-cantt",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Taxila Cantonment & HIT",
+    "urduName": "ٹیکسلا کینٹ ہیوی انڈسٹریز",
+    "aliases": [
+      "Heavy Industries Taxila",
+      "Taxila Cantt",
+      "HIT Colony Taxila"
+    ],
+    "postalCode": "47080",
+    "coordinates": {
+      "lat": 33.738,
+      "lng": 72.848
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "taxila-railway-station",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Taxila Junction Railway Station",
+    "urduName": "ٹیکسلا جنکشن ریلوے اسٹیشن",
+    "aliases": [
+      "Station Road Taxila",
+      "Railway Junction Taxila"
+    ],
+    "postalCode": "47080",
+    "coordinates": {
+      "lat": 33.743,
+      "lng": 72.834
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "taxila-hitec-university",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "HITEC University & Educational City",
+    "urduName": "ہائی ٹیک یونیورسٹی ٹیکسلا",
+    "aliases": [
+      "HITEC Taxila",
+      "Taxila Education City",
+      "UET Taxila Link"
+    ],
+    "postalCode": "47080",
+    "coordinates": {
+      "lat": 33.734,
+      "lng": 72.855
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "taxila-gt-road",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "GT Road Taxila Corridor",
+    "urduName": "جی ٹی روڈ ٹیکسلا",
+    "aliases": [
+      "Grand Trunk Road Taxila",
+      "Rawalpindi Peshawar Road Taxila"
+    ],
+    "postalCode": "47080",
+    "coordinates": {
+      "lat": 33.752,
+      "lng": 72.845
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "taxila-faisal-shaheed-road",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Faisal Shaheed Road",
+    "urduName": "فیصل شہید روڈ ٹیکسلا",
+    "aliases": [
+      "Faisal Shaheed Chowk",
+      "Main Commercial Strip Taxila"
+    ],
+    "postalCode": "47080",
+    "coordinates": {
+      "lat": 33.741,
+      "lng": 72.837
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "taxila-timber-market",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Timber Market Taxila",
+    "urduName": "لکڑ منڈی ٹیکسلا",
+    "aliases": [
+      "Lakkar Mandi Taxila",
+      "Timber Market GT Road Taxila"
+    ],
+    "postalCode": "47080",
+    "coordinates": {
+      "lat": 33.748,
+      "lng": 72.842
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+]

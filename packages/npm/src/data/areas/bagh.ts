@@ -1,0 +1,183 @@
+import type { PakistanArea } from "../../types.js";
+
+export const baghAreas: readonly PakistanArea[] = [
+  {
+    "id": "bagh-main-bazaar",
+    "cityId": "bagh",
+    "provinceId": "ajk",
+    "name": "Main Bazaar Bagh",
+    "urduName": "مرکزی بازار باغ",
+    "aliases": [
+      "Bagh Bazaar",
+      "Saddar Bazaar Bagh",
+      "Bagh City Center"
+    ],
+    "postalCode": "12500",
+    "coordinates": {
+      "lat": 33.9805,
+      "lng": 73.7895
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bagh-district-complex",
+    "cityId": "bagh",
+    "provinceId": "ajk",
+    "name": "District Complex & Kachehri",
+    "urduName": "ضلعی کمپلیکس باغ",
+    "aliases": [
+      "Kachehri Bagh",
+      "District Courts Bagh",
+      "DC Office Bagh"
+    ],
+    "postalCode": "12500",
+    "coordinates": {
+      "lat": 33.983,
+      "lng": 73.792
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bagh-zaman-chowk",
+    "cityId": "bagh",
+    "provinceId": "ajk",
+    "name": "Zaman Chowk",
+    "urduName": "زمان چوک باغ",
+    "aliases": [
+      "Zaman Chowk Bagh City",
+      "Chowk Zaman Bagh"
+    ],
+    "postalCode": "12500",
+    "coordinates": {
+      "lat": 33.978,
+      "lng": 73.787
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bagh-huda-bari",
+    "cityId": "bagh",
+    "provinceId": "ajk",
+    "name": "Huda Bari",
+    "urduName": "ہُدا باری باغ",
+    "aliases": [
+      "Hudabari Bagh",
+      "Huda Bari Mohallah"
+    ],
+    "postalCode": "12500",
+    "coordinates": {
+      "lat": 33.975,
+      "lng": 73.782
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bagh-banni-pasari",
+    "cityId": "bagh",
+    "provinceId": "ajk",
+    "name": "Banni Pasari",
+    "urduName": "بنی پساری باغ",
+    "aliases": [
+      "Bani Pasari Bagh",
+      "Banni Pasari Mohallah"
+    ],
+    "postalCode": "12500",
+    "coordinates": {
+      "lat": 33.988,
+      "lng": 73.795
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bagh-sudhan-galli-road",
+    "cityId": "bagh",
+    "provinceId": "ajk",
+    "name": "Sudhan Galli Road",
+    "urduName": "سدھن گلی روڈ باغ",
+    "aliases": [
+      "Sudhangali Road Bagh",
+      "Sudhan Gali Bypass"
+    ],
+    "postalCode": "12510",
+    "coordinates": {
+      "lat": 33.992,
+      "lng": 73.801
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bagh-chhatra",
+    "cityId": "bagh",
+    "provinceId": "ajk",
+    "name": "Chhatra",
+    "urduName": "چھترا باغ",
+    "aliases": [
+      "Chhatra Bagh",
+      "Chhatra No 1",
+      "Chhatra No 2"
+    ],
+    "postalCode": "12520",
+    "coordinates": {
+      "lat": 33.968,
+      "lng": 73.778
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "bagh-dhulli",
+    "cityId": "bagh",
+    "provinceId": "ajk",
+    "name": "Dhulli",
+    "urduName": "دھلی باغ",
+    "aliases": [
+      "Dhulli Bagh",
+      "Dhulli Valley Link"
+    ],
+    "postalCode": "12530",
+    "coordinates": {
+      "lat": 33.955,
+      "lng": 73.765
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+];

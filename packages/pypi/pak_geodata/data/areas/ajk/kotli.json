@@ -1,0 +1,180 @@
+[
+  {
+    "id": "kotli-main-bazaar",
+    "cityId": "kotli",
+    "provinceId": "ajk",
+    "name": "Main Bazaar Kotli",
+    "urduName": "مرکزی بازار کوٹلی",
+    "aliases": [
+      "Kotli Bazaar",
+      "Saddar Bazaar Kotli",
+      "City Center Kotli"
+    ],
+    "postalCode": "11100",
+    "coordinates": {
+      "lat": 33.515,
+      "lng": 73.9015
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "kotli-shaheed-chowk",
+    "cityId": "kotli",
+    "provinceId": "ajk",
+    "name": "Shaheed Chowk",
+    "urduName": "شہید چوک کوٹلی",
+    "aliases": [
+      "Shaheed Chowk Kotli",
+      "Chowk Shaheedan Kotli"
+    ],
+    "postalCode": "11100",
+    "coordinates": {
+      "lat": 33.514,
+      "lng": 73.903
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "kotli-district-courts",
+    "cityId": "kotli",
+    "provinceId": "ajk",
+    "name": "District Courts & Kachehri",
+    "urduName": "ضلعی کچہری کوٹلی",
+    "aliases": [
+      "Kachehri Kotli",
+      "Kotli Courts",
+      "District Complex Kotli"
+    ],
+    "postalCode": "11100",
+    "coordinates": {
+      "lat": 33.518,
+      "lng": 73.9045
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "kotli-housing-scheme",
+    "cityId": "kotli",
+    "provinceId": "ajk",
+    "name": "Kotli Housing Scheme",
+    "urduName": "ہاؤسنگ سکیم کوٹلی",
+    "aliases": [
+      "Housing Scheme Kotli",
+      "Sector A Kotli Housing"
+    ],
+    "postalCode": "11100",
+    "coordinates": {
+      "lat": 33.522,
+      "lng": 73.896
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "kotli-gulhar",
+    "cityId": "kotli",
+    "provinceId": "ajk",
+    "name": "Gulhar Sharif",
+    "urduName": "گلہاڑ شریف کوٹلی",
+    "aliases": [
+      "Gulhar Kotli",
+      "Darbar Gulhar Sharif"
+    ],
+    "postalCode": "11110",
+    "coordinates": {
+      "lat": 33.502,
+      "lng": 73.886
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "kotli-panjpera",
+    "cityId": "kotli",
+    "provinceId": "ajk",
+    "name": "Panjpera",
+    "urduName": "پنج پیڑہ کوٹلی",
+    "aliases": [
+      "Panjpera Kotli",
+      "Panjpera Chowk"
+    ],
+    "postalCode": "11100",
+    "coordinates": {
+      "lat": 33.528,
+      "lng": 73.912
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "kotli-balah-kote",
+    "cityId": "kotli",
+    "provinceId": "ajk",
+    "name": "Balah Kote",
+    "urduName": "بالا کوٹ کوٹلی",
+    "aliases": [
+      "Bala Kote Kotli",
+      "Balah Kot Kotli"
+    ],
+    "postalCode": "11120",
+    "coordinates": {
+      "lat": 33.535,
+      "lng": 73.895
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "kotli-uok-campus",
+    "cityId": "kotli",
+    "provinceId": "ajk",
+    "name": "University of Kotli Campus",
+    "urduName": "یونیورسٹی آف کوٹلی کیمپس",
+    "aliases": [
+      "UOK Kotli",
+      "University Road Kotli"
+    ],
+    "postalCode": "11100",
+    "coordinates": {
+      "lat": 33.525,
+      "lng": 73.908
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+]

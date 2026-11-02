@@ -1,0 +1,181 @@
+[
+  {
+    "id": "swabi-main-bazaar",
+    "cityId": "swabi",
+    "provinceId": "kpk",
+    "name": "Main Bazaar Swabi",
+    "urduName": "مرکزی بازار صوابی",
+    "aliases": [
+      "Swabi Bazaar",
+      "Saddar Bazaar Swabi",
+      "City Center Swabi"
+    ],
+    "postalCode": "23430",
+    "coordinates": {
+      "lat": 34.12,
+      "lng": 72.4695
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "swabi-karnal-sher-khan-chowk",
+    "cityId": "swabi",
+    "provinceId": "kpk",
+    "name": "Karnal Sher Khan Chowk",
+    "urduName": "کرنل شیر خان چوک صوابی",
+    "aliases": [
+      "Sher Khan Chowk Swabi",
+      "Yadgar Chowk Swabi"
+    ],
+    "postalCode": "23430",
+    "coordinates": {
+      "lat": 34.1225,
+      "lng": 72.472
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "swabi-district-courts",
+    "cityId": "swabi",
+    "provinceId": "kpk",
+    "name": "District Courts Complex",
+    "urduName": "ضلعی کچہری صوابی",
+    "aliases": [
+      "Kachehri Swabi",
+      "DC Office Swabi",
+      "Judicial Complex Swabi"
+    ],
+    "postalCode": "23430",
+    "coordinates": {
+      "lat": 34.126,
+      "lng": 72.478
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "swabi-jehangira-road",
+    "cityId": "swabi",
+    "provinceId": "kpk",
+    "name": "Jehangira Road",
+    "urduName": "جہانگیرا روڈ صوابی",
+    "aliases": [
+      "Jehangira Swabi Highway",
+      "Jehangira Chowk Swabi"
+    ],
+    "postalCode": "23430",
+    "coordinates": {
+      "lat": 34.112,
+      "lng": 72.461
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "swabi-mardan-road",
+    "cityId": "swabi",
+    "provinceId": "kpk",
+    "name": "Mardan Road",
+    "urduName": "مردان روڈ صوابی",
+    "aliases": [
+      "Mardan Highway Swabi",
+      "Mardan Bypass Swabi"
+    ],
+    "postalCode": "23430",
+    "coordinates": {
+      "lat": 34.128,
+      "lng": 72.465
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "swabi-topi-road",
+    "cityId": "swabi",
+    "provinceId": "kpk",
+    "name": "Topi Road Link",
+    "urduName": "ٹوپی روڈ صوابی",
+    "aliases": [
+      "Topi Highway Swabi",
+      "GIKI Link Road"
+    ],
+    "postalCode": "23430",
+    "coordinates": {
+      "lat": 34.118,
+      "lng": 72.485
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "swabi-shahmansoor",
+    "cityId": "swabi",
+    "provinceId": "kpk",
+    "name": "Shahmansoor Township",
+    "urduName": "شاہ منصور ٹاؤن شپ صوابی",
+    "aliases": [
+      "Shahmansoor Swabi",
+      "Shah Mansoor Medical Complex Area"
+    ],
+    "postalCode": "23440",
+    "coordinates": {
+      "lat": 34.095,
+      "lng": 72.445
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "swabi-maneri",
+    "cityId": "swabi",
+    "provinceId": "kpk",
+    "name": "Maneri",
+    "urduName": "مانیری صوابی",
+    "aliases": [
+      "Maneri Swabi",
+      "Maneri Payeen",
+      "Maneri Bala"
+    ],
+    "postalCode": "23450",
+    "coordinates": {
+      "lat": 34.135,
+      "lng": 72.482
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+]

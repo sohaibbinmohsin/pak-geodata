@@ -1,6 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { getNearestArea, isPointInBoundingBox } from '../src/geo.js';
+import { getAllAreas } from '../src/index.js';
+
+const allAreas = getAllAreas();
 
 test('isPointInBoundingBox correctly evaluates containment', () => {
   const box = {
@@ -53,13 +56,20 @@ test('getNearestArea fallback: point outside all city bounding boxes falls back 
   assert.ok(nearest.id.length > 0);
 });
 
-test('getNearestArea fallback: point inside a city with 0 areas falls back to all areas', () => {
-  // Attock center coordinates (inside Attock bounds, but Attock has 0 verified areas in dataset)
+test('getNearestArea: Attock center coordinates correctly resolve to attock area', () => {
   const attockCoords = { lat: 33.76, lng: 72.36 };
   const nearest = getNearestArea(attockCoords);
   assert.ok(nearest);
-  // Nearest verified area is in Wah Cantt, Rawalpindi, or Islamabad (~30-60km away)
-  assert.ok(nearest.cityId === 'wah-cantt' || nearest.cityId === 'rawalpindi' || nearest.cityId === 'islamabad');
+  assert.equal(nearest.cityId, 'attock');
+});
+
+test('getNearestArea fallback: candidate areas subset with 0 areas in matching city falls back to candidate pool', () => {
+  // Attock center coordinates, but candidate areas only contain Lahore areas
+  const attockCoords = { lat: 33.76, lng: 72.36 };
+  const lahoreSubset = allAreas.filter((a) => a.cityId === 'lahore');
+  const nearest = getNearestArea(attockCoords, undefined, lahoreSubset);
+  assert.ok(nearest);
+  assert.equal(nearest.cityId, 'lahore');
 });
 
 test('getNearestArea options: cityId explicitly overrides spatial pruning', () => {
