@@ -373,7 +373,7 @@ export default function Omnibar({
                 <div className="my-1.5 border-t border-white/10" />
 
                 {/* Scrollable list of 79 cities */}
-                <div className="max-h-60 overflow-y-auto space-y-0.5 pr-1 divide-y divide-white/5">
+                <div className="max-h-60 overflow-y-auto space-y-0.5 pr-1 divide-y divide-white/5 no-scrollbar">
                   {filteredCitiesList.map((c) => {
                     const areaCount = cityAreaCounts[c.id] || 0;
                     const isCurrent = selectedCity?.id === c.id;
@@ -492,7 +492,7 @@ export default function Omnibar({
               <ul
                 ref={listRef}
                 role="listbox"
-                className="overflow-y-auto divide-y divide-white/5 p-1.5 focus:outline-none"
+                className="overflow-y-auto divide-y divide-white/5 p-1.5 focus:outline-none no-scrollbar"
                 style={{ maxHeight: '330px' }}
               >
                 {results.map((area, index) => {

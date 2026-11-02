@@ -111,7 +111,7 @@ export default function AreaInspector({
       className={
         isEmbedded
           ? `relative w-full rounded-2xl glass-chrome border border-white/15 p-4 sm:p-5 space-y-4 shadow-xl select-none ${className}`
-          : `fixed inset-x-0 bottom-0 sm:bottom-5 sm:left-6 sm:inset-x-auto sm:max-w-md sm:w-[440px] z-40 pointer-events-auto glass-chrome rounded-t-3xl sm:rounded-2xl border border-white/15 shadow-2xl p-4 sm:p-5 max-h-[85vh] sm:max-h-[calc(100vh-140px)] overflow-y-auto space-y-4 animate-slide-up select-none ${className}`
+          : `fixed inset-x-0 bottom-0 sm:bottom-5 sm:left-6 sm:inset-x-auto sm:max-w-md sm:w-[440px] z-40 pointer-events-auto glass-chrome rounded-t-3xl sm:rounded-2xl border border-white/15 shadow-2xl p-4 sm:p-5 max-h-[85vh] sm:max-h-[calc(100vh-140px)] overflow-y-auto space-y-4 animate-slide-up select-none no-scrollbar ${className}`
       }
     >
       {/* Mobile Drawer Grab Handle */}

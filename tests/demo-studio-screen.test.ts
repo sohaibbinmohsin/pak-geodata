@@ -27,13 +27,13 @@ test('StudioScreen includes drawer, reverse geo drawer integration, and zero bra
   assert.ok(!content.includes('The Mohsin Project'), 'StudioScreen contains no company branding');
 });
 
-test('StudioScreen defaults selectedCity to Karachi, positions heading next to back button, and integrates top search', () => {
+test('StudioScreen defaults selectedCity to All Pakistan (null), positions heading next to back button, and integrates top search', () => {
   const screenPath = resolve(process.cwd(), 'apps/demo/src/components/StudioScreen.tsx');
   const content = readFileSync(screenPath, 'utf8');
 
   assert.ok(
-    content.includes("getCityById('karachi')"),
-    'StudioScreen must initialize selectedCity with Karachi'
+    content.includes('const [selectedCity, setSelectedCity] = useState<PakistanCity | null>(null);'),
+    'StudioScreen must initialize selectedCity with null (All Pakistan)'
   );
   assert.ok(
     content.includes('Back to Overview') && content.includes('GeoData Studio'),
@@ -42,6 +42,14 @@ test('StudioScreen defaults selectedCity to Karachi, positions heading next to b
   assert.ok(
     content.includes('h-9'),
     'StudioScreen uses uniform h-9 button heights in top row'
+  );
+  assert.ok(
+    content.includes('order-3 sm:order-2'),
+    'StudioScreen renders Omnibar search in second row on mobile and center on desktop'
+  );
+  assert.ok(
+    content.includes('no-scrollbar'),
+    'StudioScreen drawer hides scrollbars while remaining scrollable'
   );
   assert.ok(!content.includes('\u2014'), 'No em-dashes in StudioScreen');
   assert.ok(!content.includes('\u2013'), 'No en-dashes in StudioScreen');

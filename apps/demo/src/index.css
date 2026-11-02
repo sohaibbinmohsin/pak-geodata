@@ -34,6 +34,15 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* Hide scrollbars while preserving full touch and mouse scrollability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Instant Tactile Press Feedback */
 .pressable {
   transition: transform 100ms ease-out, opacity 100ms ease-out;

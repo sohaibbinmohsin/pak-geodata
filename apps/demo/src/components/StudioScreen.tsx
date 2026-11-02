@@ -50,7 +50,7 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
   const [lang, setLang] = useState<'en' | 'ur'>('en');
 
   // Filter & selection states
-  const [selectedCity, setSelectedCity] = useState<PakistanCity | null>(() => getCityById('karachi') || null);
+  const [selectedCity, setSelectedCity] = useState<PakistanCity | null>(null);
   const [selectedArea, setSelectedArea] = useState<PakistanArea | null>(null);
   const [reverseGeoPoint, setReverseGeoPoint] = useState<ReverseGeoPoint | null>(null);
 
@@ -76,19 +76,10 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
   // Synchronize area selection
   const handleSelectArea = useCallback((area: PakistanArea | null) => {
     setSelectedArea(area);
-    if (!area) {
-      setReverseGeoPoint(null);
-    } else {
-      setReverseGeoPoint({
-        clicked: area.coordinates,
-        nearest: area,
-        distanceKm: 0,
-        computationTimeMs: 0.1,
-      });
-      if (selectedCity && selectedCity.id !== area.cityId) {
-        const city = getCityById(area.cityId);
-        if (city) setSelectedCity(city);
-      }
+    setReverseGeoPoint(null);
+    if (area && selectedCity && selectedCity.id !== area.cityId) {
+      const city = getCityById(area.cityId);
+      if (city) setSelectedCity(city);
     }
   }, [selectedCity]);
 
@@ -253,10 +244,10 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
       </div>
 
 
-      {/* Top Floating Glass HUD Bar - All Controls in First Row */}
-      <header className="absolute top-3 left-3 right-3 z-30 flex items-center justify-between gap-1.5 sm:gap-3 pointer-events-none">
-        {/* Left: Back to Overview Button + GeoData Studio Heading side-by-side */}
-        <div className="flex items-center gap-1.5 sm:gap-2 pointer-events-auto shrink-0">
+      {/* Top Floating Glass HUD Bar - Responsive 2-row layout on mobile, single row on desktop */}
+      <header className="absolute top-3 left-3 right-3 z-30 flex flex-wrap items-center justify-between gap-2 pointer-events-none">
+        {/* Left: Back to Overview Button + GeoData Studio Heading (Order 1 on mobile & desktop) */}
+        <div className="order-1 flex items-center gap-1.5 sm:gap-2 pointer-events-auto shrink-0">
           <button
             type="button"
             onClick={onClose}
@@ -287,21 +278,8 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
           </div>
         </div>
 
-        {/* Center: Search Omnibar with Integrated Option A City Filter */}
-        <div className="flex-1 min-w-[120px] max-w-xl mx-1 sm:mx-2 pointer-events-auto">
-          <Omnibar
-            selectedCity={selectedCity}
-            selectedArea={selectedArea}
-            onSelectArea={handleSelectArea}
-            onSelectCity={handleSelectCity}
-            onSuggestionClick={handleSuggestionClick}
-            showSuggestions={false}
-            lang={lang}
-          />
-        </div>
-
-        {/* Right: Bilingual Segmented Toggle & Matched-Height GitHub Button */}
-        <div className="flex items-center gap-1.5 sm:gap-2 pointer-events-auto shrink-0">
+        {/* Right: Bilingual Segmented Toggle & Matched-Height GitHub Button (Order 2 on mobile, Order 3 on desktop) */}
+        <div className="order-2 sm:order-3 flex items-center gap-1.5 sm:gap-2 pointer-events-auto shrink-0">
           <div
             role="radiogroup"
             aria-label="Language selector"
@@ -344,8 +322,21 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
           >
             <Github className="w-4 h-4 text-neutral-300" />
             <span className="hidden lg:inline">GitHub</span>
-            <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+            <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400 hidden sm:inline" />
           </a>
+        </div>
+
+        {/* Center/Second Row: Search Omnibar with Integrated Option A City Filter (Order 3 full-width on mobile, Order 2 flex-1 on desktop) */}
+        <div className="order-3 sm:order-2 w-full sm:w-auto sm:flex-1 sm:max-w-xl sm:mx-2 pointer-events-auto">
+          <Omnibar
+            selectedCity={selectedCity}
+            selectedArea={selectedArea}
+            onSelectArea={handleSelectArea}
+            onSelectCity={handleSelectCity}
+            onSuggestionClick={handleSuggestionClick}
+            showSuggestions={false}
+            lang={lang}
+          />
         </div>
       </header>
 
@@ -355,7 +346,7 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
         <aside
           role="dialog"
           aria-label={`Area inspector for ${selectedArea.name}`}
-          className="absolute right-4 top-20 bottom-4 w-96 max-w-[calc(100vw-2rem)] overflow-y-auto glass-chrome rounded-2xl border border-white/10 p-5 shadow-2xl z-30 space-y-4 animate-slide-up select-none pointer-events-auto"
+          className="absolute right-4 top-28 sm:top-20 bottom-4 w-96 max-w-[calc(100vw-2rem)] overflow-y-auto glass-chrome rounded-2xl border border-white/10 p-5 shadow-2xl z-30 space-y-4 animate-slide-up select-none pointer-events-auto no-scrollbar"
         >
           {/* Top Bar: Verification Badge & Close Button */}
           <div className="flex items-center justify-between gap-2 pb-2 border-b border-white/10">
@@ -388,53 +379,6 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
               <X className="w-4 h-4" />
             </button>
           </div>
-
-          {/* Custom Reverse Geocoding Banner when opened from map tap */}
-          {reverseGeoPoint && (
-            <div className="p-3.5 rounded-2xl bg-cyan-950/40 border border-cyan-500/30 space-y-2.5 animate-pop select-none shadow-lg">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <span className="relative flex h-2.5 w-2.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-500" />
-                  </span>
-                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400">
-                    {lang === 'ur' ? 'ریورس جیو کوڈنگ' : 'Reverse Geocoding'}
-                  </span>
-                </div>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 font-medium">
-                  &lt; 0.4 ms
-                </span>
-              </div>
-
-              <div className="space-y-1.5 text-xs font-mono">
-                <div className="p-2 rounded-xl bg-black/40 border border-white/10 flex items-center justify-between">
-                  <span className="text-neutral-400 text-[11px]">GPS:</span>
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-neutral-200 select-text">{formatCoordinates(reverseGeoPoint.clicked)}</span>
-                    <button
-                      type="button"
-                      onClick={handleCopyCoords}
-                      className="text-neutral-400 hover:text-white transition-colors cursor-pointer"
-                      title="Copy GPS coordinates"
-                    >
-                      {coordsCopied ? (
-                        <Check className="w-3 h-3 text-emerald-400" />
-                      ) : (
-                        <Copy className="w-3 h-3" />
-                      )}
-                    </button>
-                  </div>
-                </div>
-
-                <div className="p-2 rounded-xl bg-black/40 border border-white/10 flex items-center justify-between">
-                  <span className="text-neutral-400 text-[11px]">Distance:</span>
-                  <span className="text-cyan-300 font-semibold">{formatDistance(reverseGeoPoint.distanceKm)}</span>
-                </div>
-              </div>
-            </div>
-          )}
-
 
           {/* Administrative Hierarchy Breadcrumbs */}
           {hierarchyNames && (
@@ -589,6 +533,52 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
                     "{alias}"
                   </span>
                 ))}
+              </div>
+            </div>
+          )}
+
+          {/* Custom Reverse Geocoding Banner when opened from map tap (after colloquial aliases) */}
+          {reverseGeoPoint && (
+            <div className="p-3.5 rounded-2xl bg-cyan-950/40 border border-cyan-500/30 space-y-2.5 animate-pop select-none shadow-lg">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="relative flex h-2.5 w-2.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-500" />
+                  </span>
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400">
+                    {lang === 'ur' ? 'ریورس جیو کوڈنگ' : 'Reverse Geocoding'}
+                  </span>
+                </div>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 font-medium">
+                  &lt; 0.4 ms
+                </span>
+              </div>
+
+              <div className="space-y-1.5 text-xs font-mono">
+                <div className="p-2 rounded-xl bg-black/40 border border-white/10 flex items-center justify-between">
+                  <span className="text-neutral-400 text-[11px]">GPS:</span>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-neutral-200 select-text">{formatCoordinates(reverseGeoPoint.clicked)}</span>
+                    <button
+                      type="button"
+                      onClick={handleCopyCoords}
+                      className="text-neutral-400 hover:text-white transition-colors cursor-pointer"
+                      title="Copy GPS coordinates"
+                    >
+                      {coordsCopied ? (
+                        <Check className="w-3 h-3 text-emerald-400" />
+                      ) : (
+                        <Copy className="w-3 h-3" />
+                      )}
+                    </button>
+                  </div>
+                </div>
+
+                <div className="p-2 rounded-xl bg-black/40 border border-white/10 flex items-center justify-between">
+                  <span className="text-neutral-400 text-[11px]">Distance:</span>
+                  <span className="text-cyan-300 font-semibold">{formatDistance(reverseGeoPoint.distanceKm)}</span>
+                </div>
               </div>
             </div>
           )}
