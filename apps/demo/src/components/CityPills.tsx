@@ -5,6 +5,7 @@ export interface CityPillsProps {
   selectedCity: PakistanCity | null;
   onSelectCity: (city: PakistanCity | null) => void;
   allAreas?: readonly PakistanArea[];
+  lang?: 'en' | 'ur';
   className?: string;
 }
 
@@ -12,6 +13,7 @@ export default function CityPills({
   selectedCity,
   onSelectCity,
   allAreas,
+  lang = 'en',
   className = '',
 }: CityPillsProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -32,7 +34,7 @@ export default function CityPills({
   // City pill items ordered by area count descending
   const pills = useMemo(() => {
     const list: Array<{ id: string; label: string; count: number; city: PakistanCity | null }> = [
-      { id: 'all', label: 'All', count: counts.all || 812, city: null },
+      { id: 'all', label: lang === 'ur' ? 'تمام' : 'All', count: counts.all || 812, city: null },
     ];
     const activeCities = getAllCities()
       .filter((city) => (counts[city.id] || 0) > 0)
@@ -41,13 +43,13 @@ export default function CityPills({
     for (const city of activeCities) {
       list.push({
         id: city.id,
-        label: city.name,
+        label: lang === 'ur' ? (city.urduName || city.name) : city.name,
         count: counts[city.id] || 0,
         city,
       });
     }
     return list;
-  }, [counts]);
+  }, [counts, lang]);
 
   const activeId = selectedCity ? selectedCity.id : 'all';
 

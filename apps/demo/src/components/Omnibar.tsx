@@ -3,16 +3,28 @@ import {
   searchAreas,
   findAreasByPostalCode,
   getAllAreas,
+  getAllCities,
+  getCityById,
   type PakistanArea,
   type PakistanCity,
 } from 'pak-geodata';
-import { Search, X, CornerDownLeft, MapPin } from 'lucide-react';
+import { Search, X, CornerDownLeft, MapPin, ChevronDown } from 'lucide-react';
+
+export const SUGGESTION_CHIPS = [
+  { label: 'dha 5', query: 'dha 5', hint: 'Alias' },
+  { label: '54000', query: '54000', hint: 'Postal' },
+  { label: 'گلبرگ', query: 'گلبرگ', hint: 'Urdu' },
+  { label: 'فیز ۳', query: 'فیز ۳', hint: 'Eastern Numerals' },
+] as const;
 
 export interface OmnibarProps {
   selectedCity: PakistanCity | null;
   selectedArea?: PakistanArea | null;
   onSelectArea: (area: PakistanArea) => void;
   onSelectCity?: (city: PakistanCity | null) => void;
+  onSuggestionClick?: (query: string) => void;
+  showSuggestions?: boolean;
+  lang?: 'en' | 'ur';
   className?: string;
 }
 
@@ -24,15 +36,58 @@ export default function Omnibar({
   selectedArea,
   onSelectArea,
   onSelectCity,
+  onSuggestionClick,
+  showSuggestions = true,
+  lang = 'en',
   className = '',
 }: OmnibarProps) {
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
+  // Scalable City Filter Dropdown state (Option A)
+  const [isCityDropdownOpen, setIsCityDropdownOpen] = useState(false);
+  const [citySearchQuery, setCitySearchQuery] = useState('');
+
   const containerRef = useRef<HTMLDivElement>(null);
+  const cityDropdownRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
+
+  const allCities = useMemo(() => getAllCities(), []);
+  const allAreas = useMemo(() => getAllAreas(), []);
+
+  // Compute area counts per city
+  const cityAreaCounts = useMemo(() => {
+    const map: Record<string, number> = {};
+    for (const a of allAreas) {
+      map[a.cityId] = (map[a.cityId] || 0) + 1;
+    }
+    return map;
+  }, [allAreas]);
+
+  // Filtered and sorted cities list for dropdown
+  const filteredCitiesList = useMemo(() => {
+    const q = citySearchQuery.trim().toLowerCase();
+    let list = allCities;
+    if (q) {
+      list = list.filter(
+        (c) =>
+          c.name.toLowerCase().includes(q) ||
+          c.id.toLowerCase().includes(q) ||
+          (c.urduName && c.urduName.includes(q)) ||
+          c.provinceId.toLowerCase().includes(q)
+      );
+    }
+    // Sort: cities with areas first (descending), then alphabetically
+    return [...list].sort((a, b) => {
+      const countA = cityAreaCounts[a.id] || 0;
+      const countB = cityAreaCounts[b.id] || 0;
+      if (countB !== countA) return countB - countA;
+      return a.name.localeCompare(b.name);
+    });
+  }, [allCities, citySearchQuery, cityAreaCounts]);
+
 
   // Sync input text when selectedArea changes from external interaction (e.g. map click)
   useEffect(() => {
@@ -128,6 +183,9 @@ export default function Omnibar({
       if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
         setIsOpen(false);
       }
+      if (cityDropdownRef.current && !cityDropdownRef.current.contains(e.target as Node)) {
+        setIsCityDropdownOpen(false);
+      }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
@@ -167,11 +225,16 @@ export default function Omnibar({
 
     if (e.key === 'Escape') {
       e.preventDefault();
+      if (isCityDropdownOpen) {
+        setIsCityDropdownOpen(false);
+        return;
+      }
       setIsOpen(false);
       inputRef.current?.blur();
       return;
     }
   };
+
 
   const selectItem = (area: PakistanArea) => {
     onSelectArea(area);
@@ -186,6 +249,44 @@ export default function Omnibar({
     inputRef.current?.focus();
   };
 
+  const handleSuggestionClick = (suggestionQuery: string) => {
+    // If a city filter is active, verify if query yields results within this city
+    if (selectedCity && onSelectCity) {
+      const scopedMatches = searchAreas(suggestionQuery, { cityId: selectedCity.id, limit: 1 });
+      const scopedPostal = /^\d{2,5}$/.test(suggestionQuery)
+        ? findAreasByPostalCode(suggestionQuery).filter((a) => a.cityId === selectedCity.id)
+        : [];
+
+      // If no matches in active city, switch to matching city or clear filter
+      if (scopedMatches.length === 0 && scopedPostal.length === 0) {
+        let match: PakistanArea | undefined;
+        if (/^\d{2,5}$/.test(suggestionQuery)) {
+          const postalList = findAreasByPostalCode(suggestionQuery);
+          match = postalList[0];
+        }
+        if (!match) {
+          const globalMatches = searchAreas(suggestionQuery, { limit: 1 });
+          match = globalMatches[0];
+        }
+
+        if (match) {
+          const matchingCity = getCityById(match.cityId);
+          onSelectCity(matchingCity || null);
+        } else {
+          onSelectCity(null);
+        }
+      }
+    }
+
+    setQuery(suggestionQuery);
+    setIsOpen(true);
+    inputRef.current?.focus();
+    onSuggestionClick?.(suggestionQuery);
+  };
+
+  void showSuggestions;
+  void handleSuggestionClick;
+
   const placeholderText = selectedCity
     ? `Search in ${selectedCity.name} (e.g. F-6, Blue Area, 44000)...`
     : 'Search 812 areas across Pakistan (e.g. DHA, ماڈل ٹاؤن, 54000)...';
@@ -197,7 +298,7 @@ export default function Omnibar({
     >
       {/* Centered Floating Glass Capsule */}
       <div
-        className={`glass-chrome relative flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-2xl transition-all duration-200 ${
+        className={`glass-chrome relative flex items-center gap-2 px-2.5 sm:px-3 h-9 rounded-xl transition-all duration-200 ${
           isOpen && results.length > 0
             ? 'ring-2 ring-emerald-500/40 border-emerald-500/50 shadow-2xl'
             : 'hover:border-white/20 focus-within:ring-2 focus-within:ring-emerald-500/40 focus-within:border-emerald-500/50'
@@ -205,24 +306,114 @@ export default function Omnibar({
       >
         <Search className="w-4 h-4 text-emerald-400 shrink-0 select-none" />
 
-        {/* Selected City Scoping Badge */}
-        {selectedCity && (
-          <div className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-medium shrink-0 select-none">
-            <MapPin className="w-3 h-3" />
-            <span>{selectedCity.name}</span>
-            {onSelectCity && (
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onSelectCity(null);
-                }}
-                className="hover:text-white transition-colors cursor-pointer"
-                title="Clear city scope"
-                aria-label="Clear city scope"
+        {/* Option A Scalable City Filter Selector */}
+        {onSelectCity && (
+          <div className="relative shrink-0" ref={cityDropdownRef}>
+            <button
+              type="button"
+              onClick={() => setIsCityDropdownOpen((prev) => !prev)}
+              className="pressable inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 text-xs font-medium cursor-pointer transition-all select-none"
+              title="Filter by city"
+              aria-label={`Filter by city: currently ${selectedCity ? selectedCity.name : 'All Pakistan'}`}
+              aria-expanded={isCityDropdownOpen}
+              aria-haspopup="listbox"
+            >
+              <MapPin className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+              <span className="font-semibold max-w-[80px] sm:max-w-[120px] truncate">
+                {selectedCity ? selectedCity.name : (lang === 'ur' ? 'تمام پاکستان' : 'All Pakistan')}
+              </span>
+              <span className="text-[10px] text-emerald-400/80 font-mono hidden sm:inline">
+                ({selectedCity ? (cityAreaCounts[selectedCity.id] || 0) : allAreas.length})
+              </span>
+              <ChevronDown className={`w-3 h-3 text-emerald-400 shrink-0 transition-transform ${isCityDropdownOpen ? 'rotate-180' : ''}`} />
+            </button>
+
+            {/* City Dropdown Menu Popover */}
+            {isCityDropdownOpen && (
+              <div
+                role="dialog"
+                aria-label="City filter menu"
+                className="glass-chrome absolute left-0 top-full mt-2 w-72 sm:w-80 rounded-2xl border border-white/15 shadow-2xl p-2 z-50 animate-pop text-left"
               >
-                <X className="w-2.5 h-2.5" />
-              </button>
+                {/* Search city filter inside dropdown */}
+                <div className="relative mb-2 px-1">
+                  <Search className="w-3.5 h-3.5 text-neutral-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                  <input
+                    type="text"
+                    value={citySearchQuery}
+                    onChange={(e) => setCitySearchQuery(e.target.value)}
+                    placeholder="Filter 79 cities..."
+                    className="w-full bg-black/40 border border-white/10 rounded-lg pl-8 pr-2.5 py-1.5 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-emerald-500/50"
+                    autoFocus
+                  />
+                </div>
+
+                {/* All Pakistan Option */}
+                <button
+                  type="button"
+                  onClick={() => {
+                    onSelectCity(null);
+                    setIsCityDropdownOpen(false);
+                  }}
+                  className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs transition-colors cursor-pointer ${
+                    !selectedCity
+                      ? 'bg-emerald-500/20 text-emerald-300 font-semibold border border-emerald-500/30'
+                      : 'text-neutral-300 hover:bg-white/5 hover:text-white'
+                  }`}
+                >
+                  <span className="flex items-center gap-1.5">
+                    <span role="img" aria-label="Pakistan flag">🇵🇰</span>
+                    <span>{lang === 'ur' ? 'تمام پاکستان' : 'All Pakistan'}</span>
+                  </span>
+                  <span className="font-mono text-[10px] text-neutral-400">
+                    {allAreas.length} areas
+                  </span>
+                </button>
+
+                <div className="my-1.5 border-t border-white/10" />
+
+                {/* Scrollable list of 79 cities */}
+                <div className="max-h-60 overflow-y-auto space-y-0.5 pr-1 divide-y divide-white/5 no-scrollbar">
+                  {filteredCitiesList.map((c) => {
+                    const areaCount = cityAreaCounts[c.id] || 0;
+                    const isCurrent = selectedCity?.id === c.id;
+                    return (
+                      <button
+                        key={c.id}
+                        type="button"
+                        onClick={() => {
+                          onSelectCity(c);
+                          setIsCityDropdownOpen(false);
+                        }}
+                        className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs transition-colors cursor-pointer ${
+                          isCurrent
+                            ? 'bg-emerald-500/20 text-emerald-300 font-semibold border border-emerald-500/30'
+                            : 'text-neutral-300 hover:bg-white/5 hover:text-white'
+                        }`}
+                      >
+                        <div className="flex items-center gap-1.5 truncate">
+                          <span className="truncate">{c.name}</span>
+                          {c.urduName && (
+                            <span className="text-[11px] font-nastaliq text-emerald-400/80 shrink-0">
+                              {c.urduName}
+                            </span>
+                          )}
+                        </div>
+                        <div className="flex items-center gap-1.5 shrink-0 ml-2">
+                          <span className="text-[10px] text-neutral-500 uppercase">{c.provinceId}</span>
+                          {areaCount > 0 ? (
+                            <span className="px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono text-[10px]">
+                              {areaCount}
+                            </span>
+                          ) : (
+                            <span className="text-[10px] text-neutral-600 font-mono">0</span>
+                          )}
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             )}
           </div>
         )}
@@ -275,6 +466,8 @@ export default function Omnibar({
         )}
       </div>
 
+
+
       {/* Live Dropdown Results */}
       {isOpen && query.trim().length > 0 && (
         <div
@@ -299,7 +492,7 @@ export default function Omnibar({
               <ul
                 ref={listRef}
                 role="listbox"
-                className="overflow-y-auto divide-y divide-white/5 p-1.5 focus:outline-none"
+                className="overflow-y-auto divide-y divide-white/5 p-1.5 focus:outline-none no-scrollbar"
                 style={{ maxHeight: '330px' }}
               >
                 {results.map((area, index) => {

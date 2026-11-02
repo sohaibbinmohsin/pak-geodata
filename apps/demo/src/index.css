@@ -11,9 +11,8 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
   background-color: #0b0f17;
   color: #f3f4f6;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", system-ui, sans-serif;
@@ -23,7 +22,7 @@ body {
 
 /* Apple Design Foundations - Floating Glass Chrome */
 .glass-chrome {
-  background: rgba(18, 18, 24, 0.75);
+  background: rgba(18, 18, 24, 0.95);
   backdrop-filter: blur(24px) saturate(190%);
   -webkit-backdrop-filter: blur(24px) saturate(190%);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -33,6 +32,15 @@ body {
 .glass-subtle {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Hide scrollbars while preserving full touch and mouse scrollability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Instant Tactile Press Feedback */
@@ -92,6 +100,11 @@ body {
   height: 100%;
   background-color: #0b0f17 !important;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif !important;
+}
+
+/* Watermark-Free Map Tile Dark Inversion Filter */
+.dark-tiles {
+  filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3);
 }
 
 /* Custom Leaflet Marker Styling */
@@ -186,9 +199,63 @@ body {
   }
 }
 
+/* Custom Cluster Number Circle Marker */
+.pak-cluster-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.pak-cluster-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 35% 35%, #10b981 0%, #059669 65%, #047857 100%);
+  border: 2px solid rgba(167, 243, 208, 0.9);
+  color: #ffffff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.7), 0 0 14px rgba(16, 185, 129, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  transition: transform 180ms cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 180ms ease;
+  user-select: none;
+}
+
+.pak-cluster-container:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8), 0 0 22px rgba(52, 211, 153, 0.8), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+  z-index: 999;
+}
+
+.pak-cluster-container.has-selected {
+  border-color: #6ee7b7;
+  box-shadow: 0 0 0 3px rgba(110, 231, 183, 0.6), 0 0 24px rgba(52, 211, 153, 0.9), 0 6px 18px rgba(0, 0, 0, 0.8);
+  animation: pak-cluster-selected-pulse 2s ease-in-out infinite;
+}
+
+.pak-cluster-beacon {
+  position: absolute;
+  inset: -6px;
+  border-radius: 9999px;
+  background: rgba(16, 185, 129, 0.3);
+  filter: blur(2px);
+  animation: pak-beacon-pulse 2.4s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes pak-cluster-selected-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 3px rgba(110, 231, 183, 0.6), 0 0 24px rgba(52, 211, 153, 0.9), 0 6px 18px rgba(0, 0, 0, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgba(110, 231, 183, 0.9), 0 0 32px rgba(52, 211, 153, 1), 0 8px 22px rgba(0, 0, 0, 0.9);
+  }
+}
+
 /* Leaflet Popup Apple Design Overrides */
 .leaflet-popup-content-wrapper {
-  background: rgba(18, 18, 24, 0.92) !important;
+  background: rgba(18, 18, 24, 0.95) !important;
   backdrop-filter: blur(24px) saturate(190%) !important;
   -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
@@ -205,7 +272,7 @@ body {
 }
 
 .leaflet-popup-tip {
-  background: rgba(18, 18, 24, 0.92) !important;
+  background: rgba(18, 18, 24, 0.95) !important;
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
   box-shadow: none !important;
 }
@@ -225,7 +292,7 @@ body {
 
 /* Tooltip Apple Glass Overrides */
 .leaflet-tooltip.pak-tooltip {
-  background: rgba(18, 18, 24, 0.88) !important;
+  background: rgba(18, 18, 24, 0.95) !important;
   backdrop-filter: blur(14px) !important;
   -webkit-backdrop-filter: blur(14px) !important;
   border: 1px solid rgba(255, 255, 255, 0.14) !important;
@@ -238,7 +305,7 @@ body {
 }
 
 .leaflet-tooltip.pak-tooltip::before {
-  border-top-color: rgba(18, 18, 24, 0.88) !important;
+  border-top-color: rgba(18, 18, 24, 0.95) !important;
 }
 
 /* Leaflet Zoom Control Glass Overrides */
@@ -252,7 +319,7 @@ body {
 }
 
 .leaflet-control-zoom a {
-  background: rgba(18, 18, 24, 0.82) !important;
+  background: rgba(18, 18, 24, 0.95) !important;
   backdrop-filter: blur(16px) !important;
   -webkit-backdrop-filter: blur(16px) !important;
   color: #d1d5db !important;

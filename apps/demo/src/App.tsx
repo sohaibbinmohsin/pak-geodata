@@ -1,101 +1,79 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './components/Header';
-import MapCanvas from './components/MapCanvas';
-import CityPills from './components/CityPills';
-import Omnibar from './components/Omnibar';
-import ReverseGeoCard, { type ReverseGeoPoint } from './components/ReverseGeoCard';
-import AreaInspector from './components/AreaInspector';
-import { getAllAreas, getCityById, type PakistanArea, type PakistanCity } from 'pak-geodata';
+import Hero from './components/Hero';
+import Capabilities from './components/Capabilities';
+import Recipes from './components/Recipes';
+import Coverage from './components/Coverage';
+import Footer from './components/Footer';
+import StudioScreen from './components/StudioScreen';
 
 export default function App() {
-  const allAreas = useMemo(() => getAllAreas(), []);
+  const isStudioPath = () => {
+    if (typeof window === 'undefined') return false;
+    return (
+      window.location.pathname === '/studio' ||
+      window.location.pathname === '/studio/' ||
+      window.location.hash === '#studio'
+    );
+  };
 
-  const [selectedCity, setSelectedCity] = useState<PakistanCity | null>(null);
-  const [selectedArea, setSelectedArea] = useState<PakistanArea | null>(null);
-  const [reverseGeoPoint, setReverseGeoPoint] = useState<ReverseGeoPoint | null>(null);
+  const [view, setView] = useState<'landing' | 'studio'>(() => {
+    return isStudioPath() ? 'studio' : 'landing';
+  });
 
-  const handleCloseInspector = useCallback(() => {
-    setSelectedArea(null);
+  useEffect(() => {
+    const handleNavigation = () => {
+      if (isStudioPath()) {
+        setView('studio');
+      } else {
+        setView('landing');
+      }
+    };
+
+    window.addEventListener('popstate', handleNavigation);
+    window.addEventListener('hashchange', handleNavigation);
+    return () => {
+      window.removeEventListener('popstate', handleNavigation);
+      window.removeEventListener('hashchange', handleNavigation);
+    };
   }, []);
 
-  const filteredAreas = useMemo(() => {
-    if (!selectedCity) return allAreas;
-    return allAreas.filter((area) => area.cityId === selectedCity.id);
-  }, [allAreas, selectedCity]);
-
-  const handleSelectArea = (area: PakistanArea | null) => {
-    setSelectedArea(area);
-    if (area) {
-      setReverseGeoPoint(null);
-    }
-    if (area && selectedCity && selectedCity.id !== area.cityId) {
-      const targetCity = getCityById(area.cityId);
-      if (targetCity) {
-        setSelectedCity(targetCity);
+  const openStudio = () => {
+    setView('studio');
+    if (typeof window !== 'undefined') {
+      if (window.location.hash === '#studio') {
+        window.history.replaceState(null, '', '/studio');
+      } else if (window.location.pathname !== '/studio') {
+        window.history.pushState(null, '', '/studio');
       }
     }
   };
 
-  const handleSelectCity = (city: PakistanCity | null) => {
-    setSelectedCity(city);
-    // If an area from another city was selected, deselect it
-    if (city && selectedArea && selectedArea.cityId !== city.id) {
-      setSelectedArea(null);
-    }
-    // If reverse geo point is from another city, clear it
-    if (city && reverseGeoPoint && reverseGeoPoint.nearest.cityId !== city.id) {
-      setReverseGeoPoint(null);
+  const closeStudio = () => {
+    setView('landing');
+    if (typeof window !== 'undefined') {
+      if (window.location.pathname === '/studio' || window.location.pathname === '/studio/') {
+        window.history.pushState(null, '', '/');
+      } else if (window.location.hash === '#studio') {
+        window.history.pushState(null, '', window.location.pathname + window.location.search);
+      }
     }
   };
 
+  if (view === 'studio') {
+    return <StudioScreen onClose={closeStudio} />;
+  }
+
   return (
-    <div className="relative w-screen h-screen bg-[#0b0f17] overflow-hidden">
-      {/* Floating Glass Header */}
+    <div className="min-h-screen bg-[#0b0f17] text-white selection:bg-emerald-500/30 selection:text-emerald-200 overflow-x-hidden flex flex-col">
       <Header />
-
-      {/* Floating Top Controls: Omnibar & City Filter Pills */}
-      <div className="fixed top-[138px] sm:top-[106px] lg:top-[74px] inset-x-3 sm:inset-x-4 z-30 pointer-events-none flex flex-col items-center gap-2">
-        <Omnibar
-          selectedCity={selectedCity}
-          selectedArea={selectedArea}
-          onSelectArea={handleSelectArea}
-          onSelectCity={handleSelectCity}
-        />
-        <CityPills
-          selectedCity={selectedCity}
-          allAreas={allAreas}
-          onSelectCity={handleSelectCity}
-        />
-      </div>
-
-      {/* Floating Area Inspector Drawer */}
-      {selectedArea && (
-        <AreaInspector
-          area={selectedArea}
-          onClose={handleCloseInspector}
-        />
-      )}
-
-      {/* Floating Reverse Geocode Result Card */}
-      {reverseGeoPoint && !selectedArea && (
-        <div className="fixed bottom-5 left-4 sm:left-6 z-40 max-w-sm w-[calc(100vw-2rem)] sm:w-96 pointer-events-none">
-          <ReverseGeoCard
-            point={reverseGeoPoint}
-            onSelectArea={handleSelectArea}
-            onDismiss={() => setReverseGeoPoint(null)}
-          />
-        </div>
-      )}
-
-      {/* Full-Screen Interactive Leaflet Map Canvas */}
-      <MapCanvas
-        areas={filteredAreas}
-        selectedArea={selectedArea}
-        selectedCity={selectedCity}
-        reverseGeoPoint={reverseGeoPoint}
-        onSelectArea={handleSelectArea}
-        onReverseGeoChange={setReverseGeoPoint}
-      />
+      <main className="flex flex-col flex-1">
+        <Hero onOpenStudio={openStudio} />
+        <Capabilities />
+        <Recipes />
+        <Coverage />
+      </main>
+      <Footer />
     </div>
   );
 }
