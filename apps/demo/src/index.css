@@ -22,7 +22,7 @@ body {
 
 /* Apple Design Foundations - Floating Glass Chrome */
 .glass-chrome {
-  background: rgba(18, 18, 24, 0.75);
+  background: rgba(18, 18, 24, 0.95);
   backdrop-filter: blur(24px) saturate(190%);
   -webkit-backdrop-filter: blur(24px) saturate(190%);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -246,7 +246,7 @@ body {
 
 /* Leaflet Popup Apple Design Overrides */
 .leaflet-popup-content-wrapper {
-  background: rgba(18, 18, 24, 0.92) !important;
+  background: rgba(18, 18, 24, 0.95) !important;
   backdrop-filter: blur(24px) saturate(190%) !important;
   -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
@@ -263,7 +263,7 @@ body {
 }
 
 .leaflet-popup-tip {
-  background: rgba(18, 18, 24, 0.92) !important;
+  background: rgba(18, 18, 24, 0.95) !important;
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
   box-shadow: none !important;
 }
@@ -283,7 +283,7 @@ body {
 
 /* Tooltip Apple Glass Overrides */
 .leaflet-tooltip.pak-tooltip {
-  background: rgba(18, 18, 24, 0.88) !important;
+  background: rgba(18, 18, 24, 0.95) !important;
   backdrop-filter: blur(14px) !important;
   -webkit-backdrop-filter: blur(14px) !important;
   border: 1px solid rgba(255, 255, 255, 0.14) !important;
@@ -296,7 +296,7 @@ body {
 }
 
 .leaflet-tooltip.pak-tooltip::before {
-  border-top-color: rgba(18, 18, 24, 0.88) !important;
+  border-top-color: rgba(18, 18, 24, 0.95) !important;
 }
 
 /* Leaflet Zoom Control Glass Overrides */
@@ -310,7 +310,7 @@ body {
 }
 
 .leaflet-control-zoom a {
-  background: rgba(18, 18, 24, 0.82) !important;
+  background: rgba(18, 18, 24, 0.95) !important;
   backdrop-filter: blur(16px) !important;
   -webkit-backdrop-filter: blur(16px) !important;
   color: #d1d5db !important;

@@ -333,7 +333,7 @@ export default function Omnibar({
               <div
                 role="dialog"
                 aria-label="City filter menu"
-                className="glass-chrome absolute left-0 top-full mt-2 w-72 sm:w-80 rounded-2xl border border-white/15 shadow-2xl p-2 z-50 animate-pop text-left bg-[#0b0f17]/95 backdrop-blur-md"
+                className="glass-chrome absolute left-0 top-full mt-2 w-72 sm:w-80 rounded-2xl border border-white/15 shadow-2xl p-2 z-50 animate-pop text-left"
               >
                 {/* Search city filter inside dropdown */}
                 <div className="relative mb-2 px-1">
