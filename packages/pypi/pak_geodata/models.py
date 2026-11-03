@@ -4,7 +4,7 @@ All models are immutable (frozen) typed dataclasses with zero external runtime d
 """
 
 from dataclasses import dataclass, field
-from typing import List, Optional
+from typing import List, Optional, Union
 
 
 @dataclass(frozen=True)
@@ -93,6 +93,21 @@ class PakistanCity:
 
 
 @dataclass(frozen=True)
+class ProvenanceSource:
+    """Audit provenance record linking an entity to its upstream database."""
+
+    provider: str
+    id: Optional[str] = None
+    type: Optional[str] = None
+    url: Optional[str] = None
+    verified_at: Optional[str] = None
+
+    @property
+    def verifiedAt(self) -> Optional[str]:
+        return self.verified_at
+
+
+@dataclass(frozen=True)
 class PakistanArea:
     """Specific neighborhood, suburb, society, or sector within a Pakistani city."""
 
@@ -106,7 +121,9 @@ class PakistanArea:
     postal_code: Optional[str] = None
     type: Optional[str] = None
     verified: bool = False
-    sources: List[str] = field(default_factory=list)
+    bounds: Optional[CityBounds] = None
+    radius_km: Optional[float] = None
+    sources: List[Union[str, ProvenanceSource]] = field(default_factory=list)
 
     @property
     def cityId(self) -> str:
@@ -123,3 +140,7 @@ class PakistanArea:
     @property
     def postalCode(self) -> Optional[str]:
         return self.postal_code
+
+    @property
+    def radiusKm(self) -> Optional[float]:
+        return self.radius_km

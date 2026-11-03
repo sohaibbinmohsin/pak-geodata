@@ -10,10 +10,12 @@ if str(PKG_DIR) not in sys.path:
     sys.path.insert(0, str(PKG_DIR))
 
 from pak_geodata import (
+    CityBounds,
     Coordinates,
     PakistanArea,
     PakistanCity,
     PakistanProvince,
+    ProvenanceSource,
     get_all_provinces,
     get_province_by_id,
     get_all_cities,
@@ -407,6 +409,32 @@ class TestPakGeodata(unittest.TestCase):
             if mod_name.startswith("pak_geodata"):
                 # module must exist and be part of our package
                 self.assertIsNotNone(mod)
+
+    def test_area_provenance_and_bounds(self):
+        source = ProvenanceSource(
+            provider="nga",
+            id="1372009",
+            type="PPLX",
+            verified_at="2026-11-03",
+        )
+        bounds = CityBounds(min_lat=31.5, max_lat=31.52, min_lng=74.33, max_lng=74.36)
+        area = PakistanArea(
+            id="lahore-gulberg-3",
+            city_id="lahore",
+            province_id="punjab",
+            name="Gulberg III",
+            coordinates=Coordinates(lat=31.512, lng=74.345),
+            bounds=bounds,
+            radius_km=1.8,
+            sources=[source, "curated"],
+        )
+        self.assertEqual(area.radius_km, 1.8)
+        self.assertEqual(area.radiusKm, 1.8)
+        self.assertEqual(area.bounds.min_lat, 31.5)
+        self.assertEqual(len(area.sources), 2)
+        self.assertIsInstance(area.sources[0], ProvenanceSource)
+        self.assertEqual(area.sources[0].provider, "nga")
+        self.assertEqual(area.sources[0].verifiedAt, "2026-11-03")
 
 
 if __name__ == "__main__":
