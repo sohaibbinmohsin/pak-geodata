@@ -306,7 +306,7 @@ export function buildOrderPayload(areaItem: PakLocationItem) {
     title: 'PWA Subpath Code-Splitting (< 5 KB)',
     filename: 'pwa-optimization.ts',
     scenario:
-      'Progressive Web App bundle optimization using pak-geodata/hierarchy to load all administrative lookups without pulling 189 neighborhood datasets into initial bundle.',
+      'Progressive Web App bundle optimization using pak-geodata/hierarchy to load all administrative lookups without pulling 812 neighborhood datasets into initial bundle.',
     benefits: [
       {
         title: 'Featherweight Footprint',
@@ -326,8 +326,8 @@ export function buildOrderPayload(areaItem: PakLocationItem) {
       },
     ],
     benchmark: '< 5 KB bundle',
-    codeSnippet: `// Subpath import: Loads ONLY 7 provinces and 40 cities (< 5 KB gzipped)
-// Does NOT bundle 189 area boundary datasets into client initial entry point
+    codeSnippet: `// Subpath import: Loads ONLY 7 provinces and 79 cities (< 5 KB gzipped)
+// Does NOT bundle 812 area boundary datasets into client initial entry point
 import {
   getProvincesAsLocationItems,
   getCitiesAsLocationItems,
@@ -343,14 +343,14 @@ async function loadCityAreas(citySlug: string) {
   // Subpath code-splitting: loads neighborhood data on demand
   const areaModule = await import(\`pak-geodata/areas/\${citySlug}\`);
   return areaModule.areas;
-}`,
+} `,
     renderCode: () => (
       <>
         <div className="text-neutral-500 italic">
-          // Subpath import: Loads ONLY 7 provinces and 40 cities (&lt; 5 KB gzipped)
+          // Subpath import: Loads ONLY 7 provinces and 79 cities (&lt; 5 KB gzipped)
         </div>
         <div className="text-neutral-500 italic">
-          // Does NOT bundle 189 area boundary datasets into client initial entry point
+          // Does NOT bundle 812 area boundary datasets into client initial entry point
         </div>
         <div>
           <span className="text-purple-400">import</span> {'{'}

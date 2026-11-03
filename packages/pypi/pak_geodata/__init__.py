@@ -13,6 +13,7 @@ from .lookups import (
     get_province_by_id,
     haversine_distance_km,
     search_areas,
+    CITY_COLLOQUIAL_ALIASES,
 )
 from .models import (
     CityBounds,
@@ -22,7 +23,7 @@ from .models import (
     PakistanProvince,
 )
 
-__version__ = "0.8.0"
+__version__ = "0.8.1"
 
 __all__ = [
     "Coordinates",
@@ -42,4 +43,5 @@ __all__ = [
     "find_areas_by_postal_code",
     "get_nearest_area",
     "haversine_distance_km",
+    "CITY_COLLOQUIAL_ALIASES",
 ]

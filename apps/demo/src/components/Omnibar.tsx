@@ -5,6 +5,7 @@ import {
   getAllAreas,
   getAllCities,
   getCityById,
+  CITY_COLLOQUIAL_ALIASES,
   type PakistanArea,
   type PakistanCity,
 } from 'pak-geodata';
@@ -66,28 +67,115 @@ export default function Omnibar({
     return map;
   }, [allAreas]);
 
-  // Filtered and sorted cities list for dropdown
+  // Pre-index area names, aliases, and Urdu names per city for O(1) keyword and alias search in city dropdown
+  const cityKeywordsMap = useMemo(() => {
+    const map = new Map<
+      string,
+      {
+        areaNames: { name: string; lower: string }[];
+        areaAliases: { alias: string; lower: string }[];
+        areaUrdu: string[];
+      }
+    >();
+    for (const city of allCities) {
+      const cityAreas = allAreas.filter((a) => a.cityId === city.id);
+      const areaNames: { name: string; lower: string }[] = [];
+      const areaAliases: { alias: string; lower: string }[] = [];
+      const areaUrdu: string[] = [];
+      for (const a of cityAreas) {
+        areaNames.push({ name: a.name, lower: a.name.toLowerCase() });
+        if (a.urduName) areaUrdu.push(a.urduName);
+        for (const al of a.aliases || []) {
+          areaAliases.push({ alias: al, lower: al.toLowerCase() });
+        }
+      }
+      map.set(city.id, { areaNames, areaAliases, areaUrdu });
+    }
+    return map;
+  }, [allCities, allAreas]);
+
+  // Filtered and sorted cities list for dropdown with alias and area support
   const filteredCitiesList = useMemo(() => {
     const q = citySearchQuery.trim().toLowerCase();
-    let list = allCities;
-    if (q) {
-      list = list.filter(
-        (c) =>
-          c.name.toLowerCase().includes(q) ||
-          c.id.toLowerCase().includes(q) ||
-          (c.urduName && c.urduName.includes(q)) ||
-          c.provinceId.toLowerCase().includes(q)
-      );
+    if (!q) {
+      return allCities
+        .map((c) => ({ city: c, matchReason: undefined as string | undefined }))
+        .sort((a, b) => {
+          const countA = cityAreaCounts[a.city.id] || 0;
+          const countB = cityAreaCounts[b.city.id] || 0;
+          if (countB !== countA) return countB - countA;
+          return a.city.name.localeCompare(b.city.name);
+        });
     }
-    // Sort: cities with areas first (descending), then alphabetically
-    return [...list].sort((a, b) => {
-      const countA = cityAreaCounts[a.id] || 0;
-      const countB = cityAreaCounts[b.id] || 0;
-      if (countB !== countA) return countB - countA;
-      return a.name.localeCompare(b.name);
-    });
-  }, [allCities, citySearchQuery, cityAreaCounts]);
 
+    const matched: { city: (typeof allCities)[0]; matchReason?: string }[] = [];
+    for (const c of allCities) {
+      let isMatch = false;
+      let matchReason: string | undefined = undefined;
+
+      // 1. Direct name, slug, district, urduName, provinceId
+      if (
+        c.name.toLowerCase().includes(q) ||
+        c.id.toLowerCase().includes(q) ||
+        (c.urduName && c.urduName.includes(q)) ||
+        c.provinceId.toLowerCase().includes(q) ||
+        c.district.toLowerCase().includes(q)
+      ) {
+        isMatch = true;
+      }
+
+      // 2. City colloquial aliases (e.g. isb, khi, lhe, pindi, fsd, lyallpur)
+      if (!isMatch) {
+        const cityAliases = CITY_COLLOQUIAL_ALIASES[c.id] || [];
+        const matchedCityAlias = cityAliases.find(
+          (al) => al.toLowerCase().includes(q) || q.includes(al.toLowerCase())
+        );
+        if (matchedCityAlias) {
+          isMatch = true;
+          matchReason = `Alias: "${matchedCityAlias}"`;
+        }
+      }
+
+      // 3. Area aliases and names in this city
+      if (!isMatch) {
+        const kw = cityKeywordsMap.get(c.id);
+        if (kw) {
+          const matchedAreaAlias = kw.areaAliases.find(
+            (al) => al.lower.includes(q) || q.includes(al.lower)
+          );
+          if (matchedAreaAlias) {
+            isMatch = true;
+            matchReason = `Alias: "${matchedAreaAlias.alias}"`;
+          } else {
+            const matchedAreaName = kw.areaNames.find(
+              (nm) => nm.lower.includes(q) || q.includes(nm.lower)
+            );
+            if (matchedAreaName) {
+              isMatch = true;
+              matchReason = `Area: "${matchedAreaName.name}"`;
+            } else {
+              const matchedUrdu = kw.areaUrdu.find((ur) => ur.includes(q) || q.includes(ur));
+              if (matchedUrdu) {
+                isMatch = true;
+                matchReason = `Urdu: "${matchedUrdu}"`;
+              }
+            }
+          }
+        }
+      }
+
+      if (isMatch) {
+        matched.push({ city: c, matchReason });
+      }
+    }
+
+    return matched.sort((a, b) => {
+      const countA = cityAreaCounts[a.city.id] || 0;
+      const countB = cityAreaCounts[b.city.id] || 0;
+      if (countB !== countA) return countB - countA;
+      return a.city.name.localeCompare(b.city.name);
+    });
+  }, [allCities, citySearchQuery, cityAreaCounts, cityKeywordsMap]);
 
   // Sync input text when selectedArea changes from external interaction (e.g. map click)
   useEffect(() => {
@@ -96,13 +184,22 @@ export default function Omnibar({
     }
   }, [selectedArea, isOpen]);
 
-  // Real-time client-side search execution
+  // Real-time client-side search execution supporting aliases and cross-city fallback
   const results = useMemo(() => {
     const trimmed = query.trim();
     if (!trimmed) return [];
 
     const cityOption = selectedCity ? { cityId: selectedCity.id } : undefined;
     let list = searchAreas(trimmed, { ...cityOption, limit: 12 });
+
+    // Cross-city fallback: if a city filter is active but produced 0 results,
+    // search globally so aliases in other cities (e.g. searching "Clifton" while in Lahore) still resolve
+    if (selectedCity && list.length === 0) {
+      const globalMatches = searchAreas(trimmed, { limit: 12 });
+      if (globalMatches.length > 0) {
+        list = globalMatches;
+      }
+    }
 
     // If query has digits (e.g. "54000" or "54"), merge postal code matches
     if (/^\d{2,5}$/.test(trimmed)) {
@@ -111,25 +208,27 @@ export default function Omnibar({
         ? allPostalMatches.filter((a) => a.cityId === selectedCity.id)
         : allPostalMatches;
 
+      const postalCandidates = scopedPostalMatches.length > 0 ? scopedPostalMatches : allPostalMatches;
+
       // Also match prefix postal codes if exact matches are few
       let prefixPostalMatches: PakistanArea[] = [];
-      if (scopedPostalMatches.length === 0) {
+      if (postalCandidates.length === 0) {
         const pool = selectedCity
-          ? getAllAreas().filter((a) => a.cityId === selectedCity.id)
-          : getAllAreas();
+          ? allAreas.filter((a) => a.cityId === selectedCity.id)
+          : allAreas;
         prefixPostalMatches = pool.filter(
           (a) => a.postalCode && a.postalCode.startsWith(trimmed)
         );
       }
 
-      const combined = [...scopedPostalMatches, ...prefixPostalMatches];
+      const combined = [...postalCandidates, ...prefixPostalMatches];
       const existingIds = new Set(list.map((a) => a.id));
       const additions = combined.filter((a) => !existingIds.has(a.id));
       list = [...additions, ...list].slice(0, 12);
     }
 
     return list;
-  }, [query, selectedCity]);
+  }, [query, selectedCity, allAreas]);
 
   // Reset selectedIndex whenever results change
   useEffect(() => {
@@ -237,6 +336,9 @@ export default function Omnibar({
 
 
   const selectItem = (area: PakistanArea) => {
+    if (selectedCity && area.cityId !== selectedCity.id && onSelectCity) {
+      onSelectCity(getCityById(area.cityId) || null);
+    }
     onSelectArea(area);
     setQuery(area.name);
     setIsOpen(false);
@@ -374,7 +476,7 @@ export default function Omnibar({
 
                 {/* Scrollable list of 79 cities */}
                 <div className="max-h-60 overflow-y-auto space-y-0.5 pr-1 divide-y divide-white/5 no-scrollbar">
-                  {filteredCitiesList.map((c) => {
+                  {filteredCitiesList.map(({ city: c, matchReason }) => {
                     const areaCount = cityAreaCounts[c.id] || 0;
                     const isCurrent = selectedCity?.id === c.id;
                     return (
@@ -396,6 +498,11 @@ export default function Omnibar({
                           {c.urduName && (
                             <span className="text-[11px] font-nastaliq text-emerald-400/80 shrink-0">
                               {c.urduName}
+                            </span>
+                          )}
+                          {matchReason && (
+                            <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-300 shrink-0">
+                              {matchReason}
                             </span>
                           )}
                         </div>

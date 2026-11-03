@@ -246,18 +246,17 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
 
       {/* Top Floating Glass HUD Bar - Responsive 2-row layout on mobile, single row on desktop */}
       <header className="absolute top-3 left-3 right-3 z-30 flex flex-wrap items-center justify-between gap-2 pointer-events-none">
-        {/* Left: Back to Overview Button + GeoData Studio Heading (Order 1 on mobile & desktop) */}
+        {/* Left: Back Button + GeoData Studio Heading (Order 1 on mobile & desktop) */}
         <div className="order-1 flex items-center gap-1.5 sm:gap-2 pointer-events-auto shrink-0">
           <button
             type="button"
             onClick={onClose}
             className="pressable h-9 inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3.5 rounded-xl glass-chrome border border-white/10 hover:border-white/20 text-xs font-mono font-medium text-neutral-200 hover:text-white transition-all cursor-pointer shadow-xl"
-            title="Back to Overview (Esc)"
-            aria-label="Back to Overview"
+            title="Back (Esc)"
+            aria-label="Back"
           >
             <ArrowLeft className="w-4 h-4 text-emerald-400 shrink-0" />
-            <span className="hidden md:inline">Back to Overview</span>
-            <span className="hidden sm:inline md:hidden">Back</span>
+            <span>Back</span>
           </button>
 
           <div className="h-9 inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 rounded-xl glass-chrome border border-white/10 shadow-xl">

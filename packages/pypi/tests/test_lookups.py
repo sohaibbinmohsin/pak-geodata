@@ -379,6 +379,27 @@ class TestPakGeodata(unittest.TestCase):
         results = search_areas("dha", limit=0)
         self.assertEqual(results, [])
 
+    def test_search_areas_colloquial_aliases(self):
+        from pak_geodata import CITY_COLLOQUIAL_ALIASES
+        self.assertIn("karachi", CITY_COLLOQUIAL_ALIASES)
+        self.assertIn("khi", CITY_COLLOQUIAL_ALIASES["karachi"])
+        self.assertIn("isb", CITY_COLLOQUIAL_ALIASES["islamabad"])
+        self.assertIn("pindi", CITY_COLLOQUIAL_ALIASES["rawalpindi"])
+        self.assertIn("lyallpur", CITY_COLLOQUIAL_ALIASES["faisalabad"])
+
+        # Test searching with colloquial city alias
+        results_isb = search_areas("isb")
+        self.assertTrue(len(results_isb) > 0)
+        self.assertTrue(all(a.city_id == "islamabad" for a in results_isb[:5]))
+
+        results_pindi = search_areas("pindi")
+        self.assertTrue(len(results_pindi) > 0)
+        self.assertTrue(all(a.city_id == "rawalpindi" for a in results_pindi[:5]))
+
+        results_lyallpur = search_areas("lyallpur")
+        self.assertTrue(len(results_lyallpur) > 0)
+        self.assertTrue(all(a.city_id == "faisalabad" for a in results_lyallpur[:5]))
+
     def test_zero_runtime_dependencies(self):
         import pak_geodata
         import pak_geodata.lookups

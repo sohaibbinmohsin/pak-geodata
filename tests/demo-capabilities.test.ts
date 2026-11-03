@@ -81,12 +81,14 @@ test('Coverage component renders simplified mobile-responsive city directory lis
   assert.ok(content.includes('Dataset Intelligence'), 'Has badge: Dataset Intelligence');
   assert.ok(content.includes('Comprehensive Metropolitan Coverage'), 'Has headline: Comprehensive Metropolitan Coverage');
   assert.ok(
-    content.includes('Curated across 7 provinces, 40 verified cities, and 189 foundational metropolitan areas with district bounds and postal codes.'),
+    content.includes('Curated across') && content.includes('verified cities'),
     'Has subhead'
   );
 
   // Directory list
   assert.ok(content.includes('Full City Directory'), 'Contains Full City Directory');
+  assert.ok(content.includes('Full City Directory ({allCities.length} Verified Cities)'), 'Uses dynamic allCities.length in Full City Directory heading');
+  assert.ok(content.includes('CITY_COLLOQUIAL_ALIASES'), 'Coverage imports and supports colloquial aliases in search');
 
   // Mobile responsiveness
   assert.ok(content.includes('block md:hidden'), 'Contains mobile responsive card list');

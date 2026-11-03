@@ -37,6 +37,29 @@ _areas_by_city: Dict[str, List[PakistanArea]] = {}
 _area_by_postal_code: Dict[str, PakistanArea] = {}
 _areas_by_postal_code: Dict[str, List[PakistanArea]] = {}
 
+CITY_COLLOQUIAL_ALIASES: Dict[str, List[str]] = {
+    "karachi": ["khi", "khi city", "city of lights", "عروس البلاد"],
+    "lahore": ["lhe", "lhr", "lahore city", "heart of pakistan", "زندہ دلان لاہور"],
+    "islamabad": ["isb", "federal capital", "ict", "capital territory"],
+    "rawalpindi": ["pindi", "rwp", "twin city"],
+    "faisalabad": ["fsd", "lyallpur", "manchester of pakistan"],
+    "multan": ["mux", "mul", "city of saints", "madinat-ul-auliya"],
+    "peshawar": ["pew", "psh", "city of flowers"],
+    "quetta": ["qta", "fruit garden of pakistan"],
+    "gujranwala": ["gwa", "city of wrestlers", "pehlwanon ka shehar"],
+    "sialkot": ["skt", "city of iqbal"],
+    "hyderabad": ["hdd", "hyd"],
+    "abbottabad": ["atd", "city of pines"],
+    "bahawalpur": ["bhv", "bwp", "princely state"],
+    "sargodha": ["sgd", "city of eagles", "shaheenon ka shehar"],
+    "sukkur": ["skz"],
+    "gwadar": ["gwd"],
+    "skardu": ["kdu"],
+    "gilgit": ["gil"],
+    "muzaffarabad": ["mzd"],
+    "mirpur": ["mpr"],
+}
+
 
 def _init_data() -> None:
     global _provinces, _province_by_id
@@ -387,6 +410,8 @@ def search_areas(
         norm_id = _normalize_string(area.id)
         norm_urdu = area.urdu_name.strip() if area.urdu_name else ""
         norm_aliases = [_normalize_string(al) for al in area.aliases]
+        city_aliases = [_normalize_string(al) for al in CITY_COLLOQUIAL_ALIASES.get(area.city_id, [])]
+        all_norm_aliases = norm_aliases + city_aliases
 
         # 1. Exact matches
         if norm_name == norm_query:
@@ -395,7 +420,7 @@ def search_areas(
             score = max(score, 950.0)
         elif norm_urdu and norm_urdu == trimmed:
             score = max(score, 900.0)
-        elif any(al == norm_query for al in norm_aliases):
+        elif any(al == norm_query for al in all_norm_aliases):
             score = max(score, 850.0)
 
         # 2. Prefix matches
@@ -407,7 +432,7 @@ def search_areas(
                 )
             elif norm_urdu and norm_urdu.startswith(trimmed):
                 score = max(score, 650.0)
-            elif any(al.startswith(norm_query) for al in norm_aliases):
+            elif any(al.startswith(norm_query) for al in all_norm_aliases):
                 score = max(score, 600.0)
 
         # 3. Substring / Token matches
@@ -416,10 +441,10 @@ def search_areas(
                 score = max(score, 500.0)
             elif norm_urdu and trimmed in norm_urdu:
                 score = max(score, 450.0)
-            elif any(norm_query in al for al in norm_aliases):
+            elif any(norm_query in al for al in all_norm_aliases):
                 score = max(score, 400.0)
             elif query_tokens:
-                area_all_text = f"{norm_name} {norm_id} {' '.join(norm_aliases)}"
+                area_all_text = f"{norm_name} {norm_id} {' '.join(all_norm_aliases)}"
                 matched_tokens = [t for t in query_tokens if t in area_all_text]
                 if len(matched_tokens) == len(query_tokens):
                     score = max(score, 300.0 + (len(query_tokens) * 20.0))
