@@ -178,20 +178,32 @@ Before adding new layers, we first make the existing 79 cities rock-solid:
 
 ---
 
-## 7. Licensing, Attribution & Data Credits
+## 7. Split-License Architecture, Attribution & Legal Clarity
 
-`pak-geodata` maintains a transparent, dual-licensing and attribution architecture ensuring complete compliance with upstream open-data providers while preserving an MIT license for the code:
+To resolve the legal conflict between permissive code licenses and database copyleft (ODbL Share-Alike), `pak-geodata` adopts the established geospatial industry standard: the **Split-License Architecture** (used by MapLibre, Leaflet, and OpenMapTiles).
 
-### 1. Code & Package Distribution License
-* The client libraries, TypeScript declarations, build pipelines, CLI tools, and demo web application are released under the permissive **MIT License**.
+### 1. Code vs. Data Split
+* **Software Code (MIT License)**:
+  * All client libraries, TypeScript files (`packages/npm/src/`), Python modules (`packages/pypi/pak_geodata/`), algorithms (Haversine, search ranking, normalizers), CLI tools, build pipelines, and web demo applications are licensed under the permissive **MIT License**.
+  * Any developer or company can freely use, embed, modify, and distribute the code in commercial, proprietary, or closed-source products without restrictions.
+* **Underlying Datasets (`LICENSE-DATA`: ODbL 1.0 & CC-BY 4.0)**:
+  * The geographic data files (`data/**/*.json`, `packages/npm/src/data/`, `packages/pypi/pak_geodata/data/`) are open datasets compiled from OpenStreetMap (ODbL 1.0), NGA / GeoNames (CC-BY 4.0), UN OCHA (CC-BY 4.0), and official public gazettes.
+  * The data is licensed under the **Open Database License (ODbL 1.0)** and **Creative Commons Attribution 4.0 (CC-BY 4.0)**.
 
-### 2. Upstream Data Licenses & Attributions
+### 2. Commercial & Closed-Source Clarity (The "Produced Work" Clause)
+Under **ODbL Section 4.3**, querying `pak-geodata` to power an address dropdown, route delivery drivers, validate a checkout form, or display map markers in a proprietary web/mobile app creates a **"Produced Work"**:
+* **Zero Viral Contamination**: Using `pak-geodata` does **NOT** require a company or developer to open-source their private application, backend logic, or user data.
+* **Attribution Requirement Only**: Commercial users simply include standard attribution (e.g., in their app's legal/credits screen or documentation):
+  > *"Geographic data courtesy of pak-geodata (OpenStreetMap contributors / NGA GeoNames / UN OCHA, ODbL & CC-BY 4.0)."*
+* **When Share-Alike Applies**: Only entities that modify, enrich, and **publicly redistribute the raw geographic database itself** must share those raw data improvements under ODbL.
+
+### 3. Upstream Data Attribution Registry
 Every external database used to curate, cross-reference, and audit `pak-geodata` is formally attributed:
 * **National Geospatial-Intelligence Agency (NGA) / GeoNames**:
-  * Toponymic gazetteer data is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+  * Toponymic gazetteer data is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
   * *Attribution*: Sourced from NGA / GeoNames geographical database (`PK.txt`).
 * **OpenStreetMap (OSM)**:
-  * Spatial geometry and historical nodes are licensed under the **Open Database License (ODbL)**.
+  * Spatial geometry and historical nodes are licensed under the **Open Database License (ODbL 1.0)**.
   * *Attribution*: © OpenStreetMap contributors (`https://www.openstreetmap.org/copyright`).
 * **UN OCHA / Humanitarian Data Exchange (HDX)**:
   * Common Operational Datasets (COD-AB, COD-PS) are licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
@@ -201,10 +213,12 @@ Every external database used to curate, cross-reference, and audit `pak-geodata`
 * **Pakistan Bureau of Statistics (PBS)**:
   * Population census boundaries and administrative unit gazettes courtesy of the Pakistan Bureau of Statistics, Government of Pakistan.
 
-### 3. Implementation of Attribution Across the Project
-* **`LICENSE` / `ATTRIBUTION.md`**: Create a formal `ATTRIBUTION.md` at repository root detailing each provider, their license terms, and upstream URLs.
-* **README Documentation**: Include a prominent **Data Sources & Credits** section across `README.md`, `packages/npm/README.md`, and `packages/pypi/README.md`.
-* **Package Manifests**: Add attribution metadata and links in `packages/npm/package.json` and `packages/pypi/pyproject.toml`.
+### 4. Implementation Deliverables
+* **`LICENSE`**: Governs all software code under the MIT License.
+* **`LICENSE-DATA`**: Created at root to govern all JSON geographic datasets under ODbL 1.0 and CC-BY 4.0.
+* **`ATTRIBUTION.md`**: Created at root detailing each provider, their license terms, and upstream URLs.
+* **README Documentation**: Add a dedicated **Licensing & Commercial Use FAQ** section explaining the "Produced Work" protection in plain English across `README.md`, `packages/npm/README.md`, and `packages/pypi/README.md`.
+* **Package Manifests**: Set `"license": "MIT"` for code, and specify data license links in `package.json` and `pyproject.toml`.
 * **Web Demo Footer**: Display clickable attribution links in the interactive demo app footer.
 
 ---
