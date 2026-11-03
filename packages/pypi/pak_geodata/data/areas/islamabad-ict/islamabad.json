@@ -1863,5 +1863,93 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "islamabad-i-10-industrial",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "name": "Sector I-10 Industrial Area",
+    "urduName": "سیکٹر آئی-10 انڈسٹریل ایریا",
+    "aliases": [
+      "I-10 Industrial",
+      "Sector I-10 Industry"
+    ],
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.652,
+      "lng": 73.032
+    },
+    "type": "industrial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "islamabad-kuri-road",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "name": "Kuri Road",
+    "urduName": "کوری روڈ",
+    "aliases": [
+      "Kuri Model Town",
+      "Kuri Road Islamabad"
+    ],
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.668,
+      "lng": 73.135
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "islamabad-sohan",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "name": "Sohan",
+    "urduName": "سوہان",
+    "aliases": [
+      "Sohan Expressway",
+      "Sohan Islamabad Highway"
+    ],
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.645,
+      "lng": 73.095
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "islamabad-barakahu-bazaar",
+    "cityId": "islamabad",
+    "provinceId": "islamabad-ict",
+    "name": "Bhara Kahu Main Bazaar",
+    "urduName": "بہارہ کہو مین بازار",
+    "aliases": [
+      "Barakahu Bazaar",
+      "Bhara Kahu Murree Road"
+    ],
+    "postalCode": "44000",
+    "coordinates": {
+      "lat": 33.742,
+      "lng": 73.175
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ]

@@ -1284,5 +1284,137 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "rawalpindi-dhok-hassu",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Dhok Hassu",
+    "urduName": "ڈھوک حسو",
+    "aliases": [
+      "Dhoke Hassu",
+      "Dhok Hassu IJP Road"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.615,
+      "lng": 73.035
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-dhok-mangtal",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Dhok Mangtal",
+    "urduName": "ڈھوک منگتال",
+    "aliases": [
+      "Dhoke Mangtal",
+      "Mangtal Rawalpindi"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.612,
+      "lng": 73.048
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-dhok-dalal",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Dhok Dalal",
+    "urduName": "ڈھوک دلال",
+    "aliases": [
+      "Dhoke Dalal",
+      "Dalal Mohallah"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.621,
+      "lng": 73.061
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-dhok-elahi-bakhsh",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Dhok Elahi Bakhsh",
+    "urduName": "ڈھوک الٰہی بخش",
+    "aliases": [
+      "Dhoke Ilahi Bux",
+      "Dhok Elahi Bux"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.608,
+      "lng": 73.082
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-khanna-pul",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Khanna Pul",
+    "urduName": "کھنہ پل",
+    "aliases": [
+      "Khanna Pull",
+      "Khanna Expressway"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.632,
+      "lng": 73.118
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-chungi-no-22",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Chungi No 22",
+    "urduName": "چنگی نمبر ۲۲",
+    "aliases": [
+      "Chungi 22",
+      "Chungi 22 Cantt"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.578,
+      "lng": 73.052
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ]

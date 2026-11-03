@@ -107,7 +107,7 @@ class TestPakGeodata(unittest.TestCase):
         self.assertEqual(lahore.urdu_name, "لاہور")
         self.assertEqual(lahore.province_id, "punjab")
         self.assertEqual(lahore.district, "Lahore")
-        self.assertEqual(lahore.total_areas_count, 118)
+        self.assertEqual(lahore.total_areas_count, 130)
 
         # Case-insensitivity
         self.assertEqual(get_city_by_id("  LaHoRe "), lahore)
@@ -118,7 +118,9 @@ class TestPakGeodata(unittest.TestCase):
     # 3. Areas Tests
     def test_get_all_areas(self):
         areas = get_all_areas()
-        self.assertEqual(len(areas), 1224)
+        self.assertEqual(len(areas), 1279)
+        area_ids = {a.id for a in areas}
+        self.assertIn("karachi-qasba-colony", area_ids)
         for a in areas:
             self.assertIsInstance(a, PakistanArea)
             self.assertTrue(len(a.id) > 0)
@@ -129,23 +131,23 @@ class TestPakGeodata(unittest.TestCase):
 
     def test_get_areas_by_city(self):
         lahore_areas = get_areas_by_city("lahore")
-        self.assertEqual(len(lahore_areas), 118)
+        self.assertEqual(len(lahore_areas), 130)
         self.assertTrue(all(a.city_id == "lahore" for a in lahore_areas))
 
         karachi_areas = get_areas_by_city("karachi")
-        self.assertEqual(len(karachi_areas), 115)
+        self.assertEqual(len(karachi_areas), 130)
         self.assertTrue(all(a.city_id == "karachi" for a in karachi_areas))
 
         isb_areas = get_areas_by_city("islamabad")
-        self.assertEqual(len(isb_areas), 83)
+        self.assertEqual(len(isb_areas), 87)
         self.assertTrue(all(a.city_id == "islamabad" for a in isb_areas))
 
         rwp_areas = get_areas_by_city("rawalpindi")
-        self.assertEqual(len(rwp_areas), 58)
+        self.assertEqual(len(rwp_areas), 64)
         self.assertTrue(all(a.city_id == "rawalpindi" for a in rwp_areas))
 
         fsd_areas = get_areas_by_city("faisalabad")
-        self.assertEqual(len(fsd_areas), 50)
+        self.assertEqual(len(fsd_areas), 55)
         self.assertTrue(all(a.city_id == "faisalabad" for a in fsd_areas))
 
         mul_areas = get_areas_by_city("multan")
@@ -153,11 +155,11 @@ class TestPakGeodata(unittest.TestCase):
         self.assertTrue(all(a.city_id == "multan" for a in mul_areas))
 
         pew_areas = get_areas_by_city("peshawar")
-        self.assertEqual(len(pew_areas), 34)
+        self.assertEqual(len(pew_areas), 37)
         self.assertTrue(all(a.city_id == "peshawar" for a in pew_areas))
 
         uet_areas = get_areas_by_city("quetta")
-        self.assertEqual(len(uet_areas), 26)
+        self.assertEqual(len(uet_areas), 29)
         self.assertTrue(all(a.city_id == "quetta" for a in uet_areas))
 
         hyd_areas = get_areas_by_city("hyderabad")
@@ -165,7 +167,7 @@ class TestPakGeodata(unittest.TestCase):
         self.assertTrue(all(a.city_id == "hyderabad" for a in hyd_areas))
 
         guj_areas = get_areas_by_city("gujranwala")
-        self.assertEqual(len(guj_areas), 28)
+        self.assertEqual(len(guj_areas), 32)
         self.assertTrue(all(a.city_id == "gujranwala" for a in guj_areas))
 
         # Unknown city

@@ -71,7 +71,7 @@ poetry add pak-geodata
 | :--- | :--- | :--- | :--- |
 | **Provinces & Territories** | **7** | 100% of Pakistan | Punjab, Sindh, KPK, Balochistan, Islamabad (ICT), Azad Jammu & Kashmir (AJK), Gilgit-Baltistan |
 | **Verified Cities** | **79** | 100% Coverage (All 79 Cities with Areas) | District centroids, bounding boxes, administrative divisions, 5-digit postal code ranges |
-| **Foundational & Metro Urban Areas** | **1,224** | 100% of Cities (All 79 Cities Across All 7 Territories) | Foundational & verified areas spanning all metropolitan centers, regional economic hubs, and secondary cities |
+| **Foundational & Metro Urban Areas** | **1,279** | 100% of Cities (All 79 Cities Across All 7 Territories) | Foundational & verified areas spanning all metropolitan centers, regional economic hubs, and secondary cities |
 
 ---
 
@@ -177,24 +177,24 @@ This enables developers to immediately geofence incoming coordinates, filter are
 
 ---
 
-## Verified Areas & Urban Hubs (1,224 Areas Across All 79 Cities)
+## Verified Areas & Urban Hubs (1,279 Areas Across All 79 Cities)
 
-Coverage encompasses **1,224 triangulated golden areas across 100% of Pakistan's 79 cities**, spanning all sectors, housing societies, commercial markets, industrial estates, and historic quarters across all 7 provinces and administrative territories:
+Coverage encompasses **1,279 triangulated golden areas across 100% of Pakistan's 79 cities**, spanning all sectors, housing societies, commercial markets, industrial estates, working-class settlements, and historic quarters across all 7 provinces and administrative territories:
 
-### Top 10 Metropolitan Hubs (579 Areas):
-- **Lahore** (`118 areas`): Gulberg (I-V), DHA (Phases 1-9, Prism & Rahbar), Model Town, Johar Town, Allama Iqbal Town, Bahria Town, Township, Sabzazar, Faisal Town, Garden Town, Cantt, Harbanspura, Baghbanpura, Islampura, Gajjumata, Chauburji, Shahdara, Nishtar Town, Gawalmandi, Sanda, Mozang, Data Darbar, Bhatti Gate, Delhi Gate, Misri Shah, etc.
-- **Karachi** (`115 areas`): Clifton (Blocks 1-9), DHA (Phases 1-8), Gulshan-e-Iqbal, North Nazimabad, PECHS, Federal B Area, Gulistan-e-Johar, North Karachi, Nazimabad, Saddar, SITE, Lyari, Ranchore Line, Sohrab Goth, Numaish, Kharadar, Golimar, Malir City, Landhi, Orangi Town, Mehmoodabad, Drigh Road, Merewether Tower, etc.
-- **Islamabad** (`83 areas`): CDA Sectors (F-5 to F-17, G-5 to G-17, H-8 to H-16, I-8 to I-16, D-12, D-17, D-18, E-7 to E-11, C-12, C-15, C-16, B-17), Diplomatic Enclave, Blue Area, DHA Islamabad, Bahria Town, Gulberg Greens, Soan Gardens, PWD, Tarnol, Golra Sharif Station, National Police Foundation O-9, etc.
-- **Rawalpindi** (`58 areas`): Bahria Town (Phases 1-8 & Ext), Satellite Town, Saddar, Westridge (1-3), Chaklala Scheme (1-3), Askari, Commercial Market, Raja Bazaar, Bhabra Bazaar, Mohanpura, Kartarpura, Pirwadhai Adda, Faizabad Interchange, Dhok Ratta, Dhok Khabba, Top City-1, Mumtaz City, etc.
-- **Faisalabad** (`50 areas`): Clock Tower 8 Bazaars (Kutchery, Montgomery, Rail, Karkhana, Jhang, Bhawana, Aminpur, Chiniot), Peoples Colony, Madina Town, D Ground, Ghulam Muhammad Abad, Kohinoor City, Civil Lines, Millat Town, Samanabad, Batala Colony, Gulberg, Dijkot Road, Samundri Road, etc.
+### Top 10 Metropolitan Hubs (631 Areas):
+- **Lahore** (`130 areas`): Gulberg (I-V), DHA (Phases 1-9, Prism & Rahbar), Model Town, Johar Town, Allama Iqbal Town, Bahria Town, Township, Sabzazar, Faisal Town, Garden Town, Cantt, Harbanspura, Baghbanpura, Islampura, Gajjumata, Chauburji, Shahdara, Nishtar Town, Gawalmandi, Sanda, Mozang, Data Darbar, Bhatti Gate, Marghzar Colony, Mansoora, Hanjarwal, Kalma Chowk, Kahna, Jallo Mor, Punjab University, UVAS, Kot Lakhpat, Youhanabad, etc.
+- **Karachi** (`130 areas`): Clifton (Blocks 1-9), DHA (Phases 1-8), Gulshan-e-Iqbal, North Nazimabad, PECHS, Federal B Area, Gulistan-e-Johar, North Karachi, Nazimabad, Saddar, SITE, Lyari, Ranchore Line, Sohrab Goth, Numaish, Kharadar, Golimar, Malir City, Landhi, Orangi Town, Mehmoodabad, Drigh Road, Qasba Colony, Banaras Chowk, Baldia Town, Keamari, Chakiwara, Metroville, Sharafi Goth, etc.
+- **Islamabad** (`87 areas`): CDA Sectors (F-5 to F-17, G-5 to G-17, H-8 to H-16, I-8 to I-16, D-12, D-17, D-18, E-7 to E-11, C-12, C-15, C-16, B-17), Diplomatic Enclave, Blue Area, DHA Islamabad, Bahria Town, Gulberg Greens, Soan Gardens, PWD, Tarnol, Golra Sharif Station, I-10 Industrial, Barakahu Bazaar, Sohan, etc.
+- **Rawalpindi** (`64 areas`): Bahria Town (Phases 1-8 & Ext), Satellite Town, Saddar, Westridge (1-3), Chaklala Scheme (1-3), Askari, Commercial Market, Raja Bazaar, Bhabra Bazaar, Mohanpura, Kartarpura, Pirwadhai Adda, Faizabad Interchange, Dhok Ratta, Dhok Khabba, Dhok Hassu, Dhok Mangtal, Dhok Dalal, Khanna Pul, Chungi No 22, etc.
+- **Faisalabad** (`55 areas`): Clock Tower 8 Bazaars (Kutchery, Montgomery, Rail, Karkhana, Jhang, Bhawana, Aminpur, Chiniot), Peoples Colony, Madina Town, D Ground, Ghulam Muhammad Abad, Kohinoor City, Civil Lines, Millat Town, Samanabad, Batala Colony, Gulberg, D-Type Colony, Tata Bazaar, Faizabad, Warispura, etc.
+- **Peshawar** (`37 areas`): Historic Quarters & Transit Hubs (Qissa Khwani, Kohati Gate, Namak Mandi, Gor Gathri, Haji Camp General Bus Stand, Karkhano Market), Hayatabad (Phases 1-7), University Town, Peshawar Campus, Cantt, Saddar, Warsak Road, Hazarkhwani, Yakatoot, etc.
 - **Multan** (`34 areas`): Walled City Historic Gates (Delhi Gate, Bohar Gate, Haram Gate, Pak Gate, Lohari Gate, Daulat Gate), Gulgasht Colony, Bosan Road, Cantt, Shah Rukn-e-Alam Colony, New Multan, MDA Officers Colony, Model Town, Wapda Town, DHA Multan, Hussain Agahi, Dera Adda, etc.
-- **Peshawar** (`34 areas`): Historic Quarters & Transit Hubs (Qissa Khwani, Kohati Gate, Namak Mandi, Gor Gathri, Haji Camp General Bus Stand, Karkhano Market), Hayatabad (Phases 1-7), University Town, Peshawar Campus, Cantt, Saddar, Warsak Road, Regi Model Town, DHA Peshawar, etc.
 - **Hyderabad** (`33 areas`): Historic Wards & Bazaars (Phuleli, Paretabad, Tower Market, Shahi Bazaar, Tilak Incline, Halanaka, Hirabad), Latifabad (Units 1-12), Qasimabad, Saddar, Cantt, Auto Bhan Road, Citizen Colony, Hussainabad, GOR Colony, Wadhu Wah Road, etc.
-- **Gujranwala** (`28 areas`): Historic Quarters & Industrial Zones (Garjakh, Dhullay, Gondlanwala, Khiali Shahpur, Ferozwala, Climax Industrial Zone, Kangniwala, Nowshera Road), Gujranwala Cantt, Model Town, DC Colony, People's Colony, Satellite Town, Wapda Town, Master City, Citi Housing, etc.
-- **Quetta** (`26 areas`): Historic Quarters & Commercial Bazaars (Liaquat Bazaar, Suraj Ganj Bazaar, Kandahari Bazaar, Chaman Phatak, Marriabad, Patel Bagh, Arbab Town, Sariab Road, Sabzal Road, Brewery Road, Nawan Killi), Quetta Cantt, Jinnah Town, Shahbaz Town, Samungli Road, Model Town, etc.
+- **Gujranwala** (`32 areas`): Historic Quarters & Industrial Zones (Garjakh, Dhullay, Gondlanwala, Khiali Shahpur, Ferozwala, Climax Industrial Zone, Kangniwala, Nowshera Road), Gujranwala Cantt, Model Town, DC Colony, People's Colony, Satellite Town, Climax Abadi, Baghbanpura, etc.
+- **Quetta** (`29 areas`): Historic Quarters & Commercial Bazaars (Liaquat Bazaar, Suraj Ganj Bazaar, Kandahari Bazaar, Chaman Phatak, Marriabad, Patel Bagh, Arbab Town, Sariab Road, Sabzal Road, Brewery Road, Nawan Killi, Killi Deba, Killi Ismail, Hazara Town), Quetta Cantt, Jinnah Town, Shahbaz Town, etc.
 
-### 69 Regional Hubs & Secondary Cities (645 Areas Across 100% of Pakistan's Cities):
-- **Punjab (27 cities, 252 areas)**: Sialkot (19), Bahawalpur (18), Sargodha (18), Kasur (14), Jhelum (13), Gujrat (13), Sheikhupura (10), Sahiwal (10), Rahim Yar Khan (10), Dera Ghazi Khan (10), Wah Cantt (8), Okara (8), Attock (8), Bahawalnagar (8), Chakwal (8), Chiniot (8), Chishtian (8), Daska (8), Gojra (8), Hafizabad (8), Jaranwala (8), Jhang (8), Kamalia (8), Khanewal (8), Kot Addu (8), Mandi Bahauddin (8), Muridke (8), Muzaffargarh (8), Samundri (8), Taxila (8), Vehari (8), Wazirabad (8).
+### 69 Regional Hubs & Secondary Cities (648 Areas Across 100% of Pakistan's Cities):
+- **Punjab (27 cities, 255 areas)**: Sialkot (22), Bahawalpur (18), Sargodha (18), Kasur (14), Jhelum (13), Gujrat (13), Sheikhupura (10), Sahiwal (10), Rahim Yar Khan (10), Dera Ghazi Khan (10), Wah Cantt (8), Okara (8), Attock (8), Bahawalnagar (8), Chakwal (8), Chiniot (8), Chishtian (8), Daska (8), Gojra (8), Hafizabad (8), Jaranwala (8), Jhang (8), Kamalia (8), Khanewal (8), Kot Addu (8), Mandi Bahauddin (8), Muridke (8), Muzaffargarh (8), Samundri (8), Taxila (8), Vehari (8), Wazirabad (8).
 - **Sindh (6 cities, 60 areas)**: Sukkur (18), Larkana (10), Nawabshah (10), Mirpur Khas (8), Jacobabad (8), Shikarpur (8).
 - **KPK (7 cities, 68 areas)**: Abbottabad (15), Mardan (13), Mingora / Swat (10), Kohat (8), Dera Ismail Khan (8), Mansehra (8), Nowshera (8), Swabi (8).
 - **Balochistan (9 cities, 74 areas)**: Gwadar (10), Turbat (8), Khuzdar (8), Hub (8), Chaman (8), Dera Murad Jamali (8), Loralai (8), Sibi (8), Zhob (8).
