@@ -1,0 +1,182 @@
+import type { PakistanArea } from "../../types.js";
+
+export const attockAreas: readonly PakistanArea[] = [
+  {
+    "id": "attock-cantt",
+    "cityId": "attock",
+    "provinceId": "punjab",
+    "name": "Attock Cantonment",
+    "urduName": "اٹک کینٹ",
+    "aliases": [
+      "Attock Cantt",
+      "Cantonment Board Attock"
+    ],
+    "postalCode": "43600",
+    "coordinates": {
+      "lat": 33.768,
+      "lng": 72.365
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "attock-kamra-road",
+    "cityId": "attock",
+    "provinceId": "punjab",
+    "name": "Kamra Road",
+    "urduName": "کامرہ روڈ اٹک",
+    "aliases": [
+      "Kamra Highway Attock",
+      "PAC Kamra Link Road"
+    ],
+    "postalCode": "43600",
+    "coordinates": {
+      "lat": 33.772,
+      "lng": 72.372
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "attock-kachehri-chowk",
+    "cityId": "attock",
+    "provinceId": "punjab",
+    "name": "Kachehri Chowk & District Complex",
+    "urduName": "کچہری چوک اٹک",
+    "aliases": [
+      "District Courts Attock",
+      "DC Office Attock",
+      "Katchery Chowk Attock"
+    ],
+    "postalCode": "43600",
+    "coordinates": {
+      "lat": 33.764,
+      "lng": 72.358
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "attock-meena-bazaar",
+    "cityId": "attock",
+    "provinceId": "punjab",
+    "name": "Meena Bazaar Attock",
+    "urduName": "مینا بازار اٹک",
+    "aliases": [
+      "Main Bazaar Attock",
+      "City Center Attock",
+      "Saddar Attock"
+    ],
+    "postalCode": "43600",
+    "coordinates": {
+      "lat": 33.765,
+      "lng": 72.361
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "attock-railway-colony",
+    "cityId": "attock",
+    "provinceId": "punjab",
+    "name": "Attock City Railway Station & Colony",
+    "urduName": "اٹک سٹی ریلوے اسٹیشن",
+    "aliases": [
+      "Railway Station Attock",
+      "Railway Colony Attock"
+    ],
+    "postalCode": "43600",
+    "coordinates": {
+      "lat": 33.759,
+      "lng": 72.354
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "attock-peoples-colony",
+    "cityId": "attock",
+    "provinceId": "punjab",
+    "name": "Peoples Colony",
+    "urduName": "پیپلز کالونی اٹک",
+    "aliases": [
+      "Peoples Colony Attock",
+      "People Colony"
+    ],
+    "postalCode": "43600",
+    "coordinates": {
+      "lat": 33.752,
+      "lng": 72.348
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "attock-madni-chowk",
+    "cityId": "attock",
+    "provinceId": "punjab",
+    "name": "Madni Chowk",
+    "urduName": "مدنی چوک اٹک",
+    "aliases": [
+      "Madni Chowk Attock",
+      "Madni Market"
+    ],
+    "postalCode": "43600",
+    "coordinates": {
+      "lat": 33.769,
+      "lng": 72.368
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "attock-sanjwal-road",
+    "cityId": "attock",
+    "provinceId": "punjab",
+    "name": "Sanjwal Road",
+    "urduName": "سنجوال روڈ اٹک",
+    "aliases": [
+      "Sanjwal Cantt Link",
+      "Sanjwal Chowk Attock"
+    ],
+    "postalCode": "43610",
+    "coordinates": {
+      "lat": 33.745,
+      "lng": 72.338
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+];

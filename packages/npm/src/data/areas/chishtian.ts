@@ -1,0 +1,172 @@
+import type { PakistanArea } from "../../types.js";
+
+export const chishtianAreas: readonly PakistanArea[] = [
+  {
+    "id": "chishtian-sugar-mill-colony",
+    "name": "Sugar Mill Colony",
+    "coordinates": {
+      "lat": 29.805,
+      "lng": 72.862
+    },
+    "postalCode": "62250",
+    "aliases": [
+      "Sugar Mill Area Chishtian"
+    ],
+    "cityId": "chishtian",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "شوگر مل کالونی",
+    "type": "neighborhood"
+  },
+  {
+    "id": "chishtian-model-town",
+    "name": "Model Town",
+    "coordinates": {
+      "lat": 29.802,
+      "lng": 72.855
+    },
+    "postalCode": "62250",
+    "aliases": [
+      "Model Town Chishtian"
+    ],
+    "cityId": "chishtian",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "ماڈل ٹاؤن",
+    "type": "neighborhood"
+  },
+  {
+    "id": "chishtian-railway-road",
+    "name": "Railway Road",
+    "coordinates": {
+      "lat": 29.796,
+      "lng": 72.857
+    },
+    "postalCode": "62250",
+    "aliases": [
+      "Chishtian Station Road"
+    ],
+    "cityId": "chishtian",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "ریلوے روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "chishtian-grain-market",
+    "name": "Grain Market",
+    "coordinates": {
+      "lat": 29.794,
+      "lng": 72.86
+    },
+    "postalCode": "62250",
+    "aliases": [
+      "Ghalla Mandi Chishtian"
+    ],
+    "cityId": "chishtian",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "غلہ منڈی",
+    "type": "commercial"
+  },
+  {
+    "id": "chishtian-bahawalnagar-road",
+    "name": "Bahawalnagar Road",
+    "coordinates": {
+      "lat": 29.808,
+      "lng": 72.869
+    },
+    "postalCode": "62250",
+    "aliases": [
+      "Chishtian Bahawalnagar Highway"
+    ],
+    "cityId": "chishtian",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "بہاولنگر روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "chishtian-hasilpur-road",
+    "name": "Hasilpur Road",
+    "coordinates": {
+      "lat": 29.791,
+      "lng": 72.848
+    },
+    "postalCode": "62250",
+    "aliases": [
+      "Chishtian Hasilpur Highway"
+    ],
+    "cityId": "chishtian",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "حاصل پور روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "chishtian-mohallah-nizamabad",
+    "name": "Mohallah Nizamabad",
+    "coordinates": {
+      "lat": 29.798,
+      "lng": 72.851
+    },
+    "postalCode": "62250",
+    "aliases": [
+      "Nizamabad Chishtian"
+    ],
+    "cityId": "chishtian",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "محلہ نظام آباد",
+    "type": "neighborhood"
+  },
+  {
+    "id": "chishtian-circular-road",
+    "name": "Circular Road",
+    "coordinates": {
+      "lat": 29.795,
+      "lng": 72.864
+    },
+    "postalCode": "62250",
+    "aliases": [
+      "Circular Road Chishtian"
+    ],
+    "cityId": "chishtian",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "سرکلر روڈ",
+    "type": "commercial"
+  }
+];

@@ -1,0 +1,173 @@
+import type { PakistanArea } from "../../types.js";
+
+export const gojraAreas: readonly PakistanArea[] = [
+  {
+    "id": "gojra-rail-bazar",
+    "name": "Rail Bazar",
+    "coordinates": {
+      "lat": 31.149,
+      "lng": 72.682
+    },
+    "postalCode": "36120",
+    "aliases": [
+      "Rail Bazar Gojra",
+      "Main Market Gojra"
+    ],
+    "cityId": "gojra",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "ریل بازار",
+    "type": "commercial"
+  },
+  {
+    "id": "gojra-model-town",
+    "name": "Model Town",
+    "coordinates": {
+      "lat": 31.155,
+      "lng": 72.689
+    },
+    "postalCode": "36120",
+    "aliases": [
+      "Model Town Gojra"
+    ],
+    "cityId": "gojra",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "ماڈل ٹاؤن",
+    "type": "neighborhood"
+  },
+  {
+    "id": "gojra-mehdi-mohallah",
+    "name": "Mehdi Mohallah",
+    "coordinates": {
+      "lat": 31.146,
+      "lng": 72.678
+    },
+    "postalCode": "36120",
+    "aliases": [
+      "Mohallah Mehdi Abad"
+    ],
+    "cityId": "gojra",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "مہدی محلہ",
+    "type": "neighborhood"
+  },
+  {
+    "id": "gojra-jhang-road",
+    "name": "Jhang Road",
+    "coordinates": {
+      "lat": 31.152,
+      "lng": 72.672
+    },
+    "postalCode": "36120",
+    "aliases": [
+      "Gojra Jhang Road Corridor"
+    ],
+    "cityId": "gojra",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "جھنگ روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "gojra-toba-tek-singh-road",
+    "name": "Toba Road",
+    "coordinates": {
+      "lat": 31.142,
+      "lng": 72.685
+    },
+    "postalCode": "36120",
+    "aliases": [
+      "Toba Tek Singh Road Gojra"
+    ],
+    "cityId": "gojra",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "ٹوبہ روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "gojra-faisalabad-road",
+    "name": "Faisalabad Road",
+    "coordinates": {
+      "lat": 31.158,
+      "lng": 72.695
+    },
+    "postalCode": "36120",
+    "aliases": [
+      "Gojra Faisalabad Road"
+    ],
+    "cityId": "gojra",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "فیصل آباد روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "gojra-samundri-road",
+    "name": "Samundri Road",
+    "coordinates": {
+      "lat": 31.144,
+      "lng": 72.692
+    },
+    "postalCode": "36120",
+    "aliases": [
+      "Samundri Road Gojra"
+    ],
+    "cityId": "gojra",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "سمندری روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "gojra-grain-market",
+    "name": "Grain Market",
+    "coordinates": {
+      "lat": 31.148,
+      "lng": 72.6865
+    },
+    "postalCode": "36120",
+    "aliases": [
+      "Ghalla Mandi Gojra"
+    ],
+    "cityId": "gojra",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "غلہ منڈی",
+    "type": "commercial"
+  }
+];

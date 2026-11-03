@@ -1,0 +1,184 @@
+import type { PakistanArea } from "../../types.js";
+
+export const khapluAreas: readonly PakistanArea[] = [
+  {
+    "id": "khaplu-main-bazaar",
+    "cityId": "khaplu",
+    "provinceId": "gilgit-baltistan",
+    "name": "Khaplu Main Bazaar",
+    "urduName": "مرکزی بازار خپلو",
+    "aliases": [
+      "Khaplu Bazaar",
+      "Saddar Bazaar Khaplu",
+      "Khaplu Town Center"
+    ],
+    "postalCode": "16300",
+    "coordinates": {
+      "lat": 35.155,
+      "lng": 76.334
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khaplu-palace",
+    "cityId": "khaplu",
+    "provinceId": "gilgit-baltistan",
+    "name": "Khaplu Palace Area",
+    "urduName": "خپلو پیلس یابگو کھر",
+    "aliases": [
+      "Khaplu Palace",
+      "Yabgo Khar Khaplu",
+      "Serena Khaplu Palace"
+    ],
+    "postalCode": "16300",
+    "coordinates": {
+      "lat": 35.1575,
+      "lng": 76.3385
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khaplu-chaqchan-mosque",
+    "cityId": "khaplu",
+    "provinceId": "gilgit-baltistan",
+    "name": "Chaqchan Mosque Area",
+    "urduName": "چقچن مسجد خپلو",
+    "aliases": [
+      "Chaqchan Mosque Khaplu",
+      "Mir Sayyid Ali Hamadani Mosque Area"
+    ],
+    "postalCode": "16300",
+    "coordinates": {
+      "lat": 35.153,
+      "lng": 76.331
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khaplu-district-complex",
+    "cityId": "khaplu",
+    "provinceId": "gilgit-baltistan",
+    "name": "District Complex Ghanche",
+    "urduName": "ضلعی کمپلیکس گانچھے خپلو",
+    "aliases": [
+      "DC Office Ghanche",
+      "District Courts Khaplu",
+      "Kachehri Khaplu"
+    ],
+    "postalCode": "16300",
+    "coordinates": {
+      "lat": 35.159,
+      "lng": 76.342
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khaplu-saling",
+    "cityId": "khaplu",
+    "provinceId": "gilgit-baltistan",
+    "name": "Saling",
+    "urduName": "سلنگ خپلو",
+    "aliases": [
+      "Saling Khaplu",
+      "Saling Spangtop",
+      "Saling Village"
+    ],
+    "postalCode": "16310",
+    "coordinates": {
+      "lat": 35.168,
+      "lng": 76.355
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khaplu-machlu-road",
+    "cityId": "khaplu",
+    "provinceId": "gilgit-baltistan",
+    "name": "Machlu Road",
+    "urduName": "مچلو روڈ خپلو",
+    "aliases": [
+      "Machalu Road Khaplu",
+      "Hushe Valley Link Road"
+    ],
+    "postalCode": "16300",
+    "coordinates": {
+      "lat": 35.148,
+      "lng": 76.325
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khaplu-thagas-road",
+    "cityId": "khaplu",
+    "provinceId": "gilgit-baltistan",
+    "name": "Thagas Link Road",
+    "urduName": "تھگس روڈ خپلو",
+    "aliases": [
+      "Thagas Highway Khaplu",
+      "Upper Khaplu Link"
+    ],
+    "postalCode": "16320",
+    "coordinates": {
+      "lat": 35.162,
+      "lng": 76.362
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "khaplu-shyok-riverfront",
+    "cityId": "khaplu",
+    "provinceId": "gilgit-baltistan",
+    "name": "Shyok Riverfront",
+    "urduName": "دریائے شیوک ریور فرنٹ",
+    "aliases": [
+      "Shyok Bridge Area Khaplu",
+      "River View Khaplu"
+    ],
+    "postalCode": "16300",
+    "coordinates": {
+      "lat": 35.142,
+      "lng": 76.315
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+];

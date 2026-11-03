@@ -1,0 +1,182 @@
+import type { PakistanArea } from "../../types.js";
+
+export const chakwalAreas: readonly PakistanArea[] = [
+  {
+    "id": "chakwal-chappar-bazaar",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "Chappar Bazaar",
+    "urduName": "چھپر بازار چکوال",
+    "aliases": [
+      "Chapar Bazaar Chakwal",
+      "Main Bazaar Chakwal",
+      "City Center Chakwal"
+    ],
+    "postalCode": "48800",
+    "coordinates": {
+      "lat": 32.9325,
+      "lng": 72.8625
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "chakwal-bhoun-chowk",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "Bhoun Chowk",
+    "urduName": "بھون چوک چکوال",
+    "aliases": [
+      "Bhaun Chowk Chakwal",
+      "Bhaun Road Chowk"
+    ],
+    "postalCode": "48800",
+    "coordinates": {
+      "lat": 32.936,
+      "lng": 72.868
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "chakwal-talagang-road",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "Talagang Road",
+    "urduName": "تلہ گنگ روڈ چکوال",
+    "aliases": [
+      "Talagang Road Commercial Strip",
+      "Talagang Bypass Chakwal"
+    ],
+    "postalCode": "48800",
+    "coordinates": {
+      "lat": 32.928,
+      "lng": 72.855
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "chakwal-district-courts",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "District Courts & Kachehri",
+    "urduName": "ضلعی کچہری چکوال",
+    "aliases": [
+      "Kachehri Chakwal",
+      "DC Office Chakwal",
+      "District Complex Chakwal"
+    ],
+    "postalCode": "48800",
+    "coordinates": {
+      "lat": 32.938,
+      "lng": 72.871
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "chakwal-rawalpindi-road",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "Rawalpindi Road",
+    "urduName": "راولپنڈی روڈ چکوال",
+    "aliases": [
+      "Pindi Road Chakwal",
+      "M-2 Balkasar Link Road"
+    ],
+    "postalCode": "48800",
+    "coordinates": {
+      "lat": 32.945,
+      "lng": 72.878
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "chakwal-line-park",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "Line Park Area",
+    "urduName": "لائن پارک چکوال",
+    "aliases": [
+      "Railway Line Park Chakwal",
+      "Line Park Road"
+    ],
+    "postalCode": "48800",
+    "coordinates": {
+      "lat": 32.931,
+      "lng": 72.859
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "chakwal-dhudial-chowk",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "Dhudial Chowk",
+    "urduName": "ڈھڈیال چوک چکوال",
+    "aliases": [
+      "Dhudial Mor Chakwal",
+      "General Bus Stand Chakwal"
+    ],
+    "postalCode": "48800",
+    "coordinates": {
+      "lat": 32.941,
+      "lng": 72.874
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "chakwal-millat-colony",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "Millat Colony",
+    "urduName": "ملت کالونی چکوال",
+    "aliases": [
+      "Millat Colony Chakwal",
+      "Millat Chowk"
+    ],
+    "postalCode": "48800",
+    "coordinates": {
+      "lat": 32.925,
+      "lng": 72.848
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+];

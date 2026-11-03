@@ -1,0 +1,183 @@
+[
+  {
+    "id": "karimabad-hunza-baltit-fort",
+    "cityId": "karimabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Baltit Fort Area",
+    "urduName": "قلعہ بلتت کریم آباد",
+    "aliases": [
+      "Baltit Karimabad",
+      "Baltit Fort Hunza",
+      "Baltit Heritage Village"
+    ],
+    "postalCode": "15700",
+    "coordinates": {
+      "lat": 36.3265,
+      "lng": 74.6655
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karimabad-hunza-main-bazaar",
+    "cityId": "karimabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Karimabad Main Bazaar",
+    "urduName": "مرکزی بازار کریم آباد ہنزہ",
+    "aliases": [
+      "Karimabad Bazaar",
+      "Hunza Handicraft Bazaar",
+      "Zero Point Karimabad"
+    ],
+    "postalCode": "15700",
+    "coordinates": {
+      "lat": 36.3245,
+      "lng": 74.662
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karimabad-hunza-altit-village",
+    "cityId": "karimabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Altit Village",
+    "urduName": "التت گاؤں ہنزہ",
+    "aliases": [
+      "Altit Hunza",
+      "Altit Settlement",
+      "Altit Khun"
+    ],
+    "postalCode": "15700",
+    "coordinates": {
+      "lat": 36.315,
+      "lng": 74.685
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karimabad-hunza-altit-fort",
+    "cityId": "karimabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Altit Fort Area",
+    "urduName": "قلعہ التت ہنزہ",
+    "aliases": [
+      "Altit Fort Hunza",
+      "Kha Basi Altit"
+    ],
+    "postalCode": "15700",
+    "coordinates": {
+      "lat": 36.313,
+      "lng": 74.69
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karimabad-hunza-ghanesh",
+    "cityId": "karimabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Ghanesh Settlement",
+    "urduName": "گنیش قدیم بستی",
+    "aliases": [
+      "Ganish Village Hunza",
+      "Ghanesh Heritage Settlement"
+    ],
+    "postalCode": "15710",
+    "coordinates": {
+      "lat": 36.305,
+      "lng": 74.652
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karimabad-hunza-duikar",
+    "cityId": "karimabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Duikar",
+    "urduName": "دوئیکر ایگلز نیسٹ",
+    "aliases": [
+      "Duikar Hunza",
+      "Eagle Nest Duikar",
+      "Duikar Viewpoint"
+    ],
+    "postalCode": "15700",
+    "coordinates": {
+      "lat": 36.335,
+      "lng": 74.688
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karimabad-hunza-haiderabad",
+    "cityId": "karimabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Haiderabad Hunza",
+    "urduName": "حیدرآباد ہنزہ",
+    "aliases": [
+      "Hyderabad Hunza",
+      "Haiderabad Channel Road"
+    ],
+    "postalCode": "15720",
+    "coordinates": {
+      "lat": 36.321,
+      "lng": 74.648
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karimabad-hunza-kkh-junction",
+    "cityId": "karimabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "KKH Karimabad Junction",
+    "urduName": "قراقرم ہائی وے جنکشن",
+    "aliases": [
+      "KKH Link Hunza",
+      "Karimabad Entrance Junction",
+      "Ganish Chowk KKH"
+    ],
+    "postalCode": "15700",
+    "coordinates": {
+      "lat": 36.312,
+      "lng": 74.638
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+]

@@ -1,0 +1,175 @@
+import type { PakistanArea } from "../../types.js";
+
+export const muzaffargarhAreas: readonly PakistanArea[] = [
+  {
+    "id": "muzaffargarh-civil-lines",
+    "name": "Civil Lines",
+    "coordinates": {
+      "lat": 30.076,
+      "lng": 71.191
+    },
+    "postalCode": "34200",
+    "aliases": [
+      "Civil Lines Muzaffargarh",
+      "Katchery Area"
+    ],
+    "cityId": "muzaffargarh",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "سول لائنز",
+    "type": "commercial"
+  },
+  {
+    "id": "muzaffargarh-jhang-mor",
+    "name": "Jhang Mor",
+    "coordinates": {
+      "lat": 30.082,
+      "lng": 71.196
+    },
+    "postalCode": "34200",
+    "aliases": [
+      "Jhang Chowk",
+      "Jhang Mor Muzaffargarh"
+    ],
+    "cityId": "muzaffargarh",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "جھنگ موڑ",
+    "type": "commercial"
+  },
+  {
+    "id": "muzaffargarh-railway-road",
+    "name": "Railway Road",
+    "coordinates": {
+      "lat": 30.071,
+      "lng": 71.188
+    },
+    "postalCode": "34200",
+    "aliases": [
+      "Station Road Muzaffargarh"
+    ],
+    "cityId": "muzaffargarh",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "ریلوے روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "muzaffargarh-al-abbas-town",
+    "name": "Al-Abbas Town",
+    "coordinates": {
+      "lat": 30.088,
+      "lng": 71.202
+    },
+    "postalCode": "34200",
+    "aliases": [
+      "Abbas Town Muzaffargarh"
+    ],
+    "cityId": "muzaffargarh",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "العباس ٹاؤن",
+    "type": "neighborhood"
+  },
+  {
+    "id": "muzaffargarh-multan-road",
+    "name": "Multan Road",
+    "coordinates": {
+      "lat": 30.079,
+      "lng": 71.208
+    },
+    "postalCode": "34200",
+    "aliases": [
+      "Muzaffargarh Multan Road Corridor"
+    ],
+    "cityId": "muzaffargarh",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "ملتان روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "muzaffargarh-shah-jamal-road",
+    "name": "Shah Jamal Road",
+    "coordinates": {
+      "lat": 30.065,
+      "lng": 71.182
+    },
+    "postalCode": "34200",
+    "aliases": [
+      "Shah Jamal Road Area"
+    ],
+    "cityId": "muzaffargarh",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "شاہ جمال روڈ",
+    "type": "neighborhood"
+  },
+  {
+    "id": "muzaffargarh-alipur-road",
+    "name": "Alipur Road",
+    "coordinates": {
+      "lat": 30.062,
+      "lng": 71.194
+    },
+    "postalCode": "34200",
+    "aliases": [
+      "Alipur Road Muzaffargarh"
+    ],
+    "cityId": "muzaffargarh",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "علی پور روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "muzaffargarh-faisal-stadium-colony",
+    "name": "Faisal Stadium Colony",
+    "coordinates": {
+      "lat": 30.0735,
+      "lng": 71.1985
+    },
+    "postalCode": "34200",
+    "aliases": [
+      "Faisal Stadium Area",
+      "Stadium Road"
+    ],
+    "cityId": "muzaffargarh",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "فیصل اسٹیڈیم کالونی",
+    "type": "neighborhood"
+  }
+];

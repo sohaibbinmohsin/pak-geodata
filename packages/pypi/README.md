@@ -28,8 +28,8 @@ Designed with **zero runtime dependencies** (pure Python standard library), stri
 | Administrative Level | Count | Coverage | Key Details |
 | :--- | :--- | :--- | :--- |
 | **Provinces & Territories** | **7** | 100% of Pakistan | Punjab, Sindh, KPK, Balochistan, Islamabad (ICT), Azad Jammu & Kashmir (AJK), Gilgit-Baltistan |
-| **Verified Cities** | **79** | Major & Secondary Urban Centers | District centroids, bounding boxes, administrative divisions, 5-digit postal code ranges |
-| **Flagship Metros & Regional Urban Areas** | **812** | 42 Cities Across All 7 Provinces & Territories | Foundational & verified areas across 42 metropolitan centers and regional economic hubs |
+| **Verified Cities** | **79** | 100% Coverage (All 79 Cities with Areas) | District centroids, bounding boxes, administrative divisions, 5-digit postal code ranges |
+| **Foundational & Metro Urban Areas** | **1,108** | 100% of Cities (All 79 Cities Across All 7 Territories) | Foundational & verified areas spanning all metropolitan centers, regional economic hubs, and secondary cities |
 
 ---
 
@@ -213,7 +213,7 @@ All models are immutable frozen dataclasses (`@dataclass(frozen=True)`):
 | `get_all_cities()` | `List[PakistanCity]` | Returns all 79 verified cities |
 | `get_cities_by_province(province_id)` | `List[PakistanCity]` | Filters cities by province |
 | `get_city_by_id(id)` | `Optional[PakistanCity]` | Finds city by canonical slug |
-| `get_all_areas()` | `List[PakistanArea]` | Returns all verified areas (812 total) |
+| `get_all_areas()` | `List[PakistanArea]` | Returns all verified areas (1,108 total) |
 | `get_areas_by_city(city_id)` | `List[PakistanArea]` | Returns verified areas in a city |
 | `search_areas(query, city_id=None, limit=None, province_id=None)` | `List[PakistanArea]` | Ranked multi-tier search |
 | `find_area_by_postal_code(postal_code)` | `Optional[PakistanArea]` | Resolves area by 5-digit postal code |

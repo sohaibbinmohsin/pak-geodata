@@ -1,0 +1,180 @@
+[
+  {
+    "id": "dera-murad-jamali-main-bazaar",
+    "cityId": "dera-murad-jamali",
+    "provinceId": "balochistan",
+    "name": "Main Bazaar DMJ",
+    "urduName": "مرکزی بازار ڈیرہ مراد جمالی",
+    "aliases": [
+      "DMJ Bazaar",
+      "Saddar Bazaar DMJ",
+      "Temple Dera Bazaar"
+    ],
+    "postalCode": "80100",
+    "coordinates": {
+      "lat": 28.5465,
+      "lng": 68.223
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "dera-murad-jamali-railway-chowk",
+    "cityId": "dera-murad-jamali",
+    "provinceId": "balochistan",
+    "name": "Railway Station Chowk",
+    "urduName": "ریلوے اسٹیشن چوک ڈیرہ مراد جمالی",
+    "aliases": [
+      "DMJ Railway Station",
+      "Station Road DMJ"
+    ],
+    "postalCode": "80100",
+    "coordinates": {
+      "lat": 28.544,
+      "lng": 68.22
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "dera-murad-jamali-district-courts",
+    "cityId": "dera-murad-jamali",
+    "provinceId": "balochistan",
+    "name": "Nasirabad District Courts",
+    "urduName": "ضلعی کچہری نصیر آباد",
+    "aliases": [
+      "DC Office Nasirabad",
+      "Kachehri DMJ",
+      "District Complex Nasirabad"
+    ],
+    "postalCode": "80100",
+    "coordinates": {
+      "lat": 28.551,
+      "lng": 68.228
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "dera-murad-jamali-national-highway",
+    "cityId": "dera-murad-jamali",
+    "provinceId": "balochistan",
+    "name": "National Highway N-65 Strip",
+    "urduName": "قومی شاہراہ N-65",
+    "aliases": [
+      "Sukkur Quetta Highway DMJ",
+      "N-65 Bypass DMJ"
+    ],
+    "postalCode": "80100",
+    "coordinates": {
+      "lat": 28.548,
+      "lng": 68.225
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "dera-murad-jamali-civil-hospital",
+    "cityId": "dera-murad-jamali",
+    "provinceId": "balochistan",
+    "name": "Civil Hospital Road",
+    "urduName": "سول ہسپتال روڈ ڈیرہ مراد جمالی",
+    "aliases": [
+      "DHQ Hospital Nasirabad",
+      "Hospital Chowk DMJ"
+    ],
+    "postalCode": "80100",
+    "coordinates": {
+      "lat": 28.542,
+      "lng": 68.217
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "dera-murad-jamali-mir-hassan",
+    "cityId": "dera-murad-jamali",
+    "provinceId": "balochistan",
+    "name": "Mir Hassan Road",
+    "urduName": "میر حسن روڈ",
+    "aliases": [
+      "Mir Hassan DMJ",
+      "Killi Mir Hassan"
+    ],
+    "postalCode": "80100",
+    "coordinates": {
+      "lat": 28.555,
+      "lng": 68.235
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "dera-murad-jamali-canal-colony",
+    "cityId": "dera-murad-jamali",
+    "provinceId": "balochistan",
+    "name": "Pat Feeder Canal Colony",
+    "urduName": "پٹ فیڈر کینال کالونی",
+    "aliases": [
+      "Irrigation Colony DMJ",
+      "Pat Feeder Colony"
+    ],
+    "postalCode": "80110",
+    "coordinates": {
+      "lat": 28.538,
+      "lng": 68.212
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "dera-murad-jamali-manjhoo-shori",
+    "cityId": "dera-murad-jamali",
+    "provinceId": "balochistan",
+    "name": "Manjhoo Shori Link",
+    "urduName": "منجھو شوری لنک",
+    "aliases": [
+      "Manjho Shori Road DMJ",
+      "Shori Bypass"
+    ],
+    "postalCode": "80120",
+    "coordinates": {
+      "lat": 28.562,
+      "lng": 68.245
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+]
