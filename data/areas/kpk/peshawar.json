@@ -747,5 +747,71 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "peshawar-hazarkhwani",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Hazarkhwani",
+    "urduName": "ہزار خوانی",
+    "aliases": [
+      "Hazar Khwani",
+      "Hazarkhwani Ring Road"
+    ],
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 33.985,
+      "lng": 71.595
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "peshawar-yakatoot",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Yakatoot",
+    "urduName": "یکہ توت",
+    "aliases": [
+      "Yakatot",
+      "Yakatoot Gate"
+    ],
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 33.998,
+      "lng": 71.582
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "peshawar-gulbahar-worker-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gulbahar Colony No 4",
+    "urduName": "گلبہار کالونی نمبر ۴",
+    "aliases": [
+      "Gulbahar 4",
+      "Gulbahar Worker Colony"
+    ],
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 34.012,
+      "lng": 71.598
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ]

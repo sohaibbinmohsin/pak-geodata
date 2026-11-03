@@ -410,5 +410,71 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "sialkot-naikapura",
+    "cityId": "sialkot",
+    "provinceId": "punjab",
+    "name": "Naikapura",
+    "urduName": "نائیکہ پورہ",
+    "aliases": [
+      "Naika Pura",
+      "Naikapura Sialkot"
+    ],
+    "postalCode": "51310",
+    "coordinates": {
+      "lat": 32.485,
+      "lng": 74.542
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sialkot-small-industries",
+    "cityId": "sialkot",
+    "provinceId": "punjab",
+    "name": "Small Industries Estate Sialkot",
+    "urduName": "سمال انڈسٹریز اسٹیٹ سیالکوٹ",
+    "aliases": [
+      "SIE Sialkot",
+      "Small Industrial Estate"
+    ],
+    "postalCode": "51310",
+    "coordinates": {
+      "lat": 32.512,
+      "lng": 74.515
+    },
+    "type": "industrial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sialkot-ugoki-road",
+    "cityId": "sialkot",
+    "provinceId": "punjab",
+    "name": "Ugoki Road Cluster",
+    "urduName": "اگوکی روڈ کلسٹر",
+    "aliases": [
+      "Ugoki Mor",
+      "Ugoki Sialkot Road"
+    ],
+    "postalCode": "51310",
+    "coordinates": {
+      "lat": 32.455,
+      "lng": 74.452
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ]

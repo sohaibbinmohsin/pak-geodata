@@ -2531,5 +2531,346 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "karachi-qasba-colony",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Qasba Colony",
+    "urduName": "قصبہ کالونی",
+    "aliases": [
+      "Qasba",
+      "Qasba Mor",
+      "Kati Pahari",
+      "Kasba Colony"
+    ],
+    "postalCode": "75211",
+    "coordinates": {
+      "lat": 24.9421,
+      "lng": 67.0237
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-banaras-chowk",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Banaras Chowk",
+    "urduName": "بنارس چوک",
+    "aliases": [
+      "Banaras Colony",
+      "Banaras Flyover",
+      "Banaras Bazar"
+    ],
+    "postalCode": "75800",
+    "coordinates": {
+      "lat": 24.928,
+      "lng": 67.008
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-frontier-colony",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Frontier Colony",
+    "urduName": "فرنٹیئر کالونی",
+    "aliases": [
+      "Frontier Colony SITE",
+      "Frontier Mor"
+    ],
+    "postalCode": "75800",
+    "coordinates": {
+      "lat": 24.935,
+      "lng": 67.015
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-baldia-town",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Baldia Town",
+    "urduName": "بلدیہ ٹاؤن",
+    "aliases": [
+      "Baldia",
+      "Saeedabad Baldia",
+      "Baldia Colony"
+    ],
+    "postalCode": "75760",
+    "coordinates": {
+      "lat": 24.912,
+      "lng": 66.958
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-machar-colony",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Machar Colony",
+    "urduName": "مچھر کالونی",
+    "aliases": [
+      "Machhar Colony",
+      "Muhammadi Colony",
+      "Mauripur Machar Colony"
+    ],
+    "postalCode": "75750",
+    "coordinates": {
+      "lat": 24.845,
+      "lng": 66.975
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-keamari",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Keamari",
+    "urduName": "کیماڑی",
+    "aliases": [
+      "Kemari",
+      "Keamari Port",
+      "Keamari Docks"
+    ],
+    "postalCode": "75620",
+    "coordinates": {
+      "lat": 24.815,
+      "lng": 66.985
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-chakiwara",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Chakiwara",
+    "urduName": "چاکیواڑہ",
+    "aliases": [
+      "Chakiwara Lyari",
+      "Chakiwara Chowk"
+    ],
+    "postalCode": "75660",
+    "coordinates": {
+      "lat": 24.872,
+      "lng": 66.995
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-site-area",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "SITE Area",
+    "urduName": "سائٹ ایریا",
+    "aliases": [
+      "SITE Karachi",
+      "Sindh Industrial Trading Estate",
+      "SITE Industrial Area"
+    ],
+    "postalCode": "75700",
+    "coordinates": {
+      "lat": 24.898,
+      "lng": 67.005
+    },
+    "type": "industrial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-water-pump",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Water Pump Chowrangi",
+    "urduName": "واٹر پمپ چورنگی",
+    "aliases": [
+      "Water Pump FB Area",
+      "Water Pump Karachi",
+      "Federal B Area Water Pump"
+    ],
+    "postalCode": "75950",
+    "coordinates": {
+      "lat": 24.932,
+      "lng": 67.078
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-metroville-site",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Metroville SITE",
+    "urduName": "میٹروول سائٹ",
+    "aliases": [
+      "Metroville",
+      "Metroville SITE Town",
+      "Metroville Block 1"
+    ],
+    "postalCode": "75840",
+    "coordinates": {
+      "lat": 24.912,
+      "lng": 67.012
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-sharafi-goth",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Sharafi Goth",
+    "urduName": "شرافی گوٹھ",
+    "aliases": [
+      "Sharafi Goth Landhi",
+      "Sharafi Goth Malir River"
+    ],
+    "postalCode": "75120",
+    "coordinates": {
+      "lat": 24.862,
+      "lng": 67.172
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-bilal-colony-korangi",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Bilal Colony Korangi",
+    "urduName": "بلال کالونی کورنگی",
+    "aliases": [
+      "Bilal Colony",
+      "Bilal Colony Sector 7-A",
+      "Korangi Bilal Colony"
+    ],
+    "postalCode": "74900",
+    "coordinates": {
+      "lat": 24.821,
+      "lng": 67.135
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-sultanabad",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Sultanabad",
+    "urduName": "سلطان آباد",
+    "aliases": [
+      "Sultanabad Karachi",
+      "Sultanabad MT Khan Road"
+    ],
+    "postalCode": "75530",
+    "coordinates": {
+      "lat": 24.841,
+      "lng": 67.018
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-hijrat-colony",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Hijrat Colony",
+    "urduName": "ہجرت کالونی",
+    "aliases": [
+      "Hijrat Colony Karachi",
+      "Hijrat Colony PIDC"
+    ],
+    "postalCode": "75530",
+    "coordinates": {
+      "lat": 24.849,
+      "lng": 67.021
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "karachi-safoora-goth",
+    "cityId": "karachi",
+    "provinceId": "sindh",
+    "name": "Safoora Goth",
+    "urduName": "صفورہ گوٹھ",
+    "aliases": [
+      "Safoora Chowrangi",
+      "Safoora",
+      "Safoora Goth University Road"
+    ],
+    "postalCode": "75270",
+    "coordinates": {
+      "lat": 24.942,
+      "lng": 67.158
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ]

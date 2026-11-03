@@ -562,5 +562,71 @@ export const quettaAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "quetta-killi-deba",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Killi Deba",
+    "urduName": "کلی دیبہ",
+    "aliases": [
+      "Killi Diba",
+      "Deba Quetta"
+    ],
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.178,
+      "lng": 66.995
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "quetta-killi-ismail",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Killi Ismail",
+    "urduName": "کلی اسماعیل",
+    "aliases": [
+      "Killi Ismail Quetta",
+      "Ismail Colony"
+    ],
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.215,
+      "lng": 67.025
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "quetta-hazara-town",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Hazara Town",
+    "urduName": "ہزارہ ٹاؤن",
+    "aliases": [
+      "Hazara Town Brewery Road",
+      "Hazara Colony"
+    ],
+    "postalCode": "87300",
+    "coordinates": {
+      "lat": 30.165,
+      "lng": 66.962
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];

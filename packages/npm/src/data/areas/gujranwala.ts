@@ -610,5 +610,93 @@ export const gujranwalaAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "gujranwala-climax-abadi",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "name": "Climax Abadi",
+    "urduName": "کلائمکس آبادی",
+    "aliases": [
+      "Climax Colony",
+      "Climax GT Road"
+    ],
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.165,
+      "lng": 74.175
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujranwala-baghbanpura",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "name": "Baghbanpura Gujranwala",
+    "urduName": "باغبانپورہ گوجرانوالہ",
+    "aliases": [
+      "Baghbanpura",
+      "Baghban Pura Gujranwala"
+    ],
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.158,
+      "lng": 74.198
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujranwala-arainwala",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "name": "Arainwala",
+    "urduName": "ارائیں والا",
+    "aliases": [
+      "Arianwala",
+      "Arain Wala GT Road"
+    ],
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.172,
+      "lng": 74.205
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujranwala-chungi-no-5",
+    "cityId": "gujranwala",
+    "provinceId": "punjab",
+    "name": "Chungi No 5",
+    "urduName": "چنگی نمبر ۵",
+    "aliases": [
+      "Chungi 5",
+      "Chungi 5 Pasrur Road"
+    ],
+    "postalCode": "52250",
+    "coordinates": {
+      "lat": 32.162,
+      "lng": 74.225
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];

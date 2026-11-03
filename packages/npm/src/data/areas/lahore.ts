@@ -2647,5 +2647,272 @@ export const lahoreAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "lahore-marghzar-colony",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Marghzar Colony",
+    "urduName": "مرغزار کالونی",
+    "aliases": [
+      "Marghzar Scheme",
+      "Margzar Multan Road"
+    ],
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.488,
+      "lng": 74.262
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-mansoora",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Mansoora",
+    "urduName": "منصورہ",
+    "aliases": [
+      "Mansora",
+      "Mansoora Multan Road"
+    ],
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.492,
+      "lng": 74.254
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-hanjarwal",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Hanjarwal",
+    "urduName": "ہنجروال",
+    "aliases": [
+      "Hanjerwal",
+      "Hanjarwal Multan Road"
+    ],
+    "postalCode": "54782",
+    "coordinates": {
+      "lat": 31.482,
+      "lng": 74.248
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-kalma-chowk",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Kalma Chowk",
+    "urduName": "کلمہ چوک",
+    "aliases": [
+      "Kalma Flyover",
+      "Kalma Chowk Ferozepur Road"
+    ],
+    "postalCode": "54660",
+    "coordinates": {
+      "lat": 31.503,
+      "lng": 74.334
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-kahna",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Kahna",
+    "urduName": "کاہنہ",
+    "aliases": [
+      "Kahna Nau",
+      "Kahna Ferozepur Road"
+    ],
+    "postalCode": "54770",
+    "coordinates": {
+      "lat": 31.365,
+      "lng": 74.369
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-jallo-mor",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Jallo Mor",
+    "urduName": "جلو موڑ",
+    "aliases": [
+      "Jallo",
+      "Jallo Park Road",
+      "Jallo Canal"
+    ],
+    "postalCode": "54000",
+    "coordinates": {
+      "lat": 31.578,
+      "lng": 74.482
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-punjab-university",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Punjab University New Campus",
+    "urduName": "پنجاب یونیورسٹی نیو کیمپس",
+    "aliases": [
+      "PU New Campus",
+      "Quaid-e-Azam Campus PU",
+      "Punjab University Canal Road"
+    ],
+    "postalCode": "54590",
+    "coordinates": {
+      "lat": 31.501,
+      "lng": 74.298
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-uvas",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "UVAS Outfall Road",
+    "urduName": "یوواس آؤٹ فال روڈ",
+    "aliases": [
+      "UVAS Lahore",
+      "University of Veterinary and Animal Sciences",
+      "Outfall Road UVAS"
+    ],
+    "postalCode": "54000",
+    "coordinates": {
+      "lat": 31.57,
+      "lng": 74.305
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-chungi-amar-sidhu",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Chungi Amar Sidhu",
+    "urduName": "چنگی امر سدھو",
+    "aliases": [
+      "Amar Sidhu",
+      "Chungi Ferozepur Road"
+    ],
+    "postalCode": "54760",
+    "coordinates": {
+      "lat": 31.455,
+      "lng": 74.358
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-youhanabad",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Youhanabad",
+    "urduName": "یوحنا آباد",
+    "aliases": [
+      "Yohanabad",
+      "Youhanabad Ferozepur Road"
+    ],
+    "postalCode": "54760",
+    "coordinates": {
+      "lat": 31.435,
+      "lng": 74.361
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-babu-sabu",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Babu Sabu",
+    "urduName": "بابو صابو",
+    "aliases": [
+      "Babu Sabu Interchange",
+      "Babu Sabu Bund Road"
+    ],
+    "postalCode": "54000",
+    "coordinates": {
+      "lat": 31.532,
+      "lng": 74.265
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-kot-lakhpat",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Kot Lakhpat",
+    "urduName": "کوٹ لکھپت",
+    "aliases": [
+      "Kot Lakhpat Industrial",
+      "Kot Lakhpat Railway Station"
+    ],
+    "postalCode": "54770",
+    "coordinates": {
+      "lat": 31.45,
+      "lng": 74.335
+    },
+    "type": "industrial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];
