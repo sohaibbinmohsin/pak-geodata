@@ -84,4 +84,26 @@ describe('Omnibar Search & Match Badge Recognition', () => {
     assert.ok(results.length > 0);
     assert.equal(results[0].id, 'lahore-dha-phase-5');
   });
+
+  test('finds areas by city colloquial alias like isb, lhe, khi, pindi, lyallpur', () => {
+    const isbResults = searchAreas('isb');
+    assert.ok(isbResults.length > 0, 'Should find areas for isb alias');
+    assert.ok(isbResults.some((a) => a.cityId === 'islamabad'), 'isb returns Islamabad areas');
+
+    const lheResults = searchAreas('lhe');
+    assert.ok(lheResults.length > 0, 'Should find areas for lhe alias');
+    assert.ok(lheResults.some((a) => a.cityId === 'lahore'), 'lhe returns Lahore areas');
+
+    const khiResults = searchAreas('khi');
+    assert.ok(khiResults.length > 0, 'Should find areas for khi alias');
+    assert.ok(khiResults.some((a) => a.cityId === 'karachi'), 'khi returns Karachi areas');
+
+    const pindiResults = searchAreas('pindi');
+    assert.ok(pindiResults.length > 0, 'Should find areas for pindi alias');
+    assert.ok(pindiResults.some((a) => a.cityId === 'rawalpindi'), 'pindi returns Rawalpindi areas');
+
+    const lyallpurResults = searchAreas('lyallpur');
+    assert.ok(lyallpurResults.length > 0, 'Should find areas for lyallpur alias');
+    assert.ok(lyallpurResults.some((a) => a.cityId === 'faisalabad'), 'lyallpur returns Faisalabad areas');
+  });
 });

@@ -77,7 +77,7 @@ const CAPABILITIES: CapabilityItem[] = [
     icon: Boxes,
     bullets: [
       'Tree-shakable subpath import pak-geodata/hierarchy for ultra-fast load times',
-      'Delivers all 7 provinces and 40 cities with full bilingual metadata in < 5 KB',
+      'Delivers all 7 provinces and 79 cities with full bilingual metadata in < 5 KB',
       'Eliminates heavy neighborhood polygon bloat from initial web app bundles',
       'Seamless on-demand code-splitting for detailed city-level polygons',
     ],

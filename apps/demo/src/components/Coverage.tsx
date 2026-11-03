@@ -4,6 +4,7 @@ import {
   getAllCities,
   getAreasByCity,
   toWesternDigits,
+  CITY_COLLOQUIAL_ALIASES,
 } from 'pak-geodata';
 import {
   Database,
@@ -26,7 +27,34 @@ export default function Coverage({ className = '' }: CoverageProps) {
   const provinces = useMemo(() => getAllProvinces(), []);
   const allCities = useMemo(() => getAllCities(), []);
 
-  // Filtered cities list
+  // Pre-index area names, aliases, and Urdu names per city for O(1) keyword and alias search
+  const cityKeywordsMap = useMemo(() => {
+    const map = new Map<
+      string,
+      {
+        areaNames: { name: string; lower: string }[];
+        areaAliases: { alias: string; lower: string }[];
+        areaUrdu: string[];
+      }
+    >();
+    for (const city of allCities) {
+      const cityAreas = getAreasByCity(city.id);
+      const areaNames: { name: string; lower: string }[] = [];
+      const areaAliases: { alias: string; lower: string }[] = [];
+      const areaUrdu: string[] = [];
+      for (const a of cityAreas) {
+        areaNames.push({ name: a.name, lower: a.name.toLowerCase() });
+        if (a.urduName) areaUrdu.push(a.urduName);
+        for (const al of a.aliases || []) {
+          areaAliases.push({ alias: al, lower: al.toLowerCase() });
+        }
+      }
+      map.set(city.id, { areaNames, areaAliases, areaUrdu });
+    }
+    return map;
+  }, [allCities]);
+
+  // Filtered cities list with background alias and area matching
   const filteredCities = useMemo(() => {
     let result = allCities;
 
@@ -34,37 +62,92 @@ export default function Coverage({ className = '' }: CoverageProps) {
       result = result.filter((c) => c.provinceId === selectedProvinceFilter);
     }
 
-    if (searchQuery.trim()) {
-      const q = toWesternDigits(searchQuery).toLowerCase().trim();
-      const num = parseInt(q, 10);
-      const isNum = !isNaN(num) && /^\d+$/.test(q);
-      result = result.filter((c) => {
-        const matchesBasic =
-          c.name.toLowerCase().includes(q) ||
-          c.urduName.includes(q) ||
-          c.district.toLowerCase().includes(q) ||
-          (c.postalCodeRange &&
-            (c.postalCodeRange[0].includes(q) || c.postalCodeRange[1].includes(q)));
-        if (matchesBasic) return true;
-        if (isNum && c.postalCodeRange) {
-          const min = parseInt(c.postalCodeRange[0], 10);
-          const max = parseInt(c.postalCodeRange[1], 10);
-          if (!isNaN(min) && !isNaN(max) && min <= num && num <= max) {
-            return true;
-          }
-        }
-        return false;
+    if (!searchQuery.trim()) {
+      return [...result].sort((a, b) => {
+        const aFlag = FLAGSHIP_CITY_IDS.has(a.id) ? 1 : 0;
+        const bFlag = FLAGSHIP_CITY_IDS.has(b.id) ? 1 : 0;
+        if (aFlag !== bFlag) return bFlag - aFlag;
+        return a.name.localeCompare(b.name);
       });
     }
 
+    const q = toWesternDigits(searchQuery).toLowerCase().trim();
+    const num = parseInt(q, 10);
+    const isNum = !isNaN(num) && /^\d+$/.test(q);
+
+    const matchedList: (typeof allCities)[0][] = [];
+
+    for (const c of result) {
+      let isMatch = false;
+
+      // 1. Direct city name, slug, district, or Urdu name
+      if (
+        c.name.toLowerCase().includes(q) ||
+        c.id.toLowerCase().includes(q) ||
+        c.district.toLowerCase().includes(q) ||
+        c.urduName.includes(q)
+      ) {
+        isMatch = true;
+      }
+
+      // 2. Postal code range match
+      if (!isMatch && isNum && c.postalCodeRange) {
+        const min = parseInt(c.postalCodeRange[0], 10);
+        const max = parseInt(c.postalCodeRange[1], 10);
+        if (!isNaN(min) && !isNaN(max) && min <= num && num <= max) {
+          isMatch = true;
+        }
+      }
+
+      // 3. City colloquial aliases (e.g. isb, khi, lhe, pindi, fsd, lyallpur)
+      if (!isMatch) {
+        const cityAliases = CITY_COLLOQUIAL_ALIASES[c.id] || [];
+        const matchedCityAlias = cityAliases.find(
+          (al) => al.toLowerCase().includes(q) || q.includes(al.toLowerCase())
+        );
+        if (matchedCityAlias) {
+          isMatch = true;
+        }
+      }
+
+      // 4. Area aliases & area names within this city
+      if (!isMatch) {
+        const kw = cityKeywordsMap.get(c.id);
+        if (kw) {
+          const matchedAreaAlias = kw.areaAliases.find(
+            (al) => al.lower.includes(q) || q.includes(al.lower)
+          );
+          if (matchedAreaAlias) {
+            isMatch = true;
+          } else {
+            const matchedAreaName = kw.areaNames.find(
+              (nm) => nm.lower.includes(q) || q.includes(nm.lower)
+            );
+            if (matchedAreaName) {
+              isMatch = true;
+            } else {
+              const matchedUrdu = kw.areaUrdu.find((ur) => ur.includes(q) || q.includes(ur));
+              if (matchedUrdu) {
+                isMatch = true;
+              }
+            }
+          }
+        }
+      }
+
+      if (isMatch) {
+        matchedList.push(c);
+      }
+    }
+
     // Sort: flagship cities first, then alphabetical
-    return [...result].sort((a, b) => {
+    return matchedList.sort((a, b) => {
       const aFlag = FLAGSHIP_CITY_IDS.has(a.id) ? 1 : 0;
       const bFlag = FLAGSHIP_CITY_IDS.has(b.id) ? 1 : 0;
       if (aFlag !== bFlag) return bFlag - aFlag;
       return a.name.localeCompare(b.name);
     });
-  }, [allCities, selectedProvinceFilter, searchQuery]);
+  }, [allCities, selectedProvinceFilter, searchQuery, cityKeywordsMap]);
 
   return (
     <section
@@ -81,18 +164,18 @@ export default function Coverage({ className = '' }: CoverageProps) {
           Comprehensive Metropolitan Coverage
         </h2>
         <p className="text-xs sm:text-base text-neutral-400 mt-3 leading-relaxed break-words">
-          Curated across 7 provinces, 40 verified cities, and 189 foundational metropolitan areas with district bounds and postal codes.
+          Curated across {provinces.length} provinces and {allCities.length} verified cities with district bounds and postal codes.
         </p>
       </div>
 
-      {/* All 40 Cities Master Dataset Directory */}
+      {/* All Cities Master Dataset Directory */}
       <div className="glass-chrome rounded-2xl border border-white/10 overflow-hidden w-full min-w-0 max-w-full">
         {/* Table Controls Bar: Title & Search */}
         <div className="p-4 sm:p-6 border-b border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 sm:gap-4 w-full min-w-0">
           <div className="w-full md:w-auto min-w-0">
             <h3 className="text-base sm:text-lg font-bold text-white flex items-center gap-2 flex-wrap">
               <Layers className="w-5 h-5 text-cyan-400 shrink-0" />
-              <span>Full City Directory (40 Verified Cities)</span>
+              <span>Full City Directory ({allCities.length} Verified Cities)</span>
             </h3>
             <p className="text-xs text-neutral-400 mt-0.5 break-words">
               Showing {filteredCities.length} of {allCities.length} verified cities with bounding box coordinates and 5-digit postal code ranges.
@@ -107,7 +190,7 @@ export default function Coverage({ className = '' }: CoverageProps) {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search city, district, postal..."
+                placeholder="Search city, alias, area, postal..."
                 className="w-full bg-black/40 border border-white/10 rounded-xl pl-9 pr-3 py-1.5 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-cyan-400 transition-colors"
               />
             </div>
@@ -271,7 +354,7 @@ export default function Coverage({ className = '' }: CoverageProps) {
                     >
                       {/* City & Script */}
                       <td className="py-3.5 px-4 sm:px-6">
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-2 flex-wrap">
                           <span className="font-sans font-semibold text-white text-sm">
                             {city.name}
                           </span>
