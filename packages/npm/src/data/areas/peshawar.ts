@@ -283,7 +283,13 @@ export const peshawarAreas: readonly PakistanArea[] = [
     ],
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7041431,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true
   },
@@ -813,7 +819,13 @@ export const peshawarAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7041431,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   }
 ];

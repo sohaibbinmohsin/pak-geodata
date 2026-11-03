@@ -16,7 +16,13 @@ export const vehariAreas: readonly PakistanArea[] = [
     "cityId": "vehari",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1162813,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",

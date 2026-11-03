@@ -264,7 +264,13 @@ export const faisalabadAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7110695,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {

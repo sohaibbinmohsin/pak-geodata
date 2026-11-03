@@ -59,7 +59,13 @@ export const kotAdduAreas: readonly PakistanArea[] = [
     "cityId": "kot-addu",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1173378,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",

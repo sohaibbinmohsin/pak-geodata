@@ -97,14 +97,26 @@ class ProvenanceSource:
     """Audit provenance record linking an entity to its upstream database."""
 
     provider: str
-    id: Optional[str] = None
+    id: Optional[Union[str, int]] = None
+    feature_code: Optional[str] = None
+    dataset_version: Optional[str] = None
     type: Optional[str] = None
     url: Optional[str] = None
+    license: Optional[str] = None
     verified_at: Optional[str] = None
+
+    @property
+    def featureCode(self) -> Optional[str]:
+        return self.feature_code
+
+    @property
+    def datasetVersion(self) -> Optional[str]:
+        return self.dataset_version
 
     @property
     def verifiedAt(self) -> Optional[str]:
         return self.verified_at
+
 
 
 @dataclass(frozen=True)

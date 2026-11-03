@@ -16,7 +16,13 @@ export const gojraAreas: readonly PakistanArea[] = [
     "cityId": "gojra",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1178231,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",

@@ -105,7 +105,13 @@ export const quettaAreas: readonly PakistanArea[] = [
     ],
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1167528,
+        "featureCode": "PPLA",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true
   },

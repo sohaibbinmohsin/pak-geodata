@@ -770,7 +770,13 @@ export const karachiAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7045915,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -1249,7 +1255,13 @@ export const karachiAreas: readonly PakistanArea[] = [
     ],
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7045915,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "sindh"
@@ -1513,7 +1525,13 @@ export const karachiAreas: readonly PakistanArea[] = [
     ],
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7046066,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "sindh"
@@ -2280,7 +2298,13 @@ export const karachiAreas: readonly PakistanArea[] = [
     ],
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1346827,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "sindh"
@@ -2302,7 +2326,13 @@ export const karachiAreas: readonly PakistanArea[] = [
     ],
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1346827,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "sindh"
@@ -2463,7 +2493,13 @@ export const karachiAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1346988,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -2623,7 +2659,13 @@ export const karachiAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7045697,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -2805,7 +2847,13 @@ export const karachiAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7046299,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {

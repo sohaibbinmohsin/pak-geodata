@@ -44,7 +44,13 @@ export const islamabadAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 11449830,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -183,7 +189,13 @@ export const islamabadAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7038308,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -437,7 +449,13 @@ export const islamabadAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 11449862,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -863,7 +881,13 @@ export const islamabadAreas: readonly PakistanArea[] = [
     ],
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7038262,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true
   },
@@ -1021,7 +1045,13 @@ export const islamabadAreas: readonly PakistanArea[] = [
     ],
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7038588,
+        "featureCode": "LCTY",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true
   },

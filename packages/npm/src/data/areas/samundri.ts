@@ -121,7 +121,13 @@ export const samundriAreas: readonly PakistanArea[] = [
     "cityId": "samundri",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1166234,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",

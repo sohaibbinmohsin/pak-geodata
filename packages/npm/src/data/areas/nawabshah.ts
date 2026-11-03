@@ -62,7 +62,13 @@ export const nawabshahAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 11577271,
+        "featureCode": "AREA",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {

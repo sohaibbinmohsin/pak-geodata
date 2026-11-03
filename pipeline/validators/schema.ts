@@ -14,12 +14,20 @@ export const CityBoundsSchema = z.object({
 
 export const ProvenanceProviderSchema = z.enum([
   'nga_geonames',
+  'nga',
   'openstreetmap',
+  'osm',
   'un_ocha_hdx',
+  'un_ocha',
   'pakistan_post',
+  'pak_post',
   'pbs',
+  'official_gazette',
+  'survey',
+  'curated',
   'manual_verified'
 ]);
+
 
 export const ProvenanceSourceSchema = z.object({
   provider: ProvenanceProviderSchema,

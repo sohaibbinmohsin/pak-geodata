@@ -21,7 +21,13 @@ export const wazirabadAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1162456,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {

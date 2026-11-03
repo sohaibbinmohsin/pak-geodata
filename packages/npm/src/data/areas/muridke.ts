@@ -20,7 +20,13 @@ export const muridkeAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1169692,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -43,7 +49,13 @@ export const muridkeAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1169692,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {

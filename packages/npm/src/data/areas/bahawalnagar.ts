@@ -16,7 +16,13 @@ export const bahawalnagarAreas: readonly PakistanArea[] = [
     "cityId": "bahawalnagar",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1183883,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",

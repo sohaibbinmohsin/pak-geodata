@@ -16,7 +16,13 @@ export const kamaliaAreas: readonly PakistanArea[] = [
     "cityId": "kamalia",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1175156,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",
@@ -143,7 +149,13 @@ export const kamaliaAreas: readonly PakistanArea[] = [
     "cityId": "kamalia",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1175156,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",

@@ -57,7 +57,13 @@ export const chishtianAreas: readonly PakistanArea[] = [
     "cityId": "chishtian",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1181073,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",

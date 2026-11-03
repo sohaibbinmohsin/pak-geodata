@@ -20,22 +20,31 @@ export interface CityBounds {
 }
 
 export type ProvenanceProvider =
+  | 'nga_geonames'
   | 'nga'
-  | 'pak_post'
-  | 'un_ocha'
-  | 'pbs'
+  | 'openstreetmap'
   | 'osm'
+  | 'un_ocha_hdx'
+  | 'un_ocha'
+  | 'pakistan_post'
+  | 'pak_post'
+  | 'pbs'
   | 'official_gazette'
   | 'survey'
-  | 'curated';
+  | 'curated'
+  | 'manual_verified';
 
 export interface ProvenanceSource {
   provider: ProvenanceProvider;
-  id?: string;
+  id?: string | number;
+  featureCode?: string;
   type?: string;
+  datasetVersion?: string;
   url?: string;
+  license?: string;
   verifiedAt?: string;
 }
+
 
 export interface PakistanArea {
   id: string;

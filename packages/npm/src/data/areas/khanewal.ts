@@ -16,7 +16,13 @@ export const khanewalAreas: readonly PakistanArea[] = [
     "cityId": "khanewal",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1174220,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",
