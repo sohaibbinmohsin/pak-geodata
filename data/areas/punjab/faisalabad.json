@@ -1100,5 +1100,115 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "faisalabad-d-type-colony",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "D-Type Colony",
+    "urduName": "ڈی ٹائپ کالونی",
+    "aliases": [
+      "D Type Colony",
+      "D Type Samundri Road"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.392,
+      "lng": 73.062
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "faisalabad-tata-bazaar",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Tata Bazaar",
+    "urduName": "ٹیسٹا بازار",
+    "aliases": [
+      "Tata Bazar Factory Area",
+      "Tata Market"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.408,
+      "lng": 73.075
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "faisalabad-faizabad",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Faizabad",
+    "urduName": "فیض آباد",
+    "aliases": [
+      "Faizabad Narwala Road",
+      "Faizabad Colony"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.428,
+      "lng": 73.045
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "faisalabad-warispura",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Warispura",
+    "urduName": "وارث پورہ",
+    "aliases": [
+      "Waris Pura",
+      "Waris Pura Jaranwala Road"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.412,
+      "lng": 73.112
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "faisalabad-dawood-colony",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Dawood Colony",
+    "urduName": "داؤد کالونی",
+    "aliases": [
+      "Dawood Nagar",
+      "Dawood Colony Millat Road"
+    ],
+    "postalCode": "38000",
+    "coordinates": {
+      "lat": 31.442,
+      "lng": 73.068
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ]
