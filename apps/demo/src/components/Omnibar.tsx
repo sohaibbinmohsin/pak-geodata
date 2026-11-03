@@ -94,24 +94,21 @@ export default function Omnibar({
     return map;
   }, [allCities, allAreas]);
 
-  // Filtered and sorted cities list for dropdown with alias and area support
+  // Filtered and sorted cities list for dropdown with background alias and area support
   const filteredCitiesList = useMemo(() => {
     const q = citySearchQuery.trim().toLowerCase();
     if (!q) {
-      return allCities
-        .map((c) => ({ city: c, matchReason: undefined as string | undefined }))
-        .sort((a, b) => {
-          const countA = cityAreaCounts[a.city.id] || 0;
-          const countB = cityAreaCounts[b.city.id] || 0;
-          if (countB !== countA) return countB - countA;
-          return a.city.name.localeCompare(b.city.name);
-        });
+      return [...allCities].sort((a, b) => {
+        const countA = cityAreaCounts[a.id] || 0;
+        const countB = cityAreaCounts[b.id] || 0;
+        if (countB !== countA) return countB - countA;
+        return a.name.localeCompare(b.name);
+      });
     }
 
-    const matched: { city: (typeof allCities)[0]; matchReason?: string }[] = [];
+    const matched: PakistanCity[] = [];
     for (const c of allCities) {
       let isMatch = false;
-      let matchReason: string | undefined = undefined;
 
       // 1. Direct name, slug, district, urduName, provinceId
       if (
@@ -132,7 +129,6 @@ export default function Omnibar({
         );
         if (matchedCityAlias) {
           isMatch = true;
-          matchReason = `Alias: "${matchedCityAlias}"`;
         }
       }
 
@@ -145,19 +141,16 @@ export default function Omnibar({
           );
           if (matchedAreaAlias) {
             isMatch = true;
-            matchReason = `Alias: "${matchedAreaAlias.alias}"`;
           } else {
             const matchedAreaName = kw.areaNames.find(
               (nm) => nm.lower.includes(q) || q.includes(nm.lower)
             );
             if (matchedAreaName) {
               isMatch = true;
-              matchReason = `Area: "${matchedAreaName.name}"`;
             } else {
               const matchedUrdu = kw.areaUrdu.find((ur) => ur.includes(q) || q.includes(ur));
               if (matchedUrdu) {
                 isMatch = true;
-                matchReason = `Urdu: "${matchedUrdu}"`;
               }
             }
           }
@@ -165,15 +158,15 @@ export default function Omnibar({
       }
 
       if (isMatch) {
-        matched.push({ city: c, matchReason });
+        matched.push(c);
       }
     }
 
     return matched.sort((a, b) => {
-      const countA = cityAreaCounts[a.city.id] || 0;
-      const countB = cityAreaCounts[b.city.id] || 0;
+      const countA = cityAreaCounts[a.id] || 0;
+      const countB = cityAreaCounts[b.id] || 0;
       if (countB !== countA) return countB - countA;
-      return a.city.name.localeCompare(b.city.name);
+      return a.name.localeCompare(b.name);
     });
   }, [allCities, citySearchQuery, cityAreaCounts, cityKeywordsMap]);
 
@@ -476,7 +469,7 @@ export default function Omnibar({
 
                 {/* Scrollable list of 79 cities */}
                 <div className="max-h-60 overflow-y-auto space-y-0.5 pr-1 divide-y divide-white/5 no-scrollbar">
-                  {filteredCitiesList.map(({ city: c, matchReason }) => {
+                  {filteredCitiesList.map((c) => {
                     const areaCount = cityAreaCounts[c.id] || 0;
                     const isCurrent = selectedCity?.id === c.id;
                     return (
@@ -498,11 +491,6 @@ export default function Omnibar({
                           {c.urduName && (
                             <span className="text-[11px] font-nastaliq text-emerald-400/80 shrink-0">
                               {c.urduName}
-                            </span>
-                          )}
-                          {matchReason && (
-                            <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-300 shrink-0">
-                              {matchReason}
                             </span>
                           )}
                         </div>
@@ -639,12 +627,14 @@ export default function Omnibar({
 
                         {/* Metadata Pills: Match Reason, City, Postal Code, Area Type */}
                         <div className="flex items-center gap-1.5 flex-wrap">
-                          {/* Match Reason Badge */}
-                          <span
-                            className={`inline-flex items-center text-[10px] font-mono px-1.5 py-0.5 rounded border leading-none font-medium ${badge.colorClass}`}
-                          >
-                            {badge.label}
-                          </span>
+                          {/* Match Reason Badge (hide alias tags in search results) */}
+                          {badge.type !== 'alias' && (
+                            <span
+                              className={`inline-flex items-center text-[10px] font-mono px-1.5 py-0.5 rounded border leading-none font-medium ${badge.colorClass}`}
+                            >
+                              {badge.label}
+                            </span>
+                          )}
 
                           {/* City Badge */}
                           <span className="inline-flex items-center text-[10px] font-mono uppercase tracking-wider text-neutral-300 bg-white/5 border border-white/10 px-1.5 py-0.5 rounded leading-none">

@@ -54,8 +54,8 @@ export default function Coverage({ className = '' }: CoverageProps) {
     return map;
   }, [allCities]);
 
-  // Filtered cities list with match labels for aliases
-  const filteredCityItems = useMemo(() => {
+  // Filtered cities list with background alias and area matching
+  const filteredCities = useMemo(() => {
     let result = allCities;
 
     if (selectedProvinceFilter !== 'all') {
@@ -63,25 +63,22 @@ export default function Coverage({ className = '' }: CoverageProps) {
     }
 
     if (!searchQuery.trim()) {
-      return result
-        .map((city) => ({ city, matchLabel: undefined as string | undefined }))
-        .sort((a, b) => {
-          const aFlag = FLAGSHIP_CITY_IDS.has(a.city.id) ? 1 : 0;
-          const bFlag = FLAGSHIP_CITY_IDS.has(b.city.id) ? 1 : 0;
-          if (aFlag !== bFlag) return bFlag - aFlag;
-          return a.city.name.localeCompare(b.city.name);
-        });
+      return [...result].sort((a, b) => {
+        const aFlag = FLAGSHIP_CITY_IDS.has(a.id) ? 1 : 0;
+        const bFlag = FLAGSHIP_CITY_IDS.has(b.id) ? 1 : 0;
+        if (aFlag !== bFlag) return bFlag - aFlag;
+        return a.name.localeCompare(b.name);
+      });
     }
 
     const q = toWesternDigits(searchQuery).toLowerCase().trim();
     const num = parseInt(q, 10);
     const isNum = !isNaN(num) && /^\d+$/.test(q);
 
-    const matchedList: { city: (typeof allCities)[0]; matchLabel?: string }[] = [];
+    const matchedList: (typeof allCities)[0][] = [];
 
     for (const c of result) {
       let isMatch = false;
-      let matchLabel: string | undefined = undefined;
 
       // 1. Direct city name, slug, district, or Urdu name
       if (
@@ -99,7 +96,6 @@ export default function Coverage({ className = '' }: CoverageProps) {
         const max = parseInt(c.postalCodeRange[1], 10);
         if (!isNaN(min) && !isNaN(max) && min <= num && num <= max) {
           isMatch = true;
-          matchLabel = `Postal: ${c.postalCodeRange[0]} - ${c.postalCodeRange[1]}`;
         }
       }
 
@@ -111,7 +107,6 @@ export default function Coverage({ className = '' }: CoverageProps) {
         );
         if (matchedCityAlias) {
           isMatch = true;
-          matchLabel = `Alias: "${matchedCityAlias}"`;
         }
       }
 
@@ -124,19 +119,16 @@ export default function Coverage({ className = '' }: CoverageProps) {
           );
           if (matchedAreaAlias) {
             isMatch = true;
-            matchLabel = `Alias: "${matchedAreaAlias.alias}"`;
           } else {
             const matchedAreaName = kw.areaNames.find(
               (nm) => nm.lower.includes(q) || q.includes(nm.lower)
             );
             if (matchedAreaName) {
               isMatch = true;
-              matchLabel = `Area: "${matchedAreaName.name}"`;
             } else {
               const matchedUrdu = kw.areaUrdu.find((ur) => ur.includes(q) || q.includes(ur));
               if (matchedUrdu) {
                 isMatch = true;
-                matchLabel = `Urdu: "${matchedUrdu}"`;
               }
             }
           }
@@ -144,20 +136,18 @@ export default function Coverage({ className = '' }: CoverageProps) {
       }
 
       if (isMatch) {
-        matchedList.push({ city: c, matchLabel });
+        matchedList.push(c);
       }
     }
 
     // Sort: flagship cities first, then alphabetical
     return matchedList.sort((a, b) => {
-      const aFlag = FLAGSHIP_CITY_IDS.has(a.city.id) ? 1 : 0;
-      const bFlag = FLAGSHIP_CITY_IDS.has(b.city.id) ? 1 : 0;
+      const aFlag = FLAGSHIP_CITY_IDS.has(a.id) ? 1 : 0;
+      const bFlag = FLAGSHIP_CITY_IDS.has(b.id) ? 1 : 0;
       if (aFlag !== bFlag) return bFlag - aFlag;
-      return a.city.name.localeCompare(b.city.name);
+      return a.name.localeCompare(b.name);
     });
   }, [allCities, selectedProvinceFilter, searchQuery, cityKeywordsMap]);
-
-  const filteredCities = useMemo(() => filteredCityItems.map((item) => item.city), [filteredCityItems]);
 
   return (
     <section
@@ -252,12 +242,12 @@ export default function Coverage({ className = '' }: CoverageProps) {
 
         {/* Mobile Responsive Cards List (< 768px) */}
         <div className="block md:hidden divide-y divide-white/5 max-h-[560px] overflow-y-auto w-full min-w-0 no-scrollbar">
-          {filteredCityItems.length === 0 ? (
+          {filteredCities.length === 0 ? (
             <div className="py-12 text-center text-neutral-400 text-sm">
               No cities match your search criteria.
             </div>
           ) : (
-            filteredCityItems.map(({ city, matchLabel }) => {
+            filteredCities.map((city) => {
               const isFlagship = FLAGSHIP_CITY_IDS.has(city.id);
               const cityAreas = getAreasByCity(city.id);
               const areasCount = cityAreas.length;
@@ -274,11 +264,6 @@ export default function Coverage({ className = '' }: CoverageProps) {
                       <span className="font-nastaliq text-emerald-300 text-sm" dir="rtl">
                         {city.urduName}
                       </span>
-                      {matchLabel && (
-                        <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-300">
-                          {matchLabel}
-                        </span>
-                      )}
                     </div>
                     {isFlagship && (
                       <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 shrink-0">
@@ -349,14 +334,14 @@ export default function Coverage({ className = '' }: CoverageProps) {
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5 font-mono text-xs">
-              {filteredCityItems.length === 0 ? (
+              {filteredCities.length === 0 ? (
                 <tr>
                   <td colSpan={7} className="py-12 text-center text-neutral-400 text-sm">
                     No cities match your search criteria.
                   </td>
                 </tr>
               ) : (
-                filteredCityItems.map(({ city, matchLabel }) => {
+                filteredCities.map((city) => {
                   const isFlagship = FLAGSHIP_CITY_IDS.has(city.id);
                   const cityAreas = getAreasByCity(city.id);
                   const areasCount = cityAreas.length;
@@ -379,11 +364,6 @@ export default function Coverage({ className = '' }: CoverageProps) {
                           {isFlagship && (
                             <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
                               Flagship
-                            </span>
-                          )}
-                          {matchLabel && (
-                            <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-300">
-                              {matchLabel}
                             </span>
                           )}
                         </div>
