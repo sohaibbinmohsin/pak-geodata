@@ -43,20 +43,44 @@ function levenshteinDistance(a: string, b: string): number {
   return matrix[b.length];
 }
 
+export const CITY_COLLOQUIAL_ALIASES: Record<string, string[]> = {
+  karachi: ['khi', 'khi city', 'city of lights', 'عروس البلاد'],
+  lahore: ['lhe', 'lhr', 'lahore city', 'heart of pakistan', 'زندہ دلان لاہور'],
+  islamabad: ['isb', 'federal capital', 'ict', 'capital territory'],
+  rawalpindi: ['pindi', 'rwp', 'twin city'],
+  faisalabad: ['fsd', 'lyallpur', 'manchester of pakistan'],
+  multan: ['mux', 'mul', 'city of saints', 'madinat-ul-auliya'],
+  peshawar: ['pew', 'psh', 'city of flowers'],
+  quetta: ['qta', 'fruit garden of pakistan'],
+  gujranwala: ['gwa', 'city of wrestlers', 'pehlwanon ka shehar'],
+  sialkot: ['skt', 'city of iqbal'],
+  hyderabad: ['hdd', 'hyd'],
+  abbottabad: ['atd', 'city of pines'],
+  bahawalpur: ['bhv', 'bwp', 'princely state'],
+  sargodha: ['sgd', 'city of eagles', 'shaheenon ka shehar'],
+  sukkur: ['skz'],
+  gwadar: ['gwd'],
+  skardu: ['kdu'],
+  gilgit: ['gil'],
+  muzaffarabad: ['mzd'],
+  mirpur: ['mpr'],
+};
+
 function createNormalizedCandidate(area: PakistanArea): NormalizedCandidate {
   const normName = normalizeString(area.name);
   const normId = normalizeString(area.id);
   const rawUrdu = area.urduName ? area.urduName.trim() : '';
   const normUrdu = area.urduName ? normalizeUrduText(area.urduName) : '';
   const normAliases = area.aliases.map((a) => normalizeString(a));
-  const allText = `${normName} ${normId} ${normAliases.join(' ')} ${normUrdu} ${rawUrdu}`.trim();
+  const cityAliases = (CITY_COLLOQUIAL_ALIASES[area.cityId] || []).map((a) => normalizeString(a));
+  const allText = `${normName} ${normId} ${normAliases.join(' ')} ${cityAliases.join(' ')} ${normUrdu} ${rawUrdu}`.trim();
   return {
     area,
     normName,
     normId,
     normUrdu,
     rawUrdu,
-    normAliases,
+    normAliases: [...normAliases, ...cityAliases],
     allText
   };
 }

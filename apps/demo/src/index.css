@@ -236,12 +236,28 @@ body {
 
 .pak-cluster-beacon {
   position: absolute;
-  inset: -6px;
+  inset: -4px;
   border-radius: 9999px;
-  background: rgba(16, 185, 129, 0.3);
-  filter: blur(2px);
-  animation: pak-beacon-pulse 2.4s ease-out infinite;
+  background: rgba(16, 185, 129, 0.35);
+  filter: blur(3px);
+  animation: pak-cluster-beacon-pulse 2.4s ease-out infinite;
   pointer-events: none;
+  transform-origin: center center;
+}
+
+@keyframes pak-cluster-beacon-pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  60% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
 }
 
 @keyframes pak-cluster-selected-pulse {

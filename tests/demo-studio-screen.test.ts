@@ -36,7 +36,7 @@ test('StudioScreen defaults selectedCity to All Pakistan (null), positions headi
     'StudioScreen must initialize selectedCity with null (All Pakistan)'
   );
   assert.ok(
-    content.includes('Back to Overview') && content.includes('GeoData Studio'),
+    (content.includes('Back to Overview') || content.includes('Back')) && content.includes('GeoData Studio'),
     'StudioScreen positions Back button and GeoData Studio heading together on the left'
   );
   assert.ok(

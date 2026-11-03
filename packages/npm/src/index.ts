@@ -113,7 +113,7 @@ export function findAreasByPostalCode(postalCode: string | number): PakistanArea
   return [...(areasByPostalCodeMap.get(String(postalCode).trim()) || [])];
 }
 // Re-export search and spatial geocoding
-export { searchAreas } from './search.js';
+export { searchAreas, CITY_COLLOQUIAL_ALIASES } from './search.js';
 export { getNearestArea, haversineDistanceKm } from './geo.js';
 
 // Re-export Urdu normalization engine
