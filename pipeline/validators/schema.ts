@@ -5,6 +5,31 @@ export const CoordinatesSchema = z.object({
   lng: z.number().min(60.8).max(77.8)
 });
 
+export const CityBoundsSchema = z.object({
+  minLat: z.number().min(23.5).max(37.1),
+  maxLat: z.number().min(23.5).max(37.1),
+  minLng: z.number().min(60.8).max(77.8),
+  maxLng: z.number().min(60.8).max(77.8)
+});
+
+export const ProvenanceProviderSchema = z.enum([
+  'nga_geonames',
+  'openstreetmap',
+  'un_ocha_hdx',
+  'pakistan_post',
+  'pbs',
+  'manual_verified'
+]);
+
+export const ProvenanceSourceSchema = z.object({
+  provider: ProvenanceProviderSchema,
+  id: z.union([z.string(), z.number()]).optional(),
+  featureCode: z.string().optional(),
+  datasetVersion: z.string().optional(),
+  extractedAt: z.string().optional(),
+  license: z.string().optional()
+});
+
 export const AreaSchema = z.object({
   id: z.string().regex(/^[a-z0-9]+-[a-z0-9-]+$/),
   cityId: z.string().min(2),
@@ -14,6 +39,8 @@ export const AreaSchema = z.object({
   aliases: z.array(z.string()).default([]),
   postalCode: z.string().regex(/^\d{5}$/).optional(),
   coordinates: CoordinatesSchema,
+  bounds: CityBoundsSchema.optional(),
+  radiusKm: z.number().positive().optional(),
   type: z.enum([
     'neighborhood',
     'suburb',
@@ -24,7 +51,7 @@ export const AreaSchema = z.object({
     'administrative'
   ]).optional(),
   verified: z.boolean(),
-  sources: z.array(z.string()).optional()
+  sources: z.array(z.union([z.string(), ProvenanceSourceSchema])).optional()
 });
 
 export const CitySchema = z.object({
@@ -36,12 +63,7 @@ export const CitySchema = z.object({
   district: z.string().min(2),
   coordinates: CoordinatesSchema,
   postalCodeRange: z.tuple([z.string().regex(/^\d{5}$/), z.string().regex(/^\d{5}$/)]).optional(),
-  bounds: z.object({
-    minLat: z.number(),
-    maxLat: z.number(),
-    minLng: z.number(),
-    maxLng: z.number()
-  }).optional()
+  bounds: CityBoundsSchema.optional()
 });
 
 export const ProvinceSchema = z.object({
@@ -53,6 +75,9 @@ export const ProvinceSchema = z.object({
 });
 
 export type Coordinates = z.infer<typeof CoordinatesSchema>;
+export type CityBounds = z.infer<typeof CityBoundsSchema>;
+export type ProvenanceProvider = z.infer<typeof ProvenanceProviderSchema>;
+export type ProvenanceSource = z.infer<typeof ProvenanceSourceSchema>;
 export type Area = z.infer<typeof AreaSchema>;
 export type City = z.infer<typeof CitySchema>;
 export type Province = z.infer<typeof ProvinceSchema>;
