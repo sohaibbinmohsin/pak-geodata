@@ -550,6 +550,48 @@ We actively welcome community contributions to expand coverage across Pakistan!
 
 ---
 
+## Data Sources & Upstream Attribution
+
+`pak-geodata` synthesizes and cross-validates geographic intelligence from authoritative international and national GIS repositories:
+
+1. **National Geospatial-Intelligence Agency (NGA) & GeoNames**:
+   - Primary source for georeferenced populated places (`PPL`), urban quarters/neighborhoods (`PPLX`), and administrative centroids across Pakistan.
+   - Licensed under [Creative Commons Attribution 4.0 International (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+2. **OpenStreetMap Contributors**:
+   - Source for verified metropolitan neighborhood and road-network boundary references.
+   - © OpenStreetMap contributors. Licensed under the [Open Database License (ODbL 1.0)](https://opendatacommons.org/licenses/odbl/1.0/).
+3. **United Nations OCHA / Humanitarian Data Exchange (HDX COD)**:
+   - Administrative Common Operational Datasets (COD-AB) for Pakistan provincial and district administrative boundaries.
+   - Licensed under [CC-BY-IGO](https://creativecommons.org/licenses/by/3.0/igo/).
+4. **Pakistan Post & Pakistan Bureau of Statistics (PBS)**:
+   - Postal codes, delivery zones, and district administrative hierarchies.
+
+For complete attribution notices and upstream provenance details, please refer to [ATTRIBUTION.md](ATTRIBUTION.md).
+
+---
+
+## Licensing & Commercial Use FAQ
+
+`pak-geodata` employs a standard **Split-License Architecture**:
+- **Codebase & Libraries** (`packages/npm`, `packages/pypi`, algorithms, and build scripts): Licensed under the permissive [MIT License](LICENSE).
+- **Geographic Datasets** (`data/` directory and compiled JSON geographic records): Dual-licensed under the [Open Database License (ODbL 1.0)](LICENSE-DATA) and [CC-BY 4.0](LICENSE-DATA).
+
+### Frequently Asked Questions for Commercial Developers
+
+#### Can I use `pak-geodata` in a proprietary commercial SaaS, mobile app, or e-commerce platform?
+**Yes.** Under **Section 4.3 of the Open Database License (ODbL)**, displaying Pakistani cities, autocomplete menus, checkout address pickers, or geocoding outputs within your application constitutes a **"Produced Work"**. Using `pak-geodata` in your website or mobile app does **NOT** require you to open-source your proprietary code, backend services, or customer database.
+
+#### Do I need to attribute `pak-geodata` in my application?
+Yes. If your application or public service utilizes `pak-geodata` datasets, simply include a standard attribution line in your app's "About", "Credits", or "Legal" page:
+> *"Geographic data provided by pak-geodata (The Mohsin Project), derived from OpenStreetMap contributors (ODbL) and NGA/GeoNames (CC-BY 4.0)."*
+
+#### What if I modify or extend the underlying geographic dataset itself?
+If you publicly redistribute an adapted version of the `data/` database (e.g. publishing an enriched standalone Pakistan GIS dataset derived from this repository), ODbL Section 4.4 requires you to share those specific geographic database modifications under ODbL 1.0.
+
+For full legal terms, see [LICENSE](LICENSE) (Code) and [LICENSE-DATA](LICENSE-DATA) (Geographic Data).
+
+---
+
 ## About The Mohsin Project
 
 > **Free software for those who do good.**
@@ -564,6 +606,5 @@ The Mohsin Project exists because purpose-driven organizations and emergency tea
 
 ## License
 
-This project is open-source software licensed under the [MIT License](LICENSE).
-
-Copyright (c) 2026 [The Mohsin Project Global](https://themohsinproject.org)
+- **Code**: [MIT License](LICENSE) © 2026 [The Mohsin Project Global](https://themohsinproject.org)
+- **Data**: [ODbL 1.0](LICENSE-DATA) & [CC-BY 4.0](LICENSE-DATA) © OpenStreetMap contributors & NGA/GeoNames

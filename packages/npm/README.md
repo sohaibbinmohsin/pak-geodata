@@ -278,10 +278,17 @@ interface PakistanArea {
     lat: number;                 // Latitude (WGS 84)
     lng: number;                 // Longitude (WGS 84)
   };
+  bounds?: {
+    minLat: number;
+    maxLat: number;
+    minLng: number;
+    maxLng: number;
+  };
+  radiusKm?: number;             // Approximate radial span from centroid in km
   postalCode?: string;           // 5-digit Pakistan Post postal code
   type?: 'neighborhood' | 'sector' | 'commercial' | 'housing_scheme' | 'suburb' | 'industrial' | 'administrative';
   verified: boolean;             // True if verified via triangulation pipeline
-  sources: string[];             // Verification sources (e.g. "survey", "curated", "osm")
+  sources?: (string | ProvenanceSource)[]; // Structured or string provenance sources
 }
 ```
 
@@ -322,6 +329,28 @@ interface PakistanProvince {
 
 ---
 
+## Data Sources & Upstream Attribution
+
+`pak-geodata` integrates cross-verified GIS records from:
+- **National Geospatial-Intelligence Agency (NGA) & GeoNames**: Populated places and urban quarters (`PPLX`) ([CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
+- **OpenStreetMap Contributors**: Verified metropolitan neighborhood and arterial coordinates ([ODbL 1.0](https://opendatacommons.org/licenses/odbl/1.0/)).
+- **UN OCHA / HDX COD**: Administrative Common Operational Datasets for Pakistan boundaries ([CC-BY-IGO](https://creativecommons.org/licenses/by/3.0/igo/)).
+- **Pakistan Post & PBS**: Postal codes and administrative hierarchies.
+
+See [ATTRIBUTION.md](ATTRIBUTION.md) for full attribution notices.
+
+---
+
+## Licensing & Commercial Use FAQ
+
+- **Library & Code**: [MIT License](LICENSE)
+- **Geographic Datasets**: [ODbL 1.0](LICENSE-DATA) & [CC-BY 4.0](LICENSE-DATA)
+
+### Commercial Use in Web & Mobile Apps
+Under **Section 4.3 of the Open Database License (ODbL)**, displaying Pakistani cities, autocomplete menus, checkout address pickers, or geocoding outputs within your application constitutes a **"Produced Work"**. Using `pak-geodata` in your website or mobile app does **NOT** require you to open-source your proprietary code, backend services, or customer database. Simply include an attribution notice in your application's credits.
+
+---
+
 ## About The Mohsin Project
 
 > **Free software for those who do good.**
@@ -336,6 +365,6 @@ The Mohsin Project exists because purpose-driven organizations and emergency tea
 
 ## License
 
-This project is open-source software licensed under the [MIT License](LICENSE).
+- **Code**: [MIT License](LICENSE) © 2026 [The Mohsin Project Global](https://themohsinproject.org)
+- **Data**: [ODbL 1.0](LICENSE-DATA) & [CC-BY 4.0](LICENSE-DATA) © OpenStreetMap contributors & NGA/GeoNames
 
-Copyright (c) 2026 [The Mohsin Project Global](https://themohsinproject.org)

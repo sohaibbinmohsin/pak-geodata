@@ -196,11 +196,35 @@ All models are immutable frozen dataclasses (`@dataclass(frozen=True)`):
 | `name` | `str` | Primary English area name |
 | `aliases` | `List[str]` | Alternate names, abbreviations, and colloquial names |
 | `coordinates` | `Optional[Coordinates]`| Centroid coordinates |
+| `bounds` | `Optional[CityBounds]` | Geographic bounding box |
+| `radius_km` | `Optional[float]` | Approximate radial span in kilometers |
 | `urdu_name` | `Optional[str]` | Nastaliq Urdu name |
 | `postal_code` | `Optional[str]` | 5-digit Pakistan Post postal code |
 | `type` | `Optional[str]` | Area type (`'neighborhood'`, `'suburb'`, `'commercial'`, `'housing_society'`, etc.) |
 | `verified` | `bool` | True if verified against survey and GIS boundaries |
-| `sources` | `List[str]` | Verification sources |
+| `sources` | `List[Union[str, ProvenanceSource]]` | Verification sources |
+
+---
+
+## Data Sources & Upstream Attribution
+
+`pak-geodata` integrates cross-verified GIS records from:
+- **National Geospatial-Intelligence Agency (NGA) & GeoNames**: Populated places and urban quarters (`PPLX`) ([CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
+- **OpenStreetMap Contributors**: Verified metropolitan neighborhood and arterial coordinates ([ODbL 1.0](https://opendatacommons.org/licenses/odbl/1.0/)).
+- **UN OCHA / HDX COD**: Administrative Common Operational Datasets for Pakistan boundaries ([CC-BY-IGO](https://creativecommons.org/licenses/by/3.0/igo/)).
+- **Pakistan Post & PBS**: Postal codes and administrative hierarchies.
+
+See [ATTRIBUTION.md](ATTRIBUTION.md) for full attribution notices.
+
+---
+
+## Licensing & Commercial Use FAQ
+
+- **Library & Code**: [MIT License](LICENSE)
+- **Geographic Datasets**: [ODbL 1.0](LICENSE-DATA) & [CC-BY 4.0](LICENSE-DATA)
+
+### Commercial Use in Web & Mobile Apps
+Under **Section 4.3 of the Open Database License (ODbL)**, displaying Pakistani cities, autocomplete menus, checkout address pickers, or geocoding outputs within your application constitutes a **"Produced Work"**. Using `pak-geodata` in your website or backend services does **NOT** require you to open-source your proprietary code, models, or customer database. Simply include an attribution notice in your application's credits.
 
 ---
 
@@ -237,6 +261,6 @@ The Mohsin Project exists because purpose-driven organizations and emergency tea
 
 ## License
 
-This project is open-source software licensed under the [MIT License](LICENSE).
+- **Code**: [MIT License](LICENSE) © 2026 [The Mohsin Project Global](https://themohsinproject.org)
+- **Data**: [ODbL 1.0](LICENSE-DATA) & [CC-BY 4.0](LICENSE-DATA) © OpenStreetMap contributors & NGA/GeoNames
 
-Copyright (c) 2026 [The Mohsin Project Global](https://themohsinproject.org)
