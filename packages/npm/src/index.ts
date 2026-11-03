@@ -138,8 +138,12 @@ export {
 // Re-export core types and location item models
 export type {
   Coordinates,
+  CityBounds,
   AreaType,
+  ProvenanceProvider,
+  ProvenanceSource,
   PakistanArea,
+  PakistanAreaExtended,
   PakistanCity,
   PakistanProvince,
   ProvinceType,

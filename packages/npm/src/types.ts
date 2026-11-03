@@ -12,6 +12,31 @@ export type AreaType =
   | 'industrial'
   | 'administrative';
 
+export interface CityBounds {
+  minLat: number;
+  maxLat: number;
+  minLng: number;
+  maxLng: number;
+}
+
+export type ProvenanceProvider =
+  | 'nga'
+  | 'pak_post'
+  | 'un_ocha'
+  | 'pbs'
+  | 'osm'
+  | 'official_gazette'
+  | 'survey'
+  | 'curated';
+
+export interface ProvenanceSource {
+  provider: ProvenanceProvider;
+  id?: string;
+  type?: string;
+  url?: string;
+  verifiedAt?: string;
+}
+
 export interface PakistanArea {
   id: string;
   cityId: string;
@@ -23,7 +48,15 @@ export interface PakistanArea {
   coordinates: Coordinates;
   type?: AreaType;
   verified: boolean;
-  sources?: string[];
+  bounds?: CityBounds;
+  radiusKm?: number;
+  sources?: (string | ProvenanceSource)[];
+}
+
+export interface PakistanAreaExtended extends PakistanArea {
+  bounds: CityBounds;
+  radiusKm: number;
+  sources: ProvenanceSource[];
 }
 
 export interface PakistanCity {
@@ -35,12 +68,7 @@ export interface PakistanCity {
   district: string;
   coordinates: Coordinates;
   postalCodeRange?: [string, string];
-  bounds?: {
-    minLat: number;
-    maxLat: number;
-    minLng: number;
-    maxLng: number;
-  };
+  bounds?: CityBounds;
   totalAreasCount: number;
 }
 
