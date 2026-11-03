@@ -212,5 +212,71 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "gujrat-gts-chowk",
+    "cityId": "gujrat",
+    "provinceId": "punjab",
+    "name": "GTS Chowk",
+    "urduName": "جی ٹی ایس چوک",
+    "aliases": [
+      "GTS Chowk Gujrat",
+      "Circular Road GTS"
+    ],
+    "postalCode": "50700",
+    "coordinates": {
+      "lat": 32.572,
+      "lng": 74.078
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujrat-circular-road",
+    "cityId": "gujrat",
+    "provinceId": "punjab",
+    "name": "Circular Road",
+    "urduName": "سرکلر روڈ",
+    "aliases": [
+      "Circular Road Gujrat",
+      "Shah Daula Gate Area"
+    ],
+    "postalCode": "50700",
+    "coordinates": {
+      "lat": 32.574,
+      "lng": 74.079
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "gujrat-shah-daula-darbar",
+    "cityId": "gujrat",
+    "provinceId": "punjab",
+    "name": "Shah Daula Darbar",
+    "urduName": "دربار شاہ دولہ",
+    "aliases": [
+      "Shah Daula Shrine",
+      "Shahdaula Road Gujrat"
+    ],
+    "postalCode": "50700",
+    "coordinates": {
+      "lat": 32.581,
+      "lng": 74.082
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ]

@@ -615,5 +615,139 @@ export const peshawarAreas: readonly PakistanArea[] = [
     ],
     "verified": true,
     "provinceId": "kpk"
+  },
+  {
+    "id": "peshawar-qissa-khwani",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Qissa Khwani Bazaar",
+    "urduName": "قصہ خوانی بازار",
+    "aliases": [
+      "Qissa Khawani",
+      "Storytellers Bazaar",
+      "Qissa Khwani Peshawar"
+    ],
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 34.009,
+      "lng": 71.572
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "peshawar-kohati-gate",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Kohati Gate",
+    "urduName": "کوہاٹی گیٹ",
+    "aliases": [
+      "Kohati Darwaza",
+      "Kohati Gate Walled City"
+    ],
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 34.004,
+      "lng": 71.578
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "peshawar-namak-mandi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Namak Mandi",
+    "urduName": "نمک منڈی",
+    "aliases": [
+      "Namak Mandi Food Street",
+      "Namak Mandi Tikka Market"
+    ],
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 34.007,
+      "lng": 71.568
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "peshawar-general-bus-stand",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "General Bus Stand Haji Camp",
+    "urduName": "جنرل بس اسٹینڈ حاجی کیمپ",
+    "aliases": [
+      "Haji Camp Bus Stand",
+      "GT Road Bus Terminal Peshawar"
+    ],
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 34.015,
+      "lng": 71.602
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "peshawar-karkhano-market",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Karkhano Market",
+    "urduName": "کارخانو مارکیٹ",
+    "aliases": [
+      "Karkhano",
+      "Sitara Market Karkhano",
+      "Jamrud Road Karkhano"
+    ],
+    "postalCode": "25100",
+    "coordinates": {
+      "lat": 33.998,
+      "lng": 71.435
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "peshawar-gor-gathri",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gor Gathri",
+    "urduName": "گور گٹھڑی",
+    "aliases": [
+      "Gor Khatri Archaeological Complex",
+      "Gor Gathri Walled City"
+    ],
+    "postalCode": "25000",
+    "coordinates": {
+      "lat": 34.011,
+      "lng": 71.581
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];

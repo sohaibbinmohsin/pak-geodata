@@ -689,6 +689,8 @@ export const lahoreAreas: readonly PakistanArea[] = [
     "name": "Mozang",
     "urduName": "مزنگ",
     "aliases": [
+      "Mazong",
+      "Mazzong",
       "Mozang Chungi",
       "Mozang Lahore"
     ],
@@ -2342,5 +2344,308 @@ export const lahoreAreas: readonly PakistanArea[] = [
     ],
     "verified": true,
     "provinceId": "punjab"
+  },
+  {
+    "id": "lahore-harbanspura",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Harbanspura",
+    "urduName": "ہربنس پورہ",
+    "aliases": [
+      "Harbans Pura",
+      "Canal Harbanspura",
+      "Harbanspura Interchange"
+    ],
+    "postalCode": "54840",
+    "coordinates": {
+      "lat": 31.567,
+      "lng": 74.432
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-baghbanpura",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Baghbanpura",
+    "urduName": "باغبانپورہ",
+    "aliases": [
+      "Baghban Pura",
+      "GT Road Baghbanpura",
+      "Shalimar Baghbanpura"
+    ],
+    "postalCode": "54920",
+    "coordinates": {
+      "lat": 31.581,
+      "lng": 74.391
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-islampura",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Islampura",
+    "urduName": "اسلام پورہ",
+    "aliases": [
+      "Krishan Nagar",
+      "Islampura Lahore",
+      "Krishan Nagar Islampura"
+    ],
+    "postalCode": "54000",
+    "coordinates": {
+      "lat": 31.562,
+      "lng": 74.303
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-gajjumata",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Gajjumata",
+    "urduName": "گجومتہ",
+    "aliases": [
+      "Gajumata",
+      "Gajjumatta",
+      "Metro Gajjumata",
+      "Gajjumata Terminal"
+    ],
+    "postalCode": "54600",
+    "coordinates": {
+      "lat": 31.372,
+      "lng": 74.364
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-chauburji",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Chauburji",
+    "urduName": "چوبرجی",
+    "aliases": [
+      "Chuburji",
+      "Chabuji",
+      "Chauburji Chowk",
+      "Chauburji Park"
+    ],
+    "postalCode": "54000",
+    "coordinates": {
+      "lat": 31.554,
+      "lng": 74.305
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-shahdara",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Shahdara",
+    "urduName": "شاہدرہ",
+    "aliases": [
+      "Shahdra",
+      "Shahdrah",
+      "Shahdara Town",
+      "Shahdara Terminal"
+    ],
+    "postalCode": "54900",
+    "coordinates": {
+      "lat": 31.621,
+      "lng": 74.282
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-nishtar-town",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Nishtar Town",
+    "urduName": "نشتر ٹاؤن",
+    "aliases": [
+      "Nishtar Colony",
+      "Nishter",
+      "Nashtar",
+      "Nishtar Town Lahore"
+    ],
+    "postalCode": "54600",
+    "coordinates": {
+      "lat": 31.411,
+      "lng": 74.363
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-gawalmandi",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Gawalmandi",
+    "urduName": "گوالمنڈی",
+    "aliases": [
+      "Gawal Mandi",
+      "Food Street Gawalmandi",
+      "Gawalmandi Chowk"
+    ],
+    "postalCode": "54000",
+    "coordinates": {
+      "lat": 31.572,
+      "lng": 74.322
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-sanda",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Sanda",
+    "urduName": "سانڈہ",
+    "aliases": [
+      "Sanda Kalan",
+      "Sanda Khurd",
+      "Israna Sanda",
+      "Sanda Road"
+    ],
+    "postalCode": "54000",
+    "coordinates": {
+      "lat": 31.562,
+      "lng": 74.288
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-data-darbar",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Data Darbar",
+    "urduName": "داتا دربار",
+    "aliases": [
+      "Data Sahib",
+      "Bhati Chowk Data Darbar",
+      "Darbar Data Ganj Bakhsh"
+    ],
+    "postalCode": "54000",
+    "coordinates": {
+      "lat": 31.579,
+      "lng": 74.305
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-bhatti-gate",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Bhatti Gate",
+    "urduName": "بھاتی گیٹ",
+    "aliases": [
+      "Bhati Gate",
+      "Walled City Bhatti Gate",
+      "Bhatti Gate Chowk"
+    ],
+    "postalCode": "54000",
+    "coordinates": {
+      "lat": 31.583,
+      "lng": 74.311
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-delhi-gate",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Delhi Gate",
+    "urduName": "دہلی گیٹ",
+    "aliases": [
+      "Delhi Darwaza",
+      "Walled City Delhi Gate",
+      "Delhi Gate Lahore"
+    ],
+    "postalCode": "54000",
+    "coordinates": {
+      "lat": 31.5815,
+      "lng": 74.3245
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "lahore-misri-shah",
+    "cityId": "lahore",
+    "provinceId": "punjab",
+    "name": "Misri Shah",
+    "urduName": "مصری شاہ",
+    "aliases": [
+      "Misri Shah Lahore",
+      "Misri Shah Iron Market"
+    ],
+    "postalCode": "54000",
+    "coordinates": {
+      "lat": 31.588,
+      "lng": 74.336
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];

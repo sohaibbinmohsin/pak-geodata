@@ -183,7 +183,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 66.9,
       "maxLng": 67.08
     },
-    "totalAreasCount": 20
+    "totalAreasCount": 26
   },
   {
     "id": "gwadar",
@@ -574,7 +574,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 72.85,
       "maxLng": 73.25
     },
-    "totalAreasCount": 80
+    "totalAreasCount": 83
   },
   {
     "id": "peshawar",
@@ -597,7 +597,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 71.42,
       "maxLng": 71.64
     },
-    "totalAreasCount": 28
+    "totalAreasCount": 34
   },
   {
     "id": "abbottabad",
@@ -620,7 +620,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 73.17,
       "maxLng": 73.28
     },
-    "totalAreasCount": 12
+    "totalAreasCount": 15
   },
   {
     "id": "mardan",
@@ -643,7 +643,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 71.97,
       "maxLng": 72.1
     },
-    "totalAreasCount": 10
+    "totalAreasCount": 13
   },
   {
     "id": "mingora",
@@ -804,7 +804,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 74.15,
       "maxLng": 74.55
     },
-    "totalAreasCount": 105
+    "totalAreasCount": 118
   },
   {
     "id": "rawalpindi",
@@ -827,7 +827,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 72.9,
       "maxLng": 73.18
     },
-    "totalAreasCount": 50
+    "totalAreasCount": 58
   },
   {
     "id": "faisalabad",
@@ -850,7 +850,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 72.98,
       "maxLng": 73.25
     },
-    "totalAreasCount": 40
+    "totalAreasCount": 50
   },
   {
     "id": "multan",
@@ -873,7 +873,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 71.35,
       "maxLng": 71.65
     },
-    "totalAreasCount": 28
+    "totalAreasCount": 34
   },
   {
     "id": "gujranwala",
@@ -896,7 +896,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 74.08,
       "maxLng": 74.28
     },
-    "totalAreasCount": 22
+    "totalAreasCount": 28
   },
   {
     "id": "sialkot",
@@ -919,7 +919,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 74.42,
       "maxLng": 74.62
     },
-    "totalAreasCount": 14
+    "totalAreasCount": 19
   },
   {
     "id": "bahawalpur",
@@ -942,7 +942,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 71.6,
       "maxLng": 71.78
     },
-    "totalAreasCount": 12
+    "totalAreasCount": 18
   },
   {
     "id": "sargodha",
@@ -965,7 +965,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 72.6,
       "maxLng": 72.75
     },
-    "totalAreasCount": 12
+    "totalAreasCount": 18
   },
   {
     "id": "gujrat",
@@ -988,7 +988,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 74,
       "maxLng": 74.15
     },
-    "totalAreasCount": 10
+    "totalAreasCount": 13
   },
   {
     "id": "sheikhupura",
@@ -1057,7 +1057,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 73.66,
       "maxLng": 73.79
     },
-    "totalAreasCount": 10
+    "totalAreasCount": 13
   },
   {
     "id": "kasur",
@@ -1080,7 +1080,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 74.39,
       "maxLng": 74.5
     },
-    "totalAreasCount": 8
+    "totalAreasCount": 14
   },
   {
     "id": "rahim-yar-khan",
@@ -1655,7 +1655,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 66.85,
       "maxLng": 67.35
     },
-    "totalAreasCount": 105
+    "totalAreasCount": 115
   },
   {
     "id": "hyderabad",
@@ -1678,7 +1678,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 68.28,
       "maxLng": 68.44
     },
-    "totalAreasCount": 26
+    "totalAreasCount": 33
   },
   {
     "id": "sukkur",
@@ -1701,7 +1701,7 @@ export const cities: readonly PakistanCity[] = [
       "minLng": 68.8,
       "maxLng": 68.92
     },
-    "totalAreasCount": 12
+    "totalAreasCount": 18
   },
   {
     "id": "larkana",

@@ -257,5 +257,136 @@ export const sargodhaAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "sargodha-block-1",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Block 1",
+    "urduName": "بلاک 1",
+    "aliases": [
+      "Block No 1 Sargodha",
+      "City Center Block 1"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.085,
+      "lng": 72.672
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-block-12",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Block 12",
+    "urduName": "بلاک 12",
+    "aliases": [
+      "Block No 12 Sargodha"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.079,
+      "lng": 72.678
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-karkhana-bazaar",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Karkhana Bazaar",
+    "urduName": "کارخانہ بازار",
+    "aliases": [
+      "Karkhana Bazar Sargodha",
+      "Main Cloth Market"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.0865,
+      "lng": 72.6785
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-47-pull",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "47 Pull",
+    "urduName": "47 پل",
+    "aliases": [
+      "Chalis Pull Sargodha",
+      "Pull 47",
+      "Lahore Road 47 Pull"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.095,
+      "lng": 72.685
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-silanwali-road",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Silanwali Road",
+    "urduName": "سیلانوالی روڈ",
+    "aliases": [
+      "Silanwali Road Sargodha"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.068,
+      "lng": 72.665
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sargodha-faisalabad-road-adda",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Faisalabad Road General Bus Stand",
+    "urduName": "فیصل آباد روڈ جنرل بس اسٹینڈ",
+    "aliases": [
+      "General Bus Stand Sargodha",
+      "Faisalabad Road Adda"
+    ],
+    "postalCode": "40100",
+    "coordinates": {
+      "lat": 32.072,
+      "lng": 72.695
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];

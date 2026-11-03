@@ -80,65 +80,65 @@ test('getCityById returns city details or undefined', () => {
 
 test('getAreasByCity returns areas for verified flagship cities', () => {
   const lhrAreas = getAreasByCity('lahore');
-  assert.equal(lhrAreas.length, 105);
+  assert.equal(lhrAreas.length, 118);
   assert.ok(lhrAreas.every((a) => a.cityId === 'lahore'));
 
   const khiAreas = getAreasByCity('karachi');
-  assert.equal(khiAreas.length, 105);
+  assert.equal(khiAreas.length, 115);
   assert.ok(khiAreas.every((a) => a.cityId === 'karachi'));
 
   const isbAreas = getAreasByCity('islamabad');
-  assert.equal(isbAreas.length, 80);
+  assert.equal(isbAreas.length, 83);
   assert.ok(isbAreas.every((a) => a.cityId === 'islamabad'));
 
   const rwpAreas = getAreasByCity('rawalpindi');
-  assert.equal(rwpAreas.length, 50);
+  assert.equal(rwpAreas.length, 58);
   assert.ok(rwpAreas.every((a) => a.cityId === 'rawalpindi'));
 
   const fsdAreas = getAreasByCity('faisalabad');
-  assert.equal(fsdAreas.length, 40);
+  assert.equal(fsdAreas.length, 50);
   assert.ok(fsdAreas.every((a) => a.cityId === 'faisalabad'));
 
   const mulAreas = getAreasByCity('multan');
-  assert.equal(mulAreas.length, 28);
+  assert.equal(mulAreas.length, 34);
   assert.ok(mulAreas.every((a) => a.cityId === 'multan'));
 
   const pewAreas = getAreasByCity('peshawar');
-  assert.equal(pewAreas.length, 28);
+  assert.equal(pewAreas.length, 34);
   assert.ok(pewAreas.every((a) => a.cityId === 'peshawar'));
 
   const uetAreas = getAreasByCity('quetta');
-  assert.equal(uetAreas.length, 20);
+  assert.equal(uetAreas.length, 26);
   assert.ok(uetAreas.every((a) => a.cityId === 'quetta'));
 
   const hydAreas = getAreasByCity('hyderabad');
-  assert.equal(hydAreas.length, 26);
+  assert.equal(hydAreas.length, 33);
   assert.ok(hydAreas.every((a) => a.cityId === 'hyderabad'));
 
   const gujAreas = getAreasByCity('gujranwala');
-  assert.equal(gujAreas.length, 22);
+  assert.equal(gujAreas.length, 28);
   assert.ok(gujAreas.every((a) => a.cityId === 'gujranwala'));
 
   const unknown = getAreasByCity('unknown-city');
   assert.deepEqual(unknown, []);
 });
 
-test('getAllAreas aggregates all 1108 golden areas', () => {
+test('getAllAreas aggregates all 1224 golden areas', () => {
   const all = getAllAreas();
-  assert.equal(all.length, 1108);
+  assert.equal(all.length, 1224);
 });
 
 test('subpath export modules export expected area lists', () => {
-  assert.equal(lahoreAreas.length, 105);
-  assert.equal(karachiAreas.length, 105);
-  assert.equal(islamabadAreas.length, 80);
-  assert.equal(rawalpindiAreas.length, 50);
-  assert.equal(faisalabadAreas.length, 40);
-  assert.equal(multanAreas.length, 28);
-  assert.equal(peshawarAreas.length, 28);
-  assert.equal(quettaAreas.length, 20);
-  assert.equal(hyderabadAreas.length, 26);
-  assert.equal(gujranwalaAreas.length, 22);
+  assert.equal(lahoreAreas.length, 118);
+  assert.equal(karachiAreas.length, 115);
+  assert.equal(islamabadAreas.length, 83);
+  assert.equal(rawalpindiAreas.length, 58);
+  assert.equal(faisalabadAreas.length, 50);
+  assert.equal(multanAreas.length, 34);
+  assert.equal(peshawarAreas.length, 34);
+  assert.equal(quettaAreas.length, 26);
+  assert.equal(hyderabadAreas.length, 33);
+  assert.equal(gujranwalaAreas.length, 28);
 });
 
 test('findAreaByPostalCode resolves area by 5-digit postal code', () => {

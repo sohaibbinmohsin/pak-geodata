@@ -214,5 +214,72 @@ export const jhelumAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "jhelum-machine-mohallah",
+    "cityId": "jhelum",
+    "provinceId": "punjab",
+    "name": "Machine Mohallah",
+    "urduName": "مشین محلہ",
+    "aliases": [
+      "Machine Mohallah No 1",
+      "Machine Mohallah No 2",
+      "Machine Mohallah No 3"
+    ],
+    "postalCode": "49600",
+    "coordinates": {
+      "lat": 32.938,
+      "lng": 73.725
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "jhelum-gts-chowk",
+    "cityId": "jhelum",
+    "provinceId": "punjab",
+    "name": "GTS Chowk",
+    "urduName": "جی ٹی ایس چوک",
+    "aliases": [
+      "GTS Chowk Jhelum",
+      "General Bus Stand GTS"
+    ],
+    "postalCode": "49600",
+    "coordinates": {
+      "lat": 32.932,
+      "lng": 73.722
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "jhelum-kala-gujran",
+    "cityId": "jhelum",
+    "provinceId": "punjab",
+    "name": "Kala Gujran",
+    "urduName": "کالا گجراں",
+    "aliases": [
+      "Kala Gujran Industrial Estate",
+      "GT Road Kala Gujran"
+    ],
+    "postalCode": "49600",
+    "coordinates": {
+      "lat": 32.955,
+      "lng": 73.755
+    },
+    "type": "industrial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];

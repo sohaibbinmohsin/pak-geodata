@@ -257,5 +257,71 @@ export const abbottabadAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "abbottabad-jinnahabad",
+    "cityId": "abbottabad",
+    "provinceId": "kpk",
+    "name": "Jinnahabad",
+    "urduName": "جناح آباد",
+    "aliases": [
+      "Jinnah Abad Abbottabad",
+      "Jinnahabad Colony"
+    ],
+    "postalCode": "22010",
+    "coordinates": {
+      "lat": 34.161,
+      "lng": 73.238
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "abbottabad-fawwara-chowk",
+    "cityId": "abbottabad",
+    "provinceId": "kpk",
+    "name": "Fawwara Chowk",
+    "urduName": "فوارہ چوک",
+    "aliases": [
+      "Main Bazaar Fawwara Chowk",
+      "Fawara Chowk Abbottabad"
+    ],
+    "postalCode": "22010",
+    "coordinates": {
+      "lat": 34.148,
+      "lng": 73.215
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "abbottabad-general-bus-stand",
+    "cityId": "abbottabad",
+    "provinceId": "kpk",
+    "name": "General Bus Stand Salhad",
+    "urduName": "جنرل بس اسٹینڈ سلحد",
+    "aliases": [
+      "Salhad Bus Adda",
+      "Karakoram Highway Bus Stand"
+    ],
+    "postalCode": "22010",
+    "coordinates": {
+      "lat": 34.135,
+      "lng": 73.208
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ];

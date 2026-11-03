@@ -568,5 +568,159 @@
     ],
     "verified": true,
     "provinceId": "sindh"
+  },
+  {
+    "id": "hyderabad-phuleli",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Phuleli",
+    "urduName": "پھلیلی",
+    "aliases": [
+      "Phuleli Canal Area",
+      "Phuleli Hyderabad"
+    ],
+    "postalCode": "71000",
+    "coordinates": {
+      "lat": 25.385,
+      "lng": 68.385
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "hyderabad-paretabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Paretabad",
+    "urduName": "پریٹ آباد",
+    "aliases": [
+      "Pretabad",
+      "Paretabad Hyderabad"
+    ],
+    "postalCode": "71000",
+    "coordinates": {
+      "lat": 25.392,
+      "lng": 68.392
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "hyderabad-tower-market",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Tower Market",
+    "urduName": "ٹاور مارکیٹ",
+    "aliases": [
+      "Navalrai Clock Tower Market",
+      "Ghanta Ghar Hyderabad"
+    ],
+    "postalCode": "71000",
+    "coordinates": {
+      "lat": 25.394,
+      "lng": 68.365
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "hyderabad-shahi-bazaar",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Shahi Bazaar",
+    "urduName": "شاہی بازار",
+    "aliases": [
+      "Shahi Bazar Hyderabad",
+      "Historic Shahi Bazaar"
+    ],
+    "postalCode": "71000",
+    "coordinates": {
+      "lat": 25.398,
+      "lng": 68.368
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "hyderabad-tilak-incline",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Tilak Incline",
+    "urduName": "تلک چاڑھی",
+    "aliases": [
+      "Tilak Chari",
+      "Tilak Incline Saddar"
+    ],
+    "postalCode": "71000",
+    "coordinates": {
+      "lat": 25.388,
+      "lng": 68.366
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "hyderabad-halanaka",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Halanaka",
+    "urduName": "ہالا ناکہ",
+    "aliases": [
+      "Hala Naka Chowk",
+      "National Highway Hala Naka"
+    ],
+    "postalCode": "71000",
+    "coordinates": {
+      "lat": 25.421,
+      "lng": 68.385
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "hyderabad-hirabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Hirabad",
+    "urduName": "ہیرا آباد",
+    "aliases": [
+      "Heerabad",
+      "Hirabad Hyderabad"
+    ],
+    "postalCode": "71000",
+    "coordinates": {
+      "lat": 25.405,
+      "lng": 68.365
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
   }
 ]
