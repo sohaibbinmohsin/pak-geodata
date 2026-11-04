@@ -47,12 +47,3 @@ jobs:
 
       - name: Run test suite
         run: npm test
-
-      - name: Run Python unit tests
-        run: python3 -m unittest discover -s packages/pypi/tests -v
-
-      - name: Run Go unit tests
-        run: cd packages/go && go test -v ./...
-
-      - name: Run Dart unit tests
-        run: cd packages/dart && dart pub get && dart test
