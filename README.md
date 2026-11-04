@@ -2,6 +2,8 @@
 
 [![NPM Version](https://img.shields.io/npm/v/pak-geodata?color=blue)](https://www.npmjs.com/package/pak-geodata)
 [![PyPI Version](https://img.shields.io/pypi/v/pak-geodata?color=green)](https://pypi.org/project/pak-geodata/)
+[![Go Reference](https://pkg.go.dev/badge/github.com/sohaibbinmohsin/pak-geodata/packages/go.svg)](https://pkg.go.dev/github.com/sohaibbinmohsin/pak-geodata/packages/go)
+[![Pub Version](https://img.shields.io/pub/v/pak_geodata.svg?color=blue)](https://pub.dev/packages/pak_geodata)
 <a href="https://geodata.themohsinproject.org/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Live%20Demo-Interactive%20Map-blue?logo=leaflet&color=10B981" alt="Live Interactive Demo" /></a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build & Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)]()
@@ -10,7 +12,7 @@
 
 `pak-geodata` is an open-source, production-grade geospatial foundation for Pakistan.
 
-It provides offline access to verified geographic datasets for Pakistan's provinces, territories, cities, and metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers), distributed simultaneously for **TypeScript/Node.js** and **Python** with **zero runtime dependencies**.
+It provides offline access to verified geographic datasets for Pakistan's provinces, territories, cities, and metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers), distributed simultaneously for **TypeScript/Node.js**, **Python**, **Go**, and **Dart/Flutter** with **zero runtime dependencies**.
 
 Explore the [Live Interactive Demo](https://geodata.themohsinproject.org/) to test multi-script search, interactive map exploration, and reverse geocoding in real-time.
 
@@ -31,13 +33,13 @@ Developers building address autocompletion, checkout forms, delivery routing, re
 
 ## Core Highlights
 
-- ⚡ **Zero Runtime Dependencies**: Both NPM and PyPI client libraries require 0 external dependencies (pure JS/TS and Python standard library).
-- 📦 **Dual Distribution**: Native first-class support for both Node.js/TypeScript (`npm install pak-geodata`) and Python (`pip install pak-geodata`).
+- ⚡ **Zero Runtime Dependencies**: All four client libraries (TypeScript, Python, Go, and Dart) require 0 external runtime dependencies (pure standard-library implementations across all ecosystems).
+- 📦 **Quad-Distribution**: Native first-class support across four major programming ecosystems: Node.js/TypeScript (`npm install pak-geodata`), Python (`pip install pak-geodata`), Go (`go get github.com/sohaibbinmohsin/pak-geodata/packages/go`), and Dart/Flutter (`dart pub add pak_geodata`).
 - 🌐 **Offline and Self-Contained**: 100% bundled data: perform lookups, spatial radius checks, and searches in sub-millisecond time with no network requests.
 - 🎯 **Strict Geofencing**: All coordinates strictly validated within Pakistan's bounding box (`23.5 <= lat <= 37.1`, `60.8 <= lng <= 77.8`) and city district boundaries.
 - 🏷️ **Canonical Slugs**: Standardized `<city-slug>-<area-slug>` format (e.g. `lahore-dha-phase-5`, `karachi-clifton-block-2`).
 - 🔍 **Multi-Script and Alias Search**: Ranks results across exact match, prefix match, Urdu script (`"گلبرگ"`), colloquial aliases (`"dha 5"`), token match, and fuzzy Levenshtein distance.
-- 📍 **Spatial Reverse Geocoding**: Nearest neighbor resolution via spherical Haversine formula (`getNearestArea` / `get_nearest_area`).
+- 📍 **Spatial Reverse Geocoding**: Nearest neighbor resolution via spherical Haversine formula (`getNearestArea` / `get_nearest_area` / `GetNearestArea`).
 - 📮 **Pakistan Post Codes**: 5-digit postal code resolution and reverse lookups.
 - 🌲 **Tree-Shakeable Subpaths**: Modular imports like `pak-geodata/areas/lahore` load only the desired city data (~15 to 26 KB).
 - 🏛️ **Bilingual Hierarchy & PWA Subpath**: Complete province $\rightarrow$ district $\rightarrow$ area hierarchy (`PakLocationItem`) and ultra-lightweight `< 5 KB` gzipped subpath export (`pak-geodata/hierarchy`) designed for offline-first PWAs and reporting workflows.
@@ -61,6 +63,18 @@ pnpm add pak-geodata
 pip install pak-geodata
 # or
 poetry add pak-geodata
+```
+
+### Go (1.21+)
+```bash
+go get github.com/sohaibbinmohsin/pak-geodata/packages/go
+```
+
+### Dart / Flutter
+```bash
+dart pub add pak_geodata
+# or in Flutter projects:
+flutter pub add pak_geodata
 ```
 
 ---
@@ -339,6 +353,129 @@ print(f"Distance between Lahore and Karachi: {round(dist)} km")
 
 ---
 
+### Go
+
+```go
+package main
+
+import (
+	"fmt"
+
+	pakgeodata "github.com/sohaibbinmohsin/pak-geodata/packages/go"
+)
+
+func main() {
+	// 1. Lookups
+	punjab, found := pakgeodata.GetProvinceByID("punjab")
+	if found {
+		fmt.Printf("%s (%s)\n", punjab.Name, punjab.UrduName) // "Punjab", "پنجاب"
+	}
+
+	lahore, found := pakgeodata.GetCityByID("lahore")
+	if found {
+		fmt.Printf("%s has %d verified areas\n", lahore.Name, lahore.TotalAreasCount)
+	}
+
+	lahoreAreas := pakgeodata.GetAreasByCity("lahore")
+	fmt.Printf("Loaded %d areas in Lahore (first: %s)\n", len(lahoreAreas), lahoreAreas[0].Name)
+
+	// 2. Intelligent Multi-Script & Alias Search
+	// Ranked by: Exact > Prefix > Urdu > Alias > Token > Fuzzy
+	results := pakgeodata.SearchAreas("dha 5", pakgeodata.SearchOptions{CityID: "lahore"})
+	if len(results) > 0 {
+		fmt.Println(results[0].Area.Name) // "DHA Phase 5"
+		fmt.Println(results[0].Area.ID)   // "lahore-dha-phase-5"
+	}
+
+	// Search via Urdu script
+	urduMatches := pakgeodata.SearchAreas("کلفٹن", pakgeodata.SearchOptions{})
+	if len(urduMatches) > 0 {
+		fmt.Println(urduMatches[0].Area.Name) // "Clifton Block 1"
+	}
+
+	// 3. Reverse Geocoding / Nearest Area
+	userCoords := pakgeodata.Coordinates{Lat: 31.4581, Lng: 74.4121}
+	nearest, distKm, found := pakgeodata.GetNearestArea(userCoords, pakgeodata.NearestAreaOptions{
+		CityID:        "lahore",
+		MaxDistanceKm: 5,
+	})
+	if found {
+		fmt.Printf("Nearest: %s (%.2f km)\n", nearest.Name, distKm)
+	}
+
+	// 4. Postal Code Resolution
+	postalArea, found := pakgeodata.FindAreaByPostalCode("54000")
+	if found {
+		fmt.Printf("Postal Code 54000: %s\n", postalArea.Name)
+	}
+
+	// 5. Great-Circle Distance
+	dist := pakgeodata.HaversineDistanceKm(
+		pakgeodata.Coordinates{Lat: 31.5204, Lng: 74.3587}, // Lahore Center
+		pakgeodata.Coordinates{Lat: 24.8607, Lng: 67.0011}, // Karachi Center
+	)
+	fmt.Printf("Distance between Lahore and Karachi: %.0f km\n", dist) // ~1025 km
+}
+```
+
+---
+
+### Dart / Flutter
+
+```dart
+import 'package:pak_geodata/pak_geodata.dart';
+
+void main() {
+  // 1. Lookups
+  final punjab = getProvinceById('punjab');
+  print('${punjab?.name}, ${punjab?.urduName}'); // "Punjab", "پنجاب"
+
+  final lahore = getCityById('lahore');
+  print('${lahore?.name} has ${lahore?.totalAreasCount} verified areas');
+
+  final lahoreAreas = getAreasByCity('lahore');
+  print('Loaded ${lahoreAreas.length} areas in Lahore (first: ${lahoreAreas.first.name})');
+
+  // 2. Intelligent Multi-Script & Alias Search
+  // Ranked by: Exact > Prefix > Urdu > Alias > Token > Fuzzy
+  final results = searchAreas('dha 5', cityId: 'lahore');
+  if (results.isNotEmpty) {
+    print(results.first.area.name); // "DHA Phase 5"
+    print(results.first.area.id);   // "lahore-dha-phase-5"
+  }
+
+  // Search via Urdu script
+  final urduMatches = searchAreas('کلفٹن');
+  if (urduMatches.isNotEmpty) {
+    print(urduMatches.first.area.name); // "Clifton Block 1"
+  }
+
+  // 3. Reverse Geocoding / Nearest Area
+  const userCoords = Coordinates(lat: 31.4581, lng: 74.4121);
+  final nearest = getNearestArea(
+    userCoords,
+    cityId: 'lahore',
+    maxRadiusKm: 5,
+  );
+  if (nearest != null) {
+    print('Nearest: ${nearest.area.name} (${nearest.distanceKm.toStringAsFixed(2)} km)');
+  }
+
+  // 4. Postal Code Resolution
+  final postalArea = findAreaByPostalCode('54000');
+  print('Postal Code 54000: ${postalArea?.name}');
+
+  // 5. Great-Circle Distance
+  final distKm = haversineDistanceKm(
+    const Coordinates(lat: 31.5204, lng: 74.3587), // Lahore Center
+    const Coordinates(lat: 24.8607, lng: 67.0011), // Karachi Center
+  );
+  print('Distance between Lahore and Karachi: ${distKm.round()} km'); // ~1025 km
+}
+```
+
+---
+
 ## Bilingual Hierarchy & Lightweight PWA Subpath
 
 For applications requiring hierarchical administrative selection (Province → City/District → Area), `pak-geodata` provides a unified bilingual interface `PakLocationItem` and an ultra-lightweight `< 5 KB` gzipped subpath export:
@@ -482,46 +619,109 @@ Every area included in `pak-geodata` must pass a rigorous 3-tier quality gate be
 
 ## Development & Build Pipeline
 
-The project is structured as an automated monorepo with integrated code generation, test suites, and cross-language dataset synchronization:
+The project is structured as an automated monorepo with integrated code generation, quad-runtime test suites, and cross-language dataset synchronization:
 
 ```
 ├── data/                         # Root of truth: Master JSON datasets
 │   ├── provinces.json
 │   ├── cities/                   # 79 cities by province
-│   └── areas/                    # Flagship areas by province & city
+│   └── areas/                    # 3,953 verified areas by province & city
 ├── packages/
 │   ├── npm/                      # TypeScript / JavaScript client library
 │   │   ├── src/                  # Source TS modules & subpath exports
+│   │   │   └── data/             # Generated typed const datasets
 │   │   ├── dist/                 # Compiled ESM, CJS, and DTS bundles
 │   │   └── tests/                # Node.js test runner suite
-│   └── pypi/                     # Python client library (pak-geodata)
-│       ├── pak_geodata/          # Pure Python standard-library package
-│       │   ├── data/             # Synchronized master JSON datasets
-│       │   ├── lookups.py        # O(1) lookups, search, & spatial math
-│       │   └── models.py         # Frozen dataclasses
-│       └── tests/                # Python unittest suite
+│   ├── pypi/                     # Python client library (pak-geodata)
+│   │   ├── pak_geodata/          # Pure Python standard-library package
+│   │   │   ├── data/             # Synchronized master JSON datasets
+│   │   │   ├── lookups.py        # O(1) lookups, search, & spatial math
+│   │   │   └── models.py         # Frozen dataclasses
+│   │   └── tests/                # Python unittest suite
+│   ├── go/                       # Go client package (pakgeodata)
+│   │   ├── data/                 # Synchronized master JSON datasets
+│   │   ├── pakgeodata.go         # //go:embed and thread-safe sync.Once lookups
+│   │   ├── geo.go                # Pure Go Haversine math & reverse geocoding
+│   │   ├── search.go             # Urdu normalization & multi-script search
+│   │   └── pakgeodata_test.go    # Native Go test suite
+│   └── dart/                     # Dart & Flutter client package (pak_geodata)
+│       ├── lib/                  # Pure Dart package entry point
+│       │   ├── pak_geodata.dart  # Top-level lookups and exports
+│       │   └── src/data/         # Generated typed const datasets
+│       └── test/                 # Native Dart test suite
 ├── pipeline/                     # Ingestion, Overpass scrapers, & validators
 ├── scripts/
-│   ├── build.ts                  # Code generator, PyPI sync, & compiler
-│   └── verify.ts                 # Full dataset integrity test runner
+│   ├── build.ts                  # Code generator, sync engine, & compiler
+│   ├── codegen/                  # TypeScript & Dart code generators
+│   └── verify.ts                 # Full dataset integrity & parity runner
+└── tests/
+    └── parity/                   # Multi-language golden vectors parity suite
 ```
 
-### Build Commands
+### Multi-Language Architecture
+
+`pak-geodata` guarantees strict parity across all four target ecosystems using an automated pipeline:
+
+```
+                          ┌───────────────────────────┐
+                          │   data/ (Master Datasets) │
+                          │  (Sole Source of Truth)   │
+                          │   7 Prov / 79 City / 3953 │
+                          └─────────────┬─────────────┘
+                                        │
+           ┌────────────────────────────┼───────────────────────────┐
+           │ Synchronize                │ Synchronize               │ Codegen & Compile
+           ▼                            ▼                           ▼
+┌──────────────────────┐     ┌──────────────────────┐    ┌──────────────────────┐
+│     packages/pypi    │     │     packages/go      │    │     packages/npm     │
+│ (pak_geodata/data/)  │     │    (packages/go/     │    │ (src/data/*.ts const)│
+│  Synchronized JSON   │     │        data/)        │    │  ESM / CJS Bundles   │
+│ (importlib.resources)│     │  //go:embed JSON     │    │ + Subpath Exports    │
+└──────────────────────┘     └──────────────────────┘    └──────────────────────┘
+                                                                    │
+                                                                    │ Codegen
+                                                                    ▼
+                                                         ┌──────────────────────┐
+                                                         │    packages/dart     │
+                                                         │ (lib/src/data/*.dart)│
+                                                         │   Typed const Data   │
+                                                         │ (Pure Dart / Zero-Dep│
+                                                         └──────────────────────┘
+```
+
+1. **Single Source of Truth (`data/`)**: All master geographic records reside exclusively in `data/provinces.json`, `data/cities/*.json`, and `data/areas/**/*.json`. Language packages never store or permit manually edited data.
+2. **Synchronized JSON Embedding (Go & Python)**:
+   - **Go**: Uses standard-library `//go:embed data` to compile master JSON datasets directly into binary executables with zero filesystem runtime dependencies. Thread-safe lookups and indexes are initialized on first access using `sync.Once`.
+   - **Python**: Master JSON datasets are synchronized into `packages/pypi/pak_geodata/data/` during build and loaded using Python's standard-library `pkgutil` / `importlib.resources`.
+3. **Typed Constant Code Generation (TypeScript & Dart)**:
+   - **TypeScript**: `scripts/codegen/typescript.ts` compiles master JSON into strongly-typed ESM/CommonJS modules and TypeScript declaration files (`.d.ts`), enabling full IDE autocomplete and granular per-city subpath imports.
+   - **Dart**: `scripts/codegen/dart.ts` compiles master JSON into pure Dart `const` model instances with `const Coordinates(...)` centroids and bounds, providing zero-parse-overhead compile-time constant data for Flutter and Dart VM.
+4. **Zero Runtime External Dependencies**: None of the client libraries depend on third-party runtime dependencies. All spatial calculations (spherical Haversine formula with radius $R = 6371.0088\text{ km}$), Urdu normalization, and search indexing are implemented purely using each runtime's standard library.
+5. **Multi-Package Parity Gate**: Automatically validated on every build via `scripts/verify.ts` and `tests/parity/golden_vectors.test.ts`, asserting identical counts (7 provinces, 79 cities, 3,953 areas) and matching search/geocoding behaviors across all language targets.
+
+### Build & Test Commands
 
 ```bash
 # Install dependencies
 npm install
 
-# Run full production build (validates data, generates TS, syncs PyPI, builds bundles)
+# Run full production build (validates data, generates TS/Dart, syncs PyPI/Go, builds bundles)
 npm run build
 
-# Run end-to-end test suite (TypeScript tests + Python unittest suite)
+# Run end-to-end multi-runtime test suite (TypeScript + Python + Go + Dart)
 npm test
+
+# Run individual language test suites
+npm run test:ts       # TypeScript test suite (Node.js test runner)
+npm run test:python   # Python unittest suite
+npm run test:go       # Go test suite (native or Docker)
+npm run test:dart     # Dart test suite (native or Docker)
+npm run test:parity   # Cross-language golden vectors parity test
 
 # Type check all packages
 npm run lint
 
-# Validate master data integrity
+# Validate master data integrity and dataset count parity across all 5 targets
 npm run verify
 ```
 

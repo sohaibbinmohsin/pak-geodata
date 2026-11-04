@@ -1,5 +1,6 @@
 {
   "name": "pak-geodata-monorepo",
+  "version": "0.10.0",
   "private": true,
   "workspaces": [
     "packages/*",
@@ -13,7 +14,7 @@
     "test:ts": "tsx --test \"tests/**/*.test.ts\" \"scripts/**/*.test.ts\" \"packages/npm/tests/**/*.test.ts\"",
     "test:python": "python3 -m unittest discover -s packages/pypi/tests",
     "test:go": "which go >/dev/null 2>&1 && (cd packages/go && go test -v ./...) || docker run --rm -v $(pwd)/packages/go:/app -w /app golang:1.22 go test -v ./...",
-    "test:dart": "which dart >/dev/null 2>&1 && (cd packages/dart && dart test) || docker run --rm -v $(pwd)/packages/dart:/app -v dart-cache:/root/.pub-cache -w /app dart:stable sh -c \"dart test 2>/dev/null || (dart pub get && dart test)\"",
+    "test:dart": "which dart >/dev/null 2>&1 && (cd packages/dart && (dart test 2>/dev/null || (dart pub get && dart test))) || docker run --rm -v $(pwd)/packages/dart:/app -v dart-cache:/root/.pub-cache -w /app dart:stable sh -c \"dart test 2>/dev/null || (dart pub get && dart test)\"",
     "test:parity": "tsx --test tests/parity/golden_vectors.test.ts",
     "test": "npm run test:ts && npm run test:python && npm run test:go && npm run test:dart",
     "verify": "tsx scripts/verify.ts"
