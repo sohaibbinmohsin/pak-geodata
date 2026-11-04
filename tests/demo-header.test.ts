@@ -3,13 +3,14 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-test('Header component contains strictly GeoData title, version, and GitHub', () => {
+test('Header component contains strictly GeoData title, version, and Docs link', () => {
   const headerPath = resolve(process.cwd(), 'apps/demo/src/components/Header.tsx');
   const content = readFileSync(headerPath, 'utf8');
 
   assert.ok(content.includes('GeoData'), 'Header must display GeoData title');
   assert.ok(content.includes('PACKAGE_VERSION'), 'Header must display dynamic package version');
-  assert.ok(content.includes('https://github.com/sohaibbinmohsin/pak-geodata'), 'Header must link to GitHub');
+  assert.ok(content.includes('Docs'), 'Header must display Docs link');
+  assert.ok(content.includes('https://github.com/sohaibbinmohsin/pak-geodata#readme'), 'Header must link to GitHub docs');
   assert.ok(!content.includes('npm i pak-geodata'), 'Header must not contain install snippets');
   assert.ok(!content.includes('#studio'), 'Header must not contain navigation anchor links');
   assert.ok(!content.includes('100% Offline'), 'Header must not contain offline badge');

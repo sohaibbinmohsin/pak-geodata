@@ -2,7 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/pak-geodata?color=blue)](https://www.npmjs.com/package/pak-geodata)
 [![PyPI Version](https://img.shields.io/pypi/v/pak-geodata?color=green)](https://pypi.org/project/pak-geodata/)
-<a href="https://sohaibbinmohsin.github.io/pak-geodata/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Live%20Demo-Interactive%20Map-blue?logo=leaflet&color=10B981" alt="Live Interactive Demo" /></a>
+<a href="https://geodata.themohsinproject.org/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Live%20Demo-Interactive%20Map-blue?logo=leaflet&color=10B981" alt="Live Interactive Demo" /></a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build & Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)]()
 
@@ -12,7 +12,7 @@
 
 It provides offline access to verified geographic datasets for Pakistan's provinces, territories, cities, and metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers), distributed simultaneously for **TypeScript/Node.js** and **Python** with **zero runtime dependencies**.
 
-Explore the [Live Interactive Demo](https://sohaibbinmohsin.github.io/pak-geodata/) to test multi-script search, interactive map exploration, and reverse geocoding in real-time.
+Explore the [Live Interactive Demo](https://geodata.themohsinproject.org/) to test multi-script search, interactive map exploration, and reverse geocoding in real-time.
 
 ---
 
@@ -41,7 +41,7 @@ Developers building address autocompletion, checkout forms, delivery routing, re
 - 📮 **Pakistan Post Codes**: 5-digit postal code resolution and reverse lookups.
 - 🌲 **Tree-Shakeable Subpaths**: Modular imports like `pak-geodata/areas/lahore` load only the desired city data (~15 to 26 KB).
 - 🏛️ **Bilingual Hierarchy & PWA Subpath**: Complete province $\rightarrow$ district $\rightarrow$ area hierarchy (`PakLocationItem`) and ultra-lightweight `< 5 KB` gzipped subpath export (`pak-geodata/hierarchy`) designed for offline-first PWAs and reporting workflows.
-- 🗺️ **Live Interactive Web Demo**: Explore the [Live Interactive Demo](https://sohaibbinmohsin.github.io/pak-geodata/) to test multi-script search, interactive map exploration, and reverse geocoding in real-time.
+- 🗺️ **Live Interactive Web Demo**: Explore the [Live Interactive Demo](https://geodata.themohsinproject.org/) to test multi-script search, interactive map exploration, and reverse geocoding in real-time.
 
 ---
 

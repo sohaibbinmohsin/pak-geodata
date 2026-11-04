@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pak-geodata"
-version = "0.9.0"
+version = "0.9.1"
 description = "Comprehensive, typed, offline geographic data for all areas and cities in Pakistan"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -44,8 +44,8 @@ keywords = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/sohaibbinmohsin/pak-geodata"
-Documentation = "https://github.com/sohaibbinmohsin/pak-geodata#readme"
+Homepage = "https://geodata.themohsinproject.org"
+Documentation = "https://geodata.themohsinproject.org"
 Repository = "https://github.com/sohaibbinmohsin/pak-geodata.git"
 "Bug Tracker" = "https://github.com/sohaibbinmohsin/pak-geodata/issues"
 "Founder" = "https://sohaibbinmohsin.com"

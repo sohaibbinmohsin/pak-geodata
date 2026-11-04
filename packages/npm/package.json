@@ -1,6 +1,6 @@
 {
   "name": "pak-geodata",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Comprehensive, typed, offline geographic data for all areas and cities in Pakistan",
   "author": "Sohaib Bin Mohsin <sohaibbinmohsin@gmail.com> (https://sohaibbinmohsin.com)",
   "contributors": [
@@ -33,7 +33,7 @@
     "url": "https://github.com/sohaibbinmohsin/pak-geodata.git",
     "directory": "packages/npm"
   },
-  "homepage": "https://github.com/sohaibbinmohsin/pak-geodata#readme",
+  "homepage": "https://geodata.themohsinproject.org",
   "bugs": {
     "url": "https://github.com/sohaibbinmohsin/pak-geodata/issues"
   },
