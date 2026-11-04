@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "description": "Cross-language golden test vectors for pak-geodata parity verification across TypeScript, Python, Go, and Dart.",
+  "datasetCounts": {
+    "provinces": 7,
+    "cities": 79,
+    "areas": 3953
+  },
+  "postalCodeLookups": [
+    {
+      "postalCode": "54000",
+      "expectedCityId": "lahore",
+      "expectedAreaId": "lahore-walled-city",
+      "expectedAreaName": "Walled City (Old City / Androon Shehr)",
+      "aliases": ["lahore-gpo"]
+    },
+    {
+      "postalCode": "44000",
+      "expectedCityId": "islamabad",
+      "expectedAreaId": "islamabad-blue-area",
+      "expectedAreaName": "Blue Area",
+      "aliases": ["islamabad-gpo"]
+    },
+    {
+      "postalCode": "74200",
+      "expectedCityId": "karachi",
+      "expectedAreaId": "karachi-burns-road",
+      "expectedAreaName": "Burns Road",
+      "aliases": ["karachi-gpo"]
+    },
+    {
+      "postalCode": "54792",
+      "expectedCityId": "lahore",
+      "expectedAreaId": "lahore-dha-phase-1",
+      "expectedAreaName": "DHA Phase 1"
+    }
+  ],
+  "spatialReverseGeocoding": [
+    {
+      "description": "DHA Phase 5 Lahore centroid",
+      "coordinates": {
+        "lat": 31.4581,
+        "lng": 74.4121
+      },
+      "expectedAreaId": "lahore-dha-phase-5",
+      "expectedCityId": "lahore",
+      "maxDistanceKm": 0.2
+    },
+    {
+      "description": "DHA Phase 5 / State Life Phase 2 vicinity",
+      "coordinates": {
+        "lat": 31.4697,
+        "lng": 74.4133
+      },
+      "expectedAreaId": "lahore-state-life-phase-2",
+      "expectedCityId": "lahore",
+      "maxDistanceKm": 0.5
+    },
+    {
+      "description": "Islamabad Sector F-6 centroid",
+      "coordinates": {
+        "lat": 33.7297,
+        "lng": 73.0747
+      },
+      "expectedAreaId": "islamabad-sector-f-6",
+      "expectedCityId": "islamabad",
+      "maxDistanceKm": 0.5
+    }
+  ],
+  "urduSearches": [
+    {
+      "query": "گلبرگ",
+      "mustMatchKeyword": "gulberg",
+      "expectedCityIds": ["lahore", "faisalabad", "islamabad"]
+    },
+    {
+      "query": "صدر",
+      "mustMatchKeyword": "saddar",
+      "expectedCityIds": ["karachi", "rawalpindi", "sialkot"]
+    },
+    {
+      "query": "ڈی ایچ اے",
+      "mustMatchKeyword": "dha",
+      "expectedCityIds": ["multan", "karachi", "lahore"]
+    }
+  ],
+  "colloquialAliases": [
+    {
+      "alias": "isb",
+      "expectedCityId": "islamabad"
+    },
+    {
+      "alias": "lhe",
+      "expectedCityId": "lahore"
+    },
+    {
+      "alias": "khi",
+      "expectedCityId": "karachi"
+    },
+    {
+      "alias": "pindi",
+      "expectedCityId": "rawalpindi"
+    }
+  ]
+}

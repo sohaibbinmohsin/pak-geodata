@@ -8,7 +8,7 @@ import {
 import { resolve } from 'node:path';
 import { generateDartData } from './codegen/dart.js';
 import { generateTypeScriptData } from './codegen/typescript.js';
-import { verifyAllData } from './verify.js';
+import { verifyAllData, verifyMultiPackageParity } from './verify.js';
 
 async function main() {
   const rootDir = process.cwd();
@@ -87,6 +87,17 @@ async function main() {
   if (!existsSync(hierarchyEsm) || !existsSync(hierarchyCjs) || !existsSync(hierarchyDts)) {
     throw new Error('Hierarchy build artifacts are missing from packages/npm/dist');
   }
+
+  console.log('\n=== Step 5: Asserting Multi-Package Dataset Count Parity Gate ===');
+  const parityResult = verifyMultiPackageParity(rootDir);
+  if (!parityResult.success) {
+    console.error('✖ Multi-package parity verification failed:');
+    for (const err of parityResult.errors) {
+      console.error(`  - ${err}`);
+    }
+    throw new Error('Dataset count parity gate failed across multi-language targets');
+  }
+  console.log('✔ Exact dataset count parity verified across 5 targets (7 provinces, 79 cities, 3953 areas)');
 
   const citySlugs = Object.keys(cityAreaCounts).sort();
 

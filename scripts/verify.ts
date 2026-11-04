@@ -18,6 +18,20 @@ import {
 export interface VerificationOptions {
   dataDir?: string;
   silent?: boolean;
+  checkPackages?: boolean;
+  rootDir?: string;
+}
+
+export interface EntityCounts {
+  provinces: number;
+  cities: number;
+  areas: number;
+}
+
+export interface MultiPackageParityResult {
+  success: boolean;
+  errors: string[];
+  packageStats: Record<string, EntityCounts>;
 }
 
 export interface VerificationResult {
@@ -29,6 +43,7 @@ export interface VerificationResult {
     cities: number;
     areas: number;
   };
+  packageStats?: Record<string, EntityCounts>;
 }
 
 function findJsonFiles(dir: string): string[] {
@@ -415,6 +430,19 @@ export async function verifyAllData(
     }
   }
 
+  // 6. Multi-package parity verification gate across master, NPM, PyPI, Go, and Dart
+  let packageStats: Record<string, EntityCounts> | undefined;
+  const shouldCheckPackages = options.checkPackages ?? !options.dataDir;
+
+  if (shouldCheckPackages) {
+    const rootDir = options.rootDir || path.resolve(dataDir, '..');
+    const parityResult = verifyMultiPackageParity(rootDir);
+    packageStats = parityResult.packageStats;
+    if (!parityResult.success) {
+      errors.push(...parityResult.errors);
+    }
+  }
+
   const success = errors.length === 0;
 
   if (!options.silent) {
@@ -423,6 +451,11 @@ export async function verifyAllData(
       console.log(`  Provinces: ${provinces.length}`);
       console.log(`  Cities:    ${cities.length}`);
       console.log(`  Areas:     ${areas.length}`);
+      if (shouldCheckPackages) {
+        console.log(
+          '✔ Multi-package parity gate PASSED across master, NPM, PyPI, Go, and Dart (7 provinces, 79 cities, 3953 areas).'
+        );
+      }
     } else {
       console.error(`✖ Verification FAILED with ${errors.length} error(s):`);
       for (const err of errors) {
@@ -439,7 +472,168 @@ export async function verifyAllData(
       provinces: provinces.length,
       cities: cities.length,
       areas: areas.length
+    },
+    packageStats
+  };
+}
+
+export function countMasterJsonEntities(dataDir: string): EntityCounts {
+  let provinces = 0;
+  const provincesFile = path.join(dataDir, 'provinces.json');
+  if (fs.existsSync(provincesFile)) {
+    provinces = (JSON.parse(fs.readFileSync(provincesFile, 'utf8')) as unknown[]).length;
+  }
+
+  let cities = 0;
+  const citiesDir = path.join(dataDir, 'cities');
+  if (fs.existsSync(citiesDir)) {
+    for (const f of fs.readdirSync(citiesDir)) {
+      if (f.endsWith('.json')) {
+        cities += (JSON.parse(fs.readFileSync(path.join(citiesDir, f), 'utf8')) as unknown[]).length;
+      }
     }
+  }
+
+  let areas = 0;
+  const areasDir = path.join(dataDir, 'areas');
+  if (fs.existsSync(areasDir)) {
+    const areaFiles = findJsonFiles(areasDir);
+    for (const af of areaFiles) {
+      areas += (JSON.parse(fs.readFileSync(af, 'utf8')) as unknown[]).length;
+    }
+  }
+
+  return { provinces, cities, areas };
+}
+
+export function countNpmEntities(npmDataDir: string): EntityCounts {
+  function parseTsArray(filePath: string): unknown[] {
+    if (!fs.existsSync(filePath)) return [];
+    const content = fs.readFileSync(filePath, 'utf8');
+    const equalsPos = content.indexOf('=');
+    if (equalsPos === -1) return [];
+    const jsonStart = content.indexOf('[', equalsPos);
+    const jsonEnd = content.lastIndexOf(']');
+    if (jsonStart !== -1 && jsonEnd !== -1) {
+      return JSON.parse(content.slice(jsonStart, jsonEnd + 1)) as unknown[];
+    }
+    return [];
+  }
+
+  const provinces = parseTsArray(path.join(npmDataDir, 'provinces.ts')).length;
+  const cities = parseTsArray(path.join(npmDataDir, 'cities.ts')).length;
+
+  let areas = 0;
+  const areasDir = path.join(npmDataDir, 'areas');
+  if (fs.existsSync(areasDir)) {
+    for (const f of fs.readdirSync(areasDir)) {
+      if (f.endsWith('.ts') && f !== 'index.ts') {
+        areas += parseTsArray(path.join(areasDir, f)).length;
+      }
+    }
+  }
+
+  return { provinces, cities, areas };
+}
+
+export function countDartEntities(dartDataDir: string): EntityCounts {
+  function countConstructors(filePath: string, entityConstructor: string): number {
+    if (!fs.existsSync(filePath)) return 0;
+    const content = fs.readFileSync(filePath, 'utf8');
+    const matches = content.match(new RegExp(`\\b${entityConstructor}\\(`, 'g'));
+    return matches ? matches.length : 0;
+  }
+
+  const provinces = countConstructors(
+    path.join(dartDataDir, 'provinces.dart'),
+    'PakistanProvince'
+  );
+  const cities = countConstructors(
+    path.join(dartDataDir, 'cities.dart'),
+    'PakistanCity'
+  );
+  const areas = countConstructors(
+    path.join(dartDataDir, 'areas.dart'),
+    'PakistanArea'
+  );
+
+  return { provinces, cities, areas };
+}
+
+export function verifyMultiPackageParity(
+  rootDir: string = process.cwd()
+): MultiPackageParityResult {
+  const errors: string[] = [];
+  const packageStats: Record<string, EntityCounts> = {};
+
+  const EXPECTED: EntityCounts = {
+    provinces: 7,
+    cities: 79,
+    areas: 3953
+  };
+
+  const targets = [
+    {
+      name: 'master',
+      path: path.resolve(rootDir, 'data'),
+      countFn: () => countMasterJsonEntities(path.resolve(rootDir, 'data'))
+    },
+    {
+      name: 'pypi',
+      path: path.resolve(rootDir, 'packages/pypi/pak_geodata/data'),
+      countFn: () => countMasterJsonEntities(path.resolve(rootDir, 'packages/pypi/pak_geodata/data'))
+    },
+    {
+      name: 'go',
+      path: path.resolve(rootDir, 'packages/go/data'),
+      countFn: () => countMasterJsonEntities(path.resolve(rootDir, 'packages/go/data'))
+    },
+    {
+      name: 'npm',
+      path: path.resolve(rootDir, 'packages/npm/src/data'),
+      countFn: () => countNpmEntities(path.resolve(rootDir, 'packages/npm/src/data'))
+    },
+    {
+      name: 'dart',
+      path: path.resolve(rootDir, 'packages/dart/lib/src/data'),
+      countFn: () => countDartEntities(path.resolve(rootDir, 'packages/dart/lib/src/data'))
+    }
+  ];
+
+  for (const target of targets) {
+    if (!fs.existsSync(target.path)) {
+      errors.push(`Target "${target.name}" directory missing at ${target.path}`);
+      continue;
+    }
+
+    try {
+      const counts = target.countFn();
+      packageStats[target.name] = counts;
+
+      if (counts.provinces !== EXPECTED.provinces) {
+        errors.push(
+          `Target "${target.name}" province count mismatch: expected ${EXPECTED.provinces}, got ${counts.provinces}`
+        );
+      }
+      if (counts.cities !== EXPECTED.cities) {
+        errors.push(
+          `Target "${target.name}" city count mismatch: expected ${EXPECTED.cities}, got ${counts.cities}`
+        );
+      }
+      if (counts.areas !== EXPECTED.areas) {
+        errors.push(
+          `Target "${target.name}" area count mismatch: expected ${EXPECTED.areas}, got ${counts.areas}`
+        );
+      }
+    } catch (err: unknown) {
+      errors.push(`Failed to count entities in target "${target.name}": ${String(err)}`);
+    }
+  }
+
+  return {
+    success: errors.length === 0,
+    errors,
+    packageStats
   };
 }
 
