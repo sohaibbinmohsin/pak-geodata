@@ -1,0 +1,355 @@
+[
+  {
+    "id": "mirpur-sector-f-1",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Sector F-1",
+    "urduName": "سیکٹر F-1 میرپور",
+    "aliases": [
+      "F1 Mirpur AJK",
+      "Sector F/1"
+    ],
+    "postalCode": "10250",
+    "coordinates": {
+      "lat": 33.148,
+      "lng": 73.751
+    },
+    "type": "sector",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1169027,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mirpur-sector-f-2",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Sector F-2",
+    "urduName": "سیکٹر F-2 میرپور",
+    "aliases": [
+      "F2 Mirpur AJK",
+      "Sector F/2"
+    ],
+    "postalCode": "10250",
+    "coordinates": {
+      "lat": 33.155,
+      "lng": 73.758
+    },
+    "type": "sector",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "mirpur-sector-f-3",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Sector F-3",
+    "urduName": "سیکٹر F-3 میرپور",
+    "aliases": [
+      "F3 Mirpur AJK",
+      "Sector F/3"
+    ],
+    "postalCode": "10250",
+    "coordinates": {
+      "lat": 33.161,
+      "lng": 73.765
+    },
+    "type": "sector",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "mirpur-sector-c-1",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Sector C-1",
+    "urduName": "سیکٹر C-1 میرپور",
+    "aliases": [
+      "C1 Mirpur AJK",
+      "Sector C/1"
+    ],
+    "postalCode": "10250",
+    "coordinates": {
+      "lat": 33.138,
+      "lng": 73.742
+    },
+    "type": "sector",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "mirpur-sector-c-2",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Sector C-2",
+    "urduName": "سیکٹر C-2 میرپور",
+    "aliases": [
+      "C2 Mirpur AJK",
+      "Sector C/2"
+    ],
+    "postalCode": "10250",
+    "coordinates": {
+      "lat": 33.142,
+      "lng": 73.748
+    },
+    "type": "sector",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "mirpur-sector-b-1",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Sector B-1",
+    "urduName": "سیکٹر B-1 میرپور",
+    "aliases": [
+      "B1 Mirpur AJK",
+      "Sector B/1"
+    ],
+    "postalCode": "10250",
+    "coordinates": {
+      "lat": 33.132,
+      "lng": 73.735
+    },
+    "type": "sector",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "mirpur-sector-b-3",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Sector B-3",
+    "urduName": "سیکٹر B-3 میرپور",
+    "aliases": [
+      "B3 Mirpur AJK",
+      "Sector B/3"
+    ],
+    "postalCode": "10250",
+    "coordinates": {
+      "lat": 33.135,
+      "lng": 73.728
+    },
+    "type": "sector",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "mirpur-allama-iqbal-road",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Allama Iqbal Road Commercial",
+    "urduName": "علامہ اقبال روڈ میرپور",
+    "aliases": [
+      "Allama Iqbal Road Mirpur"
+    ],
+    "postalCode": "10250",
+    "coordinates": {
+      "lat": 33.145,
+      "lng": 73.755
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "mirpur-chowk-shaheedan",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Chowk Shaheedan",
+    "urduName": "چوک شہیداں میرپور",
+    "aliases": [
+      "Shaheedan Chowk Mirpur",
+      "Central Commercial Mirpur"
+    ],
+    "postalCode": "10250",
+    "coordinates": {
+      "lat": 33.141,
+      "lng": 73.752
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "mirpur-new-city",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "New Mirpur City",
+    "urduName": "نیو میرپور سٹی",
+    "aliases": [
+      "New Industrial City Mirpur",
+      "Mangla Link Mirpur"
+    ],
+    "postalCode": "10250",
+    "coordinates": {
+      "lat": 33.172,
+      "lng": 73.778
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "mirpur-joral",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Joral",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.15731,
+      "lng": 73.75859
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1386391,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mirpur-thathal",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Thathal",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.15069,
+      "lng": 73.76587
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1386393,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mirpur-nathia-town",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Nathia Town",
+    "aliases": [
+      "Nathe"
+    ],
+    "coordinates": {
+      "lat": 33.14579,
+      "lng": 73.78599
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1386394,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mirpur-kumhar-mohalla",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Kumhar Mohalla",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.13975,
+      "lng": 73.76282
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11917364,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mirpur-muhajir-colony",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Muhajir Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.14174,
+      "lng": 73.76958
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11917365,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mirpur-muhajir-g-1-sector",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Muhajir G-1 Sector",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.1441,
+      "lng": 73.76113
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11917366,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  }
+]

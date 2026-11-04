@@ -1,0 +1,178 @@
+[
+  {
+    "id": "karachi",
+    "name": "Karachi",
+    "urduName": "کراچی",
+    "provinceId": "sindh",
+    "division": "Karachi Division",
+    "district": "Karachi",
+    "coordinates": {
+      "lat": 24.8607,
+      "lng": 67.0011
+    },
+    "postalCodeRange": [
+      "74000",
+      "75999"
+    ],
+    "bounds": {
+      "minLat": 24.75,
+      "maxLat": 25.1,
+      "minLng": 66.85,
+      "maxLng": 67.35
+    }
+  },
+  {
+    "id": "hyderabad",
+    "name": "Hyderabad",
+    "urduName": "حیدرآباد",
+    "provinceId": "sindh",
+    "division": "Hyderabad Division",
+    "district": "Hyderabad",
+    "coordinates": {
+      "lat": 25.396,
+      "lng": 68.3578
+    },
+    "postalCodeRange": [
+      "71000",
+      "71999"
+    ],
+    "bounds": {
+      "minLat": 25.32,
+      "maxLat": 25.48,
+      "minLng": 68.28,
+      "maxLng": 68.44
+    }
+  },
+  {
+    "id": "sukkur",
+    "name": "Sukkur",
+    "urduName": "سکھر",
+    "provinceId": "sindh",
+    "division": "Sukkur Division",
+    "district": "Sukkur",
+    "coordinates": {
+      "lat": 27.7052,
+      "lng": 68.8574
+    },
+    "postalCodeRange": [
+      "65200",
+      "65299"
+    ],
+    "bounds": {
+      "minLat": 27.65,
+      "maxLat": 27.76,
+      "minLng": 68.8,
+      "maxLng": 68.92
+    }
+  },
+  {
+    "id": "larkana",
+    "name": "Larkana",
+    "urduName": "لاڑکانہ",
+    "provinceId": "sindh",
+    "division": "Larkana Division",
+    "district": "Larkana",
+    "coordinates": {
+      "lat": 27.559,
+      "lng": 68.212
+    },
+    "postalCodeRange": [
+      "77150",
+      "77199"
+    ],
+    "bounds": {
+      "minLat": 27.51,
+      "maxLat": 27.61,
+      "minLng": 68.16,
+      "maxLng": 68.27
+    }
+  },
+  {
+    "id": "nawabshah",
+    "name": "Nawabshah",
+    "urduName": "نواب شاہ",
+    "provinceId": "sindh",
+    "division": "Shaheed Benazirabad Division",
+    "district": "Shaheed Benazirabad",
+    "coordinates": {
+      "lat": 26.2483,
+      "lng": 68.4096
+    },
+    "postalCodeRange": [
+      "67450",
+      "67499"
+    ],
+    "bounds": {
+      "minLat": 26.2,
+      "maxLat": 26.3,
+      "minLng": 68.35,
+      "maxLng": 68.47
+    }
+  },
+  {
+    "id": "mirpur-khas",
+    "name": "Mirpur Khas",
+    "urduName": "میرپور خاص",
+    "provinceId": "sindh",
+    "division": "Mirpur Khas Division",
+    "district": "Mirpur Khas",
+    "coordinates": {
+      "lat": 25.5276,
+      "lng": 69.0159
+    },
+    "postalCodeRange": [
+      "69000",
+      "69099"
+    ],
+    "bounds": {
+      "minLat": 25.47,
+      "maxLat": 25.58,
+      "minLng": 68.96,
+      "maxLng": 69.07
+    }
+  },
+  {
+    "id": "jacobabad",
+    "name": "Jacobabad",
+    "urduName": "جیکب آباد",
+    "provinceId": "sindh",
+    "division": "Larkana Division",
+    "district": "Jacobabad",
+    "coordinates": {
+      "lat": 28.2835,
+      "lng": 68.4388
+    },
+    "postalCodeRange": [
+      "79200",
+      "79299"
+    ],
+    "bounds": {
+      "minLat": 28.23,
+      "maxLat": 28.34,
+      "minLng": 68.38,
+      "maxLng": 68.49
+    }
+  },
+  {
+    "id": "shikarpur",
+    "name": "Shikarpur",
+    "urduName": "شکارپور",
+    "provinceId": "sindh",
+    "division": "Larkana Division",
+    "district": "Shikarpur",
+    "coordinates": {
+      "lat": 27.957,
+      "lng": 68.638
+    },
+    "postalCodeRange": [
+      "78100",
+      "78199"
+    ],
+    "bounds": {
+      "minLat": 27.91,
+      "maxLat": 28.01,
+      "minLng": 68.58,
+      "maxLng": 68.69
+    }
+  }
+]

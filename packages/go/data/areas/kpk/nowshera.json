@@ -1,0 +1,435 @@
+[
+  {
+    "id": "nowshera-cantt",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Nowshera Cantonment",
+    "urduName": "نوشہرہ کینٹ",
+    "aliases": [
+      "Nowshera Cantt",
+      "Cantonment Board Nowshera"
+    ],
+    "postalCode": "24100",
+    "coordinates": {
+      "lat": 34.012,
+      "lng": 71.978
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nowshera-saddar-bazaar",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Saddar Bazaar Nowshera",
+    "urduName": "صدر بازار نوشہرہ",
+    "aliases": [
+      "Saddar Nowshera",
+      "Main Market Nowshera Cantt"
+    ],
+    "postalCode": "24100",
+    "coordinates": {
+      "lat": 34.016,
+      "lng": 71.974
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nowshera-shobra-chowk",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Shobra Chowk",
+    "urduName": "شوبرا چوک نوشہرہ",
+    "aliases": [
+      "Shobra Hotel Chowk Nowshera",
+      "Chowk Shobra"
+    ],
+    "postalCode": "24100",
+    "coordinates": {
+      "lat": 34.018,
+      "lng": 71.971
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nowshera-district-courts",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "District Courts & Kachehri",
+    "urduName": "ضلعی کچہری نوشہرہ",
+    "aliases": [
+      "Kachehri Nowshera",
+      "DC Office Nowshera",
+      "District Complex Nowshera"
+    ],
+    "postalCode": "24100",
+    "coordinates": {
+      "lat": 34.022,
+      "lng": 71.982
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nowshera-gt-road",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "GT Road Nowshera Corridor",
+    "urduName": "جی ٹی روڈ نوشہرہ",
+    "aliases": [
+      "Grand Trunk Road Nowshera",
+      "Peshawar Road Nowshera"
+    ],
+    "postalCode": "24100",
+    "coordinates": {
+      "lat": 34.025,
+      "lng": 71.988
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nowshera-kabul-riverfront",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Kabul Riverfront Area",
+    "urduName": "دریائے کابل ریور فرنٹ نوشہرہ",
+    "aliases": [
+      "Nowshera Bridge Area",
+      "River Bank Nowshera"
+    ],
+    "postalCode": "24100",
+    "coordinates": {
+      "lat": 34.008,
+      "lng": 71.968
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nowshera-asc-colony",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "ASC Colony",
+    "urduName": "اے ایس سی کالونی نوشہرہ",
+    "aliases": [
+      "Army Services Corps Colony Nowshera",
+      "Armoured Center Colony"
+    ],
+    "postalCode": "24100",
+    "coordinates": {
+      "lat": 34.005,
+      "lng": 71.985
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nowshera-kaka-sahib-road",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Kaka Sahib Road",
+    "urduName": "کاکا صاحب روڈ نوشہرہ",
+    "aliases": [
+      "Ziarat Kaka Sahib Road",
+      "Kaka Sahib Chowk"
+    ],
+    "postalCode": "24110",
+    "coordinates": {
+      "lat": 33.995,
+      "lng": 71.955
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "nowshera-ambela",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Ambela",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00833,
+      "lng": 72.025
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1110632,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-muhmand-line",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Muhmand Line",
+    "aliases": [
+      "Mohmand"
+    ],
+    "coordinates": {
+      "lat": 34.00536,
+      "lng": 72.02097
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1110633,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-chitral-lines",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Chitral Lines",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99211,
+      "lng": 72.00947
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1110635,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-munro-lines",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Munro Lines",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99643,
+      "lng": 71.99406
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1110637,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-berrot-lines",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Berrot Lines",
+    "aliases": [
+      "Barret Lines"
+    ],
+    "coordinates": {
+      "lat": 33.99533,
+      "lng": 71.97994
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1110639,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-malakand-lines",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Malakand Lines",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00165,
+      "lng": 71.97773
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1110640,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-mansfield-lines",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Mansfield Lines",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00941,
+      "lng": 72.0037
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1413410,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-lockhart-lines",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Lockhart Lines",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99583,
+      "lng": 72.00694
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1413411,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-willock-lines-west",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Willock Lines West",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99792,
+      "lng": 72.01987
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1413412,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-lockhart-lines-east",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Lockhart Lines East",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99722,
+      "lng": 72.00833
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1413413,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-sadr-bazar",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Sadr Bazar",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.05619,
+      "lng": 72.00894
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1413414,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-willack-lines-east",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Willack Lines East",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00212,
+      "lng": 72.02959
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11124325,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  }
+]

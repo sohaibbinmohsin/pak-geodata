@@ -1,0 +1,1695 @@
+[
+  {
+    "id": "rawalpindi-saddar",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Saddar",
+    "urduName": "صدر",
+    "aliases": [
+      "Saddar Rawalpindi",
+      "Saddar Cantt",
+      "Bank Road Saddar"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.595,
+      "lng": 73.053
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-cantt",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Rawalpindi Cantt",
+    "urduName": "راولپنڈی کینٹ",
+    "aliases": [
+      "Rawalpindi Cantonment",
+      "Cantt Board Rawalpindi"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.585,
+      "lng": 73.045
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7038711,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-westridge-1",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Westridge 1",
+    "urduName": "ویسٹریج 1",
+    "aliases": [
+      "Westridge 1 Rawalpindi",
+      "Westridge I"
+    ],
+    "postalCode": "46060",
+    "coordinates": {
+      "lat": 33.612,
+      "lng": 73.015
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-westridge-2",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Westridge 2",
+    "urduName": "ویسٹریج 2",
+    "aliases": [
+      "Westridge 2 Rawalpindi",
+      "Westridge II"
+    ],
+    "postalCode": "46060",
+    "coordinates": {
+      "lat": 33.618,
+      "lng": 73.005
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-chaklala-scheme-3",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Chaklala Scheme 3",
+    "urduName": "چکلالہ سکیم 3",
+    "aliases": [
+      "Chaklala 3",
+      "Scheme 3 Chaklala"
+    ],
+    "postalCode": "46200",
+    "coordinates": {
+      "lat": 33.582,
+      "lng": 73.088
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-satellite-town",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Satellite Town",
+    "urduName": "سیٹلائٹ ٹاؤن",
+    "aliases": [
+      "Satellite Town Rawalpindi",
+      "Satellite Town Blocks A-F"
+    ],
+    "postalCode": "46300",
+    "coordinates": {
+      "lat": 33.638,
+      "lng": 73.068
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1165875,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-bahria-town-phase-1",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Bahria Town Phase 1",
+    "urduName": "بحریہ ٹاؤن فیز 1",
+    "aliases": [
+      "Bahria Phase 1 Rawalpindi",
+      "Bahria 1 RWP"
+    ],
+    "postalCode": "46600",
+    "coordinates": {
+      "lat": 33.542,
+      "lng": 73.092
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-bahria-town-phase-2",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Bahria Town Phase 2",
+    "urduName": "بحریہ ٹاؤن فیز 2",
+    "aliases": [
+      "Bahria Phase 2 Rawalpindi",
+      "Bahria 2 RWP"
+    ],
+    "postalCode": "46600",
+    "coordinates": {
+      "lat": 33.535,
+      "lng": 73.098
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-bahria-town-phase-3",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Bahria Town Phase 3",
+    "urduName": "بحریہ ٹاؤن فیز 3",
+    "aliases": [
+      "Bahria Phase 3 Rawalpindi",
+      "Bahria 3 RWP"
+    ],
+    "postalCode": "46600",
+    "coordinates": {
+      "lat": 33.528,
+      "lng": 73.105
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-bahria-town-phase-4",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Bahria Town Phase 4",
+    "urduName": "بحریہ ٹاؤن فیز 4",
+    "aliases": [
+      "Bahria Phase 4 Rawalpindi",
+      "Bahria 4 RWP",
+      "Civic Center Bahria 4"
+    ],
+    "postalCode": "46600",
+    "coordinates": {
+      "lat": 33.522,
+      "lng": 73.095
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-bahria-town-phase-5",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Bahria Town Phase 5",
+    "urduName": "بحریہ ٹاؤن فیز 5",
+    "aliases": [
+      "Bahria Phase 5 Rawalpindi",
+      "Bahria 5 RWP"
+    ],
+    "postalCode": "46600",
+    "coordinates": {
+      "lat": 33.515,
+      "lng": 73.112
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-bahria-town-phase-6",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Bahria Town Phase 6",
+    "urduName": "بحریہ ٹاؤن فیز 6",
+    "aliases": [
+      "Bahria Phase 6 Rawalpindi",
+      "Bahria 6 RWP"
+    ],
+    "postalCode": "46600",
+    "coordinates": {
+      "lat": 33.508,
+      "lng": 73.118
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-bahria-town-phase-7",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Bahria Town Phase 7",
+    "urduName": "بحریہ ٹاؤن فیز 7",
+    "aliases": [
+      "Bahria Phase 7 Rawalpindi",
+      "Bahria 7 RWP",
+      "Wilayat Complex Bahria"
+    ],
+    "postalCode": "46600",
+    "coordinates": {
+      "lat": 33.518,
+      "lng": 73.128
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-bahria-town-phase-8",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Bahria Town Phase 8",
+    "urduName": "بحریہ ٹاؤن فیز 8",
+    "aliases": [
+      "Bahria Phase 8 Rawalpindi",
+      "Bahria 8 RWP"
+    ],
+    "postalCode": "46600",
+    "coordinates": {
+      "lat": 33.495,
+      "lng": 73.108
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-askari-7",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Askari 7",
+    "urduName": "عسکری 7",
+    "aliases": [
+      "Askari VII",
+      "Askari 7 Adyala Road",
+      "Askari 7 Rawalpindi"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.578,
+      "lng": 73.062
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-askari-10",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Askari 10",
+    "urduName": "عسکری 10",
+    "aliases": [
+      "Askari X",
+      "Askari 10 Airport Road",
+      "Askari 10 Rawalpindi"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.588,
+      "lng": 73.072
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-askari-14",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Askari 14",
+    "urduName": "عسکری 14",
+    "aliases": [
+      "Askari XIV",
+      "Askari 14 Rawalpindi",
+      "Askari 14 Sector A"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.562,
+      "lng": 73.038
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-raja-bazar",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Raja Bazar",
+    "urduName": "راجہ بازار",
+    "aliases": [
+      "Raja Bazaar",
+      "Raja Bazaar Rawalpindi",
+      "Purana Qila"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.615,
+      "lng": 73.058
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-peshawar-road",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Peshawar Road",
+    "urduName": "پشاور روڈ",
+    "aliases": [
+      "Peshawar Road Rawalpindi",
+      "Koh-e-Noor Mills Peshawar Road"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.605,
+      "lng": 73.018
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-commercial-market",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Commercial Market",
+    "urduName": "کمرشل مارکیٹ",
+    "aliases": [
+      "Commercial Market Satellite Town",
+      "Commercial Market RWP"
+    ],
+    "postalCode": "46300",
+    "coordinates": {
+      "lat": 33.642,
+      "lng": 73.072
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-shamsabad",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Shamsabad",
+    "urduName": "شمس آباد",
+    "aliases": [
+      "Shamsabad Rawalpindi",
+      "Shamsabad Murree Road"
+    ],
+    "postalCode": "46300",
+    "coordinates": {
+      "lat": 33.648,
+      "lng": 73.079
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-gulraiz-housing-scheme",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Gulraiz Housing Scheme",
+    "urduName": "گلریز ہاؤسنگ سکیم",
+    "aliases": [
+      "Gulraiz",
+      "Gulraiz Phase 1-8",
+      "Gulraiz Rawalpindi"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.555,
+      "lng": 73.115
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-lalazar",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Lalazar",
+    "urduName": "لالہ زار",
+    "aliases": [
+      "Lalazar Rawalpindi",
+      "Lalazar Tulsa Road"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.572,
+      "lng": 73.048
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-morgah",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Morgah",
+    "urduName": "مورگاہ",
+    "aliases": [
+      "Morgah Rawalpindi",
+      "Morgah Refinery"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.545,
+      "lng": 73.068
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-adyala-road",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Adyala Road",
+    "urduName": "اڈیالہ روڈ",
+    "aliases": [
+      "Adyala Road Rawalpindi",
+      "Adiala Road"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.525,
+      "lng": 73.042
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-tulsa-road",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Tulsa Road",
+    "urduName": "تلسہ روڈ",
+    "aliases": [
+      "Tulsa Road Rawalpindi",
+      "Tulsa Chowk"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.568,
+      "lng": 73.032
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-airport-housing-society",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Airport Housing Society",
+    "urduName": "ایئرپورٹ ہاؤسنگ سوسائٹی",
+    "aliases": [
+      "Airport Society",
+      "Airport Employees Housing Society"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.612,
+      "lng": 73.115
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-tench-bhatta",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Tench Bhatta",
+    "urduName": "ٹینچ بھاٹہ",
+    "aliases": [
+      "Tench Bhatta Rawalpindi",
+      "Tench Cantt"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.592,
+      "lng": 73.025
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-media-town",
+    "name": "Media Town",
+    "urduName": "میڈیا ٹاؤن راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "housing_society",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.5421,
+      "lng": 73.1234
+    },
+    "aliases": [
+      "Media Town Rawalpindi",
+      "Block A Media Town"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-cbr-town-phase-2",
+    "name": "CBR Town Phase 2",
+    "urduName": "سی بی آر ٹاؤن فیز 2",
+    "cityId": "rawalpindi",
+    "type": "housing_society",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.5352,
+      "lng": 73.1045
+    },
+    "aliases": [
+      "CBR Town 2",
+      "CBR Rawalpindi"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-gulshan-e-abad",
+    "name": "Gulshan-e-Abad",
+    "urduName": "گلشنِ آباد راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "housing_society",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.5414,
+      "lng": 73.0567
+    },
+    "aliases": [
+      "Gulshan e Abad",
+      "Adyala Gulshan-e-Abad"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-dhok-kala-khan",
+    "name": "Dhok Kala Khan",
+    "urduName": "ڈھوک کالا خان",
+    "cityId": "rawalpindi",
+    "type": "neighborhood",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.6426,
+      "lng": 73.0921
+    },
+    "aliases": [
+      "Dhoke Kala Khan",
+      "IJP Road Rawalpindi"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-faizabad",
+    "name": "Faizabad (Rawalpindi Belt)",
+    "urduName": "فیض آباد راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "commercial",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.6628,
+      "lng": 73.0843
+    },
+    "aliases": [
+      "Faizabad Interchange",
+      "Faizabad Chowk"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-sarafa-bazaar",
+    "name": "Sarafa Bazaar",
+    "urduName": "صرافہ بازار راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "commercial",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.6181,
+      "lng": 73.0615
+    },
+    "aliases": [
+      "Sarafa Bazaar",
+      "Gold Market Rawalpindi"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-murree-road",
+    "name": "Murree Road Commercial Belt",
+    "urduName": "مری روڈ کمرشل ایریا",
+    "cityId": "rawalpindi",
+    "type": "commercial",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.6312,
+      "lng": 73.0726
+    },
+    "aliases": [
+      "Murree Road Rawalpindi",
+      "Benazir Bhutto Road"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-afshan-colony",
+    "name": "Afshan Colony",
+    "urduName": "افشاں کالونی راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "neighborhood",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.5823,
+      "lng": 73.0237
+    },
+    "aliases": [
+      "Afshan Colony Cantt",
+      "Range Road Afshan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-range-road",
+    "name": "Range Road Residential Sector",
+    "urduName": "رینج روڈ راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "neighborhood",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.5754,
+      "lng": 73.0148
+    },
+    "aliases": [
+      "Range Road Cantt",
+      "Peshawar Road Range"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-gulraiz-phase-2",
+    "name": "Gulraiz Housing Scheme Phase 2",
+    "urduName": "گلریز فیز 2 راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "housing_society",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.5646,
+      "lng": 73.1121
+    },
+    "aliases": [
+      "Gulraiz Phase 2",
+      "Gulraiz 2"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-chaklala-scheme-1",
+    "name": "Chaklala Scheme 1",
+    "urduName": "چکلالہ اسکیم 1 راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "sector",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.6042,
+      "lng": 73.0783
+    },
+    "aliases": [
+      "Scheme 1 Chaklala",
+      "Chaklala 1"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-chaklala-scheme-2",
+    "name": "Chaklala Scheme 2",
+    "urduName": "چکلالہ اسکیم 2 راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "sector",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.5985,
+      "lng": 73.0824
+    },
+    "aliases": [
+      "Scheme 2 Chaklala",
+      "Chaklala 2"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-westridge-3",
+    "name": "Westridge 3",
+    "urduName": "ویسٹریج 3 راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "neighborhood",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.6124,
+      "lng": 73.0285
+    },
+    "aliases": [
+      "Westridge III",
+      "Westridge 3 Rawalpindi"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-askari-11",
+    "name": "Askari 11",
+    "urduName": "عسکری 11 راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "housing_society",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.5869,
+      "lng": 73.1024
+    },
+    "aliases": [
+      "Askari XI",
+      "Askari 11 Rawalpindi"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-askari-1",
+    "name": "Askari 1",
+    "urduName": "عسکری 1 راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "housing_society",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.5892,
+      "lng": 73.0512
+    },
+    "aliases": [
+      "Askari I",
+      "Askari 1 Cantt"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-askari-2",
+    "name": "Askari 2",
+    "urduName": "عسکری 2 راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "housing_society",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.5915,
+      "lng": 73.0563
+    },
+    "aliases": [
+      "Askari II",
+      "Askari 2 Cantt"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-bahria-town-phase-8-ext",
+    "name": "Bahria Town Phase 8 Extension",
+    "urduName": "بحریا ٹاؤن فیز 8 ایکسٹینشن",
+    "cityId": "rawalpindi",
+    "type": "housing_society",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.4832,
+      "lng": 73.0926
+    },
+    "aliases": [
+      "Phase 8 Ext Bahria",
+      "Bahria Phase 8 Ext"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-ayub-park",
+    "name": "Ayub National Park Area",
+    "urduName": "ایوب نیشنل پارک ایریا",
+    "cityId": "rawalpindi",
+    "type": "suburb",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.5713,
+      "lng": 73.0837
+    },
+    "aliases": [
+      "Ayub Park Area",
+      "Jhelum Road Cantt"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-top-city-1",
+    "name": "Top City-1 Rawalpindi",
+    "urduName": "ٹاپ سٹی 1 راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "housing_society",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.5624,
+      "lng": 72.9318
+    },
+    "aliases": [
+      "Top City-1",
+      "TopCity 1 Airport Link"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-mumtaz-city",
+    "name": "Mumtaz City",
+    "urduName": "ممتاز سٹی راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "housing_society",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.5552,
+      "lng": 72.9213
+    },
+    "aliases": [
+      "Mumtaz City Rawalpindi",
+      "Motorway Link Housing"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-pirwadhai",
+    "name": "Pirwadhai",
+    "urduName": "پیرودھائی راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "commercial",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.6284,
+      "lng": 73.0451
+    },
+    "aliases": [
+      "Pirwadhai Bus Stand",
+      "Pirwadhai Mor"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-gulzar-e-quaid",
+    "name": "Gulzar-e-Quaid",
+    "urduName": "گلزارِ قائد راولپنڈی",
+    "cityId": "rawalpindi",
+    "type": "housing_society",
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.6012,
+      "lng": 73.1182
+    },
+    "aliases": [
+      "Gulzar e Quaid",
+      "Old Airport Road Housing"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "rawalpindi-raja-bazaar",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Raja Bazaar",
+    "urduName": "راجہ بازار",
+    "aliases": [
+      "Raja Bazar",
+      "Main City Raja Bazaar",
+      "Fawwara Chowk Raja Bazaar"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.606,
+      "lng": 73.056
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-bhabra-bazaar",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Bhabra Bazaar",
+    "urduName": "بھابڑا بازار",
+    "aliases": [
+      "Bhabra Bazar Rawalpindi",
+      "Historic Bhabra Quarter"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.612,
+      "lng": 73.061
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-mohanpura",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Mohanpura",
+    "urduName": "موہن پورہ",
+    "aliases": [
+      "Mohan Pura",
+      "Mohanpura Rawalpindi"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.608,
+      "lng": 73.067
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-kartarpura",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Kartarpura",
+    "urduName": "کرتار پورہ",
+    "aliases": [
+      "Kartarpura Food Street",
+      "Kartarpura Rawalpindi"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.615,
+      "lng": 73.069
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-pirwadhai-adda",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Pirwadhai Bus Adda",
+    "urduName": "پیرودھائی اڈا",
+    "aliases": [
+      "Pirwadhai Terminal",
+      "General Bus Stand Pirwadhai",
+      "Pirwadhai Mor"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.628,
+      "lng": 73.042
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-faizabad-adda",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Faizabad Interchange Terminal",
+    "urduName": "فیض آباد انٹرچینج ٹرمینل",
+    "aliases": [
+      "Faizabad Rawalpindi",
+      "Faizabad Adda",
+      "Faizabad Murree Road"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.662,
+      "lng": 73.082
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-dhok-ratta",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Dhok Ratta",
+    "urduName": "ڈھوک رتہ",
+    "aliases": [
+      "Dhok Ratta Rawalpindi",
+      "Railway Workshop Dhok Ratta"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.598,
+      "lng": 73.048
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1166993,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-dhok-khabba",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Dhok Khabba",
+    "urduName": "ڈھوک کھبہ",
+    "aliases": [
+      "Dhok Khabba Rawalpindi"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.619,
+      "lng": 73.076
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-dhok-hassu",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Dhok Hassu",
+    "urduName": "ڈھوک حسو",
+    "aliases": [
+      "Dhoke Hassu",
+      "Dhok Hassu IJP Road"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.615,
+      "lng": 73.035
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-dhok-mangtal",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Dhok Mangtal",
+    "urduName": "ڈھوک منگتال",
+    "aliases": [
+      "Dhoke Mangtal",
+      "Mangtal Rawalpindi"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.612,
+      "lng": 73.048
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-dhok-dalal",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Dhok Dalal",
+    "urduName": "ڈھوک دلال",
+    "aliases": [
+      "Dhoke Dalal",
+      "Dalal Mohallah"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.621,
+      "lng": 73.061
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-dhok-elahi-bakhsh",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Dhok Elahi Bakhsh",
+    "urduName": "ڈھوک الٰہی بخش",
+    "aliases": [
+      "Dhoke Ilahi Bux",
+      "Dhok Elahi Bux"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.608,
+      "lng": 73.082
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-khanna-pul",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Khanna Pul",
+    "urduName": "کھنہ پل",
+    "aliases": [
+      "Khanna Pull",
+      "Khanna Expressway"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.632,
+      "lng": 73.118
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-chungi-no-22",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Chungi No 22",
+    "urduName": "چنگی نمبر ۲۲",
+    "aliases": [
+      "Chungi 22",
+      "Chungi 22 Cantt"
+    ],
+    "postalCode": "46000",
+    "coordinates": {
+      "lat": 33.578,
+      "lng": 73.052
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "rawalpindi-soan-camp",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Soan Camp",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.5422,
+      "lng": 73.11157
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7038392,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-khyaban-e-jinnah",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Khyaban-e-Jinnah",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.54887,
+      "lng": 73.04706
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449840,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "46050"
+  },
+  {
+    "id": "rawalpindi-wahdat-colony",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Wahdat Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.53924,
+      "lng": 73.0524
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449841,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-shaheen-colony",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Shaheen Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.54378,
+      "lng": 73.05516
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449842,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-janjua-town",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Janjua Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.54659,
+      "lng": 73.06089
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449843,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-lawyers-colony",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Lawyers Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.54678,
+      "lng": 73.09989
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449846,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-al-rehman-markaz",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Al Rehman Markaz",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.53601,
+      "lng": 73.06372
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449847,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-mehmudabad",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Mehmudabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.53927,
+      "lng": 73.05623
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449848,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-gulshanabad",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Gulshanabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.53081,
+      "lng": 73.06022
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449849,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47310"
+  },
+  {
+    "id": "rawalpindi-kalial",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Kalial",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.52993,
+      "lng": 73.05095
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449850,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47310"
+  },
+  {
+    "id": "rawalpindi-clifton-town-ship",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Clifton Town Ship",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.52734,
+      "lng": 73.06342
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449851,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47310"
+  },
+  {
+    "id": "rawalpindi-sumerzar-colony",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Sumerzar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.5258,
+      "lng": 73.04814
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449852,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47310"
+  }
+]

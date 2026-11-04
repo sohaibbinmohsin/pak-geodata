@@ -1,0 +1,184 @@
+[
+  {
+    "id": "kamalia-main-bazar",
+    "name": "Main Bazar",
+    "coordinates": {
+      "lat": 30.726,
+      "lng": 72.644
+    },
+    "postalCode": "36350",
+    "aliases": [
+      "Kamalia Main Bazar",
+      "Saddar Bazar"
+    ],
+    "cityId": "kamalia",
+    "sources": [
+      "survey",
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1175156,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "مین بازار",
+    "type": "commercial"
+  },
+  {
+    "id": "kamalia-mohallah-iqbal-bazar",
+    "name": "Mohallah Iqbal Bazar",
+    "coordinates": {
+      "lat": 30.724,
+      "lng": 72.648
+    },
+    "postalCode": "36350",
+    "aliases": [
+      "Iqbal Bazar Kamalia"
+    ],
+    "cityId": "kamalia",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "محلہ اقبال بازار",
+    "type": "neighborhood"
+  },
+  {
+    "id": "kamalia-railway-station-road",
+    "name": "Railway Station Road",
+    "coordinates": {
+      "lat": 30.729,
+      "lng": 72.641
+    },
+    "postalCode": "36350",
+    "aliases": [
+      "Station Road Kamalia"
+    ],
+    "cityId": "kamalia",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "ریلوے اسٹیشن روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "kamalia-chichawatni-road",
+    "name": "Chichawatni Road",
+    "coordinates": {
+      "lat": 30.721,
+      "lng": 72.652
+    },
+    "postalCode": "36350",
+    "aliases": [
+      "Kamalia Chichawatni Highway"
+    ],
+    "cityId": "kamalia",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "چیچہ وطنی روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "kamalia-toba-road",
+    "name": "Toba Road",
+    "coordinates": {
+      "lat": 30.732,
+      "lng": 72.646
+    },
+    "postalCode": "36350",
+    "aliases": [
+      "Kamalia Toba Tek Singh Road"
+    ],
+    "cityId": "kamalia",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "ٹوبہ روڈ",
+    "type": "commercial"
+  },
+  {
+    "id": "kamalia-mohallah-sheikhan",
+    "name": "Mohallah Sheikhan",
+    "coordinates": {
+      "lat": 30.7275,
+      "lng": 72.638
+    },
+    "postalCode": "36350",
+    "aliases": [
+      "Sheikhan Quarter Kamalia"
+    ],
+    "cityId": "kamalia",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "محلہ شیخان",
+    "type": "neighborhood"
+  },
+  {
+    "id": "kamalia-khaddar-market",
+    "name": "Khaddar Market",
+    "coordinates": {
+      "lat": 30.725,
+      "lng": 72.6455
+    },
+    "postalCode": "36350",
+    "aliases": [
+      "Kamalia Khaddar Bazar",
+      "Handloom Market"
+    ],
+    "cityId": "kamalia",
+    "sources": [
+      "survey",
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1175156,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "کھدر مارکیٹ",
+    "type": "commercial"
+  },
+  {
+    "id": "kamalia-pir-shah-road",
+    "name": "Pir Shah Road",
+    "coordinates": {
+      "lat": 30.718,
+      "lng": 72.642
+    },
+    "postalCode": "36350",
+    "aliases": [
+      "Pir Shah Mohallah"
+    ],
+    "cityId": "kamalia",
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab",
+    "urduName": "پیر شاہ روڈ",
+    "type": "neighborhood"
+  }
+]
