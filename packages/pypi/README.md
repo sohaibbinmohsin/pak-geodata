@@ -1,6 +1,12 @@
 # pak-geodata
 
+[![PyPI Version](https://img.shields.io/pypi/v/pak-geodata?color=green)](https://pypi.org/project/pak-geodata/)
+<a href="https://geodata.themohsinproject.org/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Live%20Demo-Interactive%20Studio-blue?logo=leaflet&color=10B981" alt="Live Interactive Demo" /></a>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 > Comprehensive, typed, offline geographic data for all areas and cities in Pakistan.
+
+Explore the [Live Interactive Demo](https://geodata.themohsinproject.org/) to test multi-script search, interactive map exploration, and reverse geocoding in real-time.
 
 `pak-geodata` is an open-source, production-grade Python client library providing offline access to verified geographic data for Pakistan.
 
