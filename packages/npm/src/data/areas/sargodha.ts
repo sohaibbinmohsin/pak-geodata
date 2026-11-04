@@ -394,5 +394,343 @@ export const sargodhaAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "sargodha-chak-forty-six-shumali",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Chak Forty-six Shumali",
+    "aliases": [
+      "Chak 46 NB",
+      "Waiyanwali",
+      "Waiyanwāli",
+      "Walyanwali",
+      "Walyanwāli"
+    ],
+    "coordinates": {
+      "lat": 32.06535,
+      "lng": 72.70724
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1162691,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-lodeke",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Lodeke",
+    "aliases": [
+      "Chak 47 NB",
+      "Chak Forty-seven North Branch",
+      "Ledeke"
+    ],
+    "coordinates": {
+      "lat": 32.05598,
+      "lng": 72.6977
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1171968,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-gunianwala",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Gunianwala",
+    "aliases": [
+      "Chak 43 NB"
+    ],
+    "coordinates": {
+      "lat": 32.08794,
+      "lng": 72.70543
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1177529,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-chak-forty-two-north-branch",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Chak Forty-two North Branch",
+    "aliases": [
+      "Chak 42 NB",
+      "Gilanwala",
+      "Gilanwāla",
+      "Gillanwala",
+      "Gillanwāla"
+    ],
+    "coordinates": {
+      "lat": 32.09377,
+      "lng": 72.69257
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1178330,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-kaliar-town",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Kaliar Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.07569,
+      "lng": 72.70511
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7090860,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-kot-diwa-singh",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Kot Diwa Singh",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.09691,
+      "lng": 72.6805
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7090888,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-chak-forty-four-north-branch",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Chak Forty-four North Branch",
+    "aliases": [
+      "Chak Forty-four NB"
+    ],
+    "coordinates": {
+      "lat": 32.10209,
+      "lng": 72.66684
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7090889,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-johar-colony",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Johar Colony",
+    "aliases": [
+      "Jahar Colony",
+      "Jauhar Colony"
+    ],
+    "coordinates": {
+      "lat": 32.10026,
+      "lng": 72.70457
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7787142,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-din-colony",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Din Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.10036,
+      "lng": 72.69843
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7787143,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-madina-colony",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Madina Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.11026,
+      "lng": 72.66184
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7787144,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-muhammadia-colony",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Muhammadia Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.10482,
+      "lng": 72.66221
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7787628,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-faisal-town",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Faisal Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.10648,
+      "lng": 72.66592
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11802415,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-abal-colony",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Abal Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.10233,
+      "lng": 72.6723
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11802416,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-kot-farid",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Kot Farid",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.09686,
+      "lng": 72.68445
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11802417,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sargodha-istaqlal-colony",
+    "cityId": "sargodha",
+    "provinceId": "punjab",
+    "name": "Istaqlal Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.07225,
+      "lng": 72.64866
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11802419,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ];

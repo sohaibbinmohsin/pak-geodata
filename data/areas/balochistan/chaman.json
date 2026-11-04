@@ -184,5 +184,133 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "chaman-muhammad-hasan-kili",
+    "cityId": "chaman",
+    "provinceId": "balochistan",
+    "name": "Muhammad Hasan Kili",
+    "aliases": [
+      "Muhammad Hassan Kili"
+    ],
+    "coordinates": {
+      "lat": 30.90609,
+      "lng": 66.45192
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1350707,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "chaman-muslimabad",
+    "cityId": "chaman",
+    "provinceId": "balochistan",
+    "name": "Muslimabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.92247,
+      "lng": 66.46422
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6367105,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "chaman-kajar-kili",
+    "cityId": "chaman",
+    "provinceId": "balochistan",
+    "name": "Kajar Kili",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.9325,
+      "lng": 66.4773
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6367106,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "chaman-daulatabad",
+    "cityId": "chaman",
+    "provinceId": "balochistan",
+    "name": "Daulatabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.92801,
+      "lng": 66.4691
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6367107,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "chaman-aduzai-kili",
+    "cityId": "chaman",
+    "provinceId": "balochistan",
+    "name": "Aduzai Kili",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.90972,
+      "lng": 66.43732
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6367110,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "chaman-ali-khan-kili",
+    "cityId": "chaman",
+    "provinceId": "balochistan",
+    "name": "Ali Khan Kili",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.91274,
+      "lng": 66.42485
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6367111,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ]

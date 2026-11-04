@@ -210,5 +210,403 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "larkana-lahori-muhalla",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Lahori Muhalla",
+    "aliases": [
+      "Lahori",
+      "Lāhori"
+    ],
+    "coordinates": {
+      "lat": 27.55732,
+      "lng": 68.19422
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1357431,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-rasulabad",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Rasulabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.5638,
+      "lng": 68.21991
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1357434,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-goth-channa",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Goth Channa",
+    "aliases": [
+      "Channa"
+    ],
+    "coordinates": {
+      "lat": 27.5626,
+      "lng": 68.22336
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1357435,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-shamman-brahui",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Shamman Brahui",
+    "aliases": [
+      "Shaman Brahui",
+      "Sulaiman Brohi",
+      "Sulaimān Brohi"
+    ],
+    "coordinates": {
+      "lat": 27.53826,
+      "lng": 68.20143
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1357450,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-goth-wal",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Goth Wal",
+    "aliases": [
+      "Goth Wali"
+    ],
+    "coordinates": {
+      "lat": 27.57066,
+      "lng": 68.19946
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7366639,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-mustafa-colony",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Mustafa Colony",
+    "aliases": [
+      "Mustata Colony"
+    ],
+    "coordinates": {
+      "lat": 27.55007,
+      "lng": 68.19487
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7367275,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-allahabad",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Allahabad",
+    "aliases": [
+      "Colony Allah Abad",
+      "Colony Allāh Abād"
+    ],
+    "coordinates": {
+      "lat": 27.54125,
+      "lng": 68.21293
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7367543,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-gaianpur",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Gaianpur",
+    "aliases": [
+      "Gajanpur"
+    ],
+    "coordinates": {
+      "lat": 27.55202,
+      "lng": 68.22199
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7367544,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-nazar-mahal",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Nazar Mahal",
+    "aliases": [
+      "Nazr Nahal"
+    ],
+    "coordinates": {
+      "lat": 27.54496,
+      "lng": 68.195
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7370350,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-rahmatour",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Rahmatour",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.54564,
+      "lng": 68.2061
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7370353,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-ramzan-brahui",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Ramzan Brahui",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.53769,
+      "lng": 68.20778
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7370360,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-shaikh-zaid-colony",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Shaikh Zaid Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.56863,
+      "lng": 68.20869
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7370368,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-peoples-colony",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Peoples Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.56142,
+      "lng": 68.21058
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8335344,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-mujahid-colony",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Mujahid Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.56587,
+      "lng": 68.19766
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11347892,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-zulfi-jar-ali-bhutto-colony",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Zulfi Jar Ali Bhutto Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.54439,
+      "lng": 68.20456
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11347896,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-water-and-power-development-authority-colony",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Water and Power Development Authority Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.59495,
+      "lng": 68.21236
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11347903,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-bardni-mughairi",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Bardni Mughairi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.56429,
+      "lng": 68.18798
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11347915,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "larkana-walid-muhalla",
+    "cityId": "larkana",
+    "provinceId": "sindh",
+    "name": "Walid Muhalla",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.57379,
+      "lng": 68.21062
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11402906,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ]

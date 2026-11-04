@@ -223,5 +223,293 @@ export const gilgitAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "gilgit-khumar",
+    "cityId": "gilgit",
+    "provinceId": "gilgit-baltistan",
+    "name": "Khumar",
+    "aliases": [
+      "Khomar"
+    ],
+    "coordinates": {
+      "lat": 35.91471,
+      "lng": 74.33884
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7423526,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "15150"
+  },
+  {
+    "id": "gilgit-sonikot",
+    "cityId": "gilgit",
+    "provinceId": "gilgit-baltistan",
+    "name": "Sonikot",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.91485,
+      "lng": 74.34711
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7423527,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "15150"
+  },
+  {
+    "id": "gilgit-barmas",
+    "cityId": "gilgit",
+    "provinceId": "gilgit-baltistan",
+    "name": "Barmas",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.91713,
+      "lng": 74.30252
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7423528,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "15150"
+  },
+  {
+    "id": "gilgit-basin-pain",
+    "cityId": "gilgit",
+    "provinceId": "gilgit-baltistan",
+    "name": "Basin Pain",
+    "aliases": [
+      "Basin",
+      "Basīn"
+    ],
+    "coordinates": {
+      "lat": 35.92142,
+      "lng": 74.27548
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7423533,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "gilgit-zulfiqar-colony",
+    "cityId": "gilgit",
+    "provinceId": "gilgit-baltistan",
+    "name": "Zulfiqar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.91451,
+      "lng": 74.35547
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11069477,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "15150"
+  },
+  {
+    "id": "gilgit-kishrot",
+    "cityId": "gilgit",
+    "provinceId": "gilgit-baltistan",
+    "name": "Kishrot",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.92003,
+      "lng": 74.32535
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11069478,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "15150"
+  },
+  {
+    "id": "gilgit-amphari",
+    "cityId": "gilgit",
+    "provinceId": "gilgit-baltistan",
+    "name": "Amphari",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.92194,
+      "lng": 74.29449
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11069479,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "gilgit-khur",
+    "cityId": "gilgit",
+    "provinceId": "gilgit-baltistan",
+    "name": "Khur",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.91928,
+      "lng": 74.30039
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11069480,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "15150"
+  },
+  {
+    "id": "gilgit-balda",
+    "cityId": "gilgit",
+    "provinceId": "gilgit-baltistan",
+    "name": "Balda",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.92187,
+      "lng": 74.30113
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11069482,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "gilgit-nagril-bala",
+    "cityId": "gilgit",
+    "provinceId": "gilgit-baltistan",
+    "name": "Nagril Bala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.91242,
+      "lng": 74.31383
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11069483,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "15150"
+  },
+  {
+    "id": "gilgit-nagril-pain",
+    "cityId": "gilgit",
+    "provinceId": "gilgit-baltistan",
+    "name": "Nagril Pain",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.91284,
+      "lng": 74.32231
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11069484,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "15150"
+  },
+  {
+    "id": "gilgit-wahdit-colony",
+    "cityId": "gilgit",
+    "provinceId": "gilgit-baltistan",
+    "name": "Wahdit Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.90623,
+      "lng": 74.36722
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11069486,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "15150"
+  },
+  {
+    "id": "gilgit-fcna-chauk",
+    "cityId": "gilgit",
+    "provinceId": "gilgit-baltistan",
+    "name": "FCNA Chauk",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.911,
+      "lng": 74.35954
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11069526,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "15150"
   }
 ];

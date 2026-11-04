@@ -178,5 +178,247 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "taxila-mohra-maliaran",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Mohra Maliaran",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.75851,
+      "lng": 72.81748
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1338349,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47080"
+  },
+  {
+    "id": "taxila-mohra-shahwali-shah",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Mohra Shahwali Shah",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.75772,
+      "lng": 72.80813
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1338353,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47080"
+  },
+  {
+    "id": "taxila-majawar",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Majawar",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.75312,
+      "lng": 72.81487
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1338357,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47080"
+  },
+  {
+    "id": "taxila-sarai-kala",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Sarai Kala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.73972,
+      "lng": 72.80157
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1338970,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47080"
+  },
+  {
+    "id": "taxila-bhir-dargahi",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Bhir Dargahi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.73883,
+      "lng": 72.81771
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1338977,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47080"
+  },
+  {
+    "id": "taxila-wahdat-colony",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Wahdat Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.72339,
+      "lng": 72.80461
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7388390,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47080"
+  },
+  {
+    "id": "taxila-fatima-town",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Fatima Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.76084,
+      "lng": 72.80594
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11785382,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47080"
+  },
+  {
+    "id": "taxila-faisal-town",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Faisal Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.76396,
+      "lng": 72.80686
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11785384,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47080"
+  },
+  {
+    "id": "taxila-gulistan-colony",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Gulistan Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.74547,
+      "lng": 72.7923
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11785968,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47080"
+  },
+  {
+    "id": "taxila-jamilabad",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Jamilabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.74364,
+      "lng": 72.80154
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11785969,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47080"
+  },
+  {
+    "id": "taxila-kohisar-colony",
+    "cityId": "taxila",
+    "provinceId": "punjab",
+    "name": "Kohisar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.73176,
+      "lng": 72.8119
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11785971,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47080"
   }
 ]

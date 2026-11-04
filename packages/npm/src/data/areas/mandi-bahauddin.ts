@@ -184,5 +184,47 @@ export const mandiBahauddinAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "mandi-bahauddin-canal-colony",
+    "cityId": "mandi-bahauddin",
+    "provinceId": "punjab",
+    "name": "Canal Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.60089,
+      "lng": 73.49325
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11444399,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mandi-bahauddin-sufipura",
+    "cityId": "mandi-bahauddin",
+    "provinceId": "punjab",
+    "name": "Sufipura",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.59001,
+      "lng": 73.50834
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449358,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ];

@@ -222,5 +222,71 @@ export const skarduAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "skardu-olting",
+    "cityId": "skardu",
+    "provinceId": "gilgit-baltistan",
+    "name": "Olting",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.28201,
+      "lng": 75.65289
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7419815,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "16110"
+  },
+  {
+    "id": "skardu-giangpiropi",
+    "cityId": "skardu",
+    "provinceId": "gilgit-baltistan",
+    "name": "Giangpiropi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.2835,
+      "lng": 75.64067
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11080453,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "16110"
+  },
+  {
+    "id": "skardu-hamid-garh",
+    "cityId": "skardu",
+    "provinceId": "gilgit-baltistan",
+    "name": "Hamid Garh",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.29442,
+      "lng": 75.65044
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11080457,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "16110"
   }
 ];

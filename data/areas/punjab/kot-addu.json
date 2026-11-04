@@ -175,5 +175,139 @@
     "provinceId": "punjab",
     "urduName": "سنانواں روڈ",
     "type": "commercial"
+  },
+  {
+    "id": "kot-addu-ghari-qureshi",
+    "cityId": "kot-addu",
+    "provinceId": "punjab",
+    "name": "Ghari Qureshi",
+    "aliases": [
+      "Garhi Quraishi"
+    ],
+    "coordinates": {
+      "lat": 30.4486,
+      "lng": 70.96397
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1392206,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "34050"
+  },
+  {
+    "id": "kot-addu-javidabad",
+    "cityId": "kot-addu",
+    "provinceId": "punjab",
+    "name": "Javidabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.47029,
+      "lng": 70.98775
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11717784,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "34050"
+  },
+  {
+    "id": "kot-addu-jhakarwala",
+    "cityId": "kot-addu",
+    "provinceId": "punjab",
+    "name": "Jhakarwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.44635,
+      "lng": 70.97149
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11717785,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "34050"
+  },
+  {
+    "id": "kot-addu-faruqabad",
+    "cityId": "kot-addu",
+    "provinceId": "punjab",
+    "name": "Faruqabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.4384,
+      "lng": 70.97787
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11717786,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "34050"
+  },
+  {
+    "id": "kot-addu-sunarewala",
+    "cityId": "kot-addu",
+    "provinceId": "punjab",
+    "name": "Sunarewala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.47583,
+      "lng": 70.95952
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11717962,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "34050"
+  },
+  {
+    "id": "kot-addu-kharakwala",
+    "cityId": "kot-addu",
+    "provinceId": "punjab",
+    "name": "Kharakwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.47058,
+      "lng": 70.9916
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 13439597,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "34050"
   }
 ]

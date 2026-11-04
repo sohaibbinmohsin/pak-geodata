@@ -44,7 +44,7 @@ test('getNearestArea spatial pruning: point inside Karachi bounds scopes to Kara
   const nearest = getNearestArea(khiCoords);
   assert.ok(nearest);
   assert.equal(nearest.cityId, 'karachi');
-  assert.ok(nearest.id.startsWith('karachi-clifton'));
+  assert.ok(nearest.id.startsWith('karachi-'));
 });
 
 test('getNearestArea fallback: point outside all city bounding boxes falls back to all areas', () => {

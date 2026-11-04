@@ -316,5 +316,47 @@ export const kasurAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "kasur-qadarabad",
+    "cityId": "kasur",
+    "provinceId": "punjab",
+    "name": "Qadarabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.13723,
+      "lng": 74.45698
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11510671,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "kasur-kot-halima-khan",
+    "cityId": "kasur",
+    "provinceId": "punjab",
+    "name": "Kot Halima Khan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.10391,
+      "lng": 74.45208
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11510673,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ];

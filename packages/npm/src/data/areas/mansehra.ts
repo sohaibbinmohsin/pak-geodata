@@ -178,5 +178,134 @@ export const mansehraAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "mansehra-channar",
+    "cityId": "mansehra",
+    "provinceId": "kpk",
+    "name": "Channar",
+    "aliases": [
+      "Chalnal",
+      "Chalnāl"
+    ],
+    "coordinates": {
+      "lat": 34.32357,
+      "lng": 73.20005
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1390103,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mansehra-naugazi",
+    "cityId": "mansehra",
+    "provinceId": "kpk",
+    "name": "Naugazi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.33344,
+      "lng": 73.2104
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1390336,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mansehra-ghazkot-townshi",
+    "cityId": "mansehra",
+    "provinceId": "kpk",
+    "name": "Ghazkot Townshi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.30903,
+      "lng": 73.2072
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11424785,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mansehra-dab-number-two",
+    "cityId": "mansehra",
+    "provinceId": "kpk",
+    "name": "Dab Number Two",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.32779,
+      "lng": 73.1935
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11424786,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mansehra-dab-number-one",
+    "cityId": "mansehra",
+    "provinceId": "kpk",
+    "name": "Dab Number One",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.33153,
+      "lng": 73.18555
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11424787,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mansehra-bela-mutraian",
+    "cityId": "mansehra",
+    "provinceId": "kpk",
+    "name": "Bela Mutraian",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.3217,
+      "lng": 73.20812
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11424826,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ];

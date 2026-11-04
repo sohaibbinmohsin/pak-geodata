@@ -212,5 +212,116 @@ export const sheikhupuraAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "sheikhupura-arianwala",
+    "cityId": "sheikhupura",
+    "provinceId": "punjab",
+    "name": "Arianwala",
+    "aliases": [
+      "Arayanwala",
+      "Arāyānwāla"
+    ],
+    "coordinates": {
+      "lat": 31.70046,
+      "lng": 73.98483
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1331249,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sheikhupura-thatta-baluchan",
+    "cityId": "sheikhupura",
+    "provinceId": "punjab",
+    "name": "Thatta Baluchan",
+    "aliases": [
+      "Thatta Balothan",
+      "Thatta Balothān"
+    ],
+    "coordinates": {
+      "lat": 31.70633,
+      "lng": 73.99194
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1331250,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sheikhupura-nur-colony",
+    "cityId": "sheikhupura",
+    "provinceId": "punjab",
+    "name": "Nur Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.72293,
+      "lng": 73.96094
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11691776,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sheikhupura-sherwani-town",
+    "cityId": "sheikhupura",
+    "provinceId": "punjab",
+    "name": "Sherwani Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.72259,
+      "lng": 73.96686
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11691777,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sheikhupura-qila-shekhupura",
+    "cityId": "sheikhupura",
+    "provinceId": "punjab",
+    "name": "Qila Shekhupura",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.72413,
+      "lng": 73.97786
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11691779,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ];

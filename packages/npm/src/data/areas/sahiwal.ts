@@ -213,5 +213,312 @@ export const sahiwalAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "sahiwal-aziz-colony",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Aziz Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.63027,
+      "lng": 73.10224
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539372,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "57050"
+  },
+  {
+    "id": "sahiwal-muslim-colony",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Muslim Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.63649,
+      "lng": 73.09967
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539380,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "57050"
+  },
+  {
+    "id": "sahiwal-baba-farid-town",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Baba Farid Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.64196,
+      "lng": 73.09836
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539382,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "57050"
+  },
+  {
+    "id": "sahiwal-balawal-colony",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Balawal Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.6445,
+      "lng": 73.09338
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539384,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "57050"
+  },
+  {
+    "id": "sahiwal-sabar-town",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Sabar Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.64532,
+      "lng": 73.09652
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539385,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "57050"
+  },
+  {
+    "id": "sahiwal-bashir-colony",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Bashir Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.64635,
+      "lng": 73.08589
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539386,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "57050"
+  },
+  {
+    "id": "sahiwal-shahdab-town",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Shahdab Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.64951,
+      "lng": 73.11089
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539387,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "57050"
+  },
+  {
+    "id": "sahiwal-manzur-colony",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Manzur Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.64439,
+      "lng": 73.10343
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539388,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "57050"
+  },
+  {
+    "id": "sahiwal-canal-view-town",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Canal View Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.65243,
+      "lng": 73.12069
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539391,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "57050"
+  },
+  {
+    "id": "sahiwal-jahaz-ground",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Jahaz Ground",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.6558,
+      "lng": 73.08408
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539393,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "57050"
+  },
+  {
+    "id": "sahiwal-gari-shakar-colony",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Gari Shakar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.68542,
+      "lng": 73.08319
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539394,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sahiwal-muslim-town",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Muslim Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.68666,
+      "lng": 73.09703
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539395,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "57050"
+  },
+  {
+    "id": "sahiwal-muslim-bin-aqil-colony",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Muslim-bin-Aqil Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.66918,
+      "lng": 73.13133
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539421,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "57050"
+  },
+  {
+    "id": "sahiwal-chak-ninety-five-six-right",
+    "cityId": "sahiwal",
+    "provinceId": "punjab",
+    "name": "Chak Ninety-five -Six Right",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.65802,
+      "lng": 73.07075
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11539501,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "57050"
   }
 ];

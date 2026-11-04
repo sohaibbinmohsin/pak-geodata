@@ -180,5 +180,26 @@ export const chilasAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "chilas-thakuri",
+    "cityId": "chilas",
+    "provinceId": "gilgit-baltistan",
+    "name": "Thakuri",
+    "aliases": [],
+    "coordinates": {
+      "lat": 35.41098,
+      "lng": 74.09787
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11069239,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ];

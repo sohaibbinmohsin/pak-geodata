@@ -183,5 +183,50 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "sibi-khanwal",
+    "cityId": "sibi",
+    "provinceId": "balochistan",
+    "name": "Khanwal",
+    "aliases": [
+      "Khanal Mari",
+      "Khānal Māri"
+    ],
+    "coordinates": {
+      "lat": 29.56091,
+      "lng": 67.87789
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1394698,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sibi-haji-dur-muhammad",
+    "cityId": "sibi",
+    "provinceId": "balochistan",
+    "name": "Haji Dur Muhammad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 29.5574,
+      "lng": 67.88579
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7331464,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ]

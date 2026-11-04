@@ -189,5 +189,26 @@ export const muridkeAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "muridke-dera-mastu",
+    "cityId": "muridke",
+    "provinceId": "punjab",
+    "name": "Dera Mastu",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.80253,
+      "lng": 74.24561
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11508203,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ];

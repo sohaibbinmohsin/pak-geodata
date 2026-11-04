@@ -172,5 +172,26 @@
     "provinceId": "punjab",
     "urduName": "سرکلر روڈ",
     "type": "commercial"
+  },
+  {
+    "id": "chishtian-satellite-town",
+    "cityId": "chishtian",
+    "provinceId": "punjab",
+    "name": "Satellite Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 29.80581,
+      "lng": 72.85587
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11491143,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ]

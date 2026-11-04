@@ -825,5 +825,5698 @@
         "datasetVersion": "2026-11"
       }
     ]
+  },
+  {
+    "id": "peshawar-tahkal-payan",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Tahkal Payan",
+    "aliases": [
+      "Tehkal Pain",
+      "Tehkal Payan",
+      "Tehkal Pāyān"
+    ],
+    "coordinates": {
+      "lat": 34.01235,
+      "lng": 71.52195
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1164160,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-swati",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Swati",
+    "aliases": [
+      "Swathi",
+      "Swathi Nau",
+      "Swāthi",
+      "Swāthi Nau",
+      "Swāti"
+    ],
+    "coordinates": {
+      "lat": 33.98066,
+      "lng": 71.53057
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1164210,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-sango",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Sango",
+    "aliases": [
+      "Sangu"
+    ],
+    "coordinates": {
+      "lat": 33.93213,
+      "lng": 71.46815
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1166130,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-palosai-talarzai",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Palosai Talarzai",
+    "aliases": [
+      "Palosai Talārzai",
+      "Palosi Talarzai",
+      "Talarzai",
+      "Talārzai"
+    ],
+    "coordinates": {
+      "lat": 34.03116,
+      "lng": 71.49205
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1168513,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-musazai",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Musazai",
+    "aliases": [
+      "Musa Zai",
+      "Mūsa Zai",
+      "Mūsāzai"
+    ],
+    "coordinates": {
+      "lat": 33.97286,
+      "lng": 71.60785
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1169646,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-kotla-mohsin-khan",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Kotla Mohsin Khan",
+    "aliases": [
+      "Kotla Mohsan Khan",
+      "Kotla Mohsan Khān"
+    ],
+    "coordinates": {
+      "lat": 33.9903,
+      "lng": 71.55154
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1173088,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-charkhana",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Charkhana",
+    "aliases": [
+      "Chārkhāna"
+    ],
+    "coordinates": {
+      "lat": 33.98554,
+      "lng": 71.54525
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1181446,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-bhana-mari-chauk",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Bhana Mari Chauk",
+    "aliases": [
+      "Bhana Mari",
+      "Bhāna Māri",
+      "Hanna Mari"
+    ],
+    "coordinates": {
+      "lat": 33.99455,
+      "lng": 71.56313
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1182774,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-purani-babugarhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Purani Babugarhi",
+    "aliases": [
+      "Babu Garhi",
+      "Babugarhi",
+      "Bābu Garhi",
+      "Bābūgarhi",
+      "Purani"
+    ],
+    "coordinates": {
+      "lat": 34.03287,
+      "lng": 71.53403
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1184123,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-hasan-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Hasan Garhi",
+    "aliases": [
+      "Hasan Garhi Colony"
+    ],
+    "coordinates": {
+      "lat": 34.0256,
+      "lng": 71.55067
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1333856,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-nazirabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Nazirabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00485,
+      "lng": 71.59563
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1453007,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-garhi-sikandar-khan",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Garhi Sikandar Khan",
+    "aliases": [
+      "Garhi Sikandal Khan",
+      "Garhi Sikandal Khān",
+      "Garhi Sikandar Khān"
+    ],
+    "coordinates": {
+      "lat": 33.97171,
+      "lng": 71.53024
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1465123,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-malkandher",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Malkandher",
+    "aliases": [
+      "Malakandher",
+      "Mālākandher"
+    ],
+    "coordinates": {
+      "lat": 34.01615,
+      "lng": 71.4731
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041054,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-islamia-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Islamia Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0036,
+      "lng": 71.47044
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041173,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-qaidabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Qaidabad",
+    "aliases": [
+      "Quaidabad",
+      "Quāidābād"
+    ],
+    "coordinates": {
+      "lat": 33.99683,
+      "lng": 71.47145
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041174,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-danishabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Danishabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99441,
+      "lng": 71.47744
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041176,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-tajabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Tajabad",
+    "aliases": [
+      "Tājabād"
+    ],
+    "coordinates": {
+      "lat": 33.99109,
+      "lng": 71.46701
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041177,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-shahin-town",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Shahin Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00044,
+      "lng": 71.49319
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041186,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-jahangirabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Jahangirabad",
+    "aliases": [
+      "Jehangirabad"
+    ],
+    "coordinates": {
+      "lat": 34.002,
+      "lng": 71.49678
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041189,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-pakistan-council-of-scientific-and-industrial-research-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Pakistan Council of Scientific and Industrial Research Colony",
+    "aliases": [
+      "PCSIR Colony"
+    ],
+    "coordinates": {
+      "lat": 34.00954,
+      "lng": 71.49002
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041191,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-rahatabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Rahatabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01507,
+      "lng": 71.49656
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041193,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-qadirabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Qadirabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0186,
+      "lng": 71.49869
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041194,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-tatra-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Tatra Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01879,
+      "lng": 71.49421
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041195,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-muhallah-imrozia",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Muhallah Imrozia",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.04353,
+      "lng": 71.48856
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041197,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-new-arbab-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "New Arbab Garhi",
+    "aliases": [
+      "New Arbab Colony",
+      "New Arbāb Colony"
+    ],
+    "coordinates": {
+      "lat": 34.002,
+      "lng": 71.5032
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041201,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-kashifabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Kashifabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00021,
+      "lng": 71.50951
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041202,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-nodia-payan",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Nodia Payan",
+    "aliases": [
+      "Nadia Payan",
+      "Nodhia"
+    ],
+    "coordinates": {
+      "lat": 33.97448,
+      "lng": 71.5136
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041210,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-charkha-khel",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Charkha Khel",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.97621,
+      "lng": 71.52843
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041212,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-khyber-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Khyber Colony",
+    "aliases": [
+      "Khyber Colony Number One"
+    ],
+    "coordinates": {
+      "lat": 34.00668,
+      "lng": 71.51828
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041217,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25100"
+  },
+  {
+    "id": "peshawar-mulla-gujran",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Mulla Gujran",
+    "aliases": [
+      "Muhallah Gujran",
+      "Muhallāh Gujrān"
+    ],
+    "coordinates": {
+      "lat": 34.01297,
+      "lng": 71.52777
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041220,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-roshanabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Roshanabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02011,
+      "lng": 71.52673
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041222,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-barro-barhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Barro Barhi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03039,
+      "lng": 71.54204
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041226,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-nawe-kale",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Nawe Kale",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02931,
+      "lng": 71.53625
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041227,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-irrigation-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Irrigation Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02548,
+      "lng": 71.53257
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041228,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-faqirabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Faqirabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01712,
+      "lng": 71.53379
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041229,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-defence-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Defence Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00969,
+      "lng": 71.53647
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041230,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-ghazi-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Ghazi Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00876,
+      "lng": 71.53143
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041231,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-cantonment",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Cantonment",
+    "aliases": [
+      "Cantonment Board",
+      "Cantonment Colony"
+    ],
+    "coordinates": {
+      "lat": 33.99327,
+      "lng": 71.52808
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041235,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-gulbarg-number-two",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gulbarg Number Two",
+    "aliases": [
+      "Gulbarg No. 2"
+    ],
+    "coordinates": {
+      "lat": 33.98834,
+      "lng": 71.53603
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041239,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-gulbarg-number-three",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gulbarg Number Three",
+    "aliases": [
+      "Gulbarg No. 3"
+    ],
+    "coordinates": {
+      "lat": 33.98556,
+      "lng": 71.53421
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041240,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-swati-gate",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Swati Gate",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.98389,
+      "lng": 71.53132
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041241,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-muhallah-garhi-arb-b",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Muhallah Garhi Arbāb",
+    "aliases": [
+      "Muhallah Garhi Arbab"
+    ],
+    "coordinates": {
+      "lat": 33.98912,
+      "lng": 71.55427
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041244,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-nasirabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Nasirabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99063,
+      "lng": 71.55548
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041246,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-gulfishan",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gulfishan",
+    "aliases": [
+      "Gulfishan Colony",
+      "Gulfishān Colony"
+    ],
+    "coordinates": {
+      "lat": 33.99382,
+      "lng": 71.54659
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041249,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-railway-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Railway Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00003,
+      "lng": 71.55118
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041250,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-warsak-line",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Warsak Line",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01841,
+      "lng": 71.54329
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041260,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-public-works-department-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Public Works Department Colony",
+    "aliases": [
+      "PWD Colony"
+    ],
+    "coordinates": {
+      "lat": 34.02419,
+      "lng": 71.55575
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041261,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-sindu-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Sindu Garhi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02694,
+      "lng": 71.55536
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041262,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-basti-bahadra",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Basti Bahadra",
+    "aliases": [
+      "Nishat Sarhad",
+      "Nishāt Sarhad"
+    ],
+    "coordinates": {
+      "lat": 34.04435,
+      "lng": 71.57496
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041266,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-rashidabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Rashidabad",
+    "aliases": [
+      "Rafiqabad",
+      "Rafīqābād"
+    ],
+    "coordinates": {
+      "lat": 34.0283,
+      "lng": 71.57154
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041267,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-gulshin-jabal-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gulshin Jabal Colony",
+    "aliases": [
+      "Baba Bukhari Malang",
+      "Bāba Bukhāri Malang"
+    ],
+    "coordinates": {
+      "lat": 34.02817,
+      "lng": 71.56122
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041269,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-din-bahar-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Din Bahar Colony",
+    "aliases": [
+      "Din Bahār Colony"
+    ],
+    "coordinates": {
+      "lat": 34.02562,
+      "lng": 71.5692
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041270,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-ejazabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Ejazabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02679,
+      "lng": 71.57332
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041271,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-hajiabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Hajiabad",
+    "aliases": [
+      "Hājīābād"
+    ],
+    "coordinates": {
+      "lat": 34.02221,
+      "lng": 71.56942
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041272,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-t-t-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "T & T Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02398,
+      "lng": 71.56671
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041273,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-wapda-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "WAPDA Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02491,
+      "lng": 71.56159
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041274,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-saidabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Saidabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02142,
+      "lng": 71.5673
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041275,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-mirch-mandi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Mirch Mandi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02023,
+      "lng": 71.56885
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041276,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-kabuli-thana",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Kabuli Thana",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00859,
+      "lng": 71.57004
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041286,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-bajori-gate",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Bajori Gate",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00773,
+      "lng": 71.56008
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041289,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-state-bank-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "State Bank Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00648,
+      "lng": 71.56249
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041291,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-muhallah-islamabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Muhallah Islamabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00691,
+      "lng": 71.56634
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041292,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-dabgari-chauk",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Dabgari Chauk",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00281,
+      "lng": 71.56242
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041297,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-muhammadabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Muhammadabad",
+    "aliases": [
+      "Rahmanabad",
+      "Rahmānābād"
+    ],
+    "coordinates": {
+      "lat": 33.99906,
+      "lng": 71.57288
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041305,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-wahidabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Wahidabad",
+    "aliases": [
+      "Wahababad",
+      "Wahābābād"
+    ],
+    "coordinates": {
+      "lat": 33.9986,
+      "lng": 71.56749
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041306,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-ramdas",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Ramdas",
+    "aliases": [
+      "Ramdas Chauki",
+      "Rāmdās Chauki"
+    ],
+    "coordinates": {
+      "lat": 33.99742,
+      "lng": 71.56041
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041308,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-aslamabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Aslamabad",
+    "aliases": [
+      "Mahmudabad",
+      "Mahmūdābād"
+    ],
+    "coordinates": {
+      "lat": 33.99663,
+      "lng": 71.56553
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041309,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-salimabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Salimabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99216,
+      "lng": 71.56679
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041313,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-luqmanabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Luqmanabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99211,
+      "lng": 71.57399
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041314,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-murshadabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Murshadabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.9909,
+      "lng": 71.56392
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041315,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-malikabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Malikabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.98877,
+      "lng": 71.56283
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041316,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-audit-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Audit Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.98984,
+      "lng": 71.5593
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041317,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-akramabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Akramabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.98524,
+      "lng": 71.57089
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041319,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-garhi-qamardin",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Garhi Qamardin",
+    "aliases": [
+      "Garhi Qamar Din",
+      "Garhi Qamar Dīn",
+      "Garhi Qamer-ud-din",
+      "Garhi Qamer-ud-dīn",
+      "Garhi Qamruddin"
+    ],
+    "coordinates": {
+      "lat": 33.98053,
+      "lng": 71.56834
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041320,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-achhar",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Achhar",
+    "aliases": [
+      "Achar",
+      "Achher",
+      "Āchar"
+    ],
+    "coordinates": {
+      "lat": 33.97738,
+      "lng": 71.55978
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041321,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-gulshan-rehman-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gulshan Rehman Colony",
+    "aliases": [
+      "Guishan Rahman Colony",
+      "Guishan Rahmān Colony",
+      "Gulshan Rahma Colony",
+      "Gulshan Rahmā Colony",
+      "Gulshan Rehmān Colony"
+    ],
+    "coordinates": {
+      "lat": 33.9758,
+      "lng": 71.56352
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041322,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-bilalabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Bilalabad",
+    "aliases": [
+      "Bilal Colony",
+      "Bilāl Colony"
+    ],
+    "coordinates": {
+      "lat": 33.9726,
+      "lng": 71.56581
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041323,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-najimabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Najimabad",
+    "aliases": [
+      "Nazimabad",
+      "Nāzimābād"
+    ],
+    "coordinates": {
+      "lat": 33.97259,
+      "lng": 71.5625
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041324,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-rashid-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Rashid Garhi",
+    "aliases": [
+      "Rashidgarhi",
+      "Rashīdgarhi"
+    ],
+    "coordinates": {
+      "lat": 33.98956,
+      "lng": 71.57315
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041330,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-wazir-bagh",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Wazir Bagh",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99643,
+      "lng": 71.57446
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041332,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-shadbad-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Shadbad Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00187,
+      "lng": 71.58014
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041335,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-haidar-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Haidar Colony",
+    "aliases": [
+      "Haider Colony"
+    ],
+    "coordinates": {
+      "lat": 34.00259,
+      "lng": 71.58736
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041340,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-munawar-shah-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Munawar Shah Colony",
+    "aliases": [
+      "Munawwar Shah Colony",
+      "Munawwar Shāh Colony"
+    ],
+    "coordinates": {
+      "lat": 34.00426,
+      "lng": 71.58741
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041341,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-salim-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Salim Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00789,
+      "lng": 71.58644
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041342,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-muhallah-fazal-ul-haq",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Muhallah Fazal-ul-Haq",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00728,
+      "lng": 71.57788
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041344,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-ganj-muhallah",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Ganj Muhallah",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00705,
+      "lng": 71.58013
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041345,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-sheikhabad-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Sheikhabad Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01074,
+      "lng": 71.58687
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041349,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-khyber-line",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Khyber Line",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01106,
+      "lng": 71.58387
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041350,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-ghanta-ghar",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Ghanta Ghar",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01048,
+      "lng": 71.57923
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041351,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-sabzi-mandi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Sabzi Mandi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01619,
+      "lng": 71.5752
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041364,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-gurh-mandi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gurh Mandi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01746,
+      "lng": 71.57925
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041365,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-faqirabad-number-one",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Faqirabad Number One",
+    "aliases": [
+      "Faqirabad No. 1",
+      "Faqīrābād No. 1"
+    ],
+    "coordinates": {
+      "lat": 34.01891,
+      "lng": 71.58283
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041367,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-jim-khana",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Jim Khana",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02069,
+      "lng": 71.58137
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041371,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-faqirabad-number-two",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Faqirabad Number Two",
+    "aliases": [
+      "Faqirabad No. 2",
+      "Faqīrābād No. 2"
+    ],
+    "coordinates": {
+      "lat": 34.02267,
+      "lng": 71.57412
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041373,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-zahirabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Zahirabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02361,
+      "lng": 71.57694
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041374,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-zaryab-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Zaryab Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02428,
+      "lng": 71.58375
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041376,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-eid-gah-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Eid Gah Colony",
+    "aliases": [
+      "Eid Gan",
+      "Eidgah Colony",
+      "Eīdgāh Colony"
+    ],
+    "coordinates": {
+      "lat": 34.02554,
+      "lng": 71.57585
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041380,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-afghan-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Afghan Colony",
+    "aliases": [
+      "Afghan Colony No. 2",
+      "Afghan Colony Number Two",
+      "Afghān Colony No. 2",
+      "Afghān Colony Number Two"
+    ],
+    "coordinates": {
+      "lat": 34.02814,
+      "lng": 71.59255
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041381,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-afgh-n-colony-number-two",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Afghān Colony Number Two",
+    "aliases": [
+      "Afghan Colony No. 2",
+      "Afghan Colony Number Two",
+      "Afghān Colony No. 2"
+    ],
+    "coordinates": {
+      "lat": 34.0264,
+      "lng": 71.5864
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041382,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-abdullahabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Abdullahabad",
+    "aliases": [
+      "Sardar Colony",
+      "Sardār Colony"
+    ],
+    "coordinates": {
+      "lat": 34.03784,
+      "lng": 71.58054
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041388,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-wazir-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Wazir Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03381,
+      "lng": 71.59219
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041392,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-muhallah-afzalabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Muhallah Afzalabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03125,
+      "lng": 71.58706
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041393,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-gharibabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gharibabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02062,
+      "lng": 71.59549
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041396,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-sikandarabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Sikandarabad",
+    "aliases": [
+      "Sikandar Town"
+    ],
+    "coordinates": {
+      "lat": 34.01734,
+      "lng": 71.59528
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041399,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-muhallah-sate",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Muhallah Sate",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01487,
+      "lng": 71.59374
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041400,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-shahdhand-muslimabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Shahdhand Muslimabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00892,
+      "lng": 71.59032
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041405,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-bostanabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Bostanabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00691,
+      "lng": 71.59925
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041408,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-chammanabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Chammanabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00514,
+      "lng": 71.5996
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041409,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-shah-dhand",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Shah Dhand",
+    "aliases": [
+      "Shahdhand",
+      "Shāhdhand"
+    ],
+    "coordinates": {
+      "lat": 34.00509,
+      "lng": 71.5919
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041410,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-akhundabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Akhundabad",
+    "aliases": [
+      "Akhunabad No. 1",
+      "Akhunabad No. 2",
+      "Akhunabad No. 3",
+      "Akhunabad No. 4",
+      "Akhunabad No. 5"
+    ],
+    "coordinates": {
+      "lat": 34.00156,
+      "lng": 71.5914
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041411,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-miskinabad-number-one",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Miskinabad Number One",
+    "aliases": [
+      "Miskinabad No. 1",
+      "Miskīnābād No. 1"
+    ],
+    "coordinates": {
+      "lat": 34.00281,
+      "lng": 71.59707
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041412,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-miskinabad-number-three",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Miskinabad Number Three",
+    "aliases": [
+      "Miskinabad No. 3",
+      "Miskīnābād No. 3"
+    ],
+    "coordinates": {
+      "lat": 34.00346,
+      "lng": 71.59993
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041413,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-miskinabad-number-two",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Miskinabad Number Two",
+    "aliases": [
+      "Miskinabad No. 2",
+      "Miskīnābād No. 2"
+    ],
+    "coordinates": {
+      "lat": 34.00013,
+      "lng": 71.60032
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041414,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-akhun-b-d-number-two",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Akhunābād Number Two",
+    "aliases": [
+      "Akhunabad No. 2",
+      "Akhunabad Number Two",
+      "Akhunābād No. 2"
+    ],
+    "coordinates": {
+      "lat": 33.9995,
+      "lng": 71.5956
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041415,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-akhun-b-d-number-five",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Akhunābād Number Five",
+    "aliases": [
+      "Akhunabad No. 5",
+      "Akhunabad Number Five",
+      "Akhunābād No. 5"
+    ],
+    "coordinates": {
+      "lat": 33.9997,
+      "lng": 71.5904
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041416,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-akhun-b-d-number-three",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Akhunābād Number Three",
+    "aliases": [
+      "Akhunabad No. 3",
+      "Akhunabad Number Three",
+      "Akhunābād No. 3"
+    ],
+    "coordinates": {
+      "lat": 33.9986,
+      "lng": 71.5926
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041417,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-akhun-b-d-number-one",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Akhunābād Number One",
+    "aliases": [
+      "Akhunabad No. 1",
+      "Akhunabad Number One",
+      "Akhunābād No. 1"
+    ],
+    "coordinates": {
+      "lat": 33.9981,
+      "lng": 71.5957
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041418,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-khamosh-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Khamosh Colony",
+    "aliases": [
+      "Khāmosh Colony"
+    ],
+    "coordinates": {
+      "lat": 33.9943,
+      "lng": 71.59755
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041420,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-takya",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Takya",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.98657,
+      "lng": 71.59884
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041421,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-garhi-miangan",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Garhi Miangan",
+    "aliases": [
+      "Garhi Mian Fazalur Rahman",
+      "Garhi Miān Fazālur Rahmān"
+    ],
+    "coordinates": {
+      "lat": 33.96969,
+      "lng": 71.60669
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041422,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-mahalla-tazi-khel",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Mahalla Tazi Khel",
+    "aliases": [
+      "Taze Khel",
+      "Tāze Khel"
+    ],
+    "coordinates": {
+      "lat": 33.97376,
+      "lng": 71.60389
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041423,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-garhi-mian-amin",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Garhi Mian Amin",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.97294,
+      "lng": 71.61474
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041424,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-tauhid-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Tauhid Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99938,
+      "lng": 71.60275
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041427,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-shahidabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Shahidabad",
+    "aliases": [
+      "Wahid Colony",
+      "Wāhid Colony"
+    ],
+    "coordinates": {
+      "lat": 34.00171,
+      "lng": 71.60486
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041429,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-muhallah-fazalabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Muhallah Fazalabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01431,
+      "lng": 71.60576
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041433,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-arbab-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Arbab Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02994,
+      "lng": 71.53382
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041440,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-babu-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Babu Garhi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02309,
+      "lng": 71.5393
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041442,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-lalkurti",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Lalkurti",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99821,
+      "lng": 71.52996
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041443,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-gulbarg-number-one",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gulbarg Number One",
+    "aliases": [
+      "Gulbarg No. 1"
+    ],
+    "coordinates": {
+      "lat": 33.99134,
+      "lng": 71.53825
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041447,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-landi-arbab",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Landi Arbab",
+    "aliases": [
+      "Landai",
+      "Landi",
+      "Lāndi",
+      "Lāndi Arbāb"
+    ],
+    "coordinates": {
+      "lat": 33.98052,
+      "lng": 71.54901
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041450,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-lalarukh-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Lalarukh Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.98818,
+      "lng": 71.5565
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041452,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-bot",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Bot",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0015,
+      "lng": 71.4703
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041453,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-hasan-garhi-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Hasan Garhi Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0231,
+      "lng": 71.5492
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041457,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-bashirabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Bashirabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02735,
+      "lng": 71.5644
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041459,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-jahangir-pura",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Jahangir Pura",
+    "aliases": [
+      "Jahangirpura",
+      "Jahāngīrpura"
+    ],
+    "coordinates": {
+      "lat": 34.00611,
+      "lng": 71.57013
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041461,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-ihsan-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Ihsan Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00059,
+      "lng": 71.56948
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041462,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-sheikhabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Sheikhabad",
+    "aliases": [
+      "Salimabad",
+      "Salīmābād"
+    ],
+    "coordinates": {
+      "lat": 34.00647,
+      "lng": 71.58661
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041464,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-nizamabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Nizamabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02049,
+      "lng": 71.59099
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041472,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-nishtar-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Nishtar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01318,
+      "lng": 71.5891
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041473,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-sarfraz-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Sarfraz Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00248,
+      "lng": 71.59297
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041477,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-mahallah-sheikhan",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Mahallah Sheikhan",
+    "aliases": [
+      "Muhallah Shaikhan",
+      "Muhallah Shaikhān"
+    ],
+    "coordinates": {
+      "lat": 33.97315,
+      "lng": 71.6111
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041479,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-jinnah-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Jinnah Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01048,
+      "lng": 71.47988
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7041483,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-duran-dheri",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Duran Dheri",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.05889,
+      "lng": 71.5605
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624160,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-zaim-kalle",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Zaim Kalle",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0609,
+      "lng": 71.56846
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624161,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-afridi-kalle",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Afridi Kalle",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.05371,
+      "lng": 71.56454
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624162,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-maqsudabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Maqsudabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.05024,
+      "lng": 71.56479
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624163,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-nawe-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Nawe Garhi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.06256,
+      "lng": 71.57376
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624164,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-liaqatabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Liaqatabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.05903,
+      "lng": 71.58181
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624182,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-garhi-khan-baba",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Garhi Khan Baba",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.05886,
+      "lng": 71.57658
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624183,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-karuna",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Karuna",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.05275,
+      "lng": 71.58379
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624184,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-bakhshi-pul",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Bakhshi Pul",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.06117,
+      "lng": 71.58534
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624185,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-dherai",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Dherai",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.04772,
+      "lng": 71.588
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624188,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-tapu",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Tapu",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.06005,
+      "lng": 71.59229
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624189,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-alif-khan-kalle",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Alif Khan Kalle",
+    "aliases": [
+      "Alaf Khan",
+      "Alaf Khān"
+    ],
+    "coordinates": {
+      "lat": 34.04497,
+      "lng": 71.59177
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624191,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-sadiqabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Sadiqabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0445,
+      "lng": 71.60222
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624192,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-gujar-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gujar Garhi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.05146,
+      "lng": 71.62016
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624193,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-garhi-mir-aslam",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Garhi Mir Aslam",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.05485,
+      "lng": 71.62531
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624194,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-faqir-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Faqir Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02627,
+      "lng": 71.62305
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624195,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-jhalarian",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Jhalarian",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0384,
+      "lng": 71.59752
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624197,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-hussain-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Hussain Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03871,
+      "lng": 71.6127
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624207,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-amjad-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Amjad Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02958,
+      "lng": 71.59902
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624208,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-asadabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Asadabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03835,
+      "lng": 71.58309
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624209,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-badra",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Badra",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03548,
+      "lng": 71.56211
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624210,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-kur-bagh",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Kur Bagh",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03554,
+      "lng": 71.56943
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624211,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-kuchiano-kalle",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Kuchiano Kalle",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03569,
+      "lng": 71.57509
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624212,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-kuchiabad-larrama",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Kuchiabad Larrama",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03491,
+      "lng": 71.57825
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624213,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-jlan-plaza",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Jlan Plaza",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03113,
+      "lng": 71.57455
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624214,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-shah-nawaz-town",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Shah Nawaz Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03181,
+      "lng": 71.56123
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624215,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-madina-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Madina Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0294,
+      "lng": 71.57309
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624222,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-bilal-town",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Bilal Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01635,
+      "lng": 71.58815
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624226,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-faisal-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Faisal Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02438,
+      "lng": 71.59833
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624227,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-sethi-town",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Sethi Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02346,
+      "lng": 71.61449
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624229,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-kuchiabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Kuchiabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03959,
+      "lng": 71.57976
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624231,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-inayat-khan-kalle",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Inayat Khan Kalle",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02152,
+      "lng": 71.62444
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624233,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-hashim-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Hashim Garhi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01613,
+      "lng": 71.62963
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624234,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-afridi-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Afridi Garhi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01171,
+      "lng": 71.616
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624235,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-dir-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Dir Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.98878,
+      "lng": 71.58535
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624248,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-sohailabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Sohailabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99069,
+      "lng": 71.58687
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624249,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-mehmandabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Mehmandabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.98228,
+      "lng": 71.56968
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624250,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-darveshabd",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Darveshabd",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.98939,
+      "lng": 71.56953
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624252,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-jamal-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Jamal Garhi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99229,
+      "lng": 71.60097
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624254,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-mahalla-akhunzadagan",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Mahalla Akhunzadagan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99699,
+      "lng": 71.59987
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624255,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-ashrafia-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Ashrafia Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02964,
+      "lng": 71.5806
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624273,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-gujarabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gujarabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99495,
+      "lng": 71.59552
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624280,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-shahgiabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Shahgiabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99448,
+      "lng": 71.58295
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624281,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-khudadad-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Khudadad Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00371,
+      "lng": 71.58311
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624283,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-zargarabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Zargarabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34,
+      "lng": 71.58032
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624284,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-kakshal-number-one",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Kakshal Number One",
+    "aliases": [
+      "Kakshal No. 1"
+    ],
+    "coordinates": {
+      "lat": 33.99634,
+      "lng": 71.57716
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624285,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-ouaidabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Ouaidabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99517,
+      "lng": 71.56486
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624286,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-andar-sher",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Andar Sher",
+    "aliases": [
+      "Ander Shehr",
+      "Jewelery Bazar",
+      "Jewelery Bāzār",
+      "Sarafa Bazaar"
+    ],
+    "coordinates": {
+      "lat": 34.01089,
+      "lng": 71.57639
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624310,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-muhalla-mution",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Muhalla Mution",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00565,
+      "lng": 71.5801
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624312,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-nishtarabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Nishtarabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01253,
+      "lng": 71.57924
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624314,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-gulshan-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gulshan Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01448,
+      "lng": 71.61375
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624316,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-doctor-s-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Doctor’s Colony",
+    "aliases": [
+      "Doctor's Colony"
+    ],
+    "coordinates": {
+      "lat": 34.01188,
+      "lng": 71.56336
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624320,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-nasir-bagh",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Nasir Bagh",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.04064,
+      "lng": 71.43256
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624572,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-sheikabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Sheikabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02466,
+      "lng": 71.45988
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624575,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-khalidabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Khalidabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02842,
+      "lng": 71.45926
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624576,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-gulabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gulabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00153,
+      "lng": 71.46434
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624587,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-muradabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Muradabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99781,
+      "lng": 71.46185
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624588,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-professor-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Professor Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02578,
+      "lng": 71.47377
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624593,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-shah-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Shah Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00677,
+      "lng": 71.47165
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624594,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-wajidabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Wajidabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99706,
+      "lng": 71.47674
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624595,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-academy-town",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Academy Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99168,
+      "lng": 71.48029
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624596,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-muzaffarabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Muzaffarabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99157,
+      "lng": 71.47473
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624597,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-nodeha-payan",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Nodeha Payan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.97748,
+      "lng": 71.47364
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624599,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-garhi-afridi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Garhi Afridi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.98066,
+      "lng": 71.50069
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624602,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-hassan-zai",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Hassan Zai",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0153,
+      "lng": 71.50217
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624604,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-federal-government-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Federal Government Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.98636,
+      "lng": 71.43793
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624941,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-canal-town",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Canal Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00533,
+      "lng": 71.46947
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624956,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-role-academy-town",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Role Academy Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99412,
+      "lng": 71.48323
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624960,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-jamshedabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Jamshedabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03069,
+      "lng": 71.53026
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624963,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-ghuandai",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Ghuandai",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0241,
+      "lng": 71.52475
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624964,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-mansurabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Mansurabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0175,
+      "lng": 71.52992
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624965,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-qasimabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Qasimabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00263,
+      "lng": 71.50732
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624966,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-shahin-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Shahin Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00373,
+      "lng": 71.52108
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624967,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-umidabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Umidabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.97872,
+      "lng": 71.52747
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624968,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-new-kalle-bala",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "New Kalle Bala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.97576,
+      "lng": 71.51254
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624969,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-nawe-kalle-payan",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Nawe Kalle Payan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.97995,
+      "lng": 71.52134
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624970,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-kagawala",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Kagawala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.94468,
+      "lng": 71.54616
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624974,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-miruzai",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Miruzai",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.96261,
+      "lng": 71.54697
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624975,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-television-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Television Colony",
+    "aliases": [
+      "TV Colony"
+    ],
+    "coordinates": {
+      "lat": 33.97978,
+      "lng": 71.53436
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624976,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-gulabad-number-two",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gulabad Number Two",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.98611,
+      "lng": 71.54179
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624977,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-gulabad-number-one",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Gulabad Number One",
+    "aliases": [
+      "Gulabad No. 1",
+      "Gulābād No. 1"
+    ],
+    "coordinates": {
+      "lat": 33.98996,
+      "lng": 71.54284
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624979,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-mechni-chauk",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Mechni Chauk",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0139,
+      "lng": 71.54007
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8624984,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-behari-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Behari Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01881,
+      "lng": 71.53532
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625116,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-abshar-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Abshar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02096,
+      "lng": 71.53445
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625117,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-kabababian",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Kabababian",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02037,
+      "lng": 71.53946
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625118,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-mirawas-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Mirawas Garhi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02247,
+      "lng": 71.54156
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625119,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-sultan-qila",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Sultan Qila",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02526,
+      "lng": 71.5453
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625290,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-t-and-t-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "T and T Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02671,
+      "lng": 71.53653
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625291,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-new-baba-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "New Baba Garhi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.02791,
+      "lng": 71.53834
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625292,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-shadman-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Shadman Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03138,
+      "lng": 71.53324
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625609,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-mal-mandi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Mal Mandi",
+    "aliases": [
+      "Mandi"
+    ],
+    "coordinates": {
+      "lat": 34.03261,
+      "lng": 71.55413
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625610,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-qadim-babu-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Qadim Babu Garhi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.03507,
+      "lng": 71.54654
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625767,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-sadat-khan-qila",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Sadat Khan Qila",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.04444,
+      "lng": 71.53946
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625770,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-haji-shad-khan-kalle",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Haji Shad Khan Kalle",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0507,
+      "lng": 71.54536
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625772,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-zarinabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Zarinabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.05265,
+      "lng": 71.54639
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625773,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-amanullah-garhi",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Amanullah Garhi",
+    "aliases": [
+      "Garhi Fazil",
+      "Garhi Fāzil"
+    ],
+    "coordinates": {
+      "lat": 34.0562,
+      "lng": 71.54142
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625774,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-faqir-kalle",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Faqir Kalle",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.05915,
+      "lng": 71.53999
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625775,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-jag-kalle",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Jag Kalle",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.0503,
+      "lng": 71.55733
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625776,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-jaba",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Jaba",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.04586,
+      "lng": 71.55854
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625777,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-dheri-baghbanan",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Dheri Baghbanan",
+    "aliases": [
+      "Dheri Baghwanan",
+      "Dheri Baghwānān"
+    ],
+    "coordinates": {
+      "lat": 33.99399,
+      "lng": 71.55605
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625779,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-aminabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Aminabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.98081,
+      "lng": 71.55449
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625782,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-durano-kalle",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Durano Kalle",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.97277,
+      "lng": 71.55462
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625784,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-canz-colony",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Canz Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00047,
+      "lng": 71.53418
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8625787,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-dheri",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Dheri",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.05453,
+      "lng": 71.59144
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 13415730,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "peshawar-afzalabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Afzalabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.01653,
+      "lng": 71.49362
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 13415741,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-mahmudabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Mahmudabad",
+    "aliases": [
+      "Muhammadabad"
+    ],
+    "coordinates": {
+      "lat": 34.01321,
+      "lng": 71.50301
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 13415744,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
+  },
+  {
+    "id": "peshawar-fazalabad",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Fazalabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.04949,
+      "lng": 71.54309
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 13415750,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25150"
+  },
+  {
+    "id": "peshawar-dabgari",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Dabgari",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00495,
+      "lng": 71.55805
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 13415752,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25220"
+  },
+  {
+    "id": "peshawar-haji-ghulam-sarwar-colony-abdara-bala",
+    "cityId": "peshawar",
+    "provinceId": "kpk",
+    "name": "Haji Ghulam Sarwar Colony (Abdara Bala)",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.97871,
+      "lng": 71.50288
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 13731891,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "25140"
   }
 ]

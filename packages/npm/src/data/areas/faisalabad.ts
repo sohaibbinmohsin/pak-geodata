@@ -1218,5 +1218,1357 @@ export const faisalabadAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "faisalabad-chak-two-hundred-twenty-four",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak Two Hundred Twenty-four",
+    "aliases": [
+      "Chak Two Hundred Twenty-Four RB",
+      "Faqirabad",
+      "Faqīrābād",
+      "Fariqabad",
+      "Farīqābād"
+    ],
+    "coordinates": {
+      "lat": 31.38324,
+      "lng": 73.10076
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1179351,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-marzipura",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Marzipura",
+    "aliases": [
+      "Chak One Hundred Twenty-Four JB",
+      "Mirzapur",
+      "Mirzāpur"
+    ],
+    "coordinates": {
+      "lat": 31.43772,
+      "lng": 73.02101
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110604,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38200"
+  },
+  {
+    "id": "faisalabad-chak-two-hundrend-nineteen-rakh-branch",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak Two Hundrend Nineteen Rakh Branch",
+    "aliases": [
+      "Chak Two Hundred Twenty RB",
+      "Karnail Singhwala",
+      "Karnail Singhwāla",
+      "Karnalwala",
+      "Karnalwāla"
+    ],
+    "coordinates": {
+      "lat": 31.41923,
+      "lng": 73.03474
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110608,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38200"
+  },
+  {
+    "id": "faisalabad-chak-two-hundred-twenty-rakh-branch",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak Two Hundred Twenty Rakh Branch",
+    "aliases": [
+      "Babuwala",
+      "Bābuwāla",
+      "Chak Two Hundred Twenty RB"
+    ],
+    "coordinates": {
+      "lat": 31.40172,
+      "lng": 73.02075
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110611,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38000"
+  },
+  {
+    "id": "faisalabad-sitara-colony",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Sitara Colony",
+    "aliases": [
+      "Stara Colony",
+      "Stāra Colony"
+    ],
+    "coordinates": {
+      "lat": 31.37276,
+      "lng": 73.03646
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110676,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38000"
+  },
+  {
+    "id": "faisalabad-muzaffar-colony",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Muzaffar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.37395,
+      "lng": 73.06512
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110677,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38000"
+  },
+  {
+    "id": "faisalabad-chak-two-hundred-twenty-two-rakh-branch",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak Two Hundred Twenty-two Rakh Branch",
+    "aliases": [
+      "Chak Two Hundred Twenty-Two RB",
+      "Nawabanwala",
+      "Nawābānwāla"
+    ],
+    "coordinates": {
+      "lat": 31.38366,
+      "lng": 73.05946
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110680,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38000"
+  },
+  {
+    "id": "faisalabad-rissalewala",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Rissalewala",
+    "aliases": [
+      "Risalewala",
+      "Risālewāla"
+    ],
+    "coordinates": {
+      "lat": 31.39336,
+      "lng": 73.05163
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110683,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38000"
+  },
+  {
+    "id": "faisalabad-chak-two-hundred-nineteen-rakh-branch",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak Two Hundred Nineteen Rakh Branch",
+    "aliases": [
+      "Chak Two Hundred Nineteen RB",
+      "Sher Singhwala",
+      "Sher Singhwāla"
+    ],
+    "coordinates": {
+      "lat": 31.41495,
+      "lng": 73.03933
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110684,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38200"
+  },
+  {
+    "id": "faisalabad-gulberg-colony",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Gulberg Colony",
+    "aliases": [
+      "Gulbarg Colony"
+    ],
+    "coordinates": {
+      "lat": 31.42095,
+      "lng": 73.06705
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110685,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38200"
+  },
+  {
+    "id": "faisalabad-muhammadpur",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Muhammadpur",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.42326,
+      "lng": 73.04506
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110686,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38200"
+  },
+  {
+    "id": "faisalabad-madnpura",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Madnpura",
+    "aliases": [
+      "Madan Pura",
+      "Madanpui"
+    ],
+    "coordinates": {
+      "lat": 31.43311,
+      "lng": 73.05219
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110688,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38200"
+  },
+  {
+    "id": "faisalabad-gulfishan-colony",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Gulfishan Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.40553,
+      "lng": 73.13485
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110690,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-chak-two-hundred-thirteen-rakh-branch",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak Two Hundred Thirteen Rakh Branch",
+    "aliases": [
+      "Chak Two Hundred Thirteen RB",
+      "Puran Singhwala",
+      "Pūran Singhwāla"
+    ],
+    "coordinates": {
+      "lat": 31.4178,
+      "lng": 73.1331
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110693,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-chak-two-hundred-fifteen-rakh-branch",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak Two Hundred Fifteen Rakh Branch",
+    "aliases": [
+      "Bajia Kakuana",
+      "Bajia Kakuāna",
+      "Bajla Kakoana",
+      "Bajla Kakoāna",
+      "Chak Two Hundred Fifteen RB"
+    ],
+    "coordinates": {
+      "lat": 31.41238,
+      "lng": 73.13048
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110694,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-shirinabad",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Shirinabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.45402,
+      "lng": 73.12921
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110698,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-chak-two-hundred-four-rakh-branch",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak Two Hundred Four Rakh Branch",
+    "aliases": [
+      "Bavewala",
+      "Bawewala",
+      "Bāvewāla",
+      "Bāwewāla",
+      "Chak Two Hundred Four RB"
+    ],
+    "coordinates": {
+      "lat": 31.44432,
+      "lng": 73.15893
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110699,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-chak-seven-jhang-branch",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak Seven Jhang Branch",
+    "aliases": [
+      "Chak Seven",
+      "Kohala Panjwar",
+      "Kohāla Panjwār"
+    ],
+    "coordinates": {
+      "lat": 31.4834,
+      "lng": 73.06709
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110704,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-jannah-town",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Jannah Town",
+    "aliases": [
+      "Jinnah Colony",
+      "Jinnāh Colony"
+    ],
+    "coordinates": {
+      "lat": 31.42546,
+      "lng": 73.05958
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110711,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38200"
+  },
+  {
+    "id": "faisalabad-afghanabad",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Afghanabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.41583,
+      "lng": 73.07396
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110712,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-jawala-nagar",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Jawala Nagar",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.39029,
+      "lng": 73.07454
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110713,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38000"
+  },
+  {
+    "id": "faisalabad-labour-colony",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Labour Colony",
+    "aliases": [
+      "Samanabad Labour Colony",
+      "Samanābād Labour Colony"
+    ],
+    "coordinates": {
+      "lat": 31.39026,
+      "lng": 73.05954
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110714,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38000"
+  },
+  {
+    "id": "faisalabad-haiiabad",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Haiiabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.44767,
+      "lng": 73.09943
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110715,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-bole-di-jhuggi",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Bole di Jhuggi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.43875,
+      "lng": 73.09542
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110732,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-sanat-singhwala",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Sanat Singhwala",
+    "aliases": [
+      "Baghbanpura",
+      "Baghbānpura",
+      "Sant Singhwala",
+      "Sant Singhwāla"
+    ],
+    "coordinates": {
+      "lat": 31.44303,
+      "lng": 73.10859
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110733,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-mai-di-jhuggi",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Mai di Jhuggi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.43157,
+      "lng": 73.09713
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110734,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-sundar-singhwala",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Sundar Singhwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.41807,
+      "lng": 73.11004
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110738,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-mansurabad",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Mansurabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.43443,
+      "lng": 73.11842
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110740,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-kartar-singhwala",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Kartar Singhwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.36293,
+      "lng": 73.071
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110743,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38000"
+  },
+  {
+    "id": "faisalabad-rasulpur",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Rasulpur",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.3586,
+      "lng": 73.07285
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110744,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38000"
+  },
+  {
+    "id": "faisalabad-chak-two-hundred-seven-rakj-branch",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak Two Hundred Seven Rakj Branch",
+    "aliases": [
+      "Chattian",
+      "Chattiān"
+    ],
+    "coordinates": {
+      "lat": 31.44952,
+      "lng": 73.1152
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110751,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-nishatabad",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Nishatabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.45695,
+      "lng": 73.11065
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110759,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-chak-one-hundred-twenty-two-jhang-branch",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak One Hundred Twenty-two Jhang Branch",
+    "aliases": [
+      "Chak One Hundred Twenty-Two GB"
+    ],
+    "coordinates": {
+      "lat": 31.45922,
+      "lng": 73.09769
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110762,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-chak-one-hundred-twenty-jhang-branch",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak One Hundred Twenty Jhang Branch",
+    "aliases": [
+      "Bawewala",
+      "Bāwewāla",
+      "Chak One Hundred Twenty GB"
+    ],
+    "coordinates": {
+      "lat": 31.47902,
+      "lng": 73.08224
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110763,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-chak-two-hundred-two-rakh-branch",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak Two Hundred Two Rakh Branch",
+    "aliases": [
+      "Bhaiwala",
+      "Bhāiwāla",
+      "Chak Two Hundred Two RB"
+    ],
+    "coordinates": {
+      "lat": 31.47082,
+      "lng": 73.12658
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110983,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-chak-one-hundred-ninety-six-rakh-branch",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak One Hundred Ninety-six Rakh Branch",
+    "aliases": [
+      "Chak One Hundred Ninety-Six RB",
+      "Guna",
+      "Gunna"
+    ],
+    "coordinates": {
+      "lat": 31.48787,
+      "lng": 73.11448
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7110984,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-rehmatabad",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Rehmatabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.39983,
+      "lng": 73.12049
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649868,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-sartraz-colony",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Sartraz Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.40206,
+      "lng": 73.09586
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649876,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-salim-chouk",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Salim Chouk",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.41147,
+      "lng": 73.09964
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649878,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-peoples-colony-number-two",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Peoples Colony Number Two",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.39274,
+      "lng": 73.096
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649879,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-chak-seventy-nine",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chak Seventy-nine",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.42981,
+      "lng": 73.03206
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649881,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38200"
+  },
+  {
+    "id": "faisalabad-jamil-town",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Jamil Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.44317,
+      "lng": 73.06
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649883,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38200"
+  },
+  {
+    "id": "faisalabad-fakharabad",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Fakharabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.47165,
+      "lng": 73.13974
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649900,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-shadab-colony",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Shadab Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.40566,
+      "lng": 73.03508
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649904,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38000"
+  },
+  {
+    "id": "faisalabad-nehmatabad",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Nehmatabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.41788,
+      "lng": 73.0275
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649906,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38200"
+  },
+  {
+    "id": "faisalabad-mashudabad",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Mashudabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.38264,
+      "lng": 73.06561
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649909,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38000"
+  },
+  {
+    "id": "faisalabad-ayub-colony",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Ayub Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.39934,
+      "lng": 73.06167
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649910,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38000"
+  },
+  {
+    "id": "faisalabad-gulshan-e-iqbal-town",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Gulshan-e-Iqbal Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.3683,
+      "lng": 73.05245
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649917,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38000"
+  },
+  {
+    "id": "faisalabad-sultan-ghamical",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Sultan Ghamical",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.4745,
+      "lng": 73.0766
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649922,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-nawaz-town",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Nawaz Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.46838,
+      "lng": 73.08487
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649927,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-adam-fabries",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Adam Fabries",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.46342,
+      "lng": 73.0859
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649930,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-muslim-town",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Muslim Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.46283,
+      "lng": 73.09715
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649931,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-lasani-town",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Lasani Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.4595,
+      "lng": 73.08942
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649932,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-green-view-colony",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Green View Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.44517,
+      "lng": 73.07229
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649936,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-view-town-colony",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "View Town Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.45233,
+      "lng": 73.06025
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649937,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38200"
+  },
+  {
+    "id": "faisalabad-chabban",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Chabban",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.43471,
+      "lng": 73.1033
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649943,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-kirn-hosary",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Kirn Hosary",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.49438,
+      "lng": 73.10306
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649949,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "faisalabad-gulam-muhammadabad-number-two",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Gulam Muhammadabad Number Two",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.45082,
+      "lng": 73.0393
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649959,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38200"
+  },
+  {
+    "id": "faisalabad-sheikh-colony",
+    "cityId": "faisalabad",
+    "provinceId": "punjab",
+    "name": "Sheikh Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.41042,
+      "lng": 73.04478
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11649960,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "38200"
   }
 ];

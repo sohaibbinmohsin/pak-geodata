@@ -170,5 +170,249 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "khuzdar-khand-1174237",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Khand",
+    "aliases": [
+      "Kand"
+    ],
+    "coordinates": {
+      "lat": 27.82464,
+      "lng": 66.60346
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1174237,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "khuzdar-gazai",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Gazai",
+    "aliases": [
+      "Gazgi",
+      "Ghazgi"
+    ],
+    "coordinates": {
+      "lat": 27.80879,
+      "lng": 66.6131
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1178542,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "khuzdar-kalhan",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Kalhan",
+    "aliases": [
+      "Kathan",
+      "Kathān"
+    ],
+    "coordinates": {
+      "lat": 27.81428,
+      "lng": 66.62112
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1351761,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "khuzdar-linju",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Linju",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.79845,
+      "lng": 66.61861
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1351762,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "khuzdar-kaccha-canzt",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Kaccha Canzt",
+    "aliases": [
+      "Khuzdar Cantonment"
+    ],
+    "coordinates": {
+      "lat": 27.78059,
+      "lng": 66.62069
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7089805,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "khuzdar-bazgir",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Bazgir",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.8342,
+      "lng": 66.60476
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7792212,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "khuzdar-muzzaferabad",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Muzzaferabad",
+    "aliases": [
+      "Muzzafarabad",
+      "Muzzafarābad"
+    ],
+    "coordinates": {
+      "lat": 27.82951,
+      "lng": 66.61496
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7792213,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "khuzdar-kanak",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Kanak",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.80002,
+      "lng": 66.59687
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7792214,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "khuzdar-labour-welfare-colony",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Labour Welfare Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.80056,
+      "lng": 66.59182
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11234577,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "khuzdar-kalat",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Kalat",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.80808,
+      "lng": 66.62621
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11234590,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "khuzdar-muhallah-zehri-zarina-khan",
+    "cityId": "khuzdar",
+    "provinceId": "balochistan",
+    "name": "Muhallah Zehri Zarina Khan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 27.79492,
+      "lng": 66.63448
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11234591,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ]

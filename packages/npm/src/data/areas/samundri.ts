@@ -175,5 +175,71 @@ export const samundriAreas: readonly PakistanArea[] = [
     "provinceId": "punjab",
     "urduName": "کینال ریسٹ ہاؤس کالونی",
     "type": "neighborhood"
+  },
+  {
+    "id": "samundri-chak-five-hundred-thirty-three-gugera-branch",
+    "cityId": "samundri",
+    "provinceId": "punjab",
+    "name": "Chak Five Hundred Thirty-three Gugera Branch",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.05858,
+      "lng": 72.95712
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11483375,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "37300"
+  },
+  {
+    "id": "samundri-ashrafabad",
+    "cityId": "samundri",
+    "provinceId": "punjab",
+    "name": "Ashrafabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.05915,
+      "lng": 72.97079
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11483379,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "37300"
+  },
+  {
+    "id": "samundri-ravi",
+    "cityId": "samundri",
+    "provinceId": "punjab",
+    "name": "Ravi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.06253,
+      "lng": 72.96105
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11483383,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "37300"
   }
 ];
