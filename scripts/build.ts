@@ -6,6 +6,7 @@ import {
   rmSync
 } from 'node:fs';
 import { resolve } from 'node:path';
+import { generateDartData } from './codegen/dart.js';
 import { generateTypeScriptData } from './codegen/typescript.js';
 import { verifyAllData } from './verify.js';
 
@@ -15,6 +16,7 @@ async function main() {
   const npmSrcDir = resolve(rootDir, 'packages/npm/src');
   const pypiDataDir = resolve(rootDir, 'packages/pypi/pak_geodata/data');
   const goDataDir = resolve(rootDir, 'packages/go/data');
+  const dartLibDir = resolve(rootDir, 'packages/dart/lib');
 
   console.log('=== Step 1: Validating all repository geodata ===');
   const verifyResult = await verifyAllData();
@@ -38,11 +40,15 @@ async function main() {
   cpSync(dataDir, goDataDir, { recursive: true });
   console.log('✔ Master data synchronized to packages/go/data/');
 
+  const dartDir = resolve(rootDir, 'packages/dart');
+  mkdirSync(dartDir, { recursive: true });
+
   const rootLicense = resolve(rootDir, 'LICENSE');
   if (existsSync(rootLicense)) {
     cpSync(rootLicense, resolve(rootDir, 'packages/npm/LICENSE'));
     cpSync(rootLicense, resolve(rootDir, 'packages/pypi/LICENSE'));
     cpSync(rootLicense, resolve(rootDir, 'packages/go/LICENSE'));
+    cpSync(rootLicense, resolve(dartDir, 'LICENSE'));
   }
 
   const rootLicenseData = resolve(rootDir, 'LICENSE-DATA');
@@ -50,6 +56,7 @@ async function main() {
     cpSync(rootLicenseData, resolve(rootDir, 'packages/npm/LICENSE-DATA'));
     cpSync(rootLicenseData, resolve(rootDir, 'packages/pypi/LICENSE-DATA'));
     cpSync(rootLicenseData, resolve(rootDir, 'packages/go/LICENSE-DATA'));
+    cpSync(rootLicenseData, resolve(dartDir, 'LICENSE-DATA'));
   }
 
   const rootAttribution = resolve(rootDir, 'ATTRIBUTION.md');
@@ -57,13 +64,17 @@ async function main() {
     cpSync(rootAttribution, resolve(rootDir, 'packages/npm/ATTRIBUTION.md'));
     cpSync(rootAttribution, resolve(rootDir, 'packages/pypi/ATTRIBUTION.md'));
     cpSync(rootAttribution, resolve(rootDir, 'packages/go/ATTRIBUTION.md'));
+    cpSync(rootAttribution, resolve(dartDir, 'ATTRIBUTION.md'));
   }
   console.log('✔ LICENSE, LICENSE-DATA, and ATTRIBUTION.md synchronized to packages');
 
-  console.log('\n=== Step 3: Generating modular TypeScript datasets for packages/npm ===');
+  console.log('\n=== Step 3: Generating modular TypeScript & Dart datasets ===');
   const cityAreaCounts: Record<string, number> = {};
   await generateTypeScriptData(dataDir, npmSrcDir, cityAreaCounts);
   console.log('✔ TypeScript data modules generated for packages/npm/src/data/');
+
+  await generateDartData(dataDir, dartLibDir, cityAreaCounts);
+  console.log('✔ Dart typed const datasets generated for packages/dart/lib/src/data/');
 
   console.log('\n=== Step 4: Compiling packages/npm distribution ===');
   const npmDir = resolve(rootDir, 'packages/npm');
@@ -94,6 +105,7 @@ async function main() {
   console.log('  ✔ packages/npm/dist/areas/ (Modular subpath areas)');
   console.log('  ✔ packages/pypi/pak_geodata/data/ (Synchronized JSON datasets)');
   console.log('  ✔ packages/go/data/ (Synchronized JSON datasets)');
+  console.log('  ✔ packages/dart/lib/src/data/ (Generated typed const Dart datasets)');
   console.log('\n✔ Full production build succeeded with 0 errors.');
 }
 
