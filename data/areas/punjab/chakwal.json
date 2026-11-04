@@ -176,5 +176,140 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "chakwal-mahalla-sargujran",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "Mahalla Sargujran",
+    "aliases": [
+      "Mohallah Sargujran",
+      "Mohallah Sargujrān"
+    ],
+    "coordinates": {
+      "lat": 32.93151,
+      "lng": 72.83331
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7108620,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "48810"
+  },
+  {
+    "id": "chakwal-anwarabad",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "Anwarabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.92454,
+      "lng": 72.84353
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7108621,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "48810"
+  },
+  {
+    "id": "chakwal-ashraf-town",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "Ashraf Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.94817,
+      "lng": 72.85551
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11633995,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "48810"
+  },
+  {
+    "id": "chakwal-chaishtian",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "Chaishtian",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.93564,
+      "lng": 72.83861
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11633997,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "48810"
+  },
+  {
+    "id": "chakwal-gulshan-iqbal-town",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "Gulshan Iqbal Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.92791,
+      "lng": 72.83748
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11633998,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "48810"
+  },
+  {
+    "id": "chakwal-jhangir-town",
+    "cityId": "chakwal",
+    "provinceId": "punjab",
+    "name": "Jhangir Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.92286,
+      "lng": 72.85625
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11634001,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "48810"
   }
 ]

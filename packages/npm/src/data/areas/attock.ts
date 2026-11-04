@@ -88,7 +88,13 @@ export const attockAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1184249,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -177,6 +183,27 @@ export const attockAreas: readonly PakistanArea[] = [
     "sources": [
       "survey",
       "curated"
+    ]
+  },
+  {
+    "id": "attock-mahalla-karbia",
+    "cityId": "attock",
+    "provinceId": "punjab",
+    "name": "Mahalla Karbia",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.76489,
+      "lng": 72.35606
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11412139,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   }
 ];

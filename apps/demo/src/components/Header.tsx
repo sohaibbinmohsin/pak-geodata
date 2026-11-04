@@ -45,12 +45,13 @@ export default function Header({ className = '' }: HeaderProps) {
             href="https://github.com/sohaibbinmohsin/pak-geodata"
             target="_blank"
             rel="noopener noreferrer"
-            className="pressable inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-xs font-medium text-neutral-200 hover:text-white transition-all shadow-sm"
+            className="pressable inline-flex items-center gap-2 p-2 sm:px-3 sm:py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-xs font-medium text-neutral-200 hover:text-white transition-all shadow-sm"
             title="Star pak-geodata on GitHub"
+            aria-label="Star pak-geodata on GitHub"
           >
-            <Github className="w-3.5 h-3.5 text-neutral-300" />
-            <span>Star on GitHub</span>
-            <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
+            <Github className="w-4 h-4 sm:w-3.5 sm:h-3.5 text-neutral-300" />
+            <span className="hidden sm:inline">Star on GitHub</span>
+            <Star className="w-3 h-3 fill-amber-400 text-amber-400 hidden sm:inline" />
           </a>
         </div>
       </div>

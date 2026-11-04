@@ -19,7 +19,13 @@
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1180436,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -176,5 +182,203 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "daska-gaga",
+    "cityId": "daska",
+    "provinceId": "punjab",
+    "name": "Gaga",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.34096,
+      "lng": 74.36994
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1380495,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "51010"
+  },
+  {
+    "id": "daska-mian-fazal-colony",
+    "cityId": "daska",
+    "provinceId": "punjab",
+    "name": "Mian Fazal Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.31945,
+      "lng": 74.35112
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11457050,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "51010"
+  },
+  {
+    "id": "daska-faisal-colony",
+    "cityId": "daska",
+    "provinceId": "punjab",
+    "name": "Faisal Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.33363,
+      "lng": 74.36415
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11457058,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "51010"
+  },
+  {
+    "id": "daska-gulshan-iqbal-colony",
+    "cityId": "daska",
+    "provinceId": "punjab",
+    "name": "Gulshan Iqbal Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.33014,
+      "lng": 74.34043
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11457061,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "51010"
+  },
+  {
+    "id": "daska-chan-mahgowala",
+    "cityId": "daska",
+    "provinceId": "punjab",
+    "name": "Chan Mahgowala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.33563,
+      "lng": 74.3552
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11457063,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "51010"
+  },
+  {
+    "id": "daska-shahbaz-town",
+    "cityId": "daska",
+    "provinceId": "punjab",
+    "name": "Shahbaz Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.34018,
+      "lng": 74.35796
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11457065,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "51010"
+  },
+  {
+    "id": "daska-hajipura",
+    "cityId": "daska",
+    "provinceId": "punjab",
+    "name": "Hajipura",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.34484,
+      "lng": 74.3618
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11457066,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "51010"
+  },
+  {
+    "id": "daska-husain-pura",
+    "cityId": "daska",
+    "provinceId": "punjab",
+    "name": "Husain Pura",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.3412,
+      "lng": 74.36431
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11457067,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "51010"
+  },
+  {
+    "id": "daska-johar-town",
+    "cityId": "daska",
+    "provinceId": "punjab",
+    "name": "Johar Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.32839,
+      "lng": 74.35552
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11457125,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "51010"
   }
 ]

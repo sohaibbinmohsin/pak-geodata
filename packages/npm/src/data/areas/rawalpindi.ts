@@ -43,7 +43,13 @@ export const rawalpindiAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7038711,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -131,7 +137,13 @@ export const rawalpindiAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1165875,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -1263,7 +1275,13 @@ export const rawalpindiAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1166993,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -1418,5 +1436,262 @@ export const rawalpindiAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "rawalpindi-soan-camp",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Soan Camp",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.5422,
+      "lng": 73.11157
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7038392,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-khyaban-e-jinnah",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Khyaban-e-Jinnah",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.54887,
+      "lng": 73.04706
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449840,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "46050"
+  },
+  {
+    "id": "rawalpindi-wahdat-colony",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Wahdat Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.53924,
+      "lng": 73.0524
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449841,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-shaheen-colony",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Shaheen Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.54378,
+      "lng": 73.05516
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449842,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-janjua-town",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Janjua Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.54659,
+      "lng": 73.06089
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449843,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-lawyers-colony",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Lawyers Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.54678,
+      "lng": 73.09989
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449846,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-al-rehman-markaz",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Al Rehman Markaz",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.53601,
+      "lng": 73.06372
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449847,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-mehmudabad",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Mehmudabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.53927,
+      "lng": 73.05623
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449848,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "rawalpindi-gulshanabad",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Gulshanabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.53081,
+      "lng": 73.06022
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449849,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47310"
+  },
+  {
+    "id": "rawalpindi-kalial",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Kalial",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.52993,
+      "lng": 73.05095
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449850,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47310"
+  },
+  {
+    "id": "rawalpindi-clifton-town-ship",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Clifton Town Ship",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.52734,
+      "lng": 73.06342
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449851,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47310"
+  },
+  {
+    "id": "rawalpindi-sumerzar-colony",
+    "cityId": "rawalpindi",
+    "provinceId": "punjab",
+    "name": "Sumerzar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.5258,
+      "lng": 73.04814
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11449852,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47310"
   }
 ];

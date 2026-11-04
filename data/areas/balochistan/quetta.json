@@ -103,7 +103,13 @@
     ],
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1167528,
+        "featureCode": "PPLA",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true
   },
@@ -625,6 +631,4650 @@
     "sources": [
       "survey",
       "curated"
+    ]
+  },
+  {
+    "id": "quetta-kot-malik-barkhurdar",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kot Malik Barkhurdar",
+    "aliases": [
+      "Kot Malik"
+    ],
+    "coordinates": {
+      "lat": 30.20379,
+      "lng": 66.98723
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1172993,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-kirani",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Kirani",
+    "aliases": [
+      "Kirani",
+      "Kirāni"
+    ],
+    "coordinates": {
+      "lat": 30.17204,
+      "lng": 66.95242
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1173582,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-shabo",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Shabo",
+    "aliases": [
+      "Kili Shabu",
+      "Kili Shābu",
+      "Killi Shabo"
+    ],
+    "coordinates": {
+      "lat": 30.22388,
+      "lng": 66.9951
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1173615,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-gul-muhammad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Gul Muhammad",
+    "aliases": [
+      "Kili Gul Md",
+      "Killi Gul Mohammad"
+    ],
+    "coordinates": {
+      "lat": 30.24192,
+      "lng": 66.98213
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1173617,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-malik-muhammad-jan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Malik Muhammad Jan",
+    "aliases": [
+      "Kile Malik Muhammad Jan",
+      "Kile Malik Muhammad Jān",
+      "Kili Malik Md Jan",
+      "Kili Malik Md Jān",
+      "Kili Malīk Muhammad Jān"
+    ],
+    "coordinates": {
+      "lat": 30.23387,
+      "lng": 66.95664
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1173619,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kechi-beg",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kechi Beg",
+    "aliases": [
+      "Kech Beg"
+    ],
+    "coordinates": {
+      "lat": 30.1356,
+      "lng": 66.97367
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1174487,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-hudda",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Hudda",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20646,
+      "lng": 66.99305
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1176807,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-habib-kili",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Habib Kili",
+    "aliases": [
+      "Habib",
+      "Habib Kalai",
+      "Habib Kile",
+      "Habīb Kile"
+    ],
+    "coordinates": {
+      "lat": 30.20807,
+      "lng": 66.99608
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1177407,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-sirki",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Sirki",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17467,
+      "lng": 67.00459
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1342304,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-deba-kili",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Deba Kili",
+    "aliases": [
+      "Deba",
+      "Kili Deba"
+    ],
+    "coordinates": {
+      "lat": 30.19998,
+      "lng": 66.98787
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1342338,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-gulshan-town",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Gulshan Town",
+    "aliases": [
+      "Yakhao",
+      "Yakhāo"
+    ],
+    "coordinates": {
+      "lat": 30.1939,
+      "lng": 66.98503
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1342341,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-ibrahimzai",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Ibrahimzai",
+    "aliases": [
+      "Brahimzai",
+      "Brāhīmzai"
+    ],
+    "coordinates": {
+      "lat": 30.18816,
+      "lng": 66.98392
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1342342,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-bangalzai",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Bangalzai",
+    "aliases": [
+      "Kambarani",
+      "Kambarāni",
+      "Kili Bangulzai"
+    ],
+    "coordinates": {
+      "lat": 30.15148,
+      "lng": 66.9775
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1342364,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-gograi",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Gograi",
+    "aliases": [
+      "Kili Gograi",
+      "Kili Gogrāi"
+    ],
+    "coordinates": {
+      "lat": 30.13944,
+      "lng": 66.97682
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1342366,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kamalu",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kamalu",
+    "aliases": [
+      "Kili Kamalu",
+      "Kili Kamālu"
+    ],
+    "coordinates": {
+      "lat": 30.10765,
+      "lng": 66.96372
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1342377,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kotwal",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kotwal",
+    "aliases": [
+      "Kili Kotwal Khanan",
+      "Kili Kotwāl Khānān",
+      "Kotwal Khanan",
+      "Kotwal Khānān"
+    ],
+    "coordinates": {
+      "lat": 30.2406,
+      "lng": 67.01102
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1393785,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-newangaon",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Newangaon",
+    "aliases": [
+      "Nawan Kili",
+      "Nawangaon",
+      "Nawān Kili",
+      "Nawāngaon"
+    ],
+    "coordinates": {
+      "lat": 30.23878,
+      "lng": 67.01909
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1393787,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-nichair",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Nichair",
+    "aliases": [
+      "NIchari",
+      "NIchāri",
+      "Nichari",
+      "Nīchāri"
+    ],
+    "coordinates": {
+      "lat": 30.18876,
+      "lng": 67.02952
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1393796,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kasi",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kasi",
+    "aliases": [
+      "Kāsi"
+    ],
+    "coordinates": {
+      "lat": 30.19006,
+      "lng": 67.01433
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1393797,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kachari",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kachari",
+    "aliases": [
+      "Kachahri"
+    ],
+    "coordinates": {
+      "lat": 30.19808,
+      "lng": 67.01475
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1393798,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kakar-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kakar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.16812,
+      "lng": 67.01122
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1451378,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-cantonment",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Cantonment",
+    "aliases": [
+      "Cantoment",
+      "Quetta Cantonment"
+    ],
+    "coordinates": {
+      "lat": 30.21544,
+      "lng": 67.03093
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1451379,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-malak-kabir",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Malak Kabir",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.23422,
+      "lng": 67.00864
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1451380,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-muhammad-umar",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Muhammad Umar",
+    "aliases": [
+      "Kili Md Umar",
+      "Kili Muhammad Umer",
+      "Kili Umar",
+      "Kotwal Md Umar",
+      "Kotwal Muhammad Umar"
+    ],
+    "coordinates": {
+      "lat": 30.23808,
+      "lng": 66.98529
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1451381,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-new-muslim-ithad-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "New Muslim Ithad Colony",
+    "aliases": [
+      "Baraich Colony",
+      "Barech Colony",
+      "Muslim Ittehad Colony",
+      "Muslim Ittehād Colony"
+    ],
+    "coordinates": {
+      "lat": 30.15357,
+      "lng": 67.01756
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1451400,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kambarani",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kambarani",
+    "aliases": [
+      "Kili Kambrani",
+      "Kili Kambrāni"
+    ],
+    "coordinates": {
+      "lat": 30.15849,
+      "lng": 66.96402
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305102,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-khaizi",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Khaizi",
+    "aliases": [
+      "Kili Khazai",
+      "Kili Khāzai"
+    ],
+    "coordinates": {
+      "lat": 30.2353,
+      "lng": 66.95523
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305112,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-amanullah-khan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Amanullah Khan",
+    "aliases": [
+      "Kili Amanullah",
+      "Kili Amānullah",
+      "Kili Amānullāh"
+    ],
+    "coordinates": {
+      "lat": 30.24296,
+      "lng": 66.96948
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305114,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-karam-khan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Karam Khan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.24492,
+      "lng": 66.96871
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305115,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-ghulam-jan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Ghulam Jan",
+    "aliases": [
+      "Kili Gulam Jan",
+      "Kili Gulām Jān"
+    ],
+    "coordinates": {
+      "lat": 30.23843,
+      "lng": 66.97222
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305118,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-sahib-khan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Sahib Khan",
+    "aliases": [
+      "Kili Dad Shah",
+      "Kili Dād Shāh",
+      "Kili Ismail",
+      "Kili Ismāīl"
+    ],
+    "coordinates": {
+      "lat": 30.23465,
+      "lng": 66.9698
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305119,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-saiyidan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Saiyidan",
+    "aliases": [
+      "Saiyidabad",
+      "Saiyidābād"
+    ],
+    "coordinates": {
+      "lat": 30.2469,
+      "lng": 66.98335
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305121,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-ismail",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Ismail",
+    "aliases": [
+      "Kili Ismāil"
+    ],
+    "coordinates": {
+      "lat": 30.21583,
+      "lng": 66.99818
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305123,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-tarkhan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Tarkhan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21654,
+      "lng": 66.96386
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305125,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-haji-sabzal-khan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Haji Sabzal Khan",
+    "aliases": [
+      "Kili Sabzal"
+    ],
+    "coordinates": {
+      "lat": 30.2158,
+      "lng": 66.97243
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305126,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-husaini",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Husaini",
+    "aliases": [
+      "Kili Shaikh Hussani",
+      "Kili Tarkha"
+    ],
+    "coordinates": {
+      "lat": 30.20762,
+      "lng": 66.98919
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305127,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-barkhurdar",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Barkhurdar",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19324,
+      "lng": 66.99809
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305129,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-wahdat-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Wahdat Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19238,
+      "lng": 66.99032
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305130,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-shaikhan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Shaikhan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18193,
+      "lng": 66.99146
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305133,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-jeo-kili",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Jeo Kili",
+    "aliases": [
+      "Jeo Jadid",
+      "Jeo Jadīd",
+      "Jin",
+      "Jio"
+    ],
+    "coordinates": {
+      "lat": 30.1756,
+      "lng": 66.97498
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305134,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-saiyid-muhammad-shah",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Saiyid Muhammad Shah",
+    "aliases": [
+      "Kuzbagh",
+      "Kūzbāgh"
+    ],
+    "coordinates": {
+      "lat": 30.16867,
+      "lng": 66.97622
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305135,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-galbraith-spinney",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Galbraith Spinney",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17054,
+      "lng": 66.99177
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305136,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-ahmad-khanzai",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Ahmad Khanzai",
+    "aliases": [
+      "Kili Ahmad Khan Zai",
+      "Kili Ahmad Khanzai",
+      "Kili Ahmad Khān Zai",
+      "Kili Ahmad Khānzai"
+    ],
+    "coordinates": {
+      "lat": 30.16356,
+      "lng": 66.97948
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305138,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-surizai",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Surizai",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.12389,
+      "lng": 66.97145
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305143,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-birao",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Birao",
+    "aliases": [
+      "Jadid Mian Khan",
+      "Jadīd Mīan Khān"
+    ],
+    "coordinates": {
+      "lat": 30.11082,
+      "lng": 66.96269
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 6305144,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-khiazi",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Khiazi",
+    "aliases": [
+      "Kili Khhiazai",
+      "Kili Kia Zai"
+    ],
+    "coordinates": {
+      "lat": 30.19255,
+      "lng": 66.9511
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046427,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-bangulzai",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Bangulzai",
+    "aliases": [
+      "Kili Bangal Zai"
+    ],
+    "coordinates": {
+      "lat": 30.18474,
+      "lng": 66.9817
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046468,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-gulshan-e-iqbal",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Gulshan-e-Iqbal",
+    "aliases": [
+      "Yasinabad",
+      "Yāsīnābād"
+    ],
+    "coordinates": {
+      "lat": 30.17658,
+      "lng": 66.97231
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046469,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-phod-kili",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Phod Kili",
+    "aliases": [
+      "Kili Mengalabad",
+      "Kili Mengalābād"
+    ],
+    "coordinates": {
+      "lat": 30.1779,
+      "lng": 66.97854
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046470,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-parkani",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Parkani",
+    "aliases": [
+      "Kaprani Abad",
+      "Kaprāni Ābād"
+    ],
+    "coordinates": {
+      "lat": 30.13879,
+      "lng": 66.98519
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046474,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-memon-abad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Memon Abad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.14086,
+      "lng": 66.98827
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046475,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-khilji-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Khilji Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.14093,
+      "lng": 66.99316
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046476,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-rind-takhtani",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Rind Takhtani",
+    "aliases": [
+      "Ahsan Colony"
+    ],
+    "coordinates": {
+      "lat": 30.14194,
+      "lng": 67.01102
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046477,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-haqabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Haqabad",
+    "aliases": [
+      "Haq Abad",
+      "Haq Ābād"
+    ],
+    "coordinates": {
+      "lat": 30.15735,
+      "lng": 66.99062
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046478,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-gharibabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Gharibabad",
+    "aliases": [
+      "Kili Gharibabad",
+      "Kili Gharībābād"
+    ],
+    "coordinates": {
+      "lat": 30.15957,
+      "lng": 66.98883
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046479,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-barechabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Barechabad",
+    "aliases": [
+      "Barech Colony",
+      "New Baluch Colony"
+    ],
+    "coordinates": {
+      "lat": 30.15695,
+      "lng": 67.02312
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046481,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-bashir-ahmad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Bashir Ahmad",
+    "aliases": [
+      "Kili Jungle Bagh",
+      "Kili Jungle Bāgh"
+    ],
+    "coordinates": {
+      "lat": 30.16763,
+      "lng": 66.98171
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046484,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-rani-bagh",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Rani Bagh",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17242,
+      "lng": 66.99558
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046488,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-rindabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Rindabad",
+    "aliases": [
+      "Shiraz Abad",
+      "Shīrāz Ābād"
+    ],
+    "coordinates": {
+      "lat": 30.18111,
+      "lng": 66.98239
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046493,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-pashtunabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Pashtunabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.16502,
+      "lng": 67.01832
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046499,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-gwal-mandi",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Gwal Mandi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18151,
+      "lng": 67.00787
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046502,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-khuda-abad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Khuda Abad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18589,
+      "lng": 66.98372
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046514,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-ibrahimzai",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Ibrahimzai",
+    "aliases": [
+      "Kili Ibrahim Zai",
+      "Kili Ibrāhīm Zai"
+    ],
+    "coordinates": {
+      "lat": 30.18792,
+      "lng": 66.98997
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046515,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-survey-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Survey Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19065,
+      "lng": 66.98448
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046517,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-shaozai",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Shaozai",
+    "aliases": [
+      "Kili Shaho Zai",
+      "Kili Shāho Zai"
+    ],
+    "coordinates": {
+      "lat": 30.19599,
+      "lng": 66.98706
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046518,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-rahim-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Rahim Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20168,
+      "lng": 67.00658
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046535,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-model-town-7046537",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Model Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.2073,
+      "lng": 67.0055
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046537,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-kabir",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Kabir",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20995,
+      "lng": 66.99946
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046541,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-chaman-housing-society",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Chaman Housing Society",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.22678,
+      "lng": 67.01123
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046544,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-alam-khan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Alam Khan",
+    "aliases": [
+      "Kili Almo",
+      "Kili Ālmo"
+    ],
+    "coordinates": {
+      "lat": 30.23131,
+      "lng": 66.98864
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046547,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-tel-godam",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Tel Godam",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19611,
+      "lng": 67.02281
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046578,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-ali-abad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Ali Abad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19192,
+      "lng": 67.02799
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046583,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-quaidabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Quaidabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18915,
+      "lng": 67.02171
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046584,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-state-bank-of-pakistan-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "State Bank of Pakistan Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19508,
+      "lng": 67.03145
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046590,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-saidabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Saidabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.1831,
+      "lng": 67.03202
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046598,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-shaldara",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Shaldara",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.1795,
+      "lng": 67.01872
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046602,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kuli-camp",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kuli Camp",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20888,
+      "lng": 67.06182
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046607,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-mili-zia-abad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Mili Zia Abad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.24072,
+      "lng": 67.05092
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046610,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-shakarzai",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Shakarzai",
+    "aliases": [
+      "Muslim Abad",
+      "Muslim Ābād"
+    ],
+    "coordinates": {
+      "lat": 30.24856,
+      "lng": 66.9741
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046614,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-mubarak",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Mubarak",
+    "aliases": [
+      "Kili Mubarik",
+      "Kili Mubārik"
+    ],
+    "coordinates": {
+      "lat": 30.24067,
+      "lng": 66.96597
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046615,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-painda-khan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Painda Khan",
+    "aliases": [
+      "Kili Malik Paind Khan",
+      "Kili Malik Pāind Khān",
+      "Kili Paind Khan"
+    ],
+    "coordinates": {
+      "lat": 30.22816,
+      "lng": 66.98475
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046617,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-balochabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Balochabad",
+    "aliases": [
+      "Kili Haji Wahid Bakhsh",
+      "Kili Hāji Wāhid Bakhsh"
+    ],
+    "coordinates": {
+      "lat": 30.22427,
+      "lng": 66.98009
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046618,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-khairati",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Khairati",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.22529,
+      "lng": 66.96621
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046619,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-ghair-abad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Ghair Abad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21879,
+      "lng": 66.96538
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7046622,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-rehmat-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Rehmat Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17386,
+      "lng": 67.00716
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8335358,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-gulshan-e-hasan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Gulshan-e-Hasan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18173,
+      "lng": 66.95356
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9091878,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-gorej-raisani",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Gorej Raisani",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.10506,
+      "lng": 66.94122
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9092227,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-abdul-rehman-muhammad-hassani",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Abdul Rehman Muhammad Hassani",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.10636,
+      "lng": 66.9454
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9092228,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-muhammad-din-boro",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Muhammad Din Boro",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.10195,
+      "lng": 66.9584
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9096488,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-chiltan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Chiltan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.10069,
+      "lng": 66.9711
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9096489,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-yousufabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Yousufabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.10314,
+      "lng": 66.9715
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9096508,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-risaldar",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Risaldar",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.10961,
+      "lng": 66.97048
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9097114,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-saifullah-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Saifullah Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.11352,
+      "lng": 66.973
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9097612,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-sumalani",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Sumalani",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.11295,
+      "lng": 66.96223
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9097613,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-bashir-ahmed-shahwani",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Bashir Ahmed Shahwani",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.11551,
+      "lng": 66.96753
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9097614,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-walijet",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Walijet",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.11783,
+      "lng": 66.97502
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9097615,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-waliabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Waliabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.11955,
+      "lng": 66.95915
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9097616,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-sardah-number-one",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Sardah Number One",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.11655,
+      "lng": 66.96205
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9097617,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-sardah-number-two",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Sardah Number Two",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.11992,
+      "lng": 66.96818
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9097618,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-mengalabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Mengalabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.1339,
+      "lng": 66.9609
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9097623,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-musa-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Musa Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.14004,
+      "lng": 66.98305
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9097624,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-new-bangu",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili New Bangu",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.14964,
+      "lng": 66.97965
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9097625,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-sharifabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Sharifabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15247,
+      "lng": 66.97029
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9097626,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-mustafabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Mustafabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15494,
+      "lng": 66.9767
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9098350,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-water-and-power-development-authority-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Water And Power Development Authority Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15478,
+      "lng": 66.98274
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9098352,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-irrigation-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Irrigation Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15678,
+      "lng": 66.98339
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9098353,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-tajakabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Tajakabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15744,
+      "lng": 66.97072
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9098354,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-newabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Newabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15815,
+      "lng": 66.978
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9098356,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-kashmirabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Kashmirabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.16037,
+      "lng": 66.97542
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9098357,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-fateh-muhammad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Fateh Muhammad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.16353,
+      "lng": 66.97763
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9098359,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-jamia-rozatul-ulum",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Jamia Rozatul Ulum",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17176,
+      "lng": 66.97366
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9098695,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-hussainabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Hussainabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17554,
+      "lng": 66.96419
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9098696,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-gulshan-e-mumtaz",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Gulshan-e-Mumtaz",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17737,
+      "lng": 66.96419
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9098698,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-atiat-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Atiat Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17854,
+      "lng": 66.97377
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9098699,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kashmir-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kashmir Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.25508,
+      "lng": 67.02085
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099302,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-labour-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Labour Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.2454,
+      "lng": 67.02511
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099306,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-mulla-khel",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Mulla Khel",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.24798,
+      "lng": 67.01773
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099313,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-tokhiabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Tokhiabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.24591,
+      "lng": 67.0166
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099314,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-al-jamiat-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Al Jamiat Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.24442,
+      "lng": 67.01608
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099317,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-budhan-khel",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Budhan Khel",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.2454,
+      "lng": 67.01019
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099318,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-frontier-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Frontier Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.24279,
+      "lng": 67.00944
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099319,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-new-hazara-town",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "New Hazara Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17969,
+      "lng": 66.96114
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099648,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-jamia-ali-bin-abi-talib",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Jamia Ali Bin Abi Talib",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.1814,
+      "lng": 66.96134
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099655,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-isa-nagri",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Isa Nagri",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.22106,
+      "lng": 66.99654
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099656,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-city-housing-scheme",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "City Housing Scheme",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18654,
+      "lng": 66.97723
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099752,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-railway-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Railway Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19202,
+      "lng": 66.96437
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099753,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-muhammad-hassani",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Muhammad Hassani",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19429,
+      "lng": 66.96792
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099754,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-bolan-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Bolan Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19591,
+      "lng": 66.97706
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099755,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-bahadurabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Bahadurabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18673,
+      "lng": 66.95379
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099789,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-faisal-town",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Faisal Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18738,
+      "lng": 66.96708
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9099790,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-bacha-khan-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Bacha Khan Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19877,
+      "lng": 66.97004
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100065,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-mevand-road",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Mevand Road",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20282,
+      "lng": 66.97035
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100066,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-water-and-sanatation-authority-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Water and Sanatation Authority Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.2042,
+      "lng": 66.96378
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100067,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-khrotabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Khrotabad",
+    "aliases": [
+      "Kharotabad",
+      "Kharotābād"
+    ],
+    "coordinates": {
+      "lat": 30.22403,
+      "lng": 66.9647
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100121,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-muhammad-nabi-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Muhammad Nabi Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21328,
+      "lng": 66.96694
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100122,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-pir-muhammad-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Pir Muhammad Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21393,
+      "lng": 66.97317
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100124,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-kakarabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Kakarabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21526,
+      "lng": 66.96787
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100599,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-brat",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Brat",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.22732,
+      "lng": 66.97782
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100612,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-arbab-inayatullah",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Arbab Inayatullah",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.22507,
+      "lng": 66.95704
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100670,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-barechabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Barechabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.22972,
+      "lng": 66.97504
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100674,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-khilji",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Khilji",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.23148,
+      "lng": 66.95807
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100757,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-taus-khel",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Taus Khel",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.25006,
+      "lng": 66.96514
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100758,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-haji-rehmat-din",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Haji Rehmat Din",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.24938,
+      "lng": 66.99019
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100817,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-tur-khan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Tur Khan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.24387,
+      "lng": 66.99452
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100818,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-rahim",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Rahim",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.24346,
+      "lng": 66.98949
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100819,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-kakazai",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Kakazai",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.23427,
+      "lng": 66.98338
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100822,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-jinnah-town",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Jinnah Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21937,
+      "lng": 66.98795
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100824,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-christian-town",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Christian Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21778,
+      "lng": 66.98058
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100825,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-new-nichari",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili New Nichari",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21168,
+      "lng": 66.98974
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100883,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-arbab-muhammad-afzul",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Arbab Muhammad Afzul",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20596,
+      "lng": 66.97938
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100908,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-arbaban",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Arbaban",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20565,
+      "lng": 66.99005
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100909,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-mengal-baranzai",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Mengal Baranzai",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20453,
+      "lng": 66.98866
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100910,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-darbar-nur-ahmad-jan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Darbar Nur Ahmad Jan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20265,
+      "lng": 66.98971
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9100913,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-railway-quarters",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Railway Quarters",
+    "aliases": [
+      "Railway Colony"
+    ],
+    "coordinates": {
+      "lat": 30.18906,
+      "lng": 66.99576
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9101221,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-officer-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Officer Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.2062,
+      "lng": 67.00862
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9101362,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-darul-ulum-jamia-ghousia",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Darul-Ulum Jamia Ghousia",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19419,
+      "lng": 66.98999
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9101365,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-arbab-karam-khan",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Arbab Karam Khan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17832,
+      "lng": 66.98295
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9101583,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-nawab-raisani",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Nawab Raisani",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.1783,
+      "lng": 66.99315
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9101584,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-gulshan-e-hoti",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Gulshan-e-Hoti",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17691,
+      "lng": 66.99622
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9101585,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-ferozabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Ferozabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17085,
+      "lng": 66.9848
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9101587,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-gashkori",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Gashkori",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.16958,
+      "lng": 66.98316
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9101588,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-shafi-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Shafi Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.16763,
+      "lng": 66.98541
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9101589,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-haji-dur-muhammad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Haji Dur Muhammad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.16261,
+      "lng": 66.98368
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9101810,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-ghafur-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Ghafur Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15267,
+      "lng": 66.98967
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9103698,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-khairabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Khairabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15372,
+      "lng": 66.99603
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9103731,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-ghousabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Ghousabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15074,
+      "lng": 66.99497
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9103787,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-shaista-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Shaista Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15828,
+      "lng": 66.99732
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9103833,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-khaliqabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Khaliqabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17914,
+      "lng": 67.00194
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9103993,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-agha-muhammad-barozai-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Agha Muhammad Barozai Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17943,
+      "lng": 67.01306
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9103994,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-mominabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Mominabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17954,
+      "lng": 67.03025
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9103996,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-imam-bargah-abul-fazal-abbas",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Imam Bargah Abul Fazal Abbas",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17675,
+      "lng": 67.03219
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9103997,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-rahat-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Rahat Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17319,
+      "lng": 67.01251
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9103998,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-nasirabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Nasirabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18389,
+      "lng": 67.03432
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9103999,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-darul-ulum-imdad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Darul-ulum Imdad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18408,
+      "lng": 67.02912
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9104001,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-nauabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Nauabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19066,
+      "lng": 67.03151
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9104806,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-polytechnic-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Polytechnic Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.14281,
+      "lng": 66.98635
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111528,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-faqirabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Faqirabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.13673,
+      "lng": 66.98595
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111546,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-usmanabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Usmanabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.13177,
+      "lng": 66.98404
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111547,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-taj-muhammad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Taj Muhammad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.1234,
+      "lng": 66.9848
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111548,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-mando-khel-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Mando Khel Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.2387,
+      "lng": 67.0157
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111623,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-technical-training-center-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Technical Training Center Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.11082,
+      "lng": 66.98529
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111626,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-benevolent-fund-housing-scheme",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Benevolent Fund Housing Scheme",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.10365,
+      "lng": 66.98386
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111628,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-gulshan-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Gulshan Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15667,
+      "lng": 67.00362
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111893,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-tamir-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Tamir Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15407,
+      "lng": 67.01135
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111894,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-zohrabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Zohrabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.14539,
+      "lng": 67.02242
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111895,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-new-mughalabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "New Mughalabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.1504,
+      "lng": 67.02499
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111896,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-gawramzai",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Gawramzai",
+    "aliases": [
+      "Kili Gohramzai",
+      "Kili Gohrāmzai"
+    ],
+    "coordinates": {
+      "lat": 30.14865,
+      "lng": 67.01125
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111897,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-pashtun-dara-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Pashtun Dara Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.1585,
+      "lng": 67.02635
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111898,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-achakzai-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Achakzai Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15968,
+      "lng": 67.02397
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111899,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-abdullah-town",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Abdullah Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.16835,
+      "lng": 67.00504
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111920,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-salim-complex",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Salim Complex",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.1893,
+      "lng": 67.00899
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9111927,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-pakistan-military-account-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Pakistan Military Account Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19224,
+      "lng": 67.03035
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9112179,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-jatak",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Jatak",
+    "aliases": [
+      "Jatakabad",
+      "Jatakābād"
+    ],
+    "coordinates": {
+      "lat": 30.26046,
+      "lng": 66.98287
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9112244,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-salam-complex",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Salam Complex",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.16543,
+      "lng": 67.00232
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9112302,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-central-government-employees-society-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Central Government Employees Society Colony",
+    "aliases": [
+      "CGES Colony",
+      "CGS Colony"
+    ],
+    "coordinates": {
+      "lat": 30.16078,
+      "lng": 67.00101
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9112303,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-telephone-and-telegraph-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Telephone and Telegraph Colony",
+    "aliases": [
+      "T&T Colony"
+    ],
+    "coordinates": {
+      "lat": 30.20226,
+      "lng": 67.00381
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9112438,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-darbar-ghousia-yousfia",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Darbar Ghousia Yousfia",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20714,
+      "lng": 67.00254
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9112439,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-haji-bakhtiar-jatak",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Haji Bakhtiar Jatak",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.14863,
+      "lng": 67.00042
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9112449,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-haji-khan-muhammad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Haji Khan Muhammad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.25167,
+      "lng": 66.98894
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 9112462,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-sadiqabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Sadiqabad",
+    "aliases": [
+      "Baluch Colony"
+    ],
+    "coordinates": {
+      "lat": 30.10051,
+      "lng": 66.98953
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11073806,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-pakistan-air-force-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Pakistan Air Force Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.23219,
+      "lng": 66.94161
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11087198,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-ghaibabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Ghaibabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.22872,
+      "lng": 66.96052
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11087203,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-shah-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Shah Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17831,
+      "lng": 66.988
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11087212,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-sui-gas-pipe-line-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Sui Gas Pipe Line Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.10924,
+      "lng": 66.98488
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11087219,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-badini",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Badini",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.12809,
+      "lng": 66.97079
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11087224,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-serday",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Serday",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.10453,
+      "lng": 66.95886
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11087225,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-khud-kili",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Khud Kili",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.10298,
+      "lng": 66.9758
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11087227,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-zarghunabad",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Zarghunabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.23606,
+      "lng": 67.01703
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11318543,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-kili-mahmud",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Kili Mahmud",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.14823,
+      "lng": 67.01579
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11318544,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-band-pashtun-dara",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Band Pashtun Dara",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.16065,
+      "lng": 67.03276
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11318547,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-barech-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "Barech Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.23249,
+      "lng": 67.00115
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 13419044,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "quetta-state-bank-colony",
+    "cityId": "quetta",
+    "provinceId": "balochistan",
+    "name": "State Bank Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.1982,
+      "lng": 67.02636
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 13419310,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   }
 ]

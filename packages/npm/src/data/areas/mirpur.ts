@@ -20,7 +20,13 @@ export const mirpurAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1169027,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -218,6 +224,134 @@ export const mirpurAreas: readonly PakistanArea[] = [
     "sources": [
       "survey",
       "curated"
+    ]
+  },
+  {
+    "id": "mirpur-joral",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Joral",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.15731,
+      "lng": 73.75859
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1386391,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mirpur-thathal",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Thathal",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.15069,
+      "lng": 73.76587
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1386393,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mirpur-nathia-town",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Nathia Town",
+    "aliases": [
+      "Nathe"
+    ],
+    "coordinates": {
+      "lat": 33.14579,
+      "lng": 73.78599
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1386394,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mirpur-kumhar-mohalla",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Kumhar Mohalla",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.13975,
+      "lng": 73.76282
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11917364,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mirpur-muhajir-colony",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Muhajir Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.14174,
+      "lng": 73.76958
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11917365,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mirpur-muhajir-g-1-sector",
+    "cityId": "mirpur",
+    "provinceId": "ajk",
+    "name": "Muhajir G-1 Sector",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.1441,
+      "lng": 73.76113
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11917366,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   }
 ];

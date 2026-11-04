@@ -175,5 +175,261 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "nowshera-ambela",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Ambela",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00833,
+      "lng": 72.025
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1110632,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-muhmand-line",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Muhmand Line",
+    "aliases": [
+      "Mohmand"
+    ],
+    "coordinates": {
+      "lat": 34.00536,
+      "lng": 72.02097
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1110633,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-chitral-lines",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Chitral Lines",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99211,
+      "lng": 72.00947
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1110635,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-munro-lines",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Munro Lines",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99643,
+      "lng": 71.99406
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1110637,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-berrot-lines",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Berrot Lines",
+    "aliases": [
+      "Barret Lines"
+    ],
+    "coordinates": {
+      "lat": 33.99533,
+      "lng": 71.97994
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1110639,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-malakand-lines",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Malakand Lines",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00165,
+      "lng": 71.97773
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1110640,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-mansfield-lines",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Mansfield Lines",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00941,
+      "lng": 72.0037
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1413410,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-lockhart-lines",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Lockhart Lines",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99583,
+      "lng": 72.00694
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1413411,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-willock-lines-west",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Willock Lines West",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99792,
+      "lng": 72.01987
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1413412,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-lockhart-lines-east",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Lockhart Lines East",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.99722,
+      "lng": 72.00833
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1413413,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-sadr-bazar",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Sadr Bazar",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.05619,
+      "lng": 72.00894
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1413414,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "nowshera-willack-lines-east",
+    "cityId": "nowshera",
+    "provinceId": "kpk",
+    "name": "Willack Lines East",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.00212,
+      "lng": 72.02959
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11124325,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ]

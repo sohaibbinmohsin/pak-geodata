@@ -16,7 +16,13 @@ export const gojraAreas: readonly PakistanArea[] = [
     "cityId": "gojra",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1178231,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",
@@ -169,5 +175,167 @@ export const gojraAreas: readonly PakistanArea[] = [
     "provinceId": "punjab",
     "urduName": "غلہ منڈی",
     "type": "commercial"
+  },
+  {
+    "id": "gojra-kacha-gojra",
+    "cityId": "gojra",
+    "provinceId": "punjab",
+    "name": "Kacha Gojra",
+    "aliases": [
+      "Chak Number Three Hundred Sixty-Five"
+    ],
+    "coordinates": {
+      "lat": 31.15019,
+      "lng": 72.6901
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1175546,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "36120"
+  },
+  {
+    "id": "gojra-gulistan-colony",
+    "cityId": "gojra",
+    "provinceId": "punjab",
+    "name": "Gulistan Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.14565,
+      "lng": 72.68115
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11491360,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "36120"
+  },
+  {
+    "id": "gojra-mohalla-shekhan",
+    "cityId": "gojra",
+    "provinceId": "punjab",
+    "name": "Mohalla Shekhan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.15767,
+      "lng": 72.69301
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11491367,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "36120"
+  },
+  {
+    "id": "gojra-chak-three-hundred-sixty-four",
+    "cityId": "gojra",
+    "provinceId": "punjab",
+    "name": "Chak Three Hundred Sixty-four",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.15809,
+      "lng": 72.68351
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11491368,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "36120"
+  },
+  {
+    "id": "gojra-chak-three-hundred-seventy-one",
+    "cityId": "gojra",
+    "provinceId": "punjab",
+    "name": "Chak Three Hundred Seventy-one",
+    "aliases": [
+      "Mahmudpura",
+      "Mahmūdpura"
+    ],
+    "coordinates": {
+      "lat": 31.15309,
+      "lng": 72.69246
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11491369,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "36120"
+  },
+  {
+    "id": "gojra-qadar-colony",
+    "cityId": "gojra",
+    "provinceId": "punjab",
+    "name": "Qadar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.14075,
+      "lng": 72.68746
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11491384,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "36120"
+  },
+  {
+    "id": "gojra-chak-three-hundred-seventy",
+    "cityId": "gojra",
+    "provinceId": "punjab",
+    "name": "Chak Three Hundred Seventy",
+    "aliases": [
+      "Kot Ghulam Muhammad",
+      "Kot Ghulām Muhammad"
+    ],
+    "coordinates": {
+      "lat": 31.1429,
+      "lng": 72.6936
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11491385,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "36120"
   }
 ];

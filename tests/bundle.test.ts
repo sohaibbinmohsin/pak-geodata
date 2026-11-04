@@ -116,4 +116,19 @@ describe('Packaging, Subpath Exports & Distribution Bundles', () => {
       assert.equal(classicResults[0].id, 'lahore-dha-phase-5');
     }
   });
+
+  test('build pipeline synchronizes LICENSE-DATA and ATTRIBUTION.md to packages', () => {
+    const root = process.cwd();
+    const files = [
+      resolve(root, 'LICENSE-DATA'),
+      resolve(root, 'ATTRIBUTION.md'),
+      resolve(root, 'packages/npm/LICENSE-DATA'),
+      resolve(root, 'packages/npm/ATTRIBUTION.md'),
+      resolve(root, 'packages/pypi/LICENSE-DATA'),
+      resolve(root, 'packages/pypi/ATTRIBUTION.md'),
+    ];
+    for (const f of files) {
+      assert.ok(existsSync(f), `Expected file to exist: ${f}`);
+    }
+  });
 });

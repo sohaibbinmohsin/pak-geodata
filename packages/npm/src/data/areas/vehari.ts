@@ -16,7 +16,13 @@ export const vehariAreas: readonly PakistanArea[] = [
     "cityId": "vehari",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1162813,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",
@@ -171,5 +177,26 @@ export const vehariAreas: readonly PakistanArea[] = [
     "provinceId": "punjab",
     "urduName": "کارخانہ بازار",
     "type": "commercial"
+  },
+  {
+    "id": "vehari-temur-colony",
+    "cityId": "vehari",
+    "provinceId": "punjab",
+    "name": "Temur Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.03899,
+      "lng": 72.34165
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11493137,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ];

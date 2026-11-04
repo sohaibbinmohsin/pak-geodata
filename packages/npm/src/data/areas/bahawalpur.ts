@@ -384,5 +384,163 @@ export const bahawalpurAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "bahawalpur-hamaitian",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Hamaitian",
+    "aliases": [
+      "Basti Hamatian",
+      "Basti Hamātiān",
+      "Hamaitjan",
+      "Hāmaitjān"
+    ],
+    "coordinates": {
+      "lat": 29.3832,
+      "lng": 71.72227
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1381874,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "63100"
+  },
+  {
+    "id": "bahawalpur-sadiq-colony",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Sadiq Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 29.38153,
+      "lng": 71.66127
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7391887,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "63100"
+  },
+  {
+    "id": "bahawalpur-gulzar-mahal",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Gulzar Mahal",
+    "aliases": [],
+    "coordinates": {
+      "lat": 29.39745,
+      "lng": 71.69788
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7391964,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "63100"
+  },
+  {
+    "id": "bahawalpur-islamia-colony",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Islamia Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 29.37168,
+      "lng": 71.69607
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7391965,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "63100"
+  },
+  {
+    "id": "bahawalpur-godri",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Godri",
+    "aliases": [],
+    "coordinates": {
+      "lat": 29.418,
+      "lng": 71.67465
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8300633,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "63100"
+  },
+  {
+    "id": "bahawalpur-badara",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Badara",
+    "aliases": [],
+    "coordinates": {
+      "lat": 29.41451,
+      "lng": 71.67371
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11769696,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "63100"
+  },
+  {
+    "id": "bahawalpur-bhutta-colony",
+    "cityId": "bahawalpur",
+    "provinceId": "punjab",
+    "name": "Bhutta Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 29.38065,
+      "lng": 71.65246
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11769701,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ];

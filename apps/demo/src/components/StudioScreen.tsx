@@ -283,7 +283,7 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
           <div
             role="radiogroup"
             aria-label="Language selector"
-            className="h-9 inline-flex items-center p-0.5 sm:p-1 rounded-xl glass-chrome border border-white/10 shadow-xl"
+            className="hidden sm:inline-flex h-9 items-center p-0.5 sm:p-1 rounded-xl glass-chrome border border-white/10 shadow-xl"
           >
             <button
               type="button"

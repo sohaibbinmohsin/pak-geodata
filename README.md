@@ -71,7 +71,7 @@ poetry add pak-geodata
 | :--- | :--- | :--- | :--- |
 | **Provinces & Territories** | **7** | 100% of Pakistan | Punjab, Sindh, KPK, Balochistan, Islamabad (ICT), Azad Jammu & Kashmir (AJK), Gilgit-Baltistan |
 | **Verified Cities** | **79** | 100% Coverage (All 79 Cities with Areas) | District centroids, bounding boxes, administrative divisions, 5-digit postal code ranges |
-| **Foundational & Metro Urban Areas** | **1,279** | 100% of Cities (All 79 Cities Across All 7 Territories) | Foundational & verified areas spanning all metropolitan centers, regional economic hubs, and secondary cities |
+| **Foundational & Metro Urban Areas** | **3,953** | 100% of Cities (All 79 Cities Across All 7 Territories) | Foundational & verified areas spanning all metropolitan centers, regional economic hubs, and secondary cities |
 
 ---
 
@@ -177,23 +177,23 @@ This enables developers to immediately geofence incoming coordinates, filter are
 
 ---
 
-## Verified Areas & Urban Hubs (1,279 Areas Across All 79 Cities)
+## Verified Areas & Urban Hubs (3,953 Areas Across All 79 Cities)
 
-Coverage encompasses **1,279 triangulated golden areas across 100% of Pakistan's 79 cities**, spanning all sectors, housing societies, commercial markets, industrial estates, working-class settlements, and historic quarters across all 7 provinces and administrative territories:
+Coverage encompasses **3,953 triangulated golden areas across 100% of Pakistan's 79 cities**, spanning all sectors, housing societies, commercial markets, industrial estates, working-class settlements, and historic quarters across all 7 provinces and administrative territories:
 
-### Top 10 Metropolitan Hubs (631 Areas):
-- **Lahore** (`130 areas`): Gulberg (I-V), DHA (Phases 1-9, Prism & Rahbar), Model Town, Johar Town, Allama Iqbal Town, Bahria Town, Township, Sabzazar, Faisal Town, Garden Town, Cantt, Harbanspura, Baghbanpura, Islampura, Gajjumata, Chauburji, Shahdara, Nishtar Town, Gawalmandi, Sanda, Mozang, Data Darbar, Bhatti Gate, Marghzar Colony, Mansoora, Hanjarwal, Kalma Chowk, Kahna, Jallo Mor, Punjab University, UVAS, Kot Lakhpat, Youhanabad, etc.
-- **Karachi** (`130 areas`): Clifton (Blocks 1-9), DHA (Phases 1-8), Gulshan-e-Iqbal, North Nazimabad, PECHS, Federal B Area, Gulistan-e-Johar, North Karachi, Nazimabad, Saddar, SITE, Lyari, Ranchore Line, Sohrab Goth, Numaish, Kharadar, Golimar, Malir City, Landhi, Orangi Town, Mehmoodabad, Drigh Road, Qasba Colony, Banaras Chowk, Baldia Town, Keamari, Chakiwara, Metroville, Sharafi Goth, etc.
-- **Islamabad** (`87 areas`): CDA Sectors (F-5 to F-17, G-5 to G-17, H-8 to H-16, I-8 to I-16, D-12, D-17, D-18, E-7 to E-11, C-12, C-15, C-16, B-17), Diplomatic Enclave, Blue Area, DHA Islamabad, Bahria Town, Gulberg Greens, Soan Gardens, PWD, Tarnol, Golra Sharif Station, I-10 Industrial, Barakahu Bazaar, Sohan, etc.
-- **Rawalpindi** (`64 areas`): Bahria Town (Phases 1-8 & Ext), Satellite Town, Saddar, Westridge (1-3), Chaklala Scheme (1-3), Askari, Commercial Market, Raja Bazaar, Bhabra Bazaar, Mohanpura, Kartarpura, Pirwadhai Adda, Faizabad Interchange, Dhok Ratta, Dhok Khabba, Dhok Hassu, Dhok Mangtal, Dhok Dalal, Khanna Pul, Chungi No 22, etc.
-- **Faisalabad** (`55 areas`): Clock Tower 8 Bazaars (Kutchery, Montgomery, Rail, Karkhana, Jhang, Bhawana, Aminpur, Chiniot), Peoples Colony, Madina Town, D Ground, Ghulam Muhammad Abad, Kohinoor City, Civil Lines, Millat Town, Samanabad, Batala Colony, Gulberg, D-Type Colony, Tata Bazaar, Faizabad, Warispura, etc.
-- **Peshawar** (`37 areas`): Historic Quarters & Transit Hubs (Qissa Khwani, Kohati Gate, Namak Mandi, Gor Gathri, Haji Camp General Bus Stand, Karkhano Market), Hayatabad (Phases 1-7), University Town, Peshawar Campus, Cantt, Saddar, Warsak Road, Hazarkhwani, Yakatoot, etc.
-- **Multan** (`34 areas`): Walled City Historic Gates (Delhi Gate, Bohar Gate, Haram Gate, Pak Gate, Lohari Gate, Daulat Gate), Gulgasht Colony, Bosan Road, Cantt, Shah Rukn-e-Alam Colony, New Multan, MDA Officers Colony, Model Town, Wapda Town, DHA Multan, Hussain Agahi, Dera Adda, etc.
-- **Hyderabad** (`33 areas`): Historic Wards & Bazaars (Phuleli, Paretabad, Tower Market, Shahi Bazaar, Tilak Incline, Halanaka, Hirabad), Latifabad (Units 1-12), Qasimabad, Saddar, Cantt, Auto Bhan Road, Citizen Colony, Hussainabad, GOR Colony, Wadhu Wah Road, etc.
-- **Gujranwala** (`32 areas`): Historic Quarters & Industrial Zones (Garjakh, Dhullay, Gondlanwala, Khiali Shahpur, Ferozwala, Climax Industrial Zone, Kangniwala, Nowshera Road), Gujranwala Cantt, Model Town, DC Colony, People's Colony, Satellite Town, Climax Abadi, Baghbanpura, etc.
-- **Quetta** (`29 areas`): Historic Quarters & Commercial Bazaars (Liaquat Bazaar, Suraj Ganj Bazaar, Kandahari Bazaar, Chaman Phatak, Marriabad, Patel Bagh, Arbab Town, Sariab Road, Sabzal Road, Brewery Road, Nawan Killi, Killi Deba, Killi Ismail, Hazara Town), Quetta Cantt, Jinnah Town, Shahbaz Town, etc.
+### Top 10 Metropolitan Hubs (2,883 Areas):
+- **Karachi** (`606 areas`): Clifton (Blocks 1-9), DHA (Phases 1-8), Gulshan-e-Iqbal, North Nazimabad, PECHS, Federal B Area, Gulistan-e-Johar, North Karachi, Nazimabad, Saddar, SITE, Lyari, Ranchore Line, Sohrab Goth, Numaish, Kharadar, Golimar, Malir City, Landhi, Orangi Town, Mehmoodabad, Drigh Road, Qasba Colony, Banaras Chowk, Baldia Town, Keamari, Chakiwara, Metroville, Sharafi Goth, etc.
+- **Lahore** (`575 areas`): Gulberg (I-V), DHA (Phases 1-9, Prism & Rahbar), Model Town, Johar Town, Allama Iqbal Town, Bahria Town, Township, Sabzazar, Faisal Town, Garden Town, Cantt, Harbanspura, Baghbanpura, Islampura, Gajjumata, Chauburji, Shahdara, Nishtar Town, Gawalmandi, Sanda, Mozang, Data Darbar, Bhatti Gate, Marghzar Colony, Mansoora, Hanjarwal, Kalma Chowk, Kahna, Jallo Mor, Punjab University, UVAS, Kot Lakhpat, Youhanabad, etc.
+- **Islamabad** (`438 areas`): CDA Sectors (F-5 to F-17, G-5 to G-17, H-8 to H-16, I-8 to I-16, D-12, D-17, D-18, E-7 to E-11, C-12, C-15, C-16, B-17), Diplomatic Enclave, Blue Area, DHA Islamabad, Bahria Town, Gulberg Greens, Soan Gardens, PWD, Tarnol, Golra Sharif Station, I-10 Industrial, Barakahu Bazaar, Sohan, etc.
+- **Hyderabad** (`292 areas`): Latifabad (Units 1-12), Qasimabad, Saddar, Cantt, Auto Bhan Road, Citizen Colony, Hussainabad, GOR Colony, Wadhu Wah Road, Phuleli, Paretabad, Tower Market, Shahi Bazaar, Tilak Incline, Halanaka, Hirabad, etc.
+- **Peshawar** (`288 areas`): Hayatabad (Phases 1-7), University Town, Peshawar Campus, Cantt, Saddar, Warsak Road, Hazarkhwani, Yakatoot, Qissa Khwani, Kohati Gate, Namak Mandi, Gor Gathri, Haji Camp General Bus Stand, Karkhano Market, etc.
+- **Quetta** (`241 areas`): Quetta Cantt, Jinnah Town, Shahbaz Town, Liaquat Bazaar, Suraj Ganj Bazaar, Kandahari Bazaar, Chaman Phatak, Marriabad, Patel Bagh, Arbab Town, Sariab Road, Sabzal Road, Brewery Road, Nawan Killi, Killi Deba, Killi Ismail, Hazara Town, etc.
+- **Gujranwala** (`156 areas`): Gujranwala Cantt, Model Town, DC Colony, People's Colony, Satellite Town, Climax Abadi, Baghbanpura, Garjakh, Dhullay, Gondlanwala, Khiali Shahpur, Ferozwala, Climax Industrial Zone, Kangniwala, Nowshera Road, etc.
+- **Faisalabad** (`114 areas`): Peoples Colony, Madina Town, D Ground, Ghulam Muhammad Abad, Kohinoor City, Civil Lines, Millat Town, Samanabad, Batala Colony, Gulberg, D-Type Colony, Tata Bazaar, Faizabad, Warispura, Clock Tower 8 Bazaars, etc.
+- **Multan** (`97 areas`): Gulgasht Colony, Bosan Road, Cantt, Shah Rukn-e-Alam Colony, New Multan, MDA Officers Colony, Model Town, Wapda Town, DHA Multan, Hussain Agahi, Dera Adda, Delhi Gate, Bohar Gate, Haram Gate, Pak Gate, Lohari Gate, Daulat Gate, etc.
+- **Rawalpindi** (`76 areas`): Bahria Town (Phases 1-8 & Ext), Satellite Town, Saddar, Westridge (1-3), Chaklala Scheme (1-3), Askari, Commercial Market, Raja Bazaar, Bhabra Bazaar, Mohanpura, Kartarpura, Pirwadhai Adda, Faizabad Interchange, Dhok Ratta, Dhok Khabba, Dhok Hassu, Dhok Mangtal, Dhok Dalal, Khanna Pul, Chungi No 22, etc.
 
-### 69 Regional Hubs & Secondary Cities (648 Areas Across 100% of Pakistan's Cities):
+### 69 Regional Hubs & Secondary Cities (1,070 Areas Across 100% of Pakistan's Cities):
 - **Punjab (27 cities, 255 areas)**: Sialkot (22), Bahawalpur (18), Sargodha (18), Kasur (14), Jhelum (13), Gujrat (13), Sheikhupura (10), Sahiwal (10), Rahim Yar Khan (10), Dera Ghazi Khan (10), Wah Cantt (8), Okara (8), Attock (8), Bahawalnagar (8), Chakwal (8), Chiniot (8), Chishtian (8), Daska (8), Gojra (8), Hafizabad (8), Jaranwala (8), Jhang (8), Kamalia (8), Khanewal (8), Kot Addu (8), Mandi Bahauddin (8), Muridke (8), Muzaffargarh (8), Samundri (8), Taxila (8), Vehari (8), Wazirabad (8).
 - **Sindh (6 cities, 60 areas)**: Sukkur (18), Larkana (10), Nawabshah (10), Mirpur Khas (8), Jacobabad (8), Shikarpur (8).
 - **KPK (7 cities, 68 areas)**: Abbottabad (15), Mardan (13), Mingora / Swat (10), Kohat (8), Dera Ismail Khan (8), Mansehra (8), Nowshera (8), Swabi (8).
@@ -550,6 +550,48 @@ We actively welcome community contributions to expand coverage across Pakistan!
 
 ---
 
+## Data Sources & Upstream Attribution
+
+`pak-geodata` synthesizes and cross-validates geographic intelligence from authoritative international and national GIS repositories:
+
+1. **National Geospatial-Intelligence Agency (NGA) & GeoNames**:
+   - Primary source for georeferenced populated places (`PPL`), urban quarters/neighborhoods (`PPLX`), and administrative centroids across Pakistan.
+   - Licensed under [Creative Commons Attribution 4.0 International (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+2. **OpenStreetMap Contributors**:
+   - Source for verified metropolitan neighborhood and road-network boundary references.
+   - © OpenStreetMap contributors. Licensed under the [Open Database License (ODbL 1.0)](https://opendatacommons.org/licenses/odbl/1.0/).
+3. **United Nations OCHA / Humanitarian Data Exchange (HDX COD)**:
+   - Administrative Common Operational Datasets (COD-AB) for Pakistan provincial and district administrative boundaries.
+   - Licensed under [CC-BY-IGO](https://creativecommons.org/licenses/by/3.0/igo/).
+4. **Pakistan Post & Pakistan Bureau of Statistics (PBS)**:
+   - Postal codes, delivery zones, and district administrative hierarchies.
+
+For complete attribution notices and upstream provenance details, please refer to [ATTRIBUTION.md](ATTRIBUTION.md).
+
+---
+
+## Licensing & Commercial Use FAQ
+
+`pak-geodata` employs a standard **Split-License Architecture**:
+- **Codebase & Libraries** (`packages/npm`, `packages/pypi`, algorithms, and build scripts): Licensed under the permissive [MIT License](LICENSE).
+- **Geographic Datasets** (`data/` directory and compiled JSON geographic records): Dual-licensed under the [Open Database License (ODbL 1.0)](LICENSE-DATA) and [CC-BY 4.0](LICENSE-DATA).
+
+### Frequently Asked Questions for Commercial Developers
+
+#### Can I use `pak-geodata` in a proprietary commercial SaaS, mobile app, or e-commerce platform?
+**Yes.** Under **Section 4.3 of the Open Database License (ODbL)**, displaying Pakistani cities, autocomplete menus, checkout address pickers, or geocoding outputs within your application constitutes a **"Produced Work"**. Using `pak-geodata` in your website or mobile app does **NOT** require you to open-source your proprietary code, backend services, or customer database.
+
+#### Do I need to attribute `pak-geodata` in my application?
+Yes. If your application or public service utilizes `pak-geodata` datasets, simply include a standard attribution line in your app's "About", "Credits", or "Legal" page:
+> *"Geographic data provided by pak-geodata (The Mohsin Project), derived from OpenStreetMap contributors (ODbL) and NGA/GeoNames (CC-BY 4.0)."*
+
+#### What if I modify or extend the underlying geographic dataset itself?
+If you publicly redistribute an adapted version of the `data/` database (e.g. publishing an enriched standalone Pakistan GIS dataset derived from this repository), ODbL Section 4.4 requires you to share those specific geographic database modifications under ODbL 1.0.
+
+For full legal terms, see [LICENSE](LICENSE) (Code) and [LICENSE-DATA](LICENSE-DATA) (Geographic Data).
+
+---
+
 ## About The Mohsin Project
 
 > **Free software for those who do good.**
@@ -564,6 +606,5 @@ The Mohsin Project exists because purpose-driven organizations and emergency tea
 
 ## License
 
-This project is open-source software licensed under the [MIT License](LICENSE).
-
-Copyright (c) 2026 [The Mohsin Project Global](https://themohsinproject.org)
+- **Code**: [MIT License](LICENSE) © 2026 [The Mohsin Project Global](https://themohsinproject.org)
+- **Data**: [ODbL 1.0](LICENSE-DATA) & [CC-BY 4.0](LICENSE-DATA) © OpenStreetMap contributors & NGA/GeoNames

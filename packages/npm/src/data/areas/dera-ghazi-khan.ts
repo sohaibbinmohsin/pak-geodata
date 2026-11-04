@@ -213,5 +213,281 @@ export const deraGhaziKhanAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "dera-ghazi-khan-gadai",
+    "cityId": "dera-ghazi-khan",
+    "provinceId": "punjab",
+    "name": "Gadai",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.02058,
+      "lng": 70.62517
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1179192,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "dera-ghazi-khan-hamidwala",
+    "cityId": "dera-ghazi-khan",
+    "provinceId": "punjab",
+    "name": "Hamidwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.04744,
+      "lng": 70.65574
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1413875,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "dera-ghazi-khan-shamsabad-colony",
+    "cityId": "dera-ghazi-khan",
+    "provinceId": "punjab",
+    "name": "Shamsabad Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.02579,
+      "lng": 70.63567
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7505139,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "dera-ghazi-khan-zaffarabad-colony",
+    "cityId": "dera-ghazi-khan",
+    "provinceId": "punjab",
+    "name": "Zaffarabad Colony",
+    "aliases": [
+      "Zafarabad Colony",
+      "Zafarābād Colony"
+    ],
+    "coordinates": {
+      "lat": 30.06953,
+      "lng": 70.63053
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7505163,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "dera-ghazi-khan-tobewala",
+    "cityId": "dera-ghazi-khan",
+    "provinceId": "punjab",
+    "name": "Tobewala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.06869,
+      "lng": 70.65354
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7505166,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "dera-ghazi-khan-khandiwala",
+    "cityId": "dera-ghazi-khan",
+    "provinceId": "punjab",
+    "name": "Khandiwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.04311,
+      "lng": 70.65567
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7505178,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "dera-ghazi-khan-bhatti-colony",
+    "cityId": "dera-ghazi-khan",
+    "provinceId": "punjab",
+    "name": "Bhatti Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.02754,
+      "lng": 70.6248
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7505179,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "dera-ghazi-khan-farid-town",
+    "cityId": "dera-ghazi-khan",
+    "provinceId": "punjab",
+    "name": "Farid Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.04799,
+      "lng": 70.62945
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7505181,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "dera-ghazi-khan-qaimwala",
+    "cityId": "dera-ghazi-khan",
+    "provinceId": "punjab",
+    "name": "Qaimwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.04352,
+      "lng": 70.64821
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7505182,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "dera-ghazi-khan-rasulpur",
+    "cityId": "dera-ghazi-khan",
+    "provinceId": "punjab",
+    "name": "Rasulpur",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.04858,
+      "lng": 70.64707
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7505195,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "dera-ghazi-khan-sahliwala",
+    "cityId": "dera-ghazi-khan",
+    "provinceId": "punjab",
+    "name": "Sahliwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.06332,
+      "lng": 70.65971
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11694018,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "dera-ghazi-khan-lashari",
+    "cityId": "dera-ghazi-khan",
+    "provinceId": "punjab",
+    "name": "Lashari",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.07223,
+      "lng": 70.6451
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11694020,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "dera-ghazi-khan-officer-colony",
+    "cityId": "dera-ghazi-khan",
+    "provinceId": "punjab",
+    "name": "Officer Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.01912,
+      "lng": 70.61381
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11694035,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ];

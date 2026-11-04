@@ -29,7 +29,7 @@ Designed with **zero runtime dependencies** (pure Python standard library), stri
 | :--- | :--- | :--- | :--- |
 | **Provinces & Territories** | **7** | 100% of Pakistan | Punjab, Sindh, KPK, Balochistan, Islamabad (ICT), Azad Jammu & Kashmir (AJK), Gilgit-Baltistan |
 | **Verified Cities** | **79** | 100% Coverage (All 79 Cities with Areas) | District centroids, bounding boxes, administrative divisions, 5-digit postal code ranges |
-| **Foundational & Metro Urban Areas** | **1,279** | 100% of Cities (All 79 Cities Across All 7 Territories) | Foundational & verified areas spanning all metropolitan centers, regional economic hubs, and secondary cities |
+| **Foundational & Metro Urban Areas** | **3,953** | 100% of Cities (All 79 Cities Across All 7 Territories) | Foundational & verified areas spanning all metropolitan centers, regional economic hubs, and secondary cities |
 
 ---
 
@@ -196,11 +196,35 @@ All models are immutable frozen dataclasses (`@dataclass(frozen=True)`):
 | `name` | `str` | Primary English area name |
 | `aliases` | `List[str]` | Alternate names, abbreviations, and colloquial names |
 | `coordinates` | `Optional[Coordinates]`| Centroid coordinates |
+| `bounds` | `Optional[CityBounds]` | Geographic bounding box |
+| `radius_km` | `Optional[float]` | Approximate radial span in kilometers |
 | `urdu_name` | `Optional[str]` | Nastaliq Urdu name |
 | `postal_code` | `Optional[str]` | 5-digit Pakistan Post postal code |
 | `type` | `Optional[str]` | Area type (`'neighborhood'`, `'suburb'`, `'commercial'`, `'housing_society'`, etc.) |
 | `verified` | `bool` | True if verified against survey and GIS boundaries |
-| `sources` | `List[str]` | Verification sources |
+| `sources` | `List[Union[str, ProvenanceSource]]` | Verification sources |
+
+---
+
+## Data Sources & Upstream Attribution
+
+`pak-geodata` integrates cross-verified GIS records from:
+- **National Geospatial-Intelligence Agency (NGA) & GeoNames**: Populated places and urban quarters (`PPLX`) ([CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
+- **OpenStreetMap Contributors**: Verified metropolitan neighborhood and arterial coordinates ([ODbL 1.0](https://opendatacommons.org/licenses/odbl/1.0/)).
+- **UN OCHA / HDX COD**: Administrative Common Operational Datasets for Pakistan boundaries ([CC-BY-IGO](https://creativecommons.org/licenses/by/3.0/igo/)).
+- **Pakistan Post & PBS**: Postal codes and administrative hierarchies.
+
+See [ATTRIBUTION.md](ATTRIBUTION.md) for full attribution notices.
+
+---
+
+## Licensing & Commercial Use FAQ
+
+- **Library & Code**: [MIT License](LICENSE)
+- **Geographic Datasets**: [ODbL 1.0](LICENSE-DATA) & [CC-BY 4.0](LICENSE-DATA)
+
+### Commercial Use in Web & Mobile Apps
+Under **Section 4.3 of the Open Database License (ODbL)**, displaying Pakistani cities, autocomplete menus, checkout address pickers, or geocoding outputs within your application constitutes a **"Produced Work"**. Using `pak-geodata` in your website or backend services does **NOT** require you to open-source your proprietary code, models, or customer database. Simply include an attribution notice in your application's credits.
 
 ---
 
@@ -213,7 +237,7 @@ All models are immutable frozen dataclasses (`@dataclass(frozen=True)`):
 | `get_all_cities()` | `List[PakistanCity]` | Returns all 79 verified cities |
 | `get_cities_by_province(province_id)` | `List[PakistanCity]` | Filters cities by province |
 | `get_city_by_id(id)` | `Optional[PakistanCity]` | Finds city by canonical slug |
-| `get_all_areas()` | `List[PakistanArea]` | Returns all verified areas (1,279 total) |
+| `get_all_areas()` | `List[PakistanArea]` | Returns all verified areas (3,953 total) |
 | `get_areas_by_city(city_id)` | `List[PakistanArea]` | Returns verified areas in a city |
 | `search_areas(query, city_id=None, limit=None, province_id=None)` | `List[PakistanArea]` | Ranked multi-tier search |
 | `find_area_by_postal_code(postal_code)` | `Optional[PakistanArea]` | Resolves area by 5-digit postal code |
@@ -237,6 +261,6 @@ The Mohsin Project exists because purpose-driven organizations and emergency tea
 
 ## License
 
-This project is open-source software licensed under the [MIT License](LICENSE).
+- **Code**: [MIT License](LICENSE) © 2026 [The Mohsin Project Global](https://themohsinproject.org)
+- **Data**: [ODbL 1.0](LICENSE-DATA) & [CC-BY 4.0](LICENSE-DATA) © OpenStreetMap contributors & NGA/GeoNames
 
-Copyright (c) 2026 [The Mohsin Project Global](https://themohsinproject.org)

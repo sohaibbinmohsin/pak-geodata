@@ -279,5 +279,49 @@ export const mardanAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "mardan-muslimabad",
+    "cityId": "mardan",
+    "provinceId": "kpk",
+    "name": "Muslimabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.18565,
+      "lng": 72.04126
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11410360,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "23290"
+  },
+  {
+    "id": "mardan-shadman-colony",
+    "cityId": "mardan",
+    "provinceId": "kpk",
+    "name": "Shadman Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.18235,
+      "lng": 72.03653
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11410365,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "23290"
   }
 ];

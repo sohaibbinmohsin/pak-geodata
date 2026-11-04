@@ -21,9 +21,10 @@ from .models import (
     PakistanArea,
     PakistanCity,
     PakistanProvince,
+    ProvenanceSource,
 )
 
-__version__ = "0.8.2"
+__version__ = "0.9.0"
 
 __all__ = [
     "Coordinates",
@@ -31,6 +32,7 @@ __all__ = [
     "PakistanProvince",
     "PakistanCity",
     "PakistanArea",
+    "ProvenanceSource",
     "get_all_provinces",
     "get_province_by_id",
     "get_all_cities",

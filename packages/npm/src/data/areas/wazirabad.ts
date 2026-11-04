@@ -21,7 +21,13 @@ export const wazirabadAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1162456,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -178,5 +184,27 @@ export const wazirabadAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "wazirabad-phaliwala",
+    "cityId": "wazirabad",
+    "provinceId": "punjab",
+    "name": "Phaliwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.44275,
+      "lng": 74.12966
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11452169,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "52000"
   }
 ];

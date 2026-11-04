@@ -171,5 +171,188 @@ export const kohatAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "kohat-mir-ahmad-khel",
+    "cityId": "kohat",
+    "provinceId": "kpk",
+    "name": "Mir Ahmad Khel",
+    "aliases": [
+      "Mīr Ahmad Khel"
+    ],
+    "coordinates": {
+      "lat": 33.58178,
+      "lng": 71.46428
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1170381,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "26010"
+  },
+  {
+    "id": "kohat-garhi-mawaz-khan",
+    "cityId": "kohat",
+    "provinceId": "kpk",
+    "name": "Garhi Mawaz Khan",
+    "aliases": [
+      "Garhi Mawāz Khān"
+    ],
+    "coordinates": {
+      "lat": 33.58739,
+      "lng": 71.42808
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1178855,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "kohat-jangal-khel",
+    "cityId": "kohat",
+    "provinceId": "kpk",
+    "name": "Jangal Khel",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.59857,
+      "lng": 71.43812
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1451020,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "kohat-birdwood-line",
+    "cityId": "kohat",
+    "provinceId": "kpk",
+    "name": "Birdwood Line",
+    "aliases": [
+      "Birdwood Lines"
+    ],
+    "coordinates": {
+      "lat": 33.58995,
+      "lng": 71.46225
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1451050,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "kohat-nicholson-lines",
+    "cityId": "kohat",
+    "provinceId": "kpk",
+    "name": "Nicholson Lines",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.60307,
+      "lng": 71.41769
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1451051,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "kohat-moehi-colony",
+    "cityId": "kohat",
+    "provinceId": "kpk",
+    "name": "Moehi Colony",
+    "aliases": [
+      "Machi Colony",
+      "Mochi Colony"
+    ],
+    "coordinates": {
+      "lat": 33.55609,
+      "lng": 71.45992
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1451057,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "26010"
+  },
+  {
+    "id": "kohat-umar-colony",
+    "cityId": "kohat",
+    "provinceId": "kpk",
+    "name": "Umar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.55791,
+      "lng": 71.45091
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1451058,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "26010"
+  },
+  {
+    "id": "kohat-ashikt-colony",
+    "cityId": "kohat",
+    "provinceId": "kpk",
+    "name": "Ashikt Colony",
+    "aliases": [
+      "Ashik Colony"
+    ],
+    "coordinates": {
+      "lat": 33.55305,
+      "lng": 71.45317
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1451059,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "26010"
   }
 ];

@@ -82,7 +82,13 @@
     ],
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 8756067,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true
   },
@@ -104,7 +110,13 @@
     ],
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 8756066,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true
   },
@@ -324,7 +336,13 @@
     ],
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7098980,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true
   },
@@ -698,7 +716,13 @@
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 7922777,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -722,5 +746,5961 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "hyderabad-gidu",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Gidu",
+    "aliases": [
+      "Gidu Bandar"
+    ],
+    "coordinates": {
+      "lat": 25.37636,
+      "lng": 68.32404
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1178343,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-saleh-muhammad-baghal",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Saleh Muhammad Baghal",
+    "aliases": [
+      "Goth Saleh Bagal",
+      "Goth Saleh Bhaghal",
+      "Goth Sāleh Bhāghal",
+      "Goth Sāleh Bāgal"
+    ],
+    "coordinates": {
+      "lat": 25.42853,
+      "lng": 68.39715
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414171,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-nur-khan-chang",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Nur Khan Chang",
+    "aliases": [
+      "Goth Nur Muhammad Chang",
+      "Goth Nūr Muhammad Chang",
+      "Goth Rahab Khan Chang",
+      "Goth Rahab Khān Chang"
+    ],
+    "coordinates": {
+      "lat": 25.42465,
+      "lng": 68.36511
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414175,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-jamshoro-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Jamshoro Colony",
+    "aliases": [
+      "Goth Jam Shor",
+      "Goth Jam Shoro",
+      "Goth Jām Shor",
+      "Goth Jām Shoro"
+    ],
+    "coordinates": {
+      "lat": 25.43765,
+      "lng": 68.28967
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414180,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-goth-sajan-detho",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Sajan Detho",
+    "aliases": [
+      "Goth Sajam Detha",
+      "Goth Sajan Detha",
+      "Goth Sājam Detha",
+      "Goth Sājan Detha",
+      "Sajan Sabir Detha"
+    ],
+    "coordinates": {
+      "lat": 25.4068,
+      "lng": 68.3164
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414186,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-sunny-bungalow",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Sunny Bungalow",
+    "aliases": [
+      "Talib Sumra",
+      "Talib Sumro",
+      "Tālib Sumra",
+      "Tālib Sumro"
+    ],
+    "coordinates": {
+      "lat": 25.40653,
+      "lng": 68.34523
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414191,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-nasim-nagar",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Nasim Nagar",
+    "aliases": [
+      "Tahir Sumra",
+      "Tahir Sumro",
+      "Tāhir Sumra"
+    ],
+    "coordinates": {
+      "lat": 25.40342,
+      "lng": 68.33822
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414192,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-haji-harun-sumro",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Haji Harun Sumro",
+    "aliases": [
+      "Goth Haroon Sumra"
+    ],
+    "coordinates": {
+      "lat": 25.40004,
+      "lng": 68.33671
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414193,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-tando-thero",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Tando Thero",
+    "aliases": [
+      "Tanda Thoro",
+      "Tando Thoro"
+    ],
+    "coordinates": {
+      "lat": 25.39563,
+      "lng": 68.39564
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414197,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-bakhsh-gopang",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Bakhsh Gopang",
+    "aliases": [
+      "Goth Imam Bakhsh Gopang",
+      "Goth Imām Bakhsh Gopāng",
+      "Goth Khuda Bakhsh Gopang",
+      "Goth Khuda Bakhsh Gopāng",
+      "Khuda Bakhsh"
+    ],
+    "coordinates": {
+      "lat": 25.40498,
+      "lng": 68.40212
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414200,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-muhammad-saddiq-narejo",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Muhammad Saddiq Narejo",
+    "aliases": [
+      "Muhammad Saddiq Jarejo",
+      "Muhammad Saddiq Narejo",
+      "Muhammad Saddīq Jārejo",
+      "Muhammad Saddīq Nārejo"
+    ],
+    "coordinates": {
+      "lat": 25.37542,
+      "lng": 68.39715
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414239,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-tando-mir",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Tando Mir",
+    "aliases": [
+      "Tando Agha",
+      "Tando Mir Muhammad",
+      "Tando Mīr Muhammad",
+      "Tando nur Muhammad",
+      "Tando nūr Muhammad"
+    ],
+    "coordinates": {
+      "lat": 25.39096,
+      "lng": 68.38624
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414242,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-jehania-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Jehania Town",
+    "aliases": [
+      "Tando Jahania",
+      "Tando Jahanian",
+      "Tando Jahānia",
+      "Tando Jahāniān",
+      "Tando Jan"
+    ],
+    "coordinates": {
+      "lat": 25.39224,
+      "lng": 68.35089
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414244,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-safar-shudi",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Safar Shudi",
+    "aliases": [
+      "Goth Safar Shedi",
+      "Goth Shidi Kambrani",
+      "Goth Shīdi Kāmbrāni",
+      "Safar Shedi"
+    ],
+    "coordinates": {
+      "lat": 25.39073,
+      "lng": 68.32594
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414245,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-tando-saiyid",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Tando Saiyid",
+    "aliases": [
+      "Goth Abdul Ghafur Shah",
+      "Goth Abdul Ghafur Shāh",
+      "Tando Ghafur Shah",
+      "Tando Ghafūr Shāh",
+      "Tando Saiyid Ghafur Shah"
+    ],
+    "coordinates": {
+      "lat": 25.38951,
+      "lng": 68.3246
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414246,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-mian-muhammad-salim",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Mian Muhammad Salim",
+    "aliases": [
+      "Miani",
+      "Miāni"
+    ],
+    "coordinates": {
+      "lat": 25.37983,
+      "lng": 68.29454
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414247,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-goth-arab-dongra",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Arab Dongra",
+    "aliases": [
+      "Dungra"
+    ],
+    "coordinates": {
+      "lat": 25.40098,
+      "lng": 68.34198
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1414326,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-imamuddin-shoro-goth",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Imamuddin Shoro Goth",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3835,
+      "lng": 68.2944
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098708,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-goth-haji-naingo",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Haji Naingo",
+    "aliases": [
+      "Goth Haji Manjhu",
+      "Goth Hāji Manjhu"
+    ],
+    "coordinates": {
+      "lat": 25.3763,
+      "lng": 68.28322
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098709,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-goth-ibrahim",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Ibrahim",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3739,
+      "lng": 68.2958
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098710,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-goth-bandi",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Bandi",
+    "aliases": [
+      "Pandi Goth",
+      "Pāndi Goth"
+    ],
+    "coordinates": {
+      "lat": 25.3715,
+      "lng": 68.2856
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098711,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-goth-said-khan",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Said Khan",
+    "aliases": [
+      "Goth Saīd Khān"
+    ],
+    "coordinates": {
+      "lat": 25.3639,
+      "lng": 68.2869
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098713,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-naga-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Naga Colony",
+    "aliases": [
+      "Essa Nagar"
+    ],
+    "coordinates": {
+      "lat": 25.36278,
+      "lng": 68.29846
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098715,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-munawarabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Munawarabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3635,
+      "lng": 68.34015
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098726,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-shah-para",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Shah Para",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3635,
+      "lng": 68.31385
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098727,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-dariabad-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Dariabad Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3637,
+      "lng": 68.307
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098728,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-pathan-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Pathan Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3656,
+      "lng": 68.3065
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098729,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-gul-muhammad-goth",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Gul Muhammad Goth",
+    "aliases": [
+      "Goth Gul Muhammad"
+    ],
+    "coordinates": {
+      "lat": 25.37315,
+      "lng": 68.32783
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098730,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-hashim-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Hashim Colony",
+    "aliases": [
+      "Hashmi Colony",
+      "Hāshmi Colony",
+      "Tando Nur Muhammad",
+      "Tando Nūr Muhammad"
+    ],
+    "coordinates": {
+      "lat": 25.36814,
+      "lng": 68.33104
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098731,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-madina-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Madina Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37826,
+      "lng": 68.32485
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098734,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-memon-housing-society",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Memon Housing Society",
+    "aliases": [
+      "Memon Society"
+    ],
+    "coordinates": {
+      "lat": 25.38377,
+      "lng": 68.32946
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098735,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-wahdat-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Wahdat Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38107,
+      "lng": 68.33127
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098736,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-new-wahdat-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "New Wahdat Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38859,
+      "lng": 68.33239
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098739,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-qasim-nagar",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Qasim Nagar",
+    "aliases": [
+      "Hadi Nagar",
+      "Hādi Nagar"
+    ],
+    "coordinates": {
+      "lat": 25.39213,
+      "lng": 68.33914
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098740,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-al-mustafa-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Al-Mustafa Town",
+    "aliases": [
+      "Prince Town"
+    ],
+    "coordinates": {
+      "lat": 25.39554,
+      "lng": 68.34174
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098741,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-north-qasimabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "North Qasimabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39528,
+      "lng": 68.32962
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098742,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-hyderabad-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Hyderabad Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39815,
+      "lng": 68.33515
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098744,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-barage-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Barage Colony",
+    "aliases": [
+      "Barāge Colony"
+    ],
+    "coordinates": {
+      "lat": 25.40451,
+      "lng": 68.3618
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098755,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-shabir-line",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Shabir Line",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40562,
+      "lng": 68.35908
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098756,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-shalimar-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Shalimar Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40465,
+      "lng": 68.34623
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098757,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-haji-usman",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Haji Usman",
+    "aliases": [
+      "Haji Usman Sumro",
+      "Hāji Usmān Sumro"
+    ],
+    "coordinates": {
+      "lat": 25.40734,
+      "lng": 68.33757
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098760,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-gulab-channa",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Gulab Channa",
+    "aliases": [
+      "Gulab Channa",
+      "Gulāb Channa"
+    ],
+    "coordinates": {
+      "lat": 25.40566,
+      "lng": 68.34793
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098761,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-gulistan-i-latif",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Gulistan-i-Latif",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40885,
+      "lng": 68.34522
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098762,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-gulistan-e-sajjad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Gulistan-e-Sajjad",
+    "aliases": [
+      "Gulistan-i-Sajjad",
+      "Gulistān-i-Sajjād"
+    ],
+    "coordinates": {
+      "lat": 25.41451,
+      "lng": 68.34466
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098764,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-bhitai-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Bhitai Town",
+    "aliases": [
+      "Bhitāi Town"
+    ],
+    "coordinates": {
+      "lat": 25.41893,
+      "lng": 68.33947
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098765,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-sanior-mir-bahar",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Sanior Mir Bahar",
+    "aliases": [
+      "Goth Qatil Kirio",
+      "Goth Qetal Kiryo",
+      "Goth Qetāl Kiryo",
+      "Goth Qātil Kirio",
+      "Qatil Kirya"
+    ],
+    "coordinates": {
+      "lat": 25.41904,
+      "lng": 68.33416
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098766,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-hur-camp",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Hur Camp",
+    "aliases": [
+      "Goth Hur Camp",
+      "Sindh Muslim Housing Society"
+    ],
+    "coordinates": {
+      "lat": 25.41977,
+      "lng": 68.36182
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098768,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-marvi-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Marvi Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.42366,
+      "lng": 68.33922
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098770,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-al-fateh-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Al-Fateh Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.42868,
+      "lng": 68.34139
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098771,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-pathan-goth",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Pathan Goth",
+    "aliases": [
+      "Goth Pathan",
+      "Goth Pathān"
+    ],
+    "coordinates": {
+      "lat": 25.43459,
+      "lng": 68.33887
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098772,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-ghumanabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Ghumanabad",
+    "aliases": [
+      "Gomanabad",
+      "Gomanābād"
+    ],
+    "coordinates": {
+      "lat": 25.41738,
+      "lng": 68.37578
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098775,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-islamia-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Islamia Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41638,
+      "lng": 68.36982
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098776,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-kalhora-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Kalhora Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41265,
+      "lng": 68.36308
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098777,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-gharibabad-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Gharibabad Colony",
+    "aliases": [
+      "Gharibabad",
+      "Gharibābād"
+    ],
+    "coordinates": {
+      "lat": 25.4087,
+      "lng": 68.36361
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098778,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-ism-ilia-co-operative-housing-society",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Ismăilia Co-operative Housing Society",
+    "aliases": [
+      "Ismailia Co-operative Housing Society",
+      "Ismailia Colony",
+      "Ismailiā Co-operative Housing Society",
+      "Ismāīlia Colony"
+    ],
+    "coordinates": {
+      "lat": 25.41139,
+      "lng": 68.37474
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098779,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-gulistan-e-dastagir",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Gulistan-e-Dastagir",
+    "aliases": [
+      "Gulistan-i-Dustagir",
+      "Gulistān-i-Dustagir"
+    ],
+    "coordinates": {
+      "lat": 25.41232,
+      "lng": 68.37865
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098780,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-lalu-lashari-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Lalu Lashari Colony",
+    "aliases": [
+      "Basti Lalu Lashari",
+      "Basti Lālu Lāshāri"
+    ],
+    "coordinates": {
+      "lat": 25.41031,
+      "lng": 68.38223
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098781,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-amil-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Amil Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40722,
+      "lng": 68.37316
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098783,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-nurani-basti",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Nurani Basti",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40191,
+      "lng": 68.3852
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098791,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-pritabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Pritabad",
+    "aliases": [
+      "Paretabad",
+      "Paretābād"
+    ],
+    "coordinates": {
+      "lat": 25.40016,
+      "lng": 68.3896
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098792,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-liaquat-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Liaquat Colony",
+    "aliases": [
+      "Liaqat Colony",
+      "Liāqat Colony"
+    ],
+    "coordinates": {
+      "lat": 25.40139,
+      "lng": 68.37318
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098793,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-firdous-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Firdous Colony",
+    "aliases": [
+      "Firdaus Colony"
+    ],
+    "coordinates": {
+      "lat": 25.40447,
+      "lng": 68.37625
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098794,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-gahusala-usmanabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Gahusala Usmanabad",
+    "aliases": [
+      "Usmanabad",
+      "Usmanābād"
+    ],
+    "coordinates": {
+      "lat": 25.39808,
+      "lng": 68.37911
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098798,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-nishtarabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Nishtarabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39793,
+      "lng": 68.39383
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098800,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-muslim-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Muslim Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39367,
+      "lng": 68.38711
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098801,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-garikhata",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Garikhata",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38853,
+      "lng": 68.37327
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098808,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-bhatti-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Bhatti Colony",
+    "aliases": [
+      "Allah Ditta Chandia",
+      "Allāh Ditta Chāndia",
+      "Goth Allah Ditta Chandia",
+      "Goth Allāh Ditta Chandia",
+      "Goth Baghal Bhatti"
+    ],
+    "coordinates": {
+      "lat": 25.39015,
+      "lng": 68.3954
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098811,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-haideri-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Haideri Town",
+    "aliases": [
+      "Hayderi Town"
+    ],
+    "coordinates": {
+      "lat": 25.38765,
+      "lng": 68.3919
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098812,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-asamabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Asamabad",
+    "aliases": [
+      "Islamabad",
+      "Islamabad Colony",
+      "Islāmabād Colony",
+      "Islāmābād"
+    ],
+    "coordinates": {
+      "lat": 25.38526,
+      "lng": 68.3815
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098813,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-mumtaz-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Mumtaz Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38199,
+      "lng": 68.36624
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098815,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-tando-yusuf",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Tando Yusuf",
+    "aliases": [
+      "Goth Tando Yousaf",
+      "Tando Yūsuf"
+    ],
+    "coordinates": {
+      "lat": 25.38233,
+      "lng": 68.39232
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098817,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-bachal-bhatti",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Bachal Bhatti",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38075,
+      "lng": 68.40095
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098818,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-lal-quarter",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Lal Quarter",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37939,
+      "lng": 68.38961
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098819,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-suny-wahab-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Suny Wahab Town",
+    "aliases": [
+      "Liaqat Ashraf Colony",
+      "Liāqat Ashraf Colony",
+      "Sakhi Wahab Town",
+      "Sakhi Wahāb Town"
+    ],
+    "coordinates": {
+      "lat": 25.37739,
+      "lng": 68.371
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098820,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-mujahid-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Mujahid Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.36466,
+      "lng": 68.37033
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098829,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-western-pakistan-tenries-hyderabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Western Pakistan Tenries Hyderabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.35641,
+      "lng": 68.39936
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098836,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-zeal-pak-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Zeal Pak Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.35403,
+      "lng": 68.3943
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098837,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-goth-ganjo-takkar",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Ganjo Takkar",
+    "aliases": [
+      "Goth Ganju Takar",
+      "Goth Gunjo Takkar"
+    ],
+    "coordinates": {
+      "lat": 25.33922,
+      "lng": 68.40192
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098841,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-talab-ka-mohalla",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Talab Ka Mohalla",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3883,
+      "lng": 68.37761
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098844,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-saiyidi-mohalla",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Saiyidi Mohalla",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38343,
+      "lng": 68.36875
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098845,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-chhoti-gitti",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Chhoti Gitti",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3903,
+      "lng": 68.3704
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098848,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-makranipara",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Makranipara",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3944,
+      "lng": 68.3786
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098854,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-pinjara-pole",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Pinjara Pole",
+    "aliases": [
+      "Pinjira Pole",
+      "Pinjrapur"
+    ],
+    "coordinates": {
+      "lat": 25.39245,
+      "lng": 68.37871
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098856,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-kali-mori",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Kali Mori",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40732,
+      "lng": 68.37561
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098868,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-ghulam-muhammad-chaudhri",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Ghulam Muhammad Chaudhri",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.4144,
+      "lng": 68.3711
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098870,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-mohalla-azad-maidan",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Mohalla Azad Maidan",
+    "aliases": [
+      "Goth Nabi Bakhsh"
+    ],
+    "coordinates": {
+      "lat": 25.41212,
+      "lng": 68.35158
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098871,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-brihani-housing-society",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Brihani Housing Society",
+    "aliases": [
+      "Goth Nek Muhammad"
+    ],
+    "coordinates": {
+      "lat": 25.41052,
+      "lng": 68.3516
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098872,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-doaba",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Doaba",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40776,
+      "lng": 68.35024
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098873,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-kumharpara",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Kumharpara",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3917,
+      "lng": 68.3772
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098878,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-guru-sanaka",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Guru Sanaka",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3842,
+      "lng": 68.3767
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098879,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-piyaru-khan-goth",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Piyaru Khan Goth",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3719,
+      "lng": 68.3689
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098885,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-abadi-kacha-qila",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Abadi Kacha Qila",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3805,
+      "lng": 68.3649
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098892,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-abadi-shah-maki-sharif",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Abadi Shah Maki Sharif",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3769,
+      "lng": 68.3623
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098894,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-mir-bundu-ghulam-husain",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Mir Bundu Ghulam Husain",
+    "aliases": [
+      "Tando Ghulam Hussain",
+      "Tando Ghulām Hussain"
+    ],
+    "coordinates": {
+      "lat": 25.35974,
+      "lng": 68.3565
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098899,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-tando-tayyab",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Tando Tayyab",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38829,
+      "lng": 68.38081
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098904,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-ras-ghat",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Ras Ghat",
+    "aliases": [
+      "Rishi Ghat",
+      "Rishi Ghāt"
+    ],
+    "coordinates": {
+      "lat": 25.39729,
+      "lng": 68.38107
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098909,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-bhatti-para",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Bhatti Para",
+    "aliases": [
+      "Goth Darya Khan",
+      "Goth Darya Khān"
+    ],
+    "coordinates": {
+      "lat": 25.38524,
+      "lng": 68.39986
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098910,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-jatia-para",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Jatia Para",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3965,
+      "lng": 68.389
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098917,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-khan-muhammad-khoso",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Khan Muhammad Khoso",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.4158,
+      "lng": 68.3806
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098926,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-abbasi-guli",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Abbasi Guli",
+    "aliases": [
+      "Goth Lal Bakhsh Sial",
+      "Goth Lāl Bakhsh Siāl"
+    ],
+    "coordinates": {
+      "lat": 25.4007,
+      "lng": 68.38104
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098927,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-nanga-line",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Nanga Line",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3631,
+      "lng": 68.3045
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098939,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-para-dinal-shah",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Para Dinal Shah",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3633,
+      "lng": 68.3103
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098940,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-sufan-ka-bangla",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Sufan Ka Bangla",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3669,
+      "lng": 68.3088
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098941,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-goth-muhammad-shoro",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Muhammad Shoro",
+    "aliases": [
+      "Goth Mantar Shoro",
+      "Goth Manthar Shoro",
+      "Goth Manthār Shoro",
+      "Goth Mantār Shoro"
+    ],
+    "coordinates": {
+      "lat": 25.39593,
+      "lng": 68.31919
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098948,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-khalidabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Khalidabad",
+    "aliases": [
+      "Hayat Khan Deshak",
+      "Hayāt Khān Deshak"
+    ],
+    "coordinates": {
+      "lat": 25.39051,
+      "lng": 68.33285
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098951,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-qasimabad-phase-one",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Qasimabad Phase One",
+    "aliases": [
+      "Jumma Kuma War"
+    ],
+    "coordinates": {
+      "lat": 25.39317,
+      "lng": 68.33366
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098952,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-jumma-machhi",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Jumma Machhi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38942,
+      "lng": 68.33756
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098953,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-bakhsh-korai",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Bakhsh Korai",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3892,
+      "lng": 68.34051
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098954,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-haji-yusuf-sumro",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Haji Yusuf Sumro",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.4031,
+      "lng": 68.3359
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098955,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-bhatti",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Bhatti",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.4019,
+      "lng": 68.3431
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098956,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-h-d-a-bungalow",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "H D A Bungalow",
+    "aliases": [
+      "Hussain Sumro"
+    ],
+    "coordinates": {
+      "lat": 25.4048,
+      "lng": 68.33664
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098957,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-tyeb-sumro",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Tyeb Sumro",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.4059,
+      "lng": 68.3415
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098959,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-bachal-chandia",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Bachal Chandia",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.4113,
+      "lng": 68.3416
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098961,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-muhammad-channa",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Muhammad Channa",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.4168,
+      "lng": 68.3402
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098962,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-irshad-bughio",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Irshad Bughio",
+    "aliases": [
+      "Goth Manik",
+      "Goth Mānik"
+    ],
+    "coordinates": {
+      "lat": 25.35688,
+      "lng": 68.34254
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098965,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-goth-ismail-buzga",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Ismail Buzga",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3562,
+      "lng": 68.3408
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098966,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-tando-ghulam-hussain",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Tando Ghulam Hussain",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3525,
+      "lng": 68.3491
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098967,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-goth-mir",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Mir",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3662,
+      "lng": 68.3377
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098969,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-boda-shah",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Boda Shah",
+    "aliases": [
+      "Balach Ka Goth",
+      "Goth Budal Shah Jilani",
+      "Goth Budal Shāh Jilāni",
+      "Goth Khorkha Baloch"
+    ],
+    "coordinates": {
+      "lat": 25.36076,
+      "lng": 68.32023
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098973,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-new-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "New Town",
+    "aliases": [
+      "Model Town"
+    ],
+    "coordinates": {
+      "lat": 25.41267,
+      "lng": 68.3406
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098977,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-darga",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Darga",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3554,
+      "lng": 68.3379
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7098983,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-goth-adho-khan-jatoi",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Adho Khan Jatoi",
+    "aliases": [
+      "Adha Jator"
+    ],
+    "coordinates": {
+      "lat": 25.41364,
+      "lng": 68.38477
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922749,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-bhains-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Bhains Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.42534,
+      "lng": 68.38998
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922774,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-punnu-aliabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Punnu Aliabad",
+    "aliases": [
+      "Ulma Colony",
+      "Ulmā Colony"
+    ],
+    "coordinates": {
+      "lat": 25.42966,
+      "lng": 68.38343
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922775,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-malika-nagar",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Malika Nagar",
+    "aliases": [
+      "Hala Naka",
+      "Hāla Nāka"
+    ],
+    "coordinates": {
+      "lat": 25.42105,
+      "lng": 68.3825
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922777,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-sachalabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Sachalabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.42811,
+      "lng": 68.34474
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922785,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-nasim-delux",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Nasim Delux",
+    "aliases": [
+      "Nasim Bungalows"
+    ],
+    "coordinates": {
+      "lat": 25.3995,
+      "lng": 68.34406
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922790,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-sind-regiment-recording",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Sind Regiment Recording",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39916,
+      "lng": 68.3528
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922792,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-bhai-khan-chari",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Bhai Khan Chari",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3984,
+      "lng": 68.36449
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922817,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-zarai-mandi",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Zarai Mandi",
+    "aliases": [
+      "New Sabzi Mandi"
+    ],
+    "coordinates": {
+      "lat": 25.41582,
+      "lng": 68.38923
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922818,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-sabzi-mandi",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Sabzi Mandi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39111,
+      "lng": 68.36719
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922873,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-railway-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Railway Colony",
+    "aliases": [
+      "Railway Quarters"
+    ],
+    "coordinates": {
+      "lat": 25.37111,
+      "lng": 68.2998
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922883,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-qadam-shah-mola-ali",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Qadam Shah Mola Ali",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38452,
+      "lng": 68.36964
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922886,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-sind-regiment",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Sind Regiment",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39584,
+      "lng": 68.35679
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922891,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-jaffer",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Jaffer",
+    "aliases": [
+      "Dargah Asghar Shah Jilani",
+      "Dargāh Asghar Shāh Jilāni"
+    ],
+    "coordinates": {
+      "lat": 25.38561,
+      "lng": 68.31698
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922929,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-sahrish-nagar",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Sahrish Nagar",
+    "aliases": [
+      "Shahid Sahrish Nagar",
+      "Shāhid Sahrish Nagar"
+    ],
+    "coordinates": {
+      "lat": 25.38256,
+      "lng": 68.31687
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922930,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-dargah-baqar-shah-bukhar",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Dargah Baqar Shah Bukhar",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37752,
+      "lng": 68.3157
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922931,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-husainabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Husainabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37274,
+      "lng": 68.32291
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922951,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-edhi-home",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Edhi Home",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.36801,
+      "lng": 68.3415
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922957,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-dar-ul-aman",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Dar-ul-Aman",
+    "aliases": [
+      "Dar-Ul-Ama",
+      "Dar-Ul-Amā"
+    ],
+    "coordinates": {
+      "lat": 25.36457,
+      "lng": 68.34175
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922958,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-government-officiers-resident-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Government Officiers’ Resident Colony",
+    "aliases": [
+      "Government Officiers' Resident Colony"
+    ],
+    "coordinates": {
+      "lat": 25.37865,
+      "lng": 68.34488
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922961,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-baloch-para",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Baloch Para",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37527,
+      "lng": 68.36132
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922963,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-sangam-garden",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Sangam Garden",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.36156,
+      "lng": 68.34572
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922966,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-shahid-allah-bakhsh-jaskani-chowk",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Shahid Allah Bakhsh Jaskani Chowk",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.36279,
+      "lng": 68.36367
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922969,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-madarsa-shahra-ul-ullum",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Madarsa Shahra-ul-Ullum",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.36474,
+      "lng": 68.36762
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7922980,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-gulshan-khair-muhammad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Gulshan Khair Muhammad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37904,
+      "lng": 68.3942
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7923010,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-pepsi-cola-factory",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Pepsi Cola Factory",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37685,
+      "lng": 68.39304
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7923015,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-wapda-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Wapda Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.35717,
+      "lng": 68.39441
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7923018,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-labour-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Labour Colony",
+    "aliases": [
+      "Welfare Labour Colony"
+    ],
+    "coordinates": {
+      "lat": 25.34934,
+      "lng": 68.38265
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7923019,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-murshidabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Murshidabad",
+    "aliases": [
+      "Frontier Colony"
+    ],
+    "coordinates": {
+      "lat": 25.35388,
+      "lng": 68.39145
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7923020,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-gharibabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Gharibabad",
+    "aliases": [
+      "Piara Goth",
+      "Piāra Goth"
+    ],
+    "coordinates": {
+      "lat": 25.35668,
+      "lng": 68.4023
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7923021,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-christian-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Christian Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.35713,
+      "lng": 68.34946
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7923038,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-goth-saiyid-jadal-shah",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Saiyid Jadal Shah",
+    "aliases": [
+      "Goth Jam Shoro",
+      "Goth Jām Shoro"
+    ],
+    "coordinates": {
+      "lat": 25.43696,
+      "lng": 68.33023
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8741154,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-goth-kiran-shoro",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Kiran Shoro",
+    "aliases": [
+      "Goth Karan Khan Shoro",
+      "Goth Karan Khān Shoro"
+    ],
+    "coordinates": {
+      "lat": 25.43601,
+      "lng": 68.33174
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750888,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-goth-long-khaskheli",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Long Khaskheli",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.44173,
+      "lng": 68.33321
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750889,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-goth-yusuf-patari",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Yusuf Patari",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.44199,
+      "lng": 68.34432
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750890,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-shafi-muhammad-kirio",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Shafi Muhammad Kirio",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41572,
+      "lng": 68.32947
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750940,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-budhu-khan-palari",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Budhu Khan Palari",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41651,
+      "lng": 68.33719
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750942,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-samanabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Samanabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.42135,
+      "lng": 68.33941
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750944,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-bhitai-nagar",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Bhitai Nagar",
+    "aliases": [
+      "Bhittai Nagar",
+      "Bhittāi Nagar"
+    ],
+    "coordinates": {
+      "lat": 25.42393,
+      "lng": 68.34115
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750945,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-gufshah-i-sajjad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Gufshah-i-Sajjad",
+    "aliases": [
+      "Galshan-e-Sajjad Colony",
+      "Galshan-e-Sajjād Colony"
+    ],
+    "coordinates": {
+      "lat": 25.4158,
+      "lng": 68.34369
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750946,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-rais-rahim-dad-khan",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Rais Rahim Dad Khan",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.42573,
+      "lng": 68.34727
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750947,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-baldia-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Baldia Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41653,
+      "lng": 68.36304
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750950,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-agha-khan-jamat-khana",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Agha Khan Jamat Khana",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41506,
+      "lng": 68.36799
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750951,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-gulistan-e-fatima-housing-society",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Gulistan-e-Fatima Housing Society",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.4162,
+      "lng": 68.36629
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750953,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-ubaidullah-chang",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Ubaidullah Chang",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.42121,
+      "lng": 68.3708
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750956,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-aliabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Aliabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.42595,
+      "lng": 68.38509
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750962,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-ghumanabad-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Ghumanabad Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.4158,
+      "lng": 68.37662
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750967,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-khan-muhammad-mughal",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Khan Muhammad Mughal",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.42659,
+      "lng": 68.40225
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750968,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-goth-lakhsun-koli",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Lakhsun Koli",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.4184,
+      "lng": 68.39707
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750969,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-fateh-ali-chandio",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Fateh Ali Chandio",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41691,
+      "lng": 68.39902
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8750970,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-laung-chand",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Laung Chand",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40265,
+      "lng": 68.39696
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751219,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-shah-latif-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Shah Latif Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40992,
+      "lng": 68.3847
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751223,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-mustufa-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Mustufa Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40718,
+      "lng": 68.38857
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751224,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-ahsanabad-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Ahsanabad Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.4048,
+      "lng": 68.38441
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751232,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-nizam-khan-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Nizam Khan Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40433,
+      "lng": 68.39239
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751258,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-haider-shah-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Haider Shah Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40165,
+      "lng": 68.39428
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751269,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-illahi-phase-one",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Illahi Phase One",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40236,
+      "lng": 68.38852
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751270,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-mir-nabi-bakhsh-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Mir Nabi Bakhsh Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40139,
+      "lng": 68.38728
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751276,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-chishtia-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Chishtia Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39825,
+      "lng": 68.38702
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751279,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-karimabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Karimabad",
+    "aliases": [
+      "Karimabad Housing Society",
+      "Karimābād Housing Society"
+    ],
+    "coordinates": {
+      "lat": 25.41333,
+      "lng": 68.37412
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751619,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-aminabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Aminabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41011,
+      "lng": 68.37635
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751627,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-sultan-shah-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Sultan Shah Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41021,
+      "lng": 68.37831
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751628,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-riaz-shah-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Riaz Shah Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40764,
+      "lng": 68.37986
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751629,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-silver-jubli-housing-society",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Silver Jubli Housing Society",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41265,
+      "lng": 68.36537
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751635,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-public-health-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Public Health Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41088,
+      "lng": 68.36223
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751637,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-journalist-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Journalist Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41065,
+      "lng": 68.36499
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751638,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-bhurgari-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Bhurgari Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.40696,
+      "lng": 68.36559
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751639,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-kheti-muhala",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Kheti Muhala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.4013,
+      "lng": 68.36339
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751659,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-shia-imami-ismaili-jamat-khana",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Shia Imami Ismaili Jamat Khana",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39923,
+      "lng": 68.37274
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751667,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-kumhar-mohallah",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Kumhar Mohallah",
+    "aliases": [
+      "Kumhar Paro",
+      "Kumhār Pāro"
+    ],
+    "coordinates": {
+      "lat": 25.41377,
+      "lng": 68.35847
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751675,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-shami-lines-quarters",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Shami Lines Quarters",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.4109,
+      "lng": 68.3597
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751677,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-left-bank-barrage-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Left Bank Barrage Colony",
+    "aliases": [
+      "L B Barrage Colony"
+    ],
+    "coordinates": {
+      "lat": 25.40797,
+      "lng": 68.3607
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751679,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-kainat-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Kainat Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41086,
+      "lng": 68.33321
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751685,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-shaikhan-jo-goth",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Shaikhan jo Goth",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.41162,
+      "lng": 68.31845
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751687,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-data-nagar",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Data Nagar",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39756,
+      "lng": 68.33292
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751701,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-government-employee-housing-society",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Government Employee Housing Society",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39766,
+      "lng": 68.33679
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751707,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-ferozewala-phase-two",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Ferozewala Phase Two",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39615,
+      "lng": 68.33836
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751709,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-gulshan-e-habib",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Gulshan-e-Habib",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39473,
+      "lng": 68.33902
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751711,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-muslim-housing-society-phase-one",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Muslim Housing Society Phase One",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39071,
+      "lng": 68.33952
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751712,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-madina-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Madina Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39163,
+      "lng": 68.34102
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751714,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-idgah",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Idgah",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39425,
+      "lng": 68.36255
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751719,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-qasim-rangers-sixty-two-wing",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Qasim Rangers Sixty-Two Wing",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39746,
+      "lng": 68.37383
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751721,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-madrasatul-bonat",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Madrasatul Bonat",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39864,
+      "lng": 68.37484
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751722,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-bhains-mandi",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Bhains Mandi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39762,
+      "lng": 68.3772
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751723,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-churi-para-ilyasabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Churi Para Ilyasabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39543,
+      "lng": 68.37532
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751726,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-bakra-mandi",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Bakra Mandi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39571,
+      "lng": 68.38178
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751733,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-data-jumman-shah",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Data Jumman Shah",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3925,
+      "lng": 68.38058
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751734,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-saiyid-haji-shah-bukhari",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Saiyid Haji Shah Bukhari",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39209,
+      "lng": 68.38504
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751737,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-jurial-shah-bukhari",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Jurial Shah Bukhari",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39028,
+      "lng": 68.38393
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751738,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-sardar-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Sardar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39664,
+      "lng": 68.38571
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751741,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-baba-farid",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Baba Farid",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39505,
+      "lng": 68.3863
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751742,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-dada-pir-shah-gul",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Dada Pir Shah Gul",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39655,
+      "lng": 68.38744
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751744,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-ismat-bano-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Ismat Bano Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39134,
+      "lng": 68.38886
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8751746,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-sonar-galli",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Sonar Galli",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39662,
+      "lng": 68.3912
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8752366,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-rashan-ali-shah",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Rashan Ali Shah",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39429,
+      "lng": 68.38908
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8752617,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-al-fazal-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Al Fazal Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39284,
+      "lng": 68.39044
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8752618,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-machehar-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Machehar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39372,
+      "lng": 68.39224
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8752620,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-lal-bakhsh-solangi",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Lal Bakhsh Solangi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39126,
+      "lng": 68.40048
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8752704,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-ghafur-shah-bukhari",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Ghafur Shah Bukhari",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39412,
+      "lng": 68.40212
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8752709,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-millatabad",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Millatabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38721,
+      "lng": 68.38206
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8755564,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-peshawari-muhalla",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Peshawari Muhalla",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38981,
+      "lng": 68.37414
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8755567,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-khokhar-mahalla",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Khokhar Mahalla",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38796,
+      "lng": 68.36796
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8755569,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-shah-bukhari",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Shah Bukhari",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38764,
+      "lng": 68.37443
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8755570,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-american-quarters",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "American Quarters",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37747,
+      "lng": 68.38524
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8755811,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-al-aziz-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Al-Aziz Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.376,
+      "lng": 68.37712
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8755813,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-defence-society",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Defence Society",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38556,
+      "lng": 68.3588
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8755814,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-bangali-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Bangali Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37705,
+      "lng": 68.34644
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8755817,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-muslim-housing-society",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Muslim Housing Society",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38768,
+      "lng": 68.33668
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8755818,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-technical-college-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Technical College Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38409,
+      "lng": 68.33285
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8755821,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-masrur-jatoi",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Masrur Jatoi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.38262,
+      "lng": 68.32385
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8755829,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-latifabad-number-three",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Latifabad Number Three",
+    "aliases": [
+      "Latifabad Unit Number Three",
+      "Latifābād Unit Number Three",
+      "Unit Number Three"
+    ],
+    "coordinates": {
+      "lat": 25.37518,
+      "lng": 68.33685
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756060,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-peoples-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Peoples Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.36755,
+      "lng": 68.33454
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756061,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-latifabad-number-four",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Latifabad Number Four",
+    "aliases": [
+      "Latifabad Unit Number Four",
+      "Latifābād Unit Number Four",
+      "Unit Number Four"
+    ],
+    "coordinates": {
+      "lat": 25.36728,
+      "lng": 68.33619
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756062,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-muhammadi-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Muhammadi Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.36608,
+      "lng": 68.34299
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756065,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-alam-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Alam Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.36833,
+      "lng": 68.35492
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756079,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-fazal-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Fazal Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.36386,
+      "lng": 68.35374
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756081,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-mir-fazal-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Mir Fazal Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.36177,
+      "lng": 68.35389
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756082,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-al-wahid-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Al Wahid Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37483,
+      "lng": 68.37908
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756085,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-unar-mehrani-goth",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Unar Mehrani Goth",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37102,
+      "lng": 68.38351
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756086,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-goth-qaim-ghumro",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Qaim Ghumro",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3751,
+      "lng": 68.40411
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756087,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-pocket-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Pocket Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.35643,
+      "lng": 68.39243
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756088,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-khatak-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Khatak Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.34567,
+      "lng": 68.39388
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756089,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-baghwan-shoro",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Baghwan Shoro",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.35665,
+      "lng": 68.40455
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756090,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-kaf-kot-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Kaf Kot Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.35392,
+      "lng": 68.40549
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756091,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-jamia-arabia-muftahul-ulum",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Jamia Arabia Muftahul-Ulum",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.35963,
+      "lng": 68.3788
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756092,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-goth-muhammad-bachal-laghari",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Muhammad Bachal Laghari",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.34848,
+      "lng": 68.34237
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756099,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-goth-fazal-laghari",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Goth Fazal Laghari",
+    "aliases": [
+      "Goth Fazal Muhammad Laghari",
+      "Goth Fazal Muhammad Laghāri"
+    ],
+    "coordinates": {
+      "lat": 25.34842,
+      "lng": 68.35974
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756100,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-kohsar-housing-scheme",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Kohsar Housing Scheme",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.3395,
+      "lng": 68.36154
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8756977,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-barkat-bhai-town",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Barkat Bhai Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37324,
+      "lng": 68.36811
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8990175,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-sarfaraz-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Sarfaraz Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39961,
+      "lng": 68.36526
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8991381,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-wedah-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Wedah Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37825,
+      "lng": 68.32775
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 8991725,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
+  },
+  {
+    "id": "hyderabad-memon-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Memon Colony",
+    "aliases": [
+      "Daplai Memon Co- Operative Housing Society"
+    ],
+    "coordinates": {
+      "lat": 25.42201,
+      "lng": 68.35711
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11353134,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-cantonment",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Cantonment",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39317,
+      "lng": 68.35367
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11371680,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-abdullah-chang",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Abdullah Chang",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.42102,
+      "lng": 68.37912
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11371685,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-telegraph-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Telegraph Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.36674,
+      "lng": 68.28284
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11371736,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-gharib-nawaz-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Gharib Nawaz Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.37559,
+      "lng": 68.37213
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11403624,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-pakistan-chowk",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Pakistan Chowk",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.39351,
+      "lng": 68.38246
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 13416940,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71500"
+  },
+  {
+    "id": "hyderabad-hashmi-colony",
+    "cityId": "hyderabad",
+    "provinceId": "sindh",
+    "name": "Hashmi Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.35743,
+      "lng": 68.39739
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 13416982,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "71800"
   }
 ]

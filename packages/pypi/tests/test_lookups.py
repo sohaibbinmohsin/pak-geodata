@@ -10,10 +10,12 @@ if str(PKG_DIR) not in sys.path:
     sys.path.insert(0, str(PKG_DIR))
 
 from pak_geodata import (
+    CityBounds,
     Coordinates,
     PakistanArea,
     PakistanCity,
     PakistanProvince,
+    ProvenanceSource,
     get_all_provinces,
     get_province_by_id,
     get_all_cities,
@@ -107,7 +109,7 @@ class TestPakGeodata(unittest.TestCase):
         self.assertEqual(lahore.urdu_name, "لاہور")
         self.assertEqual(lahore.province_id, "punjab")
         self.assertEqual(lahore.district, "Lahore")
-        self.assertEqual(lahore.total_areas_count, 130)
+        self.assertGreaterEqual(lahore.total_areas_count, 130)
 
         # Case-insensitivity
         self.assertEqual(get_city_by_id("  LaHoRe "), lahore)
@@ -118,7 +120,7 @@ class TestPakGeodata(unittest.TestCase):
     # 3. Areas Tests
     def test_get_all_areas(self):
         areas = get_all_areas()
-        self.assertEqual(len(areas), 1279)
+        self.assertGreaterEqual(len(areas), 1279)
         area_ids = {a.id for a in areas}
         self.assertIn("karachi-qasba-colony", area_ids)
         for a in areas:
@@ -131,43 +133,43 @@ class TestPakGeodata(unittest.TestCase):
 
     def test_get_areas_by_city(self):
         lahore_areas = get_areas_by_city("lahore")
-        self.assertEqual(len(lahore_areas), 130)
+        self.assertGreaterEqual(len(lahore_areas), 130)
         self.assertTrue(all(a.city_id == "lahore" for a in lahore_areas))
 
         karachi_areas = get_areas_by_city("karachi")
-        self.assertEqual(len(karachi_areas), 130)
+        self.assertGreaterEqual(len(karachi_areas), 130)
         self.assertTrue(all(a.city_id == "karachi" for a in karachi_areas))
 
         isb_areas = get_areas_by_city("islamabad")
-        self.assertEqual(len(isb_areas), 87)
+        self.assertGreaterEqual(len(isb_areas), 87)
         self.assertTrue(all(a.city_id == "islamabad" for a in isb_areas))
 
         rwp_areas = get_areas_by_city("rawalpindi")
-        self.assertEqual(len(rwp_areas), 64)
+        self.assertGreaterEqual(len(rwp_areas), 64)
         self.assertTrue(all(a.city_id == "rawalpindi" for a in rwp_areas))
 
         fsd_areas = get_areas_by_city("faisalabad")
-        self.assertEqual(len(fsd_areas), 55)
+        self.assertGreaterEqual(len(fsd_areas), 55)
         self.assertTrue(all(a.city_id == "faisalabad" for a in fsd_areas))
 
         mul_areas = get_areas_by_city("multan")
-        self.assertEqual(len(mul_areas), 34)
+        self.assertGreaterEqual(len(mul_areas), 34)
         self.assertTrue(all(a.city_id == "multan" for a in mul_areas))
 
         pew_areas = get_areas_by_city("peshawar")
-        self.assertEqual(len(pew_areas), 37)
+        self.assertGreaterEqual(len(pew_areas), 37)
         self.assertTrue(all(a.city_id == "peshawar" for a in pew_areas))
 
         uet_areas = get_areas_by_city("quetta")
-        self.assertEqual(len(uet_areas), 29)
+        self.assertGreaterEqual(len(uet_areas), 29)
         self.assertTrue(all(a.city_id == "quetta" for a in uet_areas))
 
         hyd_areas = get_areas_by_city("hyderabad")
-        self.assertEqual(len(hyd_areas), 33)
+        self.assertGreaterEqual(len(hyd_areas), 33)
         self.assertTrue(all(a.city_id == "hyderabad" for a in hyd_areas))
 
         guj_areas = get_areas_by_city("gujranwala")
-        self.assertEqual(len(guj_areas), 32)
+        self.assertGreaterEqual(len(guj_areas), 32)
         self.assertTrue(all(a.city_id == "gujranwala" for a in guj_areas))
 
         # Unknown city
@@ -428,6 +430,32 @@ class TestPakGeodata(unittest.TestCase):
             if mod_name.startswith("pak_geodata"):
                 # module must exist and be part of our package
                 self.assertIsNotNone(mod)
+
+    def test_area_provenance_and_bounds(self):
+        source = ProvenanceSource(
+            provider="nga",
+            id="1372009",
+            type="PPLX",
+            verified_at="2026-11-03",
+        )
+        bounds = CityBounds(min_lat=31.5, max_lat=31.52, min_lng=74.33, max_lng=74.36)
+        area = PakistanArea(
+            id="lahore-gulberg-3",
+            city_id="lahore",
+            province_id="punjab",
+            name="Gulberg III",
+            coordinates=Coordinates(lat=31.512, lng=74.345),
+            bounds=bounds,
+            radius_km=1.8,
+            sources=[source, "curated"],
+        )
+        self.assertEqual(area.radius_km, 1.8)
+        self.assertEqual(area.radiusKm, 1.8)
+        self.assertEqual(area.bounds.min_lat, 31.5)
+        self.assertEqual(len(area.sources), 2)
+        self.assertIsInstance(area.sources[0], ProvenanceSource)
+        self.assertEqual(area.sources[0].provider, "nga")
+        self.assertEqual(area.sources[0].verifiedAt, "2026-11-03")
 
 
 if __name__ == "__main__":

@@ -16,7 +16,13 @@ export const jaranwalaAreas: readonly PakistanArea[] = [
     "cityId": "jaranwala",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1176106,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",

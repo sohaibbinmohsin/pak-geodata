@@ -170,5 +170,76 @@
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "wah-cantt-malikabad",
+    "cityId": "wah-cantt",
+    "provinceId": "punjab",
+    "name": "Malikabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.74032,
+      "lng": 72.77856
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7388388,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47040"
+  },
+  {
+    "id": "wah-cantt-wah-cantt",
+    "cityId": "wah-cantt",
+    "provinceId": "punjab",
+    "name": "Wah Cantt",
+    "aliases": [
+      "Uakh Kantt",
+      "Wah",
+      "Wah Cantonment",
+      "Уах Кантт"
+    ],
+    "coordinates": {
+      "lat": 33.77094,
+      "lng": 72.75116
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11785389,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47040"
+  },
+  {
+    "id": "wah-cantt-basti-hussainabad",
+    "cityId": "wah-cantt",
+    "provinceId": "punjab",
+    "name": "Basti Hussainabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 33.73724,
+      "lng": 72.78933
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11785972,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "47040"
   }
 ]

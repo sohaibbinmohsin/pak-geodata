@@ -21,7 +21,13 @@ export const chiniotAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1181096,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -44,7 +50,13 @@ export const chiniotAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1181096,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -179,5 +191,93 @@ export const chiniotAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "chiniot-dawud-nasir-colony",
+    "cityId": "chiniot",
+    "provinceId": "punjab",
+    "name": "Dawud Nasir Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.75047,
+      "lng": 72.92483
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11488611,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "35460"
+  },
+  {
+    "id": "chiniot-darulaman-colony",
+    "cityId": "chiniot",
+    "provinceId": "punjab",
+    "name": "Darulaman Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.75529,
+      "lng": 72.93178
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11488614,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "35460"
+  },
+  {
+    "id": "chiniot-tibba-kamarigran",
+    "cityId": "chiniot",
+    "provinceId": "punjab",
+    "name": "Tibba Kamarigran",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.71811,
+      "lng": 72.96609
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11633848,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "35400"
+  },
+  {
+    "id": "chiniot-mahalla-tarkharia",
+    "cityId": "chiniot",
+    "provinceId": "punjab",
+    "name": "Mahalla Tarkharia",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.71331,
+      "lng": 72.96633
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11633849,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "35400"
   }
 ];

@@ -179,5 +179,47 @@ export const jhangAreas: readonly PakistanArea[] = [
       "survey",
       "curated"
     ]
+  },
+  {
+    "id": "jhang-satellite-town-7329639",
+    "cityId": "jhang",
+    "provinceId": "punjab",
+    "name": "Satellite Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.26433,
+      "lng": 72.35375
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7329639,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "jhang-water-and-power-development-authority-colony",
+    "cityId": "jhang",
+    "provinceId": "punjab",
+    "name": "Water and Power Development Authority Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 31.2916,
+      "lng": 72.36763
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11464266,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ];

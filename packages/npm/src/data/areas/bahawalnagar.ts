@@ -16,7 +16,13 @@ export const bahawalnagarAreas: readonly PakistanArea[] = [
     "cityId": "bahawalnagar",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1183883,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",
@@ -169,5 +175,26 @@ export const bahawalnagarAreas: readonly PakistanArea[] = [
     "provinceId": "punjab",
     "urduName": "غلہ منڈی",
     "type": "commercial"
+  },
+  {
+    "id": "bahawalnagar-bihari-colony",
+    "cityId": "bahawalnagar",
+    "provinceId": "punjab",
+    "name": "Bihari Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 29.97753,
+      "lng": 73.2584
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11972101,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ];

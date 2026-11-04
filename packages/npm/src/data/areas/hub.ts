@@ -20,7 +20,13 @@ export const hubAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 12524485,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {

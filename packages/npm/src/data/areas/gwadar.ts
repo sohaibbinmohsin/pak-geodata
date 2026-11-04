@@ -43,7 +43,13 @@ export const gwadarAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1177446,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -215,6 +221,27 @@ export const gwadarAreas: readonly PakistanArea[] = [
     "sources": [
       "survey",
       "curated"
+    ]
+  },
+  {
+    "id": "gwadar-tahsil",
+    "cityId": "gwadar",
+    "provinceId": "balochistan",
+    "name": "Tahsil",
+    "aliases": [],
+    "coordinates": {
+      "lat": 25.11889,
+      "lng": 62.32722
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1337313,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   }
 ];

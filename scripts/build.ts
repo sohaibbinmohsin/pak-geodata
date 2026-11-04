@@ -93,8 +93,20 @@ async function main() {
   if (existsSync(rootLicense)) {
     cpSync(rootLicense, resolve(rootDir, 'packages/npm/LICENSE'));
     cpSync(rootLicense, resolve(rootDir, 'packages/pypi/LICENSE'));
-    console.log('✔ LICENSE synchronized to npm and pypi packages');
   }
+
+  const rootLicenseData = resolve(rootDir, 'LICENSE-DATA');
+  if (existsSync(rootLicenseData)) {
+    cpSync(rootLicenseData, resolve(rootDir, 'packages/npm/LICENSE-DATA'));
+    cpSync(rootLicenseData, resolve(rootDir, 'packages/pypi/LICENSE-DATA'));
+  }
+
+  const rootAttribution = resolve(rootDir, 'ATTRIBUTION.md');
+  if (existsSync(rootAttribution)) {
+    cpSync(rootAttribution, resolve(rootDir, 'packages/npm/ATTRIBUTION.md'));
+    cpSync(rootAttribution, resolve(rootDir, 'packages/pypi/ATTRIBUTION.md'));
+  }
+  console.log('✔ LICENSE, LICENSE-DATA, and ATTRIBUTION.md synchronized to packages');
 
   console.log('\n=== Step 3: Generating modular TypeScript datasets for packages/npm ===');
 

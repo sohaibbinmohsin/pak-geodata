@@ -20,7 +20,13 @@ export const mingoraAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1166475,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -126,7 +132,13 @@ export const mingoraAreas: readonly PakistanArea[] = [
     "verified": true,
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1481851,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   },
   {
@@ -214,6 +226,417 @@ export const mingoraAreas: readonly PakistanArea[] = [
     "sources": [
       "survey",
       "curated"
+    ]
+  },
+  {
+    "id": "mingora-band",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Band",
+    "aliases": [
+      "Banda"
+    ],
+    "coordinates": {
+      "lat": 34.77744,
+      "lng": 72.35613
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1183555,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-parn",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Parn",
+    "aliases": [
+      "Panr",
+      "Pānr"
+    ],
+    "coordinates": {
+      "lat": 34.763,
+      "lng": 72.37699
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1384688,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-malukabad",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Malukabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.77789,
+      "lng": 72.36843
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1481846,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-aman-kot",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Aman Kot",
+    "aliases": [
+      "Amankot",
+      "Amānkot"
+    ],
+    "coordinates": {
+      "lat": 34.76369,
+      "lng": 72.35023
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1481848,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-shoggai",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Shoggai",
+    "aliases": [
+      "Shaggai"
+    ],
+    "coordinates": {
+      "lat": 34.73998,
+      "lng": 72.34453
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7033471,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-chil-shaggai",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Chil Shaggai",
+    "aliases": [
+      "Chil Shoggai"
+    ],
+    "coordinates": {
+      "lat": 34.74609,
+      "lng": 72.34463
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7033575,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-khuna-chum",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Khuna Chum",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.7435,
+      "lng": 72.3493
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7033577,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-barkly",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Barkly",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.741,
+      "lng": 72.3534
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7033578,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-aqba",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Aqba",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.7413,
+      "lng": 72.3581
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7033579,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-mohallah-lund-i-kas",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Mohallah Lund-i-Kas",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.7686,
+      "lng": 72.3644
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7033597,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-shahdra",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Shahdra",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.7856,
+      "lng": 72.366
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7033609,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-mohallah-rangmala",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Mohallah Rangmala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.7759,
+      "lng": 72.368
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7033612,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-gumbad-maria",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Gumbad Maria",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.7743,
+      "lng": 72.3718
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7033613,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-yousafabad",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Yousafabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.7733,
+      "lng": 72.369
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7033614,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-mohallah-sharifabad",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Mohallah Sharifabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.7694,
+      "lng": 72.3696
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7033616,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-khawajaabad",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Khawajaabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.7664,
+      "lng": 72.3758
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7033621,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-akbarabad",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Akbarabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.77145,
+      "lng": 72.37605
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7033622,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-bantar",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Bantar",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.77791,
+      "lng": 72.34856
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11623917,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "mingora-saidabad",
+    "cityId": "mingora",
+    "provinceId": "kpk",
+    "name": "Saidabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 34.77918,
+      "lng": 72.37409
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11631442,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
     ]
   }
 ];

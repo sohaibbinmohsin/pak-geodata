@@ -1,0 +1,26 @@
+Open Data License for pak-geodata Datasets
+
+The geographic datasets included in this repository (all files under data/,
+packages/npm/src/data/, and packages/pypi/pak_geodata/data/) are open data
+compiled from multiple public and open sources.
+
+They are made available under the following dual-licensing terms:
+
+1. Open Database License 1.0 (ODbL)
+   For data derived from OpenStreetMap:
+   https://opendatacommons.org/licenses/odbl/1-0/
+   © OpenStreetMap contributors
+
+2. Creative Commons Attribution 4.0 International (CC BY 4.0)
+   For toponymic gazetteer and settlement records derived from NGA / GeoNames
+   and UN OCHA Common Operational Datasets:
+   https://creativecommons.org/licenses/by/4.0/
+
+PRODUCED WORK EXEMPTION (ODbL Section 4.3):
+Using these datasets to power address autocompletion, checkout forms, search
+indexes, map displays, or logistics dispatch in a proprietary, commercial,
+or open-source application constitutes a "Produced Work".
+
+Creating a Produced Work DOES NOT require you to open-source your application,
+backend source code, or business logic. You only need to provide standard
+attribution acknowledging pak-geodata and its upstream contributors.

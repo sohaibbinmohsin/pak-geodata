@@ -16,7 +16,13 @@ export const khanewalAreas: readonly PakistanArea[] = [
     "cityId": "khanewal",
     "sources": [
       "survey",
-      "curated"
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1174220,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
     ],
     "verified": true,
     "provinceId": "punjab",
@@ -173,5 +179,89 @@ export const khanewalAreas: readonly PakistanArea[] = [
     "provinceId": "punjab",
     "urduName": "گلشن ظہور",
     "type": "neighborhood"
+  },
+  {
+    "id": "khanewal-kot-birbal",
+    "cityId": "khanewal",
+    "provinceId": "punjab",
+    "name": "Kot Birbal",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.29013,
+      "lng": 71.94
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1410320,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "khanewal-awan-chauk",
+    "cityId": "khanewal",
+    "provinceId": "punjab",
+    "name": "Awan Chauk",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.28459,
+      "lng": 71.92629
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11369623,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "khanewal-dilbar-chauk",
+    "cityId": "khanewal",
+    "provinceId": "punjab",
+    "name": "Dilbar Chauk",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.28376,
+      "lng": 71.91588
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11369624,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "khanewal-madina-colony",
+    "cityId": "khanewal",
+    "provinceId": "punjab",
+    "name": "Madina Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.30027,
+      "lng": 71.94095
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11369626,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
   }
 ];

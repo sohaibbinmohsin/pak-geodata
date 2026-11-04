@@ -575,4 +575,41 @@ test('overpass: fetchOverpassCandidates retries with backoff delay on network ex
   assert.equal(candidates[0].name, 'Mall Road');
 });
 
+test('schema: AreaSchema accepts bounds, radiusKm, and structured provenance sources', async () => {
+  const { AreaSchema } = await import('../pipeline/validators/schema.js');
+
+  const validArea = {
+    id: 'lahore-dha-phase-5',
+    cityId: 'lahore',
+    provinceId: 'punjab',
+    name: 'DHA Phase 5',
+    coordinates: { lat: 31.4705, lng: 74.4101 },
+    verified: true,
+    radiusKm: 2.5,
+    bounds: {
+      minLat: 31.45,
+      maxLat: 31.49,
+      minLng: 74.39,
+      maxLng: 74.43
+    },
+    sources: [
+      'osm-manual-check',
+      {
+        provider: 'nga_geonames',
+        id: 1168581,
+        featureCode: 'PPLX',
+        license: 'CC-BY-4.0'
+      }
+    ]
+  };
+
+  const parsed = AreaSchema.parse(validArea);
+  assert.equal(parsed.radiusKm, 2.5);
+  assert.equal(parsed.bounds?.minLat, 31.45);
+  assert.equal(parsed.sources?.length, 2);
+  const structuredSource = parsed.sources?.[1] as any;
+  assert.equal(structuredSource.provider, 'nga_geonames');
+  assert.equal(structuredSource.id, 1168581);
+});
+
 
