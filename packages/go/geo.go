@@ -22,6 +22,11 @@ func HaversineDistanceKm(c1, c2 Coordinates) float64 {
 	sinDLng := math.Sin(dLng / 2.0)
 
 	a := sinDLat*sinDLat + math.Cos(lat1Rad)*math.Cos(lat2Rad)*sinDLng*sinDLng
+	if a > 1.0 {
+		a = 1.0
+	} else if a < 0.0 {
+		a = 0.0
+	}
 	c := 2.0 * math.Atan2(math.Sqrt(a), math.Sqrt(1.0-a))
 
 	return earthRadiusKm * c

@@ -171,6 +171,14 @@ func GetAllAreas() []Area {
 	return res
 }
 
+// GetAreaByID retrieves an area by its unique identifier (e.g., "lahore-dha-phase-5").
+func GetAreaByID(id string) (Area, bool) {
+	initData()
+	key := strings.ToLower(strings.TrimSpace(id))
+	a, ok := areaByID[key]
+	return a, ok
+}
+
 // GetAreasByCity retrieves all verified areas within a given city.
 func GetAreasByCity(cityID string) []Area {
 	initData()

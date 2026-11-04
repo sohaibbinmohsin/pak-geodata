@@ -32,7 +32,7 @@ final Map<String, List<PakistanCity>> _citiesByProvince = () {
   for (final c in pakistanCities) {
     (map[c.provinceId.toLowerCase()] ??= []).add(c);
   }
-  return map;
+  return map.map((k, v) => MapEntry(k, List<PakistanCity>.unmodifiable(v)));
 }();
 
 final Map<String, PakistanArea> _areaById = {
@@ -44,7 +44,7 @@ final Map<String, List<PakistanArea>> _areasByCity = () {
   for (final a in pakistanAreas) {
     (map[a.cityId.toLowerCase()] ??= []).add(a);
   }
-  return map;
+  return map.map((k, v) => MapEntry(k, List<PakistanArea>.unmodifiable(v)));
 }();
 
 final Map<String, PakistanArea> _areaByPostalCode = () {
@@ -66,7 +66,7 @@ final Map<String, List<PakistanArea>> _areasByPostalCode = () {
       (map[code] ??= []).add(a);
     }
   }
-  return map;
+  return map.map((k, v) => MapEntry(k, List<PakistanArea>.unmodifiable(v)));
 }();
 
 // -----------------------------------------------------------------------------

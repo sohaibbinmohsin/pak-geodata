@@ -82,6 +82,11 @@ void main() {
 
       final emptyCities = getCitiesByProvince('mars');
       expect(emptyCities, isEmpty);
+
+      expect(
+        () => getCitiesByProvince('punjab').clear(),
+        throwsUnsupportedError,
+      );
     });
   });
 
@@ -113,6 +118,11 @@ void main() {
 
       final emptyAreas = getAreasByCity('unknown-city');
       expect(emptyAreas, isEmpty);
+
+      expect(
+        () => getAreasByCity('lahore').clear(),
+        throwsUnsupportedError,
+      );
     });
   });
 
@@ -130,6 +140,11 @@ void main() {
       for (final a in areas54000) {
         expect(a.postalCode, equals('54000'));
       }
+
+      expect(
+        () => findAreasByPostalCode('54000').clear(),
+        throwsUnsupportedError,
+      );
     });
 
     test('resolves specific postal code 54792 to DHA', () {

@@ -152,6 +152,34 @@ func TestAreas(t *testing.T) {
 	}
 }
 
+func TestGetAreaByID(t *testing.T) {
+	area, found := GetAreaByID("lahore-dha-phase-5")
+	if !found {
+		t.Fatal("expected lahore-dha-phase-5 to be found")
+	}
+	if area.ID != "lahore-dha-phase-5" {
+		t.Errorf("expected lahore-dha-phase-5, got %s", area.ID)
+	}
+	if area.Name != "DHA Phase 5" {
+		t.Errorf("expected DHA Phase 5, got %s", area.Name)
+	}
+	if area.CityID != "lahore" {
+		t.Errorf("expected city lahore, got %s", area.CityID)
+	}
+
+	// Case and whitespace insensitivity
+	areaCase, found := GetAreaByID("  LaHoRe-DhA-pHaSe-5  ")
+	if !found || areaCase.ID != "lahore-dha-phase-5" {
+		t.Errorf("case-insensitive lookup failed for lahore-dha-phase-5")
+	}
+
+	// Invalid ID returns false
+	_, found = GetAreaByID("invalid-area-id")
+	if found {
+		t.Error("expected false for invalid area ID")
+	}
+}
+
 func TestPostalCodes(t *testing.T) {
 	// Primary postal code lookup: 54000
 	area, found := FindAreaByPostalCode("54000")
