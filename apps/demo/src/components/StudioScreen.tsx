@@ -26,8 +26,7 @@ import {
 import { formatGpsCoordinates } from './codeSnippets';
 import {
   ArrowLeft,
-  Github,
-  Star,
+  BookOpen,
   Navigation,
   CheckCircle2,
   X,
@@ -314,15 +313,15 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
           </div>
 
           <a
-            href="https://github.com/sohaibbinmohsin/pak-geodata"
+            href="https://github.com/sohaibbinmohsin/pak-geodata#readme"
             target="_blank"
             rel="noopener noreferrer"
             className="pressable h-9 inline-flex items-center gap-1.5 px-2.5 sm:px-3 rounded-xl glass-chrome border border-white/10 hover:border-white/20 text-xs font-medium text-neutral-200 hover:text-white transition-all shadow-xl"
-            title="Star pak-geodata on GitHub"
+            title="Read pak-geodata documentation on GitHub"
+            aria-label="pak-geodata documentation"
           >
-            <Github className="w-4 h-4 text-neutral-300" />
-            <span className="hidden lg:inline">GitHub</span>
-            <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400 hidden sm:inline" />
+            <BookOpen className="w-3.5 h-3.5 text-neutral-300" />
+            <span>Docs</span>
           </a>
         </div>
 
