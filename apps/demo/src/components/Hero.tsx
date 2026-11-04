@@ -72,10 +72,46 @@ export interface HeroProps {
 
 export default function Hero({ className = '', onOpenStudio }: HeroProps) {
   const [copiedSnippet, setCopiedSnippet] = useState<'npm' | 'pypi' | null>(null);
+  const [npmWeeklyDownloads, setNpmWeeklyDownloads] = useState<string | null>(null);
+  const [pypiWeeklyDownloads, setPypiWeeklyDownloads] = useState<string | null>(null);
   const copyTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
+    let isMounted = true;
+
+    // Real-time NPM downloads
+    fetch('https://api.npmjs.org/downloads/point/last-week/pak-geodata')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (isMounted && data && typeof data.downloads === 'number') {
+          setNpmWeeklyDownloads(data.downloads.toLocaleString('en-US'));
+        }
+      })
+      .catch(() => {
+        fetch('https://img.shields.io/npm/dw/pak-geodata.json')
+          .then((res) => (res.ok ? res.json() : null))
+          .then((data) => {
+            if (isMounted && data?.message) {
+              const num = data.message.replace(/\/.*$/, '').trim();
+              if (num) setNpmWeeklyDownloads(num);
+            }
+          })
+          .catch(() => {});
+      });
+
+    // Real-time PyPI downloads via CORS-enabled shields endpoint
+    fetch('https://img.shields.io/pypi/dw/pak-geodata.json')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (isMounted && data?.message) {
+          const num = data.message.replace(/\/.*$/, '').trim();
+          if (num) setPypiWeeklyDownloads(num);
+        }
+      })
+      .catch(() => {});
+
     return () => {
+      isMounted = false;
       if (copyTimeoutRef.current) {
         clearTimeout(copyTimeoutRef.current);
       }
@@ -176,6 +212,15 @@ export default function Hero({ className = '', onOpenStudio }: HeroProps) {
               <div className="flex items-center gap-2">
                 <NpmIcon className="w-4 h-4 shrink-0 rounded-[3px]" />
                 <span className="font-mono text-[11px] font-semibold text-rose-400">npm</span>
+                {npmWeeklyDownloads && (
+                  <span
+                    className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-rose-500/10 border border-rose-500/20 text-rose-300 font-mono text-[10px]"
+                    title="Weekly downloads from npmjs.com"
+                  >
+                    <span>{npmWeeklyDownloads}</span>
+                    <span className="text-neutral-400 font-sans ml-1">/ wk</span>
+                  </span>
+                )}
               </div>
               <button
                 type="button"
@@ -209,6 +254,15 @@ export default function Hero({ className = '', onOpenStudio }: HeroProps) {
               <div className="flex items-center gap-2">
                 <PythonIcon className="w-4 h-4 shrink-0" />
                 <span className="font-mono text-[11px] font-semibold text-sky-400">pip</span>
+                {pypiWeeklyDownloads && (
+                  <span
+                    className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-300 font-mono text-[10px]"
+                    title="Weekly downloads from PyPI"
+                  >
+                    <span>{pypiWeeklyDownloads}</span>
+                    <span className="text-neutral-400 font-sans ml-1">/ wk</span>
+                  </span>
+                )}
               </div>
               <button
                 type="button"
