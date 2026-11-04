@@ -48,7 +48,7 @@ test('Hero component replaces terminal window dots with NPM and Python/PyPI icon
   assert.ok(!content.includes('\u2013'), 'Hero must contain zero en-dashes');
 });
 
-test('Hero component fetches and displays real-time weekly downloads for NPM and PyPI', () => {
+test('Hero component fetches and displays real-time weekly downloads for NPM and PyPI with error suppression', () => {
   const heroPath = resolve(process.cwd(), 'apps/demo/src/components/Hero.tsx');
   const content = readFileSync(heroPath, 'utf8');
 
@@ -57,7 +57,10 @@ test('Hero component fetches and displays real-time weekly downloads for NPM and
   assert.ok(content.includes('npmWeeklyDownloads'), 'Hero tracks npm weekly downloads state');
   assert.ok(content.includes('pypiWeeklyDownloads'), 'Hero tracks pypi weekly downloads state');
   assert.ok(content.includes('/ wk'), 'Hero displays per-week download badge');
+  assert.ok(content.includes('parseDownloadCount'), 'Hero defines parseDownloadCount validator to suppress rate limit errors');
+  assert.ok(content.includes('/^[\\d,.]+[kKmMbB]?$/'), 'Hero validates numeric format regex');
   assert.ok(!content.includes('\u2014'), 'Hero must contain zero em-dashes');
   assert.ok(!content.includes('\u2013'), 'Hero must contain zero en-dashes');
 });
+
 

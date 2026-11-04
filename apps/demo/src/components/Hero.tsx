@@ -65,6 +65,21 @@ function PythonIcon({ className = 'w-4 h-4' }: { className?: string }) {
   );
 }
 
+function parseDownloadCount(raw: unknown): string | null {
+  if (typeof raw === 'number' && !isNaN(raw) && raw >= 0) {
+    return raw.toLocaleString('en-US');
+  }
+  if (typeof raw === 'string') {
+    const cleaned = raw.replace(/\/.*$/, '').trim();
+    // Strictly validate that the string is a genuine numeric count (e.g. "959", "1,200", "1.2k", "10M")
+    // Discards rate limit messages, server error texts, or non-numeric notices
+    if (/^[\d,.]+[kKmMbB]?$/.test(cleaned)) {
+      return cleaned;
+    }
+  }
+  return null;
+}
+
 export interface HeroProps {
   className?: string;
   onOpenStudio?: () => void;
@@ -83,17 +98,18 @@ export default function Hero({ className = '', onOpenStudio }: HeroProps) {
     fetch('https://api.npmjs.org/downloads/point/last-week/pak-geodata')
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
-        if (isMounted && data && typeof data.downloads === 'number') {
-          setNpmWeeklyDownloads(data.downloads.toLocaleString('en-US'));
+        const parsed = parseDownloadCount(data?.downloads);
+        if (isMounted && parsed) {
+          setNpmWeeklyDownloads(parsed);
         }
       })
       .catch(() => {
         fetch('https://img.shields.io/npm/dw/pak-geodata.json')
           .then((res) => (res.ok ? res.json() : null))
           .then((data) => {
-            if (isMounted && data?.message) {
-              const num = data.message.replace(/\/.*$/, '').trim();
-              if (num) setNpmWeeklyDownloads(num);
+            const parsed = parseDownloadCount(data?.message);
+            if (isMounted && parsed) {
+              setNpmWeeklyDownloads(parsed);
             }
           })
           .catch(() => {});
@@ -103,9 +119,9 @@ export default function Hero({ className = '', onOpenStudio }: HeroProps) {
     fetch('https://img.shields.io/pypi/dw/pak-geodata.json')
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
-        if (isMounted && data?.message) {
-          const num = data.message.replace(/\/.*$/, '').trim();
-          if (num) setPypiWeeklyDownloads(num);
+        const parsed = parseDownloadCount(data?.message);
+        if (isMounted && parsed) {
+          setPypiWeeklyDownloads(parsed);
         }
       })
       .catch(() => {});
