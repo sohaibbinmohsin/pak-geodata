@@ -1,0 +1,12 @@
+name: pak_geodata
+description: Comprehensive, typed, offline geographic data for all areas and cities in Pakistan
+version: 0.9.1
+repository: https://github.com/sohaibbinmohsin/pak-geodata
+issue_tracker: https://github.com/sohaibbinmohsin/pak-geodata/issues
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
