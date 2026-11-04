@@ -6,7 +6,7 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "tsx scripts/build.ts",
+    "build": "tsx scripts/build.ts && npm run build:demo",
     "build:demo": "npm run build --workspace=apps/demo",
     "dev:demo": "npm run dev --workspace=apps/demo",
     "lint": "tsc --noEmit",

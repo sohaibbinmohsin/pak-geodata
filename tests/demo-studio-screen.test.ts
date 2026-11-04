@@ -76,3 +76,24 @@ test('StudioScreen uses dynamic PACKAGE_VERSION and unifies all controls in firs
     'StudioScreen disables suggestion chips row in Omnibar'
   );
 });
+
+test('StudioScreen and Omnibar layout: header z-40, city filter outside search to right, and placeholder without 812', () => {
+  const screenPath = resolve(process.cwd(), 'apps/demo/src/components/StudioScreen.tsx');
+  const omnibarPath = resolve(process.cwd(), 'apps/demo/src/components/Omnibar.tsx');
+  const screenContent = readFileSync(screenPath, 'utf8');
+  const omnibarContent = readFileSync(omnibarPath, 'utf8');
+
+  // 1. Mobile search visibility & z-index
+  assert.ok(screenContent.includes('z-40'), 'StudioScreen header uses z-40 so search dropdown is in front of drawer');
+  assert.ok(screenContent.includes('onSearchOpenChange'), 'StudioScreen listens to onSearchOpenChange from Omnibar');
+  assert.ok(screenContent.includes('isSearchOpen ? \'hidden sm:block\' : \'\''), 'Drawer is hidden on mobile while search dropdown is open');
+
+  // 2. City filter outside search bar to the right
+  assert.ok(omnibarContent.includes('flex items-center gap-2'), 'Omnibar container uses flex items-center gap-2');
+  assert.ok(omnibarContent.includes('flex-1 min-w-0'), 'Search input capsule expands with flex-1');
+  assert.ok(omnibarContent.includes('right-0 top-full'), 'City dropdown menu popover aligns to the right');
+
+  // 3. Placeholder without 812
+  assert.ok(!omnibarContent.includes('Search 812 areas'), 'Placeholder text does not contain hardcoded 812');
+  assert.ok(omnibarContent.includes('Search areas across Pakistan'), 'Placeholder uses clean "Search areas across Pakistan"');
+});
