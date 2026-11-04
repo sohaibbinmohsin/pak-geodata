@@ -27,6 +27,7 @@ export interface OmnibarProps {
   showSuggestions?: boolean;
   lang?: 'en' | 'ur';
   className?: string;
+  onSearchOpenChange?: (isOpen: boolean) => void;
 }
 
 import { getMatchBadge, type MatchBadgeInfo } from './matchBadge';
@@ -41,10 +42,16 @@ export default function Omnibar({
   showSuggestions = true,
   lang = 'en',
   className = '',
+  onSearchOpenChange,
 }: OmnibarProps) {
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
+
+  // Notify parent when search dropdown opens or closes
+  useEffect(() => {
+    onSearchOpenChange?.(isOpen && query.trim().length > 0);
+  }, [isOpen, query, onSearchOpenChange]);
 
   // Scalable City Filter Dropdown state (Option A)
   const [isCityDropdownOpen, setIsCityDropdownOpen] = useState(false);
@@ -384,134 +391,22 @@ export default function Omnibar({
 
   const placeholderText = selectedCity
     ? `Search in ${selectedCity.name} (e.g. F-6, Blue Area, 44000)...`
-    : 'Search 812 areas across Pakistan (e.g. DHA, ماڈل ٹاؤن, 54000)...';
+    : 'Search areas across Pakistan (e.g. DHA, ماڈل ٹاؤن, 54000)...';
 
   return (
     <div
       ref={containerRef}
-      className={`relative w-full max-w-xl pointer-events-auto ${className}`}
+      className={`relative w-full pointer-events-auto flex items-center gap-2 ${className}`}
     >
-      {/* Centered Floating Glass Capsule */}
+      {/* Search Input Capsule (flex-1) */}
       <div
-        className={`glass-chrome relative flex items-center gap-2 px-2.5 sm:px-3 h-9 rounded-xl transition-all duration-200 ${
+        className={`glass-chrome relative flex-1 min-w-0 flex items-center gap-2 px-2.5 sm:px-3 h-9 rounded-xl transition-all duration-200 ${
           isOpen && results.length > 0
             ? 'ring-2 ring-emerald-500/40 border-emerald-500/50 shadow-2xl'
             : 'hover:border-white/20 focus-within:ring-2 focus-within:ring-emerald-500/40 focus-within:border-emerald-500/50'
         }`}
       >
         <Search className="w-4 h-4 text-emerald-400 shrink-0 select-none" />
-
-        {/* Option A Scalable City Filter Selector */}
-        {onSelectCity && (
-          <div className="relative shrink-0" ref={cityDropdownRef}>
-            <button
-              type="button"
-              onClick={() => setIsCityDropdownOpen((prev) => !prev)}
-              className="pressable inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 text-xs font-medium cursor-pointer transition-all select-none"
-              title="Filter by city"
-              aria-label={`Filter by city: currently ${selectedCity ? selectedCity.name : 'All Pakistan'}`}
-              aria-expanded={isCityDropdownOpen}
-              aria-haspopup="listbox"
-            >
-              <MapPin className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-              <span className="font-semibold max-w-[80px] sm:max-w-[120px] truncate">
-                {selectedCity ? selectedCity.name : (lang === 'ur' ? 'تمام پاکستان' : 'All Pakistan')}
-              </span>
-              <span className="text-[10px] text-emerald-400/80 font-mono hidden sm:inline">
-                ({selectedCity ? (cityAreaCounts[selectedCity.id] || 0) : allAreas.length})
-              </span>
-              <ChevronDown className={`w-3 h-3 text-emerald-400 shrink-0 transition-transform ${isCityDropdownOpen ? 'rotate-180' : ''}`} />
-            </button>
-
-            {/* City Dropdown Menu Popover */}
-            {isCityDropdownOpen && (
-              <div
-                role="dialog"
-                aria-label="City filter menu"
-                className="glass-chrome absolute left-0 top-full mt-2 w-72 sm:w-80 rounded-2xl border border-white/15 shadow-2xl p-2 z-50 animate-pop text-left"
-              >
-                {/* Search city filter inside dropdown */}
-                <div className="relative mb-2 px-1">
-                  <Search className="w-3.5 h-3.5 text-neutral-400 absolute left-3 top-1/2 -translate-y-1/2" />
-                  <input
-                    type="text"
-                    value={citySearchQuery}
-                    onChange={(e) => setCitySearchQuery(e.target.value)}
-                    placeholder="Filter 79 cities..."
-                    className="w-full bg-black/40 border border-white/10 rounded-lg pl-8 pr-2.5 py-1.5 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-emerald-500/50"
-                    autoFocus
-                  />
-                </div>
-
-                {/* All Pakistan Option */}
-                <button
-                  type="button"
-                  onClick={() => {
-                    onSelectCity(null);
-                    setIsCityDropdownOpen(false);
-                  }}
-                  className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs transition-colors cursor-pointer ${
-                    !selectedCity
-                      ? 'bg-emerald-500/20 text-emerald-300 font-semibold border border-emerald-500/30'
-                      : 'text-neutral-300 hover:bg-white/5 hover:text-white'
-                  }`}
-                >
-                  <span className="flex items-center gap-1.5">
-                    <span role="img" aria-label="Pakistan flag">🇵🇰</span>
-                    <span>{lang === 'ur' ? 'تمام پاکستان' : 'All Pakistan'}</span>
-                  </span>
-                  <span className="font-mono text-[10px] text-neutral-400">
-                    {allAreas.length} areas
-                  </span>
-                </button>
-
-                <div className="my-1.5 border-t border-white/10" />
-
-                {/* Scrollable list of 79 cities */}
-                <div className="max-h-60 overflow-y-auto space-y-0.5 pr-1 divide-y divide-white/5 no-scrollbar">
-                  {filteredCitiesList.map((c) => {
-                    const areaCount = cityAreaCounts[c.id] || 0;
-                    const isCurrent = selectedCity?.id === c.id;
-                    return (
-                      <button
-                        key={c.id}
-                        type="button"
-                        onClick={() => {
-                          onSelectCity(c);
-                          setIsCityDropdownOpen(false);
-                        }}
-                        className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs transition-colors cursor-pointer ${
-                          isCurrent
-                            ? 'bg-emerald-500/20 text-emerald-300 font-semibold border border-emerald-500/30'
-                            : 'text-neutral-300 hover:bg-white/5 hover:text-white'
-                        }`}
-                      >
-                        <div className="flex items-center gap-1.5 truncate">
-                          <span className="truncate">{c.name}</span>
-                          {c.urduName && (
-                            <span className="text-[11px] font-nastaliq text-emerald-400/80 shrink-0">
-                              {c.urduName}
-                            </span>
-                          )}
-                        </div>
-                        <div className="flex items-center gap-1.5 shrink-0 ml-2">
-                          <span className="text-[10px] text-neutral-500 uppercase">{c.provinceId}</span>
-                          {areaCount > 0 ? (
-                            <span className="px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono text-[10px]">
-                              {areaCount}
-                            </span>
-                          ) : (
-                            <span className="text-[10px] text-neutral-600 font-mono">0</span>
-                          )}
-                        </div>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-          </div>
-        )}
 
         {/* Real-time Search Input */}
         <input
@@ -560,6 +455,118 @@ export default function Omnibar({
           </div>
         )}
       </div>
+
+      {/* Option A Scalable City Filter Selector on the RIGHT of search bar */}
+      {onSelectCity && (
+        <div className="relative shrink-0" ref={cityDropdownRef}>
+          <button
+            type="button"
+            onClick={() => setIsCityDropdownOpen((prev) => !prev)}
+            className="pressable h-9 inline-flex items-center gap-1.5 px-2.5 sm:px-3 rounded-xl glass-chrome border border-white/10 hover:border-white/20 text-emerald-300 text-xs font-medium cursor-pointer transition-all select-none shadow-xl"
+            title="Filter by city"
+            aria-label={`Filter by city: currently ${selectedCity ? selectedCity.name : 'All Pakistan'}`}
+            aria-expanded={isCityDropdownOpen}
+            aria-haspopup="listbox"
+          >
+            <MapPin className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+            <span className="font-semibold max-w-[70px] sm:max-w-[120px] truncate">
+              {selectedCity ? selectedCity.name : (lang === 'ur' ? 'تمام پاکستان' : 'All Pakistan')}
+            </span>
+            <span className="text-[10px] text-emerald-400/80 font-mono hidden sm:inline">
+              ({selectedCity ? (cityAreaCounts[selectedCity.id] || 0) : allAreas.length})
+            </span>
+            <ChevronDown className={`w-3 h-3 text-emerald-400 shrink-0 transition-transform ${isCityDropdownOpen ? 'rotate-180' : ''}`} />
+          </button>
+
+          {/* City Dropdown Menu Popover */}
+          {isCityDropdownOpen && (
+            <div
+              role="dialog"
+              aria-label="City filter menu"
+              className="glass-chrome absolute right-0 top-full mt-2 w-72 sm:w-80 rounded-2xl border border-white/15 shadow-2xl p-2 z-50 animate-pop text-left"
+            >
+              {/* Search city filter inside dropdown */}
+              <div className="relative mb-2 px-1">
+                <Search className="w-3.5 h-3.5 text-neutral-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                <input
+                  type="text"
+                  value={citySearchQuery}
+                  onChange={(e) => setCitySearchQuery(e.target.value)}
+                  placeholder="Filter 79 cities..."
+                  className="w-full bg-black/40 border border-white/10 rounded-lg pl-8 pr-2.5 py-1.5 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-emerald-500/50"
+                  autoFocus
+                />
+              </div>
+
+              {/* All Pakistan Option */}
+              <button
+                type="button"
+                onClick={() => {
+                  onSelectCity(null);
+                  setIsCityDropdownOpen(false);
+                }}
+                className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs transition-colors cursor-pointer ${
+                  !selectedCity
+                    ? 'bg-emerald-500/20 text-emerald-300 font-semibold border border-emerald-500/30'
+                    : 'text-neutral-300 hover:bg-white/5 hover:text-white'
+                }`}
+              >
+                <span className="flex items-center gap-1.5">
+                  <span role="img" aria-label="Pakistan flag">🇵🇰</span>
+                  <span>{lang === 'ur' ? 'تمام پاکستان' : 'All Pakistan'}</span>
+                </span>
+                <span className="font-mono text-[10px] text-neutral-400">
+                  {allAreas.length} areas
+                </span>
+              </button>
+
+              <div className="my-1.5 border-t border-white/10" />
+
+              {/* Scrollable list of 79 cities */}
+              <div className="max-h-60 overflow-y-auto space-y-0.5 pr-1 divide-y divide-white/5 no-scrollbar">
+                {filteredCitiesList.map((c) => {
+                  const areaCount = cityAreaCounts[c.id] || 0;
+                  const isCurrent = selectedCity?.id === c.id;
+                  return (
+                    <button
+                      key={c.id}
+                      type="button"
+                      onClick={() => {
+                        onSelectCity(c);
+                        setIsCityDropdownOpen(false);
+                      }}
+                      className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs transition-colors cursor-pointer ${
+                        isCurrent
+                          ? 'bg-emerald-500/20 text-emerald-300 font-semibold border border-emerald-500/30'
+                          : 'text-neutral-300 hover:bg-white/5 hover:text-white'
+                      }`}
+                    >
+                      <div className="flex items-center gap-1.5 truncate">
+                        <span className="truncate">{c.name}</span>
+                        {c.urduName && (
+                          <span className="text-[11px] font-nastaliq text-emerald-400/80 shrink-0">
+                            {c.urduName}
+                          </span>
+                        )}
+                      </div>
+                      <div className="flex items-center gap-1.5 shrink-0 ml-2">
+                        <span className="text-[10px] text-neutral-500 uppercase">{c.provinceId}</span>
+                        {areaCount > 0 ? (
+                          <span className="px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono text-[10px]">
+                            {areaCount}
+                          </span>
+                        ) : (
+                          <span className="text-[10px] text-neutral-600 font-mono">0</span>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
 
 
 

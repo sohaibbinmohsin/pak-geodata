@@ -53,6 +53,7 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
   const [selectedCity, setSelectedCity] = useState<PakistanCity | null>(null);
   const [selectedArea, setSelectedArea] = useState<PakistanArea | null>(null);
   const [reverseGeoPoint, setReverseGeoPoint] = useState<ReverseGeoPoint | null>(null);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   // Copy feedback states
   const [slugCopied, setSlugCopied] = useState(false);
@@ -245,7 +246,7 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
 
 
       {/* Top Floating Glass HUD Bar - Responsive 2-row layout on mobile, single row on desktop */}
-      <header className="absolute top-3 left-3 right-3 z-30 flex flex-wrap items-center justify-between gap-2 pointer-events-none">
+      <header className="absolute top-3 left-3 right-3 z-40 flex flex-wrap items-center justify-between gap-2 pointer-events-none">
         {/* Left: Back Button + GeoData Studio Heading (Order 1 on mobile & desktop) */}
         <div className="order-1 flex items-center gap-1.5 sm:gap-2 pointer-events-auto shrink-0">
           <button
@@ -325,8 +326,8 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
           </a>
         </div>
 
-        {/* Center/Second Row: Search Omnibar with Integrated Option A City Filter (Order 3 full-width on mobile, Order 2 flex-1 on desktop) */}
-        <div className="order-3 sm:order-2 w-full sm:w-auto sm:flex-1 sm:max-w-xl sm:mx-2 pointer-events-auto">
+        {/* Center/Second Row: Search Omnibar with Option A City Filter to its Right (Order 3 full-width on mobile, Order 2 flex-1 on desktop) */}
+        <div className="order-3 sm:order-2 w-full sm:w-auto sm:flex-1 sm:max-w-2xl sm:mx-2 pointer-events-auto">
           <Omnibar
             selectedCity={selectedCity}
             selectedArea={selectedArea}
@@ -335,6 +336,7 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
             onSuggestionClick={handleSuggestionClick}
             showSuggestions={false}
             lang={lang}
+            onSearchOpenChange={setIsSearchOpen}
           />
         </div>
       </header>
@@ -345,7 +347,9 @@ export default function StudioScreen({ onClose, className = '' }: StudioScreenPr
         <aside
           role="dialog"
           aria-label={`Area inspector for ${selectedArea.name}`}
-          className="absolute right-4 top-28 sm:top-20 bottom-4 w-96 max-w-[calc(100vw-2rem)] overflow-y-auto glass-chrome rounded-2xl border border-white/10 p-5 shadow-2xl z-30 space-y-4 animate-slide-up select-none pointer-events-auto no-scrollbar"
+          className={`absolute right-4 top-28 sm:top-20 bottom-4 w-96 max-w-[calc(100vw-2rem)] overflow-y-auto glass-chrome rounded-2xl border border-white/10 p-5 shadow-2xl z-30 space-y-4 animate-slide-up select-none pointer-events-auto no-scrollbar ${
+            isSearchOpen ? 'hidden sm:block' : ''
+          }`}
         >
           {/* Top Bar: Verification Badge & Close Button */}
           <div className="flex items-center justify-between gap-2 pb-2 border-b border-white/10">
