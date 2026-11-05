@@ -1,3 +1,10 @@
+## 0.10.1
+
+- Add comprehensive dartdocs across all public model constructors and fields.
+- Add `example/main.dart` demonstrating lookups, spatial Haversine distance, and multi-script search.
+- Enhanced README with Flutter autocomplete example and pub.dev badges.
+- Full verification and parity with master dataset (7 provinces, 79 cities, 3,953 areas).
+
 ## 0.10.0
 
 - Initial release of `pak_geodata` for Dart and Flutter.
