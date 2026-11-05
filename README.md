@@ -6,7 +6,7 @@
 [![Pub Version](https://img.shields.io/pub/v/pak_geodata.svg?color=blue)](https://pub.dev/packages/pak_geodata)
 <a href="https://geodata.themohsinproject.org/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Live%20Demo-Interactive%20Map-blue?logo=leaflet&color=10B981" alt="Live Interactive Demo" /></a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build & Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)]()
+[![Build & Tests](https://img.shields.io/github/actions/workflow/status/sohaibbinmohsin/pak-geodata/ci.yml?branch=main&label=CI)](https://github.com/sohaibbinmohsin/pak-geodata/actions/workflows/ci.yml)
 
 > Comprehensive, typed, offline geographic data for all areas and cities in Pakistan.
 
@@ -208,12 +208,12 @@ Coverage encompasses **3,953 triangulated golden areas across 100% of Pakistan's
 - **Rawalpindi** (`76 areas`): Bahria Town (Phases 1-8 & Ext), Satellite Town, Saddar, Westridge (1-3), Chaklala Scheme (1-3), Askari, Commercial Market, Raja Bazaar, Bhabra Bazaar, Mohanpura, Kartarpura, Pirwadhai Adda, Faizabad Interchange, Dhok Ratta, Dhok Khabba, Dhok Hassu, Dhok Mangtal, Dhok Dalal, Khanna Pul, Chungi No 22, etc.
 
 ### 69 Regional Hubs & Secondary Cities (1,070 Areas Across 100% of Pakistan's Cities):
-- **Punjab (27 cities, 255 areas)**: Sialkot (22), Bahawalpur (18), Sargodha (18), Kasur (14), Jhelum (13), Gujrat (13), Sheikhupura (10), Sahiwal (10), Rahim Yar Khan (10), Dera Ghazi Khan (10), Wah Cantt (8), Okara (8), Attock (8), Bahawalnagar (8), Chakwal (8), Chiniot (8), Chishtian (8), Daska (8), Gojra (8), Hafizabad (8), Jaranwala (8), Jhang (8), Kamalia (8), Khanewal (8), Kot Addu (8), Mandi Bahauddin (8), Muridke (8), Muzaffargarh (8), Samundri (8), Taxila (8), Vehari (8), Wazirabad (8).
-- **Sindh (6 cities, 60 areas)**: Sukkur (18), Larkana (10), Nawabshah (10), Mirpur Khas (8), Jacobabad (8), Shikarpur (8).
-- **KPK (7 cities, 68 areas)**: Abbottabad (15), Mardan (13), Mingora / Swat (10), Kohat (8), Dera Ismail Khan (8), Mansehra (8), Nowshera (8), Swabi (8).
-- **Balochistan (9 cities, 74 areas)**: Gwadar (10), Turbat (8), Khuzdar (8), Hub (8), Chaman (8), Dera Murad Jamali (8), Loralai (8), Sibi (8), Zhob (8).
-- **Azad Jammu & Kashmir (AJK) (7 cities, 58 areas)**: Muzaffarabad (10), Mirpur (10), Rawalakot (8), Bagh (8), Bhimber (8), Kotli (8), Pallandri (8).
-- **Gilgit-Baltistan (7 cities, 58 areas)**: Gilgit (10), Skardu (10), Aliabad / Hunza (8), Chilas (8), Gahkuch (8), Karimabad (8), Khaplu (8).
+- **Punjab (32 cities, 489 areas)**: Sialkot (49), Sargodha (33), Okara (27), Bahawalpur (25), Sahiwal (24), Dera Ghazi Khan (23), Rahim Yar Khan (20), Taxila (19), Daska (17), Kasur (16), Gojra (15), Sheikhupura (15), Chakwal (14), Kot Addu (14), Gujrat (13), Jhelum (13), Chiniot (12), Khanewal (12), Samundri (11), Wah Cantt (11), Jhang (10), Mandi Bahauddin (10), Attock (9), Bahawalnagar (9), Chishtian (9), Muridke (9), Vehari (9), Wazirabad (9), Hafizabad (8), Jaranwala (8), Kamalia (8), Muzaffargarh (8).
+- **Sindh (6 cities, 135 areas)**: Mirpur Khas (63), Larkana (28), Sukkur (18), Nawabshah (10), Jacobabad (8), Shikarpur (8).
+- **KPK (8 cities, 171 areas)**: Dera Ismail Khan (54), Mingora / Swat (29), Nowshera (20), Kohat (16), Abbottabad (15), Mardan (15), Mansehra (14), Swabi (8).
+- **Balochistan (9 cities, 97 areas)**: Khuzdar (19), Chaman (14), Gwadar (11), Turbat (11), Sibi (10), Dera Murad Jamali (8), Hub (8), Loralai (8), Zhob (8).
+- **Azad Jammu & Kashmir (AJK) (7 cities, 101 areas)**: Muzaffarabad (45), Mirpur (16), Bagh (8), Bhimber (8), Kotli (8), Pallandri (8), Rawalakot (8).
+- **Gilgit-Baltistan (7 cities, 77 areas)**: Gilgit (23), Skardu (13), Chilas (9), Aliabad / Hunza (8), Gahkuch (8), Karimabad (8), Khaplu (8).
 
 ---
 
@@ -743,7 +743,7 @@ We actively welcome community contributions to expand coverage across Pakistan!
 5. Open a Pull Request! Please read our [Contributing Guide](CONTRIBUTING.md) for complete details.
 
 ### Expansion Roadmap
-- **Phase 1 (Completed)**: 100% National Urban Coverage across all 79 cities in Pakistan (1,108 verified golden areas spanning all 7 provinces and administrative territories).
+- **Phase 1 (Completed)**: 100% National Urban Coverage across all 79 cities in Pakistan (3,953 verified golden areas spanning all 7 provinces and administrative territories).
 - **Phase 2 (Planned)**: Deep-tier density expansion for high-density metropolitan quarters, metro corridors, and campus townships.
 - **Phase 3 (Planned)**: Tertiary cities, tehsils, and union councils across all provinces.
 - **Phase 4 (Planned)**: GeoJSON polygon boundary support for precise geofencing.
