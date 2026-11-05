@@ -86,3 +86,71 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: packages/pypi/dist/
+
+  tag-go:
+    name: Tag & Release Go Module
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Create and push Go subpackage tag
+        run: |
+          TAG="${{ github.event.release.tag_name }}"
+          if [ -z "$TAG" ]; then
+            TAG="v$(node -p "require('./package.json').version")"
+          fi
+          if [[ ! "$TAG" =~ ^v ]]; then
+            TAG="v$TAG"
+          fi
+          GO_TAG="packages/go/$TAG"
+          echo "Checking tag $GO_TAG..."
+          if git rev-parse "$GO_TAG" >/dev/null 2>&1; then
+            echo "Tag $GO_TAG already exists."
+          else
+            echo "Creating and pushing $GO_TAG..."
+            git tag "$GO_TAG"
+            git push origin "$GO_TAG"
+          fi
+
+  publish-dart:
+    name: Publish to Pub.dev (Dart)
+    runs-on: ubuntu-24.04
+    permissions:
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Dart SDK
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: 'stable'
+
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Generate master data and verify
+        run: |
+          npm install
+          npm run build
+          npm run test:dart
+
+      - name: Dry-run publish
+        working-directory: packages/dart
+        run: dart pub publish --dry-run
+
+      - name: Publish to pub.dev
+        working-directory: packages/dart
+        run: dart pub publish --force
+        continue-on-error: true
+
