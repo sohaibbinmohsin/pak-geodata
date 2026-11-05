@@ -94,6 +94,27 @@ func main() {
 
 ---
 
+## API Reference
+
+| Function | Signature | Description |
+| :--- | :--- | :--- |
+| `GetAllProvinces()` | `[]Province` | Returns all 7 provinces/territories |
+| `GetProvinceByID(id)` | `(Province, bool)` | Case-insensitive province lookup |
+| `GetAllCities()` | `[]City` | Returns all 79 verified cities |
+| `GetCitiesByProvince(provID)` | `[]City` | Returns all cities in a province |
+| `GetCityByID(id)` | `(City, bool)` | Finds city by canonical slug |
+| `GetAllAreas()` | `[]Area` | Returns all 3,953 verified areas |
+| `GetAreasByCity(cityID)` | `[]Area` | Returns all areas in a city |
+| `GetAreaByID(id)` | `(Area, bool)` | Finds area by canonical slug |
+| `FindAreaByPostalCode(code)` | `(Area, bool)` | Finds primary area by 5-digit postal code |
+| `FindAreasByPostalCode(code)` | `[]Area` | Finds all areas sharing a postal code |
+| `HaversineDistanceKm(c1, c2)` | `float64` | Spherical distance in kilometers |
+| `GetNearestArea(coords, opts)` | `(*Area, float64, bool)` | Finds closest area to target coordinates |
+| `SearchAreas(query, opts)` | `[]SearchResult` | Multi-script ranked search |
+| `NormalizeUrduText(text)` | `string` | Strips diacritics, unifies letters and digits |
+
+---
+
 ## Contributing & Repository
 
 Source code and issue tracking are hosted on GitHub:

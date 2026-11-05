@@ -112,6 +112,27 @@ Autocomplete<PakistanArea>(
 
 ---
 
+## API Reference
+
+| Function | Return Type | Description |
+| :--- | :--- | :--- |
+| `getAllProvinces()` | `List<PakistanProvince>` | Returns all 7 provinces/territories |
+| `getProvinceById(id)` | `PakistanProvince?` | Case-insensitive province lookup |
+| `getAllCities()` | `List<PakistanCity>` | Returns all 79 verified cities |
+| `getCitiesByProvince(provinceId)` | `List<PakistanCity>` | Returns all cities in a province |
+| `getCityById(id)` | `PakistanCity?` | Finds city by canonical slug |
+| `getAllAreas()` | `List<PakistanArea>` | Returns all 3,953 verified areas |
+| `getAreasByCity(cityId)` | `List<PakistanArea>` | Returns all areas in a city |
+| `getAreaById(id)` | `PakistanArea?` | Finds area by canonical slug |
+| `findAreaByPostalCode(code)` | `PakistanArea?` | Finds primary area by 5-digit postal code |
+| `findAreasByPostalCode(code)` | `List<PakistanArea>` | Finds all areas sharing a postal code |
+| `haversineDistanceKm(c1, c2)` | `double` | Spherical distance in kilometers |
+| `getNearestArea(coords, ...)` | `NearestAreaResult?` | Finds closest area to target coordinates |
+| `searchAreas(query, ...)` | `List<SearchResult>` | Multi-script ranked search |
+| `normalizeUrduText(text)` | `String` | Strips diacritics, unifies letters and digits |
+
+---
+
 ## Contributing & Repository
 
 Source code and issue tracking are hosted on GitHub:

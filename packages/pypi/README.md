@@ -10,7 +10,7 @@ Explore the [Live Interactive Demo](https://geodata.themohsinproject.org/) to te
 
 `pak-geodata` is an open-source, production-grade Python client library providing offline access to verified geographic data for Pakistan.
 
-It covers all administrative provinces, 79 major and secondary cities, and foundational flagship metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers).
+It covers all administrative provinces, all 79 major and secondary cities (100% national urban coverage), and 3,953 verified areas across all 79 cities.
 
 Designed with **zero runtime dependencies** (pure Python standard library), strict geofencing, and sub-millisecond lookups.
 
@@ -82,12 +82,16 @@ print(f"Verified areas count: {lahore.total_areas_count}")
 ### 2. Areas by City
 
 ```python
-from pak_geodata import get_areas_by_city
+from pak_geodata import get_areas_by_city, get_all_areas
 
 # Retrieve all verified areas for a city
 lahore_areas = get_areas_by_city("lahore")
 for area in lahore_areas[:5]:
     print(f"{area.name} [{area.id}] - Postal Code: {area.postal_code}")
+
+# Total verified areas in Pakistan
+all_areas = get_all_areas()
+print(f"Total verified areas: {len(all_areas)}")  # 3953
 ```
 
 ### 3. Intelligent Search
