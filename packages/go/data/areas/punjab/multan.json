@@ -1,0 +1,2146 @@
+[
+  {
+    "id": "multan-cantt",
+    "name": "Multan Cantt",
+    "urduName": "ملتان کینٹ",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.1925,
+      "lng": 71.4428
+    },
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "aliases": [
+      "cantt multan",
+      "multan cantonment"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-gulgasht-colony",
+    "name": "Gulgasht Colony",
+    "urduName": "گلگشت کالونی",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.2285,
+      "lng": 71.488
+    },
+    "type": "neighborhood",
+    "postalCode": "60700",
+    "aliases": [
+      "gulgasht",
+      "gulgasht multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-bosan-road",
+    "name": "Bosan Road",
+    "urduName": "بوسن روڈ",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.235,
+      "lng": 71.492
+    },
+    "type": "commercial",
+    "postalCode": "60700",
+    "aliases": [
+      "bosan road multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-shah-rukn-e-alam-colony",
+    "name": "Shah Rukn-e-Alam Colony",
+    "urduName": "شاہ رکن عالم کالونی",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.185,
+      "lng": 71.512
+    },
+    "type": "housing_society",
+    "postalCode": "60650",
+    "aliases": [
+      "shah rukn-e-alam",
+      "sra colony multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-new-multan",
+    "name": "New Multan",
+    "urduName": "نیو ملتان",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.178,
+      "lng": 71.505
+    },
+    "type": "housing_society",
+    "postalCode": "60650",
+    "aliases": [
+      "new multan colony"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-mda-officers-colony",
+    "name": "MDA Officers Colony",
+    "urduName": "ایم ڈی اے آفیسرز کالونی",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.215,
+      "lng": 71.468
+    },
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "aliases": [
+      "officers colony multan",
+      "mda colony"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-walled-city",
+    "name": "Walled City Multan",
+    "urduName": "اندرون ملتان",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.198,
+      "lng": 71.472
+    },
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "aliases": [
+      "old city multan",
+      "androon multan",
+      "multan fort area"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-hussain-agahi",
+    "name": "Hussain Agahi",
+    "urduName": "حسین آگاہی",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.195,
+      "lng": 71.465
+    },
+    "type": "commercial",
+    "postalCode": "60000",
+    "aliases": [
+      "hussain agahi bazaar"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-dha-multan",
+    "name": "DHA Multan",
+    "urduName": "ڈی ایچ اے ملتان",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.278,
+      "lng": 71.535
+    },
+    "type": "housing_society",
+    "postalCode": "60000",
+    "aliases": [
+      "dha multan",
+      "defence multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-wapda-town",
+    "name": "Wapda Town Multan",
+    "urduName": "واپڈا ٹاؤن ملتان",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.245,
+      "lng": 71.442
+    },
+    "type": "housing_society",
+    "postalCode": "60000",
+    "aliases": [
+      "wapda town multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-industrial-estate",
+    "name": "Industrial Estate Multan",
+    "urduName": "انڈسٹریل اسٹیٹ ملتان",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.142,
+      "lng": 71.415
+    },
+    "type": "industrial",
+    "postalCode": "60000",
+    "aliases": [
+      "multan industrial area",
+      "industrial estate phase 1 & 2"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-mumtazabad",
+    "name": "Mumtazabad",
+    "urduName": "ممتاز آباد",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.165,
+      "lng": 71.475
+    },
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "aliases": [
+      "mumtazabad multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-samejabad",
+    "name": "Samejabad",
+    "urduName": "سمیجہ آباد",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.172,
+      "lng": 71.522
+    },
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "aliases": [
+      "samejabad multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-qasim-bela",
+    "name": "Qasim Bela",
+    "urduName": "قاسم بیلہ",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.168,
+      "lng": 71.428
+    },
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "aliases": [
+      "qasim bela cantt"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-chungi-no-9",
+    "name": "Chungi No. 9",
+    "urduName": "چنگی نمبر 9",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.218,
+      "lng": 71.475
+    },
+    "type": "commercial",
+    "postalCode": "60000",
+    "aliases": [
+      "chungi 9 multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-bahauddin-zakariya-university",
+    "name": "Bahauddin Zakariya University",
+    "urduName": "بہاء الدین زکریا یونیورسٹی",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "coordinates": {
+      "lat": 30.264,
+      "lng": 71.505
+    },
+    "type": "neighborhood",
+    "postalCode": "60800",
+    "aliases": [
+      "bzu multan",
+      "zakariya university campus"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true
+  },
+  {
+    "id": "multan-zakariya-town",
+    "name": "Zakariya Town",
+    "urduName": "زکریا ٹاؤن ملتان",
+    "cityId": "multan",
+    "type": "housing_society",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2541,
+      "lng": 71.4982
+    },
+    "aliases": [
+      "Zakariya Town Bosan Road",
+      "BZU Link Town"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-shalimar-colony",
+    "name": "Shalimar Colony",
+    "urduName": "شالیمار کالونی ملتان",
+    "cityId": "multan",
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2312,
+      "lng": 71.4823
+    },
+    "aliases": [
+      "Shalimar Colony Multan",
+      "Bosan Road Shalimar"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-peer-khurshid-colony",
+    "name": "Peer Khurshid Colony",
+    "urduName": "پیر خورشید کالونی ملتان",
+    "cityId": "multan",
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2243,
+      "lng": 71.4754
+    },
+    "aliases": [
+      "Peer Khurshid Zia Town",
+      "Officers Line Colony"
+    ],
+    "sources": [
+      "survey",
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1409694,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-gulshan-e-market",
+    "name": "Gulshan Market (New Multan)",
+    "urduName": "گلشن مارکیٹ نیو ملتان",
+    "cityId": "multan",
+    "type": "commercial",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2214,
+      "lng": 71.4925
+    },
+    "aliases": [
+      "Gulshan Market Commercial",
+      "New Multan Main Market"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-hassan-parwana-colony",
+    "name": "Hassan Parwana Colony",
+    "urduName": "حسن پروانہ کالونی ملتان",
+    "cityId": "multan",
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.1985,
+      "lng": 71.4586
+    },
+    "aliases": [
+      "Hassan Parwana Road",
+      "Parwana Colony"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-royal-orchard",
+    "name": "Royal Orchard Multan",
+    "urduName": "رائل آرچرڈ ملتان",
+    "cityId": "multan",
+    "type": "housing_society",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2266,
+      "lng": 71.5547
+    },
+    "aliases": [
+      "Royal Orchard Society",
+      "Mattital Road Royal Orchard"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-citi-housing",
+    "name": "Citi Housing Multan",
+    "urduName": "سٹی ہاؤسنگ ملتان",
+    "cityId": "multan",
+    "type": "housing_society",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2687,
+      "lng": 71.4658
+    },
+    "aliases": [
+      "Citi Housing Society Multan",
+      "Bosan Bypass Citi"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-mps-road",
+    "name": "Multan Public School Road Sector",
+    "urduName": "ملتان پبلک اسکول روڈ سیکٹر",
+    "cityId": "multan",
+    "type": "suburb",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2458,
+      "lng": 71.5069
+    },
+    "aliases": [
+      "MPS Road",
+      "Education City Multan"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-chungi-no-6",
+    "name": "Chungi No 6",
+    "urduName": "چنگی نمبر 6 ملتان",
+    "cityId": "multan",
+    "type": "commercial",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.2081,
+      "lng": 71.4722
+    },
+    "aliases": [
+      "Chungi 6 Multan",
+      "Bosan Road Chungi 6"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-chungi-no-14",
+    "name": "Chungi No 14",
+    "urduName": "چنگی نمبر 14 ملتان",
+    "cityId": "multan",
+    "type": "commercial",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.1764,
+      "lng": 71.4583
+    },
+    "aliases": [
+      "Chungi 14 Multan",
+      "Old Shujabad Road Chungi"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-dera-adda",
+    "name": "Dera Adda Chowk",
+    "urduName": "ڈیرہ اڈا ملتان",
+    "cityId": "multan",
+    "type": "commercial",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.1922,
+      "lng": 71.4683
+    },
+    "aliases": [
+      "Dera Adda Multan",
+      "Transport Hub Dera Adda"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-shah-shams-colony",
+    "name": "Shah Shams Tabrez Colony",
+    "urduName": "شاہ شمس تبریز کالونی ملتان",
+    "cityId": "multan",
+    "type": "neighborhood",
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.1853,
+      "lng": 71.4884
+    },
+    "aliases": [
+      "Shah Shams Colony",
+      "Vehari Road Shah Shams"
+    ],
+    "sources": [
+      "survey",
+      "curated"
+    ],
+    "verified": true,
+    "provinceId": "punjab"
+  },
+  {
+    "id": "multan-delhi-gate",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Delhi Gate",
+    "urduName": "دہلی گیٹ",
+    "aliases": [
+      "Delhi Darwaza Multan",
+      "Walled City Delhi Gate"
+    ],
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.198,
+      "lng": 71.482
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "multan-bohar-gate",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Bohar Gate",
+    "urduName": "بوہڑ گیٹ",
+    "aliases": [
+      "Bohar Darwaza",
+      "Walled City Bohar Gate"
+    ],
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.192,
+      "lng": 71.472
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "multan-haram-gate",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Haram Gate",
+    "urduName": "حرم گیٹ",
+    "aliases": [
+      "Haram Darwaza",
+      "Walled City Haram Gate"
+    ],
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.195,
+      "lng": 71.478
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "multan-pak-gate",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Pak Gate",
+    "urduName": "پاک گیٹ",
+    "aliases": [
+      "Pak Darwaza",
+      "Walled City Pak Gate"
+    ],
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.189,
+      "lng": 71.481
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "multan-lohari-gate",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Lohari Gate",
+    "urduName": "لوہاری گیٹ",
+    "aliases": [
+      "Lohari Darwaza Multan",
+      "Walled City Lohari Gate"
+    ],
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.196,
+      "lng": 71.47
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "multan-daulat-gate",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Daulat Gate",
+    "urduName": "دولت گیٹ",
+    "aliases": [
+      "Daulat Darwaza Multan",
+      "Walled City Daulat Gate"
+    ],
+    "postalCode": "60000",
+    "coordinates": {
+      "lat": 30.202,
+      "lng": 71.48
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "multan-hassanabad",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Hassanabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21709,
+      "lng": 71.52199
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1356743,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-maiyarwala",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Maiyarwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21389,
+      "lng": 71.50833
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1356744,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-chauk-kumharanwala",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Chauk Kumharanwala",
+    "aliases": [
+      "Kumharanwala",
+      "Kumhārānwāla"
+    ],
+    "coordinates": {
+      "lat": 30.21009,
+      "lng": 71.52833
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1356745,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-ralapur",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Ralapur",
+    "aliases": [
+      "Rajepur",
+      "Rājepur"
+    ],
+    "coordinates": {
+      "lat": 30.23372,
+      "lng": 71.55664
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1356753,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-gulgusht-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Gulgusht Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21882,
+      "lng": 71.47871
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1409696,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-rashidabad",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Rashidabad",
+    "aliases": [
+      "Rashidābād"
+    ],
+    "coordinates": {
+      "lat": 30.21111,
+      "lng": 71.49444
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1409697,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-shamsabad-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Shamsabad Colony",
+    "aliases": [
+      "Shamsabad",
+      "Shamsābād"
+    ],
+    "coordinates": {
+      "lat": 30.20846,
+      "lng": 71.49092
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1409699,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-rukh-i-alam",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Rukh-i-Alam",
+    "aliases": [
+      "Rukn-i-Alam",
+      "Rukn-i-Ālam"
+    ],
+    "coordinates": {
+      "lat": 30.19646,
+      "lng": 71.48345
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1409701,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-rodewala",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Rodewala",
+    "aliases": [
+      "Rodewāla"
+    ],
+    "coordinates": {
+      "lat": 30.19722,
+      "lng": 71.49722
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1409702,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-awanpura",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Awanpura",
+    "aliases": [
+      "Awānpura"
+    ],
+    "coordinates": {
+      "lat": 30.19444,
+      "lng": 71.49167
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1409703,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-awanwala",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Awanwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.1903,
+      "lng": 71.49146
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1409704,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-nai-basti",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Nai Basti",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18043,
+      "lng": 71.49443
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1409705,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-daira",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Daira",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18056,
+      "lng": 71.45833
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1409707,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-kumhar-mandi",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Kumhar Mandi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.175,
+      "lng": 71.45
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1409710,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-fazalabad",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Fazalabad",
+    "aliases": [
+      "Fazalābād"
+    ],
+    "coordinates": {
+      "lat": 30.17202,
+      "lng": 71.45353
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1409711,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-shah-abbas-chouk",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Shah Abbas Chouk",
+    "aliases": [
+      "Chauk Shah Abbas",
+      "Chauk Shāh Abbās"
+    ],
+    "coordinates": {
+      "lat": 30.17412,
+      "lng": 71.46934
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1409713,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-chah-ghulam-muhammad",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Chah Ghulam Muhammad",
+    "aliases": [
+      "Chāh Ghulām Muhammad"
+    ],
+    "coordinates": {
+      "lat": 30.16694,
+      "lng": 71.47389
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1465403,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-cantonement",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Cantonement",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18972,
+      "lng": 71.43222
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1465405,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-new-ghalla-mandi",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "New Ghalla Mandi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17778,
+      "lng": 71.47222
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1465407,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-nawan-shahr",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Nawan Shahr",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19694,
+      "lng": 71.45222
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1465408,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-ghanta-ghar",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Ghanta Ghar",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.2,
+      "lng": 71.46361
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1465409,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-mumtaz-b-d",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Mumtazābād",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17444,
+      "lng": 71.48778
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1465410,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-munzurabad",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Munzurabad",
+    "aliases": [
+      "Munzurābād"
+    ],
+    "coordinates": {
+      "lat": 30.18889,
+      "lng": 71.49167
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1465411,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-rash-d-b-d",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Rashīdābād",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20806,
+      "lng": 71.4925
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1465412,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-new-gulgasht",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "New Gulgasht",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.23028,
+      "lng": 71.47278
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1465414,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-naqshbandi-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Naqshbandi Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21634,
+      "lng": 71.50105
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11180855,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-shah-town",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Shah Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21078,
+      "lng": 71.53504
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11180877,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-mohalla-moinabad",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Mohalla Moinabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19982,
+      "lng": 71.53285
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11180879,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-mohalla-muhammdi",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Mohalla Muhammdi",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.2052,
+      "lng": 71.51964
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11180880,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-mahalla-khadimabad",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Mahalla Khadimabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20724,
+      "lng": 71.51792
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11180881,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-samej",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Samej",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19509,
+      "lng": 71.5272
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11181101,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-diwan-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Diwan Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.22425,
+      "lng": 71.45823
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348824,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-salim-mor",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Salim Mor",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.22889,
+      "lng": 71.47098
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348825,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-nasheman-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Nasheman Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.23055,
+      "lng": 71.47529
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348826,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-mehrban-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Mehrban Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21166,
+      "lng": 71.45832
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348838,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-amirabad",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Amirabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20866,
+      "lng": 71.46199
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348839,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-shadab-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Shadab Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21552,
+      "lng": 71.45126
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348840,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-qadarabad",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Qadarabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21001,
+      "lng": 71.46877
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348841,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-dogar-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Dogar Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21331,
+      "lng": 71.49522
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348842,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-khushal-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Khushal Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20571,
+      "lng": 71.48901
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348844,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-rajaabad",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Rajaabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18381,
+      "lng": 71.49718
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348845,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-abdali-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Abdali Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19061,
+      "lng": 71.45336
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348846,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-dera-adda-11348847",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Dera Adda",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18898,
+      "lng": 71.45596
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348847,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-gharibabad",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Gharibabad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18415,
+      "lng": 71.46495
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348852,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-iqbal-nagar",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Iqbal Nagar",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.1849,
+      "lng": 71.47883
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348855,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-kalma-chauk",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Kalma Chauk",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20041,
+      "lng": 71.45971
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348857,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-jan-muhammad-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Jan Muhammad Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20234,
+      "lng": 71.49239
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348859,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-gulbarg-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Gulbarg Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19866,
+      "lng": 71.49048
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348860,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-vinswala",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Vinswala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21721,
+      "lng": 71.48666
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348861,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-pir-khurshid-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Pir Khurshid Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21216,
+      "lng": 71.47493
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348862,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-nasim-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Nasim Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.23786,
+      "lng": 71.49409
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348866,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-abrar-town",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Abrar Town",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.21752,
+      "lng": 71.45265
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348872,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-chah-shahadotwala",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Chah Shahadotwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.22069,
+      "lng": 71.4528
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348873,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-khalid-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Khalid Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.18815,
+      "lng": 71.44209
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348877,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-canal-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Canal Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.19766,
+      "lng": 71.44396
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348878,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-chah-baghwala",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Chah Baghwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.20621,
+      "lng": 71.43898
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348879,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60700"
+  },
+  {
+    "id": "multan-sultan-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Sultan Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15695,
+      "lng": 71.47321
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348890,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-faiz-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Faiz Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15895,
+      "lng": 71.49376
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348891,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-pir-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Pir Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.15939,
+      "lng": 71.46327
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348892,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-fort-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Fort Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17219,
+      "lng": 71.4013
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348927,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "multan-askri-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Askri Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.16615,
+      "lng": 71.40269
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348934,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60900"
+  },
+  {
+    "id": "multan-saeed-colony",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Saeed Colony",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.14015,
+      "lng": 71.36918
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348973,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "60900"
+  },
+  {
+    "id": "multan-askani-park",
+    "cityId": "multan",
+    "provinceId": "punjab",
+    "name": "Askani Park",
+    "aliases": [],
+    "coordinates": {
+      "lat": 30.17895,
+      "lng": 71.4283
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11348998,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  }
+]

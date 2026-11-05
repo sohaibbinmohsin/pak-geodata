@@ -1,0 +1,24 @@
+[
+  {
+    "id": "islamabad",
+    "name": "Islamabad",
+    "urduName": "اسلام آباد",
+    "provinceId": "islamabad-ict",
+    "division": "Islamabad",
+    "district": "Islamabad",
+    "coordinates": {
+      "lat": 33.6844,
+      "lng": 73.0479
+    },
+    "postalCodeRange": [
+      "44000",
+      "45999"
+    ],
+    "bounds": {
+      "minLat": 33.5500,
+      "maxLat": 33.7800,
+      "minLng": 72.8500,
+      "maxLng": 73.2500
+    }
+  }
+]

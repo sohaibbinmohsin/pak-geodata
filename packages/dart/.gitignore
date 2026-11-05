@@ -1,0 +1,6 @@
+# Dart build and cache artifacts
+.dart_tool/
+.packages
+.pub-cache/
+build/
+pubspec.lock

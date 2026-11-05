@@ -1,0 +1,232 @@
+[
+  {
+    "id": "sibi-main-bazaar",
+    "cityId": "sibi",
+    "provinceId": "balochistan",
+    "name": "Main Bazaar Sibi",
+    "urduName": "مرکزی بازار سبی",
+    "aliases": [
+      "Sibi Bazaar",
+      "Saddar Bazaar Sibi",
+      "Nishtar Road Sibi"
+    ],
+    "postalCode": "82000",
+    "coordinates": {
+      "lat": 29.545,
+      "lng": 67.876
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1164896,
+        "featureCode": "PPLA2",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sibi-railway-colony",
+    "cityId": "sibi",
+    "provinceId": "balochistan",
+    "name": "Railway Junction & Colony",
+    "urduName": "سبی ریلوے جنکشن و کالونی",
+    "aliases": [
+      "Sibi Railway Station",
+      "Railway Colony Sibi"
+    ],
+    "postalCode": "82000",
+    "coordinates": {
+      "lat": 29.541,
+      "lng": 67.872
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sibi-mela-ground",
+    "cityId": "sibi",
+    "provinceId": "balochistan",
+    "name": "Sibi Mela Ground & Stadium",
+    "urduName": "سبی میلہ گراؤنڈ",
+    "aliases": [
+      "Sibi Horse & Cattle Show Ground",
+      "Sardaran Stadium Sibi"
+    ],
+    "postalCode": "82000",
+    "coordinates": {
+      "lat": 29.552,
+      "lng": 67.884
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sibi-district-courts",
+    "cityId": "sibi",
+    "provinceId": "balochistan",
+    "name": "District Courts & Commissioner Office",
+    "urduName": "ضلعی کچہری سبی",
+    "aliases": [
+      "Kachehri Sibi",
+      "DC Office Sibi",
+      "Commissioner Complex Sibi"
+    ],
+    "postalCode": "82000",
+    "coordinates": {
+      "lat": 29.548,
+      "lng": 67.879
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sibi-victoria-hall",
+    "cityId": "sibi",
+    "provinceId": "balochistan",
+    "name": "Victoria Memorial Hall",
+    "urduName": "وکٹوریہ جرگہ ہال سبی",
+    "aliases": [
+      "Jirga Hall Sibi",
+      "Sibi Museum Area",
+      "Quaid Residency Sibi"
+    ],
+    "postalCode": "82000",
+    "coordinates": {
+      "lat": 29.5465,
+      "lng": 67.8775
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sibi-dehpal",
+    "cityId": "sibi",
+    "provinceId": "balochistan",
+    "name": "Dehpal",
+    "urduName": "دیہپال سبی",
+    "aliases": [
+      "Dehpal Sibi",
+      "Killi Dehpal"
+    ],
+    "postalCode": "82010",
+    "coordinates": {
+      "lat": 29.535,
+      "lng": 67.865
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sibi-luni",
+    "cityId": "sibi",
+    "provinceId": "balochistan",
+    "name": "Luni Road Area",
+    "urduName": "لونی روڈ سبی",
+    "aliases": [
+      "Luni Road Sibi",
+      "Killi Luni"
+    ],
+    "postalCode": "82020",
+    "coordinates": {
+      "lat": 29.562,
+      "lng": 67.892
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sibi-nari-bank",
+    "cityId": "sibi",
+    "provinceId": "balochistan",
+    "name": "Nari Riverfront",
+    "urduName": "ناری ریور فرنٹ سبی",
+    "aliases": [
+      "Nari Bank Sibi",
+      "Nari Gorge Link"
+    ],
+    "postalCode": "82000",
+    "coordinates": {
+      "lat": 29.525,
+      "lng": 67.852
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "sibi-khanwal",
+    "cityId": "sibi",
+    "provinceId": "balochistan",
+    "name": "Khanwal",
+    "aliases": [
+      "Khanal Mari",
+      "Khānal Māri"
+    ],
+    "coordinates": {
+      "lat": 29.56091,
+      "lng": 67.87789
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 1394698,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "sibi-haji-dur-muhammad",
+    "cityId": "sibi",
+    "provinceId": "balochistan",
+    "name": "Haji Dur Muhammad",
+    "aliases": [],
+    "coordinates": {
+      "lat": 29.5574,
+      "lng": 67.88579
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 7331464,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  }
+]

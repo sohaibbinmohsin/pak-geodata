@@ -1,0 +1,200 @@
+[
+  {
+    "id": "peshawar",
+    "name": "Peshawar",
+    "urduName": "پشاور",
+    "provinceId": "kpk",
+    "division": "Peshawar Division",
+    "district": "Peshawar",
+    "coordinates": {
+      "lat": 34.0151,
+      "lng": 71.5249
+    },
+    "postalCodeRange": [
+      "25000",
+      "25999"
+    ],
+    "bounds": {
+      "minLat": 33.92,
+      "maxLat": 34.1,
+      "minLng": 71.42,
+      "maxLng": 71.64
+    }
+  },
+  {
+    "id": "abbottabad",
+    "name": "Abbottabad",
+    "urduName": "ایبٹ آباد",
+    "provinceId": "kpk",
+    "division": "Hazara Division",
+    "district": "Abbottabad",
+    "coordinates": {
+      "lat": 34.1688,
+      "lng": 73.2215
+    },
+    "postalCodeRange": [
+      "22010",
+      "22099"
+    ],
+    "bounds": {
+      "minLat": 34.1,
+      "maxLat": 34.23,
+      "minLng": 73.17,
+      "maxLng": 73.28
+    }
+  },
+  {
+    "id": "mardan",
+    "name": "Mardan",
+    "urduName": "مردان",
+    "provinceId": "kpk",
+    "division": "Mardan Division",
+    "district": "Mardan",
+    "coordinates": {
+      "lat": 34.1989,
+      "lng": 72.0404
+    },
+    "postalCodeRange": [
+      "23200",
+      "23299"
+    ],
+    "bounds": {
+      "minLat": 34.14,
+      "maxLat": 34.26,
+      "minLng": 71.97,
+      "maxLng": 72.1
+    }
+  },
+  {
+    "id": "mingora",
+    "name": "Mingora",
+    "urduName": "مینگورہ",
+    "provinceId": "kpk",
+    "division": "Malakand Division",
+    "district": "Swat",
+    "coordinates": {
+      "lat": 34.7758,
+      "lng": 72.3626
+    },
+    "postalCodeRange": [
+      "19130",
+      "19199"
+    ],
+    "bounds": {
+      "minLat": 34.72,
+      "maxLat": 34.82,
+      "minLng": 72.31,
+      "maxLng": 72.41
+    }
+  },
+  {
+    "id": "kohat",
+    "name": "Kohat",
+    "urduName": "کوہاٹ",
+    "provinceId": "kpk",
+    "division": "Kohat Division",
+    "district": "Kohat",
+    "coordinates": {
+      "lat": 33.5869,
+      "lng": 71.4414
+    },
+    "postalCodeRange": [
+      "26000",
+      "26099"
+    ],
+    "bounds": {
+      "minLat": 33.52,
+      "maxLat": 33.64,
+      "minLng": 71.38,
+      "maxLng": 71.5
+    }
+  },
+  {
+    "id": "dera-ismail-khan",
+    "name": "Dera Ismail Khan",
+    "urduName": "ڈیرہ اسماعیل خان",
+    "provinceId": "kpk",
+    "division": "Dera Ismail Khan Division",
+    "district": "Dera Ismail Khan",
+    "coordinates": {
+      "lat": 31.8314,
+      "lng": 70.9019
+    },
+    "postalCodeRange": [
+      "29050",
+      "29099"
+    ],
+    "bounds": {
+      "minLat": 31.78,
+      "maxLat": 31.88,
+      "minLng": 70.85,
+      "maxLng": 70.96
+    }
+  },
+  {
+    "id": "nowshera",
+    "name": "Nowshera",
+    "urduName": "نوشہرہ",
+    "provinceId": "kpk",
+    "division": "Peshawar Division",
+    "district": "Nowshera",
+    "coordinates": {
+      "lat": 34.0153,
+      "lng": 71.9747
+    },
+    "postalCodeRange": [
+      "24100",
+      "24199"
+    ],
+    "bounds": {
+      "minLat": 33.96,
+      "maxLat": 34.07,
+      "minLng": 71.92,
+      "maxLng": 72.03
+    }
+  },
+  {
+    "id": "swabi",
+    "name": "Swabi",
+    "urduName": "صوابی",
+    "provinceId": "kpk",
+    "division": "Mardan Division",
+    "district": "Swabi",
+    "coordinates": {
+      "lat": 34.1202,
+      "lng": 72.4698
+    },
+    "postalCodeRange": [
+      "23430",
+      "23499"
+    ],
+    "bounds": {
+      "minLat": 34.07,
+      "maxLat": 34.17,
+      "minLng": 72.41,
+      "maxLng": 72.52
+    }
+  },
+  {
+    "id": "mansehra",
+    "name": "Mansehra",
+    "urduName": "مانسہرہ",
+    "provinceId": "kpk",
+    "division": "Hazara Division",
+    "district": "Mansehra",
+    "coordinates": {
+      "lat": 34.3333,
+      "lng": 73.2
+    },
+    "postalCodeRange": [
+      "21300",
+      "21399"
+    ],
+    "bounds": {
+      "minLat": 34.28,
+      "maxLat": 34.39,
+      "minLng": 73.15,
+      "maxLng": 73.26
+    }
+  }
+]

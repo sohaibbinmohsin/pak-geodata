@@ -1,0 +1,174 @@
+[
+  {
+    "id": "aliabad-hunza-kkh-strip",
+    "cityId": "aliabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Karakoram Highway Commercial Strip",
+    "urduName": "شاہراہ ریشم علی آباد ہنزہ",
+    "aliases": [
+      "KKH Aliabad",
+      "Main Highway Aliabad Hunza"
+    ],
+    "postalCode": "15710",
+    "coordinates": {
+      "lat": 36.312,
+      "lng": 74.618
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "aliabad-hunza-main-bazaar",
+    "cityId": "aliabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Aliabad Main Bazaar",
+    "urduName": "مین بازار علی آباد ہنزہ",
+    "aliases": [
+      "Aliabad Central Market",
+      "Hunza Central Bazaar"
+    ],
+    "postalCode": "15710",
+    "coordinates": {
+      "lat": 36.315,
+      "lng": 74.622
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "aliabad-hunza-hospital-road",
+    "cityId": "aliabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Hospital Road (Aga Khan Health Centre)",
+    "urduName": "ہسپتال روڈ علی آباد ہنزہ",
+    "aliases": [
+      "Aga Khan Health Services Aliabad"
+    ],
+    "postalCode": "15710",
+    "coordinates": {
+      "lat": 36.318,
+      "lng": 74.628
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "aliabad-hunza-dorkhan",
+    "cityId": "aliabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Dorkhan",
+    "urduName": "دورکھن علی آباد ہنزہ",
+    "aliases": [
+      "Dorkhan Mohalla Aliabad"
+    ],
+    "postalCode": "15710",
+    "coordinates": {
+      "lat": 36.308,
+      "lng": 74.612
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "aliabad-hunza-ganish",
+    "cityId": "aliabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Ganish Heritage Village Link",
+    "urduName": "گنیش ولیج علی آباد",
+    "aliases": [
+      "Ganish Ancient Settlement",
+      "Ganish Hunza"
+    ],
+    "postalCode": "15710",
+    "coordinates": {
+      "lat": 36.302,
+      "lng": 74.648
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "aliabad-hunza-altit-link",
+    "cityId": "aliabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Altit Link Road",
+    "urduName": "التت لنک روڈ",
+    "aliases": [
+      "Altit Karimabad Junction"
+    ],
+    "postalCode": "15710",
+    "coordinates": {
+      "lat": 36.321,
+      "lng": 74.652
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "aliabad-hunza-college-road",
+    "cityId": "aliabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "College Road",
+    "urduName": "کالج روڈ علی آباد ہنزہ",
+    "aliases": [
+      "Degree College Aliabad"
+    ],
+    "postalCode": "15710",
+    "coordinates": {
+      "lat": 36.324,
+      "lng": 74.625
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "aliabad-hunza-haiderabad",
+    "cityId": "aliabad-hunza",
+    "provinceId": "gilgit-baltistan",
+    "name": "Haiderabad Hunza",
+    "urduName": "حیدرآباد ہنزہ",
+    "aliases": [
+      "Hyderabad Hunza",
+      "Haiderabad Village"
+    ],
+    "postalCode": "15710",
+    "coordinates": {
+      "lat": 36.305,
+      "lng": 74.595
+    },
+    "type": "suburb",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  }
+]

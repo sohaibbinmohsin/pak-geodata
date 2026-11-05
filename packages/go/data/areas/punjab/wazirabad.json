@@ -1,0 +1,208 @@
+[
+  {
+    "id": "wazirabad-main-bazaar",
+    "cityId": "wazirabad",
+    "provinceId": "punjab",
+    "name": "Main Cutlery Bazaar",
+    "urduName": "مرکزی بازار کٹلری وزیر آباد",
+    "aliases": [
+      "Main Bazaar Wazirabad",
+      "Cutlery Market Wazirabad",
+      "City Center Wazirabad"
+    ],
+    "postalCode": "52000",
+    "coordinates": {
+      "lat": 32.443,
+      "lng": 74.1195
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated",
+      {
+        "provider": "nga_geonames",
+        "id": 1162456,
+        "featureCode": "PPL",
+        "datasetVersion": "2026-11"
+      }
+    ]
+  },
+  {
+    "id": "wazirabad-railway-junction",
+    "cityId": "wazirabad",
+    "provinceId": "punjab",
+    "name": "Wazirabad Railway Junction",
+    "urduName": "وزیر آباد ریلوے جنکشن",
+    "aliases": [
+      "Railway Station Wazirabad",
+      "Railway Colony Wazirabad"
+    ],
+    "postalCode": "52000",
+    "coordinates": {
+      "lat": 32.439,
+      "lng": 74.115
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "wazirabad-kachehri-chowk",
+    "cityId": "wazirabad",
+    "provinceId": "punjab",
+    "name": "Kachehri Chowk",
+    "urduName": "کچہری چوک وزیر آباد",
+    "aliases": [
+      "District Courts Wazirabad",
+      "Katchery Chowk Wazirabad",
+      "Civil Courts Wazirabad"
+    ],
+    "postalCode": "52000",
+    "coordinates": {
+      "lat": 32.447,
+      "lng": 74.125
+    },
+    "type": "administrative",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "wazirabad-sialkot-road",
+    "cityId": "wazirabad",
+    "provinceId": "punjab",
+    "name": "Sialkot Road",
+    "urduName": "سیالکوٹ روڈ وزیر آباد",
+    "aliases": [
+      "Sialkot Highway Wazirabad",
+      "Daska Road Wazirabad"
+    ],
+    "postalCode": "52000",
+    "coordinates": {
+      "lat": 32.451,
+      "lng": 74.132
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "wazirabad-gt-road",
+    "cityId": "wazirabad",
+    "provinceId": "punjab",
+    "name": "GT Road Wazirabad Strip",
+    "urduName": "جی ٹی روڈ وزیر آباد",
+    "aliases": [
+      "Grand Trunk Road Wazirabad",
+      "Gujrat Wazirabad Corridor"
+    ],
+    "postalCode": "52000",
+    "coordinates": {
+      "lat": 32.435,
+      "lng": 74.108
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "wazirabad-nizamabad",
+    "cityId": "wazirabad",
+    "provinceId": "punjab",
+    "name": "Nizamabad Cutlery Industrial Zone",
+    "urduName": "نظام آباد وزیر آباد",
+    "aliases": [
+      "Nizamabad Wazirabad",
+      "Cutlery Cluster Nizamabad"
+    ],
+    "postalCode": "52010",
+    "coordinates": {
+      "lat": 32.458,
+      "lng": 74.142
+    },
+    "type": "commercial",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "wazirabad-sohdra-link",
+    "cityId": "wazirabad",
+    "provinceId": "punjab",
+    "name": "Sohdra Road Link",
+    "urduName": "سوہدرہ لنک وزیر آباد",
+    "aliases": [
+      "Sohdra Wazirabad",
+      "Sohdra Chowk"
+    ],
+    "postalCode": "52020",
+    "coordinates": {
+      "lat": 32.462,
+      "lng": 74.148
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "wazirabad-allama-iqbal-town",
+    "cityId": "wazirabad",
+    "provinceId": "punjab",
+    "name": "Allama Iqbal Town",
+    "urduName": "علامہ اقبال ٹاؤن وزیر آباد",
+    "aliases": [
+      "Iqbal Town Wazirabad",
+      "Allama Iqbal Colony Wazirabad"
+    ],
+    "postalCode": "52000",
+    "coordinates": {
+      "lat": 32.441,
+      "lng": 74.122
+    },
+    "type": "housing_society",
+    "verified": true,
+    "sources": [
+      "survey",
+      "curated"
+    ]
+  },
+  {
+    "id": "wazirabad-phaliwala",
+    "cityId": "wazirabad",
+    "provinceId": "punjab",
+    "name": "Phaliwala",
+    "aliases": [],
+    "coordinates": {
+      "lat": 32.44275,
+      "lng": 74.12966
+    },
+    "type": "neighborhood",
+    "verified": true,
+    "sources": [
+      {
+        "provider": "nga_geonames",
+        "id": 11452169,
+        "featureCode": "PPLX",
+        "datasetVersion": "2026-11"
+      }
+    ],
+    "postalCode": "52000"
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "quetta",
+    "name": "Quetta",
+    "urduName": "کوئٹہ",
+    "provinceId": "balochistan",
+    "division": "Quetta Division",
+    "district": "Quetta",
+    "coordinates": {
+      "lat": 30.1798,
+      "lng": 66.975
+    },
+    "postalCodeRange": [
+      "87300",
+      "87399"
+    ],
+    "bounds": {
+      "minLat": 30.1,
+      "maxLat": 30.28,
+      "minLng": 66.9,
+      "maxLng": 67.08
+    }
+  },
+  {
+    "id": "gwadar",
+    "name": "Gwadar",
+    "urduName": "گوادر",
+    "provinceId": "balochistan",
+    "division": "Makran Division",
+    "district": "Gwadar",
+    "coordinates": {
+      "lat": 25.1216,
+      "lng": 62.3254
+    },
+    "postalCodeRange": [
+      "91200",
+      "91299"
+    ],
+    "bounds": {
+      "minLat": 25.07,
+      "maxLat": 25.18,
+      "minLng": 62.26,
+      "maxLng": 62.38
+    }
+  },
+  {
+    "id": "turbat",
+    "name": "Turbat",
+    "urduName": "تربت",
+    "provinceId": "balochistan",
+    "division": "Makran Division",
+    "district": "Kech",
+    "coordinates": {
+      "lat": 26.0031,
+      "lng": 63.0544
+    },
+    "postalCodeRange": [
+      "92600",
+      "92699"
+    ],
+    "bounds": {
+      "minLat": 25.95,
+      "maxLat": 26.06,
+      "minLng": 62.99,
+      "maxLng": 63.11
+    }
+  },
+  {
+    "id": "khuzdar",
+    "name": "Khuzdar",
+    "urduName": "خضدار",
+    "provinceId": "balochistan",
+    "division": "Kalat Division",
+    "district": "Khuzdar",
+    "coordinates": {
+      "lat": 27.8,
+      "lng": 66.6
+    },
+    "postalCodeRange": [
+      "89100",
+      "89199"
+    ],
+    "bounds": {
+      "minLat": 27.74,
+      "maxLat": 27.86,
+      "minLng": 66.54,
+      "maxLng": 66.67
+    }
+  },
+  {
+    "id": "hub",
+    "name": "Hub",
+    "urduName": "حب",
+    "provinceId": "balochistan",
+    "division": "Kalat Division",
+    "district": "Hub",
+    "coordinates": {
+      "lat": 25.03,
+      "lng": 66.88
+    },
+    "postalCodeRange": [
+      "90150",
+      "90199"
+    ],
+    "bounds": {
+      "minLat": 24.98,
+      "maxLat": 25.08,
+      "minLng": 66.82,
+      "maxLng": 66.94
+    }
+  },
+  {
+    "id": "chaman",
+    "name": "Chaman",
+    "urduName": "چمن",
+    "provinceId": "balochistan",
+    "division": "Quetta Division",
+    "district": "Chaman",
+    "coordinates": {
+      "lat": 30.921,
+      "lng": 66.4597
+    },
+    "postalCodeRange": [
+      "86000",
+      "86050"
+    ],
+    "bounds": {
+      "minLat": 30.87,
+      "maxLat": 30.97,
+      "minLng": 66.41,
+      "maxLng": 66.51
+    }
+  },
+  {
+    "id": "sibi",
+    "name": "Sibi",
+    "urduName": "سبی",
+    "provinceId": "balochistan",
+    "division": "Sibi Division",
+    "district": "Sibi",
+    "coordinates": {
+      "lat": 29.5448,
+      "lng": 67.8764
+    },
+    "postalCodeRange": [
+      "82000",
+      "82050"
+    ],
+    "bounds": {
+      "minLat": 29.5,
+      "maxLat": 29.59,
+      "minLng": 67.83,
+      "maxLng": 67.92
+    }
+  },
+  {
+    "id": "zhob",
+    "name": "Zhob",
+    "urduName": "ژوب",
+    "provinceId": "balochistan",
+    "division": "Zhob Division",
+    "district": "Zhob",
+    "coordinates": {
+      "lat": 31.3417,
+      "lng": 69.4486
+    },
+    "postalCodeRange": [
+      "85200",
+      "85250"
+    ],
+    "bounds": {
+      "minLat": 31.3,
+      "maxLat": 31.39,
+      "minLng": 69.4,
+      "maxLng": 69.5
+    }
+  },
+  {
+    "id": "loralai",
+    "name": "Loralai",
+    "urduName": "لورالائی",
+    "provinceId": "balochistan",
+    "division": "Loralai Division",
+    "district": "Loralai",
+    "coordinates": {
+      "lat": 30.3705,
+      "lng": 68.5979
+    },
+    "postalCodeRange": [
+      "84800",
+      "84850"
+    ],
+    "bounds": {
+      "minLat": 30.33,
+      "maxLat": 30.42,
+      "minLng": 68.55,
+      "maxLng": 68.65
+    }
+  },
+  {
+    "id": "dera-murad-jamali",
+    "name": "Dera Murad Jamali",
+    "urduName": "ڈیرہ مراد جمالی",
+    "provinceId": "balochistan",
+    "division": "Nasirabad Division",
+    "district": "Nasirabad",
+    "coordinates": {
+      "lat": 28.5466,
+      "lng": 68.2231
+    },
+    "postalCodeRange": [
+      "80100",
+      "80150"
+    ],
+    "bounds": {
+      "minLat": 28.5,
+      "maxLat": 28.59,
+      "minLng": 68.18,
+      "maxLng": 68.27
+    }
+  }
+]
