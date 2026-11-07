@@ -4,14 +4,20 @@ declare(strict_types=1);
 
 namespace PakGeoData\Tests;
 
+if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    require_once __DIR__ . '/../vendor/autoload.php';
+}
+
 use PHPUnit\Framework\TestCase;
 use PakGeoData\Geo;
 use PakGeoData\PakGeoData;
+use PakGeoData\Search;
 use PakGeoData\Models\Coordinates;
 use PakGeoData\Models\Province;
 use PakGeoData\Models\City;
 use PakGeoData\Models\Area;
 use PakGeoData\Models\NearestAreaResult;
+use PakGeoData\Models\SearchResult;
 
 final class PakGeoDataTest extends TestCase
 {
@@ -214,6 +220,179 @@ final class PakGeoDataTest extends TestCase
         // Non-existent city filter returns null
         $nonExistentCity = PakGeoData::getNearestArea($lahoreCoords, cityId: 'non-existent-city');
         $this->assertNull($nonExistentCity);
+    }
+
+    public function testUrduNormalization(): void
+    {
+        // Diacritics stripping (Tashkeel and Tatweel)
+        $withDiacritics = 'گُلبَرگ';
+        $this->assertSame('گلبرگ', Search::stripDiacritics($withDiacritics));
+        $this->assertSame('گلبرگ', Search::normalizeUrduText($withDiacritics));
+        $this->assertSame('گلبرگ', PakGeoData::normalizeUrduText($withDiacritics));
+
+        // Eastern Arabic-Indic digits (۰-۹) to Western ASCII digits (0-9)
+        $easternDigits = '۰۱۲۳۴۵۶۷۸۹';
+        $this->assertSame('0123456789', Search::toWesternDigits($easternDigits));
+
+        // Standard Arabic-Indic digits (٠-٩) to Western ASCII digits (0-9)
+        $arabicDigits = '٠١٢٣٤٥٦٧۸۹';
+        // Note: ٠١٢٣٤٥٦٧٨٩
+        $this->assertSame('0123456789', Search::toWesternDigits('٠١٢٣٤٥٦٧٨٩'));
+
+        // Letter normalizations: Alef, Yeh, Kaf, Heh
+        $variations = 'آكےة';
+        $this->assertSame('اکیہ', Search::normalizeUrduText($variations));
+        $this->assertSame('اکیہ', PakGeoData::normalizeUrduText($variations));
+
+        // Unify Alef variants [آأإٱ] -> ا
+        $alefVariants = 'آأإٱ';
+        $this->assertSame('اااا', Search::normalizeUrduText($alefVariants));
+
+        // Unify Yeh variants [يىئے] -> ی
+        $yehVariants = 'يىئے';
+        $this->assertSame('یییی', Search::normalizeUrduText($yehVariants));
+
+        // Unify Kaf variants [ك] -> ک
+        $this->assertSame('ک', Search::normalizeUrduText('ك'));
+
+        // Mixed text with whitespace and eastern digits
+        $mixed = '  گلبرگ    ۳  ';
+        $this->assertSame('گلبرگ 3', PakGeoData::normalizeUrduText($mixed));
+        $this->assertSame('لاہور', PakGeoData::normalizeUrduText('  لاہور  '));
+        $this->assertSame('', PakGeoData::normalizeUrduText(''));
+    }
+
+    public function testSearchAreas(): void
+    {
+        // 1. Urdu query "گلبرگ" in Lahore -> resolves top match lahore-gulberg
+        $urduResults = PakGeoData::searchAreas('گلبرگ', cityId: 'lahore');
+        $this->assertNotEmpty($urduResults);
+        $this->assertContainsOnlyInstancesOf(SearchResult::class, $urduResults);
+        $this->assertStringStartsWith('lahore-gulberg', $urduResults[0]->area->id);
+        $this->assertSame('lahore', $urduResults[0]->area->cityId);
+        $this->assertGreaterThan(0.0, $urduResults[0]->score);
+
+        // 2. Colloquial alias "dha 5" in Lahore -> resolves lahore-dha-phase-5
+        $dhaResults = PakGeoData::searchAreas('dha 5', cityId: 'lahore');
+        $this->assertNotEmpty($dhaResults);
+        $this->assertSame('lahore-dha-phase-5', $dhaResults[0]->area->id);
+
+        // 3. Colloquial alias "pindi" resolves Rawalpindi areas
+        $pindiResults = PakGeoData::searchAreas('pindi', limit: 5);
+        $this->assertNotEmpty($pindiResults);
+        $this->assertLessThanOrEqual(5, count($pindiResults));
+        foreach ($pindiResults as $r) {
+            $this->assertSame('rawalpindi', $r->area->cityId);
+        }
+
+        // Additional city colloquial aliases
+        $isbResults = PakGeoData::searchAreas('isb', limit: 5);
+        $this->assertNotEmpty($isbResults);
+        foreach ($isbResults as $r) {
+            $this->assertSame('islamabad', $r->area->cityId);
+        }
+
+        $lheResults = PakGeoData::searchAreas('lhe', limit: 5);
+        $this->assertNotEmpty($lheResults);
+        foreach ($lheResults as $r) {
+            $this->assertSame('lahore', $r->area->cityId);
+        }
+
+        $khiResults = PakGeoData::searchAreas('khi', limit: 5);
+        $this->assertNotEmpty($khiResults);
+        foreach ($khiResults as $r) {
+            $this->assertSame('karachi', $r->area->cityId);
+        }
+
+        // 4. Postal code query "54000" matches
+        $postalResults = PakGeoData::searchAreas('54000');
+        $this->assertNotEmpty($postalResults);
+        $matched54000 = false;
+        foreach ($postalResults as $r) {
+            if ($r->area->postalCode === '54000' && $r->area->cityId === 'lahore') {
+                $matched54000 = true;
+                break;
+            }
+        }
+        $this->assertTrue($matched54000, 'Expected searchAreas("54000") to match Lahore area with postal code 54000');
+
+        // 5. Typo / fuzzy matching: "gulbrg" matches gulberg
+        $fuzzyResults = PakGeoData::searchAreas('gulbrg', cityId: 'lahore');
+        $this->assertNotEmpty($fuzzyResults);
+        $this->assertStringContainsString('gulberg', $fuzzyResults[0]->area->id);
+
+        // Typo "Gulbarg"
+        $fuzzyResults2 = PakGeoData::searchAreas('Gulbarg', cityId: 'lahore');
+        $this->assertNotEmpty($fuzzyResults2);
+        $this->assertStringContainsString('gulberg', $fuzzyResults2[0]->area->id);
+
+        // 6. Exact match ranking: "Gulberg II"
+        $exactResults = PakGeoData::searchAreas('Gulberg II', cityId: 'lahore');
+        $this->assertNotEmpty($exactResults);
+        $this->assertSame('lahore-gulberg-2', $exactResults[0]->area->id);
+        $this->assertSame(1000.0, $exactResults[0]->score);
+        $this->assertSame('exact', $exactResults[0]->matchType);
+
+        // 7. Scoping by cityId and provinceId
+        $isbDha = PakGeoData::searchAreas('dha 2', cityId: 'islamabad');
+        $this->assertNotEmpty($isbDha);
+        $this->assertSame('islamabad', $isbDha[0]->area->cityId);
+
+        $sindhDha = PakGeoData::searchAreas('dha', provinceId: 'sindh', limit: 5);
+        $this->assertNotEmpty($sindhDha);
+        foreach ($sindhDha as $r) {
+            $this->assertSame('sindh', $r->area->provinceId);
+        }
+
+        // 8. Empty, whitespace, invalid city filters, and limit 0
+        $this->assertSame([], PakGeoData::searchAreas(''));
+        $this->assertSame([], PakGeoData::searchAreas('   '));
+        $this->assertSame([], PakGeoData::searchAreas('dha', limit: 0));
+        $this->assertSame([], PakGeoData::searchAreas('dha', cityId: 'non-existent-city'));
+
+        // Static delegate parity: Search::searchAreas matches PakGeoData::searchAreas
+        $direct = Search::searchAreas('dha 5', cityId: 'lahore');
+        $delegated = PakGeoData::searchAreas('dha 5', cityId: 'lahore');
+        $this->assertCount(count($direct), $delegated);
+        $this->assertSame($direct[0]->area->id, $delegated[0]->area->id);
+    }
+
+    public function testCrossLanguageGoldenVectorsSearch(): void
+    {
+        $urduSearches = [
+            ['query' => 'گلبرگ', 'mustMatchKeyword' => 'gulberg'],
+            ['query' => 'صدر', 'mustMatchKeyword' => 'saddar'],
+            ['query' => 'ڈی ایچ اے', 'mustMatchKeyword' => 'dha'],
+        ];
+
+        foreach ($urduSearches as $v) {
+            $res = PakGeoData::searchAreas($v['query'], limit: 5);
+            $this->assertNotEmpty($res, "Expected results for {$v['query']}");
+            $matched = false;
+            foreach ($res as $r) {
+                if (str_contains(strtolower($r->area->id), $v['mustMatchKeyword']) ||
+                    str_contains(strtolower($r->area->name), $v['mustMatchKeyword'])) {
+                    $matched = true;
+                    break;
+                }
+            }
+            $this->assertTrue($matched, "Expected {$v['query']} to match {$v['mustMatchKeyword']}");
+        }
+
+        $colloquialAliases = [
+            ['alias' => 'isb', 'expectedCityId' => 'islamabad'],
+            ['alias' => 'lhe', 'expectedCityId' => 'lahore'],
+            ['alias' => 'khi', 'expectedCityId' => 'karachi'],
+            ['alias' => 'pindi', 'expectedCityId' => 'rawalpindi'],
+        ];
+
+        foreach ($colloquialAliases as $v) {
+            $res = PakGeoData::searchAreas($v['alias'], limit: 5);
+            $this->assertNotEmpty($res, "Expected results for {$v['alias']}");
+            foreach ($res as $r) {
+                $this->assertSame($v['expectedCityId'], $r->area->cityId);
+            }
+        }
     }
 }
 

@@ -10,6 +10,7 @@ use PakGeoData\Models\CityBounds;
 use PakGeoData\Models\Coordinates;
 use PakGeoData\Models\NearestAreaResult;
 use PakGeoData\Models\Province;
+use PakGeoData\Models\SearchResult;
 
 final class PakGeoData
 {
@@ -216,6 +217,33 @@ final class PakGeoData
         }
 
         return new NearestAreaResult($nearest, $minDistance);
+    }
+
+    /**
+     * Searches Pakistan areas using multi-tier ranking:
+     * Exact match > Prefix match > Urdu match > Alias match > Token match > Fuzzy match.
+     *
+     * @return array<SearchResult>
+     */
+    public static function searchAreas(
+        string $query,
+        ?string $cityId = null,
+        int $limit = 20,
+        ?string $provinceId = null
+    ): array {
+        return Search::searchAreas($query, $cityId, $limit, $provinceId);
+    }
+
+    /**
+     * Applies standard Urdu NLP normalization rules:
+     * - Strips Tashkeel diacritics and Tatweel
+     * - Normalizes Alef, Yeh, Kaf, and Heh variations
+     * - Converts Eastern Arabic-Indic numerals to Western digits
+     * - Trims and normalizes whitespace
+     */
+    public static function normalizeUrduText(string $text): string
+    {
+        return Search::normalizeUrduText($text);
     }
 
     /**
