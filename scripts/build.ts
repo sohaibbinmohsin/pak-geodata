@@ -108,7 +108,7 @@ async function main() {
     }
     throw new Error('Dataset count parity gate failed across multi-language targets');
   }
-  console.log('✔ Exact dataset count parity verified across 5 targets (7 provinces, 79 cities, 3953 areas)');
+  console.log('✔ Exact dataset count parity verified across 6 targets (7 provinces, 79 cities, 3953 areas)');
 
   const citySlugs = Object.keys(cityAreaCounts).sort();
 

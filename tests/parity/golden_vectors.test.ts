@@ -95,7 +95,7 @@ print(json.dumps({
       assert.equal(counts.areas, vectors.datasetCounts.areas);
     });
 
-    test('All 5 dataset repositories maintain exact count parity', () => {
+    test('All 6 dataset repositories maintain exact count parity', () => {
       // 1. Master Data
       const masterProvinces = JSON.parse(
         readFileSync(resolve(rootDir, 'data/provinces.json'), 'utf-8')
@@ -202,6 +202,29 @@ print(json.dumps({
       assert.equal(dartProvincesCount, 7);
       assert.equal(dartCitiesCount, 79);
       assert.equal(dartAreasCount, 3953);
+
+      // 5. PHP Data (OPcache array files)
+      const phpProvincesText = readFileSync(
+        resolve(rootDir, 'packages/php/src/Data/Provinces.php'),
+        'utf-8'
+      );
+      const phpProvincesCount = (phpProvincesText.match(/'id'\s*=>\s*'/g) || []).length;
+
+      const phpCitiesText = readFileSync(
+        resolve(rootDir, 'packages/php/src/Data/Cities.php'),
+        'utf-8'
+      );
+      const phpCitiesCount = (phpCitiesText.match(/'id'\s*=>\s*'/g) || []).length;
+
+      const phpAreasText = readFileSync(
+        resolve(rootDir, 'packages/php/src/Data/Areas.php'),
+        'utf-8'
+      );
+      const phpAreasCount = (phpAreasText.match(/'id'\s*=>\s*'/g) || []).length;
+
+      assert.equal(phpProvincesCount, 7);
+      assert.equal(phpCitiesCount, 79);
+      assert.equal(phpAreasCount, 3953);
     });
   });
 
