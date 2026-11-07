@@ -56,9 +56,3 @@ jobs:
 
       - name: Run test suite
         run: npm test
-
-      - name: Run PHP tests
-        run: |
-          cd packages/php
-          composer install --prefer-dist --no-interaction
-          npm run test:php

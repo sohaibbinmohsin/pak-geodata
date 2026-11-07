@@ -198,7 +198,7 @@ final class PakGeoData
         }
 
         $nearest = null;
-        $minDistance = INF;
+        $minDistance = ($maxRadiusKm !== null && $maxRadiusKm > 0.0) ? $maxRadiusKm : INF;
 
         foreach ($candidates as $area) {
             $dist = Geo::haversineDistanceKm($coords, $area->coordinates);

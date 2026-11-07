@@ -4,8 +4,167 @@ declare(strict_types=1);
 
 namespace PakGeoData\Tests;
 
-if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
-    require_once __DIR__ . '/../vendor/autoload.php';
+if (file_exists(dirname(__DIR__) . '/vendor/autoload.php')) {
+    require_once dirname(__DIR__) . '/vendor/autoload.php';
+} else {
+    spl_autoload_register(static function (string $class): void {
+        $prefix = 'PakGeoData\\';
+        if (str_starts_with($class, $prefix)) {
+            $file = dirname(__DIR__) . '/src/' . str_replace('\\', '/', substr($class, 11)) . '.php';
+            if (file_exists($file)) {
+                require_once $file;
+            }
+        }
+    });
+}
+
+if (!class_exists(\PHPUnit\Framework\TestCase::class)) {
+    class FallbackTestCase
+    {
+        public function __construct(?string $name = null)
+        {
+        }
+
+        public function assertSame(mixed $expected, mixed $actual, string $message = ''): void
+        {
+            if ($expected !== $actual) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : 'Failed asserting that ' . var_export($actual, true) . ' is identical to ' . var_export($expected, true)
+                );
+            }
+        }
+
+        public function assertEquals(mixed $expected, mixed $actual, string $message = ''): void
+        {
+            if ($expected != $actual) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : 'Failed asserting that ' . var_export($actual, true) . ' is equal to ' . var_export($expected, true)
+                );
+            }
+        }
+
+        public function assertTrue(mixed $condition, string $message = ''): void
+        {
+            if ($condition !== true) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : 'Failed asserting that condition is true'
+                );
+            }
+        }
+
+        public function assertFalse(mixed $condition, string $message = ''): void
+        {
+            if ($condition !== false) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : 'Failed asserting that condition is false'
+                );
+            }
+        }
+
+        public function assertNull(mixed $actual, string $message = ''): void
+        {
+            if ($actual !== null) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : 'Failed asserting that ' . var_export($actual, true) . ' is null'
+                );
+            }
+        }
+
+        public function assertNotNull(mixed $actual, string $message = ''): void
+        {
+            if ($actual === null) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : 'Failed asserting that value is not null'
+                );
+            }
+        }
+
+        public function assertNotEmpty(mixed $actual, string $message = ''): void
+        {
+            if (empty($actual)) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : 'Failed asserting that value is not empty'
+                );
+            }
+        }
+
+        public function assertCount(int $expectedCount, \Countable|iterable $countable, string $message = ''): void
+        {
+            $actualCount = is_countable($countable) ? count($countable) : (is_array($countable) ? count($countable) : iterator_count($countable));
+            if ($actualCount !== $expectedCount) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : sprintf('Failed asserting that actual size %d matches expected size %d', $actualCount, $expectedCount)
+                );
+            }
+        }
+
+        public function assertContainsOnlyInstancesOf(string $className, iterable $traversable, string $message = ''): void
+        {
+            foreach ($traversable as $item) {
+                if (!($item instanceof $className)) {
+                    throw new \AssertionError(
+                        $message !== '' ? $message : sprintf('Failed asserting that element of type %s is an instance of %s', get_debug_type($item), $className)
+                    );
+                }
+            }
+        }
+
+        public function assertInstanceOf(string $expected, mixed $actual, string $message = ''): void
+        {
+            if (!($actual instanceof $expected)) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : sprintf('Failed asserting that %s is an instance of %s', get_debug_type($actual), $expected)
+                );
+            }
+        }
+
+        public function assertGreaterThan(mixed $expected, mixed $actual, string $message = ''): void
+        {
+            if (!($actual > $expected)) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : sprintf('Failed asserting that %s is greater than %s', var_export($actual, true), var_export($expected, true))
+                );
+            }
+        }
+
+        public function assertLessThan(mixed $expected, mixed $actual, string $message = ''): void
+        {
+            if (!($actual < $expected)) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : sprintf('Failed asserting that %s is less than %s', var_export($actual, true), var_export($expected, true))
+                );
+            }
+        }
+
+        public function assertLessThanOrEqual(mixed $expected, mixed $actual, string $message = ''): void
+        {
+            if (!($actual <= $expected)) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : sprintf('Failed asserting that %s is less than or equal to %s', var_export($actual, true), var_export($expected, true))
+                );
+            }
+        }
+
+        public function assertStringStartsWith(string $prefix, string $string, string $message = ''): void
+        {
+            if (!str_starts_with($string, $prefix)) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : sprintf("Failed asserting that '%s' starts with '%s'", $string, $prefix)
+                );
+            }
+        }
+
+        public function assertStringContainsString(string $needle, string $haystack, string $message = ''): void
+        {
+            if (!str_contains($haystack, $needle)) {
+                throw new \AssertionError(
+                    $message !== '' ? $message : sprintf("Failed asserting that '%s' contains '%s'", $haystack, $needle)
+                );
+            }
+        }
+    }
+
+    class_alias(FallbackTestCase::class, 'PHPUnit\\Framework\\TestCase');
 }
 
 use PHPUnit\Framework\TestCase;

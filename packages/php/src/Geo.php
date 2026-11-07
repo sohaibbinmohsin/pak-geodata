@@ -10,6 +10,10 @@ final class Geo
 {
     public const EARTH_RADIUS_KM = 6371.0088;
 
+    private function __construct()
+    {
+    }
+
     public static function haversineDistanceKm(Coordinates $c1, Coordinates $c2): float
     {
         if ($c1->lat === $c2->lat && $c1->lng === $c2->lng) {

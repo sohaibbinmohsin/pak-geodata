@@ -78,7 +78,7 @@ export function formatValue(v: unknown): string {
   return 'null';
 }
 
-export function generatePhpProvinces(provinces: any[]): string {
+export function generatePhpProvinces(provinces: ProvinceJson[]): string {
   let out = '<?php\n\ndeclare(strict_types=1);\n\nnamespace PakGeoData\\Data;\n\nreturn [\n';
   for (const p of provinces) {
     out += `    [\n`;
@@ -93,7 +93,7 @@ export function generatePhpProvinces(provinces: any[]): string {
   return out;
 }
 
-export function generatePhpCities(cities: any[]): string {
+export function generatePhpCities(cities: CityJson[]): string {
   let out = '<?php\n\ndeclare(strict_types=1);\n\nnamespace PakGeoData\\Data;\n\nreturn [\n';
   for (const c of cities) {
     out += `    [\n`;
@@ -113,7 +113,7 @@ export function generatePhpCities(cities: any[]): string {
   return out;
 }
 
-export function generatePhpAreas(areas: any[]): string {
+export function generatePhpAreas(areas: AreaJson[]): string {
   let out = '<?php\n\ndeclare(strict_types=1);\n\nnamespace PakGeoData\\Data;\n\nreturn [\n';
   for (const a of areas) {
     out += `    [\n`;
