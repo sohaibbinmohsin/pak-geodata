@@ -7,6 +7,7 @@ import {
 } from 'node:fs';
 import { resolve } from 'node:path';
 import { generateDartData } from './codegen/dart.js';
+import { generatePhpData } from './codegen/php.js';
 import { generateTypeScriptData } from './codegen/typescript.js';
 import { verifyAllData, verifyMultiPackageParity } from './verify.js';
 
@@ -43,12 +44,16 @@ async function main() {
   const dartDir = resolve(rootDir, 'packages/dart');
   mkdirSync(dartDir, { recursive: true });
 
+  const phpDir = resolve(rootDir, 'packages/php');
+  mkdirSync(phpDir, { recursive: true });
+
   const rootLicense = resolve(rootDir, 'LICENSE');
   if (existsSync(rootLicense)) {
     cpSync(rootLicense, resolve(rootDir, 'packages/npm/LICENSE'));
     cpSync(rootLicense, resolve(rootDir, 'packages/pypi/LICENSE'));
     cpSync(rootLicense, resolve(rootDir, 'packages/go/LICENSE'));
     cpSync(rootLicense, resolve(dartDir, 'LICENSE'));
+    cpSync(rootLicense, resolve(phpDir, 'LICENSE'));
   }
 
   const rootLicenseData = resolve(rootDir, 'LICENSE-DATA');
@@ -57,6 +62,7 @@ async function main() {
     cpSync(rootLicenseData, resolve(rootDir, 'packages/pypi/LICENSE-DATA'));
     cpSync(rootLicenseData, resolve(rootDir, 'packages/go/LICENSE-DATA'));
     cpSync(rootLicenseData, resolve(dartDir, 'LICENSE-DATA'));
+    cpSync(rootLicenseData, resolve(phpDir, 'LICENSE-DATA'));
   }
 
   const rootAttribution = resolve(rootDir, 'ATTRIBUTION.md');
@@ -65,16 +71,21 @@ async function main() {
     cpSync(rootAttribution, resolve(rootDir, 'packages/pypi/ATTRIBUTION.md'));
     cpSync(rootAttribution, resolve(rootDir, 'packages/go/ATTRIBUTION.md'));
     cpSync(rootAttribution, resolve(dartDir, 'ATTRIBUTION.md'));
+    cpSync(rootAttribution, resolve(phpDir, 'ATTRIBUTION.md'));
   }
   console.log('✔ LICENSE, LICENSE-DATA, and ATTRIBUTION.md synchronized to packages');
 
-  console.log('\n=== Step 3: Generating modular TypeScript & Dart datasets ===');
+  console.log('\n=== Step 3: Generating modular TypeScript, Dart & PHP datasets ===');
   const cityAreaCounts: Record<string, number> = {};
   await generateTypeScriptData(dataDir, npmSrcDir, cityAreaCounts);
   console.log('✔ TypeScript data modules generated for packages/npm/src/data/');
 
   await generateDartData(dataDir, dartLibDir, cityAreaCounts);
   console.log('✔ Dart typed const datasets generated for packages/dart/lib/src/data/');
+
+  const phpSrcDir = resolve(rootDir, 'packages/php/src');
+  await generatePhpData(dataDir, phpSrcDir, cityAreaCounts);
+  console.log('✔ PHP OPcache array datasets generated for packages/php/src/Data/');
 
   console.log('\n=== Step 4: Compiling packages/npm distribution ===');
   const npmDir = resolve(rootDir, 'packages/npm');
@@ -117,6 +128,7 @@ async function main() {
   console.log('  ✔ packages/pypi/pak_geodata/data/ (Synchronized JSON datasets)');
   console.log('  ✔ packages/go/data/ (Synchronized JSON datasets)');
   console.log('  ✔ packages/dart/lib/src/data/ (Generated typed const Dart datasets)');
+  console.log('  ✔ packages/php/src/Data/ (Generated PHP OPcache array datasets)');
   console.log('\n✔ Full production build succeeded with 0 errors.');
 }
 
