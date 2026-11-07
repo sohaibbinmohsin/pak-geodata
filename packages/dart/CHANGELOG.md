@@ -1,3 +1,10 @@
+## 0.11.0
+
+- Added official PHP package (`sohaibbinmohsin/pak-geodata`) with pre-compiled OPcache arrays.
+- Expanded multi-language parity gate to 6 targets (Master JSON, TypeScript, Python, Go, Dart, PHP).
+- Streamlined release workflow to eliminate parallel publication race conditions.
+- Updated documentation and quickstarts across all five language targets.
+
 ## 0.10.1
 
 - Add comprehensive dartdocs across all public model constructors and fields.
