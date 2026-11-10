@@ -430,7 +430,7 @@ export async function verifyAllData(
     }
   }
 
-  // 6. Multi-package parity verification gate across master, NPM, PyPI, Go, and Dart
+  // 6. Multi-package parity verification gate across master, NPM, PyPI, Go, Dart, and PHP
   let packageStats: Record<string, EntityCounts> | undefined;
   const shouldCheckPackages = options.checkPackages ?? !options.dataDir;
 
@@ -453,7 +453,7 @@ export async function verifyAllData(
       console.log(`  Areas:     ${areas.length}`);
       if (shouldCheckPackages) {
         console.log(
-          '✔ Multi-package parity gate PASSED across master, NPM, PyPI, Go, and Dart (7 provinces, 79 cities, 3953 areas).'
+          '✔ Multi-package parity gate PASSED across master, NPM, PyPI, Go, Dart, and PHP (7 provinces, 79 cities, 3953 areas).'
         );
       }
     } else {
@@ -560,6 +560,22 @@ export function countDartEntities(dartDataDir: string): EntityCounts {
   return { provinces, cities, areas };
 }
 
+export function countPhpEntities(phpDataDir: string): EntityCounts {
+  function countIdOccurrences(filePath: string): number {
+    if (!fs.existsSync(filePath)) return 0;
+    const content = fs.readFileSync(filePath, 'utf8');
+    // Top-level entity records have 'id' => '...' string keys (excluding nested sources provenance integer IDs)
+    const matches = content.match(/'id'\s*=>\s*'/g);
+    return matches ? matches.length : 0;
+  }
+
+  const provinces = countIdOccurrences(path.join(phpDataDir, 'Provinces.php'));
+  const cities = countIdOccurrences(path.join(phpDataDir, 'Cities.php'));
+  const areas = countIdOccurrences(path.join(phpDataDir, 'Areas.php'));
+
+  return { provinces, cities, areas };
+}
+
 export function verifyMultiPackageParity(
   rootDir: string = process.cwd()
 ): MultiPackageParityResult {
@@ -597,6 +613,11 @@ export function verifyMultiPackageParity(
       name: 'dart',
       path: path.resolve(rootDir, 'packages/dart/lib/src/data'),
       countFn: () => countDartEntities(path.resolve(rootDir, 'packages/dart/lib/src/data'))
+    },
+    {
+      name: 'php',
+      path: path.resolve(rootDir, 'packages/php/src/Data'),
+      countFn: () => countPhpEntities(path.resolve(rootDir, 'packages/php/src/Data'))
     }
   ];
 

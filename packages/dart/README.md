@@ -40,7 +40,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  pak_geodata: ^0.10.1
+  pak_geodata: ^0.11.0
 ```
 
 Or run:

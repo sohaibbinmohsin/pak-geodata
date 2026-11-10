@@ -4,6 +4,7 @@
 [![PyPI Version](https://img.shields.io/pypi/v/pak-geodata?color=green)](https://pypi.org/project/pak-geodata/)
 [![Go Reference](https://pkg.go.dev/badge/github.com/sohaibbinmohsin/pak-geodata/packages/go.svg)](https://pkg.go.dev/github.com/sohaibbinmohsin/pak-geodata/packages/go)
 [![Pub Version](https://img.shields.io/pub/v/pak_geodata.svg?color=blue)](https://pub.dev/packages/pak_geodata)
+[![Packagist Version](https://img.shields.io/packagist/v/sohaibbinmohsin/pak-geodata?color=orange)](https://packagist.org/packages/sohaibbinmohsin/pak-geodata)
 <a href="https://geodata.themohsinproject.org/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Live%20Demo-Interactive%20Map-blue?logo=leaflet&color=10B981" alt="Live Interactive Demo" /></a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build & Tests](https://img.shields.io/github/actions/workflow/status/sohaibbinmohsin/pak-geodata/ci.yml?branch=main&label=CI)](https://github.com/sohaibbinmohsin/pak-geodata/actions/workflows/ci.yml)
@@ -12,7 +13,7 @@
 
 `pak-geodata` is an open-source, production-grade geospatial foundation for Pakistan.
 
-It provides offline access to verified geographic datasets for Pakistan's provinces, territories, cities, and metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers), distributed simultaneously for **TypeScript/Node.js**, **Python**, **Go**, and **Dart/Flutter** with **zero runtime dependencies**.
+It provides offline access to verified geographic datasets for Pakistan's provinces, territories, cities, and metropolitan areas (sectors, housing schemes, neighborhoods, and commercial centers), distributed simultaneously for **TypeScript/Node.js**, **Python**, **Go**, **Dart/Flutter**, and **PHP** with **zero runtime dependencies**.
 
 Explore the [Live Interactive Demo](https://geodata.themohsinproject.org/) to test multi-script search, interactive map exploration, and reverse geocoding in real-time.
 
@@ -33,13 +34,13 @@ Developers building address autocompletion, checkout forms, delivery routing, re
 
 ## Core Highlights
 
-- ⚡ **Zero Runtime Dependencies**: All four client libraries (TypeScript, Python, Go, and Dart) require 0 external runtime dependencies (pure standard-library implementations across all ecosystems).
-- 📦 **Quad-Distribution**: Native first-class support across four major programming ecosystems: Node.js/TypeScript (`npm install pak-geodata`), Python (`pip install pak-geodata`), Go (`go get github.com/sohaibbinmohsin/pak-geodata/packages/go`), and Dart/Flutter (`dart pub add pak_geodata`).
+- ⚡ **Zero Runtime Dependencies**: All five client libraries (TypeScript, Python, Go, Dart, and PHP) require 0 external runtime dependencies (pure standard-library implementations across all ecosystems).
+- 📦 **Quint-Distribution**: Native first-class support across five major programming ecosystems: Node.js/TypeScript (`npm install pak-geodata`), Python (`pip install pak-geodata`), Go (`go get github.com/sohaibbinmohsin/pak-geodata/packages/go`), Dart/Flutter (`dart pub add pak_geodata`), and PHP (`composer require sohaibbinmohsin/pak-geodata`).
 - 🌐 **Offline and Self-Contained**: 100% bundled data: perform lookups, spatial radius checks, and searches in sub-millisecond time with no network requests.
 - 🎯 **Strict Geofencing**: All coordinates strictly validated within Pakistan's bounding box (`23.5 <= lat <= 37.1`, `60.8 <= lng <= 77.8`) and city district boundaries.
 - 🏷️ **Canonical Slugs**: Standardized `<city-slug>-<area-slug>` format (e.g. `lahore-dha-phase-5`, `karachi-clifton-block-2`).
 - 🔍 **Multi-Script and Alias Search**: Ranks results across exact match, prefix match, Urdu script (`"گلبرگ"`), colloquial aliases (`"dha 5"`), token match, and fuzzy Levenshtein distance.
-- 📍 **Spatial Reverse Geocoding**: Nearest neighbor resolution via spherical Haversine formula (`getNearestArea` / `get_nearest_area` / `GetNearestArea`).
+- 📍 **Spatial Reverse Geocoding**: Nearest neighbor resolution via spherical Haversine formula (`getNearestArea` / `get_nearest_area` / `GetNearestArea` / `PakGeoData::getNearestArea`).
 - 📮 **Pakistan Post Codes**: 5-digit postal code resolution and reverse lookups.
 - 🌲 **Tree-Shakeable Subpaths**: Modular imports like `pak-geodata/areas/lahore` load only the desired city data (~15 to 26 KB).
 - 🏛️ **Bilingual Hierarchy & PWA Subpath**: Complete province $\rightarrow$ district $\rightarrow$ area hierarchy (`PakLocationItem`) and ultra-lightweight `< 5 KB` gzipped subpath export (`pak-geodata/hierarchy`) designed for offline-first PWAs and reporting workflows.
@@ -75,6 +76,11 @@ go get github.com/sohaibbinmohsin/pak-geodata/packages/go
 dart pub add pak_geodata
 # or in Flutter projects:
 flutter pub add pak_geodata
+```
+
+### PHP (8.1+)
+```bash
+composer require sohaibbinmohsin/pak-geodata
 ```
 
 ---
@@ -476,6 +482,61 @@ void main() {
 
 ---
 
+### PHP
+
+```php
+use PakGeoData\PakGeoData;
+use PakGeoData\Models\Coordinates;
+
+// 1. Lookups
+$punjab = PakGeoData::getProvinceById('punjab');
+echo "{$punjab->name}, {$punjab->urduName}\n"; // "Punjab", "پنجاب"
+
+$lahore = PakGeoData::getCityById('lahore');
+echo "{$lahore->name} has {$lahore->totalAreasCount} verified areas\n";
+
+$lahoreAreas = PakGeoData::getAreasByCity('lahore');
+echo "Loaded " . count($lahoreAreas) . " areas in Lahore (first: {$lahoreAreas[0]->name})\n";
+
+// 2. Intelligent Multi-Script & Alias Search
+// Ranked by: Exact > Prefix > Urdu > Alias > Token > Fuzzy
+$results = PakGeoData::searchAreas('dha 5', cityId: 'lahore');
+if (!empty($results)) {
+    echo $results[0]->area->name . "\n"; // "DHA Phase 5"
+    echo $results[0]->area->id . "\n";   // "lahore-dha-phase-5"
+}
+
+// Search via Urdu script
+$urduMatches = PakGeoData::searchAreas('کلفٹن');
+if (!empty($urduMatches)) {
+    echo $urduMatches[0]->area->name . "\n"; // "Clifton Block 1"
+}
+
+// 3. Reverse Geocoding / Nearest Area
+$userCoords = new Coordinates(31.4581, 74.4121);
+$nearest = PakGeoData::getNearestArea(
+    $userCoords,
+    cityId: 'lahore',
+    maxRadiusKm: 5.0
+);
+if ($nearest !== null) {
+    echo "Nearest: {$nearest->area->name} (" . round($nearest->distanceKm, 2) . " km)\n";
+}
+
+// 4. Postal Code Resolution
+$postalArea = PakGeoData::findAreaByPostalCode('54000');
+echo "Postal Code 54000: {$postalArea?->name}\n";
+
+// 5. Great-Circle Distance
+$distKm = PakGeoData::haversineDistanceKm(
+    new Coordinates(31.5204, 74.3587), // Lahore Center
+    new Coordinates(24.8607, 67.0011)  // Karachi Center
+);
+echo "Distance between Lahore and Karachi: " . round($distKm) . " km\n"; // ~1025 km
+```
+
+---
+
 ## Bilingual Hierarchy & Lightweight PWA Subpath
 
 For applications requiring hierarchical administrative selection (Province → City/District → Area), `pak-geodata` provides a unified bilingual interface `PakLocationItem` and an ultra-lightweight `< 5 KB` gzipped subpath export:
@@ -644,15 +705,20 @@ The project is structured as an automated monorepo with integrated code generati
 │   │   ├── geo.go                # Pure Go Haversine math & reverse geocoding
 │   │   ├── search.go             # Urdu normalization & multi-script search
 │   │   └── pakgeodata_test.go    # Native Go test suite
-│   └── dart/                     # Dart & Flutter client package (pak_geodata)
-│       ├── lib/                  # Pure Dart package entry point
-│       │   ├── pak_geodata.dart  # Top-level lookups and exports
-│       │   └── src/data/         # Generated typed const datasets
-│       └── test/                 # Native Dart test suite
+│   ├── dart/                     # Dart & Flutter client package (pak_geodata)
+│   │   ├── lib/                  # Pure Dart package entry point
+│   │   │   ├── pak_geodata.dart  # Top-level lookups and exports
+│   │   │   └── src/data/         # Generated typed const datasets
+│   │   └── test/                 # Native Dart test suite
+│   └── php/                      # PHP client package (sohaibbinmohsin/pak-geodata)
+│       ├── composer.json         # Packagist package definition
+│       ├── src/                  # Pure PHP typed models & lookups
+│       │   └── Data/             # Pre-compiled OPcache PHP arrays
+│       └── tests/                # PHPUnit test suite
 ├── pipeline/                     # Ingestion, Overpass scrapers, & validators
 ├── scripts/
 │   ├── build.ts                  # Code generator, sync engine, & compiler
-│   ├── codegen/                  # TypeScript & Dart code generators
+│   ├── codegen/                  # TypeScript, Dart & PHP code generators
 │   └── verify.ts                 # Full dataset integrity & parity runner
 └── tests/
     └── parity/                   # Multi-language golden vectors parity suite
@@ -660,7 +726,7 @@ The project is structured as an automated monorepo with integrated code generati
 
 ### Multi-Language Architecture
 
-`pak-geodata` guarantees strict parity across all four target ecosystems using an automated pipeline:
+`pak-geodata` guarantees strict parity across all five target ecosystems using an automated pipeline:
 
 ```
                           ┌───────────────────────────┐
@@ -669,15 +735,15 @@ The project is structured as an automated monorepo with integrated code generati
                           │   7 Prov / 79 City / 3953 │
                           └─────────────┬─────────────┘
                                         │
-           ┌────────────────────────────┼───────────────────────────┐
-           │ Synchronize                │ Synchronize               │ Codegen & Compile
-           ▼                            ▼                           ▼
-┌──────────────────────┐     ┌──────────────────────┐    ┌──────────────────────┐
-│     packages/pypi    │     │     packages/go      │    │     packages/npm     │
-│ (pak_geodata/data/)  │     │    (packages/go/     │    │ (src/data/*.ts const)│
-│  Synchronized JSON   │     │        data/)        │    │  ESM / CJS Bundles   │
-│ (importlib.resources)│     │  //go:embed JSON     │    │ + Subpath Exports    │
-└──────────────────────┘     └──────────────────────┘    └──────────────────────┘
+           ┌────────────────────────────┼───────────────────────────┬──────────────────────┐
+           │ Synchronize                │ Synchronize               │ Codegen & Compile    │ Codegen
+           ▼                            ▼                           ▼                      ▼
+┌──────────────────────┐     ┌──────────────────────┐    ┌──────────────────────┐   ┌──────────────────────┐
+│     packages/pypi    │     │     packages/go      │    │     packages/npm     │   │     packages/php     │
+│ (pak_geodata/data/)  │     │    (packages/go/     │    │ (src/data/*.ts const)│   │ (src/Data/*.php arr) │
+│  Synchronized JSON   │     │        data/)        │    │  ESM / CJS Bundles   │   │ Pre-compiled OPcache │
+│ (importlib.resources)│     │  //go:embed JSON     │    │ + Subpath Exports    │   │  Shared Memory (SHM) │
+└──────────────────────┘     └──────────────────────┘    └──────────────────────┘   └──────────────────────┘
                                                                     │
                                                                     │ Codegen
                                                                     ▼
@@ -696,8 +762,10 @@ The project is structured as an automated monorepo with integrated code generati
 3. **Typed Constant Code Generation (TypeScript & Dart)**:
    - **TypeScript**: `scripts/codegen/typescript.ts` compiles master JSON into strongly-typed ESM/CommonJS modules and TypeScript declaration files (`.d.ts`), enabling full IDE autocomplete and granular per-city subpath imports.
    - **Dart**: `scripts/codegen/dart.ts` compiles master JSON into pure Dart `const` model instances with `const Coordinates(...)` centroids and bounds, providing zero-parse-overhead compile-time constant data for Flutter and Dart VM.
-4. **Zero Runtime External Dependencies**: None of the client libraries depend on third-party runtime dependencies. All spatial calculations (spherical Haversine formula with radius $R = 6371.0088\text{ km}$), Urdu normalization, and search indexing are implemented purely using each runtime's standard library.
-5. **Multi-Package Parity Gate**: Automatically validated on every build via `scripts/verify.ts` and `tests/parity/golden_vectors.test.ts`, asserting identical counts (7 provinces, 79 cities, 3,953 areas) and matching search/geocoding behaviors across all language targets.
+4. **Pre-compiled OPcache Arrays (PHP)**:
+   - **PHP**: `scripts/codegen/php.ts` compiles master JSON into native PHP array return files (`src/Data/Provinces.php`, `src/Data/Cities.php`, `src/Data/Areas.php`). In production with OPcache enabled, the full dataset is loaded directly into shared memory (`SHM`), achieving zero filesystem I/O and sub-millisecond in-memory lookups.
+5. **Zero Runtime External Dependencies**: None of the client libraries depend on third-party runtime dependencies. All spatial calculations (spherical Haversine formula with radius $R = 6371.0088\text{ km}$), Urdu normalization, and search indexing are implemented purely using each runtime's standard library.
+6. **Multi-Package Parity Gate**: Automatically validated on every build via `scripts/verify.ts` and `tests/parity/golden_vectors.test.ts`, asserting identical counts (7 provinces, 79 cities, 3,953 areas) and matching search/geocoding behaviors across all 6 targets (Master JSON, TypeScript, Python, Go, Dart, PHP).
 
 ### Build & Test Commands
 
@@ -705,10 +773,10 @@ The project is structured as an automated monorepo with integrated code generati
 # Install dependencies
 npm install
 
-# Run full production build (validates data, generates TS/Dart, syncs PyPI/Go, builds bundles)
+# Run full production build (validates data, generates TS/Dart/PHP, syncs PyPI/Go, builds bundles)
 npm run build
 
-# Run end-to-end multi-runtime test suite (TypeScript + Python + Go + Dart)
+# Run end-to-end multi-runtime test suite (TypeScript + Python + Go + Dart + PHP)
 npm test
 
 # Run individual language test suites
@@ -716,12 +784,13 @@ npm run test:ts       # TypeScript test suite (Node.js test runner)
 npm run test:python   # Python unittest suite
 npm run test:go       # Go test suite (native or Docker)
 npm run test:dart     # Dart test suite (native or Docker)
+npm run test:php      # PHP test suite (PHPUnit or native/Docker)
 npm run test:parity   # Cross-language golden vectors parity test
 
 # Type check all packages
 npm run lint
 
-# Validate master data integrity and dataset count parity across all 5 targets
+# Validate master data integrity and dataset count parity across all 6 targets
 npm run verify
 ```
 
