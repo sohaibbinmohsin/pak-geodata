@@ -1,7 +1,6 @@
 {
   "name": "sohaibbinmohsin/pak-geodata",
   "description": "Comprehensive, typed, offline geographic data for all areas and cities in Pakistan",
-  "version": "0.11.0",
   "type": "library",
   "license": "MIT",
   "authors": [
